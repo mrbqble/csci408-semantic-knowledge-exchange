@@ -1,0 +1,48 @@
+# --- datasets and downloads (NEVER commit; 15+ GB) ---
+*.zip
+val2017/
+annotations/
+images/
+images_urban/
+images_cityscapes/
+gt_cityscapes/
+data/
+
+# --- environments ---
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# --- model weights / caches ---
+*.pth
+*.pt
+*.safetensors
+*.onnx
+.cache/
+
+# --- logs and scratch ---
+*.log
+*.err
+dl_*.log
+dl_*.err
+check.py
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# --- credentials: never, under any circumstances ---
+credentials.json
+.env
+*.token
+*_token
+secrets*
+
+# NOTE: probe_*.json ARE tracked on purpose - they are experimental
+# results, only ~12 KB each, and the report depends on them.
