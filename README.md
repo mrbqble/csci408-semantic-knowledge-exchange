@@ -77,17 +77,42 @@ scripts/iteration1.sh     # unit tests, image download, measurement
 python encoding_ablation.py --images data/coco_urban --out results/iteration1_encoding_ablation_coco_urban.json
 ```
 
-Results: `results/iteration1_mmsd_coco_urban.json`,
-`results/iteration1_encoding_ablation_coco_urban.json`.
+Results: `results/iteration1_*.json` (COCO and Cityscapes runs, encoding
+ablations, Canny sweep, CPU timing).
 
-Still open: the same run on Cityscapes (the paper's dataset), which needs the
-registered download stored on the OMEN.
+### On the paper's dataset: Cityscapes val, 500 images
+
+Run on the OMEN (RTX 3070 Laptop GPU), lossless WebP, Canny 100/200:
+
+| Component | This repo | Paper (Table 2) |
+|---|---|---|
+| Segmentation map | 3.79 KB | 3.96 KB |
+| Edge map | 22.01 KB | 18.41 KB |
+| Caption | 38 B | 57 B |
+| **Total** | **25.84 KB** (1.12% of the 2.36 MB PNG) | **22.42 KB** (0.96% of 2.28 MB) |
+| Edge share of payload | 85.2% | 82% |
+
+The segmentation map matches the paper within 4%, and the encoding ablation
+repeats on Cityscapes: lossless WebP gives 3.79 KB maps and 22.01 KB edges,
+lossy WebP at quality 80 gives 12.22 KB and 97.00 KB.
+
+The edge map is 20% larger than the paper's. `canny_sweep.py` places the
+paper's 18.41 KB between thresholds 100/200 (22.01 KB) and 150/250 (14.63 KB);
+Gaussian smoothing first (sigma 1) gives 12.22 KB at 100/200 and 21.07 KB at
+50/150. No standard setting reproduces it exactly, so the paper's exact edge
+settings are an open question for its authors.
+
+Sender time per frame on Cityscapes: on the RTX 3070 GPU, segmentation 48 ms,
+map encoding 49 ms, edges 49 ms, caption 279 ms. On the OMEN CPU with 4 threads
+(25 images), segmentation 1.13 s and caption 0.97 s, about 2.2 s per frame in
+total, against the paper's 15.46 s on a Raspberry Pi 5.
 
 ## Repository layout
 
 ```
 mmsd_sender.py          Iteration 1: MMSD sender (segmentation, edges, caption) + measurement
 encoding_ablation.py    Iteration 1: WebP and PNG encodings of the same maps
+canny_sweep.py          Iteration 1: edge-map size under several Canny settings
 fetch_coco_urban.py     download the 25 COCO street scenes listed in probe_urban.json
 scripts/iteration1.sh   one-command reproduction of the Iteration 1 measurement
 tests/                  unit tests for the encoders (python -m pytest -q tests)

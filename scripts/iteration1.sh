@@ -11,5 +11,8 @@ PY=python3
 "$PY" mmsd_sender.py --images data/coco_urban --out results/iteration1_mmsd_coco_urban.json
 
 # Cityscapes (2048x1024, the seed paper's dataset) needs the registered download;
-# run this where the images are stored, e.g. on the OMEN:
-# "$PY" mmsd_sender.py --images images_cityscapes --out results/iteration1_mmsd_cityscapes.json
+# run these where the 500 val images are stored (on the OMEN: iter1/data/cityscapes_val):
+# "$PY" mmsd_sender.py --images data/cityscapes_val --out results/iteration1_mmsd_cityscapes_val.json --device cuda
+# "$PY" encoding_ablation.py --images data/cityscapes_val --out results/iteration1_encoding_ablation_cityscapes_val.json --device cuda
+# "$PY" canny_sweep.py --images data/cityscapes_val --out results/iteration1_canny_sweep_cityscapes_val.json
+# "$PY" mmsd_sender.py --images data/cityscapes_val --limit 25 --device cpu --threads 4 --out results/iteration1_mmsd_cityscapes_cpu4.json
