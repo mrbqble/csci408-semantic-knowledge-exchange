@@ -34,78 +34,74 @@ modelled per camera. The environment is fully simulated: no physical IoT hardwar
 
 ## Iteration 1 (28 Sep – 11 Oct): the MMSD sender
 
-`mmsd_sender.py` reproduces the paper's sender (Sec. 3) and measures every component:
+`mmsd_sender.py` reproduces the paper's sender (Sec. 3) with the settings of the
+seed authors' own pipeline code (provided by the authors in October 2026; not
+included in this repository):
 
-- segmentation: SegFormer-B2 (Cityscapes classes), colour-coded map downsampled to 1024×512, WebP
-- edges: Canny on the grayscale image at full resolution, WebP
-- caption: BLIP (base)
+- segmentation: Mask2Former Swin-Large (`facebook/mask2former-swin-large-cityscapes-semantic`),
+  Cityscapes-palette map, nearest-neighbour downsampled to 1024×512, lossless WebP at quality 100
+- edges: OpenCV Canny 100/200 on the full-resolution grayscale image, lossless WebP at quality 100
+- caption: BLIP (base) on a 384×384 resize, default generation
 
-The paper leaves two settings open; both are recorded in the code. Canny
-thresholds are 100/200 (OpenCV has no defaults). The WebP mode is settled by
-`encoding_ablation.py`: lossless WebP reproduces the paper's segmentation-map
-size, lossy WebP does not.
+On the first 10 Cityscapes val images, every segmentation map, edge map and
+caption is byte-for-byte the same size as the authors' scripts produce. The
+authors also caption with Gemma 3n, a gated model that is not set up here.
 
-| Encoding of the same maps (25 COCO street scenes) | Segmentation map | Edge map |
+### Cityscapes val, 500 images (OMEN, RTX 3070 Laptop GPU)
+
+| Component | This repo | Paper (Table 2) |
 |---|---|---|
-| WebP lossy, quality 80 | 17.56 KB | 66.19 KB |
-| WebP lossy, quality 50 | 12.48 KB | 56.10 KB |
-| **WebP lossless (default)** | **4.40 KB** | **13.74 KB** |
-| PNG (September probe) | 6.31 KB | 14.82 KB |
+| Segmentation map | 4.14 KB | 3.96 KB |
+| Edge map | 21.91 KB | 18.41 KB |
+| Caption | 38 B | 57 B |
+| **Total** | **26.09 KB** (1.13% of the 2.36 MB PNG; 11.1% of a q85 JPEG) | **22.42 KB** (0.96% of 2.28 MB) |
+| Edge share of payload | 84.0% | 82% |
 
-Measured payload with lossless WebP:
+The paper's 500 test images were randomly sampled from Cityscapes, while this
+run uses the 500 val images, so the numbers are not expected to match exactly.
+The edge map differs most because edge density depends on the scene. Encoder
+effort is not the cause: lossless WebP at quality 80 and 100 gives practically
+the same edge maps.
 
-| Component | This repo (25 COCO street scenes, mean 590×458) | Paper (Cityscapes, 2048×1024) |
-|---|---|---|
-| Segmentation map | 4.40 KB | 3.96 KB |
-| Edge map | 13.74 KB | 18.41 KB |
-| Caption | 35 B | 57 B |
-| **Total** | **18.17 KB** | **22.42 KB** |
-| Edge share of payload | 75.6% | 82% |
+Encoding of the same maps:
 
-The payload is 9.9% of the COCO source files and 22.6% of a quality-85 JPEG of
-the same frame. Edges dominate the payload in both datasets, which is why the
-allocation of components across cameras matters.
+| Encoding | Cityscapes seg | Cityscapes edges | COCO seg | COCO edges |
+|---|---|---|---|---|
+| WebP lossy, quality 80 | 13.78 KB | 97.00 KB | 16.05 KB | 66.19 KB |
+| WebP lossy, quality 50 | 9.64 KB | 82.30 KB | 11.51 KB | 56.10 KB |
+| **WebP lossless, quality 100 (default)** | **4.14 KB** | **21.91 KB** | **3.78 KB** | **13.74 KB** |
+| PNG (September probe) | 5.67 KB | 26.68 KB | 5.67 KB | 14.82 KB |
 
-Sender time per frame on an Apple M4 GPU (MPS): segmentation 96 ms, map encoding
-15 ms, edges 8 ms, caption 187 ms. These are workstation numbers; the paper's
-Raspberry Pi 5 figures (segmentation 8.35 s, caption 7.07 s) remain the device reference.
+`canny_sweep.py` measures the edge map under other Canny settings (run on 9 Oct
+with WebP quality 80): 50/150 gives 34.92 KB, 100/200 22.01 KB, 150/250 14.63 KB.
+
+Sender time per frame on Cityscapes: on the RTX 3070 GPU, segmentation 117 ms,
+map encoding 59 ms, edges 67 ms, caption 291 ms. On the OMEN CPU with 4 threads
+(25 images), segmentation 2.06 s and caption 1.00 s, about 3.2 s per frame in
+total, against the paper's 15.46 s on a Raspberry Pi 5.
+
+### COCO street scenes, 25 images (mean 590×458)
+
+17.55 KB per frame (segmentation 3.78 KB, edges 13.74 KB, caption 34 B): 9.6% of
+the source files and 21.8% of a q85 JPEG; edges are 78.3% of the payload.
+
+### Receiver smoke test (Gate 1 of the fusion plan)
+
+`receiver_smoke_test.py` rebuilds images from the saved components with the
+authors' receiver settings: Stable Diffusion 1.5 (`runwayml/stable-diffusion-v1-5`,
+fp16) with `lllyasviel/sd-controlnet-canny` and `sd-controlnet-seg`, UniPC,
+20 steps, guidance 7.5, seed 42, at 2048×1024. On the RTX 3070 Laptop GPU (8 GB)
+the whole pipeline stays on the GPU with VAE tiling: 79.9 s per image and 4.9 GB
+peak memory over 5 Cityscapes images, against the paper's 14.47 s on an RTX 5080
+and the authors' estimate of about 16 GB.
 
 Reproduce:
 
 ```bash
-scripts/iteration1.sh     # unit tests, image download, measurement
-python encoding_ablation.py --images data/coco_urban --out results/iteration1_encoding_ablation_coco_urban.json
+scripts/iteration1.sh     # unit tests, COCO download, measurement; Cityscapes and receiver commands inside
 ```
 
-Results: `results/iteration1_*.json` (COCO and Cityscapes runs, encoding
-ablations, Canny sweep, CPU timing).
-
-### On the paper's dataset: Cityscapes val, 500 images
-
-Run on the OMEN (RTX 3070 Laptop GPU), lossless WebP, Canny 100/200:
-
-| Component | This repo | Paper (Table 2) |
-|---|---|---|
-| Segmentation map | 3.79 KB | 3.96 KB |
-| Edge map | 22.01 KB | 18.41 KB |
-| Caption | 38 B | 57 B |
-| **Total** | **25.84 KB** (1.12% of the 2.36 MB PNG) | **22.42 KB** (0.96% of 2.28 MB) |
-| Edge share of payload | 85.2% | 82% |
-
-The segmentation map matches the paper within 4%, and the encoding ablation
-repeats on Cityscapes: lossless WebP gives 3.79 KB maps and 22.01 KB edges,
-lossy WebP at quality 80 gives 12.22 KB and 97.00 KB.
-
-The edge map is 20% larger than the paper's. `canny_sweep.py` places the
-paper's 18.41 KB between thresholds 100/200 (22.01 KB) and 150/250 (14.63 KB);
-Gaussian smoothing first (sigma 1) gives 12.22 KB at 100/200 and 21.07 KB at
-50/150. No standard setting reproduces it exactly, so the paper's exact edge
-settings are an open question for its authors.
-
-Sender time per frame on Cityscapes: on the RTX 3070 GPU, segmentation 48 ms,
-map encoding 49 ms, edges 49 ms, caption 279 ms. On the OMEN CPU with 4 threads
-(25 images), segmentation 1.13 s and caption 0.97 s, about 2.2 s per frame in
-total, against the paper's 15.46 s on a Raspberry Pi 5.
+Results: `results/iteration1_*.json`.
 
 ## Repository layout
 
@@ -113,6 +109,7 @@ total, against the paper's 15.46 s on a Raspberry Pi 5.
 mmsd_sender.py          Iteration 1: MMSD sender (segmentation, edges, caption) + measurement
 encoding_ablation.py    Iteration 1: WebP and PNG encodings of the same maps
 canny_sweep.py          Iteration 1: edge-map size under several Canny settings
+receiver_smoke_test.py  Iteration 1: K = 1 receiver on our GPU (Gate 1)
 fetch_coco_urban.py     download the 25 COCO street scenes listed in probe_urban.json
 scripts/iteration1.sh   one-command reproduction of the Iteration 1 measurement
 tests/                  unit tests for the encoders (python -m pytest -q tests)

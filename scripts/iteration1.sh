@@ -12,7 +12,8 @@ PY=python3
 
 # Cityscapes (2048x1024, the seed paper's dataset) needs the registered download;
 # run these where the 500 val images are stored (on the OMEN: iter1/data/cityscapes_val):
-# "$PY" mmsd_sender.py --images data/cityscapes_val --out results/iteration1_mmsd_cityscapes_val.json --device cuda
+# "$PY" mmsd_sender.py --images data/cityscapes_val --out results/iteration1_mmsd_cityscapes_val.json --device cuda --save-components data/components_m2f
 # "$PY" encoding_ablation.py --images data/cityscapes_val --out results/iteration1_encoding_ablation_cityscapes_val.json --device cuda
 # "$PY" canny_sweep.py --images data/cityscapes_val --out results/iteration1_canny_sweep_cityscapes_val.json
 # "$PY" mmsd_sender.py --images data/cityscapes_val --limit 25 --device cpu --threads 4 --out results/iteration1_mmsd_cityscapes_cpu4.json
+# "$PY" receiver_smoke_test.py --components data/components_m2f --limit 5 --out results/iteration1_receiver_smoke_test.json --save-dir results/receiver_smoke

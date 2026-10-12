@@ -1,0 +1,59 @@
+{
+ "config": {
+  "sd_model": "runwayml/stable-diffusion-v1-5",
+  "controlnets": [
+   "lllyasviel/sd-controlnet-canny",
+   "lllyasviel/sd-controlnet-seg"
+  ],
+  "scheduler": "UniPC",
+  "steps": 20,
+  "guidance": 7.5,
+  "seed": 42,
+  "size": [
+   2048,
+   1024
+  ],
+  "mode": "gpu_resident",
+  "vae_tiling": true,
+  "gpu": "NVIDIA GeForce RTX 3070 Laptop GPU",
+  "torch": "2.14.0+cu130",
+  "diffusers": "0.41.0",
+  "platform": "Windows-11-10.0.26200-SP0"
+ },
+ "load_seconds": 8.652087000002211,
+ "mean_seconds_excluding_first": 79.85093957500067,
+ "peak_gpu_mb": 4890.3623046875,
+ "seed_paper_rtx5080_seconds": 14.47,
+ "rows": [
+  {
+   "stem": "frankfurt_000000_000294_leftImg8bit",
+   "caption": "a yellow taxi cab",
+   "seconds": 80.00317190000351,
+   "peak_gpu_mb": 4890.3623046875
+  },
+  {
+   "stem": "frankfurt_000000_000576_leftImg8bit",
+   "caption": "a street with cars parked on it",
+   "seconds": 79.7972563000003,
+   "peak_gpu_mb": 4890.3623046875
+  },
+  {
+   "stem": "frankfurt_000000_001016_leftImg8bit",
+   "caption": "a reflection of a car",
+   "seconds": 79.55213570000342,
+   "peak_gpu_mb": 4890.3623046875
+  },
+  {
+   "stem": "frankfurt_000000_001236_leftImg8bit",
+   "caption": "a view of a street with cars and a bus",
+   "seconds": 79.4776464999959,
+   "peak_gpu_mb": 4890.3623046875
+  },
+  {
+   "stem": "frankfurt_000000_001751_leftImg8bit",
+   "caption": "a white van driving down a street next to a building",
+   "seconds": 80.57671980000305,
+   "peak_gpu_mb": 4890.3623046875
+  }
+ ]
+}
