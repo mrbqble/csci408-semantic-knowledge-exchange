@@ -159,6 +159,22 @@ palette evaluation used the default for both variants, so its comparison holds,
 but its absolute IoUs are lower than a full-resolution judge would give. Both
 scripts expect the Cityscapes zips one folder up, as on the OMEN.
 
+### Segmenter input size: payload and time
+
+`mmsd_sender.py --seg-input-size HxW` sets the segmenter's input size (default:
+the processor's own 384x384). Same 100 Cityscapes val images on the GPU; the CPU
+columns use 25 of them on the OMEN CPU with 4 threads:
+
+| Segmenter input | mIoU vs GT (50 images) | Seg map | Total payload | GPU seg | CPU seg | CPU sender total |
+|---|---|---|---|---|---|---|
+| 384x384 (default) | 62.6 | 4.24 KB | 27.05 KB | 117 ms | 2.08 s | 3.17 s |
+| 512x1024 | 77.9 | 5.06 KB | 27.88 KB | 273 ms | 6.83 s | 7.92 s |
+| 1024x2048 | 82.0 | 5.52 KB | 28.34 KB | 986 ms | 26.16 s | 27.22 s |
+
+The payload grows little because the edge map dominates it; the segmentation map
+grows by 19% and 30%. Sender time on CPU grows 2.5x at 512x1024 and 8.6x at full
+resolution.
+
 Reproduce:
 
 ```bash

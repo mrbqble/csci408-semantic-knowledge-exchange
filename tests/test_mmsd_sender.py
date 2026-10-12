@@ -60,3 +60,11 @@ def test_lossless_is_the_default_and_beats_lossy_on_maps():
     labels[700:] = 0                             # road
     assert ms.WEBP_LOSSLESS is True
     assert len(ms.encode_segmentation(labels)) < len(ms.encode_segmentation(labels, lossless=False))
+
+
+def test_parse_size():
+    import pytest
+    assert ms.parse_size("1024x2048") == (1024, 2048)
+    assert ms.parse_size("512X1024") == (512, 1024)
+    with pytest.raises(ValueError):
+        ms.parse_size("0x10")
