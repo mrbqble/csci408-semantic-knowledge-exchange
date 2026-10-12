@@ -109,6 +109,14 @@ def pick_device(name="auto"):
     return "cpu"
 
 
+def parse_size(text):
+    """'1024x2048' -> (1024, 2048), i.e. (height, width)."""
+    h, w = (int(v) for v in text.lower().split("x"))
+    if h <= 0 or w <= 0:
+        raise ValueError(text)
+    return h, w
+
+
 def _sync(device):
     import torch
     if device == "cuda":
@@ -118,11 +126,18 @@ def _sync(device):
 
 
 class Segmenter:
-    """Cityscapes semantic segmentation: Mask2Former (default) or SegFormer."""
+    """Cityscapes semantic segmentation: Mask2Former (default) or SegFormer.
 
-    def __init__(self, device, model_id=None):
+    input_size=(height, width) overrides the image processor's resize. Without it
+    the processor default applies: in transformers 5.17 Mask2Former's processor
+    squashes every input to 384x384 (62.6 vs 82.0 mIoU at 1024x2048 on Cityscapes
+    val, see segmenter_resolution_test.py).
+    """
+
+    def __init__(self, device, model_id=None, input_size=None):
         self.device = device
         self.model_id = model_id or SEG_MODEL
+        self.input_size = input_size
         self.segformer = "segformer" in self.model_id.lower()
         if self.segformer:
             from transformers import SegformerForSemanticSegmentation, SegformerImageProcessor
@@ -135,7 +150,8 @@ class Segmenter:
 
     def __call__(self, rgb):
         import torch
-        inputs = self.proc(images=rgb, return_tensors="pt").to(self.device)
+        size = {"size": {"height": self.input_size[0], "width": self.input_size[1]}} if self.input_size else {}
+        inputs = self.proc(images=rgb, return_tensors="pt", **size).to(self.device)
         with torch.no_grad():
             outputs = self.model(**inputs)
         if self.segformer:
@@ -210,6 +226,9 @@ def main():
     ap.add_argument("--warmup", type=int, default=1, help="untimed passes before measuring")
     ap.add_argument("--save-components", type=Path, default=None)
     ap.add_argument("--seg-model", default=SEG_MODEL, help="Hugging Face id; a SegFormer id selects the SAMR model")
+    ap.add_argument("--seg-input-size", type=parse_size, default=None,
+                    help="HxW segmenter input, e.g. 1024x2048 (default: the processor's own resize, 384x384 in transformers 5.17)")
+    ap.add_argument("--step", type=int, default=1, help="take every n-th image of the sorted set")
     args = ap.parse_args()
 
     import torch
@@ -218,6 +237,7 @@ def main():
         torch.set_num_threads(args.threads)
     device = pick_device(args.device)
     files = sorted(p for p in args.images.iterdir() if p.suffix.lower() in (".jpg", ".jpeg", ".png"))
+    files = files[:: args.step]
     if args.limit:
         files = files[: args.limit]
     if not files:
@@ -225,7 +245,7 @@ def main():
     if args.save_components:
         args.save_components.mkdir(parents=True, exist_ok=True)
 
-    seg, cap = Segmenter(device, args.seg_model), Captioner(device)
+    seg, cap = Segmenter(device, args.seg_model, args.seg_input_size), Captioner(device)
     for _ in range(args.warmup):
         measure_image(files[0], seg, cap, device, args.webp_quality, not args.webp_lossy)
 
@@ -239,7 +259,8 @@ def main():
     result = {
         "config": {"images": str(args.images), "n": len(rows), "device": device,
                    "threads": torch.get_num_threads(), "seg_model": seg.model_id, "cap_model": CAP_MODEL,
-                   "seg_size": SEG_SIZE, "webp_lossless": not args.webp_lossy, "webp_quality": args.webp_quality,
+                   "seg_size": SEG_SIZE, "step": args.step,
+                   "seg_input_size": list(args.seg_input_size) if args.seg_input_size else "processor default (384x384 in transformers 5.17)", "webp_lossless": not args.webp_lossy, "webp_quality": args.webp_quality,
                    "canny": [CANNY_LOW, CANNY_HIGH], "jpeg_baseline_quality": JPEG_BASELINE_QUALITY,
                    "torch": torch.__version__, "transformers": transformers.__version__,
                    "platform": platform.platform(), "machine": platform.machine()},
