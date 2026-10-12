@@ -18,3 +18,4 @@ PY=python3
 # "$PY" mmsd_sender.py --images data/cityscapes_val --limit 25 --device cpu --threads 4 --out results/iteration1_mmsd_cityscapes_cpu4.json
 # "$PY" receiver_smoke_test.py --components data/components_m2f --limit 5 --out results/iteration1_receiver_smoke_test.json --save-dir results/receiver_smoke
 # "$PY" palette_test.py --components data/components_m2f --originals data/cityscapes_val --baseline results/receiver_smoke --limit 5 --out results/iteration1_palette_test.json --save-dir results/palette_test
+# "$PY" palette_eval.py --components data/components_m2f --originals data/cityscapes_val --step 5 --limit 100 --out results/iteration1_palette_eval_100.json --save-dir results/palette100

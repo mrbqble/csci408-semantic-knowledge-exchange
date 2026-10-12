@@ -117,6 +117,48 @@ vegetation back and make segmentation-only reconstructions usable (D), but the
 vehicles in D are unreliable (duplicated or added cars) and people get worse.
 Five images, one seed and a Mask2Former-based score: an indication, not a result.
 
+### Palette evaluation on 100 images
+
+`palette_eval.py` repeats A vs B on 100 Cityscapes val images (every 5th) and adds
+vehicle metrics from torchvision's COCO Faster R-CNN (cars, motorcycles, buses,
+trucks; score >= 0.5; position match at IoU >= 0.5). Paired B - A differences
+with 95% bootstrap intervals:
+
+| Metric | A (authors) | B (ADE20K) | B - A [95% CI] |
+|---|---|---|---|
+| mIoU (re-segmentation) | 0.308 | 0.380 | +0.073 [+0.058, +0.089] |
+| Sky IoU | 0.20 | 0.69 | +0.49 [+0.41, +0.58] |
+| Building / vegetation IoU | 0.57 / 0.68 | 0.68 / 0.80 | +0.11 / +0.11 |
+| Car IoU | 0.62 | 0.69 | +0.07 [+0.03, +0.11] |
+| Vehicle count error per image | 3.98 | 3.69 | -0.29 [-1.03, +0.41] |
+| Vehicle recall (position match) | 0.65 | 0.66 | +0.03 [+0.00, +0.06] |
+| Colourfulness (originals 14.9) | 12.7 | 11.1 | -1.5 [-2.7, -0.5] |
+
+ADE20K colours improve scene semantics; vehicle counts do not change
+significantly, and both receivers match only about two thirds of the original
+vehicles in position.
+
+### Segmenter input resolution
+
+In transformers 5.17, Mask2Former's image processor resizes every input to a
+384x384 square by default, so `mmsd_sender.py` (and the authors' code in this
+environment) segments a squashed copy of the 2048x1024 frame.
+`segmenter_resolution_test.py` scores the same model against Cityscapes ground
+truth (50 val images) at explicit input sizes:
+
+| Processor input | mIoU | Pixel acc. | Pole | Person | Time (RTX 3070) |
+|---|---|---|---|---|---|
+| 384x384 (default) | 62.6 | 92.7 | 35 | 68 | 0.18 s |
+| 512x1024 | 77.9 | 95.9 | 60 | 83 | 0.32 s |
+| 1024x2048 | 82.0 | 96.6 | 67 | 88 | 1.00 s |
+
+At full resolution the model reaches the published 83.3, so the weights load
+correctly (`segmenter_gt_check.py` gives 68.0 mIoU on all 500 val images at the
+default size). Which resolution the authors' environment used is open. The
+palette evaluation used the default for both variants, so its comparison holds,
+but its absolute IoUs are lower than a full-resolution judge would give. Both
+scripts expect the Cityscapes zips one folder up, as on the OMEN.
+
 Reproduce:
 
 ```bash
@@ -133,6 +175,8 @@ encoding_ablation.py    Iteration 1: WebP and PNG encodings of the same maps
 canny_sweep.py          Iteration 1: edge-map size under several Canny settings
 receiver_smoke_test.py  Iteration 1: K = 1 receiver on our GPU (Gate 1)
 palette_test.py         Iteration 1: Cityscapes vs ADE20K colours for the segmentation ControlNet
+palette_eval.py         Iteration 1: the same on 100 images, with vehicle counts
+segmenter_*.py          Iteration 1: Mask2Former vs Cityscapes ground truth, by input resolution
 fetch_coco_urban.py     download the 25 COCO street scenes listed in probe_urban.json
 scripts/iteration1.sh   one-command reproduction of the Iteration 1 measurement
 tests/                  unit tests for the encoders (python -m pytest -q tests)
