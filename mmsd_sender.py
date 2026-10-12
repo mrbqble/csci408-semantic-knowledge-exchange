@@ -5,20 +5,24 @@ Reproduces the sender side of MMSD from Assylbek, Aitymbetov, Ristin and Zorbas,
 "Efficient semantic image communication for traffic monitoring at the edge",
 Internet of Things 39 (2026) 102029, Sec. 3:
 
-  segmentation  SegFormer-B2 (Cityscapes classes); colour-coded map downsampled
-                to 1024x512 and compressed with WebP
-  edges         grayscale image -> Canny; kept at the original resolution, WebP
-  caption       BLIP (base); UTF-8 text
+  segmentation  Mask2Former Swin-Large (Cityscapes classes); Cityscapes-palette
+                map, nearest-neighbour downsampled to 1024x512, lossless WebP
+  edges         grayscale image -> Canny 100/200; original resolution, lossless WebP
+  caption       BLIP (base) on a 384x384 resize, default generation; UTF-8 text
 
 In our multi-camera design every camera runs this sender unchanged, so K = 1 is
 the paper's own setting and the single-view baseline.
 
-Two settings are not stated in the paper and are recorded as assumptions:
-  * WebP mode: lossless. The paper says only "compressed using WebP".
-    encoding_ablation.py shows lossless reproduces its 3.96 KB segmentation
-    map (4.40 KB on our street scenes), while lossy WebP at Pillow's default
-    quality is 4x larger for the map and 5x larger for the edges.
-  * Canny thresholds: OpenCV has no defaults, so the common 100/200 is used
+The settings follow the seed authors' own pipeline code (their component
+generation and compression scripts, provided by the authors in October 2026):
+WebP is lossless at quality 100 (maximum effort), Canny uses OpenCV 100/200 on
+the full-resolution grayscale image. Two deliberate differences:
+  * The authors resize every input to 2048x1024 first; this script keeps the
+    native resolution (identical for Cityscapes, which is 2048x1024).
+  * The authors also caption with Gemma 3n (google/gemma-3n-e2b-it, a gated
+    model); it is not implemented here.
+SegFormer-B2 (the segmentation model of the paper's SAMR method) remains
+available with --seg-model nvidia/segformer-b2-finetuned-cityscapes-1024-1024.
 
 Usage
   python mmsd_sender.py --images data/coco_urban --out results/iteration1_mmsd_coco_urban.json
@@ -38,12 +42,13 @@ from pathlib import Path
 import numpy as np
 from PIL import Image
 
-SEG_MODEL = "nvidia/segformer-b2-finetuned-cityscapes-1024-1024"
+SEG_MODEL = "facebook/mask2former-swin-large-cityscapes-semantic"   # as in the authors' code
 CAP_MODEL = "Salesforce/blip-image-captioning-base"
 SEG_SIZE = (1024, 512)              # (width, height) of the transmitted map, as in the paper
-CANNY_LOW, CANNY_HIGH = 100, 200    # assumption: the paper says "default threshold settings"
-WEBP_LOSSLESS = True                # assumption, see the module docstring
-WEBP_QUALITY = 80                   # lossy quality, or compression effort when lossless
+CANNY_LOW, CANNY_HIGH = 100, 200    # as in the authors' code (the paper: "default threshold settings")
+WEBP_LOSSLESS = True                # as in the authors' code
+WEBP_QUALITY = 100                  # as in the authors' code; compression effort when lossless
+CAPTION_INPUT_SIZE = (384, 384)     # the authors resize to 384x384 before BLIP
 JPEG_BASELINE_QUALITY = 85          # same baseline as the September feasibility probe
 
 # Seed paper, Table 2 (Cityscapes, 2048x1024, mean over 500 images), for comparison.
@@ -113,20 +118,32 @@ def _sync(device):
 
 
 class Segmenter:
-    def __init__(self, device):
-        from transformers import SegformerForSemanticSegmentation, SegformerImageProcessor
+    """Cityscapes semantic segmentation: Mask2Former (default) or SegFormer."""
+
+    def __init__(self, device, model_id=None):
         self.device = device
-        self.proc = SegformerImageProcessor.from_pretrained(SEG_MODEL)
-        self.model = SegformerForSemanticSegmentation.from_pretrained(SEG_MODEL).to(device).eval()
+        self.model_id = model_id or SEG_MODEL
+        self.segformer = "segformer" in self.model_id.lower()
+        if self.segformer:
+            from transformers import SegformerForSemanticSegmentation, SegformerImageProcessor
+            self.proc = SegformerImageProcessor.from_pretrained(self.model_id)
+            self.model = SegformerForSemanticSegmentation.from_pretrained(self.model_id).to(device).eval()
+        else:
+            from transformers import AutoImageProcessor, Mask2FormerForUniversalSegmentation
+            self.proc = AutoImageProcessor.from_pretrained(self.model_id)
+            self.model = Mask2FormerForUniversalSegmentation.from_pretrained(self.model_id).to(device).eval()
 
     def __call__(self, rgb):
         import torch
         inputs = self.proc(images=rgb, return_tensors="pt").to(self.device)
         with torch.no_grad():
-            logits = self.model(**inputs).logits
-        logits = torch.nn.functional.interpolate(
-            logits, size=(rgb.height, rgb.width), mode="bilinear", align_corners=False)
-        return logits.argmax(1)[0].to("cpu").numpy().astype(np.uint8)
+            outputs = self.model(**inputs)
+        if self.segformer:
+            logits = torch.nn.functional.interpolate(
+                outputs.logits, size=(rgb.height, rgb.width), mode="bilinear", align_corners=False)
+            return logits.argmax(1)[0].to("cpu").numpy().astype(np.uint8)
+        labels = self.proc.post_process_semantic_segmentation(outputs, target_sizes=[(rgb.height, rgb.width)])[0]
+        return labels.to("cpu").numpy().astype(np.uint8)
 
 
 class Captioner:
@@ -138,9 +155,9 @@ class Captioner:
 
     def __call__(self, rgb):
         import torch
-        inputs = self.proc(images=rgb, return_tensors="pt").to(self.device)
+        inputs = self.proc(rgb.resize(CAPTION_INPUT_SIZE), return_tensors="pt").to(self.device)
         with torch.no_grad():
-            out = self.model.generate(**inputs, max_new_tokens=40)
+            out = self.model.generate(**inputs)          # default generation, as in the authors' code
         return self.proc.decode(out[0], skip_special_tokens=True).strip()
 
 
@@ -192,6 +209,7 @@ def main():
     ap.add_argument("--webp-lossy", action="store_true", help="lossy WebP instead of the default lossless")
     ap.add_argument("--warmup", type=int, default=1, help="untimed passes before measuring")
     ap.add_argument("--save-components", type=Path, default=None)
+    ap.add_argument("--seg-model", default=SEG_MODEL, help="Hugging Face id; a SegFormer id selects the SAMR model")
     args = ap.parse_args()
 
     import torch
@@ -207,7 +225,7 @@ def main():
     if args.save_components:
         args.save_components.mkdir(parents=True, exist_ok=True)
 
-    seg, cap = Segmenter(device), Captioner(device)
+    seg, cap = Segmenter(device, args.seg_model), Captioner(device)
     for _ in range(args.warmup):
         measure_image(files[0], seg, cap, device, args.webp_quality, not args.webp_lossy)
 
@@ -220,7 +238,7 @@ def main():
 
     result = {
         "config": {"images": str(args.images), "n": len(rows), "device": device,
-                   "threads": torch.get_num_threads(), "seg_model": SEG_MODEL, "cap_model": CAP_MODEL,
+                   "threads": torch.get_num_threads(), "seg_model": seg.model_id, "cap_model": CAP_MODEL,
                    "seg_size": SEG_SIZE, "webp_lossless": not args.webp_lossy, "webp_quality": args.webp_quality,
                    "canny": [CANNY_LOW, CANNY_HIGH], "jpeg_baseline_quality": JPEG_BASELINE_QUALITY,
                    "torch": torch.__version__, "transformers": transformers.__version__,

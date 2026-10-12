@@ -5,9 +5,9 @@ The seed paper says the segmentation and edge maps are "compressed using WebP"
 but not which WebP mode or quality. Payload depends heavily on that choice, so
 this script measures the same maps under several encodings:
 
-  webp_q80        lossy WebP, Pillow default quality (mmsd_sender.py default)
+  webp_q80        lossy WebP, Pillow default quality
   webp_q50        lossy WebP, quality 50
-  webp_lossless   lossless WebP
+  webp_lossless   lossless WebP at quality 100 (the authors' setting; mmsd_sender.py default)
   png             optimised PNG (palettised colour map; 1-bit edges), as in
                   the September feasibility probe
 
@@ -39,7 +39,7 @@ def seg_variants(labels):
     pal.putpalette(ms.CITYSCAPES_PALETTE.flatten().tolist())
     return {"webp_q80": _save(rgb, format="WEBP", quality=80),
             "webp_q50": _save(rgb, format="WEBP", quality=50),
-            "webp_lossless": _save(rgb, format="WEBP", lossless=True),
+            "webp_lossless": _save(rgb, format="WEBP", lossless=True, quality=100),
             "png": _save(pal, format="PNG", optimize=True)}
 
 
@@ -47,7 +47,7 @@ def edge_variants(edges):
     gray = Image.fromarray(edges, mode="L")
     return {"webp_q80": _save(gray, format="WEBP", quality=80),
             "webp_q50": _save(gray, format="WEBP", quality=50),
-            "webp_lossless": _save(gray, format="WEBP", lossless=True),
+            "webp_lossless": _save(gray, format="WEBP", lossless=True, quality=100),
             "png": _save(gray.convert("1"), format="PNG", optimize=True)}
 
 
