@@ -43,6 +43,7 @@ import numpy as np
 from PIL import Image
 
 SEG_MODEL = "facebook/mask2former-swin-large-cityscapes-semantic"   # as in the authors' code
+OPERATING_SEG_INPUT_SIZE = (512, 1024)  # project operating point (decision of 12 Oct 2026); the CLI default stays the processor resize
 CAP_MODEL = "Salesforce/blip-image-captioning-base"
 SEG_SIZE = (1024, 512)              # (width, height) of the transmitted map, as in the paper
 CANNY_LOW, CANNY_HIGH = 100, 200    # as in the authors' code (the paper: "default threshold settings")
