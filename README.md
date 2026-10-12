@@ -175,6 +175,17 @@ The payload grows little because the edge map dominates it; the segmentation map
 grows by 19% and 30%. Sender time on CPU grows 2.5x at 512x1024 and 8.6x at full
 resolution.
 
+### Settings for the project experiments (decision of 12 Oct 2026)
+
+- **Reproduction baseline** (comparisons with the seed paper): the authors'
+  configuration with the processor's default segmenter input (384x384 in
+  transformers 5.17), until the authors confirm their environment.
+- **Operating point for all project experiments** (fusion, allocation, energy):
+  `--seg-input-size 512x1024` (`mmsd_sender.OPERATING_SEG_INPUT_SIZE`).
+- **Sensitivity**: results reported at 384x384, 512x1024 and 1024x2048.
+- **Evaluation**: the Mask2Former re-segmentation judge runs at full resolution
+  (1024x2048).
+
 Reproduce:
 
 ```bash
