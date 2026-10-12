@@ -95,6 +95,28 @@ the whole pipeline stays on the GPU with VAE tiling: 79.9 s per image and 4.9 GB
 peak memory over 5 Cityscapes images, against the paper's 14.47 s on an RTX 5080
 and the authors' estimate of about 16 GB.
 
+### Palette test: ADE20K colours for the segmentation ControlNet
+
+The authors colour the segmentation map with the Cityscapes palette, while
+`sd-controlnet-seg` was trained on ADE20K-palette maps. `palette_test.py` rebuilds
+the same 5 Cityscapes images with the colours remapped to ADE20K (Cityscapes
+"train" maps to bus), with and without the edge ControlNet, and scores each
+reconstruction by re-segmenting it with Mask2Former and comparing with the
+original's labels (IoU per class):
+
+| Variant (5 images) | Pixel acc. | mIoU | Sky | Vegetation | Sidewalk | Car | Person |
+|---|---|---|---|---|---|---|---|
+| A: Cityscapes colours, edges + seg (authors) | 0.856 | 0.320 | 0.00 | 0.53 | 0.04 | 0.82 | 0.19 |
+| B: ADE20K colours, edges + seg | 0.889 | 0.421 | 0.88 | 0.83 | 0.33 | 0.85 | 0.08 |
+| C: Cityscapes colours, seg only | 0.398 | 0.081 | 0.00 | 0.00 | 0.02 | 0.43 | 0.00 |
+| D: ADE20K colours, seg only | 0.852 | 0.303 | 0.68 | 0.66 | 0.21 | 0.67 | 0.00 |
+
+With the authors' colours the receiver never renders sky, and without edges it
+collapses (C), as in the paper's no-edge ablation. ADE20K colours bring sky and
+vegetation back and make segmentation-only reconstructions usable (D), but the
+vehicles in D are unreliable (duplicated or added cars) and people get worse.
+Five images, one seed and a Mask2Former-based score: an indication, not a result.
+
 Reproduce:
 
 ```bash
@@ -110,6 +132,7 @@ mmsd_sender.py          Iteration 1: MMSD sender (segmentation, edges, caption) 
 encoding_ablation.py    Iteration 1: WebP and PNG encodings of the same maps
 canny_sweep.py          Iteration 1: edge-map size under several Canny settings
 receiver_smoke_test.py  Iteration 1: K = 1 receiver on our GPU (Gate 1)
+palette_test.py         Iteration 1: Cityscapes vs ADE20K colours for the segmentation ControlNet
 fetch_coco_urban.py     download the 25 COCO street scenes listed in probe_urban.json
 scripts/iteration1.sh   one-command reproduction of the Iteration 1 measurement
 tests/                  unit tests for the encoders (python -m pytest -q tests)
