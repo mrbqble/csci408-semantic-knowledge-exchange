@@ -5,6 +5,8 @@ Adviser: Prof. Dimitrios Zorbas · Type: R&D · Complexity: Highest
 
 **Team:** Bibol Assetbek · Temirshin Kantemirov · Yernur Kenzhaly · Zhengis Kosher
 
+> **Latest work (Nov 2026):** iteration 2, the multi-camera receiver with its evaluation, is in [`iter2/`](iter2/). Start with [`iter2/STATUS_2026-11-11.md`](iter2/STATUS_2026-11-11.md); before/after examples are in [`iter2/demo/`](iter2/demo/).
+
 ---
 
 ## Problem

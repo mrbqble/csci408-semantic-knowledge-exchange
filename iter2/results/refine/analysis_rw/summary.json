@@ -1,0 +1,62 @@
+{
+ "detector": "torchvision fasterrcnn_resnet50_fpn_v2, COCO_V1",
+ "score_min": 0.5,
+ "match_iou": 0.5,
+ "variants": {
+  "oracle_full": {
+   "n_cases": 10,
+   "mean_cars_4wheel": 20.5,
+   "mean_pedestrians": 5.0,
+   "mean_two_wheelers": 0.0,
+   "vehicle_recall": null,
+   "vehicle_precision": null,
+   "person_recall": null,
+   "person_precision": null,
+   "vehicle_count_abs_err_vs_oracle": null,
+   "person_count_abs_err_vs_oracle": null,
+   "seconds": null
+  },
+  "oracle_gen": {
+   "n_cases": 10,
+   "mean_cars_4wheel": 20.5,
+   "mean_pedestrians": 4.9,
+   "mean_two_wheelers": 0.0,
+   "vehicle_recall": null,
+   "vehicle_precision": null,
+   "person_recall": null,
+   "person_precision": null,
+   "vehicle_count_abs_err_vs_oracle": null,
+   "person_count_abs_err_vs_oracle": null,
+   "seconds": null
+  },
+  "prompt_only": {
+   "n_cases": 10,
+   "mean_cars_4wheel": 13.8,
+   "mean_pedestrians": 0.1,
+   "mean_two_wheelers": 0.1,
+   "vehicle_recall": 0.463558112368181,
+   "vehicle_precision": 0.7942857142857143,
+   "person_recall": 0.0,
+   "person_precision": 0.0,
+   "vehicle_count_abs_err_vs_oracle": 7.7,
+   "person_count_abs_err_vs_oracle": 4.8,
+   "seconds": 10.457967989999451
+  },
+  "prompt_refine": {
+   "n_cases": 10,
+   "mean_cars_4wheel": 14.4,
+   "mean_pedestrians": 0.1,
+   "mean_two_wheelers": 0.1,
+   "vehicle_recall": 0.49333768062601013,
+   "vehicle_precision": 0.807516129032258,
+   "person_recall": 0.0,
+   "person_precision": 0.0,
+   "vehicle_count_abs_err_vs_oracle": 7.9,
+   "person_count_abs_err_vs_oracle": 4.8,
+   "seconds": 13.59849393999939
+  }
+ },
+ "paired_abs_error_vs_gt": {},
+ "payload_per_camera_kb_mean": 50.68425012807377,
+ "original_photo_kb_mean": 2348.0583162568305
+}

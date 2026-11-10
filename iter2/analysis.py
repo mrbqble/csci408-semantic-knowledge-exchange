@@ -205,6 +205,7 @@ def main():
     ap.add_argument("--variants", default="k1,prompt_only,ipa_seg")
     ap.add_argument("--cases", default="", help="e.g. 1-20 (default: every case with a master view)")
     ap.add_argument("--no-overlays", action="store_true")
+    ap.add_argument("--analysis-dir", type=Path, default=None, help="write the analysis here instead of <out>/analysis")
     args = ap.parse_args()
     if sys.platform == "win32":      # keep the laptop awake during long runs
         import ctypes
@@ -212,7 +213,7 @@ def main():
 
     det = Detector()
     gt_all = gt_from_manifest(args.dataset)
-    ana = args.out / "analysis"
+    ana = args.analysis_dir or args.out / "analysis"
     ana.mkdir(parents=True, exist_ok=True)
     variants = args.variants.split(",")
     probe = variants[0]
