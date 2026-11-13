@@ -39,10 +39,12 @@ def main():
         fb = args.b / args.variant / f"case{c}.json"
         if not (fa.exists() and fb.exists()):
             continue
-        ob = vboxes(json.loads((args.a / "oracle_gen" / f"case{c}.json").read_text()))
-        for name, f in ((na, fa), (nb, fb)):
+        for name, f, ana in ((na, fa, args.a), (nb, fb, args.b)):
             row = json.loads(f.read_text())
-            vb = vboxes(row)
+            sx, sy = 1024 / row["master_size"][0], 576 / row["master_size"][1]   # both runs in the 1024x576 frame
+            to = lambda bs: [[b[0] * sx, b[1] * sy, b[2] * sx, b[3] * sy] for b in bs]
+            ob = to(vboxes(json.loads((ana / "oracle_gen" / f"case{c}.json").read_text())))   # each run against its own oracle
+            vb = to(vboxes(row))
             hit = match_flags(ob, vb)
             s = stats[name]
             for i, b in enumerate(ob):

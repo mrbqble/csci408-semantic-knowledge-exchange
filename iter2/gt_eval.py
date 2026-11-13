@@ -64,8 +64,9 @@ def evaluate(folder, manifest, want):
             continue
         row = json.loads(f.read_text())
         gt = gt_boxes(case)
-        sc = 1024 / row["master_size"][0]
-        det = [[v * sc for v in d["bbox_master_px"]] for d in row["detections"] if d["class"] in VEH]
+        sx, sy = 1024 / row["master_size"][0], 576 / row["master_size"][1]
+        det = [[d["bbox_master_px"][0] * sx, d["bbox_master_px"][1] * sy, d["bbox_master_px"][2] * sx, d["bbox_master_px"][3] * sy]
+               for d in row["detections"] if d["class"] in VEH]
         h5, h3 = hits(gt, det, 0.5), hits(gt, det, 0.3)
         res["case"].append(case["folder"])
         res["recall5"].append(float(h5.mean()) if gt else None)

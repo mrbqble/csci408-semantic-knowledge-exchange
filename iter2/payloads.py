@@ -74,6 +74,8 @@ def main():
     ap.add_argument("--out", required=True, type=Path)
     ap.add_argument("--cases", default="", help="e.g. 1-20,25 (default: all)")
     ap.add_argument("--device", default="auto")
+    ap.add_argument("--work-size", default="", help="WxH, e.g. 896x512: send the segmentation map at this size and compute the edge map on the photo resized to it "
+                    "(the receiver models' working resolution); default: map at 1024 wide, edges at full resolution")
     args = ap.parse_args()
     if sys.platform == "win32":      # keep the laptop awake during long runs
         import ctypes
@@ -86,6 +88,7 @@ def main():
     dirs = [d for d in dirs if int(d.name[4:]) in want]
     ts = timestamps(args.dataset)
     seg, cap = ms.Segmenter(device, input_size=SEG_INPUT), ms.Captioner(device)
+    work = tuple(int(v) for v in args.work_size.lower().split("x")) if args.work_size else None
     index_path = args.out / "payload_index.json"
     index = json.loads(index_path.read_text()) if index_path.exists() else {}
     warmed = False
@@ -104,8 +107,11 @@ def main():
             row = {"case": cdir.name, "cam": stem, "timestamp": ts.get(cdir.name), "source": str(img_path),
                    "w": rgb.width, "h": rgb.height, "file_b": img_path.stat().st_size}
             t = time.perf_counter(); labels = seg(rgb); ms._sync(device); row["seg_infer_ms"] = 1e3 * (time.perf_counter() - t)
-            t = time.perf_counter(); seg_b = ms.encode_segmentation(labels, size=seg_tx_size(rgb.width, rgb.height)); row["seg_encode_ms"] = 1e3 * (time.perf_counter() - t)
-            t = time.perf_counter(); edge_b = ms.encode_edges(ms.canny_edges(rgb)); row["edge_ms"] = 1e3 * (time.perf_counter() - t)
+            seg_size = work or seg_tx_size(rgb.width, rgb.height)
+            edge_src = rgb.resize(work, Image.LANCZOS) if work else rgb
+            row["work_size"] = list(work) if work else None
+            t = time.perf_counter(); seg_b = ms.encode_segmentation(labels, size=seg_size); row["seg_encode_ms"] = 1e3 * (time.perf_counter() - t)
+            t = time.perf_counter(); edge_b = ms.encode_edges(ms.canny_edges(edge_src)); row["edge_ms"] = 1e3 * (time.perf_counter() - t)
             t = time.perf_counter(); text = cap(rgb); ms._sync(device); row["caption_ms"] = 1e3 * (time.perf_counter() - t)
             cap_b = text.encode("utf-8")
             (out_dir / f"{stem}_seg.webp").write_bytes(seg_b)
