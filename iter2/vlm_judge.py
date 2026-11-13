@@ -104,6 +104,10 @@ RUNS = {  # label: (dataset, reconstruction path pattern, description)
     "rw_palette_only":     ("rw", "results/rw_ade/prompt_only/case{c}.png", "1024x576, ADE20K palette"),
     "cs_authors":          ("cs", str(ITER1 / "results" / "palette100" / "A_cs_full" / "{c}.png"), "Cityscapes (the seed paper's kind of data), authors' receiver settings: 2048x1024, Cityscapes palette, single camera (iteration 1)"),
     "cs_ade":              ("cs", str(ITER1 / "results" / "palette100" / "B_ade_full" / "{c}.png"), "Cityscapes, authors' settings with the ADE20K palette (iteration 1)"),
+    "v3_paper_k1":         ("v3", "results/v3_paper/k1/case{c}_cam1.png", "seed paper's single-camera MMSD at its own settings: reference camera only, generated at the photo's resolution (1920x1088), Cityscapes palette, map at half resolution, edges at full resolution"),
+    "v3_paper_multi":      ("v3", "results/v3_paper/prompt_only/case{c}.png", "same settings, all cameras' captions (our multi-camera receiver)"),
+    "rw_paper_k1":         ("rw", "results/rw_paper/k1/case{c}_cam1.png", "seed paper's single-camera MMSD at its own settings: reference camera only, generated at the photo's resolution (1920x1088), Cityscapes palette, map at half resolution, edges at full resolution"),
+    "rw_paper_multi":      ("rw", "results/rw_paper/prompt_only/case{c}.png", "same settings, all cameras' captions (our multi-camera receiver)"),
     "v3_identity":         ("v3", str(paths.CARLA_V3 / "case{c}" / "cam1.jpg"), "calibration: the original photo judged against itself (the judge's ceiling)"),
     "rw_identity":         ("rw", str(paths.REAL_WORLD_CORE / "case{c}" / "cam1.png"), "calibration: the original photo judged against itself (the judge's ceiling)"),
     "v3_both_fixes_cn":    ("v3", "results/v3_native_ade_cn/prompt_only/case{c}.png", "both fixes + ControlNet canny 0.7 / seg 1.5"),
@@ -117,7 +121,8 @@ GROUPS = {
               "v3_cn07_15", "v3_resolution_only", "v3_palette_only", "rw_cn07_15", "rw_resolution_only", "rw_palette_only"],
 }
 GROUPS["paper"] = ["cs_authors", "cs_ade"]
-GROUPS["all"] = GROUPS["core"] + GROUPS["extra"] + GROUPS["paper"]
+GROUPS["paper_res"] = ["rw_paper_k1", "rw_paper_multi", "v3_paper_k1", "v3_paper_multi"]
+GROUPS["all"] = GROUPS["core"] + GROUPS["extra"] + GROUPS["paper"] + GROUPS["paper_res"]
 COMPARISONS = [  # (setup B, setup A, question): reported as B minus A
     ("both_fixes", "default", "Damir's two fixes (working resolution + ADE20K palette) vs current receiver"),
     ("default", "k1", "multi-camera captions vs reference camera only (current receiver)"),
@@ -128,6 +133,9 @@ COMPARISONS = [  # (setup B, setup A, question): reported as B minus A
     ("both_fixes_cn", "both_fixes", "canny 0.7 / seg 1.5 on top of both fixes"),
     ("both_fixes_cn", "k1_both_fixes_cn", "multi-camera captions vs reference camera only (both fixes + canny 0.7 / seg 1.5)"),
     ("ade", "authors", "ADE20K palette vs Cityscapes palette (authors' settings, 2048x1024)"),
+    ("paper_multi", "paper_k1", "multi-camera captions vs the seed paper's single-camera MMSD, both at the paper's settings"),
+    ("both_fixes_cn", "paper_k1", "our best multi-camera setting vs the seed paper's single-camera MMSD at its settings"),
+    ("k1_both_fixes_cn", "paper_k1", "our best single-camera setting vs the seed paper's single-camera MMSD at its settings"),
 ]
 SEED_PAPER = "seed paper (Table 6, MMSD single camera): numbers 86.9-88.9%, positions 94.4-97.6%, joint 86.1-86.9%"
 OUT = Path("results/vlm")

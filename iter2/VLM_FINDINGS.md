@@ -4,7 +4,7 @@
 
 **What is judged:** every pair is the original photo of the reference camera (cam1) and its reconstruction. Each pair gets two separate yes/no requests: are the car numbers preserved, and are the car positions preserved. Joint means both are yes.
 
-**Coverage:** 1,926 of 1,930 pairs over 22 setups. The last 4 pairs (one or two each in `rw_default`, `rw_k1` and `v3_resolution_only`) are being retried and will update `VLM_JUDGE_REPORT.md`, which holds the full table with 95% intervals and every paired test. Raw answers are in `results/vlm/*.jsonl`.
+**Coverage:** all 1,930 pairs over 22 setups. `VLM_JUDGE_REPORT.md` holds the full table with 95% intervals and every paired test. Raw answers are in `results/vlm/*.jsonl`.
 
 ## 1. The judge is consistent
 
@@ -26,9 +26,9 @@ The original photo judged against itself scores 100% on both questions: 112 of 1
 
 | Setup | CARLA v3 (112) | Real-world (61) |
 |---|---|---|
-| Current receiver: 1024x576, Cityscapes palette, all cameras' captions | 36.6% (36.6) | 28.3% (28.3) |
-| Same, reference camera only | 33.0% (33.9) | 27.1% (27.1) |
-| Working resolution only (896x512, edges at that size) | 37.8% (39.6) | 44.3% (44.3) |
+| Current receiver: 1024x576, Cityscapes palette, all cameras' captions | 36.6% (36.6) | 27.9% (27.9) |
+| Same, reference camera only | 33.0% (33.9) | 26.2% (26.2) |
+| Working resolution only (896x512, edges at that size) | 37.5% (39.3) | 44.3% (44.3) |
 | ADE20K palette only | 37.5% (38.4) | 29.5% (29.5) |
 | Both of Damir's fixes | 43.8% (46.4) | 45.9% (47.5) |
 | Both fixes, reference camera only | 46.4% (49.1) | 54.1% (54.1) |
@@ -42,16 +42,16 @@ Positions are preserved in 87-97% of the pairs in every setup, close to the pape
 
 | Change | CARLA v3 | Real-world |
 |---|---|---|
-| Both fixes vs current receiver | +7.1 pts (p = 0.27) | **+18.3 pts (p = 0.019)** |
-| Working resolution alone | +0.9 pts (p = 1.0) | **+15.0 pts (p = 0.049)** |
-| ADE20K palette alone | +0.9 pts (p = 1.0) | +1.7 pts (p = 1.0) |
-| Canny 0.7 / seg 1.5 alone | **+12.5 pts (p = 0.016)** | +6.7 pts (p = 0.34) |
+| Both fixes vs current receiver | +7.1 pts (p = 0.27) | **+18.0 pts (p = 0.019)** |
+| Working resolution alone | +0.9 pts (p = 1.0) | **+16.4 pts (p = 0.031)** |
+| ADE20K palette alone | +0.9 pts (p = 1.0) | +1.6 pts (p = 1.0) |
+| Canny 0.7 / seg 1.5 alone | **+12.5 pts (p = 0.016)** | +6.6 pts (p = 0.34) |
 | Canny 0.7 / seg 1.5 on top of both fixes | +0.0 pts | +4.9 pts (p = 0.63) |
-| All cameras' captions vs reference camera only, current receiver | +3.6 pts (p = 0.59) | +1.7 pts (p = 1.0) |
+| All cameras' captions vs reference camera only, current receiver | +3.6 pts (p = 0.59) | +1.6 pts (p = 1.0) |
 | Same, with both fixes | -2.7 pts (p = 0.74) | -8.2 pts (p = 0.18) |
 | Same, with both fixes + canny 0.7 / seg 1.5 | -8.9 pts (p = 0.16) | -6.6 pts (p = 0.50) |
 
-- **Damir's resolution point is what matters on real photos** (+15 to +18 points). On CARLA, the ControlNet strengths matter instead (+12.5).
+- **Damir's resolution point is what matters on real photos** (+16 to +18 points). On CARLA, the ControlNet strengths matter instead (+12.5).
 - **The palette point changes nothing** on any dataset, including Cityscapes.
 - **Multi-camera captions never help in this metric.** With the fixes, the reference camera alone tends to score higher, though no difference is significant. The current receiver uses the other cameras only through their captions; under the judge, that brings no benefit.
 
