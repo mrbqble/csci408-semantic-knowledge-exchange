@@ -74,6 +74,7 @@ def main():
     ap.add_argument("--out", required=True, type=Path)
     ap.add_argument("--cases", default="", help="e.g. 1-20,25 (default: all)")
     ap.add_argument("--device", default="auto")
+    ap.add_argument("--seg-input", default="", help="HxW segmenter input, e.g. 1024x2048 (default: the iteration-1 operating point 512x1024)")
     ap.add_argument("--work-size", default="", help="WxH, e.g. 896x512: send the segmentation map at this size and compute the edge map on the photo resized to it "
                     "(the receiver models' working resolution); default: map at 1024 wide, edges at full resolution")
     args = ap.parse_args()
@@ -87,7 +88,8 @@ def main():
     want = parse_range(args.cases, max(int(d.name[4:]) for d in dirs))
     dirs = [d for d in dirs if int(d.name[4:]) in want]
     ts = timestamps(args.dataset)
-    seg, cap = ms.Segmenter(device, input_size=SEG_INPUT), ms.Captioner(device)
+    seg_input = tuple(int(v) for v in args.seg_input.lower().split("x")) if args.seg_input else SEG_INPUT
+    seg, cap = ms.Segmenter(device, input_size=seg_input), ms.Captioner(device)
     work = tuple(int(v) for v in args.work_size.lower().split("x")) if args.work_size else None
     index_path = args.out / "payload_index.json"
     index = json.loads(index_path.read_text()) if index_path.exists() else {}

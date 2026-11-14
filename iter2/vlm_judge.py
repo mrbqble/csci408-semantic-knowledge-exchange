@@ -86,6 +86,7 @@ def _cs_stems():
 
 
 DATASETS["cs"] = {"orig": lambda c: ITER1 / "data" / "cityscapes_val" / f"{c}.png", "cases": _cs_stems()}
+DATASETS["cs2"] = {"root": Path("data/cs_cases"), "cases": list(range(1, 101)), "photo": "cam1.png"}   # the same 100 images, case k = k-th stem
 
 RUNS = {  # label: (dataset, reconstruction path pattern, description)
     "v3_default":          ("v3", "results/v3/prompt_only/case{c}.png", "all cameras' captions, 1024x576, Cityscapes palette (current receiver)"),
@@ -104,6 +105,7 @@ RUNS = {  # label: (dataset, reconstruction path pattern, description)
     "rw_palette_only":     ("rw", "results/rw_ade/prompt_only/case{c}.png", "1024x576, ADE20K palette"),
     "cs_authors":          ("cs", str(ITER1 / "results" / "palette100" / "A_cs_full" / "{c}.png"), "Cityscapes (the seed paper's kind of data), authors' receiver settings: 2048x1024, Cityscapes palette, single camera (iteration 1)"),
     "cs_ade":              ("cs", str(ITER1 / "results" / "palette100" / "B_ade_full" / "{c}.png"), "Cityscapes, authors' settings with the ADE20K palette (iteration 1)"),
+    "cs2_paper_seg1024":   ("cs2", "results/cs_paper/k1/case{c}_cam1.png", "Cityscapes, seed paper's single-camera MMSD rebuilt with the segmenter at full input size (1024x2048), 2048x1024, Cityscapes palette"),
     "v3_paper_k1":         ("v3", "results/v3_paper/k1/case{c}_cam1.png", "seed paper's single-camera MMSD at its own settings: reference camera only, generated at the photo's resolution (1920x1088), Cityscapes palette, map at half resolution, edges at full resolution"),
     "v3_paper_multi":      ("v3", "results/v3_paper/prompt_only/case{c}.png", "same settings, all cameras' captions (our multi-camera receiver)"),
     "rw_paper_k1":         ("rw", "results/rw_paper/k1/case{c}_cam1.png", "seed paper's single-camera MMSD at its own settings: reference camera only, generated at the photo's resolution (1920x1088), Cityscapes palette, map at half resolution, edges at full resolution"),
@@ -122,7 +124,8 @@ GROUPS = {
 }
 GROUPS["paper"] = ["cs_authors", "cs_ade"]
 GROUPS["paper_res"] = ["rw_paper_k1", "rw_paper_multi", "v3_paper_k1", "v3_paper_multi"]
-GROUPS["all"] = GROUPS["core"] + GROUPS["extra"] + GROUPS["paper"] + GROUPS["paper_res"]
+GROUPS["cs_rerun"] = ["cs2_paper_seg1024"]
+GROUPS["all"] = GROUPS["core"] + GROUPS["extra"] + GROUPS["paper"] + GROUPS["paper_res"] + GROUPS["cs_rerun"]
 COMPARISONS = [  # (setup B, setup A, question): reported as B minus A
     ("both_fixes", "default", "Damir's two fixes (working resolution + ADE20K palette) vs current receiver"),
     ("default", "k1", "multi-camera captions vs reference camera only (current receiver)"),

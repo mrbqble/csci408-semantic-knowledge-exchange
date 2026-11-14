@@ -22,6 +22,7 @@ Reference: seed paper (Table 6, MMSD single camera): numbers 86.9-88.9%, positio
 | rw_palette_only | 1024x576, ADE20K palette | 61 | 29.5% [20-42] | 96.7% [89-99] | 29.5% [20-42] |
 | cs_authors | Cityscapes (the seed paper's kind of data), authors' receiver settings: 2048x1024, Cityscapes palette, single camera (iteration 1) | 100 | 44.0% [35-54] | 77.0% [68-84] | 41.0% [32-51] |
 | cs_ade | Cityscapes, authors' settings with the ADE20K palette (iteration 1) | 100 | 42.0% [33-52] | 82.0% [73-88] | 41.0% [32-51] |
+| cs2_paper_seg1024 | Cityscapes, seed paper's single-camera MMSD rebuilt with the segmenter at full input size (1024x2048), 2048x1024, Cityscapes palette | 98 | 42.9% [34-53] | 83.7% [75-90] | 40.8% [32-51] |
 | v3_paper_k1 | seed paper's single-camera MMSD at its own settings: reference camera only, generated at the photo's resolution (1920x1088), Cityscapes palette, map at half resolution, edges at full resolution | 112 | 57.1% [48-66] | 88.4% [81-93] | 56.2% [47-65] |
 | v3_paper_multi | same settings, all cameras' captions (our multi-camera receiver) | 112 | 50.9% [42-60] | 96.4% [91-99] | 50.0% [41-59] |
 | rw_paper_k1 | seed paper's single-camera MMSD at its own settings: reference camera only, generated at the photo's resolution (1920x1088), Cityscapes palette, map at half resolution, edges at full resolution | 61 | 77.0% [65-86] | 95.1% [87-98] | 75.4% [63-84] |

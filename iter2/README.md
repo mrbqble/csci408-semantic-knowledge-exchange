@@ -86,3 +86,5 @@ paired tests); payload sizes: `PAYLOAD_SIZES.md`.
 The key is read from `GEMINI_API_KEY` (environment or Windows user environment) or `~/.gemini_api_key`; never stored in the repo.
 Runs: `results/v3_native_ade`, `rw_native_ade` (both fixes), `*_native_cs` (resolution only), `*_ade` (palette only), `*_native_ade_cn` (both fixes +
 canny 0.7 / seg 1.5); payloads in `data/v3_native`, `data/rw_native` (not in git). Raw judge answers: `results/vlm/*.jsonl`.
+
+Cityscapes rerun (14 Nov): `data/cs_cases/case<k>/cam1.png` is the k-th image of `../iter1/results/iteration1_palette_eval_100.json` (hard links, mapping in `data/cs_cases/mapping.json`); payloads with `payloads.py --seg-input 1024x2048`, reconstructions in `results/cs_paper` (`--variants k1 --size 2048x1024`), judged as setup `cs2_paper_seg1024`.

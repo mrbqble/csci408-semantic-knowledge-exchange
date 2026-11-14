@@ -28,7 +28,7 @@ half resolution, edge map at full resolution. Single camera = Damir's MMSD; mult
 - **A likely common cause (not isolated):** at 1024x576 the full-resolution edge map is shrunk to about half, which crowds its lines into dense hatching. The 896x512 setting computes the edges at its own size, and the paper setting does not shrink them at all. Both avoid that, and the paper setting also keeps more pixels per car.
 - **The other cameras' captions do not help at any setting.** At paper settings they score 6 points lower on CARLA and 2 lower on real-world; neither difference is significant.
 - **Detector-based recall pointed the other way on resolution** (2048x1152 scored lower on 24 cases). Damir has asked us to drop detector-based evaluation, and the judge is the agreed metric.
-- **Still unexplained:** our iteration-1 reproduction on Cityscapes scored 41% at 2048x1024 (section 2), against 75% on our real-world photos at the same kind of settings. The Cityscapes street scenes, full of parked cars, may be harder to count exactly. The questions to Damir (section 6) still decide this.
+- **Still unexplained:** our iteration-1 reproduction on Cityscapes scored 41% at 2048x1024 (section 2), against 75% on our real-world photos at the same kind of settings. Rebuilding the Cityscapes payloads with the segmenter at full size did not change that (40.8%, section 2). The Cityscapes street scenes, full of parked cars, may be harder to count exactly. The questions to Damir (section 6) still decide this.
 
 ## 1. The judge is consistent
 
@@ -40,9 +40,11 @@ The original photo judged against itself scores 100% on both questions: 112 of 1
 |---|---|---|---|
 | Authors' settings (Cityscapes palette) | 44.0% | 77.0% | 41.0% [32-51] |
 | Same with the ADE20K palette | 42.0% | 82.0% | 41.0% [32-51] |
+| Same images, payloads rebuilt with the segmenter at full size (1024x2048), 2048x1024, Cityscapes palette (14 Nov; 98 of 100 judged) | 42.9% | 83.7% | 40.8% |
 | Seed paper, Table 6 (MMSD single camera) | 86.9-88.9% | 94.4-97.6% | 86.1-86.9% |
 
-- With the same judge, our reproduction of the seed method scores 41%, not about 86%. The low scores on our own datasets are therefore not caused by those datasets.
+- With the same judge, our reproduction of the seed method scores 41%, not about 86%.
+- **Not an iteration-1 artifact.** Iteration 1 made these payloads with the segmenter's 384x384 default, which costs about 19 mIoU points. Rebuilding them at full size gives the same result: 40.8% vs 41.8% joint on the same 98 images (13 better, 14 worse, McNemar p = 1.0).
 - **Likely causes:** the receiver weights (Damir: the paper's ControlNet "is trained with a different palette", while we use the public `lllyasviel` ControlNets trained on ADE20K images), the judge version, or the evaluation images.
 - **Why pairs fail:** in the judge's explanations, reconstructions both drop distant cars and invent new ones.
 
