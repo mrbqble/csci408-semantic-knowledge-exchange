@@ -1,0 +1,41 @@
+{
+ "dataset": "rw",
+ "case": "case1",
+ "devices": [
+  "cam1",
+  "cam2",
+  "cam3"
+ ],
+ "main_device": "cam1",
+ "captions": {
+  "cam1": "a street with cars parked on it",
+  "cam2": "a street with cars and a bridge in the background",
+  "cam3": "a woman is walking down the street in front of a car"
+ },
+ "global_caption": "a street with cars parked on it, a street with cars and a bridge in the background, a woman is walking down the street in front of a car",
+ "size": [
+  1920,
+  1088
+ ],
+ "palette": "Cityscapes",
+ "reconstruction": "single-camera MMSD per device: SD 1.5 + ControlNet canny + seg (lllyasviel sd15), UniPC 20 steps, guidance 7.5, seed 42",
+ "fusion": {
+  "pipeline": "StableDiffusionControlNetImg2ImgPipeline (same SD 1.5 and ControlNets)",
+  "strength": 0.5,
+  "control_image": [
+   "main edge map",
+   "main segmentation map"
+  ],
+  "ip_adapter": "h94/IP-Adapter ip-adapter_sd15",
+  "ip_adapter_scale": 1.0,
+  "ip_adapter_input": "mean CLIP image embedding of the other devices' reconstructions",
+  "prompt": "global caption"
+ },
+ "timings_s": {
+  "reconstruction_cam1_s": 76.27277210000466,
+  "reconstruction_cam2_s": 73.76335280000058,
+  "reconstruction_cam3_s": 73.89790110000467,
+  "fusion_s": 39.14209500000288,
+  "control_s": 39.241804199999024
+ }
+}

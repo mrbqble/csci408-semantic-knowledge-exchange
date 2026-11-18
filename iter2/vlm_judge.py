@@ -110,6 +110,10 @@ RUNS = {  # label: (dataset, reconstruction path pattern, description)
     "v3_paper_multi":      ("v3", "results/v3_paper/prompt_only/case{c}.png", "same settings, all cameras' captions (our multi-camera receiver)"),
     "rw_paper_k1":         ("rw", "results/rw_paper/k1/case{c}_cam1.png", "seed paper's single-camera MMSD at its own settings: reference camera only, generated at the photo's resolution (1920x1088), Cityscapes palette, map at half resolution, edges at full resolution"),
     "rw_paper_multi":      ("rw", "results/rw_paper/prompt_only/case{c}.png", "same settings, all cameras' captions (our multi-camera receiver)"),
+    "rw_fuse":             ("rw", "results/rw_fuse/fuse/case{c}.png", "Damir's fusion: img2img from the main reconstruction (paper settings, strength 0.5), main seg+edge on the ControlNets, supporting reconstructions on the IP-Adapter (scale 1.0), global caption"),
+    "rw_fuse_noip":        ("rw", "results/rw_fuse/fuse_noip/case{c}.png", "control: the same img2img pass without the IP-Adapter"),
+    "v3_fuse":             ("v3", "results/v3_fuse/fuse/case{c}.png", "Damir's fusion (as rw_fuse)"),
+    "v3_fuse_noip":        ("v3", "results/v3_fuse/fuse_noip/case{c}.png", "control: the same img2img pass without the IP-Adapter"),
     "v3_identity":         ("v3", str(paths.CARLA_V3 / "case{c}" / "cam1.jpg"), "calibration: the original photo judged against itself (the judge's ceiling)"),
     "rw_identity":         ("rw", str(paths.REAL_WORLD_CORE / "case{c}" / "cam1.png"), "calibration: the original photo judged against itself (the judge's ceiling)"),
     "v3_both_fixes_cn":    ("v3", "results/v3_native_ade_cn/prompt_only/case{c}.png", "both fixes + ControlNet canny 0.7 / seg 1.5"),
@@ -125,7 +129,8 @@ GROUPS = {
 GROUPS["paper"] = ["cs_authors", "cs_ade"]
 GROUPS["paper_res"] = ["rw_paper_k1", "rw_paper_multi", "v3_paper_k1", "v3_paper_multi"]
 GROUPS["cs_rerun"] = ["cs2_paper_seg1024"]
-GROUPS["all"] = GROUPS["core"] + GROUPS["extra"] + GROUPS["paper"] + GROUPS["paper_res"] + GROUPS["cs_rerun"]
+GROUPS["fusion"] = ["rw_fuse", "rw_fuse_noip", "v3_fuse", "v3_fuse_noip"]
+GROUPS["all"] = GROUPS["core"] + GROUPS["extra"] + GROUPS["paper"] + GROUPS["paper_res"] + GROUPS["cs_rerun"] + GROUPS["fusion"]
 COMPARISONS = [  # (setup B, setup A, question): reported as B minus A
     ("both_fixes", "default", "Damir's two fixes (working resolution + ADE20K palette) vs current receiver"),
     ("default", "k1", "multi-camera captions vs reference camera only (current receiver)"),
@@ -136,6 +141,9 @@ COMPARISONS = [  # (setup B, setup A, question): reported as B minus A
     ("both_fixes_cn", "both_fixes", "canny 0.7 / seg 1.5 on top of both fixes"),
     ("both_fixes_cn", "k1_both_fixes_cn", "multi-camera captions vs reference camera only (both fixes + canny 0.7 / seg 1.5)"),
     ("ade", "authors", "ADE20K palette vs Cityscapes palette (authors' settings, 2048x1024)"),
+    ("fuse", "paper_k1", "Damir's fusion vs the main reconstruction (his single-camera MMSD at paper settings)"),
+    ("fuse", "fuse_noip", "supporting reconstructions through the IP-Adapter vs re-denoising only"),
+    ("fuse_noip", "paper_k1", "re-denoising the main reconstruction alone (img2img, no IP-Adapter)"),
     ("paper_multi", "paper_k1", "multi-camera captions vs the seed paper's single-camera MMSD, both at the paper's settings"),
     ("both_fixes_cn", "paper_k1", "our best multi-camera setting vs the seed paper's single-camera MMSD at its settings"),
     ("k1_both_fixes_cn", "paper_k1", "our best single-camera setting vs the seed paper's single-camera MMSD at its settings"),

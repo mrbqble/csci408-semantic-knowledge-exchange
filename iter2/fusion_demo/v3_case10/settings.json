@@ -1,0 +1,44 @@
+{
+ "dataset": "v3",
+ "case": "case10",
+ "devices": [
+  "cam1",
+  "cam2",
+  "cam3",
+  "cam4"
+ ],
+ "main_device": "cam1",
+ "captions": {
+  "cam1": "a group of people walking across a street",
+  "cam2": "police car in the street",
+  "cam3": "a street scene with people walking around",
+  "cam4": "a man walking down a street next to a tall building"
+ },
+ "global_caption": "a group of people walking across a street, police car in the street, a street scene with people walking around, a man walking down a street next to a tall building",
+ "size": [
+  1920,
+  1088
+ ],
+ "palette": "Cityscapes",
+ "reconstruction": "single-camera MMSD per device: SD 1.5 + ControlNet canny + seg (lllyasviel sd15), UniPC 20 steps, guidance 7.5, seed 42",
+ "fusion": {
+  "pipeline": "StableDiffusionControlNetImg2ImgPipeline (same SD 1.5 and ControlNets)",
+  "strength": 0.5,
+  "control_image": [
+   "main edge map",
+   "main segmentation map"
+  ],
+  "ip_adapter": "h94/IP-Adapter ip-adapter_sd15",
+  "ip_adapter_scale": 1.0,
+  "ip_adapter_input": "mean CLIP image embedding of the other devices' reconstructions",
+  "prompt": "global caption"
+ },
+ "timings_s": {
+  "reconstruction_cam1_s": 74.38227980000374,
+  "reconstruction_cam2_s": 73.81155969999963,
+  "reconstruction_cam3_s": 73.8436514999994,
+  "reconstruction_cam4_s": 73.9387104999987,
+  "fusion_s": 39.22830270000122,
+  "control_s": 39.048060900000564
+ }
+}
