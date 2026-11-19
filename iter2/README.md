@@ -88,3 +88,11 @@ Runs: `results/v3_native_ade`, `rw_native_ade` (both fixes), `*_native_cs` (reso
 canny 0.7 / seg 1.5); payloads in `data/v3_native`, `data/rw_native` (not in git). Raw judge answers: `results/vlm/*.jsonl`.
 
 Cityscapes rerun (14 Nov): `data/cs_cases/case<k>/cam1.png` is the k-th image of `../iter1/results/iteration1_palette_eval_100.json` (hard links, mapping in `data/cs_cases/mapping.json`); payloads with `payloads.py --seg-input 1024x2048`, reconstructions in `results/cs_paper` (`--variants k1 --size 2048x1024`), judged as setup `cs2_paper_seg1024`.
+
+Damir's fusion (19 Nov):
+1. Supporting reconstructions: `coordinator.py --payloads data/<set>_native --out results/<set>_support --variants k1 --k1-cams all --size 896x512 --palette cs`.
+2. Fusion and control: `coordinator.py --payloads <paper payloads> --out results/<set>_fuse --variants fuse,fuse_noip --size 1920x1088 --palette cs --fuse-main results/<set>_paper/k1 --fuse-support results/<set>_support/k1`.
+3. Judge setups: `rw_fuse`, `rw_fuse_noip`, `v3_fuse`, `v3_fuse_noip`.
+
+For one case with every intermediate saved: `fusion_demo.py --dataset rw --case 1`.
+

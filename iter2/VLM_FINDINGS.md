@@ -1,10 +1,40 @@
-# VLM-judge evaluation (Damir's requirement), 13-14 Nov 2026
+# VLM-judge evaluation (Damir's requirement), 13-19 Nov 2026
 
 **Judge:** `gemma-4-31b-it` through the Gemini API. Prompts, score parsing and model are unchanged from Damir's `batch_evaluation.py` (`vlm_judge.py`).
 
 **What is judged:** every pair is the original photo of the reference camera (cam1) and its reconstruction. Each pair gets two separate yes/no requests: are the car numbers preserved, and are the car positions preserved. Joint means both are yes.
 
 **Coverage:** all 2,276 pairs over 26 setups. `VLM_JUDGE_REPORT.md` holds the full table with 95% intervals and every paired test. Raw answers are in `results/vlm/*.jsonl`.
+
+## Update 19 Nov: Damir's multi-camera fusion beats his single-camera MMSD
+
+**Pipeline** (Damir's diagram of 17 Nov; `coordinator.py` variants `fuse` / `fuse_noip`, example figures in `fusion_demo/`):
+- every device is reconstructed from its own payload;
+- the main reconstruction (cam1, at the paper settings of section 0) gets noise added (img2img, strength 0.5);
+- the main camera's segmentation and edge maps go on the ControlNets;
+- the other devices' reconstructions go on the IP-Adapter (mean CLIP embedding, scale 1.0);
+- the global caption is the prompt.
+
+The supporting reconstructions were made at 896x512 to save time. The IP-Adapter sees them at 224x224 anyway. The control is the same img2img pass without the IP-Adapter.
+
+| Joint (numbers / positions) | CARLA v3 (112) | Real-world (61) |
+|---|---|---|
+| Damir's single-camera MMSD (the main reconstruction) | 56.2% (57.1 / 88.4) | 75.4% (77.0 / 95.1) |
+| Our earlier multi-camera receiver (all cameras' captions only) | 50.0% (50.9 / 96.4) | 73.8% (73.8 / 95.1) |
+| Control: img2img second pass without the IP-Adapter | 61.6% (63.4 / 92.9) | 63.9% (63.9 / 93.4) |
+| **Damir's fusion** | **69.6%** (69.6 / 93.8) | **80.3%** (80.3 / 96.7) |
+
+| Paired test on the joint score (McNemar) | CARLA v3 | Real-world |
+|---|---|---|
+| Fusion vs single-camera MMSD | **+13.4 pts** (31 better / 16 worse, p = 0.040) | +4.9 pts (7 / 4, p = 0.55) |
+| Fusion vs control (what the supporting views add) | +8.0 pts (21 / 12, p = 0.16) | **+16.4 pts** (13 / 3, p = 0.021) |
+| Control vs single-camera MMSD (the second pass alone) | +5.4 pts (19 / 13, p = 0.38) | -11.5 pts (4 / 11, p = 0.12) |
+| Fusion vs our earlier captions-only receiver | **+19.6 pts** (35 / 13, p = 0.002) | +6.6 pts (12 / 8, p = 0.50) |
+
+- **The first multi-camera receiver that beats the single-camera baseline under the judge.** The gain is significant on CARLA and points the same way on real-world, where joint success reaches 80.3%.
+- **The supporting views always help.** The fusion beats the same pass without them on both datasets, significantly on real-world. On CARLA, part of the gain already comes from the second pass itself. On real-world the second pass alone hurts, and the supporting views more than make up for it.
+- **Trade-off.** The fusion fixes 31 of the 49 CARLA cases where the single camera fails, and breaks 16 of the 63 where it passes. On real-world it fixes 7 of 15 and breaks 4 of 46.
+- **Untuned so far:** strength 0.5 and IP-Adapter scale 1.0 (both as in Damir's code), and the 896x512 supporting reconstructions.
 
 ## 0. Headline (14 Nov): Damir's method at its own settings, on our data
 
@@ -89,6 +119,9 @@ Per camera photo (`PAYLOAD_SIZES.md`):
 - The edge map is most of it: 91% of the current payload.
 
 ## 6. Open questions for Damir
+
+**Damir's answer (18 Nov):** the paper's judge was an older Gemma model that is no longer available. That explains why our 41% on the paper's own Cityscapes images differs from the paper's 86%. Absolute numbers can only be compared under the same judge.
+
 
 1. Which ControlNet weights did the paper use: the public ones, or ones the authors trained (and on which palette)? Can we use them?
 2. Which judge model and version produced Table 6, and on which images?
