@@ -130,7 +130,17 @@ GROUPS["paper"] = ["cs_authors", "cs_ade"]
 GROUPS["paper_res"] = ["rw_paper_k1", "rw_paper_multi", "v3_paper_k1", "v3_paper_multi"]
 GROUPS["cs_rerun"] = ["cs2_paper_seg1024"]
 GROUPS["fusion"] = ["rw_fuse", "rw_fuse_noip", "v3_fuse", "v3_fuse_noip"]
-GROUPS["all"] = GROUPS["core"] + GROUPS["extra"] + GROUPS["paper"] + GROUPS["paper_res"] + GROUPS["cs_rerun"] + GROUPS["fusion"]
+# 19-20 Nov (Damir): supporting reconstructions at full resolution (paper settings), then one-factor tuning of strength and IP-Adapter scale
+for _ds in ("v3", "rw"):
+    RUNS[f"{_ds}_fuseF"] = (_ds, f"results/{_ds}_fuseF_st0.5/fuse/case{{c}}.png", "fusion with full-resolution supporting reconstructions (strength 0.5, IP scale 1.0)")
+    for _st in ("0.3", "0.4", "0.6"):
+        RUNS[f"{_ds}_fuseF_st{_st}"] = (_ds, f"results/{_ds}_fuseF_st{_st}/fuse/case{{c}}.png", f"tuning: strength {_st}, IP scale 1.0 (full-resolution supports)")
+    for _ip in ("0.5", "0.75"):
+        RUNS[f"{_ds}_fuseF_ip{_ip}"] = (_ds, f"results/{_ds}_fuseF_st0.5/fuse_s{_ip}/case{{c}}.png", f"tuning: strength 0.5, IP scale {_ip} (full-resolution supports)")
+GROUPS["fusion_full"] = ["rw_fuseF", "v3_fuseF"]
+GROUPS["tune"] = [f"{d}_fuseF_{k}" for d in ("rw", "v3") for k in ("st0.3", "st0.4", "st0.6", "ip0.5", "ip0.75")]
+GROUPS["fullres_tune"] = GROUPS["fusion_full"] + GROUPS["tune"]
+GROUPS["all"] = GROUPS["core"] + GROUPS["extra"] + GROUPS["paper"] + GROUPS["paper_res"] + GROUPS["cs_rerun"] + GROUPS["fusion"] + GROUPS["fullres_tune"]
 COMPARISONS = [  # (setup B, setup A, question): reported as B minus A
     ("both_fixes", "default", "Damir's two fixes (working resolution + ADE20K palette) vs current receiver"),
     ("default", "k1", "multi-camera captions vs reference camera only (current receiver)"),
@@ -144,6 +154,8 @@ COMPARISONS = [  # (setup B, setup A, question): reported as B minus A
     ("fuse", "paper_k1", "Damir's fusion vs the main reconstruction (his single-camera MMSD at paper settings)"),
     ("fuse", "fuse_noip", "supporting reconstructions through the IP-Adapter vs re-denoising only"),
     ("fuse_noip", "paper_k1", "re-denoising the main reconstruction alone (img2img, no IP-Adapter)"),
+    ("fuseF", "fuse", "supporting reconstructions at full resolution vs 896x512 (fusion, strength 0.5, IP scale 1.0)"),
+    ("fuseF", "paper_k1", "fusion with full-resolution supports vs the single-camera MMSD"),
     ("paper_multi", "paper_k1", "multi-camera captions vs the seed paper's single-camera MMSD, both at the paper's settings"),
     ("both_fixes_cn", "paper_k1", "our best multi-camera setting vs the seed paper's single-camera MMSD at its settings"),
     ("k1_both_fixes_cn", "paper_k1", "our best single-camera setting vs the seed paper's single-camera MMSD at its settings"),

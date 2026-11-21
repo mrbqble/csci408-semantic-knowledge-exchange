@@ -37,6 +37,18 @@ Reference: seed paper (Table 6, MMSD single camera): numbers 86.9-88.9%, positio
 | v3_k1_both_fixes_cn | reference camera only, both fixes + canny 0.7 / seg 1.5 | 112 | 55.4% [46-64] | 92.9% [87-96] | 52.7% [43-62] |
 | rw_both_fixes_cn | both fixes + ControlNet canny 0.7 / seg 1.5 | 61 | 50.8% [39-63] | 95.1% [87-98] | 50.8% [39-63] |
 | rw_k1_both_fixes_cn | reference camera only, both fixes + canny 0.7 / seg 1.5 | 61 | 57.4% [45-69] | 96.7% [89-99] | 57.4% [45-69] |
+| v3_fuseF | fusion with full-resolution supporting reconstructions (strength 0.5, IP scale 1.0) | 112 | 59.8% [51-68] | 95.5% [90-98] | 59.8% [51-68] |
+| v3_fuseF_st0.3 | tuning: strength 0.3, IP scale 1.0 (full-resolution supports) | 56 | 55.4% [42-68] | 91.1% [81-96] | 55.4% [42-68] |
+| v3_fuseF_st0.4 | tuning: strength 0.4, IP scale 1.0 (full-resolution supports) | 112 | 61.6% [52-70] | 95.5% [90-98] | 61.6% [52-70] |
+| v3_fuseF_st0.6 | tuning: strength 0.6, IP scale 1.0 (full-resolution supports) | 56 | 62.5% [49-74] | 92.9% [83-97] | 62.5% [49-74] |
+| v3_fuseF_ip0.5 | tuning: strength 0.5, IP scale 0.5 (full-resolution supports) | 56 | 57.1% [44-69] | 91.1% [81-96] | 55.4% [42-68] |
+| v3_fuseF_ip0.75 | tuning: strength 0.5, IP scale 0.75 (full-resolution supports) | 56 | 62.5% [49-74] | 91.1% [81-96] | 60.7% [48-72] |
+| rw_fuseF | fusion with full-resolution supporting reconstructions (strength 0.5, IP scale 1.0) | 61 | 85.2% [74-92] | 96.7% [89-99] | 85.2% [74-92] |
+| rw_fuseF_st0.3 | tuning: strength 0.3, IP scale 1.0 (full-resolution supports) | 30 | 86.7% [70-95] | 100.0% [89-100] | 86.7% [70-95] |
+| rw_fuseF_st0.4 | tuning: strength 0.4, IP scale 1.0 (full-resolution supports) | 61 | 78.7% [67-87] | 96.7% [89-99] | 78.7% [67-87] |
+| rw_fuseF_st0.6 | tuning: strength 0.6, IP scale 1.0 (full-resolution supports) | 30 | 90.0% [74-97] | 96.7% [83-99] | 90.0% [74-97] |
+| rw_fuseF_ip0.5 | tuning: strength 0.5, IP scale 0.5 (full-resolution supports) | 29 | 96.6% [83-99] | 96.6% [83-99] | 93.1% [78-98] |
+| rw_fuseF_ip0.75 | tuning: strength 0.5, IP scale 0.75 (full-resolution supports) | 30 | 93.3% [79-98] | 96.7% [83-99] | 93.3% [79-98] |
 
 ## Paired comparisons (same cases; McNemar exact test on the joint score)
 
@@ -53,6 +65,8 @@ Reference: seed paper (Table 6, MMSD single camera): numbers 86.9-88.9%, positio
 | v3 | Damir's fusion vs the main reconstruction (his single-camera MMSD at paper settings) | 112 | 69.6% | 56.2% | +13.4 pts | 31 / 16 | 0.040 |
 | v3 | supporting reconstructions through the IP-Adapter vs re-denoising only | 112 | 69.6% | 61.6% | +8.0 pts | 21 / 12 | 0.163 |
 | v3 | re-denoising the main reconstruction alone (img2img, no IP-Adapter) | 112 | 61.6% | 56.2% | +5.4 pts | 19 / 13 | 0.377 |
+| v3 | supporting reconstructions at full resolution vs 896x512 (fusion, strength 0.5, IP scale 1.0) | 112 | 59.8% | 69.6% | -9.8 pts | 11 / 22 | 0.080 |
+| v3 | fusion with full-resolution supports vs the single-camera MMSD | 112 | 59.8% | 56.2% | +3.6 pts | 26 / 22 | 0.665 |
 | v3 | multi-camera captions vs the seed paper's single-camera MMSD, both at the paper's settings | 112 | 50.0% | 56.2% | -6.2 pts | 13 / 20 | 0.296 |
 | v3 | our best multi-camera setting vs the seed paper's single-camera MMSD at its settings | 112 | 43.8% | 56.2% | -12.5 pts | 18 / 32 | 0.065 |
 | v3 | our best single-camera setting vs the seed paper's single-camera MMSD at its settings | 112 | 52.7% | 56.2% | -3.6 pts | 24 / 28 | 0.678 |
@@ -67,6 +81,8 @@ Reference: seed paper (Table 6, MMSD single camera): numbers 86.9-88.9%, positio
 | rw | Damir's fusion vs the main reconstruction (his single-camera MMSD at paper settings) | 61 | 80.3% | 75.4% | +4.9 pts | 7 / 4 | 0.549 |
 | rw | supporting reconstructions through the IP-Adapter vs re-denoising only | 61 | 80.3% | 63.9% | +16.4 pts | 13 / 3 | 0.021 |
 | rw | re-denoising the main reconstruction alone (img2img, no IP-Adapter) | 61 | 63.9% | 75.4% | -11.5 pts | 4 / 11 | 0.118 |
+| rw | supporting reconstructions at full resolution vs 896x512 (fusion, strength 0.5, IP scale 1.0) | 61 | 85.2% | 80.3% | +4.9 pts | 5 / 2 | 0.453 |
+| rw | fusion with full-resolution supports vs the single-camera MMSD | 61 | 85.2% | 75.4% | +9.8 pts | 8 / 2 | 0.109 |
 | rw | multi-camera captions vs the seed paper's single-camera MMSD, both at the paper's settings | 61 | 73.8% | 75.4% | -1.6 pts | 5 / 6 | 1.000 |
 | rw | our best multi-camera setting vs the seed paper's single-camera MMSD at its settings | 61 | 50.8% | 75.4% | -24.6 pts | 5 / 20 | 0.004 |
 | rw | our best single-camera setting vs the seed paper's single-camera MMSD at its settings | 61 | 57.4% | 75.4% | -18.0 pts | 7 / 18 | 0.043 |
