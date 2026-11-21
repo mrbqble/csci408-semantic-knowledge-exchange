@@ -1,0 +1,11 @@
+comparison,v3_n,v3_diff_pts,v3_better,v3_worse,v3_p,rw_n,rw_diff_pts,rw_better,rw_worse,rw_p
+Fusion (896x512 supports) vs single-camera MMSD,112,13.4,31,16,0.04,61,4.9,7,4,0.549
+Fusion vs control (what the other cameras add),112,8.0,21,12,0.163,61,16.4,13,3,0.021
+Control vs single camera (second pass alone),112,5.4,19,13,0.377,61,-11.5,4,11,0.118
+Fusion vs captions-only multi-camera,112,19.6,35,13,0.002,61,6.6,12,8,0.503
+Captions-only multi-camera vs single camera,112,-6.2,13,20,0.296,61,-1.6,5,6,1.0
+Fusion (full-res supports) vs single camera,112,3.6,26,22,0.665,61,9.8,8,2,0.109
+Full-res supports vs 896x512 supports,112,-9.8,11,22,0.08,61,4.9,5,2,0.453
+Damir's two fixes vs first receiver,112,7.1,24,16,0.268,61,18.0,15,4,0.019
+Working resolution alone vs first receiver,112,0.9,19,18,1.0,61,16.4,14,4,0.031
+ADE20K palette alone vs first receiver,112,0.9,14,13,1.0,61,1.6,4,3,1.0
