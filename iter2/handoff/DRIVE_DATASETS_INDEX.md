@@ -18,6 +18,9 @@ Updated 22 Nov 2026.
 
 **Not on the Drive:**
 - **Cityscapes:** the licence forbids redistribution; download it from cityscapes-dataset.com. The 100 images used are listed in the repository: `iter1/results/iteration1_palette_eval_100.json`, and `iter2/report_kit/1_datasets.md`.
-- **Extracted frames of every take** (`take1` ... `take7_8`, 58 GB on the laptop): reproducible from `Real-world/Video` with `extract_real_world.py` / `extract_real_world_v2.py`. Whether to upload them is pending a decision.
+- **Extracted frames of every take** (`take1`-`take3` of V1, `take4`-`take7_8` of V2; about 58 GB of PNG): **deliberately not on the Drive** (decided 22 Nov 2026). They are regenerated from `Real-world/Video` with the scripts in GitHub `tools/carla_multicam_kit/`, which need ffmpeg:
+  - V1: `python extract_real_world.py --src "<Drive>\Datasets\Real-world" --out <folder> --ffmpeg <ffmpeg bin folder>`
+  - V2: `python extract_real_world_v2.py --src "<Drive>\Datasets\Real-world\Video" --takes takes_v2.json --out <folder> --ffmpeg <ffmpeg bin folder>`
+  - The same run rebuilds `frames.csv`, `slots.csv` and the synchronised `core/` triplets. The grouped `cases_1to3phones` folders on the Drive were built from that output (`build_cases_grouped.py`, `build_cases_all_levels.py`).
 
 **Privacy:** the real-world data shows faces and licence plates. Internal use only.
