@@ -1,0 +1,94 @@
+{
+ "case": "case9",
+ "reference": "cam1",
+ "variant": "k1",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 0,
+  "bicycle": 0,
+  "car": 1,
+  "motorcycle": 0,
+  "bus": 1,
+  "truck": 0,
+  "cars_4wheel": 2,
+  "two_wheelers": 0,
+  "vehicles": 2,
+  "pedestrians": 0
+ },
+ "gt": {
+  "cars_4wheel": 10,
+  "pedestrians": 12,
+  "two_wheelers": 1
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "bus",
+   "score": 0.942,
+   "bbox_master_px": [
+    831.4,
+    307.9,
+    888.6,
+    362.8
+   ],
+   "center_master_px": [
+    860.0,
+    335.4
+   ],
+   "ground_contact_master_px": [
+    860.0,
+    362.8
+   ],
+   "bbox_reference_px": [
+    1558.8,
+    577.4,
+    1666.2,
+    680.3
+   ],
+   "center_reference_px": [
+    1612.5,
+    628.8
+   ]
+  },
+  {
+   "id": 1,
+   "class": "car",
+   "score": 0.586,
+   "bbox_master_px": [
+    814.3,
+    324.6,
+    834.2,
+    333.3
+   ],
+   "center_master_px": [
+    824.2,
+    328.9
+   ],
+   "ground_contact_master_px": [
+    824.2,
+    333.3
+   ],
+   "bbox_reference_px": [
+    1526.8,
+    608.6,
+    1564.1,
+    624.9
+   ],
+   "center_reference_px": [
+    1545.4,
+    616.7
+   ]
+  }
+ ],
+ "vehicle_recall": 0.125,
+ "vehicle_precision": 0.5,
+ "person_recall": 0.0,
+ "person_precision": null,
+ "vehicle_count_abs_err_vs_oracle": 6,
+ "person_count_abs_err_vs_oracle": 15,
+ "seconds": 10.518740900000012,
+ "prompt": "a street scene with a bus and a red bus"
+}

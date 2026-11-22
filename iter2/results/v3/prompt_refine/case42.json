@@ -1,0 +1,76 @@
+{
+ "case": "case42",
+ "variant": "prompt_refine",
+ "ip_adapter_scale": 0.0,
+ "ip_adapter_source": "none",
+ "reference": "cam1",
+ "supporting": [
+  "cam2",
+  "cam3",
+  "cam4"
+ ],
+ "timestamp": 12334,
+ "prompt": "a police car driving down a street in a city, a police car is parked on the side of a street, a city street with a lot of people walking, a group of people walking down a street",
+ "seconds": 16.278908100004628,
+ "peak_gpu_mb": 5394.6416015625,
+ "size": [
+  1024,
+  576
+ ],
+ "palette": "cs",
+ "ref_policy": "first",
+ "seed": 42,
+ "steps": 20,
+ "guidance": 7.5,
+ "donor_case": null,
+ "cn_scales": [
+  1.0,
+  1.0
+ ],
+ "edge_thr": 40,
+ "base": "existing prompt_only result",
+ "base_seconds": 11.054140200001711,
+ "refine_seconds": 5.224767900002917,
+ "refine": {
+  "n_small_blobs": 3,
+  "n_windows": 2,
+  "uncovered_blobs": 0,
+  "windows": [
+   {
+    "x0": 896,
+    "y0": 210,
+    "n_blobs": 2,
+    "blob_areas": [
+     637,
+     25
+    ],
+    "index": 0,
+    "seconds": 3.0617916000010155
+   },
+   {
+    "x0": 304,
+    "y0": 236,
+    "n_blobs": 1,
+    "blob_areas": [
+     155
+    ],
+    "index": 1,
+    "seconds": 2.162976300001901
+   }
+  ],
+  "failures": [],
+  "seconds": 5.224767900002917
+ },
+ "refine_settings": {
+  "window": 128,
+  "upscale": 4,
+  "strength": 0.5,
+  "feather_px": 12,
+  "max_windows": 8,
+  "min_area": 12,
+  "max_side": 48,
+  "prompt": "cars on a city street, realistic photo, sharp",
+  "negative_prompt": "blurry, deformed, cartoon",
+  "seed": "42 + window index"
+ }
+}

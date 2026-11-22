@@ -1,0 +1,268 @@
+{
+ "case": "case36",
+ "reference": "cam1",
+ "variant": "prompt_only",
+ "master_size": [
+  896,
+  512
+ ],
+ "counts": {
+  "person": 2,
+  "bicycle": 0,
+  "car": 5,
+  "motorcycle": 0,
+  "bus": 1,
+  "truck": 0,
+  "cars_4wheel": 6,
+  "two_wheelers": 0,
+  "vehicles": 6,
+  "pedestrians": 2
+ },
+ "gt": {
+  "cars_4wheel": 12,
+  "pedestrians": 8,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "car",
+   "score": 0.999,
+   "bbox_master_px": [
+    461.3,
+    206.8,
+    501.7,
+    233.4
+   ],
+   "center_master_px": [
+    481.5,
+    220.1
+   ],
+   "ground_contact_master_px": [
+    481.5,
+    233.4
+   ],
+   "bbox_reference_px": [
+    988.6,
+    436.3,
+    1075.0,
+    492.4
+   ],
+   "center_reference_px": [
+    1031.8,
+    464.3
+   ]
+  },
+  {
+   "id": 1,
+   "class": "car",
+   "score": 0.998,
+   "bbox_master_px": [
+    322.6,
+    213.5,
+    412.3,
+    257.5
+   ],
+   "center_master_px": [
+    367.5,
+    235.5
+   ],
+   "ground_contact_master_px": [
+    367.5,
+    257.5
+   ],
+   "bbox_reference_px": [
+    691.3,
+    450.4,
+    883.5,
+    543.1
+   ],
+   "center_reference_px": [
+    787.4,
+    496.8
+   ]
+  },
+  {
+   "id": 2,
+   "class": "person",
+   "score": 0.993,
+   "bbox_master_px": [
+    668.7,
+    212.8,
+    709.7,
+    341.9
+   ],
+   "center_master_px": [
+    689.2,
+    277.4
+   ],
+   "ground_contact_master_px": [
+    689.2,
+    341.9
+   ],
+   "bbox_reference_px": [
+    1433.0,
+    449.0,
+    1520.7,
+    721.3
+   ],
+   "center_reference_px": [
+    1476.9,
+    585.1
+   ]
+  },
+  {
+   "id": 3,
+   "class": "person",
+   "score": 0.965,
+   "bbox_master_px": [
+    301.4,
+    202.3,
+    307.5,
+    219.6
+   ],
+   "center_master_px": [
+    304.5,
+    211.0
+   ],
+   "ground_contact_master_px": [
+    304.5,
+    219.6
+   ],
+   "bbox_reference_px": [
+    645.9,
+    426.7,
+    659.0,
+    463.3
+   ],
+   "center_reference_px": [
+    652.4,
+    445.0
+   ]
+  },
+  {
+   "id": 4,
+   "class": "car",
+   "score": 0.929,
+   "bbox_master_px": [
+    2.9,
+    205.1,
+    206.3,
+    308.4
+   ],
+   "center_master_px": [
+    104.6,
+    256.7
+   ],
+   "ground_contact_master_px": [
+    104.6,
+    308.4
+   ],
+   "bbox_reference_px": [
+    6.3,
+    432.5,
+    442.1,
+    650.6
+   ],
+   "center_reference_px": [
+    224.2,
+    541.6
+   ]
+  },
+  {
+   "id": 5,
+   "class": "car",
+   "score": 0.91,
+   "bbox_master_px": [
+    652.3,
+    200.4,
+    711.6,
+    239.2
+   ],
+   "center_master_px": [
+    682.0,
+    219.8
+   ],
+   "ground_contact_master_px": [
+    682.0,
+    239.2
+   ],
+   "bbox_reference_px": [
+    1397.7,
+    422.8,
+    1524.9,
+    504.6
+   ],
+   "center_reference_px": [
+    1461.3,
+    463.7
+   ]
+  },
+  {
+   "id": 6,
+   "class": "bus",
+   "score": 0.9,
+   "bbox_master_px": [
+    0.0,
+    203.2,
+    209.4,
+    307.9
+   ],
+   "center_master_px": [
+    104.7,
+    255.6
+   ],
+   "ground_contact_master_px": [
+    104.7,
+    307.9
+   ],
+   "bbox_reference_px": [
+    0.0,
+    428.7,
+    448.6,
+    649.5
+   ],
+   "center_reference_px": [
+    224.3,
+    539.1
+   ]
+  },
+  {
+   "id": 7,
+   "class": "car",
+   "score": 0.668,
+   "bbox_master_px": [
+    595.4,
+    204.9,
+    649.9,
+    221.6
+   ],
+   "center_master_px": [
+    622.6,
+    213.2
+   ],
+   "ground_contact_master_px": [
+    622.6,
+    221.6
+   ],
+   "bbox_reference_px": [
+    1275.8,
+    432.2,
+    1392.6,
+    467.3
+   ],
+   "center_reference_px": [
+    1334.2,
+    449.8
+   ]
+  }
+ ],
+ "vehicle_recall": 0.5555555555555556,
+ "vehicle_precision": 0.8333333333333334,
+ "person_recall": 0.14285714285714285,
+ "person_precision": 0.5,
+ "vehicle_count_abs_err_vs_oracle": 3,
+ "person_count_abs_err_vs_oracle": 5,
+ "seconds": 7.758647900001961,
+ "prompt": "a red van is parked on the side of the road, a red and white van driving down a street, a street with a car driving down it, a man walking down a street in a city, a street with a bus and a car on it"
+}

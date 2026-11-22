@@ -1,0 +1,181 @@
+{
+ "case": "case77",
+ "reference": "cam1",
+ "variant": "prompt_only",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 0,
+  "bicycle": 0,
+  "car": 4,
+  "motorcycle": 0,
+  "bus": 1,
+  "truck": 0,
+  "cars_4wheel": 5,
+  "two_wheelers": 0,
+  "vehicles": 5,
+  "pedestrians": 0
+ },
+ "gt": {
+  "cars_4wheel": 8,
+  "pedestrians": 3,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "car",
+   "score": 0.999,
+   "bbox_master_px": [
+    375.3,
+    236.1,
+    478.5,
+    296.4
+   ],
+   "center_master_px": [
+    426.9,
+    266.3
+   ],
+   "ground_contact_master_px": [
+    426.9,
+    296.4
+   ],
+   "bbox_reference_px": [
+    703.6,
+    442.7,
+    897.3,
+    555.8
+   ],
+   "center_reference_px": [
+    800.4,
+    499.3
+   ]
+  },
+  {
+   "id": 1,
+   "class": "car",
+   "score": 0.997,
+   "bbox_master_px": [
+    236.4,
+    230.0,
+    287.1,
+    263.0
+   ],
+   "center_master_px": [
+    261.7,
+    246.5
+   ],
+   "ground_contact_master_px": [
+    261.7,
+    263.0
+   ],
+   "bbox_reference_px": [
+    443.2,
+    431.3,
+    538.3,
+    493.2
+   ],
+   "center_reference_px": [
+    490.8,
+    462.2
+   ]
+  },
+  {
+   "id": 2,
+   "class": "car",
+   "score": 0.995,
+   "bbox_master_px": [
+    0.1,
+    232.1,
+    52.0,
+    261.7
+   ],
+   "center_master_px": [
+    26.1,
+    246.9
+   ],
+   "ground_contact_master_px": [
+    26.1,
+    261.7
+   ],
+   "bbox_reference_px": [
+    0.3,
+    435.2,
+    97.4,
+    490.6
+   ],
+   "center_reference_px": [
+    48.8,
+    462.9
+   ]
+  },
+  {
+   "id": 3,
+   "class": "bus",
+   "score": 0.748,
+   "bbox_master_px": [
+    563.9,
+    222.4,
+    844.3,
+    355.9
+   ],
+   "center_master_px": [
+    704.1,
+    289.1
+   ],
+   "ground_contact_master_px": [
+    704.1,
+    355.9
+   ],
+   "bbox_reference_px": [
+    1057.2,
+    416.9,
+    1583.1,
+    667.3
+   ],
+   "center_reference_px": [
+    1320.2,
+    542.1
+   ]
+  },
+  {
+   "id": 4,
+   "class": "car",
+   "score": 0.728,
+   "bbox_master_px": [
+    566.0,
+    224.5,
+    856.8,
+    356.9
+   ],
+   "center_master_px": [
+    711.4,
+    290.7
+   ],
+   "ground_contact_master_px": [
+    711.4,
+    356.9
+   ],
+   "bbox_reference_px": [
+    1061.2,
+    421.0,
+    1606.6,
+    669.1
+   ],
+   "center_reference_px": [
+    1333.9,
+    545.1
+   ]
+  }
+ ],
+ "vehicle_recall": 0.6666666666666666,
+ "vehicle_precision": 0.8,
+ "person_recall": 0.0,
+ "person_precision": null,
+ "vehicle_count_abs_err_vs_oracle": 1,
+ "person_count_abs_err_vs_oracle": 6,
+ "seconds": 10.467921799998294,
+ "prompt": "a small green van, a car parked on the side of a road, a yellow van is parked on the side of the road"
+}

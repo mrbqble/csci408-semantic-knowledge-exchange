@@ -1,0 +1,268 @@
+{
+ "case": "case4",
+ "reference": "cam1",
+ "variant": "prompt_only",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 3,
+  "bicycle": 0,
+  "car": 5,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 0,
+  "cars_4wheel": 5,
+  "two_wheelers": 0,
+  "vehicles": 5,
+  "pedestrians": 3
+ },
+ "gt": {
+  "cars_4wheel": 9,
+  "pedestrians": 12,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "car",
+   "score": 1.0,
+   "bbox_master_px": [
+    501.8,
+    267.1,
+    682.6,
+    427.4
+   ],
+   "center_master_px": [
+    592.2,
+    347.3
+   ],
+   "ground_contact_master_px": [
+    592.2,
+    427.4
+   ],
+   "bbox_reference_px": [
+    940.9,
+    500.9,
+    1279.9,
+    801.4
+   ],
+   "center_reference_px": [
+    1110.4,
+    651.1
+   ]
+  },
+  {
+   "id": 1,
+   "class": "person",
+   "score": 0.983,
+   "bbox_master_px": [
+    356.0,
+    242.1,
+    383.3,
+    325.7
+   ],
+   "center_master_px": [
+    369.6,
+    283.9
+   ],
+   "ground_contact_master_px": [
+    369.6,
+    325.7
+   ],
+   "bbox_reference_px": [
+    667.4,
+    453.9,
+    718.6,
+    610.8
+   ],
+   "center_reference_px": [
+    693.0,
+    532.4
+   ]
+  },
+  {
+   "id": 2,
+   "class": "car",
+   "score": 0.973,
+   "bbox_master_px": [
+    1.6,
+    485.3,
+    111.3,
+    572.1
+   ],
+   "center_master_px": [
+    56.4,
+    528.7
+   ],
+   "ground_contact_master_px": [
+    56.4,
+    572.1
+   ],
+   "bbox_reference_px": [
+    3.1,
+    909.9,
+    208.6,
+    1072.7
+   ],
+   "center_reference_px": [
+    105.8,
+    991.3
+   ]
+  },
+  {
+   "id": 3,
+   "class": "car",
+   "score": 0.935,
+   "bbox_master_px": [
+    418.2,
+    253.6,
+    496.1,
+    322.9
+   ],
+   "center_master_px": [
+    457.1,
+    288.3
+   ],
+   "ground_contact_master_px": [
+    457.1,
+    322.9
+   ],
+   "bbox_reference_px": [
+    784.2,
+    475.5,
+    930.1,
+    605.5
+   ],
+   "center_reference_px": [
+    857.1,
+    540.5
+   ]
+  },
+  {
+   "id": 4,
+   "class": "person",
+   "score": 0.898,
+   "bbox_master_px": [
+    303.0,
+    246.4,
+    327.5,
+    327.2
+   ],
+   "center_master_px": [
+    315.3,
+    286.8
+   ],
+   "ground_contact_master_px": [
+    315.3,
+    327.2
+   ],
+   "bbox_reference_px": [
+    568.2,
+    462.0,
+    614.1,
+    613.6
+   ],
+   "center_reference_px": [
+    591.1,
+    537.8
+   ]
+  },
+  {
+   "id": 5,
+   "class": "car",
+   "score": 0.737,
+   "bbox_master_px": [
+    495.2,
+    275.8,
+    549.8,
+    311.6
+   ],
+   "center_master_px": [
+    522.5,
+    293.7
+   ],
+   "ground_contact_master_px": [
+    522.5,
+    311.6
+   ],
+   "bbox_reference_px": [
+    928.5,
+    517.1,
+    1031.0,
+    584.3
+   ],
+   "center_reference_px": [
+    979.7,
+    550.7
+   ]
+  },
+  {
+   "id": 6,
+   "class": "car",
+   "score": 0.631,
+   "bbox_master_px": [
+    559.3,
+    260.3,
+    646.6,
+    285.4
+   ],
+   "center_master_px": [
+    602.9,
+    272.9
+   ],
+   "ground_contact_master_px": [
+    602.9,
+    285.4
+   ],
+   "bbox_reference_px": [
+    1048.6,
+    488.1,
+    1212.3,
+    535.1
+   ],
+   "center_reference_px": [
+    1130.5,
+    511.6
+   ]
+  },
+  {
+   "id": 7,
+   "class": "person",
+   "score": 0.58,
+   "bbox_master_px": [
+    397.9,
+    241.0,
+    420.4,
+    320.8
+   ],
+   "center_master_px": [
+    409.1,
+    280.9
+   ],
+   "ground_contact_master_px": [
+    409.1,
+    320.8
+   ],
+   "bbox_reference_px": [
+    746.0,
+    451.8,
+    788.3,
+    601.5
+   ],
+   "center_reference_px": [
+    767.1,
+    526.6
+   ]
+  }
+ ],
+ "vehicle_recall": 0.2857142857142857,
+ "vehicle_precision": 0.4,
+ "person_recall": 0.13333333333333333,
+ "person_precision": 0.6666666666666666,
+ "vehicle_count_abs_err_vs_oracle": 2,
+ "person_count_abs_err_vs_oracle": 12,
+ "seconds": 10.331221400001596,
+ "prompt": "the crew in need for speed, a city street, a city street with cars and pedestrians, a police car is stopped at a crosswalk, a city street with a police car and a police car, a man walking across a crosswalk in a city"
+}

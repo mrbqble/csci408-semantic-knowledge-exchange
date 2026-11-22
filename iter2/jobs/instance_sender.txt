@@ -1,0 +1,19 @@
+112 cases, 917 ground-truth vehicles; categories from the transmitted semantic map: own blob 209, merged blob 567, no blob 141
+method                             rec@.5   @.3  prec   <24 px 24-48 px48-120 px  >120 px   own  merged  noblob   MAE  bias  in±1  B/photo     ms  Mparam
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/758 [00:00<?, ?it/s]Loading weights:   8%|▊         | 57/758 [00:00<00:01, 565.50it/s]Loading weights:  15%|█▌        | 114/758 [00:00<00:01, 337.28it/s]Loading weights:  20%|██        | 153/758 [00:00<00:02, 269.97it/s]Loading weights:  24%|██▍       | 184/758 [00:00<00:02, 207.19it/s]Loading weights: 100%|██████████| 758/758 [00:00<00:00, 912.84it/s]
+[transformers] [1mMask2FormerForUniversalSegmentation LOAD REPORT[0m from: facebook/mask2former-swin-large-cityscapes-instance
+Key                                                                                                                      | Status     | 
+-------------------------------------------------------------------------------------------------------------------------+------------+-
+model.pixel_level_module.encoder.swin.encoder.layers.{0, 1, 2, 3}.blocks.{0...17}.attention.self.relative_position_index | UNEXPECTED | 
+model.pixel_level_module.encoder.swin.layernorm.bias                                                                     | MISSING    | 
+model.pixel_level_module.encoder.swin.layernorm.weight                                                                   | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+Mask2Former instance 512x1024        0.68  0.78  0.54     0.39     0.64     0.85     0.95  0.84    0.75    0.12  3.00  2.12  0.29       93    315     216
+Mask2Former instance 768x1376        0.70  0.77  0.59     0.52     0.65     0.88     0.85  0.85    0.78    0.20  2.36  1.52  0.43       87    548     216
+Faster R-CNN MobileNetV3 800px       0.55  0.59  0.76     0.07     0.50     0.84     1.00  0.73    0.60    0.11  2.69 -2.26  0.29       53     35      19
+Faster R-CNN MobileNetV3 480px       0.38  0.40  0.70     0.01     0.19     0.71     0.99  0.53    0.40    0.05  3.96 -3.79  0.22       40     36      19
+Faster R-CNN ResNet50 v2 800px       0.78  0.80  0.85     0.50     0.76     0.94     1.00  0.94    0.83    0.33  1.46 -0.62  0.56       68     97      44

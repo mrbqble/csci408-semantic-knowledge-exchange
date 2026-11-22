@@ -1,0 +1,65 @@
+{
+ "case": "case39",
+ "reference": "cam1",
+ "variant": "k1",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 1,
+  "bicycle": 0,
+  "car": 0,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 0,
+  "cars_4wheel": 0,
+  "two_wheelers": 0,
+  "vehicles": 0,
+  "pedestrians": 1
+ },
+ "gt": {
+  "cars_4wheel": 6,
+  "pedestrians": 9,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "person",
+   "score": 0.539,
+   "bbox_master_px": [
+    430.5,
+    238.0,
+    439.1,
+    260.9
+   ],
+   "center_master_px": [
+    434.8,
+    249.4
+   ],
+   "ground_contact_master_px": [
+    434.8,
+    260.9
+   ],
+   "bbox_reference_px": [
+    807.2,
+    446.2,
+    823.3,
+    489.1
+   ],
+   "center_reference_px": [
+    815.3,
+    467.7
+   ]
+  }
+ ],
+ "vehicle_recall": 0.0,
+ "vehicle_precision": null,
+ "person_recall": 0.0,
+ "person_precision": 0.0,
+ "vehicle_count_abs_err_vs_oracle": 5,
+ "person_count_abs_err_vs_oracle": 19,
+ "seconds": 10.889793700000155,
+ "prompt": "a street scene with a cart of food"
+}

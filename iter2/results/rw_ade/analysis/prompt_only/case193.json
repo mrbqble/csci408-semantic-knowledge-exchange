@@ -1,0 +1,119 @@
+{
+ "case": "case193",
+ "reference": "cam1",
+ "variant": "prompt_only",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 1,
+  "bicycle": 0,
+  "car": 0,
+  "motorcycle": 0,
+  "bus": 2,
+  "truck": 0,
+  "cars_4wheel": 2,
+  "two_wheelers": 0,
+  "vehicles": 2,
+  "pedestrians": 1
+ },
+ "gt": null,
+ "detections": [
+  {
+   "id": 0,
+   "class": "bus",
+   "score": 0.997,
+   "bbox_master_px": [
+    181.5,
+    0.0,
+    1020.4,
+    576.0
+   ],
+   "center_master_px": [
+    601.0,
+    288.0
+   ],
+   "ground_contact_master_px": [
+    601.0,
+    576.0
+   ],
+   "bbox_reference_px": [
+    340.4,
+    0.0,
+    1913.3,
+    1080.0
+   ],
+   "center_reference_px": [
+    1126.8,
+    540.0
+   ]
+  },
+  {
+   "id": 1,
+   "class": "bus",
+   "score": 0.966,
+   "bbox_master_px": [
+    0.0,
+    4.5,
+    358.7,
+    573.7
+   ],
+   "center_master_px": [
+    179.3,
+    289.1
+   ],
+   "ground_contact_master_px": [
+    179.3,
+    573.7
+   ],
+   "bbox_reference_px": [
+    0.0,
+    8.4,
+    672.5,
+    1075.6
+   ],
+   "center_reference_px": [
+    336.2,
+    542.0
+   ]
+  },
+  {
+   "id": 2,
+   "class": "person",
+   "score": 0.663,
+   "bbox_master_px": [
+    722.2,
+    226.5,
+    763.8,
+    304.0
+   ],
+   "center_master_px": [
+    743.0,
+    265.3
+   ],
+   "ground_contact_master_px": [
+    743.0,
+    304.0
+   ],
+   "bbox_reference_px": [
+    1354.1,
+    424.7,
+    1432.1,
+    570.0
+   ],
+   "center_reference_px": [
+    1393.1,
+    497.4
+   ]
+  }
+ ],
+ "vehicle_recall": 1.0,
+ "vehicle_precision": 0.5,
+ "person_recall": 0.0,
+ "person_precision": 0.0,
+ "vehicle_count_abs_err_vs_oracle": 1,
+ "person_count_abs_err_vs_oracle": 2,
+ "seconds": 10.986027799997828,
+ "prompt": "a bus parked in a parking with a person standing next to it, a busy street with cars and buses on it, a busy intersection with a bus and cars"
+}

@@ -1,0 +1,65 @@
+{
+ "case": "case39",
+ "reference": "cam1",
+ "variant": "prompt_refine",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 0,
+  "bicycle": 0,
+  "car": 1,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 0,
+  "cars_4wheel": 1,
+  "two_wheelers": 0,
+  "vehicles": 1,
+  "pedestrians": 0
+ },
+ "gt": {
+  "cars_4wheel": 6,
+  "pedestrians": 9,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "car",
+   "score": 0.737,
+   "bbox_master_px": [
+    587.9,
+    285.3,
+    667.4,
+    330.7
+   ],
+   "center_master_px": [
+    627.6,
+    308.0
+   ],
+   "ground_contact_master_px": [
+    627.6,
+    330.7
+   ],
+   "bbox_reference_px": [
+    1102.3,
+    534.9,
+    1251.4,
+    620.0
+   ],
+   "center_reference_px": [
+    1176.8,
+    577.5
+   ]
+  }
+ ],
+ "vehicle_recall": 0.2,
+ "vehicle_precision": 1.0,
+ "person_recall": 0.0,
+ "person_precision": null,
+ "vehicle_count_abs_err_vs_oracle": 4,
+ "person_count_abs_err_vs_oracle": 20,
+ "seconds": 29.7403396000027,
+ "prompt": "a street scene with a cart of food, a group of people walking across a street, a man walking across a street in a city, a couple walking across a crosswalk in a city, a person walking across a crosswalk in a city"
+}

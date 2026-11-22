@@ -1,0 +1,5 @@
+iter2: Damir's multi-camera fusion pipeline (diagram of 17 Nov)
+
+- coordinator.py: variants fuse / fuse_noip (img2img from the main reconstruction, strength 0.5; ControlNets on main seg + edge; IP-Adapter on the other devices' reconstructions; global caption)
+- fusion_demo.py: the whole pipeline for one case with every intermediate; examples in iter2/fusion_demo (real-world case 1, CARLA case 10)
+- vlm_judge.py: fusion setups for the judge

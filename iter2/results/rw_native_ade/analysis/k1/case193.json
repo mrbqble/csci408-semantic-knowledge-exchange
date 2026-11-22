@@ -1,0 +1,90 @@
+{
+ "case": "case193",
+ "reference": "cam1",
+ "variant": "k1",
+ "master_size": [
+  896,
+  512
+ ],
+ "counts": {
+  "person": 1,
+  "bicycle": 0,
+  "car": 0,
+  "motorcycle": 0,
+  "bus": 1,
+  "truck": 0,
+  "cars_4wheel": 1,
+  "two_wheelers": 0,
+  "vehicles": 1,
+  "pedestrians": 1
+ },
+ "gt": null,
+ "detections": [
+  {
+   "id": 0,
+   "class": "bus",
+   "score": 0.996,
+   "bbox_master_px": [
+    187.5,
+    0.0,
+    896.0,
+    510.4
+   ],
+   "center_master_px": [
+    541.7,
+    255.2
+   ],
+   "ground_contact_master_px": [
+    541.7,
+    510.4
+   ],
+   "bbox_reference_px": [
+    401.7,
+    0.0,
+    1920.0,
+    1076.6
+   ],
+   "center_reference_px": [
+    1160.9,
+    538.3
+   ]
+  },
+  {
+   "id": 1,
+   "class": "person",
+   "score": 0.569,
+   "bbox_master_px": [
+    836.7,
+    188.2,
+    888.5,
+    244.1
+   ],
+   "center_master_px": [
+    862.6,
+    216.2
+   ],
+   "ground_contact_master_px": [
+    862.6,
+    244.1
+   ],
+   "bbox_reference_px": [
+    1792.9,
+    397.1,
+    1904.0,
+    514.8
+   ],
+   "center_reference_px": [
+    1848.5,
+    455.9
+   ]
+  }
+ ],
+ "vehicle_recall": 1.0,
+ "vehicle_precision": 1.0,
+ "person_recall": 0.0,
+ "person_precision": 0.0,
+ "vehicle_count_abs_err_vs_oracle": 0,
+ "person_count_abs_err_vs_oracle": 2,
+ "seconds": 7.762561399998958,
+ "prompt": "a bus parked in a parking with a person standing next to it"
+}

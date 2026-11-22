@@ -1,0 +1,152 @@
+{
+ "case": "case66",
+ "reference": "cam1",
+ "variant": "k1",
+ "master_size": [
+  896,
+  512
+ ],
+ "counts": {
+  "person": 2,
+  "bicycle": 0,
+  "car": 2,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 0,
+  "cars_4wheel": 2,
+  "two_wheelers": 0,
+  "vehicles": 2,
+  "pedestrians": 2
+ },
+ "gt": {
+  "cars_4wheel": 9,
+  "pedestrians": 7,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "car",
+   "score": 1.0,
+   "bbox_master_px": [
+    0.5,
+    228.6,
+    282.0,
+    349.9
+   ],
+   "center_master_px": [
+    141.2,
+    289.3
+   ],
+   "ground_contact_master_px": [
+    141.2,
+    349.9
+   ],
+   "bbox_reference_px": [
+    1.0,
+    482.3,
+    604.2,
+    738.2
+   ],
+   "center_reference_px": [
+    302.6,
+    610.2
+   ]
+  },
+  {
+   "id": 1,
+   "class": "car",
+   "score": 0.998,
+   "bbox_master_px": [
+    303.5,
+    216.9,
+    471.2,
+    294.0
+   ],
+   "center_master_px": [
+    387.3,
+    255.4
+   ],
+   "ground_contact_master_px": [
+    387.3,
+    294.0
+   ],
+   "bbox_reference_px": [
+    650.3,
+    457.5,
+    1009.6,
+    620.1
+   ],
+   "center_reference_px": [
+    830.0,
+    538.8
+   ]
+  },
+  {
+   "id": 2,
+   "class": "person",
+   "score": 0.995,
+   "bbox_master_px": [
+    842.5,
+    202.0,
+    865.4,
+    273.1
+   ],
+   "center_master_px": [
+    854.0,
+    237.6
+   ],
+   "ground_contact_master_px": [
+    854.0,
+    273.1
+   ],
+   "bbox_reference_px": [
+    1805.5,
+    426.0,
+    1854.3,
+    576.2
+   ],
+   "center_reference_px": [
+    1829.9,
+    501.1
+   ]
+  },
+  {
+   "id": 3,
+   "class": "person",
+   "score": 0.961,
+   "bbox_master_px": [
+    801.9,
+    202.2,
+    831.9,
+    280.4
+   ],
+   "center_master_px": [
+    816.9,
+    241.3
+   ],
+   "ground_contact_master_px": [
+    816.9,
+    280.4
+   ],
+   "bbox_reference_px": [
+    1718.4,
+    426.6,
+    1782.6,
+    591.5
+   ],
+   "center_reference_px": [
+    1750.5,
+    509.0
+   ]
+  }
+ ],
+ "vehicle_recall": 0.2222222222222222,
+ "vehicle_precision": 1.0,
+ "person_recall": 0.06666666666666667,
+ "person_precision": 0.5,
+ "vehicle_count_abs_err_vs_oracle": 7,
+ "person_count_abs_err_vs_oracle": 13,
+ "seconds": 10.555949599998712,
+ "prompt": "a scene of a city"
+}

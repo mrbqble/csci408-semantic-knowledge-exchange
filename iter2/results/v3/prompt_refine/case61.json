@@ -1,0 +1,84 @@
+{
+ "case": "case61",
+ "variant": "prompt_refine",
+ "ip_adapter_scale": 0.0,
+ "ip_adapter_source": "none",
+ "reference": "cam1",
+ "supporting": [
+  "cam2",
+  "cam3"
+ ],
+ "timestamp": 14206,
+ "prompt": "a yellow car parked on the side of a street, a scene of a city, a large building",
+ "seconds": 16.99615359999916,
+ "peak_gpu_mb": 5394.6416015625,
+ "size": [
+  1024,
+  576
+ ],
+ "palette": "cs",
+ "ref_policy": "first",
+ "seed": 42,
+ "steps": 20,
+ "guidance": 7.5,
+ "donor_case": null,
+ "cn_scales": [
+  1.0,
+  1.0
+ ],
+ "edge_thr": 40,
+ "base": "existing prompt_only result",
+ "base_seconds": 10.465182700001606,
+ "refine_seconds": 6.5309708999975555,
+ "refine": {
+  "n_small_blobs": 3,
+  "n_windows": 3,
+  "uncovered_blobs": 0,
+  "windows": [
+   {
+    "x0": 31,
+    "y0": 133,
+    "n_blobs": 1,
+    "blob_areas": [
+     555
+    ],
+    "index": 0,
+    "seconds": 2.169039899999916
+   },
+   {
+    "x0": 190,
+    "y0": 133,
+    "n_blobs": 1,
+    "blob_areas": [
+     130
+    ],
+    "index": 1,
+    "seconds": 2.185027599998648
+   },
+   {
+    "x0": 773,
+    "y0": 159,
+    "n_blobs": 1,
+    "blob_areas": [
+     23
+    ],
+    "index": 2,
+    "seconds": 2.1769033999989915
+   }
+  ],
+  "failures": [],
+  "seconds": 6.5309708999975555
+ },
+ "refine_settings": {
+  "window": 128,
+  "upscale": 4,
+  "strength": 0.5,
+  "feather_px": 12,
+  "max_windows": 8,
+  "min_area": 12,
+  "max_side": 48,
+  "prompt": "cars on a city street, realistic photo, sharp",
+  "negative_prompt": "blurry, deformed, cartoon",
+  "seed": "42 + window index"
+ }
+}

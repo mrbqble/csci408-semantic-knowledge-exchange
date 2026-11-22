@@ -1,0 +1,268 @@
+{
+ "case": "case44",
+ "reference": "cam1",
+ "variant": "prompt_only",
+ "master_size": [
+  1280,
+  704
+ ],
+ "counts": {
+  "person": 5,
+  "bicycle": 0,
+  "car": 2,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 1,
+  "cars_4wheel": 3,
+  "two_wheelers": 0,
+  "vehicles": 3,
+  "pedestrians": 5
+ },
+ "gt": {
+  "cars_4wheel": 4,
+  "pedestrians": 6,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "truck",
+   "score": 0.977,
+   "bbox_master_px": [
+    875.2,
+    228.0,
+    1280.0,
+    448.3
+   ],
+   "center_master_px": [
+    1077.6,
+    338.1
+   ],
+   "ground_contact_master_px": [
+    1077.6,
+    448.3
+   ],
+   "bbox_reference_px": [
+    1312.8,
+    349.8,
+    1920.0,
+    687.7
+   ],
+   "center_reference_px": [
+    1616.4,
+    518.7
+   ]
+  },
+  {
+   "id": 1,
+   "class": "person",
+   "score": 0.968,
+   "bbox_master_px": [
+    567.0,
+    272.9,
+    582.1,
+    300.8
+   ],
+   "center_master_px": [
+    574.5,
+    286.9
+   ],
+   "ground_contact_master_px": [
+    574.5,
+    300.8
+   ],
+   "bbox_reference_px": [
+    850.4,
+    418.7,
+    873.1,
+    461.5
+   ],
+   "center_reference_px": [
+    861.8,
+    440.1
+   ]
+  },
+  {
+   "id": 2,
+   "class": "person",
+   "score": 0.915,
+   "bbox_master_px": [
+    548.9,
+    270.9,
+    558.6,
+    295.0
+   ],
+   "center_master_px": [
+    553.7,
+    283.0
+   ],
+   "ground_contact_master_px": [
+    553.7,
+    295.0
+   ],
+   "bbox_reference_px": [
+    823.3,
+    415.6,
+    837.9,
+    452.5
+   ],
+   "center_reference_px": [
+    830.6,
+    434.1
+   ]
+  },
+  {
+   "id": 3,
+   "class": "car",
+   "score": 0.89,
+   "bbox_master_px": [
+    175.3,
+    266.7,
+    223.5,
+    300.8
+   ],
+   "center_master_px": [
+    199.4,
+    283.7
+   ],
+   "ground_contact_master_px": [
+    199.4,
+    300.8
+   ],
+   "bbox_reference_px": [
+    262.9,
+    409.1,
+    335.2,
+    461.4
+   ],
+   "center_reference_px": [
+    299.0,
+    435.2
+   ]
+  },
+  {
+   "id": 4,
+   "class": "car",
+   "score": 0.823,
+   "bbox_master_px": [
+    611.0,
+    254.2,
+    656.1,
+    291.7
+   ],
+   "center_master_px": [
+    633.6,
+    273.0
+   ],
+   "ground_contact_master_px": [
+    633.6,
+    291.7
+   ],
+   "bbox_reference_px": [
+    916.4,
+    390.0,
+    984.2,
+    447.6
+   ],
+   "center_reference_px": [
+    950.3,
+    418.8
+   ]
+  },
+  {
+   "id": 5,
+   "class": "person",
+   "score": 0.726,
+   "bbox_master_px": [
+    846.5,
+    310.0,
+    860.5,
+    347.7
+   ],
+   "center_master_px": [
+    853.5,
+    328.8
+   ],
+   "ground_contact_master_px": [
+    853.5,
+    347.7
+   ],
+   "bbox_reference_px": [
+    1269.8,
+    475.6,
+    1290.7,
+    533.4
+   ],
+   "center_reference_px": [
+    1280.2,
+    504.5
+   ]
+  },
+  {
+   "id": 6,
+   "class": "person",
+   "score": 0.634,
+   "bbox_master_px": [
+    14.5,
+    302.2,
+    27.4,
+    337.6
+   ],
+   "center_master_px": [
+    21.0,
+    319.9
+   ],
+   "ground_contact_master_px": [
+    21.0,
+    337.6
+   ],
+   "bbox_reference_px": [
+    21.7,
+    463.6,
+    41.1,
+    517.9
+   ],
+   "center_reference_px": [
+    31.4,
+    490.8
+   ]
+  },
+  {
+   "id": 7,
+   "class": "person",
+   "score": 0.627,
+   "bbox_master_px": [
+    381.6,
+    260.5,
+    400.6,
+    297.0
+   ],
+   "center_master_px": [
+    391.1,
+    278.7
+   ],
+   "ground_contact_master_px": [
+    391.1,
+    297.0
+   ],
+   "bbox_reference_px": [
+    572.4,
+    399.6,
+    600.8,
+    455.6
+   ],
+   "center_reference_px": [
+    586.6,
+    427.6
+   ]
+  }
+ ],
+ "vehicle_recall": 0.25,
+ "vehicle_precision": 0.3333333333333333,
+ "person_recall": 0.1,
+ "person_precision": 0.2,
+ "vehicle_count_abs_err_vs_oracle": 1,
+ "person_count_abs_err_vs_oracle": 5,
+ "seconds": 19.36194020000039,
+ "prompt": "a coca truck is parked on the side of the road, a woman in a red dress walking down a street, a red bus is parked on the street, a city street with a red truck parked on the side, a group of people walking down a street, a truck driving down a city street"
+}

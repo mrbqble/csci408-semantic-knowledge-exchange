@@ -1,0 +1,15 @@
+START Sun 10/25/2026 18:48:38.26 
+INFO:  Found the required file in cache!  Carla/Maps/Nav/Town10HD_Opt.bin 
+environment-object index: 48 objects
+INFO:  Found the required file in cache!  Carla/Maps/TM/Town10HD_Opt.bin 
+3 cases to generate over 3 of 9 junctions
+--- junction 0 at (-47, -60): cases [1]
+case 1: 3 cameras, junction 0, ClearNoon, targets 6/6, cars [7, 5, 6] peds [5, 11, 7] kinds ['free', 'free', 'corner']
+--- junction 1 at (43, 65): cases [2]
+case 2: no valid layout for 4 cameras (attempt 1; rejected {'cars_out_of_range': 67, 'near_solid': 40, 'vehicle_in_lens': 2})
+case 2: no valid layout for 4 cameras (attempt 2; rejected {'cars_out_of_range': 47, 'near_solid': 40, 'vehicle_in_lens': 9})
+case 2: 4 cameras, junction 1, CloudyNoon, targets 5/10, cars [4, 7, 3, 3] peds [8, 3, 9, 6] kinds ['side', 'arm', 'side', 'free']
+--- junction 2 at (-48, 20): cases [3]
+case 3: no valid layout for 5 cameras (attempt 1; rejected {'pedestrians_out_of_range': 44, 'vehicle_in_front': 19, 'cars_off_target': 6, 'cars_out_of_range': 13, 'near_solid': 10})
+case 3: 5 cameras, junction 2, WetNoon, targets 16/5, cars [7, 9, 9, 11, 12] peds [5, 5, 6, 5, 3] kinds ['centre', 'corner', 'arm', 'arm', 'corner']
+done: 3 cases, 12 photos in C:\carla_multicam_kit\output\v3_smoke; cars {'mean': 6.92, 'min': 3, 'max': 12}, pedestrians {'mean': 6.08, 'min': 3, 'max': 11}, height {'mean': 1.97, 'min': 1.79, 'max': 2.1}, kinds {'free': 3, 'corner': 3, 'side': 2, 'arm': 3, 'centre': 1}

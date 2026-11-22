@@ -1,0 +1,210 @@
+{
+ "case": "case4",
+ "reference": "cam1",
+ "variant": "prompt_only",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 1,
+  "bicycle": 1,
+  "car": 4,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 0,
+  "cars_4wheel": 4,
+  "two_wheelers": 1,
+  "vehicles": 4,
+  "pedestrians": 1
+ },
+ "gt": {
+  "cars_4wheel": 9,
+  "pedestrians": 12,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "car",
+   "score": 0.999,
+   "bbox_master_px": [
+    501.2,
+    268.6,
+    682.2,
+    426.2
+   ],
+   "center_master_px": [
+    591.7,
+    347.4
+   ],
+   "ground_contact_master_px": [
+    591.7,
+    426.2
+   ],
+   "bbox_reference_px": [
+    939.8,
+    503.7,
+    1279.1,
+    799.0
+   ],
+   "center_reference_px": [
+    1109.5,
+    651.4
+   ]
+  },
+  {
+   "id": 1,
+   "class": "car",
+   "score": 0.981,
+   "bbox_master_px": [
+    1.6,
+    485.8,
+    106.0,
+    573.1
+   ],
+   "center_master_px": [
+    53.8,
+    529.4
+   ],
+   "ground_contact_master_px": [
+    53.8,
+    573.1
+   ],
+   "bbox_reference_px": [
+    3.0,
+    910.9,
+    198.7,
+    1074.6
+   ],
+   "center_reference_px": [
+    100.9,
+    992.7
+   ]
+  },
+  {
+   "id": 2,
+   "class": "car",
+   "score": 0.967,
+   "bbox_master_px": [
+    421.4,
+    254.0,
+    492.4,
+    313.1
+   ],
+   "center_master_px": [
+    456.9,
+    283.5
+   ],
+   "ground_contact_master_px": [
+    456.9,
+    313.1
+   ],
+   "bbox_reference_px": [
+    790.1,
+    476.3,
+    923.3,
+    587.1
+   ],
+   "center_reference_px": [
+    856.7,
+    531.7
+   ]
+  },
+  {
+   "id": 3,
+   "class": "person",
+   "score": 0.811,
+   "bbox_master_px": [
+    358.9,
+    242.2,
+    383.6,
+    324.4
+   ],
+   "center_master_px": [
+    371.3,
+    283.3
+   ],
+   "ground_contact_master_px": [
+    371.3,
+    324.4
+   ],
+   "bbox_reference_px": [
+    672.9,
+    454.1,
+    719.3,
+    608.3
+   ],
+   "center_reference_px": [
+    696.1,
+    531.2
+   ]
+  },
+  {
+   "id": 4,
+   "class": "bicycle",
+   "score": 0.66,
+   "bbox_master_px": [
+    294.7,
+    257.1,
+    326.6,
+    328.2
+   ],
+   "center_master_px": [
+    310.6,
+    292.7
+   ],
+   "ground_contact_master_px": [
+    310.6,
+    328.2
+   ],
+   "bbox_reference_px": [
+    552.5,
+    482.2,
+    612.4,
+    615.3
+   ],
+   "center_reference_px": [
+    582.5,
+    548.7
+   ]
+  },
+  {
+   "id": 5,
+   "class": "car",
+   "score": 0.546,
+   "bbox_master_px": [
+    545.3,
+    254.7,
+    567.4,
+    273.6
+   ],
+   "center_master_px": [
+    556.3,
+    264.1
+   ],
+   "ground_contact_master_px": [
+    556.3,
+    273.6
+   ],
+   "bbox_reference_px": [
+    1022.5,
+    477.6,
+    1063.8,
+    513.0
+   ],
+   "center_reference_px": [
+    1043.2,
+    495.3
+   ]
+  }
+ ],
+ "vehicle_recall": 0.2857142857142857,
+ "vehicle_precision": 0.5,
+ "person_recall": 0.06666666666666667,
+ "person_precision": 1.0,
+ "vehicle_count_abs_err_vs_oracle": 3,
+ "person_count_abs_err_vs_oracle": 14,
+ "seconds": 10.332078499999625,
+ "prompt": "the crew in need for speed, a city street, a city street with cars and pedestrians, a police car is stopped at a crosswalk, a city street with a police car and a police car, a man walking across a crosswalk in a city"
+}

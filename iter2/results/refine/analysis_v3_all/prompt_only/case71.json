@@ -1,0 +1,152 @@
+{
+ "case": "case71",
+ "reference": "cam1",
+ "variant": "prompt_only",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 2,
+  "bicycle": 0,
+  "car": 2,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 0,
+  "cars_4wheel": 2,
+  "two_wheelers": 0,
+  "vehicles": 2,
+  "pedestrians": 2
+ },
+ "gt": {
+  "cars_4wheel": 7,
+  "pedestrians": 10,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "person",
+   "score": 0.985,
+   "bbox_master_px": [
+    83.7,
+    245.1,
+    123.8,
+    313.2
+   ],
+   "center_master_px": [
+    103.8,
+    279.1
+   ],
+   "ground_contact_master_px": [
+    103.8,
+    313.2
+   ],
+   "bbox_reference_px": [
+    157.0,
+    459.5,
+    232.2,
+    587.2
+   ],
+   "center_reference_px": [
+    194.6,
+    523.3
+   ]
+  },
+  {
+   "id": 1,
+   "class": "car",
+   "score": 0.975,
+   "bbox_master_px": [
+    780.8,
+    248.6,
+    860.1,
+    285.1
+   ],
+   "center_master_px": [
+    820.5,
+    266.8
+   ],
+   "ground_contact_master_px": [
+    820.5,
+    285.1
+   ],
+   "bbox_reference_px": [
+    1464.1,
+    466.1,
+    1612.6,
+    534.5
+   ],
+   "center_reference_px": [
+    1538.3,
+    500.3
+   ]
+  },
+  {
+   "id": 2,
+   "class": "car",
+   "score": 0.876,
+   "bbox_master_px": [
+    521.5,
+    219.8,
+    607.4,
+    258.5
+   ],
+   "center_master_px": [
+    564.4,
+    239.2
+   ],
+   "ground_contact_master_px": [
+    564.4,
+    258.5
+   ],
+   "bbox_reference_px": [
+    977.8,
+    412.1,
+    1138.8,
+    484.7
+   ],
+   "center_reference_px": [
+    1058.3,
+    448.4
+   ]
+  },
+  {
+   "id": 3,
+   "class": "person",
+   "score": 0.508,
+   "bbox_master_px": [
+    378.9,
+    235.6,
+    396.7,
+    285.6
+   ],
+   "center_master_px": [
+    387.8,
+    260.6
+   ],
+   "ground_contact_master_px": [
+    387.8,
+    285.6
+   ],
+   "bbox_reference_px": [
+    710.5,
+    441.7,
+    743.8,
+    535.6
+   ],
+   "center_reference_px": [
+    727.1,
+    488.6
+   ]
+  }
+ ],
+ "vehicle_recall": 0.4,
+ "vehicle_precision": 1.0,
+ "person_recall": 0.14285714285714285,
+ "person_precision": 1.0,
+ "vehicle_count_abs_err_vs_oracle": 3,
+ "person_count_abs_err_vs_oracle": 12,
+ "seconds": 10.42892109999957,
+ "prompt": "a tree on the sidewalk, a street with a line of trees, a street with a line of cars and a fire hydra, a street scene with a horse and a car, a street with a police car parked on the side of the road"
+}

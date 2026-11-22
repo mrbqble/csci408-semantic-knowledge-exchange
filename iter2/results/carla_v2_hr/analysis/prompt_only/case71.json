@@ -1,0 +1,268 @@
+{
+ "case": "case71",
+ "reference": "cam1",
+ "variant": "prompt_only",
+ "master_size": [
+  1280,
+  704
+ ],
+ "counts": {
+  "person": 3,
+  "bicycle": 0,
+  "car": 4,
+  "motorcycle": 1,
+  "bus": 0,
+  "truck": 0,
+  "cars_4wheel": 4,
+  "two_wheelers": 1,
+  "vehicles": 5,
+  "pedestrians": 3
+ },
+ "gt": {
+  "cars_4wheel": 7,
+  "pedestrians": 12,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "person",
+   "score": 0.997,
+   "bbox_master_px": [
+    1183.9,
+    422.3,
+    1280.0,
+    703.0
+   ],
+   "center_master_px": [
+    1232.0,
+    562.6
+   ],
+   "ground_contact_master_px": [
+    1232.0,
+    703.0
+   ],
+   "bbox_reference_px": [
+    1775.9,
+    647.8,
+    1920.0,
+    1078.4
+   ],
+   "center_reference_px": [
+    1848.0,
+    863.1
+   ]
+  },
+  {
+   "id": 1,
+   "class": "car",
+   "score": 0.99,
+   "bbox_master_px": [
+    663.6,
+    327.5,
+    805.5,
+    373.4
+   ],
+   "center_master_px": [
+    734.6,
+    350.4
+   ],
+   "ground_contact_master_px": [
+    734.6,
+    373.4
+   ],
+   "bbox_reference_px": [
+    995.4,
+    502.4,
+    1208.3,
+    572.8
+   ],
+   "center_reference_px": [
+    1101.9,
+    537.6
+   ]
+  },
+  {
+   "id": 2,
+   "class": "person",
+   "score": 0.976,
+   "bbox_master_px": [
+    0.3,
+    409.1,
+    35.8,
+    646.4
+   ],
+   "center_master_px": [
+    18.0,
+    527.8
+   ],
+   "ground_contact_master_px": [
+    18.0,
+    646.4
+   ],
+   "bbox_reference_px": [
+    0.5,
+    627.6,
+    53.7,
+    991.7
+   ],
+   "center_reference_px": [
+    27.1,
+    809.7
+   ]
+  },
+  {
+   "id": 3,
+   "class": "car",
+   "score": 0.954,
+   "bbox_master_px": [
+    858.6,
+    327.8,
+    905.6,
+    349.7
+   ],
+   "center_master_px": [
+    882.1,
+    338.7
+   ],
+   "ground_contact_master_px": [
+    882.1,
+    349.7
+   ],
+   "bbox_reference_px": [
+    1287.9,
+    502.9,
+    1358.5,
+    536.4
+   ],
+   "center_reference_px": [
+    1323.2,
+    519.7
+   ]
+  },
+  {
+   "id": 4,
+   "class": "car",
+   "score": 0.899,
+   "bbox_master_px": [
+    117.4,
+    325.7,
+    146.4,
+    348.8
+   ],
+   "center_master_px": [
+    131.9,
+    337.2
+   ],
+   "ground_contact_master_px": [
+    131.9,
+    348.8
+   ],
+   "bbox_reference_px": [
+    176.1,
+    499.6,
+    219.5,
+    535.1
+   ],
+   "center_reference_px": [
+    197.8,
+    517.4
+   ]
+  },
+  {
+   "id": 5,
+   "class": "motorcycle",
+   "score": 0.559,
+   "bbox_master_px": [
+    1140.2,
+    298.4,
+    1197.4,
+    355.4
+   ],
+   "center_master_px": [
+    1168.8,
+    326.9
+   ],
+   "ground_contact_master_px": [
+    1168.8,
+    355.4
+   ],
+   "bbox_reference_px": [
+    1710.2,
+    457.7,
+    1796.1,
+    545.2
+   ],
+   "center_reference_px": [
+    1753.2,
+    501.5
+   ]
+  },
+  {
+   "id": 6,
+   "class": "car",
+   "score": 0.55,
+   "bbox_master_px": [
+    138.7,
+    330.7,
+    157.6,
+    346.1
+   ],
+   "center_master_px": [
+    148.2,
+    338.4
+   ],
+   "ground_contact_master_px": [
+    148.2,
+    346.1
+   ],
+   "bbox_reference_px": [
+    208.1,
+    507.3,
+    236.4,
+    531.0
+   ],
+   "center_reference_px": [
+    222.3,
+    519.1
+   ]
+  },
+  {
+   "id": 7,
+   "class": "person",
+   "score": 0.516,
+   "bbox_master_px": [
+    1141.7,
+    303.8,
+    1164.5,
+    349.4
+   ],
+   "center_master_px": [
+    1153.1,
+    326.6
+   ],
+   "ground_contact_master_px": [
+    1153.1,
+    349.4
+   ],
+   "bbox_reference_px": [
+    1712.6,
+    466.0,
+    1746.7,
+    536.1
+   ],
+   "center_reference_px": [
+    1729.6,
+    501.0
+   ]
+  }
+ ],
+ "vehicle_recall": 0.14285714285714285,
+ "vehicle_precision": 0.2,
+ "person_recall": 0.15384615384615385,
+ "person_precision": 0.6666666666666666,
+ "vehicle_count_abs_err_vs_oracle": 2,
+ "person_count_abs_err_vs_oracle": 10,
+ "seconds": 19.688111200001003,
+ "prompt": "a man walking across a street next to a red bus, a street with a fire truck and a fire hydrant, a street scene with a bus and a bus, a man walking down a street next to a car, a man walking down a street next to a building"
+}

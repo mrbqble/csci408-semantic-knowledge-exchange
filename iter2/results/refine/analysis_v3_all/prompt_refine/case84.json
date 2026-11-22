@@ -1,0 +1,152 @@
+{
+ "case": "case84",
+ "reference": "cam1",
+ "variant": "prompt_refine",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 2,
+  "bicycle": 0,
+  "car": 2,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 0,
+  "cars_4wheel": 2,
+  "two_wheelers": 0,
+  "vehicles": 2,
+  "pedestrians": 2
+ },
+ "gt": {
+  "cars_4wheel": 5,
+  "pedestrians": 6,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "car",
+   "score": 0.999,
+   "bbox_master_px": [
+    691.5,
+    296.5,
+    849.7,
+    353.4
+   ],
+   "center_master_px": [
+    770.6,
+    325.0
+   ],
+   "ground_contact_master_px": [
+    770.6,
+    353.4
+   ],
+   "bbox_reference_px": [
+    1296.5,
+    556.0,
+    1593.2,
+    662.6
+   ],
+   "center_reference_px": [
+    1444.8,
+    609.3
+   ]
+  },
+  {
+   "id": 1,
+   "class": "car",
+   "score": 0.95,
+   "bbox_master_px": [
+    246.6,
+    289.8,
+    278.6,
+    308.6
+   ],
+   "center_master_px": [
+    262.6,
+    299.2
+   ],
+   "ground_contact_master_px": [
+    262.6,
+    308.6
+   ],
+   "bbox_reference_px": [
+    462.5,
+    543.4,
+    522.4,
+    578.7
+   ],
+   "center_reference_px": [
+    492.4,
+    561.0
+   ]
+  },
+  {
+   "id": 2,
+   "class": "person",
+   "score": 0.914,
+   "bbox_master_px": [
+    164.3,
+    283.3,
+    172.7,
+    311.0
+   ],
+   "center_master_px": [
+    168.5,
+    297.2
+   ],
+   "ground_contact_master_px": [
+    168.5,
+    311.0
+   ],
+   "bbox_reference_px": [
+    308.1,
+    531.2,
+    323.7,
+    583.2
+   ],
+   "center_reference_px": [
+    315.9,
+    557.2
+   ]
+  },
+  {
+   "id": 3,
+   "class": "person",
+   "score": 0.624,
+   "bbox_master_px": [
+    967.3,
+    283.7,
+    986.1,
+    321.4
+   ],
+   "center_master_px": [
+    976.7,
+    302.6
+   ],
+   "ground_contact_master_px": [
+    976.7,
+    321.4
+   ],
+   "bbox_reference_px": [
+    1813.6,
+    532.0,
+    1848.9,
+    602.6
+   ],
+   "center_reference_px": [
+    1831.3,
+    567.3
+   ]
+  }
+ ],
+ "vehicle_recall": 1.0,
+ "vehicle_precision": 1.0,
+ "person_recall": 0.3333333333333333,
+ "person_precision": 1.0,
+ "vehicle_count_abs_err_vs_oracle": 0,
+ "person_count_abs_err_vs_oracle": 4,
+ "seconds": 16.718357099996865,
+ "prompt": "a car is parked on the street in front of a building, a red car parked on a street next to a building, a person walking across a street in a city, a white car parked in front of a building, a red car is parked on a city street, a white car parked on a city street"
+}

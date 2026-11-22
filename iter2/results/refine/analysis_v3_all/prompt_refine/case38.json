@@ -1,0 +1,181 @@
+{
+ "case": "case38",
+ "reference": "cam1",
+ "variant": "prompt_refine",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 3,
+  "bicycle": 0,
+  "car": 1,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 1,
+  "cars_4wheel": 2,
+  "two_wheelers": 0,
+  "vehicles": 2,
+  "pedestrians": 3
+ },
+ "gt": {
+  "cars_4wheel": 4,
+  "pedestrians": 3,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "car",
+   "score": 0.999,
+   "bbox_master_px": [
+    258.5,
+    279.5,
+    498.9,
+    402.4
+   ],
+   "center_master_px": [
+    378.7,
+    340.9
+   ],
+   "ground_contact_master_px": [
+    378.7,
+    402.4
+   ],
+   "bbox_reference_px": [
+    484.7,
+    524.0,
+    935.4,
+    754.5
+   ],
+   "center_reference_px": [
+    710.1,
+    639.3
+   ]
+  },
+  {
+   "id": 1,
+   "class": "truck",
+   "score": 0.991,
+   "bbox_master_px": [
+    512.2,
+    197.0,
+    1020.8,
+    530.6
+   ],
+   "center_master_px": [
+    766.5,
+    363.8
+   ],
+   "ground_contact_master_px": [
+    766.5,
+    530.6
+   ],
+   "bbox_reference_px": [
+    960.4,
+    369.3,
+    1914.0,
+    994.9
+   ],
+   "center_reference_px": [
+    1437.2,
+    682.1
+   ]
+  },
+  {
+   "id": 2,
+   "class": "person",
+   "score": 0.875,
+   "bbox_master_px": [
+    317.4,
+    233.0,
+    328.0,
+    255.7
+   ],
+   "center_master_px": [
+    322.7,
+    244.3
+   ],
+   "ground_contact_master_px": [
+    322.7,
+    255.7
+   ],
+   "bbox_reference_px": [
+    595.1,
+    436.8,
+    615.0,
+    479.4
+   ],
+   "center_reference_px": [
+    605.1,
+    458.1
+   ]
+  },
+  {
+   "id": 3,
+   "class": "person",
+   "score": 0.835,
+   "bbox_master_px": [
+    330.3,
+    222.4,
+    343.7,
+    257.7
+   ],
+   "center_master_px": [
+    337.0,
+    240.1
+   ],
+   "ground_contact_master_px": [
+    337.0,
+    257.7
+   ],
+   "bbox_reference_px": [
+    619.3,
+    417.0,
+    644.4,
+    483.3
+   ],
+   "center_reference_px": [
+    631.9,
+    450.1
+   ]
+  },
+  {
+   "id": 4,
+   "class": "person",
+   "score": 0.56,
+   "bbox_master_px": [
+    329.6,
+    230.6,
+    339.0,
+    256.8
+   ],
+   "center_master_px": [
+    334.3,
+    243.7
+   ],
+   "ground_contact_master_px": [
+    334.3,
+    256.8
+   ],
+   "bbox_reference_px": [
+    617.9,
+    432.4,
+    635.5,
+    481.5
+   ],
+   "center_reference_px": [
+    626.7,
+    456.9
+   ]
+  }
+ ],
+ "vehicle_recall": 0.5,
+ "vehicle_precision": 1.0,
+ "person_recall": 0.0,
+ "person_precision": 0.0,
+ "vehicle_count_abs_err_vs_oracle": 2,
+ "person_count_abs_err_vs_oracle": 0,
+ "seconds": 13.19631709999885,
+ "prompt": "a white truck, a street with a crosswalk and a car, a street with a car driving down it, a street with a yellow line painted on the road"
+}

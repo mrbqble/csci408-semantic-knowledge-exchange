@@ -1,0 +1,79 @@
+{
+ "case": "case107",
+ "variant": "prompt_refine",
+ "ip_adapter_scale": 0.0,
+ "ip_adapter_source": "none",
+ "reference": "cam1",
+ "supporting": [
+  "cam2",
+  "cam3",
+  "cam4",
+  "cam5"
+ ],
+ "timestamp": 16857,
+ "prompt": "a street with a fence and a building in the background, a street with a tree and a man walking, a red car is parked on the side of the road, a street with a black fence and a building, a tree in the middle of a city",
+ "seconds": 14.803396400004203,
+ "peak_gpu_mb": 5394.6416015625,
+ "size": [
+  1024,
+  576
+ ],
+ "palette": "cs",
+ "ref_policy": "first",
+ "seed": 42,
+ "steps": 20,
+ "guidance": 7.5,
+ "donor_case": null,
+ "cn_scales": [
+  1.0,
+  1.0
+ ],
+ "edge_thr": 40,
+ "base": "existing prompt_only result",
+ "base_seconds": 10.445222100002866,
+ "refine_seconds": 4.3581743000013375,
+ "refine": {
+  "n_small_blobs": 5,
+  "n_windows": 2,
+  "uncovered_blobs": 0,
+  "windows": [
+   {
+    "x0": 550,
+    "y0": 152,
+    "n_blobs": 3,
+    "blob_areas": [
+     53,
+     16,
+     53
+    ],
+    "index": 0,
+    "seconds": 2.175014700000247
+   },
+   {
+    "x0": 11,
+    "y0": 151,
+    "n_blobs": 2,
+    "blob_areas": [
+     79,
+     17
+    ],
+    "index": 1,
+    "seconds": 2.1831596000010904
+   }
+  ],
+  "failures": [],
+  "seconds": 4.3581743000013375
+ },
+ "refine_settings": {
+  "window": 128,
+  "upscale": 4,
+  "strength": 0.5,
+  "feather_px": 12,
+  "max_windows": 8,
+  "min_area": 12,
+  "max_side": 48,
+  "prompt": "cars on a city street, realistic photo, sharp",
+  "negative_prompt": "blurry, deformed, cartoon",
+  "seed": "42 + window index"
+ }
+}

@@ -1,0 +1,239 @@
+{
+ "case": "case58",
+ "reference": "cam1",
+ "variant": "prompt_only",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 4,
+  "bicycle": 0,
+  "car": 3,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 0,
+  "cars_4wheel": 3,
+  "two_wheelers": 0,
+  "vehicles": 3,
+  "pedestrians": 4
+ },
+ "gt": {
+  "cars_4wheel": 11,
+  "pedestrians": 17,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "car",
+   "score": 1.0,
+   "bbox_master_px": [
+    4.6,
+    262.8,
+    573.0,
+    559.7
+   ],
+   "center_master_px": [
+    288.8,
+    411.3
+   ],
+   "ground_contact_master_px": [
+    288.8,
+    559.7
+   ],
+   "bbox_reference_px": [
+    8.6,
+    492.8,
+    1074.4,
+    1049.4
+   ],
+   "center_reference_px": [
+    541.5,
+    771.1
+   ]
+  },
+  {
+   "id": 1,
+   "class": "car",
+   "score": 0.999,
+   "bbox_master_px": [
+    950.1,
+    266.0,
+    1024.0,
+    355.7
+   ],
+   "center_master_px": [
+    987.1,
+    310.9
+   ],
+   "ground_contact_master_px": [
+    987.1,
+    355.7
+   ],
+   "bbox_reference_px": [
+    1781.5,
+    498.8,
+    1920.0,
+    666.9
+   ],
+   "center_reference_px": [
+    1850.8,
+    582.8
+   ]
+  },
+  {
+   "id": 2,
+   "class": "car",
+   "score": 0.998,
+   "bbox_master_px": [
+    852.2,
+    242.7,
+    1023.5,
+    304.1
+   ],
+   "center_master_px": [
+    937.9,
+    273.4
+   ],
+   "ground_contact_master_px": [
+    937.9,
+    304.1
+   ],
+   "bbox_reference_px": [
+    1597.9,
+    455.1,
+    1919.1,
+    570.1
+   ],
+   "center_reference_px": [
+    1758.5,
+    512.6
+   ]
+  },
+  {
+   "id": 3,
+   "class": "person",
+   "score": 0.937,
+   "bbox_master_px": [
+    814.1,
+    232.4,
+    824.2,
+    260.4
+   ],
+   "center_master_px": [
+    819.2,
+    246.4
+   ],
+   "ground_contact_master_px": [
+    819.2,
+    260.4
+   ],
+   "bbox_reference_px": [
+    1526.4,
+    435.8,
+    1545.5,
+    488.2
+   ],
+   "center_reference_px": [
+    1535.9,
+    462.0
+   ]
+  },
+  {
+   "id": 4,
+   "class": "person",
+   "score": 0.87,
+   "bbox_master_px": [
+    508.3,
+    228.4,
+    527.1,
+    271.4
+   ],
+   "center_master_px": [
+    517.7,
+    249.9
+   ],
+   "ground_contact_master_px": [
+    517.7,
+    271.4
+   ],
+   "bbox_reference_px": [
+    953.0,
+    428.2,
+    988.2,
+    509.0
+   ],
+   "center_reference_px": [
+    970.6,
+    468.6
+   ]
+  },
+  {
+   "id": 5,
+   "class": "person",
+   "score": 0.793,
+   "bbox_master_px": [
+    290.2,
+    224.2,
+    302.9,
+    273.9
+   ],
+   "center_master_px": [
+    296.6,
+    249.1
+   ],
+   "ground_contact_master_px": [
+    296.6,
+    273.9
+   ],
+   "bbox_reference_px": [
+    544.2,
+    420.4,
+    567.9,
+    513.6
+   ],
+   "center_reference_px": [
+    556.1,
+    467.0
+   ]
+  },
+  {
+   "id": 6,
+   "class": "person",
+   "score": 0.572,
+   "bbox_master_px": [
+    330.6,
+    225.0,
+    344.9,
+    263.9
+   ],
+   "center_master_px": [
+    337.8,
+    244.5
+   ],
+   "ground_contact_master_px": [
+    337.8,
+    263.9
+   ],
+   "bbox_reference_px": [
+    619.9,
+    421.9,
+    646.7,
+    494.8
+   ],
+   "center_reference_px": [
+    633.3,
+    458.4
+   ]
+  }
+ ],
+ "vehicle_recall": 0.5,
+ "vehicle_precision": 1.0,
+ "person_recall": 0.17647058823529413,
+ "person_precision": 0.75,
+ "vehicle_count_abs_err_vs_oracle": 3,
+ "person_count_abs_err_vs_oracle": 13,
+ "seconds": 10.46992980000141,
+ "prompt": "a car is parked in the middle of a city, the crew in grand theft, a scene of a city, a car driving down a street next to a traffic light"
+}

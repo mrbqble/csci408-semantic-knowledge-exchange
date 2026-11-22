@@ -1,0 +1,210 @@
+{
+ "case": "case63",
+ "reference": "cam1",
+ "variant": "prompt_refine",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 1,
+  "bicycle": 0,
+  "car": 2,
+  "motorcycle": 0,
+  "bus": 1,
+  "truck": 2,
+  "cars_4wheel": 5,
+  "two_wheelers": 0,
+  "vehicles": 5,
+  "pedestrians": 1
+ },
+ "gt": {
+  "cars_4wheel": 6,
+  "pedestrians": 8,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "car",
+   "score": 0.93,
+   "bbox_master_px": [
+    695.0,
+    284.1,
+    732.1,
+    318.3
+   ],
+   "center_master_px": [
+    713.6,
+    301.2
+   ],
+   "ground_contact_master_px": [
+    713.6,
+    318.3
+   ],
+   "bbox_reference_px": [
+    1303.1,
+    532.7,
+    1372.7,
+    596.9
+   ],
+   "center_reference_px": [
+    1337.9,
+    564.8
+   ]
+  },
+  {
+   "id": 1,
+   "class": "person",
+   "score": 0.804,
+   "bbox_master_px": [
+    501.4,
+    283.2,
+    510.4,
+    318.4
+   ],
+   "center_master_px": [
+    505.9,
+    300.8
+   ],
+   "ground_contact_master_px": [
+    505.9,
+    318.4
+   ],
+   "bbox_reference_px": [
+    940.0,
+    531.0,
+    957.0,
+    596.9
+   ],
+   "center_reference_px": [
+    948.5,
+    564.0
+   ]
+  },
+  {
+   "id": 2,
+   "class": "bus",
+   "score": 0.699,
+   "bbox_master_px": [
+    823.1,
+    272.3,
+    883.7,
+    303.6
+   ],
+   "center_master_px": [
+    853.4,
+    288.0
+   ],
+   "ground_contact_master_px": [
+    853.4,
+    303.6
+   ],
+   "bbox_reference_px": [
+    1543.3,
+    510.6,
+    1656.9,
+    569.2
+   ],
+   "center_reference_px": [
+    1600.1,
+    539.9
+   ]
+  },
+  {
+   "id": 3,
+   "class": "car",
+   "score": 0.609,
+   "bbox_master_px": [
+    623.2,
+    287.3,
+    645.1,
+    301.4
+   ],
+   "center_master_px": [
+    634.2,
+    294.3
+   ],
+   "ground_contact_master_px": [
+    634.2,
+    301.4
+   ],
+   "bbox_reference_px": [
+    1168.5,
+    538.6,
+    1209.7,
+    565.1
+   ],
+   "center_reference_px": [
+    1189.1,
+    551.9
+   ]
+  },
+  {
+   "id": 4,
+   "class": "truck",
+   "score": 0.552,
+   "bbox_master_px": [
+    824.1,
+    274.4,
+    884.4,
+    304.2
+   ],
+   "center_master_px": [
+    854.3,
+    289.3
+   ],
+   "ground_contact_master_px": [
+    854.3,
+    304.2
+   ],
+   "bbox_reference_px": [
+    1545.2,
+    514.5,
+    1658.3,
+    570.3
+   ],
+   "center_reference_px": [
+    1601.7,
+    542.4
+   ]
+  },
+  {
+   "id": 5,
+   "class": "truck",
+   "score": 0.533,
+   "bbox_master_px": [
+    621.8,
+    278.4,
+    645.3,
+    301.8
+   ],
+   "center_master_px": [
+    633.5,
+    290.1
+   ],
+   "ground_contact_master_px": [
+    633.5,
+    301.8
+   ],
+   "bbox_reference_px": [
+    1165.8,
+    522.0,
+    1209.9,
+    565.9
+   ],
+   "center_reference_px": [
+    1187.8,
+    544.0
+   ]
+  }
+ ],
+ "vehicle_recall": 0.5,
+ "vehicle_precision": 0.6,
+ "person_recall": 0.1111111111111111,
+ "person_precision": 1.0,
+ "vehicle_count_abs_err_vs_oracle": 1,
+ "person_count_abs_err_vs_oracle": 8,
+ "seconds": 16.966611699999703,
+ "prompt": "a street with a bus and a bus stop, a city street with a bus and people, a fire truck driving down a street next to a red car, a street scene with a bus and a bus stop, a street with a car and a bus"
+}

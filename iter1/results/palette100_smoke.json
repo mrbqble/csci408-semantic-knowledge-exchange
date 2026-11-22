@@ -1,0 +1,466 @@
+{
+ "config": {
+  "n": 5,
+  "step": 1,
+  "sd_model": null,
+  "variants": {
+   "A_cs_full": "cs palette, controlnet scales [1.0, 1.0] (edge, seg)",
+   "B_ade_full": "ade palette, controlnet scales [1.0, 1.0] (edge, seg)"
+  },
+  "receiver": "authors' settings (see receiver_smoke_test.py)",
+  "detector": "torchvision fasterrcnn_resnet50_fpn_v2, COCO_V1",
+  "vehicle_labels_coco": [
+   3,
+   4,
+   6,
+   8
+  ],
+  "score_min": 0.5,
+  "match_iou": 0.5,
+  "semantic_reference": "Mask2Former labels of the original image"
+ },
+ "generation_seconds_mean": {
+  "A_cs_full": null,
+  "B_ade_full": null
+ },
+ "summary": {
+  "A_cs_full": {
+   "pixel_acc": 0.8555977821350098,
+   "miou": 0.31976794408978537,
+   "iou_road": 0.8340917299416478,
+   "iou_sidewalk": 0.03898747142504966,
+   "iou_building": 0.6669668610542506,
+   "iou_vegetation": 0.5319228618025474,
+   "iou_sky": 0.0,
+   "iou_person": 0.18919089165460218,
+   "iou_car": 0.8206577695047919,
+   "count_abs_err": 5.8,
+   "count_exact": 0.2,
+   "count_within1": 0.2,
+   "recall": 0.6218181818181818,
+   "precision": 0.5547619047619048,
+   "people_abs_err": 3.4,
+   "colourfulness": 14.485852112303235,
+   "recall_pooled": 0.6060606060606061,
+   "precision_pooled": 0.5333333333333333
+  },
+  "B_ade_full": {
+   "pixel_acc": 0.888770580291748,
+   "miou": 0.42065245193297657,
+   "iou_road": 0.8426133999305503,
+   "iou_sidewalk": 0.32710489968622974,
+   "iou_building": 0.7482913040190564,
+   "iou_vegetation": 0.8257752265508713,
+   "iou_sky": 0.877908888877317,
+   "iou_person": 0.07916506005933918,
+   "iou_car": 0.8503908328503584,
+   "count_abs_err": 2.0,
+   "count_exact": 0.6,
+   "count_within1": 0.8,
+   "recall": 0.67,
+   "precision": 0.6328947368421053,
+   "people_abs_err": 2.6,
+   "colourfulness": 11.385755878312606,
+   "recall_pooled": 0.6363636363636364,
+   "precision_pooled": 0.5675675675675675
+  },
+  "original": {
+   "colourfulness": 14.481059637122234,
+   "vehicles_per_image": 13.2
+  }
+ },
+ "paired_b_minus_a": {
+  "pixel_acc": {
+   "n": 5,
+   "mean_b_minus_a": 0.03317279815673828,
+   "ci95": [
+    0.027988243103027343,
+    0.03835735321044922
+   ],
+   "share_b_higher": 1.0,
+   "share_equal": 0.0
+  },
+  "miou": {
+   "n": 5,
+   "mean_b_minus_a": 0.10088450784319121,
+   "ci95": [
+    0.05361806295406043,
+    0.15211168568255978
+   ],
+   "share_b_higher": 1.0,
+   "share_equal": 0.0
+  },
+  "iou_road": {
+   "n": 5,
+   "mean_b_minus_a": 0.008521669988902424,
+   "ci95": [
+    -0.001073967698342182,
+    0.021804796987053288
+   ],
+   "share_b_higher": 0.6,
+   "share_equal": 0.0
+  },
+  "iou_sidewalk": {
+   "n": 5,
+   "mean_b_minus_a": 0.28811742826118014,
+   "ci95": [
+    0.0016092870262428601,
+    0.6203324747912414
+   ],
+   "share_b_higher": 0.6,
+   "share_equal": 0.0
+  },
+  "iou_building": {
+   "n": 5,
+   "mean_b_minus_a": 0.08132444296480583,
+   "ci95": [
+    0.041204977505258644,
+    0.14847993515996094
+   ],
+   "share_b_higher": 1.0,
+   "share_equal": 0.0
+  },
+  "iou_vegetation": {
+   "n": 5,
+   "mean_b_minus_a": 0.29385236474832405,
+   "ci95": [
+    -0.012796484908777762,
+    0.6005012144054258
+   ],
+   "share_b_higher": 0.8,
+   "share_equal": 0.0
+  },
+  "iou_sky": {
+   "n": 4,
+   "mean_b_minus_a": 0.877908888877317,
+   "ci95": [
+    0.8196065892887706,
+    0.9362111884658633
+   ],
+   "share_b_higher": 1.0,
+   "share_equal": 0.0
+  },
+  "iou_person": {
+   "n": 5,
+   "mean_b_minus_a": -0.11002583159526298,
+   "ci95": [
+    -0.22711688585700768,
+    0.00203478715124746
+   ],
+   "share_b_higher": 0.4,
+   "share_equal": 0.0
+  },
+  "iou_car": {
+   "n": 5,
+   "mean_b_minus_a": 0.029733063345566423,
+   "ci95": [
+    0.0028431581245142333,
+    0.06263953582840606
+   ],
+   "share_b_higher": 0.8,
+   "share_equal": 0.0
+  },
+  "count_abs_err": {
+   "n": 5,
+   "mean_b_minus_a": -3.8,
+   "ci95": [
+    -7.2,
+    -1.395000000000027
+   ],
+   "share_b_higher": 0.0,
+   "share_equal": 0.2
+  },
+  "recall": {
+   "n": 5,
+   "mean_b_minus_a": 0.048181818181818194,
+   "ci95": [
+    -0.08362878787878783,
+    0.20484848484848484
+   ],
+   "share_b_higher": 0.6,
+   "share_equal": 0.0
+  },
+  "precision": {
+   "n": 5,
+   "mean_b_minus_a": 0.07813283208020053,
+   "ci95": [
+    -0.10520050125313282,
+    0.2324561403508772
+   ],
+   "share_b_higher": 0.8,
+   "share_equal": 0.0
+  },
+  "people_abs_err": {
+   "n": 5,
+   "mean_b_minus_a": -0.8,
+   "ci95": [
+    -2.4,
+    0.4
+   ],
+   "share_b_higher": 0.2,
+   "share_equal": 0.4
+  },
+  "colourfulness": {
+   "n": 5,
+   "mean_b_minus_a": -3.100096233990627,
+   "ci95": [
+    -5.46362225126177,
+    -0.7365702167194845
+   ],
+   "share_b_higher": 0.2,
+   "share_equal": 0.0
+  }
+ },
+ "rows": [
+  {
+   "stem": "frankfurt_000000_000294_leftImg8bit",
+   "colourfulness_original": 16.186971414430975,
+   "A_cs_full": {
+    "pixel_acc": 0.7772064208984375,
+    "miou": 0.28634765188284217,
+    "iou_road": 0.6702538710323707,
+    "iou_sidewalk": 0.04429480146784628,
+    "iou_building": 0.7507505028575516,
+    "iou_vegetation": 0.0,
+    "iou_sky": 0.0,
+    "iou_person": 0.0,
+    "iou_car": 0.7899615510715031,
+    "n_vehicles_original": 3,
+    "n_vehicles_recon": 3,
+    "count_abs_err": 0,
+    "count_exact": true,
+    "count_within1": true,
+    "matched": 1,
+    "recall": 0.3333333333333333,
+    "precision": 0.3333333333333333,
+    "n_people_original": 4,
+    "n_people_recon": 0,
+    "people_abs_err": 4,
+    "colourfulness": 41.25231952862818
+   },
+   "B_ade_full": {
+    "pixel_acc": 0.8033761978149414,
+    "miou": 0.43224836859165894,
+    "iou_road": 0.6667776893286385,
+    "iou_sidewalk": 0.032067561686397864,
+    "iou_building": 0.7904498587119871,
+    "iou_vegetation": 0.7577685740068025,
+    "iou_sky": 0.8312202289262269,
+    "iou_person": 0.010804626922588026,
+    "iou_car": 0.8313559394840162,
+    "n_vehicles_original": 3,
+    "n_vehicles_recon": 3,
+    "count_abs_err": 0,
+    "count_exact": true,
+    "count_within1": true,
+    "matched": 2,
+    "recall": 0.6666666666666666,
+    "precision": 0.6666666666666666,
+    "n_people_original": 4,
+    "n_people_recon": 4,
+    "people_abs_err": 0,
+    "colourfulness": 35.08071101904224
+   }
+  },
+  {
+   "stem": "frankfurt_000000_000576_leftImg8bit",
+   "colourfulness_original": 13.017876729462024,
+   "A_cs_full": {
+    "pixel_acc": 0.8826217651367188,
+    "miou": 0.23479326789662133,
+    "iou_road": 0.8683838942428541,
+    "iou_sidewalk": 0.0,
+    "iou_building": 0.7744469114747541,
+    "iou_vegetation": 0.8669956772701987,
+    "iou_sky": 0.0,
+    "iou_person": 0.07079646017699115,
+    "iou_car": 0.8313054007977184,
+    "n_vehicles_original": 20,
+    "n_vehicles_recon": 24,
+    "count_abs_err": 4,
+    "count_exact": false,
+    "count_within1": false,
+    "matched": 14,
+    "recall": 0.7,
+    "precision": 0.5833333333333334,
+    "n_people_original": 2,
+    "n_people_recon": 0,
+    "people_abs_err": 2,
+    "colourfulness": 16.12587132329804
+   },
+   "B_ade_full": {
+    "pixel_acc": 0.9199337959289551,
+    "miou": 0.4137657715918882,
+    "iou_road": 0.8747546264996858,
+    "iou_sidewalk": 0.8718065365736861,
+    "iou_building": 0.81069160722868,
+    "iou_vegetation": 0.8935542321875133,
+    "iou_sky": 0.9187312086590499,
+    "iou_person": 0.05925925925925926,
+    "iou_car": 0.9249993354932264,
+    "n_vehicles_original": 20,
+    "n_vehicles_recon": 19,
+    "count_abs_err": 1,
+    "count_exact": false,
+    "count_within1": true,
+    "matched": 15,
+    "recall": 0.75,
+    "precision": 0.7894736842105263,
+    "n_people_original": 2,
+    "n_people_recon": 1,
+    "people_abs_err": 1,
+    "colourfulness": 11.998446575953341
+   }
+  },
+  {
+   "stem": "frankfurt_000000_001016_leftImg8bit",
+   "colourfulness_original": 17.853599818551807,
+   "A_cs_full": {
+    "pixel_acc": 0.8863472938537598,
+    "miou": 0.5600675310154256,
+    "iou_road": 0.8263324533797194,
+    "iou_sidewalk": 0.0,
+    "iou_building": 0.8189541247813387,
+    "iou_vegetation": 0.0,
+    "iou_sky": null,
+    "iou_person": 0.5641795583260482,
+    "iou_car": 0.8103423957121196,
+    "n_vehicles_original": 6,
+    "n_vehicles_recon": 8,
+    "count_abs_err": 2,
+    "count_exact": false,
+    "count_within1": false,
+    "matched": 6,
+    "recall": 1.0,
+    "precision": 0.75,
+    "n_people_original": 5,
+    "n_people_recon": 3,
+    "people_abs_err": 2,
+    "colourfulness": 3.6516474645655905
+   },
+   "B_ade_full": {
+    "pixel_acc": 0.9133005142211914,
+    "miou": 0.6470601833946817,
+    "iou_road": 0.8609875461516463,
+    "iou_sidewalk": 0.51737484702735,
+    "iou_building": 0.8730909090909091,
+    "iou_vegetation": 0.7300929125393535,
+    "iou_sky": null,
+    "iou_person": 0.30782595558241427,
+    "iou_car": 0.8232805923291705,
+    "n_vehicles_original": 6,
+    "n_vehicles_recon": 6,
+    "count_abs_err": 0,
+    "count_exact": true,
+    "count_within1": true,
+    "matched": 5,
+    "recall": 0.8333333333333334,
+    "precision": 0.8333333333333334,
+    "n_people_original": 5,
+    "n_people_recon": 3,
+    "people_abs_err": 2,
+    "colourfulness": 3.893143571075242
+   }
+  },
+  {
+   "stem": "frankfurt_000000_001236_leftImg8bit",
+   "colourfulness_original": 12.44360604164795,
+   "A_cs_full": {
+    "pixel_acc": 0.8844919204711914,
+    "miou": 0.18209232794908264,
+    "iou_road": 0.9407660066032361,
+    "iou_sidewalk": 0.07573131094257855,
+    "iou_building": 0.2985045671328106,
+    "iou_vegetation": 0.8526592898441178,
+    "iou_sky": 0.0,
+    "iou_person": 0.01788451711803781,
+    "iou_car": 0.8888511227758521,
+    "n_vehicles_original": 15,
+    "n_vehicles_recon": 28,
+    "count_abs_err": 13,
+    "count_exact": false,
+    "count_within1": false,
+    "matched": 10,
+    "recall": 0.6666666666666666,
+    "precision": 0.35714285714285715,
+    "n_people_original": 10,
+    "n_people_recon": 2,
+    "people_abs_err": 8,
+    "colourfulness": 2.946919357891166
+   },
+   "B_ade_full": {
+    "pixel_acc": 0.9262256622314453,
+    "miou": 0.2598325285672643,
+    "iou_road": 0.9478838171014755,
+    "iou_sidewalk": 0.17049639122109295,
+    "iou_building": 0.5133113677027014,
+    "iou_vegetation": 0.8794423887789347,
+    "iou_sky": 0.9536911682726766,
+    "iou_person": 0.01793545853243438,
+    "iou_car": 0.8795726094188453,
+    "n_vehicles_original": 15,
+    "n_vehicles_recon": 24,
+    "count_abs_err": 9,
+    "count_exact": false,
+    "count_within1": false,
+    "matched": 9,
+    "recall": 0.6,
+    "precision": 0.375,
+    "n_people_original": 10,
+    "n_people_recon": 1,
+    "people_abs_err": 9,
+    "colourfulness": 2.927710083255152
+   }
+  },
+  {
+   "stem": "frankfurt_000000_001751_leftImg8bit",
+   "colourfulness_original": 12.903244181518417,
+   "A_cs_full": {
+    "pixel_acc": 0.8473215103149414,
+    "miou": 0.335538941704955,
+    "iou_road": 0.8647224244500592,
+    "iou_sidewalk": 0.07491124471482347,
+    "iou_building": 0.6921781990247982,
+    "iou_vegetation": 0.9399593418984206,
+    "iou_sky": 0.0,
+    "iou_person": 0.2930939226519337,
+    "iou_car": 0.7828283771667663,
+    "n_vehicles_original": 22,
+    "n_vehicles_recon": 12,
+    "count_abs_err": 10,
+    "count_exact": false,
+    "count_within1": false,
+    "matched": 9,
+    "recall": 0.4090909090909091,
+    "precision": 0.75,
+    "n_people_original": 3,
+    "n_people_recon": 2,
+    "people_abs_err": 1,
+    "colourfulness": 8.452502887133196
+   },
+   "B_ade_full": {
+    "pixel_acc": 0.881016731262207,
+    "miou": 0.3503554075193896,
+    "iou_road": 0.8626633205713055,
+    "iou_sidewalk": 0.04377916192262184,
+    "iou_building": 0.7539127773610047,
+    "iou_vegetation": 0.8680180252417531,
+    "iou_sky": 0.8079929496513143,
+    "iou_person": 0.0,
+    "iou_car": 0.7927456875265333,
+    "n_vehicles_original": 22,
+    "n_vehicles_recon": 22,
+    "count_abs_err": 0,
+    "count_exact": true,
+    "count_within1": true,
+    "matched": 11,
+    "recall": 0.5,
+    "precision": 0.5,
+    "n_people_original": 3,
+    "n_people_recon": 2,
+    "people_abs_err": 1,
+    "colourfulness": 3.0287681422370594
+   }
+  }
+ ]
+}

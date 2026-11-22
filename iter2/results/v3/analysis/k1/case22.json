@@ -1,0 +1,181 @@
+{
+ "case": "case22",
+ "reference": "cam1",
+ "variant": "k1",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 0,
+  "bicycle": 0,
+  "car": 3,
+  "motorcycle": 0,
+  "bus": 2,
+  "truck": 0,
+  "cars_4wheel": 5,
+  "two_wheelers": 0,
+  "vehicles": 5,
+  "pedestrians": 0
+ },
+ "gt": {
+  "cars_4wheel": 12,
+  "pedestrians": 7,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "car",
+   "score": 0.996,
+   "bbox_master_px": [
+    223.9,
+    265.9,
+    298.1,
+    324.6
+   ],
+   "center_master_px": [
+    261.0,
+    295.3
+   ],
+   "ground_contact_master_px": [
+    261.0,
+    324.6
+   ],
+   "bbox_reference_px": [
+    419.9,
+    498.6,
+    558.9,
+    608.6
+   ],
+   "center_reference_px": [
+    489.4,
+    553.6
+   ]
+  },
+  {
+   "id": 1,
+   "class": "bus",
+   "score": 0.987,
+   "bbox_master_px": [
+    70.7,
+    202.2,
+    205.6,
+    327.3
+   ],
+   "center_master_px": [
+    138.1,
+    264.7
+   ],
+   "ground_contact_master_px": [
+    138.1,
+    327.3
+   ],
+   "bbox_reference_px": [
+    132.6,
+    379.1,
+    385.5,
+    613.6
+   ],
+   "center_reference_px": [
+    259.0,
+    496.4
+   ]
+  },
+  {
+   "id": 2,
+   "class": "car",
+   "score": 0.967,
+   "bbox_master_px": [
+    376.5,
+    270.5,
+    523.3,
+    363.5
+   ],
+   "center_master_px": [
+    449.9,
+    317.0
+   ],
+   "ground_contact_master_px": [
+    449.9,
+    363.5
+   ],
+   "bbox_reference_px": [
+    705.9,
+    507.1,
+    981.1,
+    681.5
+   ],
+   "center_reference_px": [
+    843.5,
+    594.3
+   ]
+  },
+  {
+   "id": 3,
+   "class": "bus",
+   "score": 0.63,
+   "bbox_master_px": [
+    316.2,
+    252.7,
+    383.1,
+    307.9
+   ],
+   "center_master_px": [
+    349.7,
+    280.3
+   ],
+   "ground_contact_master_px": [
+    349.7,
+    307.9
+   ],
+   "bbox_reference_px": [
+    592.9,
+    473.8,
+    718.4,
+    577.3
+   ],
+   "center_reference_px": [
+    655.6,
+    525.6
+   ]
+  },
+  {
+   "id": 4,
+   "class": "car",
+   "score": 0.589,
+   "bbox_master_px": [
+    317.3,
+    252.5,
+    382.8,
+    308.6
+   ],
+   "center_master_px": [
+    350.1,
+    280.5
+   ],
+   "ground_contact_master_px": [
+    350.1,
+    308.6
+   ],
+   "bbox_reference_px": [
+    594.9,
+    473.4,
+    717.8,
+    578.7
+   ],
+   "center_reference_px": [
+    656.4,
+    526.0
+   ]
+  }
+ ],
+ "vehicle_recall": 0.36363636363636365,
+ "vehicle_precision": 0.8,
+ "person_recall": 0.0,
+ "person_precision": null,
+ "vehicle_count_abs_err_vs_oracle": 6,
+ "person_count_abs_err_vs_oracle": 8,
+ "seconds": 10.906104900001083,
+ "prompt": "a city street with a red bus and a red car"
+}

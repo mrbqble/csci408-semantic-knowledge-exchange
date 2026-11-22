@@ -1,0 +1,268 @@
+{
+ "case": "case40",
+ "reference": "cam1",
+ "variant": "prompt_only",
+ "master_size": [
+  1280,
+  704
+ ],
+ "counts": {
+  "person": 5,
+  "bicycle": 0,
+  "car": 1,
+  "motorcycle": 0,
+  "bus": 1,
+  "truck": 1,
+  "cars_4wheel": 3,
+  "two_wheelers": 0,
+  "vehicles": 3,
+  "pedestrians": 5
+ },
+ "gt": {
+  "cars_4wheel": 7,
+  "pedestrians": 7,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "person",
+   "score": 0.999,
+   "bbox_master_px": [
+    1181.7,
+    284.3,
+    1224.1,
+    381.6
+   ],
+   "center_master_px": [
+    1202.9,
+    332.9
+   ],
+   "ground_contact_master_px": [
+    1202.9,
+    381.6
+   ],
+   "bbox_reference_px": [
+    1772.6,
+    436.2,
+    1836.2,
+    585.4
+   ],
+   "center_reference_px": [
+    1804.4,
+    510.8
+   ]
+  },
+  {
+   "id": 1,
+   "class": "person",
+   "score": 0.996,
+   "bbox_master_px": [
+    1094.3,
+    283.1,
+    1121.2,
+    343.5
+   ],
+   "center_master_px": [
+    1107.8,
+    313.3
+   ],
+   "ground_contact_master_px": [
+    1107.8,
+    343.5
+   ],
+   "bbox_reference_px": [
+    1641.5,
+    434.3,
+    1681.9,
+    526.9
+   ],
+   "center_reference_px": [
+    1661.7,
+    480.6
+   ]
+  },
+  {
+   "id": 2,
+   "class": "person",
+   "score": 0.984,
+   "bbox_master_px": [
+    1269.2,
+    308.8,
+    1280.0,
+    386.0
+   ],
+   "center_master_px": [
+    1274.6,
+    347.4
+   ],
+   "ground_contact_master_px": [
+    1274.6,
+    386.0
+   ],
+   "bbox_reference_px": [
+    1903.8,
+    473.7,
+    1920.0,
+    592.2
+   ],
+   "center_reference_px": [
+    1911.9,
+    532.9
+   ]
+  },
+  {
+   "id": 3,
+   "class": "car",
+   "score": 0.947,
+   "bbox_master_px": [
+    624.9,
+    292.9,
+    680.8,
+    331.5
+   ],
+   "center_master_px": [
+    652.9,
+    312.2
+   ],
+   "ground_contact_master_px": [
+    652.9,
+    331.5
+   ],
+   "bbox_reference_px": [
+    937.4,
+    449.4,
+    1021.3,
+    508.5
+   ],
+   "center_reference_px": [
+    979.3,
+    478.9
+   ]
+  },
+  {
+   "id": 4,
+   "class": "person",
+   "score": 0.936,
+   "bbox_master_px": [
+    610.6,
+    283.1,
+    619.9,
+    305.1
+   ],
+   "center_master_px": [
+    615.2,
+    294.1
+   ],
+   "ground_contact_master_px": [
+    615.2,
+    305.1
+   ],
+   "bbox_reference_px": [
+    915.9,
+    434.3,
+    929.8,
+    468.0
+   ],
+   "center_reference_px": [
+    922.9,
+    451.2
+   ]
+  },
+  {
+   "id": 5,
+   "class": "person",
+   "score": 0.931,
+   "bbox_master_px": [
+    1001.8,
+    285.6,
+    1012.1,
+    312.7
+   ],
+   "center_master_px": [
+    1006.9,
+    299.1
+   ],
+   "ground_contact_master_px": [
+    1006.9,
+    312.7
+   ],
+   "bbox_reference_px": [
+    1502.7,
+    438.1,
+    1518.1,
+    479.7
+   ],
+   "center_reference_px": [
+    1510.4,
+    458.9
+   ]
+  },
+  {
+   "id": 6,
+   "class": "truck",
+   "score": 0.621,
+   "bbox_master_px": [
+    806.1,
+    279.2,
+    887.8,
+    353.5
+   ],
+   "center_master_px": [
+    847.0,
+    316.3
+   ],
+   "ground_contact_master_px": [
+    847.0,
+    353.5
+   ],
+   "bbox_reference_px": [
+    1209.2,
+    428.4,
+    1331.7,
+    542.3
+   ],
+   "center_reference_px": [
+    1270.5,
+    485.3
+   ]
+  },
+  {
+   "id": 7,
+   "class": "bus",
+   "score": 0.615,
+   "bbox_master_px": [
+    807.9,
+    280.4,
+    887.7,
+    352.3
+   ],
+   "center_master_px": [
+    847.8,
+    316.3
+   ],
+   "ground_contact_master_px": [
+    847.8,
+    352.3
+   ],
+   "bbox_reference_px": [
+    1211.9,
+    430.1,
+    1331.6,
+    540.4
+   ],
+   "center_reference_px": [
+    1271.7,
+    485.3
+   ]
+  }
+ ],
+ "vehicle_recall": 0.2222222222222222,
+ "vehicle_precision": 0.6666666666666666,
+ "person_recall": 0.375,
+ "person_precision": 0.6,
+ "vehicle_count_abs_err_vs_oracle": 6,
+ "person_count_abs_err_vs_oracle": 3,
+ "seconds": 19.423813400000654,
+ "prompt": "a city street with a bus and people, a man walking down a street next to a bus, a street with palm trees and a bus, the game ' s screens are very realistic, but they ' re - - - - - - -, a street with a car and a pink car, a street with a bus and a person walking on it"
+}

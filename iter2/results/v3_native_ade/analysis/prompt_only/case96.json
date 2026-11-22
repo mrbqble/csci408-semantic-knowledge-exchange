@@ -1,0 +1,268 @@
+{
+ "case": "case96",
+ "reference": "cam1",
+ "variant": "prompt_only",
+ "master_size": [
+  896,
+  512
+ ],
+ "counts": {
+  "person": 3,
+  "bicycle": 0,
+  "car": 5,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 0,
+  "cars_4wheel": 5,
+  "two_wheelers": 0,
+  "vehicles": 5,
+  "pedestrians": 3
+ },
+ "gt": {
+  "cars_4wheel": 6,
+  "pedestrians": 7,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "car",
+   "score": 1.0,
+   "bbox_master_px": [
+    462.4,
+    257.0,
+    806.0,
+    412.8
+   ],
+   "center_master_px": [
+    634.2,
+    334.9
+   ],
+   "ground_contact_master_px": [
+    634.2,
+    412.8
+   ],
+   "bbox_reference_px": [
+    991.0,
+    542.0,
+    1727.2,
+    870.8
+   ],
+   "center_reference_px": [
+    1359.1,
+    706.4
+   ]
+  },
+  {
+   "id": 1,
+   "class": "car",
+   "score": 0.999,
+   "bbox_master_px": [
+    287.0,
+    230.3,
+    356.0,
+    283.2
+   ],
+   "center_master_px": [
+    321.5,
+    256.8
+   ],
+   "ground_contact_master_px": [
+    321.5,
+    283.2
+   ],
+   "bbox_reference_px": [
+    614.9,
+    485.9,
+    762.9,
+    597.4
+   ],
+   "center_reference_px": [
+    688.9,
+    541.7
+   ]
+  },
+  {
+   "id": 2,
+   "class": "person",
+   "score": 0.999,
+   "bbox_master_px": [
+    60.2,
+    240.1,
+    131.8,
+    401.7
+   ],
+   "center_master_px": [
+    96.0,
+    320.9
+   ],
+   "ground_contact_master_px": [
+    96.0,
+    401.7
+   ],
+   "bbox_reference_px": [
+    129.1,
+    506.5,
+    282.4,
+    847.3
+   ],
+   "center_reference_px": [
+    205.7,
+    676.9
+   ]
+  },
+  {
+   "id": 3,
+   "class": "person",
+   "score": 0.997,
+   "bbox_master_px": [
+    858.7,
+    217.0,
+    893.4,
+    321.7
+   ],
+   "center_master_px": [
+    876.1,
+    269.4
+   ],
+   "ground_contact_master_px": [
+    876.1,
+    321.7
+   ],
+   "bbox_reference_px": [
+    1840.1,
+    457.7,
+    1914.5,
+    678.7
+   ],
+   "center_reference_px": [
+    1877.3,
+    568.2
+   ]
+  },
+  {
+   "id": 4,
+   "class": "car",
+   "score": 0.991,
+   "bbox_master_px": [
+    382.6,
+    218.5,
+    436.9,
+    263.8
+   ],
+   "center_master_px": [
+    409.8,
+    241.1
+   ],
+   "ground_contact_master_px": [
+    409.8,
+    263.8
+   ],
+   "bbox_reference_px": [
+    819.9,
+    460.9,
+    936.2,
+    556.4
+   ],
+   "center_reference_px": [
+    878.1,
+    508.6
+   ]
+  },
+  {
+   "id": 5,
+   "class": "person",
+   "score": 0.989,
+   "bbox_master_px": [
+    649.1,
+    216.8,
+    663.8,
+    260.7
+   ],
+   "center_master_px": [
+    656.4,
+    238.7
+   ],
+   "ground_contact_master_px": [
+    656.4,
+    260.7
+   ],
+   "bbox_reference_px": [
+    1390.9,
+    457.2,
+    1422.3,
+    549.9
+   ],
+   "center_reference_px": [
+    1406.6,
+    503.6
+   ]
+  },
+  {
+   "id": 6,
+   "class": "car",
+   "score": 0.675,
+   "bbox_master_px": [
+    371.4,
+    218.2,
+    393.4,
+    246.8
+   ],
+   "center_master_px": [
+    382.4,
+    232.5
+   ],
+   "ground_contact_master_px": [
+    382.4,
+    246.8
+   ],
+   "bbox_reference_px": [
+    795.9,
+    460.2,
+    843.0,
+    520.7
+   ],
+   "center_reference_px": [
+    819.5,
+    490.4
+   ]
+  },
+  {
+   "id": 7,
+   "class": "car",
+   "score": 0.519,
+   "bbox_master_px": [
+    356.3,
+    207.3,
+    373.6,
+    220.9
+   ],
+   "center_master_px": [
+    364.9,
+    214.1
+   ],
+   "ground_contact_master_px": [
+    364.9,
+    220.9
+   ],
+   "bbox_reference_px": [
+    763.4,
+    437.3,
+    800.6,
+    466.1
+   ],
+   "center_reference_px": [
+    782.0,
+    451.7
+   ]
+  }
+ ],
+ "vehicle_recall": 0.6666666666666666,
+ "vehicle_precision": 0.8,
+ "person_recall": 0.2727272727272727,
+ "person_precision": 1.0,
+ "vehicle_count_abs_err_vs_oracle": 1,
+ "person_count_abs_err_vs_oracle": 8,
+ "seconds": 8.123586099998647,
+ "prompt": "the screenshote of the city in the game, showing a car driving through a crosswalk, a red truck parked on a street next to a building, a red car parked in a parking lot, a police car parked on the side of a road, a man walking down a street next to a building, a car is parked on the side of the road"
+}

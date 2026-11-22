@@ -1,0 +1,413 @@
+{
+ "case": "case16",
+ "reference": "cam1",
+ "variant": "prompt_only",
+ "master_size": [
+  2048,
+  1152
+ ],
+ "counts": {
+  "person": 7,
+  "bicycle": 0,
+  "car": 5,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 1,
+  "cars_4wheel": 6,
+  "two_wheelers": 0,
+  "vehicles": 6,
+  "pedestrians": 7
+ },
+ "gt": {
+  "cars_4wheel": 7,
+  "pedestrians": 8,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "person",
+   "score": 0.999,
+   "bbox_master_px": [
+    312.0,
+    510.2,
+    889.6,
+    1136.5
+   ],
+   "center_master_px": [
+    600.8,
+    823.4
+   ],
+   "ground_contact_master_px": [
+    600.8,
+    1136.5
+   ],
+   "bbox_reference_px": [
+    292.5,
+    478.3,
+    834.0,
+    1065.5
+   ],
+   "center_reference_px": [
+    563.2,
+    771.9
+   ]
+  },
+  {
+   "id": 1,
+   "class": "car",
+   "score": 0.999,
+   "bbox_master_px": [
+    199.2,
+    506.5,
+    523.2,
+    642.3
+   ],
+   "center_master_px": [
+    361.2,
+    574.4
+   ],
+   "ground_contact_master_px": [
+    361.2,
+    642.3
+   ],
+   "bbox_reference_px": [
+    186.8,
+    474.8,
+    490.5,
+    602.2
+   ],
+   "center_reference_px": [
+    338.6,
+    538.5
+   ]
+  },
+  {
+   "id": 2,
+   "class": "car",
+   "score": 0.998,
+   "bbox_master_px": [
+    1083.5,
+    510.6,
+    1502.2,
+    708.0
+   ],
+   "center_master_px": [
+    1292.9,
+    609.3
+   ],
+   "ground_contact_master_px": [
+    1292.9,
+    708.0
+   ],
+   "bbox_reference_px": [
+    1015.8,
+    478.7,
+    1408.3,
+    663.8
+   ],
+   "center_reference_px": [
+    1212.1,
+    571.2
+   ]
+  },
+  {
+   "id": 3,
+   "class": "person",
+   "score": 0.998,
+   "bbox_master_px": [
+    1427.8,
+    519.4,
+    1602.5,
+    931.6
+   ],
+   "center_master_px": [
+    1515.1,
+    725.5
+   ],
+   "ground_contact_master_px": [
+    1515.1,
+    931.6
+   ],
+   "bbox_reference_px": [
+    1338.6,
+    486.9,
+    1502.3,
+    873.4
+   ],
+   "center_reference_px": [
+    1420.4,
+    680.2
+   ]
+  },
+  {
+   "id": 4,
+   "class": "car",
+   "score": 0.996,
+   "bbox_master_px": [
+    595.6,
+    491.0,
+    792.4,
+    574.7
+   ],
+   "center_master_px": [
+    694.0,
+    532.9
+   ],
+   "ground_contact_master_px": [
+    694.0,
+    574.7
+   ],
+   "bbox_reference_px": [
+    558.4,
+    460.3,
+    742.9,
+    538.8
+   ],
+   "center_reference_px": [
+    650.6,
+    499.6
+   ]
+  },
+  {
+   "id": 5,
+   "class": "person",
+   "score": 0.991,
+   "bbox_master_px": [
+    0.8,
+    545.5,
+    263.4,
+    1144.7
+   ],
+   "center_master_px": [
+    132.1,
+    845.1
+   ],
+   "ground_contact_master_px": [
+    132.1,
+    1144.7
+   ],
+   "bbox_reference_px": [
+    0.7,
+    511.4,
+    246.9,
+    1073.2
+   ],
+   "center_reference_px": [
+    123.8,
+    792.3
+   ]
+  },
+  {
+   "id": 6,
+   "class": "car",
+   "score": 0.956,
+   "bbox_master_px": [
+    787.9,
+    471.8,
+    1027.7,
+    573.8
+   ],
+   "center_master_px": [
+    907.8,
+    522.8
+   ],
+   "ground_contact_master_px": [
+    907.8,
+    573.8
+   ],
+   "bbox_reference_px": [
+    738.6,
+    442.3,
+    963.4,
+    537.9
+   ],
+   "center_reference_px": [
+    851.0,
+    490.1
+   ]
+  },
+  {
+   "id": 7,
+   "class": "truck",
+   "score": 0.892,
+   "bbox_master_px": [
+    0.2,
+    433.2,
+    226.5,
+    604.2
+   ],
+   "center_master_px": [
+    113.4,
+    518.7
+   ],
+   "ground_contact_master_px": [
+    113.4,
+    604.2
+   ],
+   "bbox_reference_px": [
+    0.2,
+    406.1,
+    212.3,
+    566.4
+   ],
+   "center_reference_px": [
+    106.3,
+    486.3
+   ]
+  },
+  {
+   "id": 8,
+   "class": "person",
+   "score": 0.792,
+   "bbox_master_px": [
+    1876.0,
+    476.2,
+    1905.9,
+    559.6
+   ],
+   "center_master_px": [
+    1891.0,
+    517.9
+   ],
+   "ground_contact_master_px": [
+    1891.0,
+    559.6
+   ],
+   "bbox_reference_px": [
+    1758.7,
+    446.4,
+    1786.8,
+    524.7
+   ],
+   "center_reference_px": [
+    1772.8,
+    485.5
+   ]
+  },
+  {
+   "id": 9,
+   "class": "car",
+   "score": 0.577,
+   "bbox_master_px": [
+    1541.6,
+    411.0,
+    1768.0,
+    534.1
+   ],
+   "center_master_px": [
+    1654.8,
+    472.5
+   ],
+   "ground_contact_master_px": [
+    1654.8,
+    534.1
+   ],
+   "bbox_reference_px": [
+    1445.3,
+    385.3,
+    1657.5,
+    500.7
+   ],
+   "center_reference_px": [
+    1551.4,
+    443.0
+   ]
+  },
+  {
+   "id": 10,
+   "class": "person",
+   "score": 0.573,
+   "bbox_master_px": [
+    1309.4,
+    490.6,
+    1322.1,
+    512.1
+   ],
+   "center_master_px": [
+    1315.7,
+    501.3
+   ],
+   "ground_contact_master_px": [
+    1315.7,
+    512.1
+   ],
+   "bbox_reference_px": [
+    1227.5,
+    459.9,
+    1239.4,
+    480.1
+   ],
+   "center_reference_px": [
+    1233.5,
+    470.0
+   ]
+  },
+  {
+   "id": 11,
+   "class": "person",
+   "score": 0.567,
+   "bbox_master_px": [
+    771.7,
+    477.9,
+    782.7,
+    508.0
+   ],
+   "center_master_px": [
+    777.2,
+    493.0
+   ],
+   "ground_contact_master_px": [
+    777.2,
+    508.0
+   ],
+   "bbox_reference_px": [
+    723.4,
+    448.0,
+    733.8,
+    476.3
+   ],
+   "center_reference_px": [
+    728.6,
+    462.1
+   ]
+  },
+  {
+   "id": 12,
+   "class": "person",
+   "score": 0.543,
+   "bbox_master_px": [
+    1237.0,
+    452.1,
+    1269.6,
+    509.2
+   ],
+   "center_master_px": [
+    1253.3,
+    480.6
+   ],
+   "ground_contact_master_px": [
+    1253.3,
+    509.2
+   ],
+   "bbox_reference_px": [
+    1159.7,
+    423.9,
+    1190.2,
+    477.3
+   ],
+   "center_reference_px": [
+    1175.0,
+    450.6
+   ]
+  }
+ ],
+ "vehicle_recall": 0.8571428571428571,
+ "vehicle_precision": 1.0,
+ "person_recall": 0.23529411764705882,
+ "person_precision": 0.5714285714285714,
+ "vehicle_count_abs_err_vs_oracle": 1,
+ "person_count_abs_err_vs_oracle": 10,
+ "seconds": 93.65661590000127,
+ "prompt": "a man and woman crossing a street in a city, a street scene with cars and buildings, a police car driving down a street in the city, the city street in saints 2, a man walking across a street in a city, a white van parked on the side of a road"
+}

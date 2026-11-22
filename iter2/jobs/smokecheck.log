@@ -1,0 +1,178 @@
+START Sun 10/25/2026 21:50:56.56 
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/758 [00:00<?, ?it/s]Loading weights:  18%|█▊        | 140/758 [00:00<00:00, 1387.23it/s]Loading weights:  37%|███▋      | 279/758 [00:00<00:00, 634.05it/s] Loading weights: 100%|██████████| 758/758 [00:00<00:00, 1635.74it/s]
+[transformers] [1mMask2FormerForUniversalSegmentation LOAD REPORT[0m from: facebook/mask2former-swin-large-cityscapes-semantic
+Key                                                                                                                      | Status     | 
+-------------------------------------------------------------------------------------------------------------------------+------------+-
+model.pixel_level_module.encoder.swin.encoder.layers.{0, 1, 2, 3}.blocks.{0...17}.attention.self.relative_position_index | UNEXPECTED | 
+model.pixel_level_module.encoder.swin.layernorm.weight                                                                   | MISSING    | 
+model.pixel_level_module.encoder.swin.layernorm.bias                                                                     | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+Loading weights:   0%|          | 0/473 [00:00<?, ?it/s]Loading weights: 100%|██████████| 473/473 [00:00<00:00, 22684.62it/s]
+C:\Users\mrbqble\Desktop\csci408-probe\.venv\Lib\site-packages\transformers\generation\utils.py:1805: UserWarning: Using the model-agnostic default `max_length` (=21) to control the generation length. We recommend setting `max_new_tokens` to control the maximum length of the generation.
+  warnings.warn(
+[1/1] case1/cam1: 43.5 KB (seg 6254 B, edge 38182 B, caption 67 B) 262/123/410 ms | a street scene with a red sign and a person walking down the street
+[1/1] case1/cam2: 54.7 KB (seg 2960 B, edge 53008 B, caption 40 B) 262/97/307 ms | a car is driving down a street in a city
+[1/1] case1/cam3: 61.2 KB (seg 5706 B, edge 56930 B, caption 16 B) 258/100/191 ms | a sign on a pole
+PAYLOADS_DONE 3 payloads
+C:\Users\mrbqble\Desktop\csci408-probe\.venv\Lib\site-packages\huggingface_hub\utils\_validators.py:206: UserWarning: The `local_dir_use_symlinks` argument is deprecated and ignored in `hf_hub_download`. Downloading to a local directory does not use symlinks anymore.
+  warnings.warn(
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+C:\Users\mrbqble\Desktop\csci408-probe\.venv\Lib\site-packages\diffusers\utils\deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.
+  deprecate("torch_dtype", "1.0.0", _TORCH_DTYPE_DEPRECATION_MESSAGE)
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]Loading pipeline components...:  33%|███▎      | 2/6 [00:00<00:00, 15.02it/s]
+Loading weights:   0%|          | 0/196 [00:00<?, ?it/s][ALoading weights: 100%|██████████| 196/196 [00:00<00:00, 2071.81it/s]
+Loading pipeline components...: 100%|██████████| 6/6 [00:00<00:00, 12.56it/s]Loading pipeline components...: 100%|██████████| 6/6 [00:00<00:00, 12.77it/s]
+You have disabled the safety checker for <class 'diffusers.pipelines.controlnet.pipeline_controlnet.StableDiffusionControlNetPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+Loading weights:   0%|          | 0/520 [00:00<?, ?it/s]Loading weights:   7%|▋         | 38/520 [00:00<00:01, 310.39it/s]Loading weights:  13%|█▎        | 70/520 [00:00<00:01, 265.22it/s]Loading weights:  19%|█▊        | 97/520 [00:00<00:01, 259.52it/s]Loading weights:  24%|██▎       | 123/520 [00:00<00:01, 233.53it/s]Loading weights:  28%|██▊       | 147/520 [00:00<00:01, 227.21it/s]Loading weights:  33%|███▎      | 170/520 [00:00<00:01, 205.47it/s]Loading weights:  37%|███▋      | 194/520 [00:00<00:01, 215.06it/s]Loading weights:  42%|████▏     | 216/520 [00:00<00:01, 212.54it/s]Loading weights:  46%|████▌     | 238/520 [00:01<00:01, 194.94it/s]Loading weights:  50%|████▉     | 258/520 [00:01<00:01, 192.50it/s]Loading weights:  53%|█████▎    | 278/520 [00:01<00:01, 189.36it/s]Loading weights:  57%|█████▋    | 298/520 [00:01<00:01, 190.76it/s]Loading weights:  61%|██████    | 318/520 [00:01<00:01, 192.89it/s]Loading weights:  65%|██████▌   | 338/520 [00:01<00:00, 189.50it/s]Loading weights:  69%|██████▉   | 358/520 [00:01<00:00, 174.95it/s]Loading weights:  73%|███████▎  | 381/520 [00:01<00:00, 189.43it/s]Loading weights:  77%|███████▋  | 402/520 [00:01<00:00, 177.24it/s]Loading weights:  82%|████████▏ | 425/520 [00:02<00:00, 184.93it/s]Loading weights:  87%|████████▋ | 453/520 [00:02<00:00, 188.03it/s]Loading weights:  91%|█████████ | 472/520 [00:02<00:00, 185.40it/s]Loading weights:  95%|█████████▌| 495/520 [00:02<00:00, 196.82it/s]Loading weights: 100%|██████████| 520/520 [00:02<00:00, 203.90it/s]
+There are modules in UNet2DConditionModel that should be kept in float32: []. Casting directly with `to()` can lead to inconsistent results; set `torch_dtype` in `from_pretrained()` instead to keep these modules in float32.
+1 cases, variants ['k1', 'prompt_only'], size 1024x576, palette cs, ref policy first, SD runwayml/stable-diffusion-v1-5
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:00<00:14,  1.35it/s] 10%|█         | 2/20 [00:01<00:10,  1.70it/s] 15%|█▌        | 3/20 [00:01<00:09,  1.82it/s] 20%|██        | 4/20 [00:02<00:08,  1.91it/s] 25%|██▌       | 5/20 [00:02<00:07,  1.97it/s] 30%|███       | 6/20 [00:03<00:07,  2.00it/s] 35%|███▌      | 7/20 [00:03<00:06,  2.01it/s] 40%|████      | 8/20 [00:04<00:05,  2.03it/s] 45%|████▌     | 9/20 [00:04<00:05,  2.04it/s] 50%|█████     | 10/20 [00:05<00:04,  2.05it/s] 55%|█████▌    | 11/20 [00:05<00:04,  2.05it/s] 60%|██████    | 12/20 [00:06<00:03,  2.05it/s] 65%|██████▌   | 13/20 [00:06<00:03,  2.05it/s] 70%|███████   | 14/20 [00:07<00:02,  2.05it/s] 75%|███████▌  | 15/20 [00:07<00:02,  2.05it/s] 80%|████████  | 16/20 [00:08<00:01,  2.06it/s] 85%|████████▌ | 17/20 [00:08<00:01,  2.06it/s] 90%|█████████ | 18/20 [00:09<00:00,  2.06it/s] 95%|█████████▌| 19/20 [00:09<00:00,  2.06it/s]100%|██████████| 20/20 [00:09<00:00,  2.06it/s]100%|██████████| 20/20 [00:09<00:00,  2.00it/s]
+[1/1] case1 k1 cam1: 10.8 s, peak 5394 MB
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:00<00:09,  2.09it/s] 10%|█         | 2/20 [00:00<00:08,  2.07it/s] 15%|█▌        | 3/20 [00:01<00:08,  2.07it/s] 20%|██        | 4/20 [00:01<00:07,  2.07it/s] 25%|██▌       | 5/20 [00:02<00:07,  2.06it/s] 30%|███       | 6/20 [00:02<00:06,  2.06it/s] 35%|███▌      | 7/20 [00:03<00:06,  2.06it/s] 40%|████      | 8/20 [00:03<00:05,  2.05it/s] 45%|████▌     | 9/20 [00:04<00:05,  2.05it/s] 50%|█████     | 10/20 [00:04<00:04,  2.04it/s] 55%|█████▌    | 11/20 [00:05<00:04,  2.04it/s] 60%|██████    | 12/20 [00:05<00:03,  2.05it/s] 65%|██████▌   | 13/20 [00:06<00:03,  2.05it/s] 70%|███████   | 14/20 [00:06<00:02,  2.05it/s] 75%|███████▌  | 15/20 [00:07<00:02,  2.03it/s] 80%|████████  | 16/20 [00:07<00:01,  2.03it/s] 85%|████████▌ | 17/20 [00:08<00:01,  1.96it/s] 90%|█████████ | 18/20 [00:08<00:01,  1.98it/s] 95%|█████████▌| 19/20 [00:09<00:00,  2.00it/s]100%|██████████| 20/20 [00:09<00:00,  2.01it/s]100%|██████████| 20/20 [00:09<00:00,  2.03it/s]
+[1/1] case1 prompt_only (ref cam1, 2 supporting): 10.5 s, peak 5395 MB | a street scene with a red sign and a person walking down the street, a car is driving down a street in a city, a sign on a pole
+COORDINATOR_DONE
+1 cases, variants ['k1', 'prompt_only'], detector torchvision fasterrcnn_resnet50_fpn_v2, COCO_V1
+[1/1] case1: oracle_full 8c/17p, oracle_gen 8c/14p, k1 6c/1p, prompt_only 8c/1p | GT 7c/5p
+{
+ "detector": "torchvision fasterrcnn_resnet50_fpn_v2, COCO_V1",
+ "score_min": 0.5,
+ "match_iou": 0.5,
+ "variants": {
+  "oracle_full": {
+   "n_cases": 1,
+   "mean_cars_4wheel": 8.0,
+   "gt_mean_cars_4wheel": 7.0,
+   "cars_4wheel_mae_vs_gt": 1.0,
+   "cars_4wheel_bias_vs_gt": 1.0,
+   "cars_4wheel_exact_vs_gt": 0.0,
+   "cars_4wheel_within1_vs_gt": 1.0,
+   "cars_4wheel_pearson_vs_gt": null,
+   "mean_pedestrians": 17.0,
+   "gt_mean_pedestrians": 5.0,
+   "pedestrians_mae_vs_gt": 12.0,
+   "pedestrians_bias_vs_gt": 12.0,
+   "pedestrians_exact_vs_gt": 0.0,
+   "pedestrians_within1_vs_gt": 0.0,
+   "pedestrians_pearson_vs_gt": null,
+   "mean_two_wheelers": 0.0,
+   "gt_mean_two_wheelers": 0.0,
+   "two_wheelers_mae_vs_gt": 0.0,
+   "two_wheelers_bias_vs_gt": 0.0,
+   "two_wheelers_exact_vs_gt": 1.0,
+   "two_wheelers_within1_vs_gt": 1.0,
+   "two_wheelers_pearson_vs_gt": null,
+   "vehicle_recall": null,
+   "vehicle_precision": null,
+   "person_recall": null,
+   "person_precision": null,
+   "vehicle_count_abs_err_vs_oracle": null,
+   "person_count_abs_err_vs_oracle": null,
+   "seconds": null
+  },
+  "oracle_gen": {
+   "n_cases": 1,
+   "mean_cars_4wheel": 8.0,
+   "gt_mean_cars_4wheel": 7.0,
+   "cars_4wheel_mae_vs_gt": 1.0,
+   "cars_4wheel_bias_vs_gt": 1.0,
+   "cars_4wheel_exact_vs_gt": 0.0,
+   "cars_4wheel_within1_vs_gt": 1.0,
+   "cars_4wheel_pearson_vs_gt": null,
+   "mean_pedestrians": 14.0,
+   "gt_mean_pedestrians": 5.0,
+   "pedestrians_mae_vs_gt": 9.0,
+   "pedestrians_bias_vs_gt": 9.0,
+   "pedestrians_exact_vs_gt": 0.0,
+   "pedestrians_within1_vs_gt": 0.0,
+   "pedestrians_pearson_vs_gt": null,
+   "mean_two_wheelers": 0.0,
+   "gt_mean_two_wheelers": 0.0,
+   "two_wheelers_mae_vs_gt": 0.0,
+   "two_wheelers_bias_vs_gt": 0.0,
+   "two_wheelers_exact_vs_gt": 1.0,
+   "two_wheelers_within1_vs_gt": 1.0,
+   "two_wheelers_pearson_vs_gt": null,
+   "vehicle_recall": null,
+   "vehicle_precision": null,
+   "person_recall": null,
+   "person_precision": null,
+   "vehicle_count_abs_err_vs_oracle": null,
+   "person_count_abs_err_vs_oracle": null,
+   "seconds": null
+  },
+  "k1": {
+   "n_cases": 1,
+   "mean_cars_4wheel": 6.0,
+   "gt_mean_cars_4wheel": 7.0,
+   "cars_4wheel_mae_vs_gt": 1.0,
+   "cars_4wheel_bias_vs_gt": -1.0,
+   "cars_4wheel_exact_vs_gt": 0.0,
+   "cars_4wheel_within1_vs_gt": 1.0,
+   "cars_4wheel_pearson_vs_gt": null,
+   "mean_pedestrians": 1.0,
+   "gt_mean_pedestrians": 5.0,
+   "pedestrians_mae_vs_gt": 4.0,
+   "pedestrians_bias_vs_gt": -4.0,
+   "pedestrians_exact_vs_gt": 0.0,
+   "pedestrians_within1_vs_gt": 0.0,
+   "pedestrians_pearson_vs_gt": null,
+   "mean_two_wheelers": 0.0,
+   "gt_mean_two_wheelers": 0.0,
+   "two_wheelers_mae_vs_gt": 0.0,
+   "two_wheelers_bias_vs_gt": 0.0,
+   "two_wheelers_exact_vs_gt": 1.0,
+   "two_wheelers_within1_vs_gt": 1.0,
+   "two_wheelers_pearson_vs_gt": null,
+   "vehicle_recall": 0.625,
+   "vehicle_precision": 0.8333333333333334,
+   "person_recall": 0.07142857142857142,
+   "person_precision": 1.0,
+   "vehicle_count_abs_err_vs_oracle": 2.0,
+   "person_count_abs_err_vs_oracle": 13.0,
+   "seconds": 10.812570300000516
+  },
+  "prompt_only": {
+   "n_cases": 1,
+   "mean_cars_4wheel": 8.0,
+   "gt_mean_cars_4wheel": 7.0,
+   "cars_4wheel_mae_vs_gt": 1.0,
+   "cars_4wheel_bias_vs_gt": 1.0,
+   "cars_4wheel_exact_vs_gt": 0.0,
+   "cars_4wheel_within1_vs_gt": 1.0,
+   "cars_4wheel_pearson_vs_gt": null,
+   "mean_pedestrians": 1.0,
+   "gt_mean_pedestrians": 5.0,
+   "pedestrians_mae_vs_gt": 4.0,
+   "pedestrians_bias_vs_gt": -4.0,
+   "pedestrians_exact_vs_gt": 0.0,
+   "pedestrians_within1_vs_gt": 0.0,
+   "pedestrians_pearson_vs_gt": null,
+   "mean_two_wheelers": 0.0,
+   "gt_mean_two_wheelers": 0.0,
+   "two_wheelers_mae_vs_gt": 0.0,
+   "two_wheelers_bias_vs_gt": 0.0,
+   "two_wheelers_exact_vs_gt": 1.0,
+   "two_wheelers_within1_vs_gt": 1.0,
+   "two_wheelers_pearson_vs_gt": null,
+   "vehicle_recall": 0.625,
+   "vehicle_precision": 0.625,
+   "person_recall": 0.07142857142857142,
+   "person_precision": 1.0,
+   "vehicle_count_abs_err_vs_oracle": 0.0,
+   "person_count_abs_err_vs_oracle": 13.0,
+   "seconds": 10.473796900001616
+  }
+ },
+ "paired_abs_error_vs_gt": {
+  "prompt_only_minus_k1_cars_4wheel": null,
+  "prompt_only_minus_k1_pedestrians": null
+ },
+ "payload_per_camera_kb_mean": 53.112955729166664,
+ "original_photo_kb_mean": 516.7493489583334
+}
+ANALYSIS_DONE
+EXIT 0 Sun 10/25/2026 21:52:05.73 

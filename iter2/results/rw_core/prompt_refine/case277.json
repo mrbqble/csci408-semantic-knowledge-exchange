@@ -1,0 +1,78 @@
+{
+ "case": "case277",
+ "variant": "prompt_refine",
+ "ip_adapter_scale": 0.0,
+ "ip_adapter_source": "none",
+ "reference": "cam1",
+ "supporting": [
+  "cam2",
+  "cam3"
+ ],
+ "timestamp": null,
+ "prompt": "a street with cars and a traffic light, a traffic light is on a street corner",
+ "seconds": 14.787711699998908,
+ "peak_gpu_mb": 5394.6416015625,
+ "size": [
+  1024,
+  576
+ ],
+ "palette": "cs",
+ "ref_policy": "first",
+ "seed": 42,
+ "steps": 20,
+ "guidance": 7.5,
+ "donor_case": null,
+ "cn_scales": [
+  1.0,
+  1.0
+ ],
+ "edge_thr": 40,
+ "base": "existing prompt_only result",
+ "base_seconds": 10.421978399997897,
+ "refine_seconds": 4.365733300001011,
+ "refine": {
+  "n_small_blobs": 6,
+  "n_windows": 2,
+  "uncovered_blobs": 0,
+  "windows": [
+   {
+    "x0": 388,
+    "y0": 230,
+    "n_blobs": 3,
+    "blob_areas": [
+     824,
+     953,
+     304
+    ],
+    "index": 0,
+    "seconds": 2.167739200001961
+   },
+   {
+    "x0": 261,
+    "y0": 230,
+    "n_blobs": 3,
+    "blob_areas": [
+     878,
+     90,
+     257
+    ],
+    "index": 1,
+    "seconds": 2.1979940999990504
+   }
+  ],
+  "failures": [],
+  "seconds": 4.365733300001011
+ },
+ "refine_settings": {
+  "window": 128,
+  "upscale": 4,
+  "strength": 0.5,
+  "feather_px": 12,
+  "max_windows": 8,
+  "min_area": 12,
+  "max_side": 48,
+  "prompt": "cars on a city street, realistic photo, sharp",
+  "negative_prompt": "blurry, deformed, cartoon",
+  "seed": "42 + window index"
+ }
+}

@@ -1,0 +1,74 @@
+{
+ "case": "case17",
+ "variant": "prompt_refine",
+ "ip_adapter_scale": 0.0,
+ "ip_adapter_source": "none",
+ "reference": "cam1",
+ "supporting": [
+  "cam2",
+  "cam3"
+ ],
+ "timestamp": 15563,
+ "prompt": "a street scene with a man walking down the street, a yellow car driving down a city street, a street scene with a car and a person walking",
+ "seconds": 15.493804500001715,
+ "peak_gpu_mb": 5394.6416015625,
+ "size": [
+  1024,
+  576
+ ],
+ "palette": "cs",
+ "ref_policy": "first",
+ "seed": 42,
+ "steps": 20,
+ "guidance": 7.5,
+ "donor_case": null,
+ "cn_scales": [
+  1.0,
+  1.0
+ ],
+ "edge_thr": 40,
+ "base": "existing prompt_only result",
+ "base_seconds": 11.112804200001847,
+ "refine_seconds": 4.381000299999869,
+ "refine": {
+  "n_small_blobs": 2,
+  "n_windows": 2,
+  "uncovered_blobs": 0,
+  "windows": [
+   {
+    "x0": 704,
+    "y0": 220,
+    "n_blobs": 1,
+    "blob_areas": [
+     181
+    ],
+    "index": 0,
+    "seconds": 2.1818321000009746
+   },
+   {
+    "x0": 393,
+    "y0": 199,
+    "n_blobs": 1,
+    "blob_areas": [
+     69
+    ],
+    "index": 1,
+    "seconds": 2.199168199998894
+   }
+  ],
+  "failures": [],
+  "seconds": 4.381000299999869
+ },
+ "refine_settings": {
+  "window": 128,
+  "upscale": 4,
+  "strength": 0.5,
+  "feather_px": 12,
+  "max_windows": 8,
+  "min_area": 12,
+  "max_side": 48,
+  "prompt": "cars on a city street, realistic photo, sharp",
+  "negative_prompt": "blurry, deformed, cartoon",
+  "seed": "42 + window index"
+ }
+}

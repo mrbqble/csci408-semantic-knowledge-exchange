@@ -1,0 +1,181 @@
+{
+ "case": "case69",
+ "reference": "cam1",
+ "variant": "k1",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 0,
+  "bicycle": 0,
+  "car": 3,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 2,
+  "cars_4wheel": 5,
+  "two_wheelers": 0,
+  "vehicles": 5,
+  "pedestrians": 0
+ },
+ "gt": {
+  "cars_4wheel": 9,
+  "pedestrians": 12,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "car",
+   "score": 0.984,
+   "bbox_master_px": [
+    424.1,
+    268.6,
+    468.8,
+    303.3
+   ],
+   "center_master_px": [
+    446.5,
+    286.0
+   ],
+   "ground_contact_master_px": [
+    446.5,
+    303.3
+   ],
+   "bbox_reference_px": [
+    795.3,
+    503.6,
+    879.1,
+    568.7
+   ],
+   "center_reference_px": [
+    837.2,
+    536.2
+   ]
+  },
+  {
+   "id": 1,
+   "class": "car",
+   "score": 0.817,
+   "bbox_master_px": [
+    2.8,
+    251.6,
+    150.6,
+    347.9
+   ],
+   "center_master_px": [
+    76.7,
+    299.7
+   ],
+   "ground_contact_master_px": [
+    76.7,
+    347.9
+   ],
+   "bbox_reference_px": [
+    5.2,
+    471.8,
+    282.3,
+    652.2
+   ],
+   "center_reference_px": [
+    143.7,
+    562.0
+   ]
+  },
+  {
+   "id": 2,
+   "class": "truck",
+   "score": 0.806,
+   "bbox_master_px": [
+    244.1,
+    273.1,
+    287.5,
+    295.8
+   ],
+   "center_master_px": [
+    265.8,
+    284.4
+   ],
+   "ground_contact_master_px": [
+    265.8,
+    295.8
+   ],
+   "bbox_reference_px": [
+    457.8,
+    512.0,
+    539.1,
+    554.6
+   ],
+   "center_reference_px": [
+    498.4,
+    533.3
+   ]
+  },
+  {
+   "id": 3,
+   "class": "truck",
+   "score": 0.75,
+   "bbox_master_px": [
+    545.6,
+    266.4,
+    950.3,
+    441.1
+   ],
+   "center_master_px": [
+    748.0,
+    353.7
+   ],
+   "ground_contact_master_px": [
+    748.0,
+    441.1
+   ],
+   "bbox_reference_px": [
+    1023.0,
+    499.5,
+    1781.8,
+    827.0
+   ],
+   "center_reference_px": [
+    1402.4,
+    663.2
+   ]
+  },
+  {
+   "id": 4,
+   "class": "car",
+   "score": 0.745,
+   "bbox_master_px": [
+    545.8,
+    267.0,
+    948.6,
+    437.5
+   ],
+   "center_master_px": [
+    747.2,
+    352.2
+   ],
+   "ground_contact_master_px": [
+    747.2,
+    437.5
+   ],
+   "bbox_reference_px": [
+    1023.3,
+    500.5,
+    1778.7,
+    820.4
+   ],
+   "center_reference_px": [
+    1401.0,
+    660.5
+   ]
+  }
+ ],
+ "vehicle_recall": 0.2727272727272727,
+ "vehicle_precision": 0.6,
+ "person_recall": 0.0,
+ "person_precision": null,
+ "vehicle_count_abs_err_vs_oracle": 6,
+ "person_count_abs_err_vs_oracle": 14,
+ "seconds": 10.436075300000084,
+ "prompt": "a white truck"
+}

@@ -1,0 +1,177 @@
+{
+ "case": "case109",
+ "reference": "cam1",
+ "variant": "prompt_only",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 2,
+  "bicycle": 0,
+  "car": 1,
+  "motorcycle": 0,
+  "bus": 2,
+  "truck": 0,
+  "cars_4wheel": 3,
+  "two_wheelers": 0,
+  "vehicles": 3,
+  "pedestrians": 2
+ },
+ "gt": null,
+ "detections": [
+  {
+   "id": 0,
+   "class": "bus",
+   "score": 1.0,
+   "bbox_master_px": [
+    81.6,
+    48.3,
+    650.7,
+    358.4
+   ],
+   "center_master_px": [
+    366.1,
+    203.3
+   ],
+   "ground_contact_master_px": [
+    366.1,
+    358.4
+   ],
+   "bbox_reference_px": [
+    152.9,
+    90.6,
+    1220.1,
+    671.9
+   ],
+   "center_reference_px": [
+    686.5,
+    381.3
+   ]
+  },
+  {
+   "id": 1,
+   "class": "car",
+   "score": 0.987,
+   "bbox_master_px": [
+    650.6,
+    199.7,
+    859.0,
+    296.7
+   ],
+   "center_master_px": [
+    754.8,
+    248.2
+   ],
+   "ground_contact_master_px": [
+    754.8,
+    296.7
+   ],
+   "bbox_reference_px": [
+    1219.9,
+    374.5,
+    1610.6,
+    556.3
+   ],
+   "center_reference_px": [
+    1415.2,
+    465.4
+   ]
+  },
+  {
+   "id": 2,
+   "class": "bus",
+   "score": 0.969,
+   "bbox_master_px": [
+    0.2,
+    165.2,
+    84.7,
+    245.1
+   ],
+   "center_master_px": [
+    42.4,
+    205.2
+   ],
+   "ground_contact_master_px": [
+    42.4,
+    245.1
+   ],
+   "bbox_reference_px": [
+    0.4,
+    309.7,
+    158.7,
+    459.6
+   ],
+   "center_reference_px": [
+    79.6,
+    384.7
+   ]
+  },
+  {
+   "id": 3,
+   "class": "person",
+   "score": 0.966,
+   "bbox_master_px": [
+    1004.2,
+    209.3,
+    1022.9,
+    277.8
+   ],
+   "center_master_px": [
+    1013.6,
+    243.5
+   ],
+   "ground_contact_master_px": [
+    1013.6,
+    277.8
+   ],
+   "bbox_reference_px": [
+    1883.0,
+    392.3,
+    1917.9,
+    520.8
+   ],
+   "center_reference_px": [
+    1900.4,
+    456.6
+   ]
+  },
+  {
+   "id": 4,
+   "class": "person",
+   "score": 0.727,
+   "bbox_master_px": [
+    1021.7,
+    211.8,
+    1024.0,
+    274.5
+   ],
+   "center_master_px": [
+    1022.8,
+    243.1
+   ],
+   "ground_contact_master_px": [
+    1022.8,
+    274.5
+   ],
+   "bbox_reference_px": [
+    1915.7,
+    397.1,
+    1920.0,
+    514.7
+   ],
+   "center_reference_px": [
+    1917.8,
+    455.9
+   ]
+  }
+ ],
+ "vehicle_recall": 0.6,
+ "vehicle_precision": 1.0,
+ "person_recall": 0.125,
+ "person_precision": 0.5,
+ "vehicle_count_abs_err_vs_oracle": 2,
+ "person_count_abs_err_vs_oracle": 6,
+ "seconds": 11.012866699998995,
+ "prompt": "a bus is driving down the street in a city, a bus is driving down the street in front of a building, a man walking down the street in front of a bus"
+}

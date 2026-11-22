@@ -1,0 +1,181 @@
+{
+ "case": "case71",
+ "reference": "cam1",
+ "variant": "k1",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 3,
+  "bicycle": 0,
+  "car": 2,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 0,
+  "cars_4wheel": 2,
+  "two_wheelers": 0,
+  "vehicles": 2,
+  "pedestrians": 3
+ },
+ "gt": {
+  "cars_4wheel": 7,
+  "pedestrians": 12,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "person",
+   "score": 0.997,
+   "bbox_master_px": [
+    951.0,
+    346.5,
+    1024.0,
+    573.9
+   ],
+   "center_master_px": [
+    987.5,
+    460.2
+   ],
+   "ground_contact_master_px": [
+    987.5,
+    573.9
+   ],
+   "bbox_reference_px": [
+    1783.1,
+    649.7,
+    1920.0,
+    1076.1
+   ],
+   "center_reference_px": [
+    1851.5,
+    862.9
+   ]
+  },
+  {
+   "id": 1,
+   "class": "person",
+   "score": 0.988,
+   "bbox_master_px": [
+    0.6,
+    323.5,
+    32.4,
+    530.6
+   ],
+   "center_master_px": [
+    16.5,
+    427.0
+   ],
+   "ground_contact_master_px": [
+    16.5,
+    530.6
+   ],
+   "bbox_reference_px": [
+    1.1,
+    606.5,
+    60.7,
+    994.8
+   ],
+   "center_reference_px": [
+    30.9,
+    800.7
+   ]
+  },
+  {
+   "id": 2,
+   "class": "car",
+   "score": 0.95,
+   "bbox_master_px": [
+    553.6,
+    270.0,
+    636.6,
+    304.0
+   ],
+   "center_master_px": [
+    595.1,
+    287.0
+   ],
+   "ground_contact_master_px": [
+    595.1,
+    304.0
+   ],
+   "bbox_reference_px": [
+    1037.9,
+    506.2,
+    1193.7,
+    569.9
+   ],
+   "center_reference_px": [
+    1115.8,
+    538.1
+   ]
+  },
+  {
+   "id": 3,
+   "class": "person",
+   "score": 0.893,
+   "bbox_master_px": [
+    907.1,
+    257.5,
+    929.3,
+    290.0
+   ],
+   "center_master_px": [
+    918.2,
+    273.7
+   ],
+   "ground_contact_master_px": [
+    918.2,
+    290.0
+   ],
+   "bbox_reference_px": [
+    1700.7,
+    482.8,
+    1742.5,
+    543.7
+   ],
+   "center_reference_px": [
+    1721.6,
+    513.3
+   ]
+  },
+  {
+   "id": 4,
+   "class": "car",
+   "score": 0.886,
+   "bbox_master_px": [
+    0.0,
+    294.2,
+    47.4,
+    334.4
+   ],
+   "center_master_px": [
+    23.7,
+    314.3
+   ],
+   "ground_contact_master_px": [
+    23.7,
+    334.4
+   ],
+   "bbox_reference_px": [
+    0.0,
+    551.6,
+    88.9,
+    626.9
+   ],
+   "center_reference_px": [
+    44.5,
+    589.2
+   ]
+  }
+ ],
+ "vehicle_recall": 0.2857142857142857,
+ "vehicle_precision": 1.0,
+ "person_recall": 0.15384615384615385,
+ "person_precision": 0.6666666666666666,
+ "vehicle_count_abs_err_vs_oracle": 5,
+ "person_count_abs_err_vs_oracle": 10,
+ "seconds": 10.42562480000015,
+ "prompt": "a man walking across a street next to a red bus"
+}

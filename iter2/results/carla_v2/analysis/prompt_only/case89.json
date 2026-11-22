@@ -1,0 +1,152 @@
+{
+ "case": "case89",
+ "reference": "cam1",
+ "variant": "prompt_only",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 0,
+  "bicycle": 0,
+  "car": 4,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 0,
+  "cars_4wheel": 4,
+  "two_wheelers": 0,
+  "vehicles": 4,
+  "pedestrians": 0
+ },
+ "gt": {
+  "cars_4wheel": 7,
+  "pedestrians": 13,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "car",
+   "score": 0.999,
+   "bbox_master_px": [
+    742.8,
+    298.3,
+    1020.0,
+    494.5
+   ],
+   "center_master_px": [
+    881.4,
+    396.4
+   ],
+   "ground_contact_master_px": [
+    881.4,
+    494.5
+   ],
+   "bbox_reference_px": [
+    1392.7,
+    559.4,
+    1912.6,
+    927.2
+   ],
+   "center_reference_px": [
+    1652.6,
+    743.3
+   ]
+  },
+  {
+   "id": 1,
+   "class": "car",
+   "score": 0.998,
+   "bbox_master_px": [
+    57.5,
+    285.5,
+    281.1,
+    381.2
+   ],
+   "center_master_px": [
+    169.3,
+    333.4
+   ],
+   "ground_contact_master_px": [
+    169.3,
+    381.2
+   ],
+   "bbox_reference_px": [
+    107.8,
+    535.4,
+    527.1,
+    714.7
+   ],
+   "center_reference_px": [
+    317.5,
+    625.1
+   ]
+  },
+  {
+   "id": 2,
+   "class": "car",
+   "score": 0.988,
+   "bbox_master_px": [
+    813.8,
+    272.6,
+    840.6,
+    292.8
+   ],
+   "center_master_px": [
+    827.2,
+    282.7
+   ],
+   "ground_contact_master_px": [
+    827.2,
+    292.8
+   ],
+   "bbox_reference_px": [
+    1525.8,
+    511.0,
+    1576.1,
+    549.0
+   ],
+   "center_reference_px": [
+    1551.0,
+    530.0
+   ]
+  },
+  {
+   "id": 3,
+   "class": "car",
+   "score": 0.972,
+   "bbox_master_px": [
+    761.9,
+    274.9,
+    796.4,
+    299.6
+   ],
+   "center_master_px": [
+    779.2,
+    287.3
+   ],
+   "ground_contact_master_px": [
+    779.2,
+    299.6
+   ],
+   "bbox_reference_px": [
+    1428.7,
+    515.4,
+    1493.2,
+    561.8
+   ],
+   "center_reference_px": [
+    1460.9,
+    538.6
+   ]
+  }
+ ],
+ "vehicle_recall": 0.5714285714285714,
+ "vehicle_precision": 1.0,
+ "person_recall": 0.0,
+ "person_precision": null,
+ "vehicle_count_abs_err_vs_oracle": 3,
+ "person_count_abs_err_vs_oracle": 23,
+ "seconds": 10.588577100001203,
+ "prompt": "a red car parked on the side of a street, a person walking across a street in a city, a coca truck is parked on the side of the road"
+}

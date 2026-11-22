@@ -1,0 +1,413 @@
+{
+ "case": "case16",
+ "reference": "cam1",
+ "variant": "prompt_only",
+ "master_size": [
+  1280,
+  704
+ ],
+ "counts": {
+  "person": 8,
+  "bicycle": 0,
+  "car": 3,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 2,
+  "cars_4wheel": 5,
+  "two_wheelers": 0,
+  "vehicles": 5,
+  "pedestrians": 8
+ },
+ "gt": {
+  "cars_4wheel": 6,
+  "pedestrians": 8,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "person",
+   "score": 0.999,
+   "bbox_master_px": [
+    232.1,
+    308.1,
+    293.4,
+    421.8
+   ],
+   "center_master_px": [
+    262.8,
+    365.0
+   ],
+   "ground_contact_master_px": [
+    262.8,
+    421.8
+   ],
+   "bbox_reference_px": [
+    348.1,
+    472.7,
+    440.1,
+    647.1
+   ],
+   "center_reference_px": [
+    394.1,
+    559.9
+   ]
+  },
+  {
+   "id": 1,
+   "class": "person",
+   "score": 0.998,
+   "bbox_master_px": [
+    190.6,
+    306.3,
+    225.1,
+    431.9
+   ],
+   "center_master_px": [
+    207.8,
+    369.1
+   ],
+   "ground_contact_master_px": [
+    207.8,
+    431.9
+   ],
+   "bbox_reference_px": [
+    285.8,
+    469.8,
+    337.7,
+    662.6
+   ],
+   "center_reference_px": [
+    311.8,
+    566.2
+   ]
+  },
+  {
+   "id": 2,
+   "class": "person",
+   "score": 0.997,
+   "bbox_master_px": [
+    22.0,
+    309.0,
+    53.0,
+    399.2
+   ],
+   "center_master_px": [
+    37.5,
+    354.1
+   ],
+   "ground_contact_master_px": [
+    37.5,
+    399.2
+   ],
+   "bbox_reference_px": [
+    33.0,
+    474.0,
+    79.5,
+    612.4
+   ],
+   "center_reference_px": [
+    56.3,
+    543.2
+   ]
+  },
+  {
+   "id": 3,
+   "class": "car",
+   "score": 0.992,
+   "bbox_master_px": [
+    1.6,
+    510.3,
+    127.7,
+    701.5
+   ],
+   "center_master_px": [
+    64.6,
+    605.9
+   ],
+   "ground_contact_master_px": [
+    64.6,
+    701.5
+   ],
+   "bbox_reference_px": [
+    2.4,
+    782.8,
+    191.5,
+    1076.2
+   ],
+   "center_reference_px": [
+    97.0,
+    929.5
+   ]
+  },
+  {
+   "id": 4,
+   "class": "person",
+   "score": 0.983,
+   "bbox_master_px": [
+    60.6,
+    312.3,
+    76.2,
+    377.0
+   ],
+   "center_master_px": [
+    68.4,
+    344.6
+   ],
+   "ground_contact_master_px": [
+    68.4,
+    377.0
+   ],
+   "bbox_reference_px": [
+    90.8,
+    479.1,
+    114.4,
+    578.3
+   ],
+   "center_reference_px": [
+    102.6,
+    528.7
+   ]
+  },
+  {
+   "id": 5,
+   "class": "car",
+   "score": 0.946,
+   "bbox_master_px": [
+    645.6,
+    318.7,
+    690.6,
+    345.8
+   ],
+   "center_master_px": [
+    668.1,
+    332.2
+   ],
+   "ground_contact_master_px": [
+    668.1,
+    345.8
+   ],
+   "bbox_reference_px": [
+    968.4,
+    488.8,
+    1035.9,
+    530.5
+   ],
+   "center_reference_px": [
+    1002.1,
+    509.7
+   ]
+  },
+  {
+   "id": 6,
+   "class": "truck",
+   "score": 0.909,
+   "bbox_master_px": [
+    356.3,
+    309.6,
+    490.4,
+    384.0
+   ],
+   "center_master_px": [
+    423.4,
+    346.8
+   ],
+   "ground_contact_master_px": [
+    423.4,
+    384.0
+   ],
+   "bbox_reference_px": [
+    534.5,
+    475.0,
+    735.6,
+    589.0
+   ],
+   "center_reference_px": [
+    635.0,
+    532.0
+   ]
+  },
+  {
+   "id": 7,
+   "class": "person",
+   "score": 0.896,
+   "bbox_master_px": [
+    51.8,
+    310.6,
+    72.7,
+    376.8
+   ],
+   "center_master_px": [
+    62.2,
+    343.7
+   ],
+   "ground_contact_master_px": [
+    62.2,
+    376.8
+   ],
+   "bbox_reference_px": [
+    77.6,
+    476.5,
+    109.1,
+    578.0
+   ],
+   "center_reference_px": [
+    93.4,
+    527.2
+   ]
+  },
+  {
+   "id": 8,
+   "class": "person",
+   "score": 0.89,
+   "bbox_master_px": [
+    215.2,
+    308.4,
+    238.1,
+    364.1
+   ],
+   "center_master_px": [
+    226.7,
+    336.2
+   ],
+   "ground_contact_master_px": [
+    226.7,
+    364.1
+   ],
+   "bbox_reference_px": [
+    322.9,
+    473.1,
+    357.1,
+    558.5
+   ],
+   "center_reference_px": [
+    340.0,
+    515.8
+   ]
+  },
+  {
+   "id": 9,
+   "class": "truck",
+   "score": 0.867,
+   "bbox_master_px": [
+    789.5,
+    280.7,
+    1279.1,
+    699.5
+   ],
+   "center_master_px": [
+    1034.3,
+    490.1
+   ],
+   "ground_contact_master_px": [
+    1034.3,
+    699.5
+   ],
+   "bbox_reference_px": [
+    1184.3,
+    430.6,
+    1918.6,
+    1073.0
+   ],
+   "center_reference_px": [
+    1551.4,
+    751.8
+   ]
+  },
+  {
+   "id": 10,
+   "class": "person",
+   "score": 0.611,
+   "bbox_master_px": [
+    246.2,
+    307.4,
+    259.6,
+    356.1
+   ],
+   "center_master_px": [
+    252.9,
+    331.7
+   ],
+   "ground_contact_master_px": [
+    252.9,
+    356.1
+   ],
+   "bbox_reference_px": [
+    369.2,
+    471.5,
+    389.3,
+    546.3
+   ],
+   "center_reference_px": [
+    379.3,
+    508.9
+   ]
+  },
+  {
+   "id": 11,
+   "class": "car",
+   "score": 0.515,
+   "bbox_master_px": [
+    789.0,
+    274.2,
+    1280.0,
+    704.0
+   ],
+   "center_master_px": [
+    1034.5,
+    489.1
+   ],
+   "ground_contact_master_px": [
+    1034.5,
+    704.0
+   ],
+   "bbox_reference_px": [
+    1183.5,
+    420.7,
+    1920.0,
+    1080.0
+   ],
+   "center_reference_px": [
+    1551.7,
+    750.4
+   ]
+  },
+  {
+   "id": 12,
+   "class": "person",
+   "score": 0.507,
+   "bbox_master_px": [
+    35.2,
+    310.3,
+    66.0,
+    386.0
+   ],
+   "center_master_px": [
+    50.6,
+    348.1
+   ],
+   "ground_contact_master_px": [
+    50.6,
+    386.0
+   ],
+   "bbox_reference_px": [
+    52.7,
+    476.1,
+    99.0,
+    592.1
+   ],
+   "center_reference_px": [
+    75.9,
+    534.1
+   ]
+  }
+ ],
+ "vehicle_recall": 0.8333333333333334,
+ "vehicle_precision": 1.0,
+ "person_recall": 0.35714285714285715,
+ "person_precision": 0.625,
+ "vehicle_count_abs_err_vs_oracle": 1,
+ "person_count_abs_err_vs_oracle": 6,
+ "seconds": 18.23592720000306,
+ "prompt": "a red van is parked on the street, the game ' s screens are very detailed, but they are not as realistic as the game itself, a woman crossing the street, a car driving down a street next to a building, the city street with a car and a yellow arrow, the city street with cars and people walking on it"
+}

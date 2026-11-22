@@ -1,0 +1,331 @@
+{
+ "dataset": "real_world_astana_3phones_sync_v2",
+ "recorded": "2026-11-07, Astana (UTC+5)",
+ "method": [
+  "File metadata: iPhone created/modified = recording start/end, Android filename = recording initiated and created/modified = file finalised (about the end); second resolution, which gives a feasible start window per clip.",
+  "Audio: GCC-PHAT (150-3500 Hz) cross-correlation of the clips' audio, restricted to the lag window the metadata allows; three-clip takes are solved jointly (offsets must satisfy d13 = d12 + d23) and tested against the same search on shifted windows.",
+  "Audio start is within 40 ms of video start in every file (Android audio 16-38 ms later; that lead is subtracted).",
+  "Not frame-exact: see the per-take uncertainty."
+ ],
+ "takes": {
+  "take4": {
+   "label": "case 4, 14:18",
+   "confidence": "high",
+   "uncertainty_s": 0.3,
+   "method": "joint triangle-constrained GCC-PHAT inside the file-metadata windows (p=0.003 against shifted searches)",
+   "note": "cam2-cam3 correlation is very strong (z=33) and cam1-cam3 agrees; the direct cam1-cam2 pair peaks 0.57 s away, so cam2 against cam1 may be off by up to 0.6 s.",
+   "offsets_relative_to": "the take's earliest clip start (offsets are start_offset_used_s)",
+   "clips": [
+    {
+     "camera": "cam1",
+     "clip_index": 0,
+     "file": "case 4/IMG_7384.MOV",
+     "device": "iPhone 16 Pro Max",
+     "source_case": 4,
+     "duration_s": 29.355,
+     "frames": 880,
+     "metadata_start_window_local": [
+      "14:18:20.645",
+      "14:18:21.000"
+     ],
+     "start_offset_used_s": 0.0
+    },
+    {
+     "camera": "cam2",
+     "clip_index": 0,
+     "file": "case 4/VID_20261107_141821.mp4",
+     "device": "Android phone",
+     "source_case": 4,
+     "duration_s": 26.891,
+     "frames": 807,
+     "metadata_start_window_local": [
+      "14:18:21.509",
+      "14:18:23.109"
+     ],
+     "start_offset_used_s": 0.678
+    },
+    {
+     "camera": "cam3",
+     "clip_index": 0,
+     "file": "case 4/IMG_3305.MOV",
+     "device": "iPhone 16 Pro",
+     "source_case": 4,
+     "duration_s": 23.152,
+     "frames": 694,
+     "metadata_start_window_local": [
+      "14:18:25.848",
+      "14:18:26.000"
+     ],
+     "start_offset_used_s": 5.043
+    }
+   ],
+   "evidence": {
+    "joint_score": 44.9,
+    "joint_p": 0.0033,
+    "pair_z_at_solution": {
+     "cam1-cam2": 2.9,
+     "cam2-cam3": 33.4,
+     "cam1-cam3": 8.6
+    },
+    "whole_clip_pair_peaks": {
+     "cam3-cam2 (IMG_3305 to VID_141821)": {
+      "lag_s": -4.331,
+      "z": 38.8
+     },
+     "cam1-cam2 (IMG_7384 to VID_141821)": {
+      "lag_s": 1.282,
+      "z": 18.1
+     },
+     "cam3-cam1 (IMG_3305 to IMG_7384)": {
+      "lag_s": -5.045,
+      "z": 10.4
+     }
+    },
+    "caveat": "The three strongest pair peaks are not mutually consistent (they miss the triangle by 0.57 s). The solution keeps cam2-cam3 (z 33) and cam1-cam3 (inside the iPhone metadata window 4.85-5.36 s) and gives up the direct cam1-cam2 peak."
+   }
+  },
+  "take5": {
+   "label": "case 5, 14:20-14:21",
+   "confidence": "high",
+   "uncertainty_s": 0.3,
+   "method": "joint triangle-constrained GCC-PHAT inside the file-metadata windows (p=0.003 against shifted searches)",
+   "note": "anchored by the two Android pairs (z=13 and 18); the direct iPhone-iPhone pair is weak, so cam1 against cam3 rests on the chain through cam2.",
+   "offsets_relative_to": "the take's earliest clip start (offsets are start_offset_used_s)",
+   "clips": [
+    {
+     "camera": "cam3",
+     "clip_index": 0,
+     "file": "case 5/IMG_3306.MOV",
+     "device": "iPhone 16 Pro",
+     "source_case": 5,
+     "duration_s": 33.893,
+     "frames": 1016,
+     "metadata_start_window_local": [
+      "14:20:50.107",
+      "14:20:51.000"
+     ],
+     "start_offset_used_s": 0.0
+    },
+    {
+     "camera": "cam1",
+     "clip_index": 0,
+     "file": "case 5/IMG_7385.MOV",
+     "device": "iPhone 16 Pro Max",
+     "source_case": 5,
+     "duration_s": 33.792,
+     "frames": 1013,
+     "metadata_start_window_local": [
+      "14:20:51.208",
+      "14:20:52.000"
+     ],
+     "start_offset_used_s": 1.023
+    },
+    {
+     "camera": "cam2",
+     "clip_index": 0,
+     "file": "case 5/VID_20261107_142051.mp4",
+     "device": "Android phone",
+     "source_case": 5,
+     "duration_s": 33.156,
+     "frames": 994,
+     "metadata_start_window_local": [
+      "14:20:51.244",
+      "14:20:52.844"
+     ],
+     "start_offset_used_s": 1.088
+    }
+   ],
+   "evidence": {
+    "joint_score": 34.6,
+    "joint_p": 0.0033,
+    "pair_z_at_solution": {
+     "cam3-cam1": 3.3,
+     "cam1-cam2": 18.0,
+     "cam3-cam2": 13.3
+    },
+    "caveat": "cam1 against cam3 rests on the chain through the Android clip; their direct pair is weak."
+   }
+  },
+  "take6": {
+   "label": "case 6, 14:23-14:24",
+   "confidence": "medium",
+   "uncertainty_s": 0.6,
+   "method": "joint triangle-constrained GCC-PHAT inside the file-metadata windows (p=0.013 against shifted searches)",
+   "note": "all three pair correlations are modest (z about 5-6) but consistent with each other and with the metadata windows.",
+   "offsets_relative_to": "the take's earliest clip start (offsets are start_offset_used_s)",
+   "clips": [
+    {
+     "camera": "cam2",
+     "clip_index": 0,
+     "file": "case 6/VID_20261107_142347.mp4",
+     "device": "Android phone",
+     "source_case": 6,
+     "duration_s": 17.428,
+     "frames": 523,
+     "metadata_start_window_local": [
+      "14:23:47.972",
+      "14:23:49.572"
+     ],
+     "start_offset_used_s": 0.0
+    },
+    {
+     "camera": "cam3",
+     "clip_index": 0,
+     "file": "case 6/IMG_3307.MOV",
+     "device": "iPhone 16 Pro",
+     "source_case": 6,
+     "duration_s": 19.682,
+     "frames": 590,
+     "metadata_start_window_local": [
+      "14:23:48.318",
+      "14:23:49.000"
+     ],
+     "start_offset_used_s": 0.254
+    },
+    {
+     "camera": "cam1",
+     "clip_index": 0,
+     "file": "case 6/IMG_7386.MOV",
+     "device": "iPhone 16 Pro Max",
+     "source_case": 6,
+     "duration_s": 16.1,
+     "frames": 483,
+     "metadata_start_window_local": [
+      "14:23:50.900",
+      "14:23:51.000"
+     ],
+     "start_offset_used_s": 2.264
+    }
+   ],
+   "evidence": {
+    "joint_score": 16.5,
+    "joint_p": 0.0133,
+    "pair_z_at_solution": {
+     "cam2-cam3": 5.2,
+     "cam3-cam1": 5.1,
+     "cam2-cam1": 6.2
+    },
+    "caveat": "modest evidence; all three correlations are weak but consistent with each other and with the metadata windows."
+   }
+  },
+  "take7_8": {
+   "label": "cases 7 and 8 as one continuous period, 14:30:55-14:33:22",
+   "confidence": "low",
+   "uncertainty_s": 1.1,
+   "method": "file metadata only (iPhone created/modified = start/end, Android filename/end time); audio gave no pair that survives the shifted-window test (p 0.02-0.45)",
+   "note": "clip starts are the midpoints of the metadata windows: about +-0.5 s between iPhone clips, +-1.1 s for the Android clips. Treat multi-camera cases of this take as approximately synchronised only.",
+   "offsets_relative_to": "the take's earliest clip start (offsets are start_offset_used_s)",
+   "clips": [
+    {
+     "camera": "cam2",
+     "clip_index": 0,
+     "file": "case 7/VID_20261107_143055.mp4",
+     "device": "Android phone",
+     "source_case": 7,
+     "duration_s": 37.862,
+     "frames": 1135,
+     "metadata_start_window_local": [
+      "14:30:55.538",
+      "14:30:57.138"
+     ],
+     "start_offset_used_s": 0.0
+    },
+    {
+     "camera": "cam2",
+     "clip_index": 1,
+     "file": "case 8/VID_20261107_143147.mp4",
+     "device": "Android phone",
+     "source_case": 8,
+     "duration_s": 4.109,
+     "frames": 123,
+     "metadata_start_window_local": [
+      "14:31:47.291",
+      "14:31:48.891"
+     ],
+     "start_offset_used_s": 51.75
+    },
+    {
+     "camera": "cam1",
+     "clip_index": 0,
+     "file": "case 7/IMG_7387.MOV",
+     "device": "iPhone 16 Pro Max",
+     "source_case": 7,
+     "duration_s": 141.647,
+     "frames": 4246,
+     "metadata_start_window_local": [
+      "14:31:00.353",
+      "14:31:01.000"
+     ],
+     "start_offset_used_s": 4.335
+    },
+    {
+     "camera": "cam3",
+     "clip_index": 0,
+     "file": "case 7/IMG_3308.MOV",
+     "device": "iPhone 16 Pro",
+     "source_case": 7,
+     "duration_s": 54.242,
+     "frames": 1626,
+     "metadata_start_window_local": [
+      "14:31:00.758",
+      "14:31:01.000"
+     ],
+     "start_offset_used_s": 4.54
+    },
+    {
+     "camera": "cam3",
+     "clip_index": 1,
+     "file": "case 8/IMG_3309.MOV",
+     "device": "iPhone 16 Pro",
+     "source_case": 8,
+     "duration_s": 77.295,
+     "frames": 2317,
+     "metadata_start_window_local": [
+      "14:32:02.705",
+      "14:32:03.000"
+     ],
+     "start_offset_used_s": 66.51
+    }
+   ],
+   "evidence": {
+    "joint_score_case7_triple": 12.3,
+    "joint_p_case7_triple": 0.0764,
+    "pair_tests_inside_metadata_windows (p against shifted windows)": {
+     "IMG_7387 to IMG_3308": {
+      "lag_s": -0.202,
+      "z": 4.9,
+      "p": 0.022
+     },
+     "IMG_7387 to VID_143055": {
+      "lag_s": -5.187,
+      "z": 4.0,
+      "p": 0.446
+     },
+     "IMG_3308 to VID_143055": {
+      "lag_s": -4.797,
+      "z": 4.3,
+      "p": 0.155
+     },
+     "IMG_7387 to IMG_3309": {
+      "lag_s": 62.635,
+      "z": 4.9,
+      "p": 0.04,
+      "note": "peak at the edge of the metadata window"
+     },
+     "IMG_7387 to VID_143147": {
+      "lag_s": 47.971,
+      "z": 5.0,
+      "p": 0.032,
+      "note": "only 4 s of overlap"
+     },
+     "IMG_3308 to VID_143147": {
+      "lag_s": 47.126,
+      "z": 4.6,
+      "p": 0.19
+     }
+    },
+    "caveat": "No pair survives as reliable evidence, so every clip start is the midpoint of its file-metadata window. VID_143147 and IMG_3309 do not overlap each other in time; both overlap the long iPhone Pro Max clip IMG_7387."
+   }
+  }
+ }
+}

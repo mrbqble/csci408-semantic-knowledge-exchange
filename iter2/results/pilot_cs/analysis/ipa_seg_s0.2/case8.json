@@ -1,0 +1,123 @@
+{
+ "case": "case8",
+ "reference": "cam1",
+ "variant": "ipa_seg_s0.2",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 0,
+  "bicycle": 0,
+  "car": 2,
+  "motorcycle": 0,
+  "bus": 1,
+  "truck": 0,
+  "cars_4wheel": 3,
+  "two_wheelers": 0,
+  "vehicles": 3,
+  "pedestrians": 0
+ },
+ "gt": {
+  "cars_4wheel": 8,
+  "pedestrians": 6,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "bus",
+   "score": 0.999,
+   "bbox_master_px": [
+    672.0,
+    93.8,
+    961.6,
+    248.7
+   ],
+   "center_master_px": [
+    816.8,
+    171.2
+   ],
+   "ground_contact_master_px": [
+    816.8,
+    248.7
+   ],
+   "bbox_reference_px": [
+    1259.9,
+    175.9,
+    1803.1,
+    466.3
+   ],
+   "center_reference_px": [
+    1531.5,
+    321.1
+   ]
+  },
+  {
+   "id": 1,
+   "class": "car",
+   "score": 0.996,
+   "bbox_master_px": [
+    158.5,
+    187.0,
+    330.1,
+    251.0
+   ],
+   "center_master_px": [
+    244.3,
+    219.0
+   ],
+   "ground_contact_master_px": [
+    244.3,
+    251.0
+   ],
+   "bbox_reference_px": [
+    297.2,
+    350.5,
+    619.0,
+    470.5
+   ],
+   "center_reference_px": [
+    458.1,
+    410.5
+   ]
+  },
+  {
+   "id": 2,
+   "class": "car",
+   "score": 0.99,
+   "bbox_master_px": [
+    0.5,
+    199.0,
+    116.1,
+    261.4
+   ],
+   "center_master_px": [
+    58.3,
+    230.2
+   ],
+   "ground_contact_master_px": [
+    58.3,
+    261.4
+   ],
+   "bbox_reference_px": [
+    0.9,
+    373.1,
+    217.7,
+    490.1
+   ],
+   "center_reference_px": [
+    109.3,
+    431.6
+   ]
+  }
+ ],
+ "vehicle_recall": 0.5,
+ "vehicle_precision": 1.0,
+ "person_recall": 0.0,
+ "person_precision": null,
+ "vehicle_count_abs_err_vs_oracle": 3,
+ "person_count_abs_err_vs_oracle": 13,
+ "seconds": 10.654295199999979,
+ "prompt": "a bus is parked on the side of the road, a fire truck is parked on the side of the road, a bus is driving down the street in a city, a bus on the road, a man walking down a street next to a bus, a man walking down a street in a city"
+}

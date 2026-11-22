@@ -1,0 +1,181 @@
+{
+ "case": "case84",
+ "reference": "cam1",
+ "variant": "k1",
+ "master_size": [
+  896,
+  512
+ ],
+ "counts": {
+  "person": 4,
+  "bicycle": 0,
+  "car": 1,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 0,
+  "cars_4wheel": 1,
+  "two_wheelers": 0,
+  "vehicles": 1,
+  "pedestrians": 4
+ },
+ "gt": {
+  "cars_4wheel": 5,
+  "pedestrians": 6,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "car",
+   "score": 0.999,
+   "bbox_master_px": [
+    606.5,
+    265.3,
+    742.9,
+    313.0
+   ],
+   "center_master_px": [
+    674.7,
+    289.2
+   ],
+   "ground_contact_master_px": [
+    674.7,
+    313.0
+   ],
+   "bbox_reference_px": [
+    1299.7,
+    559.6,
+    1591.8,
+    660.3
+   ],
+   "center_reference_px": [
+    1445.8,
+    610.0
+   ]
+  },
+  {
+   "id": 1,
+   "class": "person",
+   "score": 0.947,
+   "bbox_master_px": [
+    847.3,
+    249.3,
+    864.3,
+    282.5
+   ],
+   "center_master_px": [
+    855.8,
+    265.9
+   ],
+   "ground_contact_master_px": [
+    855.8,
+    282.5
+   ],
+   "bbox_reference_px": [
+    1815.6,
+    525.9,
+    1852.0,
+    595.9
+   ],
+   "center_reference_px": [
+    1833.8,
+    560.9
+   ]
+  },
+  {
+   "id": 2,
+   "class": "person",
+   "score": 0.921,
+   "bbox_master_px": [
+    143.3,
+    251.0,
+    152.0,
+    275.9
+   ],
+   "center_master_px": [
+    147.6,
+    263.5
+   ],
+   "ground_contact_master_px": [
+    147.6,
+    275.9
+   ],
+   "bbox_reference_px": [
+    307.0,
+    529.4,
+    325.7,
+    582.0
+   ],
+   "center_reference_px": [
+    316.4,
+    555.7
+   ]
+  },
+  {
+   "id": 3,
+   "class": "person",
+   "score": 0.846,
+   "bbox_master_px": [
+    67.8,
+    248.7,
+    77.2,
+    273.3
+   ],
+   "center_master_px": [
+    72.5,
+    261.0
+   ],
+   "ground_contact_master_px": [
+    72.5,
+    273.3
+   ],
+   "bbox_reference_px": [
+    145.3,
+    524.6,
+    165.4,
+    576.5
+   ],
+   "center_reference_px": [
+    155.4,
+    550.5
+   ]
+  },
+  {
+   "id": 4,
+   "class": "person",
+   "score": 0.557,
+   "bbox_master_px": [
+    0.2,
+    244.4,
+    8.9,
+    264.1
+   ],
+   "center_master_px": [
+    4.6,
+    254.2
+   ],
+   "ground_contact_master_px": [
+    4.6,
+    264.1
+   ],
+   "bbox_reference_px": [
+    0.5,
+    515.5,
+    19.2,
+    557.0
+   ],
+   "center_reference_px": [
+    9.8,
+    536.3
+   ]
+  }
+ ],
+ "vehicle_recall": 0.5,
+ "vehicle_precision": 1.0,
+ "person_recall": 0.3333333333333333,
+ "person_precision": 0.5,
+ "vehicle_count_abs_err_vs_oracle": 1,
+ "person_count_abs_err_vs_oracle": 2,
+ "seconds": 8.280811299999186,
+ "prompt": "a car is parked on the street in front of a building"
+}

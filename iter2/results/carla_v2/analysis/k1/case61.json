@@ -1,0 +1,181 @@
+{
+ "case": "case61",
+ "reference": "cam1",
+ "variant": "k1",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 2,
+  "bicycle": 0,
+  "car": 3,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 0,
+  "cars_4wheel": 3,
+  "two_wheelers": 0,
+  "vehicles": 3,
+  "pedestrians": 2
+ },
+ "gt": {
+  "cars_4wheel": 9,
+  "pedestrians": 9,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "person",
+   "score": 0.999,
+   "bbox_master_px": [
+    148.8,
+    275.9,
+    202.8,
+    440.2
+   ],
+   "center_master_px": [
+    175.8,
+    358.1
+   ],
+   "ground_contact_master_px": [
+    175.8,
+    440.2
+   ],
+   "bbox_reference_px": [
+    279.0,
+    517.4,
+    380.2,
+    825.4
+   ],
+   "center_reference_px": [
+    329.6,
+    671.4
+   ]
+  },
+  {
+   "id": 1,
+   "class": "car",
+   "score": 0.999,
+   "bbox_master_px": [
+    476.8,
+    292.1,
+    639.5,
+    382.8
+   ],
+   "center_master_px": [
+    558.1,
+    337.5
+   ],
+   "ground_contact_master_px": [
+    558.1,
+    382.8
+   ],
+   "bbox_reference_px": [
+    894.0,
+    547.8,
+    1199.0,
+    717.8
+   ],
+   "center_reference_px": [
+    1046.5,
+    632.8
+   ]
+  },
+  {
+   "id": 2,
+   "class": "car",
+   "score": 0.987,
+   "bbox_master_px": [
+    348.7,
+    277.2,
+    421.1,
+    312.1
+   ],
+   "center_master_px": [
+    384.9,
+    294.7
+   ],
+   "ground_contact_master_px": [
+    384.9,
+    312.1
+   ],
+   "bbox_reference_px": [
+    653.8,
+    519.8,
+    789.6,
+    585.2
+   ],
+   "center_reference_px": [
+    721.7,
+    552.5
+   ]
+  },
+  {
+   "id": 3,
+   "class": "car",
+   "score": 0.966,
+   "bbox_master_px": [
+    887.4,
+    279.8,
+    1023.5,
+    334.6
+   ],
+   "center_master_px": [
+    955.4,
+    307.2
+   ],
+   "ground_contact_master_px": [
+    955.4,
+    334.6
+   ],
+   "bbox_reference_px": [
+    1663.9,
+    524.6,
+    1919.0,
+    627.3
+   ],
+   "center_reference_px": [
+    1791.4,
+    575.9
+   ]
+  },
+  {
+   "id": 4,
+   "class": "person",
+   "score": 0.96,
+   "bbox_master_px": [
+    113.0,
+    268.5,
+    143.9,
+    354.7
+   ],
+   "center_master_px": [
+    128.5,
+    311.6
+   ],
+   "ground_contact_master_px": [
+    128.5,
+    354.7
+   ],
+   "bbox_reference_px": [
+    211.9,
+    503.5,
+    269.8,
+    665.1
+   ],
+   "center_reference_px": [
+    240.9,
+    584.3
+   ]
+  }
+ ],
+ "vehicle_recall": 0.375,
+ "vehicle_precision": 1.0,
+ "person_recall": 0.1,
+ "person_precision": 1.0,
+ "vehicle_count_abs_err_vs_oracle": 5,
+ "person_count_abs_err_vs_oracle": 18,
+ "seconds": 10.45443780000096,
+ "prompt": "a woman walking down a street"
+}

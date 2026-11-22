@@ -1,0 +1,177 @@
+{
+ "case": "case175",
+ "reference": "cam1",
+ "variant": "prompt_only",
+ "master_size": [
+  896,
+  512
+ ],
+ "counts": {
+  "person": 4,
+  "bicycle": 0,
+  "car": 0,
+  "motorcycle": 0,
+  "bus": 1,
+  "truck": 0,
+  "cars_4wheel": 1,
+  "two_wheelers": 0,
+  "vehicles": 1,
+  "pedestrians": 4
+ },
+ "gt": null,
+ "detections": [
+  {
+   "id": 0,
+   "class": "bus",
+   "score": 0.985,
+   "bbox_master_px": [
+    100.9,
+    0.0,
+    896.0,
+    510.0
+   ],
+   "center_master_px": [
+    498.4,
+    255.0
+   ],
+   "ground_contact_master_px": [
+    498.4,
+    510.0
+   ],
+   "bbox_reference_px": [
+    216.2,
+    0.0,
+    1920.0,
+    1075.7
+   ],
+   "center_reference_px": [
+    1068.1,
+    537.9
+   ]
+  },
+  {
+   "id": 1,
+   "class": "person",
+   "score": 0.839,
+   "bbox_master_px": [
+    515.9,
+    204.0,
+    560.2,
+    246.6
+   ],
+   "center_master_px": [
+    538.1,
+    225.3
+   ],
+   "ground_contact_master_px": [
+    538.1,
+    246.6
+   ],
+   "bbox_reference_px": [
+    1105.6,
+    430.3,
+    1200.5,
+    520.1
+   ],
+   "center_reference_px": [
+    1153.0,
+    475.2
+   ]
+  },
+  {
+   "id": 2,
+   "class": "person",
+   "score": 0.648,
+   "bbox_master_px": [
+    222.4,
+    198.0,
+    292.3,
+    318.5
+   ],
+   "center_master_px": [
+    257.3,
+    258.2
+   ],
+   "ground_contact_master_px": [
+    257.3,
+    318.5
+   ],
+   "bbox_reference_px": [
+    476.6,
+    417.6,
+    626.3,
+    671.7
+   ],
+   "center_reference_px": [
+    551.5,
+    544.7
+   ]
+  },
+  {
+   "id": 3,
+   "class": "person",
+   "score": 0.555,
+   "bbox_master_px": [
+    0.1,
+    138.8,
+    21.1,
+    257.6
+   ],
+   "center_master_px": [
+    10.6,
+    198.2
+   ],
+   "ground_contact_master_px": [
+    10.6,
+    257.6
+   ],
+   "bbox_reference_px": [
+    0.3,
+    292.9,
+    45.3,
+    543.4
+   ],
+   "center_reference_px": [
+    22.8,
+    418.1
+   ]
+  },
+  {
+   "id": 4,
+   "class": "person",
+   "score": 0.5,
+   "bbox_master_px": [
+    496.7,
+    197.6,
+    525.4,
+    258.3
+   ],
+   "center_master_px": [
+    511.1,
+    227.9
+   ],
+   "ground_contact_master_px": [
+    511.1,
+    258.3
+   ],
+   "bbox_reference_px": [
+    1064.4,
+    416.9,
+    1125.8,
+    544.8
+   ],
+   "center_reference_px": [
+    1095.1,
+    480.8
+   ]
+  }
+ ],
+ "vehicle_recall": 0.5,
+ "vehicle_precision": 1.0,
+ "person_recall": 0.5,
+ "person_precision": 0.5,
+ "vehicle_count_abs_err_vs_oracle": 1,
+ "person_count_abs_err_vs_oracle": 0,
+ "seconds": 8.209380500000407,
+ "prompt": "a bus is parked on the side of the road, a bus is driving down the street in a city, a traffic light is on a street corner"
+}

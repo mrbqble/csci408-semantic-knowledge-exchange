@@ -1,0 +1,9 @@
+iter2: VLM-judge evaluation (Damir, 11 Nov), payload sizes per element
+
+- vlm_judge.py: Damir's judge (gemma-4-31b-it, his prompts and parsing), resumable, parallel, waits out API outages
+- 22 setups judged (1,926 of 1,930 pairs): current receiver vs Damir's two fixes (working resolution, ADE20K palette),
+  single vs multi camera, calibration (original vs itself = 100%), Cityscapes reproduction of the seed receiver (41% joint)
+- payloads.py --work-size: payload at the receiver's working resolution (16-21 KB per camera instead of 51-56 KB)
+- payload_sizes.py / PAYLOAD_SIZES.md: size of segmentation map, edge map and caption per photo
+- VLM_FINDINGS.md: interpretation; VLM_JUDGE_REPORT.md: all numbers; raw judge answers in results/vlm
+- gt_eval.py / compare_runs.py: separate x/y scaling for non-1024x576 runs

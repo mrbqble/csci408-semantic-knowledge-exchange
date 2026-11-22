@@ -1,0 +1,152 @@
+{
+ "case": "case107",
+ "reference": "cam1",
+ "variant": "prompt_only",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 2,
+  "bicycle": 2,
+  "car": 0,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 0,
+  "cars_4wheel": 0,
+  "two_wheelers": 2,
+  "vehicles": 0,
+  "pedestrians": 2
+ },
+ "gt": {
+  "cars_4wheel": 3,
+  "pedestrians": 6,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "person",
+   "score": 0.997,
+   "bbox_master_px": [
+    133.8,
+    176.6,
+    156.8,
+    248.6
+   ],
+   "center_master_px": [
+    145.3,
+    212.6
+   ],
+   "ground_contact_master_px": [
+    145.3,
+    248.6
+   ],
+   "bbox_reference_px": [
+    250.9,
+    331.2,
+    294.1,
+    466.2
+   ],
+   "center_reference_px": [
+    272.5,
+    398.7
+   ]
+  },
+  {
+   "id": 1,
+   "class": "person",
+   "score": 0.997,
+   "bbox_master_px": [
+    157.7,
+    181.7,
+    178.0,
+    246.0
+   ],
+   "center_master_px": [
+    167.8,
+    213.8
+   ],
+   "ground_contact_master_px": [
+    167.8,
+    246.0
+   ],
+   "bbox_reference_px": [
+    295.7,
+    340.7,
+    333.7,
+    461.2
+   ],
+   "center_reference_px": [
+    314.7,
+    401.0
+   ]
+  },
+  {
+   "id": 2,
+   "class": "bicycle",
+   "score": 0.716,
+   "bbox_master_px": [
+    155.7,
+    212.0,
+    179.8,
+    247.9
+   ],
+   "center_master_px": [
+    167.8,
+    230.0
+   ],
+   "ground_contact_master_px": [
+    167.8,
+    247.9
+   ],
+   "bbox_reference_px": [
+    292.0,
+    397.5,
+    337.1,
+    464.8
+   ],
+   "center_reference_px": [
+    314.6,
+    431.2
+   ]
+  },
+  {
+   "id": 3,
+   "class": "bicycle",
+   "score": 0.585,
+   "bbox_master_px": [
+    139.9,
+    211.1,
+    159.8,
+    248.8
+   ],
+   "center_master_px": [
+    149.8,
+    229.9
+   ],
+   "ground_contact_master_px": [
+    149.8,
+    248.8
+   ],
+   "bbox_reference_px": [
+    262.3,
+    395.7,
+    299.6,
+    466.5
+   ],
+   "center_reference_px": [
+    280.9,
+    431.1
+   ]
+  }
+ ],
+ "vehicle_recall": 0.0,
+ "vehicle_precision": null,
+ "person_recall": 0.2857142857142857,
+ "person_precision": 1.0,
+ "vehicle_count_abs_err_vs_oracle": 1,
+ "person_count_abs_err_vs_oracle": 5,
+ "seconds": 10.433638000002247,
+ "prompt": "a street with a fence and a building in the background, a street with a tree and a man walking, a red car is parked on the side of the road, a street with a black fence and a building, a tree in the middle of a city"
+}

@@ -1,0 +1,413 @@
+{
+ "case": "case21",
+ "reference": "cam1",
+ "variant": "prompt_only",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 0,
+  "bicycle": 0,
+  "car": 11,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 2,
+  "cars_4wheel": 13,
+  "two_wheelers": 0,
+  "vehicles": 13,
+  "pedestrians": 0
+ },
+ "gt": {
+  "cars_4wheel": 11,
+  "pedestrians": 5,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "car",
+   "score": 0.994,
+   "bbox_master_px": [
+    908.9,
+    306.1,
+    1022.7,
+    389.3
+   ],
+   "center_master_px": [
+    965.8,
+    347.7
+   ],
+   "ground_contact_master_px": [
+    965.8,
+    389.3
+   ],
+   "bbox_reference_px": [
+    1704.2,
+    574.0,
+    1917.6,
+    729.9
+   ],
+   "center_reference_px": [
+    1810.9,
+    652.0
+   ]
+  },
+  {
+   "id": 1,
+   "class": "car",
+   "score": 0.906,
+   "bbox_master_px": [
+    503.5,
+    252.5,
+    541.9,
+    276.6
+   ],
+   "center_master_px": [
+    522.7,
+    264.5
+   ],
+   "ground_contact_master_px": [
+    522.7,
+    276.6
+   ],
+   "bbox_reference_px": [
+    944.0,
+    473.4,
+    1016.1,
+    518.6
+   ],
+   "center_reference_px": [
+    980.1,
+    496.0
+   ]
+  },
+  {
+   "id": 2,
+   "class": "car",
+   "score": 0.889,
+   "bbox_master_px": [
+    342.9,
+    250.1,
+    452.9,
+    305.7
+   ],
+   "center_master_px": [
+    397.9,
+    277.9
+   ],
+   "ground_contact_master_px": [
+    397.9,
+    305.7
+   ],
+   "bbox_reference_px": [
+    642.9,
+    469.0,
+    849.3,
+    573.2
+   ],
+   "center_reference_px": [
+    746.1,
+    521.1
+   ]
+  },
+  {
+   "id": 3,
+   "class": "truck",
+   "score": 0.865,
+   "bbox_master_px": [
+    0.9,
+    250.7,
+    163.0,
+    362.0
+   ],
+   "center_master_px": [
+    82.0,
+    306.4
+   ],
+   "ground_contact_master_px": [
+    82.0,
+    362.0
+   ],
+   "bbox_reference_px": [
+    1.8,
+    470.1,
+    305.7,
+    678.8
+   ],
+   "center_reference_px": [
+    153.7,
+    574.5
+   ]
+  },
+  {
+   "id": 4,
+   "class": "car",
+   "score": 0.829,
+   "bbox_master_px": [
+    411.2,
+    245.3,
+    459.2,
+    279.4
+   ],
+   "center_master_px": [
+    435.2,
+    262.3
+   ],
+   "ground_contact_master_px": [
+    435.2,
+    279.4
+   ],
+   "bbox_reference_px": [
+    771.0,
+    459.9,
+    861.1,
+    523.9
+   ],
+   "center_reference_px": [
+    816.0,
+    491.9
+   ]
+  },
+  {
+   "id": 5,
+   "class": "car",
+   "score": 0.814,
+   "bbox_master_px": [
+    557.7,
+    247.8,
+    575.5,
+    263.7
+   ],
+   "center_master_px": [
+    566.6,
+    255.7
+   ],
+   "ground_contact_master_px": [
+    566.6,
+    263.7
+   ],
+   "bbox_reference_px": [
+    1045.7,
+    464.5,
+    1079.1,
+    494.5
+   ],
+   "center_reference_px": [
+    1062.4,
+    479.5
+   ]
+  },
+  {
+   "id": 6,
+   "class": "truck",
+   "score": 0.634,
+   "bbox_master_px": [
+    344.2,
+    245.5,
+    455.8,
+    305.4
+   ],
+   "center_master_px": [
+    400.0,
+    275.5
+   ],
+   "ground_contact_master_px": [
+    400.0,
+    305.4
+   ],
+   "bbox_reference_px": [
+    645.4,
+    460.3,
+    854.5,
+    572.7
+   ],
+   "center_reference_px": [
+    750.0,
+    516.5
+   ]
+  },
+  {
+   "id": 7,
+   "class": "car",
+   "score": 0.621,
+   "bbox_master_px": [
+    620.8,
+    252.9,
+    645.6,
+    268.4
+   ],
+   "center_master_px": [
+    633.2,
+    260.7
+   ],
+   "ground_contact_master_px": [
+    633.2,
+    268.4
+   ],
+   "bbox_reference_px": [
+    1164.1,
+    474.2,
+    1210.5,
+    503.2
+   ],
+   "center_reference_px": [
+    1187.3,
+    488.7
+   ]
+  },
+  {
+   "id": 8,
+   "class": "car",
+   "score": 0.596,
+   "bbox_master_px": [
+    615.0,
+    255.9,
+    623.4,
+    267.8
+   ],
+   "center_master_px": [
+    619.2,
+    261.8
+   ],
+   "ground_contact_master_px": [
+    619.2,
+    267.8
+   ],
+   "bbox_reference_px": [
+    1153.0,
+    479.8,
+    1168.8,
+    502.0
+   ],
+   "center_reference_px": [
+    1160.9,
+    490.9
+   ]
+  },
+  {
+   "id": 9,
+   "class": "car",
+   "score": 0.582,
+   "bbox_master_px": [
+    585.2,
+    254.6,
+    612.8,
+    270.8
+   ],
+   "center_master_px": [
+    599.0,
+    262.7
+   ],
+   "ground_contact_master_px": [
+    599.0,
+    270.8
+   ],
+   "bbox_reference_px": [
+    1097.2,
+    477.3,
+    1148.9,
+    507.8
+   ],
+   "center_reference_px": [
+    1123.1,
+    492.5
+   ]
+  },
+  {
+   "id": 10,
+   "class": "car",
+   "score": 0.545,
+   "bbox_master_px": [
+    0.3,
+    253.6,
+    159.5,
+    361.3
+   ],
+   "center_master_px": [
+    79.9,
+    307.4
+   ],
+   "ground_contact_master_px": [
+    79.9,
+    361.3
+   ],
+   "bbox_reference_px": [
+    0.5,
+    475.4,
+    299.1,
+    677.4
+   ],
+   "center_reference_px": [
+    149.8,
+    576.4
+   ]
+  },
+  {
+   "id": 11,
+   "class": "car",
+   "score": 0.538,
+   "bbox_master_px": [
+    337.7,
+    254.3,
+    398.0,
+    287.9
+   ],
+   "center_master_px": [
+    367.8,
+    271.1
+   ],
+   "ground_contact_master_px": [
+    367.8,
+    287.9
+   ],
+   "bbox_reference_px": [
+    633.1,
+    476.9,
+    746.3,
+    539.8
+   ],
+   "center_reference_px": [
+    689.7,
+    508.4
+   ]
+  },
+  {
+   "id": 12,
+   "class": "car",
+   "score": 0.532,
+   "bbox_master_px": [
+    1001.3,
+    300.6,
+    1023.9,
+    322.0
+   ],
+   "center_master_px": [
+    1012.6,
+    311.3
+   ],
+   "ground_contact_master_px": [
+    1012.6,
+    322.0
+   ],
+   "bbox_reference_px": [
+    1877.5,
+    563.5,
+    1919.9,
+    603.7
+   ],
+   "center_reference_px": [
+    1898.7,
+    583.6
+   ]
+  }
+ ],
+ "vehicle_recall": 1.0,
+ "vehicle_precision": 0.6923076923076923,
+ "person_recall": 0.0,
+ "person_precision": null,
+ "vehicle_count_abs_err_vs_oracle": 4,
+ "person_count_abs_err_vs_oracle": 6,
+ "seconds": 10.433139000000665,
+ "prompt": "a red van driving down a street next to a tall building, a street scene with a car and a person crossing the street, a white van"
+}

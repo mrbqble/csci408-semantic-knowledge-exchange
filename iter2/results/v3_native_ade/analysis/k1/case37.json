@@ -1,0 +1,181 @@
+{
+ "case": "case37",
+ "reference": "cam1",
+ "variant": "k1",
+ "master_size": [
+  896,
+  512
+ ],
+ "counts": {
+  "person": 1,
+  "bicycle": 0,
+  "car": 3,
+  "motorcycle": 0,
+  "bus": 1,
+  "truck": 0,
+  "cars_4wheel": 4,
+  "two_wheelers": 0,
+  "vehicles": 4,
+  "pedestrians": 1
+ },
+ "gt": {
+  "cars_4wheel": 8,
+  "pedestrians": 4,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "car",
+   "score": 0.998,
+   "bbox_master_px": [
+    479.1,
+    234.7,
+    598.1,
+    271.6
+   ],
+   "center_master_px": [
+    538.6,
+    253.1
+   ],
+   "ground_contact_master_px": [
+    538.6,
+    271.6
+   ],
+   "bbox_reference_px": [
+    1026.5,
+    495.1,
+    1281.6,
+    572.8
+   ],
+   "center_reference_px": [
+    1154.1,
+    534.0
+   ]
+  },
+  {
+   "id": 1,
+   "class": "person",
+   "score": 0.973,
+   "bbox_master_px": [
+    23.8,
+    225.5,
+    36.4,
+    262.5
+   ],
+   "center_master_px": [
+    30.1,
+    244.0
+   ],
+   "ground_contact_master_px": [
+    30.1,
+    262.5
+   ],
+   "bbox_reference_px": [
+    51.1,
+    475.6,
+    78.0,
+    553.7
+   ],
+   "center_reference_px": [
+    64.5,
+    514.7
+   ]
+  },
+  {
+   "id": 2,
+   "class": "bus",
+   "score": 0.965,
+   "bbox_master_px": [
+    0.1,
+    199.8,
+    51.5,
+    238.2
+   ],
+   "center_master_px": [
+    25.8,
+    219.0
+   ],
+   "ground_contact_master_px": [
+    25.8,
+    238.2
+   ],
+   "bbox_reference_px": [
+    0.2,
+    421.4,
+    110.3,
+    502.5
+   ],
+   "center_reference_px": [
+    55.2,
+    462.0
+   ]
+  },
+  {
+   "id": 3,
+   "class": "car",
+   "score": 0.931,
+   "bbox_master_px": [
+    558.2,
+    236.4,
+    610.5,
+    265.6
+   ],
+   "center_master_px": [
+    584.3,
+    251.0
+   ],
+   "ground_contact_master_px": [
+    584.3,
+    265.6
+   ],
+   "bbox_reference_px": [
+    1196.1,
+    498.6,
+    1308.2,
+    560.3
+   ],
+   "center_reference_px": [
+    1252.2,
+    529.4
+   ]
+  },
+  {
+   "id": 4,
+   "class": "car",
+   "score": 0.689,
+   "bbox_master_px": [
+    747.5,
+    232.8,
+    769.9,
+    244.7
+   ],
+   "center_master_px": [
+    758.7,
+    238.7
+   ],
+   "ground_contact_master_px": [
+    758.7,
+    244.7
+   ],
+   "bbox_reference_px": [
+    1601.8,
+    491.0,
+    1649.8,
+    516.1
+   ],
+   "center_reference_px": [
+    1625.8,
+    503.5
+   ]
+  }
+ ],
+ "vehicle_recall": 0.42857142857142855,
+ "vehicle_precision": 0.75,
+ "person_recall": 0.25,
+ "person_precision": 1.0,
+ "vehicle_count_abs_err_vs_oracle": 3,
+ "person_count_abs_err_vs_oracle": 3,
+ "seconds": 7.784980799999175,
+ "prompt": "a city street"
+}

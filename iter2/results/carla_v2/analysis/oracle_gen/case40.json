@@ -1,0 +1,579 @@
+{
+ "case": "case40",
+ "reference": "cam1",
+ "variant": "oracle_gen",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 11,
+  "bicycle": 0,
+  "car": 6,
+  "motorcycle": 0,
+  "bus": 1,
+  "truck": 1,
+  "cars_4wheel": 8,
+  "two_wheelers": 0,
+  "vehicles": 8,
+  "pedestrians": 11
+ },
+ "gt": {
+  "cars_4wheel": 7,
+  "pedestrians": 7,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "person",
+   "score": 0.999,
+   "bbox_master_px": [
+    944.7,
+    232.5,
+    980.5,
+    311.1
+   ],
+   "center_master_px": [
+    962.6,
+    271.8
+   ],
+   "ground_contact_master_px": [
+    962.6,
+    311.1
+   ],
+   "bbox_reference_px": [
+    1771.4,
+    436.0,
+    1838.4,
+    583.3
+   ],
+   "center_reference_px": [
+    1804.9,
+    509.6
+   ]
+  },
+  {
+   "id": 1,
+   "class": "person",
+   "score": 0.997,
+   "bbox_master_px": [
+    59.1,
+    257.4,
+    75.0,
+    292.6
+   ],
+   "center_master_px": [
+    67.1,
+    275.0
+   ],
+   "ground_contact_master_px": [
+    67.1,
+    292.6
+   ],
+   "bbox_reference_px": [
+    110.8,
+    482.7,
+    140.7,
+    548.5
+   ],
+   "center_reference_px": [
+    125.7,
+    515.6
+   ]
+  },
+  {
+   "id": 2,
+   "class": "car",
+   "score": 0.997,
+   "bbox_master_px": [
+    500.1,
+    240.5,
+    544.1,
+    264.5
+   ],
+   "center_master_px": [
+    522.1,
+    252.5
+   ],
+   "ground_contact_master_px": [
+    522.1,
+    264.5
+   ],
+   "bbox_reference_px": [
+    937.7,
+    450.9,
+    1020.2,
+    496.0
+   ],
+   "center_reference_px": [
+    979.0,
+    473.4
+   ]
+  },
+  {
+   "id": 3,
+   "class": "car",
+   "score": 0.996,
+   "bbox_master_px": [
+    986.0,
+    235.5,
+    1023.4,
+    262.6
+   ],
+   "center_master_px": [
+    1004.7,
+    249.1
+   ],
+   "ground_contact_master_px": [
+    1004.7,
+    262.6
+   ],
+   "bbox_reference_px": [
+    1848.7,
+    441.6,
+    1918.8,
+    492.4
+   ],
+   "center_reference_px": [
+    1883.8,
+    467.0
+   ]
+  },
+  {
+   "id": 4,
+   "class": "person",
+   "score": 0.992,
+   "bbox_master_px": [
+    322.9,
+    232.8,
+    334.5,
+    265.0
+   ],
+   "center_master_px": [
+    328.7,
+    248.9
+   ],
+   "ground_contact_master_px": [
+    328.7,
+    265.0
+   ],
+   "bbox_reference_px": [
+    605.4,
+    436.6,
+    627.1,
+    496.9
+   ],
+   "center_reference_px": [
+    616.2,
+    466.8
+   ]
+  },
+  {
+   "id": 5,
+   "class": "person",
+   "score": 0.983,
+   "bbox_master_px": [
+    876.5,
+    230.3,
+    897.5,
+    277.4
+   ],
+   "center_master_px": [
+    887.0,
+    253.9
+   ],
+   "ground_contact_master_px": [
+    887.0,
+    277.4
+   ],
+   "bbox_reference_px": [
+    1643.5,
+    431.8,
+    1682.9,
+    520.2
+   ],
+   "center_reference_px": [
+    1663.2,
+    476.0
+   ]
+  },
+  {
+   "id": 6,
+   "class": "person",
+   "score": 0.962,
+   "bbox_master_px": [
+    1015.0,
+    249.2,
+    1024.0,
+    313.4
+   ],
+   "center_master_px": [
+    1019.5,
+    281.3
+   ],
+   "ground_contact_master_px": [
+    1019.5,
+    313.4
+   ],
+   "bbox_reference_px": [
+    1903.1,
+    467.3,
+    1920.0,
+    587.6
+   ],
+   "center_reference_px": [
+    1911.5,
+    527.4
+   ]
+  },
+  {
+   "id": 7,
+   "class": "person",
+   "score": 0.916,
+   "bbox_master_px": [
+    429.3,
+    231.4,
+    435.5,
+    245.6
+   ],
+   "center_master_px": [
+    432.4,
+    238.5
+   ],
+   "ground_contact_master_px": [
+    432.4,
+    245.6
+   ],
+   "bbox_reference_px": [
+    805.0,
+    433.8,
+    816.6,
+    460.5
+   ],
+   "center_reference_px": [
+    810.8,
+    447.2
+   ]
+  },
+  {
+   "id": 8,
+   "class": "person",
+   "score": 0.915,
+   "bbox_master_px": [
+    726.1,
+    230.8,
+    732.0,
+    248.1
+   ],
+   "center_master_px": [
+    729.0,
+    239.5
+   ],
+   "ground_contact_master_px": [
+    729.0,
+    248.1
+   ],
+   "bbox_reference_px": [
+    1361.4,
+    432.7,
+    1372.6,
+    465.2
+   ],
+   "center_reference_px": [
+    1367.0,
+    449.0
+   ]
+  },
+  {
+   "id": 9,
+   "class": "car",
+   "score": 0.899,
+   "bbox_master_px": [
+    575.0,
+    235.6,
+    594.4,
+    246.6
+   ],
+   "center_master_px": [
+    584.7,
+    241.1
+   ],
+   "ground_contact_master_px": [
+    584.7,
+    246.6
+   ],
+   "bbox_reference_px": [
+    1078.1,
+    441.7,
+    1114.4,
+    462.4
+   ],
+   "center_reference_px": [
+    1096.2,
+    452.1
+   ]
+  },
+  {
+   "id": 10,
+   "class": "car",
+   "score": 0.88,
+   "bbox_master_px": [
+    605.4,
+    234.4,
+    622.5,
+    246.9
+   ],
+   "center_master_px": [
+    614.0,
+    240.6
+   ],
+   "ground_contact_master_px": [
+    614.0,
+    246.9
+   ],
+   "bbox_reference_px": [
+    1135.2,
+    439.4,
+    1167.2,
+    462.9
+   ],
+   "center_reference_px": [
+    1151.2,
+    451.1
+   ]
+  },
+  {
+   "id": 11,
+   "class": "car",
+   "score": 0.862,
+   "bbox_master_px": [
+    557.9,
+    233.9,
+    592.8,
+    246.5
+   ],
+   "center_master_px": [
+    575.3,
+    240.2
+   ],
+   "ground_contact_master_px": [
+    575.3,
+    246.5
+   ],
+   "bbox_reference_px": [
+    1046.0,
+    438.6,
+    1111.5,
+    462.2
+   ],
+   "center_reference_px": [
+    1078.7,
+    450.4
+   ]
+  },
+  {
+   "id": 12,
+   "class": "person",
+   "score": 0.859,
+   "bbox_master_px": [
+    488.7,
+    231.1,
+    495.0,
+    245.5
+   ],
+   "center_master_px": [
+    491.9,
+    238.3
+   ],
+   "ground_contact_master_px": [
+    491.9,
+    245.5
+   ],
+   "bbox_reference_px": [
+    916.4,
+    433.3,
+    928.2,
+    460.3
+   ],
+   "center_reference_px": [
+    922.3,
+    446.8
+   ]
+  },
+  {
+   "id": 13,
+   "class": "car",
+   "score": 0.839,
+   "bbox_master_px": [
+    557.5,
+    234.4,
+    575.5,
+    246.3
+   ],
+   "center_master_px": [
+    566.5,
+    240.3
+   ],
+   "ground_contact_master_px": [
+    566.5,
+    246.3
+   ],
+   "bbox_reference_px": [
+    1045.3,
+    439.4,
+    1079.0,
+    461.8
+   ],
+   "center_reference_px": [
+    1062.2,
+    450.6
+   ]
+  },
+  {
+   "id": 14,
+   "class": "person",
+   "score": 0.837,
+   "bbox_master_px": [
+    310.8,
+    231.2,
+    317.7,
+    246.5
+   ],
+   "center_master_px": [
+    314.3,
+    238.9
+   ],
+   "ground_contact_master_px": [
+    314.3,
+    246.5
+   ],
+   "bbox_reference_px": [
+    582.8,
+    433.6,
+    595.8,
+    462.1
+   ],
+   "center_reference_px": [
+    589.3,
+    447.9
+   ]
+  },
+  {
+   "id": 15,
+   "class": "bus",
+   "score": 0.687,
+   "bbox_master_px": [
+    645.9,
+    230.2,
+    710.1,
+    288.1
+   ],
+   "center_master_px": [
+    678.0,
+    259.1
+   ],
+   "ground_contact_master_px": [
+    678.0,
+    288.1
+   ],
+   "bbox_reference_px": [
+    1211.1,
+    431.6,
+    1331.4,
+    540.2
+   ],
+   "center_reference_px": [
+    1271.2,
+    485.9
+   ]
+  },
+  {
+   "id": 16,
+   "class": "truck",
+   "score": 0.58,
+   "bbox_master_px": [
+    645.6,
+    233.4,
+    710.9,
+    289.0
+   ],
+   "center_master_px": [
+    678.2,
+    261.2
+   ],
+   "ground_contact_master_px": [
+    678.2,
+    289.0
+   ],
+   "bbox_reference_px": [
+    1210.5,
+    437.6,
+    1332.9,
+    541.9
+   ],
+   "center_reference_px": [
+    1271.7,
+    489.8
+   ]
+  },
+  {
+   "id": 17,
+   "class": "person",
+   "score": 0.544,
+   "bbox_master_px": [
+    810.9,
+    219.8,
+    828.2,
+    269.5
+   ],
+   "center_master_px": [
+    819.5,
+    244.6
+   ],
+   "ground_contact_master_px": [
+    819.5,
+    269.5
+   ],
+   "bbox_reference_px": [
+    1520.5,
+    412.1,
+    1552.8,
+    505.3
+   ],
+   "center_reference_px": [
+    1536.6,
+    458.7
+   ]
+  },
+  {
+   "id": 18,
+   "class": "person",
+   "score": 0.508,
+   "bbox_master_px": [
+    738.4,
+    231.1,
+    745.3,
+    246.2
+   ],
+   "center_master_px": [
+    741.8,
+    238.6
+   ],
+   "ground_contact_master_px": [
+    741.8,
+    246.2
+   ],
+   "bbox_reference_px": [
+    1384.5,
+    433.3,
+    1397.4,
+    461.6
+   ],
+   "center_reference_px": [
+    1390.9,
+    447.5
+   ]
+  }
+ ]
+}

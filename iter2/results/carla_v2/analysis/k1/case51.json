@@ -1,0 +1,210 @@
+{
+ "case": "case51",
+ "reference": "cam1",
+ "variant": "k1",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 0,
+  "bicycle": 0,
+  "car": 5,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 1,
+  "cars_4wheel": 6,
+  "two_wheelers": 0,
+  "vehicles": 6,
+  "pedestrians": 0
+ },
+ "gt": {
+  "cars_4wheel": 9,
+  "pedestrians": 8,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "car",
+   "score": 0.998,
+   "bbox_master_px": [
+    285.0,
+    268.2,
+    457.9,
+    335.0
+   ],
+   "center_master_px": [
+    371.5,
+    301.6
+   ],
+   "ground_contact_master_px": [
+    371.5,
+    335.0
+   ],
+   "bbox_reference_px": [
+    534.5,
+    502.9,
+    858.5,
+    628.1
+   ],
+   "center_reference_px": [
+    696.5,
+    565.5
+   ]
+  },
+  {
+   "id": 1,
+   "class": "car",
+   "score": 0.997,
+   "bbox_master_px": [
+    12.7,
+    262.9,
+    221.0,
+    348.7
+   ],
+   "center_master_px": [
+    116.9,
+    305.8
+   ],
+   "ground_contact_master_px": [
+    116.9,
+    348.7
+   ],
+   "bbox_reference_px": [
+    23.9,
+    493.0,
+    414.3,
+    653.8
+   ],
+   "center_reference_px": [
+    219.1,
+    573.4
+   ]
+  },
+  {
+   "id": 2,
+   "class": "car",
+   "score": 0.994,
+   "bbox_master_px": [
+    740.8,
+    270.5,
+    857.8,
+    335.3
+   ],
+   "center_master_px": [
+    799.3,
+    302.9
+   ],
+   "ground_contact_master_px": [
+    799.3,
+    335.3
+   ],
+   "bbox_reference_px": [
+    1389.0,
+    507.1,
+    1608.4,
+    628.7
+   ],
+   "center_reference_px": [
+    1498.7,
+    567.9
+   ]
+  },
+  {
+   "id": 3,
+   "class": "truck",
+   "score": 0.773,
+   "bbox_master_px": [
+    865.5,
+    266.7,
+    917.8,
+    299.9
+   ],
+   "center_master_px": [
+    891.6,
+    283.3
+   ],
+   "ground_contact_master_px": [
+    891.6,
+    299.9
+   ],
+   "bbox_reference_px": [
+    1622.8,
+    500.1,
+    1720.9,
+    562.2
+   ],
+   "center_reference_px": [
+    1671.8,
+    531.2
+   ]
+  },
+  {
+   "id": 4,
+   "class": "car",
+   "score": 0.69,
+   "bbox_master_px": [
+    0.3,
+    283.7,
+    20.7,
+    313.5
+   ],
+   "center_master_px": [
+    10.5,
+    298.6
+   ],
+   "ground_contact_master_px": [
+    10.5,
+    313.5
+   ],
+   "bbox_reference_px": [
+    0.6,
+    531.9,
+    38.9,
+    587.8
+   ],
+   "center_reference_px": [
+    19.7,
+    559.8
+   ]
+  },
+  {
+   "id": 5,
+   "class": "car",
+   "score": 0.596,
+   "bbox_master_px": [
+    6.2,
+    285.4,
+    61.2,
+    319.6
+   ],
+   "center_master_px": [
+    33.7,
+    302.5
+   ],
+   "ground_contact_master_px": [
+    33.7,
+    319.6
+   ],
+   "bbox_reference_px": [
+    11.7,
+    535.1,
+    114.7,
+    599.3
+   ],
+   "center_reference_px": [
+    63.2,
+    567.2
+   ]
+  }
+ ],
+ "vehicle_recall": 0.6666666666666666,
+ "vehicle_precision": 0.6666666666666666,
+ "person_recall": 0.0,
+ "person_precision": null,
+ "vehicle_count_abs_err_vs_oracle": 0,
+ "person_count_abs_err_vs_oracle": 15,
+ "seconds": 10.444234399999914,
+ "prompt": "a police car is parked in a street"
+}

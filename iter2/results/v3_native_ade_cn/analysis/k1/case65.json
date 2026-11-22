@@ -1,0 +1,152 @@
+{
+ "case": "case65",
+ "reference": "cam1",
+ "variant": "k1",
+ "master_size": [
+  896,
+  512
+ ],
+ "counts": {
+  "person": 0,
+  "bicycle": 0,
+  "car": 3,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 1,
+  "cars_4wheel": 4,
+  "two_wheelers": 0,
+  "vehicles": 4,
+  "pedestrians": 0
+ },
+ "gt": {
+  "cars_4wheel": 4,
+  "pedestrians": 3,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "truck",
+   "score": 0.987,
+   "bbox_master_px": [
+    528.2,
+    216.8,
+    895.3,
+    498.1
+   ],
+   "center_master_px": [
+    711.8,
+    357.5
+   ],
+   "ground_contact_master_px": [
+    711.8,
+    498.1
+   ],
+   "bbox_reference_px": [
+    1131.9,
+    457.4,
+    1918.5,
+    1050.7
+   ],
+   "center_reference_px": [
+    1525.2,
+    754.0
+   ]
+  },
+  {
+   "id": 1,
+   "class": "car",
+   "score": 0.763,
+   "bbox_master_px": [
+    387.6,
+    248.5,
+    472.2,
+    292.8
+   ],
+   "center_master_px": [
+    429.9,
+    270.7
+   ],
+   "ground_contact_master_px": [
+    429.9,
+    292.8
+   ],
+   "bbox_reference_px": [
+    830.5,
+    524.3,
+    1011.9,
+    617.7
+   ],
+   "center_reference_px": [
+    921.2,
+    571.0
+   ]
+  },
+  {
+   "id": 2,
+   "class": "car",
+   "score": 0.545,
+   "bbox_master_px": [
+    500.6,
+    249.7,
+    537.5,
+    275.8
+   ],
+   "center_master_px": [
+    519.0,
+    262.8
+   ],
+   "ground_contact_master_px": [
+    519.0,
+    275.8
+   ],
+   "bbox_reference_px": [
+    1072.8,
+    526.8,
+    1151.7,
+    581.8
+   ],
+   "center_reference_px": [
+    1112.2,
+    554.3
+   ]
+  },
+  {
+   "id": 3,
+   "class": "car",
+   "score": 0.534,
+   "bbox_master_px": [
+    491.7,
+    254.7,
+    504.3,
+    275.0
+   ],
+   "center_master_px": [
+    498.0,
+    264.8
+   ],
+   "ground_contact_master_px": [
+    498.0,
+    275.0
+   ],
+   "bbox_reference_px": [
+    1053.5,
+    537.2,
+    1080.7,
+    580.1
+   ],
+   "center_reference_px": [
+    1067.1,
+    558.6
+   ]
+  }
+ ],
+ "vehicle_recall": 1.0,
+ "vehicle_precision": 0.5,
+ "person_recall": 0.0,
+ "person_precision": null,
+ "vehicle_count_abs_err_vs_oracle": 2,
+ "person_count_abs_err_vs_oracle": 3,
+ "seconds": 7.709206499999709,
+ "prompt": "a van is parked on the side of the road"
+}

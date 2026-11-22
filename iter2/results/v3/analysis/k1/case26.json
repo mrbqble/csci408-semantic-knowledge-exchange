@@ -1,0 +1,181 @@
+{
+ "case": "case26",
+ "reference": "cam1",
+ "variant": "k1",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 4,
+  "bicycle": 0,
+  "car": 0,
+  "motorcycle": 0,
+  "bus": 1,
+  "truck": 0,
+  "cars_4wheel": 1,
+  "two_wheelers": 0,
+  "vehicles": 1,
+  "pedestrians": 4
+ },
+ "gt": {
+  "cars_4wheel": 6,
+  "pedestrians": 8,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "person",
+   "score": 0.998,
+   "bbox_master_px": [
+    71.0,
+    210.2,
+    118.3,
+    298.5
+   ],
+   "center_master_px": [
+    94.6,
+    254.4
+   ],
+   "ground_contact_master_px": [
+    94.6,
+    298.5
+   ],
+   "bbox_reference_px": [
+    133.1,
+    394.1,
+    221.8,
+    559.8
+   ],
+   "center_reference_px": [
+    177.4,
+    476.9
+   ]
+  },
+  {
+   "id": 1,
+   "class": "person",
+   "score": 0.997,
+   "bbox_master_px": [
+    196.3,
+    199.7,
+    227.4,
+    289.5
+   ],
+   "center_master_px": [
+    211.8,
+    244.6
+   ],
+   "ground_contact_master_px": [
+    211.8,
+    289.5
+   ],
+   "bbox_reference_px": [
+    368.1,
+    374.4,
+    426.3,
+    542.7
+   ],
+   "center_reference_px": [
+    397.2,
+    458.6
+   ]
+  },
+  {
+   "id": 2,
+   "class": "person",
+   "score": 0.995,
+   "bbox_master_px": [
+    124.0,
+    202.2,
+    150.2,
+    261.4
+   ],
+   "center_master_px": [
+    137.1,
+    231.8
+   ],
+   "ground_contact_master_px": [
+    137.1,
+    261.4
+   ],
+   "bbox_reference_px": [
+    232.4,
+    379.1,
+    281.7,
+    490.1
+   ],
+   "center_reference_px": [
+    257.1,
+    434.6
+   ]
+  },
+  {
+   "id": 3,
+   "class": "bus",
+   "score": 0.99,
+   "bbox_master_px": [
+    800.9,
+    69.6,
+    1024.0,
+    350.5
+   ],
+   "center_master_px": [
+    912.4,
+    210.1
+   ],
+   "ground_contact_master_px": [
+    912.4,
+    350.5
+   ],
+   "bbox_reference_px": [
+    1501.6,
+    130.5,
+    1920.0,
+    657.3
+   ],
+   "center_reference_px": [
+    1710.8,
+    393.9
+   ]
+  },
+  {
+   "id": 4,
+   "class": "person",
+   "score": 0.671,
+   "bbox_master_px": [
+    234.2,
+    218.4,
+    239.1,
+    233.3
+   ],
+   "center_master_px": [
+    236.7,
+    225.9
+   ],
+   "ground_contact_master_px": [
+    236.7,
+    233.3
+   ],
+   "bbox_reference_px": [
+    439.2,
+    409.5,
+    448.3,
+    437.5
+   ],
+   "center_reference_px": [
+    443.7,
+    423.5
+   ]
+  }
+ ],
+ "vehicle_recall": 0.3333333333333333,
+ "vehicle_precision": 1.0,
+ "person_recall": 0.3,
+ "person_precision": 0.75,
+ "vehicle_count_abs_err_vs_oracle": 2,
+ "person_count_abs_err_vs_oracle": 6,
+ "seconds": 11.129172299999482,
+ "prompt": "a red fire truck is parked on the side of the street"
+}

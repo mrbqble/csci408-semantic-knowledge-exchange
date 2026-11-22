@@ -1,0 +1,181 @@
+{
+ "case": "case47",
+ "reference": "cam1",
+ "variant": "prompt_only",
+ "master_size": [
+  896,
+  512
+ ],
+ "counts": {
+  "person": 3,
+  "bicycle": 0,
+  "car": 2,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 0,
+  "cars_4wheel": 2,
+  "two_wheelers": 0,
+  "vehicles": 2,
+  "pedestrians": 3
+ },
+ "gt": {
+  "cars_4wheel": 8,
+  "pedestrians": 8,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "person",
+   "score": 1.0,
+   "bbox_master_px": [
+    701.7,
+    242.4,
+    820.8,
+    506.5
+   ],
+   "center_master_px": [
+    761.2,
+    374.5
+   ],
+   "ground_contact_master_px": [
+    761.2,
+    506.5
+   ],
+   "bbox_reference_px": [
+    1503.6,
+    511.3,
+    1758.8,
+    1068.5
+   ],
+   "center_reference_px": [
+    1631.2,
+    789.9
+   ]
+  },
+  {
+   "id": 1,
+   "class": "car",
+   "score": 1.0,
+   "bbox_master_px": [
+    387.5,
+    228.0,
+    563.7,
+    306.1
+   ],
+   "center_master_px": [
+    475.6,
+    267.1
+   ],
+   "ground_contact_master_px": [
+    475.6,
+    306.1
+   ],
+   "bbox_reference_px": [
+    830.3,
+    480.9,
+    1208.0,
+    645.8
+   ],
+   "center_reference_px": [
+    1019.2,
+    563.3
+   ]
+  },
+  {
+   "id": 2,
+   "class": "person",
+   "score": 0.907,
+   "bbox_master_px": [
+    454.2,
+    202.0,
+    466.5,
+    226.6
+   ],
+   "center_master_px": [
+    460.4,
+    214.3
+   ],
+   "ground_contact_master_px": [
+    460.4,
+    226.6
+   ],
+   "bbox_reference_px": [
+    973.4,
+    426.1,
+    999.6,
+    477.9
+   ],
+   "center_reference_px": [
+    986.5,
+    452.0
+   ]
+  },
+  {
+   "id": 3,
+   "class": "person",
+   "score": 0.689,
+   "bbox_master_px": [
+    241.0,
+    206.2,
+    255.0,
+    248.0
+   ],
+   "center_master_px": [
+    248.0,
+    227.1
+   ],
+   "ground_contact_master_px": [
+    248.0,
+    248.0
+   ],
+   "bbox_reference_px": [
+    516.4,
+    434.9,
+    546.5,
+    523.1
+   ],
+   "center_reference_px": [
+    531.4,
+    479.0
+   ]
+  },
+  {
+   "id": 4,
+   "class": "car",
+   "score": 0.632,
+   "bbox_master_px": [
+    755.0,
+    187.6,
+    896.0,
+    254.4
+   ],
+   "center_master_px": [
+    825.5,
+    221.0
+   ],
+   "ground_contact_master_px": [
+    825.5,
+    254.4
+   ],
+   "bbox_reference_px": [
+    1617.8,
+    395.6,
+    1920.0,
+    536.6
+   ],
+   "center_reference_px": [
+    1768.9,
+    466.1
+   ]
+  }
+ ],
+ "vehicle_recall": 0.25,
+ "vehicle_precision": 1.0,
+ "person_recall": 0.375,
+ "person_precision": 1.0,
+ "vehicle_count_abs_err_vs_oracle": 6,
+ "person_count_abs_err_vs_oracle": 5,
+ "seconds": 8.084649199998239,
+ "prompt": "a man standing on a sidewalk next to a street sign, a yellow car is parked on the street, a police car is parked on the side of the road, a car is parked on the side of the road, a city street with a yellow car and a yellow cab"
+}

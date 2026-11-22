@@ -1,0 +1,148 @@
+{
+ "case": "case31",
+ "reference": "cam1",
+ "variant": "prompt_only",
+ "master_size": [
+  896,
+  512
+ ],
+ "counts": {
+  "person": 1,
+  "bicycle": 0,
+  "car": 1,
+  "motorcycle": 0,
+  "bus": 1,
+  "truck": 1,
+  "cars_4wheel": 3,
+  "two_wheelers": 0,
+  "vehicles": 3,
+  "pedestrians": 1
+ },
+ "gt": null,
+ "detections": [
+  {
+   "id": 0,
+   "class": "bus",
+   "score": 1.0,
+   "bbox_master_px": [
+    0.0,
+    32.6,
+    516.7,
+    313.4
+   ],
+   "center_master_px": [
+    258.3,
+    173.0
+   ],
+   "ground_contact_master_px": [
+    258.3,
+    313.4
+   ],
+   "bbox_reference_px": [
+    0.0,
+    68.8,
+    1107.1,
+    661.0
+   ],
+   "center_reference_px": [
+    553.6,
+    364.9
+   ]
+  },
+  {
+   "id": 1,
+   "class": "person",
+   "score": 0.999,
+   "bbox_master_px": [
+    811.1,
+    134.3,
+    895.9,
+    426.0
+   ],
+   "center_master_px": [
+    853.5,
+    280.1
+   ],
+   "ground_contact_master_px": [
+    853.5,
+    426.0
+   ],
+   "bbox_reference_px": [
+    1738.1,
+    283.3,
+    1919.7,
+    898.5
+   ],
+   "center_reference_px": [
+    1828.9,
+    590.9
+   ]
+  },
+  {
+   "id": 2,
+   "class": "car",
+   "score": 0.997,
+   "bbox_master_px": [
+    513.0,
+    164.2,
+    680.5,
+    252.2
+   ],
+   "center_master_px": [
+    596.7,
+    208.2
+   ],
+   "ground_contact_master_px": [
+    596.7,
+    252.2
+   ],
+   "bbox_reference_px": [
+    1099.2,
+    346.4,
+    1458.2,
+    532.1
+   ],
+   "center_reference_px": [
+    1278.7,
+    439.2
+   ]
+  },
+  {
+   "id": 3,
+   "class": "truck",
+   "score": 0.859,
+   "bbox_master_px": [
+    513.0,
+    137.6,
+    657.0,
+    189.0
+   ],
+   "center_master_px": [
+    585.0,
+    163.3
+   ],
+   "ground_contact_master_px": [
+    585.0,
+    189.0
+   ],
+   "bbox_reference_px": [
+    1099.4,
+    290.2,
+    1407.8,
+    398.7
+   ],
+   "center_reference_px": [
+    1253.6,
+    344.5
+   ]
+  }
+ ],
+ "vehicle_recall": 0.75,
+ "vehicle_precision": 1.0,
+ "person_recall": 0.08333333333333333,
+ "person_precision": 1.0,
+ "vehicle_count_abs_err_vs_oracle": 1,
+ "person_count_abs_err_vs_oracle": 11,
+ "seconds": 8.140151100000367,
+ "prompt": "a bus is driving down the street in a city, a bus is parked at a bus stop, a street with cars and buses on it"
+}

@@ -1,0 +1,206 @@
+{
+ "case": "case301",
+ "reference": "cam1",
+ "variant": "k1",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 0,
+  "bicycle": 0,
+  "car": 6,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 0,
+  "cars_4wheel": 6,
+  "two_wheelers": 0,
+  "vehicles": 6,
+  "pedestrians": 0
+ },
+ "gt": null,
+ "detections": [
+  {
+   "id": 0,
+   "class": "car",
+   "score": 0.999,
+   "bbox_master_px": [
+    1.0,
+    260.8,
+    230.5,
+    357.4
+   ],
+   "center_master_px": [
+    115.8,
+    309.1
+   ],
+   "ground_contact_master_px": [
+    115.8,
+    357.4
+   ],
+   "bbox_reference_px": [
+    1.9,
+    488.9,
+    432.3,
+    670.1
+   ],
+   "center_reference_px": [
+    217.1,
+    579.5
+   ]
+  },
+  {
+   "id": 1,
+   "class": "car",
+   "score": 0.998,
+   "bbox_master_px": [
+    444.3,
+    260.9,
+    673.3,
+    350.0
+   ],
+   "center_master_px": [
+    558.8,
+    305.5
+   ],
+   "ground_contact_master_px": [
+    558.8,
+    350.0
+   ],
+   "bbox_reference_px": [
+    833.1,
+    489.2,
+    1262.4,
+    656.3
+   ],
+   "center_reference_px": [
+    1047.7,
+    572.8
+   ]
+  },
+  {
+   "id": 2,
+   "class": "car",
+   "score": 0.989,
+   "bbox_master_px": [
+    622.2,
+    271.0,
+    705.8,
+    319.0
+   ],
+   "center_master_px": [
+    664.0,
+    295.0
+   ],
+   "ground_contact_master_px": [
+    664.0,
+    319.0
+   ],
+   "bbox_reference_px": [
+    1166.7,
+    508.2,
+    1323.4,
+    598.1
+   ],
+   "center_reference_px": [
+    1245.0,
+    553.1
+   ]
+  },
+  {
+   "id": 3,
+   "class": "car",
+   "score": 0.863,
+   "bbox_master_px": [
+    688.0,
+    269.4,
+    752.6,
+    296.3
+   ],
+   "center_master_px": [
+    720.3,
+    282.9
+   ],
+   "ground_contact_master_px": [
+    720.3,
+    296.3
+   ],
+   "bbox_reference_px": [
+    1289.9,
+    505.1,
+    1411.1,
+    555.6
+   ],
+   "center_reference_px": [
+    1350.5,
+    530.4
+   ]
+  },
+  {
+   "id": 4,
+   "class": "car",
+   "score": 0.689,
+   "bbox_master_px": [
+    443.5,
+    269.3,
+    485.5,
+    295.0
+   ],
+   "center_master_px": [
+    464.5,
+    282.2
+   ],
+   "ground_contact_master_px": [
+    464.5,
+    295.0
+   ],
+   "bbox_reference_px": [
+    831.6,
+    505.0,
+    910.3,
+    553.1
+   ],
+   "center_reference_px": [
+    871.0,
+    529.1
+   ]
+  },
+  {
+   "id": 5,
+   "class": "car",
+   "score": 0.522,
+   "bbox_master_px": [
+    0.2,
+    352.6,
+    19.3,
+    433.5
+   ],
+   "center_master_px": [
+    9.8,
+    393.1
+   ],
+   "ground_contact_master_px": [
+    9.8,
+    433.5
+   ],
+   "bbox_reference_px": [
+    0.4,
+    661.1,
+    36.3,
+    812.9
+   ],
+   "center_reference_px": [
+    18.4,
+    737.0
+   ]
+  }
+ ],
+ "vehicle_recall": 0.45454545454545453,
+ "vehicle_precision": 0.8333333333333334,
+ "person_recall": 0.0,
+ "person_precision": null,
+ "vehicle_count_abs_err_vs_oracle": 5,
+ "person_count_abs_err_vs_oracle": 10,
+ "seconds": 10.431253099999594,
+ "prompt": "a street with cars and a stop light"
+}

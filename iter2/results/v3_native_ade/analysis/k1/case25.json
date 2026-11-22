@@ -1,0 +1,210 @@
+{
+ "case": "case25",
+ "reference": "cam1",
+ "variant": "k1",
+ "master_size": [
+  896,
+  512
+ ],
+ "counts": {
+  "person": 3,
+  "bicycle": 0,
+  "car": 2,
+  "motorcycle": 1,
+  "bus": 0,
+  "truck": 0,
+  "cars_4wheel": 2,
+  "two_wheelers": 1,
+  "vehicles": 3,
+  "pedestrians": 3
+ },
+ "gt": {
+  "cars_4wheel": 5,
+  "pedestrians": 8,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "car",
+   "score": 0.999,
+   "bbox_master_px": [
+    106.1,
+    220.1,
+    242.7,
+    286.7
+   ],
+   "center_master_px": [
+    174.4,
+    253.4
+   ],
+   "ground_contact_master_px": [
+    174.4,
+    286.7
+   ],
+   "bbox_reference_px": [
+    227.4,
+    464.3,
+    520.1,
+    604.8
+   ],
+   "center_reference_px": [
+    373.7,
+    534.6
+   ]
+  },
+  {
+   "id": 1,
+   "class": "car",
+   "score": 0.999,
+   "bbox_master_px": [
+    296.6,
+    207.5,
+    363.6,
+    232.9
+   ],
+   "center_master_px": [
+    330.1,
+    220.2
+   ],
+   "ground_contact_master_px": [
+    330.1,
+    232.9
+   ],
+   "bbox_reference_px": [
+    635.6,
+    437.7,
+    779.1,
+    491.3
+   ],
+   "center_reference_px": [
+    707.4,
+    464.5
+   ]
+  },
+  {
+   "id": 2,
+   "class": "person",
+   "score": 0.952,
+   "bbox_master_px": [
+    41.3,
+    209.1,
+    55.6,
+    249.2
+   ],
+   "center_master_px": [
+    48.5,
+    229.1
+   ],
+   "ground_contact_master_px": [
+    48.5,
+    249.2
+   ],
+   "bbox_reference_px": [
+    88.5,
+    441.1,
+    119.2,
+    525.6
+   ],
+   "center_reference_px": [
+    103.9,
+    483.3
+   ]
+  },
+  {
+   "id": 3,
+   "class": "person",
+   "score": 0.864,
+   "bbox_master_px": [
+    608.7,
+    203.7,
+    615.3,
+    225.2
+   ],
+   "center_master_px": [
+    612.0,
+    214.5
+   ],
+   "ground_contact_master_px": [
+    612.0,
+    225.2
+   ],
+   "bbox_reference_px": [
+    1304.4,
+    429.6,
+    1318.5,
+    475.1
+   ],
+   "center_reference_px": [
+    1311.5,
+    452.4
+   ]
+  },
+  {
+   "id": 4,
+   "class": "person",
+   "score": 0.842,
+   "bbox_master_px": [
+    599.4,
+    203.6,
+    606.5,
+    227.2
+   ],
+   "center_master_px": [
+    602.9,
+    215.4
+   ],
+   "ground_contact_master_px": [
+    602.9,
+    227.2
+   ],
+   "bbox_reference_px": [
+    1284.5,
+    429.6,
+    1299.6,
+    479.2
+   ],
+   "center_reference_px": [
+    1292.0,
+    454.4
+   ]
+  },
+  {
+   "id": 5,
+   "class": "motorcycle",
+   "score": 0.693,
+   "bbox_master_px": [
+    359.9,
+    206.0,
+    397.3,
+    232.6
+   ],
+   "center_master_px": [
+    378.6,
+    219.3
+   ],
+   "ground_contact_master_px": [
+    378.6,
+    232.6
+   ],
+   "bbox_reference_px": [
+    771.3,
+    434.4,
+    851.3,
+    490.7
+   ],
+   "center_reference_px": [
+    811.3,
+    462.6
+   ]
+  }
+ ],
+ "vehicle_recall": 0.6,
+ "vehicle_precision": 1.0,
+ "person_recall": 0.09523809523809523,
+ "person_precision": 0.6666666666666666,
+ "vehicle_count_abs_err_vs_oracle": 2,
+ "person_count_abs_err_vs_oracle": 18,
+ "seconds": 8.017088299999159,
+ "prompt": "a street with a crosswalk and a stop sign"
+}

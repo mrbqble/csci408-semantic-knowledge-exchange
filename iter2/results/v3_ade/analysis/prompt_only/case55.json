@@ -1,0 +1,210 @@
+{
+ "case": "case55",
+ "reference": "cam1",
+ "variant": "prompt_only",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 3,
+  "bicycle": 0,
+  "car": 1,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 2,
+  "cars_4wheel": 3,
+  "two_wheelers": 0,
+  "vehicles": 3,
+  "pedestrians": 3
+ },
+ "gt": {
+  "cars_4wheel": 8,
+  "pedestrians": 3,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "car",
+   "score": 0.996,
+   "bbox_master_px": [
+    118.5,
+    277.0,
+    224.6,
+    359.3
+   ],
+   "center_master_px": [
+    171.5,
+    318.1
+   ],
+   "ground_contact_master_px": [
+    171.5,
+    359.3
+   ],
+   "bbox_reference_px": [
+    222.2,
+    519.4,
+    421.1,
+    673.6
+   ],
+   "center_reference_px": [
+    321.7,
+    596.5
+   ]
+  },
+  {
+   "id": 1,
+   "class": "person",
+   "score": 0.944,
+   "bbox_master_px": [
+    848.2,
+    261.1,
+    873.8,
+    309.0
+   ],
+   "center_master_px": [
+    861.0,
+    285.1
+   ],
+   "ground_contact_master_px": [
+    861.0,
+    309.0
+   ],
+   "bbox_reference_px": [
+    1590.3,
+    489.6,
+    1638.4,
+    579.4
+   ],
+   "center_reference_px": [
+    1614.3,
+    534.5
+   ]
+  },
+  {
+   "id": 2,
+   "class": "truck",
+   "score": 0.939,
+   "bbox_master_px": [
+    463.8,
+    230.9,
+    798.3,
+    409.7
+   ],
+   "center_master_px": [
+    631.0,
+    320.3
+   ],
+   "ground_contact_master_px": [
+    631.0,
+    409.7
+   ],
+   "bbox_reference_px": [
+    869.7,
+    433.0,
+    1496.7,
+    768.1
+   ],
+   "center_reference_px": [
+    1183.2,
+    600.6
+   ]
+  },
+  {
+   "id": 3,
+   "class": "truck",
+   "score": 0.934,
+   "bbox_master_px": [
+    884.6,
+    187.8,
+    1024.0,
+    368.7
+   ],
+   "center_master_px": [
+    954.3,
+    278.2
+   ],
+   "ground_contact_master_px": [
+    954.3,
+    368.7
+   ],
+   "bbox_reference_px": [
+    1658.7,
+    352.1,
+    1920.0,
+    691.2
+   ],
+   "center_reference_px": [
+    1789.3,
+    521.7
+   ]
+  },
+  {
+   "id": 4,
+   "class": "person",
+   "score": 0.81,
+   "bbox_master_px": [
+    353.2,
+    252.6,
+    365.4,
+    269.4
+   ],
+   "center_master_px": [
+    359.3,
+    261.0
+   ],
+   "ground_contact_master_px": [
+    359.3,
+    269.4
+   ],
+   "bbox_reference_px": [
+    662.2,
+    473.6,
+    685.2,
+    505.1
+   ],
+   "center_reference_px": [
+    673.7,
+    489.3
+   ]
+  },
+  {
+   "id": 5,
+   "class": "person",
+   "score": 0.642,
+   "bbox_master_px": [
+    327.6,
+    259.7,
+    333.4,
+    272.6
+   ],
+   "center_master_px": [
+    330.5,
+    266.2
+   ],
+   "ground_contact_master_px": [
+    330.5,
+    272.6
+   ],
+   "bbox_reference_px": [
+    614.2,
+    486.9,
+    625.2,
+    511.2
+   ],
+   "center_reference_px": [
+    619.7,
+    499.0
+   ]
+  }
+ ],
+ "vehicle_recall": 0.3333333333333333,
+ "vehicle_precision": 1.0,
+ "person_recall": 0.16666666666666666,
+ "person_precision": 0.3333333333333333,
+ "vehicle_count_abs_err_vs_oracle": 6,
+ "person_count_abs_err_vs_oracle": 3,
+ "seconds": 10.496518600000854,
+ "prompt": "a white van driving down a street next to a red truck, a scene of a city street, a group of people walking down a street, a city street with cars and people walking, a red car driving down a street next to tall buildings"
+}

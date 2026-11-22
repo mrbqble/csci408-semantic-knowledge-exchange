@@ -1,0 +1,152 @@
+{
+ "case": "case20",
+ "reference": "cam1",
+ "variant": "k1",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 1,
+  "bicycle": 0,
+  "car": 2,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 1,
+  "cars_4wheel": 3,
+  "two_wheelers": 0,
+  "vehicles": 3,
+  "pedestrians": 1
+ },
+ "gt": {
+  "cars_4wheel": 4,
+  "pedestrians": 5,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "car",
+   "score": 0.985,
+   "bbox_master_px": [
+    769.6,
+    233.9,
+    857.2,
+    270.5
+   ],
+   "center_master_px": [
+    813.4,
+    252.2
+   ],
+   "ground_contact_master_px": [
+    813.4,
+    270.5
+   ],
+   "bbox_reference_px": [
+    1443.0,
+    438.5,
+    1607.3,
+    507.3
+   ],
+   "center_reference_px": [
+    1525.2,
+    472.9
+   ]
+  },
+  {
+   "id": 1,
+   "class": "person",
+   "score": 0.798,
+   "bbox_master_px": [
+    53.7,
+    233.9,
+    74.3,
+    266.7
+   ],
+   "center_master_px": [
+    64.0,
+    250.3
+   ],
+   "ground_contact_master_px": [
+    64.0,
+    266.7
+   ],
+   "bbox_reference_px": [
+    100.8,
+    438.6,
+    139.2,
+    500.0
+   ],
+   "center_reference_px": [
+    120.0,
+    469.3
+   ]
+  },
+  {
+   "id": 2,
+   "class": "truck",
+   "score": 0.727,
+   "bbox_master_px": [
+    287.2,
+    204.5,
+    530.4,
+    351.6
+   ],
+   "center_master_px": [
+    408.8,
+    278.1
+   ],
+   "ground_contact_master_px": [
+    408.8,
+    351.6
+   ],
+   "bbox_reference_px": [
+    538.5,
+    383.4,
+    994.4,
+    659.3
+   ],
+   "center_reference_px": [
+    766.5,
+    521.4
+   ]
+  },
+  {
+   "id": 3,
+   "class": "car",
+   "score": 0.704,
+   "bbox_master_px": [
+    288.9,
+    208.5,
+    528.4,
+    352.4
+   ],
+   "center_master_px": [
+    408.6,
+    280.5
+   ],
+   "ground_contact_master_px": [
+    408.6,
+    352.4
+   ],
+   "bbox_reference_px": [
+    541.6,
+    391.0,
+    990.8,
+    660.8
+   ],
+   "center_reference_px": [
+    766.2,
+    525.9
+   ]
+  }
+ ],
+ "vehicle_recall": 0.5,
+ "vehicle_precision": 0.6666666666666666,
+ "person_recall": 0.14285714285714285,
+ "person_precision": 1.0,
+ "vehicle_count_abs_err_vs_oracle": 1,
+ "person_count_abs_err_vs_oracle": 6,
+ "seconds": 10.46586329999991,
+ "prompt": "a white van driving down a street next to a red sign"
+}

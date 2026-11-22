@@ -1,0 +1,268 @@
+{
+ "case": "case105",
+ "reference": "cam1",
+ "variant": "k1",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 5,
+  "bicycle": 0,
+  "car": 1,
+  "motorcycle": 1,
+  "bus": 1,
+  "truck": 0,
+  "cars_4wheel": 2,
+  "two_wheelers": 1,
+  "vehicles": 3,
+  "pedestrians": 5
+ },
+ "gt": {
+  "cars_4wheel": 6,
+  "pedestrians": 12,
+  "two_wheelers": 1
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "person",
+   "score": 1.0,
+   "bbox_master_px": [
+    103.6,
+    234.9,
+    281.0,
+    575.2
+   ],
+   "center_master_px": [
+    192.3,
+    405.0
+   ],
+   "ground_contact_master_px": [
+    192.3,
+    575.2
+   ],
+   "bbox_reference_px": [
+    194.2,
+    440.3,
+    526.9,
+    1078.4
+   ],
+   "center_reference_px": [
+    360.6,
+    759.4
+   ]
+  },
+  {
+   "id": 1,
+   "class": "person",
+   "score": 0.999,
+   "bbox_master_px": [
+    59.9,
+    246.6,
+    115.1,
+    392.1
+   ],
+   "center_master_px": [
+    87.5,
+    319.4
+   ],
+   "ground_contact_master_px": [
+    87.5,
+    392.1
+   ],
+   "bbox_reference_px": [
+    112.3,
+    462.4,
+    215.8,
+    735.2
+   ],
+   "center_reference_px": [
+    164.1,
+    598.8
+   ]
+  },
+  {
+   "id": 2,
+   "class": "person",
+   "score": 0.994,
+   "bbox_master_px": [
+    967.7,
+    239.0,
+    995.7,
+    311.3
+   ],
+   "center_master_px": [
+    981.7,
+    275.1
+   ],
+   "ground_contact_master_px": [
+    981.7,
+    311.3
+   ],
+   "bbox_reference_px": [
+    1814.5,
+    448.0,
+    1866.9,
+    583.6
+   ],
+   "center_reference_px": [
+    1840.7,
+    515.8
+   ]
+  },
+  {
+   "id": 3,
+   "class": "car",
+   "score": 0.985,
+   "bbox_master_px": [
+    332.9,
+    267.0,
+    418.9,
+    317.6
+   ],
+   "center_master_px": [
+    375.9,
+    292.3
+   ],
+   "ground_contact_master_px": [
+    375.9,
+    317.6
+   ],
+   "bbox_reference_px": [
+    624.1,
+    500.6,
+    785.5,
+    595.5
+   ],
+   "center_reference_px": [
+    704.8,
+    548.1
+   ]
+  },
+  {
+   "id": 4,
+   "class": "bus",
+   "score": 0.951,
+   "bbox_master_px": [
+    425.5,
+    160.2,
+    597.6,
+    351.6
+   ],
+   "center_master_px": [
+    511.5,
+    255.9
+   ],
+   "ground_contact_master_px": [
+    511.5,
+    351.6
+   ],
+   "bbox_reference_px": [
+    797.8,
+    300.4,
+    1120.5,
+    659.3
+   ],
+   "center_reference_px": [
+    959.1,
+    479.9
+   ]
+  },
+  {
+   "id": 5,
+   "class": "person",
+   "score": 0.806,
+   "bbox_master_px": [
+    858.1,
+    255.4,
+    867.3,
+    289.0
+   ],
+   "center_master_px": [
+    862.7,
+    272.2
+   ],
+   "ground_contact_master_px": [
+    862.7,
+    289.0
+   ],
+   "bbox_reference_px": [
+    1608.9,
+    478.9,
+    1626.2,
+    541.8
+   ],
+   "center_reference_px": [
+    1617.6,
+    510.4
+   ]
+  },
+  {
+   "id": 6,
+   "class": "person",
+   "score": 0.654,
+   "bbox_master_px": [
+    550.9,
+    211.6,
+    565.2,
+    241.5
+   ],
+   "center_master_px": [
+    558.0,
+    226.6
+   ],
+   "ground_contact_master_px": [
+    558.0,
+    241.5
+   ],
+   "bbox_reference_px": [
+    1032.9,
+    396.8,
+    1059.7,
+    452.8
+   ],
+   "center_reference_px": [
+    1046.3,
+    424.8
+   ]
+  },
+  {
+   "id": 7,
+   "class": "motorcycle",
+   "score": 0.545,
+   "bbox_master_px": [
+    721.2,
+    274.2,
+    734.1,
+    300.5
+   ],
+   "center_master_px": [
+    727.7,
+    287.3
+   ],
+   "ground_contact_master_px": [
+    727.7,
+    300.5
+   ],
+   "bbox_reference_px": [
+    1352.2,
+    514.1,
+    1376.5,
+    563.3
+   ],
+   "center_reference_px": [
+    1364.4,
+    538.7
+   ]
+  }
+ ],
+ "vehicle_recall": 0.2857142857142857,
+ "vehicle_precision": 0.6666666666666666,
+ "person_recall": 0.3076923076923077,
+ "person_precision": 0.8,
+ "vehicle_count_abs_err_vs_oracle": 4,
+ "person_count_abs_err_vs_oracle": 8,
+ "seconds": 10.595449000000372,
+ "prompt": "a woman walking down a street in a city"
+}

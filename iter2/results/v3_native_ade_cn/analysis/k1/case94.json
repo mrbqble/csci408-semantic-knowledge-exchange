@@ -1,0 +1,210 @@
+{
+ "case": "case94",
+ "reference": "cam1",
+ "variant": "k1",
+ "master_size": [
+  896,
+  512
+ ],
+ "counts": {
+  "person": 0,
+  "bicycle": 0,
+  "car": 5,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 1,
+  "cars_4wheel": 6,
+  "two_wheelers": 0,
+  "vehicles": 6,
+  "pedestrians": 0
+ },
+ "gt": {
+  "cars_4wheel": 8,
+  "pedestrians": 9,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "car",
+   "score": 0.982,
+   "bbox_master_px": [
+    802.9,
+    270.4,
+    895.4,
+    362.2
+   ],
+   "center_master_px": [
+    849.2,
+    316.3
+   ],
+   "ground_contact_master_px": [
+    849.2,
+    362.2
+   ],
+   "bbox_reference_px": [
+    1720.4,
+    570.3,
+    1918.8,
+    764.0
+   ],
+   "center_reference_px": [
+    1819.6,
+    667.2
+   ]
+  },
+  {
+   "id": 1,
+   "class": "car",
+   "score": 0.98,
+   "bbox_master_px": [
+    754.5,
+    244.9,
+    826.2,
+    291.7
+   ],
+   "center_master_px": [
+    790.4,
+    268.3
+   ],
+   "ground_contact_master_px": [
+    790.4,
+    291.7
+   ],
+   "bbox_reference_px": [
+    1616.9,
+    516.5,
+    1770.5,
+    615.3
+   ],
+   "center_reference_px": [
+    1693.7,
+    565.9
+   ]
+  },
+  {
+   "id": 2,
+   "class": "car",
+   "score": 0.832,
+   "bbox_master_px": [
+    850.4,
+    239.6,
+    896.0,
+    271.5
+   ],
+   "center_master_px": [
+    873.2,
+    255.6
+   ],
+   "ground_contact_master_px": [
+    873.2,
+    271.5
+   ],
+   "bbox_reference_px": [
+    1822.4,
+    505.5,
+    1920.0,
+    572.7
+   ],
+   "center_reference_px": [
+    1871.2,
+    539.1
+   ]
+  },
+  {
+   "id": 3,
+   "class": "car",
+   "score": 0.793,
+   "bbox_master_px": [
+    731.2,
+    237.6,
+    778.5,
+    271.7
+   ],
+   "center_master_px": [
+    754.9,
+    254.6
+   ],
+   "ground_contact_master_px": [
+    754.9,
+    271.7
+   ],
+   "bbox_reference_px": [
+    1567.0,
+    501.2,
+    1668.2,
+    573.0
+   ],
+   "center_reference_px": [
+    1617.6,
+    537.1
+   ]
+  },
+  {
+   "id": 4,
+   "class": "car",
+   "score": 0.677,
+   "bbox_master_px": [
+    814.7,
+    238.7,
+    859.9,
+    273.9
+   ],
+   "center_master_px": [
+    837.3,
+    256.3
+   ],
+   "ground_contact_master_px": [
+    837.3,
+    273.9
+   ],
+   "bbox_reference_px": [
+    1745.7,
+    503.6,
+    1842.6,
+    577.8
+   ],
+   "center_reference_px": [
+    1794.1,
+    540.7
+   ]
+  },
+  {
+   "id": 5,
+   "class": "truck",
+   "score": 0.625,
+   "bbox_master_px": [
+    211.6,
+    235.2,
+    286.9,
+    264.8
+   ],
+   "center_master_px": [
+    249.3,
+    250.0
+   ],
+   "ground_contact_master_px": [
+    249.3,
+    264.8
+   ],
+   "bbox_reference_px": [
+    453.5,
+    496.1,
+    614.8,
+    558.5
+   ],
+   "center_reference_px": [
+    534.1,
+    527.3
+   ]
+  }
+ ],
+ "vehicle_recall": 0.75,
+ "vehicle_precision": 1.0,
+ "person_recall": 0.0,
+ "person_precision": null,
+ "vehicle_count_abs_err_vs_oracle": 2,
+ "person_count_abs_err_vs_oracle": 13,
+ "seconds": 7.7218941999999515,
+ "prompt": "a street scene with a traffic light and palm trees"
+}

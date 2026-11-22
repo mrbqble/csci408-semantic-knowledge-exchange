@@ -1,0 +1,87 @@
+{
+ "case": "case36",
+ "variant": "prompt_refine",
+ "ip_adapter_scale": 0.0,
+ "ip_adapter_source": "none",
+ "reference": "cam1",
+ "supporting": [
+  "cam2",
+  "cam3",
+  "cam4",
+  "cam5",
+  "cam6"
+ ],
+ "timestamp": 17478,
+ "prompt": "a red van is parked on the side of the road, a red and white van driving down a street, a street with a car driving down it, a man walking down a street in a city, a street with a bus and a car on it",
+ "seconds": 17.683654500002376,
+ "peak_gpu_mb": 5394.6416015625,
+ "size": [
+  1024,
+  576
+ ],
+ "palette": "cs",
+ "ref_policy": "first",
+ "seed": 42,
+ "steps": 20,
+ "guidance": 7.5,
+ "donor_case": null,
+ "cn_scales": [
+  1.0,
+  1.0
+ ],
+ "edge_thr": 40,
+ "base": "existing prompt_only result",
+ "base_seconds": 10.86861560000034,
+ "refine_seconds": 6.815038900002037,
+ "refine": {
+  "n_small_blobs": 3,
+  "n_windows": 3,
+  "uncovered_blobs": 0,
+  "windows": [
+   {
+    "x0": 224,
+    "y0": 174,
+    "n_blobs": 1,
+    "blob_areas": [
+     174
+    ],
+    "index": 0,
+    "seconds": 2.1868441000005987
+   },
+   {
+    "x0": 800,
+    "y0": 210,
+    "n_blobs": 1,
+    "blob_areas": [
+     14
+    ],
+    "index": 1,
+    "seconds": 2.175582100000611
+   },
+   {
+    "x0": 896,
+    "y0": 448,
+    "n_blobs": 1,
+    "blob_areas": [
+     12
+    ],
+    "index": 2,
+    "seconds": 2.4526127000008273
+   }
+  ],
+  "failures": [],
+  "seconds": 6.815038900002037
+ },
+ "refine_settings": {
+  "window": 128,
+  "upscale": 4,
+  "strength": 0.5,
+  "feather_px": 12,
+  "max_windows": 8,
+  "min_area": 12,
+  "max_side": 48,
+  "prompt": "cars on a city street, realistic photo, sharp",
+  "negative_prompt": "blurry, deformed, cartoon",
+  "seed": "42 + window index"
+ }
+}

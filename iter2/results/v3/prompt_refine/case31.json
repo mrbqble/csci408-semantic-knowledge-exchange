@@ -1,0 +1,88 @@
+{
+ "case": "case31",
+ "variant": "prompt_refine",
+ "ip_adapter_scale": 0.0,
+ "ip_adapter_source": "none",
+ "reference": "cam1",
+ "supporting": [
+  "cam2",
+  "cam3",
+  "cam4",
+  "cam5"
+ ],
+ "timestamp": 8222,
+ "prompt": "a red car driving down a street next to a traffic light, a car driving down a street next to a palm tree, a red and white van, a street with palm trees and a bus, a street scene with a person on a motorcycle",
+ "seconds": 17.697161699999924,
+ "peak_gpu_mb": 5394.6416015625,
+ "size": [
+  1024,
+  576
+ ],
+ "palette": "cs",
+ "ref_policy": "first",
+ "seed": 42,
+ "steps": 20,
+ "guidance": 7.5,
+ "donor_case": null,
+ "cn_scales": [
+  1.0,
+  1.0
+ ],
+ "edge_thr": 40,
+ "base": "existing prompt_only result",
+ "base_seconds": 11.111162599998352,
+ "refine_seconds": 6.5859991000015725,
+ "refine": {
+  "n_small_blobs": 5,
+  "n_windows": 3,
+  "uncovered_blobs": 0,
+  "windows": [
+   {
+    "x0": 265,
+    "y0": 174,
+    "n_blobs": 2,
+    "blob_areas": [
+     12,
+     177
+    ],
+    "index": 0,
+    "seconds": 2.1974487000006775
+   },
+   {
+    "x0": 62,
+    "y0": 193,
+    "n_blobs": 2,
+    "blob_areas": [
+     84,
+     29
+    ],
+    "index": 1,
+    "seconds": 2.1940278000001854
+   },
+   {
+    "x0": 531,
+    "y0": 180,
+    "n_blobs": 1,
+    "blob_areas": [
+     15
+    ],
+    "index": 2,
+    "seconds": 2.1945226000007096
+   }
+  ],
+  "failures": [],
+  "seconds": 6.5859991000015725
+ },
+ "refine_settings": {
+  "window": 128,
+  "upscale": 4,
+  "strength": 0.5,
+  "feather_px": 12,
+  "max_windows": 8,
+  "min_area": 12,
+  "max_side": 48,
+  "prompt": "cars on a city street, realistic photo, sharp",
+  "negative_prompt": "blurry, deformed, cartoon",
+  "seed": "42 + window index"
+ }
+}

@@ -1,0 +1,206 @@
+{
+ "case": "case289",
+ "reference": "cam1",
+ "variant": "prompt_only",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 0,
+  "bicycle": 0,
+  "car": 4,
+  "motorcycle": 0,
+  "bus": 1,
+  "truck": 1,
+  "cars_4wheel": 6,
+  "two_wheelers": 0,
+  "vehicles": 6,
+  "pedestrians": 0
+ },
+ "gt": null,
+ "detections": [
+  {
+   "id": 0,
+   "class": "car",
+   "score": 1.0,
+   "bbox_master_px": [
+    190.0,
+    272.6,
+    396.3,
+    338.6
+   ],
+   "center_master_px": [
+    293.1,
+    305.6
+   ],
+   "ground_contact_master_px": [
+    293.1,
+    338.6
+   ],
+   "bbox_reference_px": [
+    356.2,
+    511.2,
+    743.0,
+    635.0
+   ],
+   "center_reference_px": [
+    549.6,
+    573.1
+   ]
+  },
+  {
+   "id": 1,
+   "class": "car",
+   "score": 0.998,
+   "bbox_master_px": [
+    499.8,
+    271.0,
+    641.9,
+    333.3
+   ],
+   "center_master_px": [
+    570.9,
+    302.1
+   ],
+   "ground_contact_master_px": [
+    570.9,
+    333.3
+   ],
+   "bbox_reference_px": [
+    937.2,
+    508.1,
+    1203.6,
+    624.9
+   ],
+   "center_reference_px": [
+    1070.4,
+    566.5
+   ]
+  },
+  {
+   "id": 2,
+   "class": "car",
+   "score": 0.997,
+   "bbox_master_px": [
+    660.2,
+    274.1,
+    863.1,
+    365.4
+   ],
+   "center_master_px": [
+    761.6,
+    319.8
+   ],
+   "ground_contact_master_px": [
+    761.6,
+    365.4
+   ],
+   "bbox_reference_px": [
+    1237.8,
+    514.0,
+    1618.3,
+    685.2
+   ],
+   "center_reference_px": [
+    1428.1,
+    599.6
+   ]
+  },
+  {
+   "id": 3,
+   "class": "truck",
+   "score": 0.941,
+   "bbox_master_px": [
+    945.9,
+    248.4,
+    1024.0,
+    321.0
+   ],
+   "center_master_px": [
+    985.0,
+    284.7
+   ],
+   "ground_contact_master_px": [
+    985.0,
+    321.0
+   ],
+   "bbox_reference_px": [
+    1773.6,
+    465.7,
+    1920.0,
+    601.8
+   ],
+   "center_reference_px": [
+    1846.8,
+    533.8
+   ]
+  },
+  {
+   "id": 4,
+   "class": "car",
+   "score": 0.855,
+   "bbox_master_px": [
+    819.2,
+    276.8,
+    891.2,
+    313.9
+   ],
+   "center_master_px": [
+    855.2,
+    295.3
+   ],
+   "ground_contact_master_px": [
+    855.2,
+    313.9
+   ],
+   "bbox_reference_px": [
+    1535.9,
+    518.9,
+    1671.1,
+    588.6
+   ],
+   "center_reference_px": [
+    1603.5,
+    553.7
+   ]
+  },
+  {
+   "id": 5,
+   "class": "bus",
+   "score": 0.826,
+   "bbox_master_px": [
+    442.3,
+    272.1,
+    511.3,
+    304.0
+   ],
+   "center_master_px": [
+    476.8,
+    288.0
+   ],
+   "ground_contact_master_px": [
+    476.8,
+    304.0
+   ],
+   "bbox_reference_px": [
+    829.4,
+    510.1,
+    958.8,
+    570.0
+   ],
+   "center_reference_px": [
+    894.1,
+    540.1
+   ]
+  }
+ ],
+ "vehicle_recall": 0.3333333333333333,
+ "vehicle_precision": 1.0,
+ "person_recall": 0.0,
+ "person_precision": null,
+ "vehicle_count_abs_err_vs_oracle": 12,
+ "person_count_abs_err_vs_oracle": 7,
+ "seconds": 11.090224200001103,
+ "prompt": "a street with cars and a traffic light, a white car driving down a street next to a traffic light"
+}

@@ -1,0 +1,152 @@
+{
+ "case": "case38",
+ "reference": "cam1",
+ "variant": "k1",
+ "master_size": [
+  896,
+  512
+ ],
+ "counts": {
+  "person": 2,
+  "bicycle": 0,
+  "car": 1,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 1,
+  "cars_4wheel": 2,
+  "two_wheelers": 0,
+  "vehicles": 2,
+  "pedestrians": 2
+ },
+ "gt": {
+  "cars_4wheel": 4,
+  "pedestrians": 3,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "truck",
+   "score": 0.997,
+   "bbox_master_px": [
+    445.7,
+    172.2,
+    896.0,
+    466.2
+   ],
+   "center_master_px": [
+    670.8,
+    319.2
+   ],
+   "ground_contact_master_px": [
+    670.8,
+    466.2
+   ],
+   "bbox_reference_px": [
+    955.1,
+    363.2,
+    1920.0,
+    983.4
+   ],
+   "center_reference_px": [
+    1437.5,
+    673.3
+   ]
+  },
+  {
+   "id": 1,
+   "class": "car",
+   "score": 0.988,
+   "bbox_master_px": [
+    227.8,
+    247.6,
+    436.8,
+    359.3
+   ],
+   "center_master_px": [
+    332.3,
+    303.4
+   ],
+   "ground_contact_master_px": [
+    332.3,
+    359.3
+   ],
+   "bbox_reference_px": [
+    488.1,
+    522.3,
+    935.9,
+    757.9
+   ],
+   "center_reference_px": [
+    712.0,
+    640.1
+   ]
+  },
+  {
+   "id": 2,
+   "class": "person",
+   "score": 0.973,
+   "bbox_master_px": [
+    260.2,
+    199.9,
+    272.6,
+    228.9
+   ],
+   "center_master_px": [
+    266.4,
+    214.4
+   ],
+   "ground_contact_master_px": [
+    266.4,
+    228.9
+   ],
+   "bbox_reference_px": [
+    557.6,
+    421.6,
+    584.2,
+    482.7
+   ],
+   "center_reference_px": [
+    570.9,
+    452.2
+   ]
+  },
+  {
+   "id": 3,
+   "class": "person",
+   "score": 0.908,
+   "bbox_master_px": [
+    282.1,
+    206.2,
+    296.7,
+    228.2
+   ],
+   "center_master_px": [
+    289.4,
+    217.2
+   ],
+   "ground_contact_master_px": [
+    289.4,
+    228.2
+   ],
+   "bbox_reference_px": [
+    604.5,
+    435.0,
+    635.8,
+    481.3
+   ],
+   "center_reference_px": [
+    620.2,
+    458.1
+   ]
+  }
+ ],
+ "vehicle_recall": 0.6666666666666666,
+ "vehicle_precision": 1.0,
+ "person_recall": 0.0,
+ "person_precision": 0.0,
+ "vehicle_count_abs_err_vs_oracle": 1,
+ "person_count_abs_err_vs_oracle": 1,
+ "seconds": 7.723964299999352,
+ "prompt": "a white truck"
+}

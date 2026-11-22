@@ -1,0 +1,119 @@
+{
+ "case": "case175",
+ "reference": "cam1",
+ "variant": "k1",
+ "master_size": [
+  896,
+  512
+ ],
+ "counts": {
+  "person": 1,
+  "bicycle": 0,
+  "car": 0,
+  "motorcycle": 0,
+  "bus": 2,
+  "truck": 0,
+  "cars_4wheel": 2,
+  "two_wheelers": 0,
+  "vehicles": 2,
+  "pedestrians": 1
+ },
+ "gt": null,
+ "detections": [
+  {
+   "id": 0,
+   "class": "bus",
+   "score": 0.999,
+   "bbox_master_px": [
+    128.3,
+    0.0,
+    896.0,
+    505.9
+   ],
+   "center_master_px": [
+    512.1,
+    252.9
+   ],
+   "ground_contact_master_px": [
+    512.1,
+    505.9
+   ],
+   "bbox_reference_px": [
+    274.8,
+    0.0,
+    1920.0,
+    1067.1
+   ],
+   "center_reference_px": [
+    1097.4,
+    533.6
+   ]
+  },
+  {
+   "id": 1,
+   "class": "bus",
+   "score": 0.819,
+   "bbox_master_px": [
+    2.4,
+    1.6,
+    532.3,
+    509.8
+   ],
+   "center_master_px": [
+    267.4,
+    255.7
+   ],
+   "ground_contact_master_px": [
+    267.4,
+    509.8
+   ],
+   "bbox_reference_px": [
+    5.2,
+    3.4,
+    1140.7,
+    1075.4
+   ],
+   "center_reference_px": [
+    573.0,
+    539.4
+   ]
+  },
+  {
+   "id": 2,
+   "class": "person",
+   "score": 0.636,
+   "bbox_master_px": [
+    180.8,
+    194.5,
+    224.5,
+    245.5
+   ],
+   "center_master_px": [
+    202.6,
+    220.0
+   ],
+   "ground_contact_master_px": [
+    202.6,
+    245.5
+   ],
+   "bbox_reference_px": [
+    387.3,
+    410.3,
+    481.0,
+    517.9
+   ],
+   "center_reference_px": [
+    434.2,
+    464.1
+   ]
+  }
+ ],
+ "vehicle_recall": 0.5,
+ "vehicle_precision": 0.5,
+ "person_recall": 0.0,
+ "person_precision": 0.0,
+ "vehicle_count_abs_err_vs_oracle": 0,
+ "person_count_abs_err_vs_oracle": 3,
+ "seconds": 7.716961399997672,
+ "prompt": "a bus is parked on the side of the road"
+}

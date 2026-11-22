@@ -1,0 +1,78 @@
+{
+ "case": "case4",
+ "variant": "prompt_refine",
+ "ip_adapter_scale": 0.0,
+ "ip_adapter_source": "none",
+ "reference": "cam1",
+ "supporting": [
+  "cam2",
+  "cam3",
+  "cam4",
+  "cam5",
+  "cam6"
+ ],
+ "timestamp": 7880,
+ "prompt": "the crew in need for speed, a city street, a city street with cars and pedestrians, a police car is stopped at a crosswalk, a city street with a police car and a police car, a man walking across a crosswalk in a city",
+ "seconds": 15.450143500000195,
+ "peak_gpu_mb": 5394.6416015625,
+ "size": [
+  1024,
+  576
+ ],
+ "palette": "cs",
+ "ref_policy": "first",
+ "seed": 42,
+ "steps": 20,
+ "guidance": 7.5,
+ "donor_case": null,
+ "cn_scales": [
+  1.0,
+  1.0
+ ],
+ "edge_thr": 40,
+ "base": "existing prompt_only result",
+ "base_seconds": 11.111755300000368,
+ "refine_seconds": 4.338388199999827,
+ "refine": {
+  "n_small_blobs": 3,
+  "n_windows": 2,
+  "uncovered_blobs": 0,
+  "windows": [
+   {
+    "x0": 234,
+    "y0": 201,
+    "n_blobs": 2,
+    "blob_areas": [
+     35,
+     32
+    ],
+    "index": 0,
+    "seconds": 2.162900499999523
+   },
+   {
+    "x0": 329,
+    "y0": 193,
+    "n_blobs": 1,
+    "blob_areas": [
+     189
+    ],
+    "index": 1,
+    "seconds": 2.1754877000003034
+   }
+  ],
+  "failures": [],
+  "seconds": 4.338388199999827
+ },
+ "refine_settings": {
+  "window": 128,
+  "upscale": 4,
+  "strength": 0.5,
+  "feather_px": 12,
+  "max_windows": 8,
+  "min_area": 12,
+  "max_side": 48,
+  "prompt": "cars on a city street, realistic photo, sharp",
+  "negative_prompt": "blurry, deformed, cartoon",
+  "seed": "42 + window index"
+ }
+}

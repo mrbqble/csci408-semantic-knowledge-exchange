@@ -1,0 +1,181 @@
+{
+ "case": "case19",
+ "reference": "cam1",
+ "variant": "prompt_only",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 2,
+  "bicycle": 0,
+  "car": 3,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 0,
+  "cars_4wheel": 3,
+  "two_wheelers": 0,
+  "vehicles": 3,
+  "pedestrians": 2
+ },
+ "gt": {
+  "cars_4wheel": 8,
+  "pedestrians": 12,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "person",
+   "score": 0.946,
+   "bbox_master_px": [
+    294.3,
+    252.0,
+    372.8,
+    455.0
+   ],
+   "center_master_px": [
+    333.5,
+    353.5
+   ],
+   "ground_contact_master_px": [
+    333.5,
+    455.0
+   ],
+   "bbox_reference_px": [
+    551.9,
+    472.5,
+    698.9,
+    853.2
+   ],
+   "center_reference_px": [
+    625.4,
+    662.9
+   ]
+  },
+  {
+   "id": 1,
+   "class": "car",
+   "score": 0.928,
+   "bbox_master_px": [
+    907.8,
+    263.5,
+    1023.9,
+    334.5
+   ],
+   "center_master_px": [
+    965.9,
+    299.0
+   ],
+   "ground_contact_master_px": [
+    965.9,
+    334.5
+   ],
+   "bbox_reference_px": [
+    1702.2,
+    494.1,
+    1919.8,
+    627.1
+   ],
+   "center_reference_px": [
+    1811.0,
+    560.6
+   ]
+  },
+  {
+   "id": 2,
+   "class": "person",
+   "score": 0.836,
+   "bbox_master_px": [
+    591.8,
+    257.9,
+    886.9,
+    572.3
+   ],
+   "center_master_px": [
+    739.4,
+    415.1
+   ],
+   "ground_contact_master_px": [
+    739.4,
+    572.3
+   ],
+   "bbox_reference_px": [
+    1109.7,
+    483.6,
+    1662.9,
+    1073.0
+   ],
+   "center_reference_px": [
+    1386.3,
+    778.3
+   ]
+  },
+  {
+   "id": 3,
+   "class": "car",
+   "score": 0.799,
+   "bbox_master_px": [
+    585.2,
+    253.3,
+    637.1,
+    288.9
+   ],
+   "center_master_px": [
+    611.1,
+    271.1
+   ],
+   "ground_contact_master_px": [
+    611.1,
+    288.9
+   ],
+   "bbox_reference_px": [
+    1097.3,
+    474.9,
+    1194.5,
+    541.7
+   ],
+   "center_reference_px": [
+    1145.9,
+    508.3
+   ]
+  },
+  {
+   "id": 4,
+   "class": "car",
+   "score": 0.625,
+   "bbox_master_px": [
+    820.5,
+    272.6,
+    957.4,
+    337.3
+   ],
+   "center_master_px": [
+    888.9,
+    304.9
+   ],
+   "ground_contact_master_px": [
+    888.9,
+    337.3
+   ],
+   "bbox_reference_px": [
+    1538.4,
+    511.1,
+    1795.1,
+    632.4
+   ],
+   "center_reference_px": [
+    1666.7,
+    571.8
+   ]
+  }
+ ],
+ "vehicle_recall": 0.375,
+ "vehicle_precision": 1.0,
+ "person_recall": 0.125,
+ "person_precision": 1.0,
+ "vehicle_count_abs_err_vs_oracle": 5,
+ "person_count_abs_err_vs_oracle": 14,
+ "seconds": 11.052796200001467,
+ "prompt": "a woman walking down a street next to a man, a car is parked on the side of the road, a group of people walking down a street, a city street with a lot of people walking around, a street scene with a car and palm trees"
+}

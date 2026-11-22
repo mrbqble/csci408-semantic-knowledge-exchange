@@ -1,0 +1,210 @@
+{
+ "case": "case8",
+ "reference": "cam1",
+ "variant": "k1",
+ "master_size": [
+  896,
+  512
+ ],
+ "counts": {
+  "person": 5,
+  "bicycle": 0,
+  "car": 1,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 0,
+  "cars_4wheel": 1,
+  "two_wheelers": 0,
+  "vehicles": 1,
+  "pedestrians": 5
+ },
+ "gt": {
+  "cars_4wheel": 5,
+  "pedestrians": 7,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "person",
+   "score": 1.0,
+   "bbox_master_px": [
+    15.6,
+    225.8,
+    125.2,
+    421.9
+   ],
+   "center_master_px": [
+    70.4,
+    323.9
+   ],
+   "ground_contact_master_px": [
+    70.4,
+    421.9
+   ],
+   "bbox_reference_px": [
+    33.5,
+    476.4,
+    268.2,
+    889.9
+   ],
+   "center_reference_px": [
+    150.9,
+    683.1
+   ]
+  },
+  {
+   "id": 1,
+   "class": "person",
+   "score": 0.998,
+   "bbox_master_px": [
+    235.1,
+    227.5,
+    273.8,
+    344.7
+   ],
+   "center_master_px": [
+    254.5,
+    286.1
+   ],
+   "ground_contact_master_px": [
+    254.5,
+    344.7
+   ],
+   "bbox_reference_px": [
+    503.8,
+    479.8,
+    586.8,
+    727.1
+   ],
+   "center_reference_px": [
+    545.3,
+    603.4
+   ]
+  },
+  {
+   "id": 2,
+   "class": "person",
+   "score": 0.998,
+   "bbox_master_px": [
+    330.0,
+    223.0,
+    360.6,
+    297.8
+   ],
+   "center_master_px": [
+    345.3,
+    260.4
+   ],
+   "ground_contact_master_px": [
+    345.3,
+    297.8
+   ],
+   "bbox_reference_px": [
+    707.2,
+    470.4,
+    772.7,
+    628.1
+   ],
+   "center_reference_px": [
+    739.9,
+    549.3
+   ]
+  },
+  {
+   "id": 3,
+   "class": "person",
+   "score": 0.964,
+   "bbox_master_px": [
+    309.1,
+    213.5,
+    325.7,
+    266.7
+   ],
+   "center_master_px": [
+    317.4,
+    240.1
+   ],
+   "ground_contact_master_px": [
+    317.4,
+    266.7
+   ],
+   "bbox_reference_px": [
+    662.3,
+    450.4,
+    697.9,
+    562.6
+   ],
+   "center_reference_px": [
+    680.1,
+    506.5
+   ]
+  },
+  {
+   "id": 4,
+   "class": "person",
+   "score": 0.949,
+   "bbox_master_px": [
+    286.5,
+    218.6,
+    300.4,
+    259.2
+   ],
+   "center_master_px": [
+    293.4,
+    238.9
+   ],
+   "ground_contact_master_px": [
+    293.4,
+    259.2
+   ],
+   "bbox_reference_px": [
+    614.0,
+    461.1,
+    643.6,
+    546.8
+   ],
+   "center_reference_px": [
+    628.8,
+    503.9
+   ]
+  },
+  {
+   "id": 5,
+   "class": "car",
+   "score": 0.825,
+   "bbox_master_px": [
+    391.9,
+    217.9,
+    440.5,
+    242.0
+   ],
+   "center_master_px": [
+    416.2,
+    229.9
+   ],
+   "ground_contact_master_px": [
+    416.2,
+    242.0
+   ],
+   "bbox_reference_px": [
+    839.8,
+    459.5,
+    943.9,
+    510.4
+   ],
+   "center_reference_px": [
+    891.8,
+    485.0
+   ]
+  }
+ ],
+ "vehicle_recall": 0.2,
+ "vehicle_precision": 1.0,
+ "person_recall": 0.3125,
+ "person_precision": 1.0,
+ "vehicle_count_abs_err_vs_oracle": 4,
+ "person_count_abs_err_vs_oracle": 11,
+ "seconds": 8.041896300001099,
+ "prompt": "a group of people walking down a street"
+}

@@ -1,0 +1,65 @@
+{
+ "case": "case84",
+ "reference": "cam1",
+ "variant": "k1",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 0,
+  "bicycle": 0,
+  "car": 1,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 0,
+  "cars_4wheel": 1,
+  "two_wheelers": 0,
+  "vehicles": 1,
+  "pedestrians": 0
+ },
+ "gt": {
+  "cars_4wheel": 5,
+  "pedestrians": 6,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "car",
+   "score": 0.999,
+   "bbox_master_px": [
+    698.4,
+    296.8,
+    847.8,
+    354.1
+   ],
+   "center_master_px": [
+    773.1,
+    325.4
+   ],
+   "ground_contact_master_px": [
+    773.1,
+    354.1
+   ],
+   "bbox_reference_px": [
+    1309.5,
+    556.5,
+    1589.6,
+    663.9
+   ],
+   "center_reference_px": [
+    1449.6,
+    610.2
+   ]
+  }
+ ],
+ "vehicle_recall": 0.5,
+ "vehicle_precision": 1.0,
+ "person_recall": 0.0,
+ "person_precision": null,
+ "vehicle_count_abs_err_vs_oracle": 1,
+ "person_count_abs_err_vs_oracle": 6,
+ "seconds": 12.362078599999222,
+ "prompt": "a car is parked on the street in front of a building"
+}

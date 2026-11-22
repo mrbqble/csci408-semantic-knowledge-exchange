@@ -1,0 +1,107 @@
+{
+ "case": "case52",
+ "variant": "prompt_refine",
+ "ip_adapter_scale": 0.0,
+ "ip_adapter_source": "none",
+ "reference": "cam1",
+ "supporting": [
+  "cam2",
+  "cam3",
+  "cam4",
+  "cam5",
+  "cam6"
+ ],
+ "timestamp": 14100,
+ "prompt": "a scene of a city, the sims sims sims sims sims sims sims sims sims sims sims sims sims sims sims sims sims sims sims, a woman walking down a street in a city, a city street with cars parked on the side, a black car parked in a city street, a black car",
+ "seconds": 21.64143210000111,
+ "peak_gpu_mb": 5394.6416015625,
+ "size": [
+  1024,
+  576
+ ],
+ "palette": "cs",
+ "ref_policy": "first",
+ "seed": 42,
+ "steps": 20,
+ "guidance": 7.5,
+ "donor_case": null,
+ "cn_scales": [
+  1.0,
+  1.0
+ ],
+ "edge_thr": 40,
+ "base": "existing prompt_only result",
+ "base_seconds": 10.852407700000185,
+ "refine_seconds": 10.789024400000926,
+ "refine": {
+  "n_small_blobs": 5,
+  "n_windows": 5,
+  "uncovered_blobs": 0,
+  "windows": [
+   {
+    "x0": 708,
+    "y0": 257,
+    "n_blobs": 1,
+    "blob_areas": [
+     434
+    ],
+    "index": 0,
+    "seconds": 2.144626599998446
+   },
+   {
+    "x0": 0,
+    "y0": 206,
+    "n_blobs": 1,
+    "blob_areas": [
+     89
+    ],
+    "index": 1,
+    "seconds": 2.148963100000401
+   },
+   {
+    "x0": 896,
+    "y0": 209,
+    "n_blobs": 1,
+    "blob_areas": [
+     41
+    ],
+    "index": 2,
+    "seconds": 2.1660511000009137
+   },
+   {
+    "x0": 610,
+    "y0": 198,
+    "n_blobs": 1,
+    "blob_areas": [
+     28
+    ],
+    "index": 3,
+    "seconds": 2.1601747999993677
+   },
+   {
+    "x0": 77,
+    "y0": 232,
+    "n_blobs": 1,
+    "blob_areas": [
+     20
+    ],
+    "index": 4,
+    "seconds": 2.1692088000017975
+   }
+  ],
+  "failures": [],
+  "seconds": 10.789024400000926
+ },
+ "refine_settings": {
+  "window": 128,
+  "upscale": 4,
+  "strength": 0.5,
+  "feather_px": 12,
+  "max_windows": 8,
+  "min_area": 12,
+  "max_side": 48,
+  "prompt": "cars on a city street, realistic photo, sharp",
+  "negative_prompt": "blurry, deformed, cartoon",
+  "seed": "42 + window index"
+ }
+}

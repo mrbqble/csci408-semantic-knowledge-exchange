@@ -1,0 +1,148 @@
+{
+ "case": "case187",
+ "reference": "cam1",
+ "variant": "prompt_only",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 2,
+  "bicycle": 0,
+  "car": 0,
+  "motorcycle": 0,
+  "bus": 2,
+  "truck": 0,
+  "cars_4wheel": 2,
+  "two_wheelers": 0,
+  "vehicles": 2,
+  "pedestrians": 2
+ },
+ "gt": null,
+ "detections": [
+  {
+   "id": 0,
+   "class": "bus",
+   "score": 0.998,
+   "bbox_master_px": [
+    251.2,
+    1.7,
+    1024.0,
+    569.5
+   ],
+   "center_master_px": [
+    637.6,
+    285.6
+   ],
+   "ground_contact_master_px": [
+    637.6,
+    569.5
+   ],
+   "bbox_reference_px": [
+    470.9,
+    3.3,
+    1920.0,
+    1067.9
+   ],
+   "center_reference_px": [
+    1195.5,
+    535.6
+   ]
+  },
+  {
+   "id": 1,
+   "class": "person",
+   "score": 0.893,
+   "bbox_master_px": [
+    207.3,
+    221.7,
+    249.9,
+    351.1
+   ],
+   "center_master_px": [
+    228.6,
+    286.4
+   ],
+   "ground_contact_master_px": [
+    228.6,
+    351.1
+   ],
+   "bbox_reference_px": [
+    388.7,
+    415.6,
+    468.5,
+    658.3
+   ],
+   "center_reference_px": [
+    428.6,
+    536.9
+   ]
+  },
+  {
+   "id": 2,
+   "class": "bus",
+   "score": 0.781,
+   "bbox_master_px": [
+    0.8,
+    2.7,
+    513.0,
+    568.6
+   ],
+   "center_master_px": [
+    256.9,
+    285.7
+   ],
+   "ground_contact_master_px": [
+    256.9,
+    568.6
+   ],
+   "bbox_reference_px": [
+    1.5,
+    5.0,
+    961.8,
+    1066.2
+   ],
+   "center_reference_px": [
+    481.7,
+    535.6
+   ]
+  },
+  {
+   "id": 3,
+   "class": "person",
+   "score": 0.663,
+   "bbox_master_px": [
+    107.0,
+    257.4,
+    125.2,
+    296.8
+   ],
+   "center_master_px": [
+    116.1,
+    277.1
+   ],
+   "ground_contact_master_px": [
+    116.1,
+    296.8
+   ],
+   "bbox_reference_px": [
+    200.6,
+    482.5,
+    234.7,
+    556.5
+   ],
+   "center_reference_px": [
+    217.6,
+    519.5
+   ]
+  }
+ ],
+ "vehicle_recall": 0.6666666666666666,
+ "vehicle_precision": 1.0,
+ "person_recall": 0.0,
+ "person_precision": 0.0,
+ "vehicle_count_abs_err_vs_oracle": 1,
+ "person_count_abs_err_vs_oracle": 1,
+ "seconds": 11.057713999998668,
+ "prompt": "a bus with a green and white stripe on it, a bus is driving down the street in a city, a street scene with cars and a traffic light"
+}

@@ -1,0 +1,210 @@
+{
+ "case": "case48",
+ "reference": "cam1",
+ "variant": "k1",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 1,
+  "bicycle": 0,
+  "car": 1,
+  "motorcycle": 0,
+  "bus": 2,
+  "truck": 2,
+  "cars_4wheel": 5,
+  "two_wheelers": 0,
+  "vehicles": 5,
+  "pedestrians": 1
+ },
+ "gt": {
+  "cars_4wheel": 4,
+  "pedestrians": 9,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "truck",
+   "score": 0.908,
+   "bbox_master_px": [
+    387.8,
+    166.4,
+    1021.9,
+    541.9
+   ],
+   "center_master_px": [
+    704.9,
+    354.1
+   ],
+   "ground_contact_master_px": [
+    704.9,
+    541.9
+   ],
+   "bbox_reference_px": [
+    727.1,
+    312.0,
+    1916.1,
+    1016.0
+   ],
+   "center_reference_px": [
+    1321.6,
+    664.0
+   ]
+  },
+  {
+   "id": 1,
+   "class": "bus",
+   "score": 0.819,
+   "bbox_master_px": [
+    379.4,
+    167.0,
+    964.1,
+    537.0
+   ],
+   "center_master_px": [
+    671.8,
+    352.0
+   ],
+   "ground_contact_master_px": [
+    671.8,
+    537.0
+   ],
+   "bbox_reference_px": [
+    711.4,
+    313.1,
+    1807.7,
+    1006.9
+   ],
+   "center_reference_px": [
+    1259.6,
+    660.0
+   ]
+  },
+  {
+   "id": 2,
+   "class": "person",
+   "score": 0.7,
+   "bbox_master_px": [
+    98.4,
+    276.9,
+    107.3,
+    300.5
+   ],
+   "center_master_px": [
+    102.8,
+    288.7
+   ],
+   "ground_contact_master_px": [
+    102.8,
+    300.5
+   ],
+   "bbox_reference_px": [
+    184.5,
+    519.1,
+    201.2,
+    563.4
+   ],
+   "center_reference_px": [
+    192.8,
+    541.3
+   ]
+  },
+  {
+   "id": 3,
+   "class": "bus",
+   "score": 0.585,
+   "bbox_master_px": [
+    945.5,
+    290.3,
+    1024.0,
+    344.1
+   ],
+   "center_master_px": [
+    984.8,
+    317.2
+   ],
+   "ground_contact_master_px": [
+    984.8,
+    344.1
+   ],
+   "bbox_reference_px": [
+    1772.9,
+    544.3,
+    1920.0,
+    645.1
+   ],
+   "center_reference_px": [
+    1846.4,
+    594.7
+   ]
+  },
+  {
+   "id": 4,
+   "class": "car",
+   "score": 0.571,
+   "bbox_master_px": [
+    942.8,
+    291.6,
+    1024.0,
+    344.0
+   ],
+   "center_master_px": [
+    983.4,
+    317.8
+   ],
+   "ground_contact_master_px": [
+    983.4,
+    344.0
+   ],
+   "bbox_reference_px": [
+    1767.7,
+    546.7,
+    1920.0,
+    644.9
+   ],
+   "center_reference_px": [
+    1843.8,
+    595.8
+   ]
+  },
+  {
+   "id": 5,
+   "class": "truck",
+   "score": 0.505,
+   "bbox_master_px": [
+    914.1,
+    265.1,
+    1023.5,
+    469.3
+   ],
+   "center_master_px": [
+    968.8,
+    367.2
+   ],
+   "ground_contact_master_px": [
+    968.8,
+    469.3
+   ],
+   "bbox_reference_px": [
+    1713.9,
+    497.1,
+    1919.0,
+    879.9
+   ],
+   "center_reference_px": [
+    1816.5,
+    688.5
+   ]
+  }
+ ],
+ "vehicle_recall": 1.0,
+ "vehicle_precision": 0.2,
+ "person_recall": 0.07692307692307693,
+ "person_precision": 1.0,
+ "vehicle_count_abs_err_vs_oracle": 4,
+ "person_count_abs_err_vs_oracle": 12,
+ "seconds": 11.040177599999879,
+ "prompt": "a white and blue ambulance"
+}

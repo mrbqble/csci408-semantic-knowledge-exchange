@@ -1,0 +1,90 @@
+{
+ "case": "case181",
+ "reference": "cam1",
+ "variant": "prompt_only",
+ "master_size": [
+  896,
+  512
+ ],
+ "counts": {
+  "person": 1,
+  "bicycle": 0,
+  "car": 0,
+  "motorcycle": 0,
+  "bus": 1,
+  "truck": 0,
+  "cars_4wheel": 1,
+  "two_wheelers": 0,
+  "vehicles": 1,
+  "pedestrians": 1
+ },
+ "gt": null,
+ "detections": [
+  {
+   "id": 0,
+   "class": "bus",
+   "score": 0.998,
+   "bbox_master_px": [
+    145.0,
+    0.0,
+    896.0,
+    511.7
+   ],
+   "center_master_px": [
+    520.5,
+    255.9
+   ],
+   "ground_contact_master_px": [
+    520.5,
+    511.7
+   ],
+   "bbox_reference_px": [
+    310.8,
+    0.0,
+    1920.0,
+    1079.5
+   ],
+   "center_reference_px": [
+    1115.4,
+    539.7
+   ]
+  },
+  {
+   "id": 1,
+   "class": "person",
+   "score": 0.828,
+   "bbox_master_px": [
+    893.3,
+    210.0,
+    896.0,
+    253.3
+   ],
+   "center_master_px": [
+    894.7,
+    231.7
+   ],
+   "ground_contact_master_px": [
+    894.7,
+    253.3
+   ],
+   "bbox_reference_px": [
+    1914.3,
+    443.0,
+    1920.0,
+    534.3
+   ],
+   "center_reference_px": [
+    1917.1,
+    488.7
+   ]
+  }
+ ],
+ "vehicle_recall": 0.5,
+ "vehicle_precision": 1.0,
+ "person_recall": null,
+ "person_precision": 0.0,
+ "vehicle_count_abs_err_vs_oracle": 1,
+ "person_count_abs_err_vs_oracle": 1,
+ "seconds": 7.717283900001348,
+ "prompt": "a bus parked in a parking with a curtain, a bus is driving down the street in a city, a busy intersection with cars and a pedestrian crossing"
+}

@@ -1,0 +1,268 @@
+{
+ "case": "case47",
+ "reference": "cam1",
+ "variant": "prompt_refine",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 2,
+  "bicycle": 0,
+  "car": 5,
+  "motorcycle": 1,
+  "bus": 0,
+  "truck": 0,
+  "cars_4wheel": 5,
+  "two_wheelers": 1,
+  "vehicles": 6,
+  "pedestrians": 2
+ },
+ "gt": {
+  "cars_4wheel": 8,
+  "pedestrians": 8,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "person",
+   "score": 1.0,
+   "bbox_master_px": [
+    803.5,
+    275.4,
+    938.6,
+    570.2
+   ],
+   "center_master_px": [
+    871.1,
+    422.8
+   ],
+   "ground_contact_master_px": [
+    871.1,
+    570.2
+   ],
+   "bbox_reference_px": [
+    1506.7,
+    516.4,
+    1759.9,
+    1069.2
+   ],
+   "center_reference_px": [
+    1633.3,
+    792.8
+   ]
+  },
+  {
+   "id": 1,
+   "class": "car",
+   "score": 0.999,
+   "bbox_master_px": [
+    443.0,
+    254.8,
+    644.2,
+    346.9
+   ],
+   "center_master_px": [
+    543.6,
+    300.9
+   ],
+   "ground_contact_master_px": [
+    543.6,
+    346.9
+   ],
+   "bbox_reference_px": [
+    830.7,
+    477.8,
+    1207.8,
+    650.5
+   ],
+   "center_reference_px": [
+    1019.3,
+    564.1
+   ]
+  },
+  {
+   "id": 2,
+   "class": "person",
+   "score": 0.99,
+   "bbox_master_px": [
+    551.2,
+    221.0,
+    564.1,
+    254.2
+   ],
+   "center_master_px": [
+    557.6,
+    237.6
+   ],
+   "ground_contact_master_px": [
+    557.6,
+    254.2
+   ],
+   "bbox_reference_px": [
+    1033.4,
+    414.3,
+    1057.7,
+    476.5
+   ],
+   "center_reference_px": [
+    1045.6,
+    445.4
+   ]
+  },
+  {
+   "id": 3,
+   "class": "motorcycle",
+   "score": 0.923,
+   "bbox_master_px": [
+    280.3,
+    364.5,
+    465.5,
+    571.3
+   ],
+   "center_master_px": [
+    372.9,
+    467.9
+   ],
+   "ground_contact_master_px": [
+    372.9,
+    571.3
+   ],
+   "bbox_reference_px": [
+    525.5,
+    683.4,
+    872.7,
+    1071.1
+   ],
+   "center_reference_px": [
+    699.1,
+    877.2
+   ]
+  },
+  {
+   "id": 4,
+   "class": "car",
+   "score": 0.856,
+   "bbox_master_px": [
+    0.7,
+    235.2,
+    56.2,
+    263.1
+   ],
+   "center_master_px": [
+    28.4,
+    249.2
+   ],
+   "ground_contact_master_px": [
+    28.4,
+    263.1
+   ],
+   "bbox_reference_px": [
+    1.2,
+    441.1,
+    105.3,
+    493.4
+   ],
+   "center_reference_px": [
+    53.3,
+    467.2
+   ]
+  },
+  {
+   "id": 5,
+   "class": "car",
+   "score": 0.777,
+   "bbox_master_px": [
+    50.2,
+    226.4,
+    106.9,
+    258.5
+   ],
+   "center_master_px": [
+    78.6,
+    242.4
+   ],
+   "ground_contact_master_px": [
+    78.6,
+    258.5
+   ],
+   "bbox_reference_px": [
+    94.1,
+    424.5,
+    200.5,
+    484.6
+   ],
+   "center_reference_px": [
+    147.3,
+    454.6
+   ]
+  },
+  {
+   "id": 6,
+   "class": "car",
+   "score": 0.713,
+   "bbox_master_px": [
+    868.9,
+    209.2,
+    1024.0,
+    289.5
+   ],
+   "center_master_px": [
+    946.5,
+    249.4
+   ],
+   "ground_contact_master_px": [
+    946.5,
+    289.5
+   ],
+   "bbox_reference_px": [
+    1629.2,
+    392.3,
+    1920.0,
+    542.9
+   ],
+   "center_reference_px": [
+    1774.6,
+    467.6
+   ]
+  },
+  {
+   "id": 7,
+   "class": "car",
+   "score": 0.621,
+   "bbox_master_px": [
+    50.6,
+    239.4,
+    84.4,
+    258.6
+   ],
+   "center_master_px": [
+    67.5,
+    249.0
+   ],
+   "ground_contact_master_px": [
+    67.5,
+    258.6
+   ],
+   "bbox_reference_px": [
+    94.9,
+    449.0,
+    158.2,
+    485.0
+   ],
+   "center_reference_px": [
+    126.6,
+    467.0
+   ]
+  }
+ ],
+ "vehicle_recall": 0.2222222222222222,
+ "vehicle_precision": 0.3333333333333333,
+ "person_recall": 0.25,
+ "person_precision": 1.0,
+ "vehicle_count_abs_err_vs_oracle": 3,
+ "person_count_abs_err_vs_oracle": 6,
+ "seconds": 17.538708199997927,
+ "prompt": "a man standing on a sidewalk next to a street sign, a yellow car is parked on the street, a police car is parked on the side of the road, a car is parked on the side of the road, a city street with a yellow car and a yellow cab"
+}

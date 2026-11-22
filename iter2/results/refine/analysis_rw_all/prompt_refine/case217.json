@@ -1,0 +1,119 @@
+{
+ "case": "case217",
+ "reference": "cam1",
+ "variant": "prompt_refine",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 0,
+  "bicycle": 0,
+  "car": 3,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 0,
+  "cars_4wheel": 3,
+  "two_wheelers": 0,
+  "vehicles": 3,
+  "pedestrians": 0
+ },
+ "gt": null,
+ "detections": [
+  {
+   "id": 0,
+   "class": "car",
+   "score": 0.999,
+   "bbox_master_px": [
+    22.8,
+    275.3,
+    470.4,
+    456.3
+   ],
+   "center_master_px": [
+    246.6,
+    365.8
+   ],
+   "ground_contact_master_px": [
+    246.6,
+    456.3
+   ],
+   "bbox_reference_px": [
+    42.7,
+    516.1,
+    882.1,
+    855.5
+   ],
+   "center_reference_px": [
+    462.4,
+    685.8
+   ]
+  },
+  {
+   "id": 1,
+   "class": "car",
+   "score": 0.973,
+   "bbox_master_px": [
+    511.7,
+    271.1,
+    692.3,
+    353.8
+   ],
+   "center_master_px": [
+    602.0,
+    312.5
+   ],
+   "ground_contact_master_px": [
+    602.0,
+    353.8
+   ],
+   "bbox_reference_px": [
+    959.4,
+    508.4,
+    1298.1,
+    663.4
+   ],
+   "center_reference_px": [
+    1128.7,
+    585.9
+   ]
+  },
+  {
+   "id": 2,
+   "class": "car",
+   "score": 0.945,
+   "bbox_master_px": [
+    727.1,
+    280.2,
+    905.4,
+    366.1
+   ],
+   "center_master_px": [
+    816.3,
+    323.1
+   ],
+   "ground_contact_master_px": [
+    816.3,
+    366.1
+   ],
+   "bbox_reference_px": [
+    1363.2,
+    525.3,
+    1697.7,
+    686.5
+   ],
+   "center_reference_px": [
+    1530.5,
+    605.9
+   ]
+  }
+ ],
+ "vehicle_recall": 0.1875,
+ "vehicle_precision": 1.0,
+ "person_recall": 0.0,
+ "person_precision": null,
+ "vehicle_count_abs_err_vs_oracle": 13,
+ "person_count_abs_err_vs_oracle": 6,
+ "seconds": 14.778992899995501,
+ "prompt": "a black suv is stopped at a crosswalk, a street with cars and a traffic light, a bus is stopped at a stop at a busy intersection"
+}

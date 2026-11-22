@@ -1,0 +1,152 @@
+{
+ "case": "case19",
+ "reference": "cam1",
+ "variant": "k1",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 1,
+  "bicycle": 0,
+  "car": 0,
+  "motorcycle": 0,
+  "bus": 1,
+  "truck": 2,
+  "cars_4wheel": 3,
+  "two_wheelers": 0,
+  "vehicles": 3,
+  "pedestrians": 1
+ },
+ "gt": {
+  "cars_4wheel": 9,
+  "pedestrians": 8,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "person",
+   "score": 1.0,
+   "bbox_master_px": [
+    129.9,
+    246.5,
+    272.4,
+    569.3
+   ],
+   "center_master_px": [
+    201.2,
+    407.9
+   ],
+   "ground_contact_master_px": [
+    201.2,
+    569.3
+   ],
+   "bbox_reference_px": [
+    243.6,
+    462.2,
+    510.8,
+    1067.5
+   ],
+   "center_reference_px": [
+    377.2,
+    764.8
+   ]
+  },
+  {
+   "id": 1,
+   "class": "truck",
+   "score": 0.96,
+   "bbox_master_px": [
+    201.1,
+    176.8,
+    663.9,
+    402.3
+   ],
+   "center_master_px": [
+    432.5,
+    289.6
+   ],
+   "ground_contact_master_px": [
+    432.5,
+    402.3
+   ],
+   "bbox_reference_px": [
+    377.0,
+    331.5,
+    1244.8,
+    754.3
+   ],
+   "center_reference_px": [
+    810.9,
+    542.9
+   ]
+  },
+  {
+   "id": 2,
+   "class": "truck",
+   "score": 0.93,
+   "bbox_master_px": [
+    12.9,
+    123.0,
+    513.4,
+    436.1
+   ],
+   "center_master_px": [
+    263.2,
+    279.5
+   ],
+   "ground_contact_master_px": [
+    263.2,
+    436.1
+   ],
+   "bbox_reference_px": [
+    24.2,
+    230.6,
+    962.7,
+    817.7
+   ],
+   "center_reference_px": [
+    493.5,
+    524.1
+   ]
+  },
+  {
+   "id": 3,
+   "class": "bus",
+   "score": 0.821,
+   "bbox_master_px": [
+    0.4,
+    128.4,
+    385.0,
+    445.9
+   ],
+   "center_master_px": [
+    192.7,
+    287.2
+   ],
+   "ground_contact_master_px": [
+    192.7,
+    445.9
+   ],
+   "bbox_reference_px": [
+    0.8,
+    240.8,
+    722.0,
+    836.2
+   ],
+   "center_reference_px": [
+    361.4,
+    538.5
+   ]
+  }
+ ],
+ "vehicle_recall": 0.2222222222222222,
+ "vehicle_precision": 0.6666666666666666,
+ "person_recall": 0.1111111111111111,
+ "person_precision": 1.0,
+ "vehicle_count_abs_err_vs_oracle": 6,
+ "person_count_abs_err_vs_oracle": 8,
+ "seconds": 10.455676100000346,
+ "prompt": "a red fire truck"
+}

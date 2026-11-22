@@ -1,0 +1,152 @@
+{
+ "case": "case2",
+ "reference": "cam1",
+ "variant": "prompt_only",
+ "master_size": [
+  896,
+  512
+ ],
+ "counts": {
+  "person": 2,
+  "bicycle": 0,
+  "car": 2,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 0,
+  "cars_4wheel": 2,
+  "two_wheelers": 0,
+  "vehicles": 2,
+  "pedestrians": 2
+ },
+ "gt": {
+  "cars_4wheel": 3,
+  "pedestrians": 13,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "car",
+   "score": 0.998,
+   "bbox_master_px": [
+    189.6,
+    197.8,
+    263.7,
+    225.1
+   ],
+   "center_master_px": [
+    226.7,
+    211.4
+   ],
+   "ground_contact_master_px": [
+    226.7,
+    225.1
+   ],
+   "bbox_reference_px": [
+    406.4,
+    417.3,
+    565.1,
+    474.7
+   ],
+   "center_reference_px": [
+    485.7,
+    446.0
+   ]
+  },
+  {
+   "id": 1,
+   "class": "car",
+   "score": 0.969,
+   "bbox_master_px": [
+    4.9,
+    198.9,
+    74.2,
+    234.4
+   ],
+   "center_master_px": [
+    39.5,
+    216.7
+   ],
+   "ground_contact_master_px": [
+    39.5,
+    234.4
+   ],
+   "bbox_reference_px": [
+    10.5,
+    419.6,
+    158.9,
+    494.4
+   ],
+   "center_reference_px": [
+    84.7,
+    457.0
+   ]
+  },
+  {
+   "id": 2,
+   "class": "person",
+   "score": 0.849,
+   "bbox_master_px": [
+    490.8,
+    206.1,
+    497.2,
+    217.5
+   ],
+   "center_master_px": [
+    494.0,
+    211.8
+   ],
+   "ground_contact_master_px": [
+    494.0,
+    217.5
+   ],
+   "bbox_reference_px": [
+    1051.6,
+    434.7,
+    1065.5,
+    458.7
+   ],
+   "center_reference_px": [
+    1058.6,
+    446.7
+   ]
+  },
+  {
+   "id": 3,
+   "class": "person",
+   "score": 0.796,
+   "bbox_master_px": [
+    485.6,
+    202.2,
+    497.4,
+    217.7
+   ],
+   "center_master_px": [
+    491.5,
+    209.9
+   ],
+   "ground_contact_master_px": [
+    491.5,
+    217.7
+   ],
+   "bbox_reference_px": [
+    1040.6,
+    426.4,
+    1065.9,
+    459.2
+   ],
+   "center_reference_px": [
+    1053.3,
+    442.8
+   ]
+  }
+ ],
+ "vehicle_recall": 0.5,
+ "vehicle_precision": 1.0,
+ "person_recall": 0.0,
+ "person_precision": 0.0,
+ "vehicle_count_abs_err_vs_oracle": 2,
+ "person_count_abs_err_vs_oracle": 14,
+ "seconds": 8.074000000000524,
+ "prompt": "a street with a yellow line painted on the road, a street with a yellow line painted on it, a street scene with a car and a building"
+}

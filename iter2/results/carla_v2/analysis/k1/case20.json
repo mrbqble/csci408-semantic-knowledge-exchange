@@ -1,0 +1,123 @@
+{
+ "case": "case20",
+ "reference": "cam1",
+ "variant": "k1",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 0,
+  "bicycle": 0,
+  "car": 2,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 1,
+  "cars_4wheel": 3,
+  "two_wheelers": 0,
+  "vehicles": 3,
+  "pedestrians": 0
+ },
+ "gt": {
+  "cars_4wheel": 4,
+  "pedestrians": 5,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "car",
+   "score": 0.975,
+   "bbox_master_px": [
+    776.0,
+    233.3,
+    857.1,
+    271.2
+   ],
+   "center_master_px": [
+    816.5,
+    252.3
+   ],
+   "ground_contact_master_px": [
+    816.5,
+    271.2
+   ],
+   "bbox_reference_px": [
+    1455.0,
+    437.5,
+    1607.0,
+    508.5
+   ],
+   "center_reference_px": [
+    1531.0,
+    473.0
+   ]
+  },
+  {
+   "id": 1,
+   "class": "car",
+   "score": 0.819,
+   "bbox_master_px": [
+    289.7,
+    208.1,
+    528.2,
+    353.1
+   ],
+   "center_master_px": [
+    408.9,
+    280.6
+   ],
+   "ground_contact_master_px": [
+    408.9,
+    353.1
+   ],
+   "bbox_reference_px": [
+    543.1,
+    390.1,
+    990.4,
+    662.0
+   ],
+   "center_reference_px": [
+    766.8,
+    526.1
+   ]
+  },
+  {
+   "id": 2,
+   "class": "truck",
+   "score": 0.592,
+   "bbox_master_px": [
+    288.0,
+    205.1,
+    531.2,
+    352.2
+   ],
+   "center_master_px": [
+    409.6,
+    278.6
+   ],
+   "ground_contact_master_px": [
+    409.6,
+    352.2
+   ],
+   "bbox_reference_px": [
+    540.0,
+    384.6,
+    995.9,
+    660.3
+   ],
+   "center_reference_px": [
+    768.0,
+    522.5
+   ]
+  }
+ ],
+ "vehicle_recall": 0.5,
+ "vehicle_precision": 0.6666666666666666,
+ "person_recall": 0.0,
+ "person_precision": null,
+ "vehicle_count_abs_err_vs_oracle": 1,
+ "person_count_abs_err_vs_oracle": 7,
+ "seconds": 10.471555300000546,
+ "prompt": "a white van driving down a street next to a red sign"
+}

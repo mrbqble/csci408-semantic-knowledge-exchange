@@ -1,0 +1,48 @@
+{
+  "dataset": "real_world_astana_3phones_sync_v2",
+  "cameras": {"cam1": "iphone16promax", "cam2": "android", "cam3": "iphone16pro"},
+  "takes": {
+    "take4": {
+      "label": "case 4, 14:18",
+      "sync": {"method": "joint triangle-constrained GCC-PHAT inside the file-metadata windows (p=0.003 against shifted searches)", "confidence": "high", "uncertainty_s": 0.3,
+               "note": "cam2-cam3 correlation is very strong (z=33) and cam1-cam3 agrees; the direct cam1-cam2 pair peaks 0.57 s away, so cam2 against cam1 may be off by up to 0.6 s."},
+      "clips": {
+        "cam1": [{"path": "case 4/IMG_7384.MOV", "device": "iPhone 16 Pro Max", "source_case": 4, "start_s": 0.0}],
+        "cam2": [{"path": "case 4/VID_20261107_141821.mp4", "device": "Android phone", "source_case": 4, "start_s": 0.678}],
+        "cam3": [{"path": "case 4/IMG_3305.MOV", "device": "iPhone 16 Pro", "source_case": 4, "start_s": 5.043}]
+      }
+    },
+    "take5": {
+      "label": "case 5, 14:20-14:21",
+      "sync": {"method": "joint triangle-constrained GCC-PHAT inside the file-metadata windows (p=0.003 against shifted searches)", "confidence": "high", "uncertainty_s": 0.3,
+               "note": "anchored by the two Android pairs (z=13 and 18); the direct iPhone-iPhone pair is weak, so cam1 against cam3 rests on the chain through cam2."},
+      "clips": {
+        "cam3": [{"path": "case 5/IMG_3306.MOV", "device": "iPhone 16 Pro", "source_case": 5, "start_s": 0.0}],
+        "cam1": [{"path": "case 5/IMG_7385.MOV", "device": "iPhone 16 Pro Max", "source_case": 5, "start_s": 1.023}],
+        "cam2": [{"path": "case 5/VID_20261107_142051.mp4", "device": "Android phone", "source_case": 5, "start_s": 1.088}]
+      }
+    },
+    "take6": {
+      "label": "case 6, 14:23-14:24",
+      "sync": {"method": "joint triangle-constrained GCC-PHAT inside the file-metadata windows (p=0.013 against shifted searches)", "confidence": "medium", "uncertainty_s": 0.6,
+               "note": "all three pair correlations are modest (z about 5-6) but consistent with each other and with the metadata windows."},
+      "clips": {
+        "cam2": [{"path": "case 6/VID_20261107_142347.mp4", "device": "Android phone", "source_case": 6, "start_s": 0.0}],
+        "cam3": [{"path": "case 6/IMG_3307.MOV", "device": "iPhone 16 Pro", "source_case": 6, "start_s": 0.254}],
+        "cam1": [{"path": "case 6/IMG_7386.MOV", "device": "iPhone 16 Pro Max", "source_case": 6, "start_s": 2.264}]
+      }
+    },
+    "take7_8": {
+      "label": "cases 7 and 8 as one continuous period, 14:30:55-14:33:22",
+      "sync": {"method": "file metadata only (iPhone created/modified = start/end, Android filename/end time); audio gave no pair that survives the shifted-window test (p 0.02-0.45)", "confidence": "low", "uncertainty_s": 1.1,
+               "note": "clip starts are the midpoints of the metadata windows: about +-0.5 s between iPhone clips, +-1.1 s for the Android clips. Treat multi-camera cases of this take as approximately synchronised only."},
+      "clips": {
+        "cam2": [{"path": "case 7/VID_20261107_143055.mp4", "device": "Android phone", "source_case": 7, "start_s": 0.0},
+                 {"path": "case 8/VID_20261107_143147.mp4", "device": "Android phone", "source_case": 8, "start_s": 51.75}],
+        "cam1": [{"path": "case 7/IMG_7387.MOV", "device": "iPhone 16 Pro Max", "source_case": 7, "start_s": 4.335}],
+        "cam3": [{"path": "case 7/IMG_3308.MOV", "device": "iPhone 16 Pro", "source_case": 7, "start_s": 4.54},
+                 {"path": "case 8/IMG_3309.MOV", "device": "iPhone 16 Pro", "source_case": 8, "start_s": 66.51}]
+      }
+    }
+  }
+}

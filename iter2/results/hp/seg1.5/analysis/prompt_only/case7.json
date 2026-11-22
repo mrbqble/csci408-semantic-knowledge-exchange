@@ -1,0 +1,268 @@
+{
+ "case": "case7",
+ "reference": "cam1",
+ "variant": "prompt_only",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 6,
+  "bicycle": 0,
+  "car": 2,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 0,
+  "cars_4wheel": 2,
+  "two_wheelers": 0,
+  "vehicles": 2,
+  "pedestrians": 6
+ },
+ "gt": {
+  "cars_4wheel": 3,
+  "pedestrians": 12,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "person",
+   "score": 1.0,
+   "bbox_master_px": [
+    192.3,
+    299.0,
+    238.0,
+    432.7
+   ],
+   "center_master_px": [
+    215.1,
+    365.8
+   ],
+   "ground_contact_master_px": [
+    215.1,
+    432.7
+   ],
+   "bbox_reference_px": [
+    360.5,
+    560.7,
+    446.2,
+    811.2
+   ],
+   "center_reference_px": [
+    403.3,
+    685.9
+   ]
+  },
+  {
+   "id": 1,
+   "class": "car",
+   "score": 0.999,
+   "bbox_master_px": [
+    0.8,
+    317.6,
+    143.8,
+    420.7
+   ],
+   "center_master_px": [
+    72.3,
+    369.2
+   ],
+   "ground_contact_master_px": [
+    72.3,
+    420.7
+   ],
+   "bbox_reference_px": [
+    1.4,
+    595.5,
+    269.7,
+    788.9
+   ],
+   "center_reference_px": [
+    135.6,
+    692.2
+   ]
+  },
+  {
+   "id": 2,
+   "class": "car",
+   "score": 0.996,
+   "bbox_master_px": [
+    518.0,
+    318.7,
+    599.1,
+    367.4
+   ],
+   "center_master_px": [
+    558.5,
+    343.1
+   ],
+   "ground_contact_master_px": [
+    558.5,
+    367.4
+   ],
+   "bbox_reference_px": [
+    971.2,
+    597.5,
+    1123.3,
+    689.0
+   ],
+   "center_reference_px": [
+    1047.2,
+    643.2
+   ]
+  },
+  {
+   "id": 3,
+   "class": "person",
+   "score": 0.981,
+   "bbox_master_px": [
+    600.4,
+    296.8,
+    614.4,
+    338.2
+   ],
+   "center_master_px": [
+    607.4,
+    317.5
+   ],
+   "ground_contact_master_px": [
+    607.4,
+    338.2
+   ],
+   "bbox_reference_px": [
+    1125.8,
+    556.5,
+    1151.9,
+    634.0
+   ],
+   "center_reference_px": [
+    1138.8,
+    595.3
+   ]
+  },
+  {
+   "id": 4,
+   "class": "person",
+   "score": 0.79,
+   "bbox_master_px": [
+    197.1,
+    289.5,
+    206.2,
+    316.9
+   ],
+   "center_master_px": [
+    201.6,
+    303.2
+   ],
+   "ground_contact_master_px": [
+    201.6,
+    316.9
+   ],
+   "bbox_reference_px": [
+    369.5,
+    542.9,
+    386.7,
+    594.2
+   ],
+   "center_reference_px": [
+    378.1,
+    568.6
+   ]
+  },
+  {
+   "id": 5,
+   "class": "person",
+   "score": 0.745,
+   "bbox_master_px": [
+    236.5,
+    291.1,
+    243.7,
+    319.2
+   ],
+   "center_master_px": [
+    240.1,
+    305.2
+   ],
+   "ground_contact_master_px": [
+    240.1,
+    319.2
+   ],
+   "bbox_reference_px": [
+    443.4,
+    545.9,
+    456.9,
+    598.4
+   ],
+   "center_reference_px": [
+    450.1,
+    572.2
+   ]
+  },
+  {
+   "id": 6,
+   "class": "person",
+   "score": 0.696,
+   "bbox_master_px": [
+    586.9,
+    293.0,
+    599.4,
+    323.5
+   ],
+   "center_master_px": [
+    593.2,
+    308.3
+   ],
+   "ground_contact_master_px": [
+    593.2,
+    323.5
+   ],
+   "bbox_reference_px": [
+    1100.5,
+    549.4,
+    1123.8,
+    606.6
+   ],
+   "center_reference_px": [
+    1112.2,
+    578.0
+   ]
+  },
+  {
+   "id": 7,
+   "class": "person",
+   "score": 0.695,
+   "bbox_master_px": [
+    236.1,
+    306.2,
+    241.5,
+    323.2
+   ],
+   "center_master_px": [
+    238.8,
+    314.7
+   ],
+   "ground_contact_master_px": [
+    238.8,
+    323.2
+   ],
+   "bbox_reference_px": [
+    442.7,
+    574.2,
+    452.9,
+    606.0
+   ],
+   "center_reference_px": [
+    447.8,
+    590.1
+   ]
+  }
+ ],
+ "vehicle_recall": 0.6666666666666666,
+ "vehicle_precision": 1.0,
+ "person_recall": 0.2631578947368421,
+ "person_precision": 0.8333333333333334,
+ "vehicle_count_abs_err_vs_oracle": 1,
+ "person_count_abs_err_vs_oracle": 13,
+ "seconds": 10.395961899999747,
+ "prompt": "a scene of a city, a street with a crosswalk and a person walking on the sidewalk, a blue car is parked on the street, a white van is parked on the side of the road, a white van is driving down a city street"
+}

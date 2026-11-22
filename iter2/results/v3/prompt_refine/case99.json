@@ -1,0 +1,107 @@
+{
+ "case": "case99",
+ "variant": "prompt_refine",
+ "ip_adapter_scale": 0.0,
+ "ip_adapter_source": "none",
+ "reference": "cam1",
+ "supporting": [
+  "cam2",
+  "cam3",
+  "cam4",
+  "cam5"
+ ],
+ "timestamp": 18667,
+ "prompt": "a street with a bus and a car, a man walking down a street next to a building, a white van is parked on the street, a white van parked on the side of a road, a car is parked in the middle of a street",
+ "seconds": 22.767407200002708,
+ "peak_gpu_mb": 5394.6416015625,
+ "size": [
+  1024,
+  576
+ ],
+ "palette": "cs",
+ "ref_policy": "first",
+ "seed": 42,
+ "steps": 20,
+ "guidance": 7.5,
+ "donor_case": null,
+ "cn_scales": [
+  1.0,
+  1.0
+ ],
+ "edge_thr": 40,
+ "base": "existing prompt_only result",
+ "base_seconds": 11.284701100001257,
+ "refine_seconds": 11.482706100001451,
+ "refine": {
+  "n_small_blobs": 6,
+  "n_windows": 5,
+  "uncovered_blobs": 0,
+  "windows": [
+   {
+    "x0": 277,
+    "y0": 216,
+    "n_blobs": 2,
+    "blob_areas": [
+     289,
+     160
+    ],
+    "index": 0,
+    "seconds": 2.4743783000012627
+   },
+   {
+    "x0": 589,
+    "y0": 202,
+    "n_blobs": 1,
+    "blob_areas": [
+     234
+    ],
+    "index": 1,
+    "seconds": 2.452801299999919
+   },
+   {
+    "x0": 504,
+    "y0": 226,
+    "n_blobs": 1,
+    "blob_areas": [
+     131
+    ],
+    "index": 2,
+    "seconds": 2.191163499999675
+   },
+   {
+    "x0": 163,
+    "y0": 226,
+    "n_blobs": 1,
+    "blob_areas": [
+     71
+    ],
+    "index": 3,
+    "seconds": 2.1857285000005504
+   },
+   {
+    "x0": 50,
+    "y0": 195,
+    "n_blobs": 1,
+    "blob_areas": [
+     15
+    ],
+    "index": 4,
+    "seconds": 2.1786345000000438
+   }
+  ],
+  "failures": [],
+  "seconds": 11.482706100001451
+ },
+ "refine_settings": {
+  "window": 128,
+  "upscale": 4,
+  "strength": 0.5,
+  "feather_px": 12,
+  "max_windows": 8,
+  "min_area": 12,
+  "max_side": 48,
+  "prompt": "cars on a city street, realistic photo, sharp",
+  "negative_prompt": "blurry, deformed, cartoon",
+  "seed": "42 + window index"
+ }
+}

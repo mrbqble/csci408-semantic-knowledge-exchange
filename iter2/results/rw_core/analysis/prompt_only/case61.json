@@ -1,0 +1,235 @@
+{
+ "case": "case61",
+ "reference": "cam1",
+ "variant": "prompt_only",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 4,
+  "bicycle": 0,
+  "car": 1,
+  "motorcycle": 0,
+  "bus": 2,
+  "truck": 0,
+  "cars_4wheel": 3,
+  "two_wheelers": 0,
+  "vehicles": 3,
+  "pedestrians": 4
+ },
+ "gt": null,
+ "detections": [
+  {
+   "id": 0,
+   "class": "bus",
+   "score": 1.0,
+   "bbox_master_px": [
+    34.1,
+    73.4,
+    620.3,
+    388.5
+   ],
+   "center_master_px": [
+    327.2,
+    230.9
+   ],
+   "ground_contact_master_px": [
+    327.2,
+    388.5
+   ],
+   "bbox_reference_px": [
+    64.0,
+    137.6,
+    1163.0,
+    728.4
+   ],
+   "center_reference_px": [
+    613.5,
+    433.0
+   ]
+  },
+  {
+   "id": 1,
+   "class": "car",
+   "score": 0.992,
+   "bbox_master_px": [
+    617.5,
+    218.3,
+    822.0,
+    321.1
+   ],
+   "center_master_px": [
+    719.8,
+    269.7
+   ],
+   "ground_contact_master_px": [
+    719.8,
+    321.1
+   ],
+   "bbox_reference_px": [
+    1157.9,
+    409.2,
+    1541.2,
+    602.0
+   ],
+   "center_reference_px": [
+    1349.5,
+    505.6
+   ]
+  },
+  {
+   "id": 2,
+   "class": "person",
+   "score": 0.987,
+   "bbox_master_px": [
+    971.1,
+    218.6,
+    997.9,
+    275.5
+   ],
+   "center_master_px": [
+    984.5,
+    247.1
+   ],
+   "ground_contact_master_px": [
+    984.5,
+    275.5
+   ],
+   "bbox_reference_px": [
+    1820.8,
+    409.9,
+    1871.0,
+    516.5
+   ],
+   "center_reference_px": [
+    1845.9,
+    463.2
+   ]
+  },
+  {
+   "id": 3,
+   "class": "bus",
+   "score": 0.976,
+   "bbox_master_px": [
+    616.6,
+    190.7,
+    770.7,
+    250.5
+   ],
+   "center_master_px": [
+    693.7,
+    220.6
+   ],
+   "ground_contact_master_px": [
+    693.7,
+    250.5
+   ],
+   "bbox_reference_px": [
+    1156.2,
+    357.6,
+    1445.1,
+    469.7
+   ],
+   "center_reference_px": [
+    1300.7,
+    413.6
+   ]
+  },
+  {
+   "id": 4,
+   "class": "person",
+   "score": 0.948,
+   "bbox_master_px": [
+    798.1,
+    220.2,
+    812.7,
+    262.4
+   ],
+   "center_master_px": [
+    805.4,
+    241.3
+   ],
+   "ground_contact_master_px": [
+    805.4,
+    262.4
+   ],
+   "bbox_reference_px": [
+    1496.4,
+    412.8,
+    1523.8,
+    491.9
+   ],
+   "center_reference_px": [
+    1510.1,
+    452.4
+   ]
+  },
+  {
+   "id": 5,
+   "class": "person",
+   "score": 0.933,
+   "bbox_master_px": [
+    943.2,
+    228.8,
+    960.1,
+    273.5
+   ],
+   "center_master_px": [
+    951.7,
+    251.1
+   ],
+   "ground_contact_master_px": [
+    951.7,
+    273.5
+   ],
+   "bbox_reference_px": [
+    1768.6,
+    429.0,
+    1800.2,
+    512.8
+   ],
+   "center_reference_px": [
+    1784.4,
+    470.9
+   ]
+  },
+  {
+   "id": 6,
+   "class": "person",
+   "score": 0.705,
+   "bbox_master_px": [
+    868.6,
+    223.2,
+    885.7,
+    268.8
+   ],
+   "center_master_px": [
+    877.1,
+    246.0
+   ],
+   "ground_contact_master_px": [
+    877.1,
+    268.8
+   ],
+   "bbox_reference_px": [
+    1628.5,
+    418.5,
+    1660.6,
+    504.0
+   ],
+   "center_reference_px": [
+    1644.6,
+    461.3
+   ]
+  }
+ ],
+ "vehicle_recall": 0.5,
+ "vehicle_precision": 1.0,
+ "person_recall": 0.5,
+ "person_precision": 0.75,
+ "vehicle_count_abs_err_vs_oracle": 3,
+ "person_count_abs_err_vs_oracle": 2,
+ "seconds": 10.458173799997894,
+ "prompt": "a bus is driving down the street in a city, a group of people crossing a street in front of a bus, a man walking down the street in front of a bus"
+}
