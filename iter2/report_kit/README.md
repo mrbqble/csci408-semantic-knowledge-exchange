@@ -55,4 +55,4 @@ The real-world photos show faces and licence plates. Use them in the course repo
 
 ## Team
 
-Bibol Assetbek, Yernur Kenzhaly, Zhengis Kosher, Temirshin Kantemirov. Adviser: Prof. Dimitrios Zorbas. Lab supervisor: Damir.
+Bibol Assetbek, Yernur Kenzhaly, Zhengis Kosher, Temirshin Kantemirov. Adviser: Prof. Dimitrios Zorbas. Lab: Damir Assylbek, first author of the seed paper; he proposed the evaluation protocol and the fusion architecture.

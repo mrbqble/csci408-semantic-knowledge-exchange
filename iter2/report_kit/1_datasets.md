@@ -14,7 +14,7 @@ All evaluation uses the main camera, cam1, of each case. A case is one moment se
 
 ## 1.2 CARLA v3: simulated junctions
 
-- **Simulator:** CARLA 0.9.16 (Unreal Engine 4), map Town10HD_Opt. Generator: `../carla/generate_cases_v3.py`, seed 21. Cases 23 and 72 failed and were regenerated with seed 25 at another junction.
+- **Simulator:** CARLA 0.9.16 (Unreal Engine 4), map Town10HD_Opt. Generator: `carla/generate_cases_v3.py` at the top of the repository, seed 21. Cases 23 and 72 failed and were regenerated with seed 25 at another junction.
 - **A case:** 3-6 cameras placed around one junction, all capturing the same simulation tick, under varied weather (e.g. CloudyNoon, SoftRainNoon, WetCloudySunset).
 - **Per camera:** the photo (`caseK/camJ.jpg`) plus the ground-truth objects visible to it: id, kind, visible pixels, depth, bounding box and world position. There are 13,975 objects across the dataset. `manifest.json` lists every case with its number of cameras, weather and object counts.
 - **Ground truth:** used for the detector-era metrics in October. The VLM judge does not use it; it compares images.

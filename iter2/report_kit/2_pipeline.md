@@ -96,5 +96,5 @@ Receiver B is `--variants prompt_only` in step 2. Full-resolution supports use `
 | `make_share_pack.py` | Smaller results pack for chats (`../results_share`) |
 | `payload_sizes.py` | Payload size per element |
 | `paths.py` | Dataset locations (can be overridden with `CSCI408_CARLA_V3`, `CSCI408_REAL_WORLD`, ...) |
-| `carla/` | CARLA case generators (v2, v3) |
+| `carla/` (top of the repository) | CARLA case generators (v2, v3) |
 | `analysis.py`, `gt_eval.py`, `compare_runs.py`, ... | Detector-based evaluation from October; superseded by the judge |

@@ -1,0 +1,1 @@
+﻿Copies of the hand-off guide and literature map from the report package (22 Nov 2026). Folder names in 00_START_HERE.md refer to the zip built by iter2/make_handoff.py (CSCI408_report_handoff_2026-11-22.zip), not to this repository.
