@@ -162,7 +162,7 @@ The demonstration must show the system in use. With Bibol not taking part, the o
 - **GitHub** (github.com/mrbqble/csci408-semantic-knowledge-exchange, branch `iter2-multicam`): all code, scripts (including the CARLA and real-world dataset tools), reports, text results and logs.
 - **Google Drive** (`uni/04/01/CSCI 408/Senior Project Work/`):
   - `Datasets/`: CARLA v1-v4; real-world V1/V2 with the raw videos; mapping `V1/core_to_cases_1to3phones.csv`, which links the evaluated "core" case numbers to the files.
-  - `Pipeline Outputs/`: payloads, every reconstruction and fusion result, report zips.
+  - `Pipeline Outputs/`: payloads, the main reconstruction and fusion results, the fusion demo, report zips. Ablation and history outputs are kept on the laptop because of the Drive storage quota; their numbers are in GitHub.
 
 ## 6. How the project developed
 

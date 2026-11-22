@@ -5,6 +5,22 @@ Saved results of every step of the pipeline, copied from the HP OMEN laptop on 2
 - **Documentation:** `iter2/report_kit/` and `iter2/handoff/00_START_HERE.md` in the repository.
 - **Judge answers** (text): in the repository at `iter2/results/vlm/`. They are also included under `iteration2/results/vlm/` here.
 
+## Kept on the OMEN laptop only (Drive storage quota, 22 Nov 2026)
+
+The Drive ran out of space, so these outputs were removed from the Drive and stay on the laptop, next to the code that produced them (`C:\Users\mrbqble\Desktop\csci408-probe\`).
+- They can be regenerated with the repository code.
+- Their numbers (judge answers, per-image JSON, CSV) are in GitHub.
+
+| Removed from the Drive | Where it stays on the laptop |
+|---|---|
+| `iteration1/` (results, payloads, authors' code check) | `iter1/results`, `iter1/data/components_*`, `iter1/authors_check` |
+| `iteration2/training_crops.zip` | `iter2/_scratch/training_crops.zip` |
+| Full-resolution supports and tuning: `<set>_fuseF_st0.3/0.4/0.5/0.6` | `iter2/results/` |
+| Earlier judged receivers: `v3`, `rw_core`, `*_native_ade`, `*_native_cs`, `*_ade`, `*_native_ade_cn`, `*_cn07_15`, `cs_paper` | `iter2/results/` |
+| Detector-era experiments: `carla_v2*`, `pilot_*`, `hp`, `tune_c*`, `refine`, `v3_2048`, `geofuse_*`, `v3_geofuse`, `*smoke*` | `iter2/results/` |
+
+Still on the Drive: the main results (`<set>_paper`, `<set>_support`, `<set>_fuse`), all payloads, the fusion demo, the judge answers and the report zips.
+
 ## Layout
 
 | Folder | Pipeline step | Repository equivalent |
