@@ -7,6 +7,7 @@
 | `1_datasets.md` | The four datasets: how they were made, structure, the case lists we evaluate on, where they are stored |
 | `2_pipeline.md` | Sender, the three receivers, the VLM judge, statistics, code map, commands to reproduce |
 | `3_findings.md` | What we found, in order, with numbers, limitations and what is superseded |
+| `4_real_vs_simulated.md` | Why real-world photos score higher than CARLA: evidence and caveats (including judge counting noise) |
 | `figures/` | Report-ready figures (list below) |
 | `tables/` | CSV tables, the single source for numbers in the report |
 
@@ -45,6 +46,7 @@
 | `fig05_support_resolution_by_cameras.png` | 896x512 vs full-resolution supports by number of cameras | Ablation |
 | `fig06_payload_sizes.png` | Payload size per element | Communication cost |
 | `fig07_pipeline_real_world_case1.jpg`, `fig08_pipeline_carla_case10.jpg` | The whole pipeline step by step on one case each | Method |
+| `figures/pipeline_steps/v3_case6/`, `figures/pipeline_steps/rw_case169/` | Every pipeline step as its own figure, for one simulated and one real-world case: input photos, sender payloads (with sizes), per-camera reconstructions, fusion inputs (including the noised main reconstruction), output and judge verdicts | Method: one figure per step, for both datasets (Prof. Zorbas's request) |
 | `fig09`-`fig11` (examples) | Cases the fusion fixes and breaks (first cases by number, not hand-picked) | Qualitative results |
 
 The real-world photos show faces and licence plates. Use them in the course report and internal slides only, not in anything public.
