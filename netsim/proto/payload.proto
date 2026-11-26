@@ -1,0 +1,29 @@
+syntax = "proto3";
+package netsim;
+
+// Transport between the emulated camera nodes (senders) and the coordinator-side ingest.
+service Ingest {
+  // Barrier: every live camera of a case calls Go(case) and is released together, so that the K
+  // payloads of one moment compete for the link at the same instant (virtual-time replay).
+  rpc Go(GoRequest) returns (GoReply);
+  rpc Send(Payload) returns (Ack);
+  rpc Done(DoneRequest) returns (Ack);
+}
+
+message GoRequest { string cam = 1; string case_id = 2; }
+message GoReply   { bool proceed = 1; }
+
+// One camera's semantic payload for one moment: the same files Iteration 2 (payloads.py) writes.
+message Payload {
+  string case_id   = 1;
+  string cam       = 2;
+  int64  timestamp = 3;   // simulator frame from the dataset manifest (0 if unknown)
+  bytes  seg_webp  = 4;
+  bytes  edge_webp = 5;
+  string caption   = 6;
+  string meta_json = 7;   // the camera's original *_meta.json, verbatim
+  int64  t_send_ns = 8;   // sender wall clock when the Send call started
+}
+
+message DoneRequest { string cam = 1; }
+message Ack         { bool ok = 1; }
