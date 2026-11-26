@@ -1,0 +1,4 @@
+iter2: Cityscapes rerun with the segmenter at full size (no change: 40.8% vs 41.8% joint)
+
+- payloads.py --seg-input; vlm_judge.py setup cs2_paper_seg1024
+- iteration 1's 384x384 segmenter default is not the cause of the 41% on Cityscapes

@@ -1,0 +1,60 @@
+{
+ "about": "Time alignment of the three phones in each take. Offsets come from file metadata (bounds) refined by audio cross-correlation (GCC-PHAT) restricted to the window the metadata allows.",
+ "uncertainty_s": "about 0.1 to 0.25 (triangle residuals: Take 1 0.21 s, Take 2 0.25 s, Take 3 0.09 s). Not frame-exact.",
+ "how_to_read": "start_offset_s = when this clip started recording, in seconds after the reference clip's start. window_start_in_clip_s / window_end_in_clip_s = the part of this clip that all three phones were recording.",
+ "metadata_rules": "iPhone: created = recording start, modified = recording end (second resolution, consistent with duration). Android: filename = recording initiated, created = modified = file finalised (about the end). Start interval per clip = intersection of these constraints with the duration.",
+ "orientation_note": "IMG_3231.MOV has a rotation=-90 tag but upright landscape pixels: decode with -noautorotate. All six iPhone clips are HLG HDR: tone-map to SDR before use.",
+ "takes": {
+  "Take 1": {
+   "reference_clip": "IMG_7360",
+   "common_window_s": 13.543,
+   "conservative_window_s": 13.043,
+   "triangle_residual_s": 0.212,
+   "clips": {
+    "IMG_7360": {"device": "iPhone 16 Pro Max", "start_offset_s": 0.0, "duration_s": 21.298, "window_start_in_clip_s": 5.79, "window_end_in_clip_s": 19.333},
+    "VID_20261022_131911_1": {"device": "Android phone", "start_offset_s": 1.403, "duration_s": 18.761, "window_start_in_clip_s": 4.387, "window_end_in_clip_s": 17.93},
+    "IMG_3230": {"device": "iPhone 16 Pro", "start_offset_s": 5.79, "duration_s": 13.543, "window_start_in_clip_s": 0.0, "window_end_in_clip_s": 13.543}
+   },
+   "audio_pairwise_lag_s": {"IMG_7360->VID_20261022_131911_1": 1.472, "IMG_7360->IMG_3230": 5.69, "VID_20261022_131911_1->IMG_3230": 4.43},
+   "audio_pairwise_z": {"IMG_7360->VID_20261022_131911_1": 12.3, "IMG_7360->IMG_3230": 8.5, "VID_20261022_131911_1->IMG_3230": 20.0},
+   "triplets_by_sampling": {"30fps_all": 406, "10fps": 136, "5fps": 68, "2fps": 28, "1fps": 14},
+   "distinct_triplets_5fps_base": {"2": 54, "4": 34, "8": 18}
+  },
+  "Take 2": {
+   "reference_clip": "IMG_7361",
+   "common_window_s": 15.773,
+   "conservative_window_s": 15.273,
+   "triangle_residual_s": -0.25,
+   "clips": {
+    "IMG_7361": {"device": "iPhone 16 Pro Max", "start_offset_s": 0.0, "duration_s": 25.7, "window_start_in_clip_s": 7.535, "window_end_in_clip_s": 23.309},
+    "VID_20261022_132042_2": {"device": "Android phone", "start_offset_s": 5.58, "duration_s": 17.729, "window_start_in_clip_s": 1.956, "window_end_in_clip_s": 17.729},
+    "IMG_3231": {"device": "iPhone 16 Pro", "start_offset_s": 7.535, "duration_s": 17.733, "window_start_in_clip_s": 0.0, "window_end_in_clip_s": 15.773}
+   },
+   "audio_pairwise_lag_s": {"IMG_7361->VID_20261022_132042_2": 5.455, "IMG_7361->IMG_3231": 7.581, "VID_20261022_132042_2->IMG_3231": 1.877},
+   "audio_pairwise_z": {"IMG_7361->VID_20261022_132042_2": 5.4, "IMG_7361->IMG_3231": 14.6, "VID_20261022_132042_2->IMG_3231": 8.6},
+   "triplets_by_sampling": {"30fps_all": 473, "10fps": 158, "5fps": 79, "2fps": 32, "1fps": 16},
+   "distinct_triplets_5fps_base": {"2": 79, "4": 79, "8": 58}
+  },
+  "Take 3": {
+   "reference_clip": "IMG_7362_1",
+   "common_window_s": 27.841,
+   "conservative_window_s": 27.341,
+   "triangle_residual_s": -0.093,
+   "clips": {
+    "IMG_7362_1": {"device": "iPhone 16 Pro Max", "start_offset_s": 0.0, "duration_s": 39.633, "window_start_in_clip_s": 0.0, "window_end_in_clip_s": 27.841},
+    "VID_20261022_132502_1": {"device": "Android phone", "start_offset_s": -18.412, "duration_s": 46.253, "window_start_in_clip_s": 18.412, "window_end_in_clip_s": 46.253},
+    "IMG_3232_1": {"device": "iPhone 16 Pro", "start_offset_s": -19.99, "duration_s": 62.15, "window_start_in_clip_s": 19.99, "window_end_in_clip_s": 47.831}
+   },
+   "audio_pairwise_lag_s": {"IMG_7362_1->VID_20261022_132502_1": -18.44, "IMG_7362_1->IMG_3232_1": -19.959, "VID_20261022_132502_1->IMG_3232_1": -1.612},
+   "audio_pairwise_z": {"IMG_7362_1->VID_20261022_132502_1": 6.1, "IMG_7362_1->IMG_3232_1": 5.5, "VID_20261022_132502_1->IMG_3232_1": 4.8},
+   "triplets_by_sampling": {"30fps_all": 835, "10fps": 279, "5fps": 140, "2fps": 56, "1fps": 28},
+   "distinct_triplets_5fps_base": {"2": 139, "4": 134, "8": 125}
+  }
+ },
+ "totals": {
+  "common_time_s": 57.2,
+  "triplets": {"30fps_all": 1714, "10fps": 573, "5fps": 287, "2fps": 116, "1fps": 58},
+  "images_(3_per_triplet)": {"30fps_all": 5142, "10fps": 1719, "5fps": 861, "2fps": 348, "1fps": 174},
+  "distinct_triplets_5fps_base": {"2": 272, "4": 247, "8": 201}
+ }
+}

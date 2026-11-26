@@ -1,0 +1,268 @@
+{
+ "case": "case8",
+ "reference": "cam1",
+ "variant": "prompt_only",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 6,
+  "bicycle": 0,
+  "car": 1,
+  "motorcycle": 0,
+  "bus": 1,
+  "truck": 0,
+  "cars_4wheel": 2,
+  "two_wheelers": 0,
+  "vehicles": 2,
+  "pedestrians": 6
+ },
+ "gt": {
+  "cars_4wheel": 5,
+  "pedestrians": 7,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "person",
+   "score": 1.0,
+   "bbox_master_px": [
+    265.6,
+    252.1,
+    315.0,
+    388.3
+   ],
+   "center_master_px": [
+    290.3,
+    320.2
+   ],
+   "ground_contact_master_px": [
+    290.3,
+    388.3
+   ],
+   "bbox_reference_px": [
+    498.0,
+    472.6,
+    590.7,
+    728.0
+   ],
+   "center_reference_px": [
+    544.3,
+    600.3
+   ]
+  },
+  {
+   "id": 1,
+   "class": "person",
+   "score": 1.0,
+   "bbox_master_px": [
+    17.2,
+    252.5,
+    140.6,
+    476.6
+   ],
+   "center_master_px": [
+    78.9,
+    364.6
+   ],
+   "ground_contact_master_px": [
+    78.9,
+    476.6
+   ],
+   "bbox_reference_px": [
+    32.3,
+    473.5,
+    263.6,
+    893.7
+   ],
+   "center_reference_px": [
+    148.0,
+    683.6
+   ]
+  },
+  {
+   "id": 2,
+   "class": "person",
+   "score": 0.998,
+   "bbox_master_px": [
+    377.2,
+    247.8,
+    416.3,
+    333.8
+   ],
+   "center_master_px": [
+    396.8,
+    290.8
+   ],
+   "ground_contact_master_px": [
+    396.8,
+    333.8
+   ],
+   "bbox_reference_px": [
+    707.2,
+    464.6,
+    780.6,
+    625.9
+   ],
+   "center_reference_px": [
+    743.9,
+    545.3
+   ]
+  },
+  {
+   "id": 3,
+   "class": "bus",
+   "score": 0.998,
+   "bbox_master_px": [
+    814.9,
+    184.4,
+    1024.0,
+    294.9
+   ],
+   "center_master_px": [
+    919.4,
+    239.6
+   ],
+   "ground_contact_master_px": [
+    919.4,
+    294.9
+   ],
+   "bbox_reference_px": [
+    1527.9,
+    345.7,
+    1920.0,
+    552.9
+   ],
+   "center_reference_px": [
+    1723.9,
+    449.3
+   ]
+  },
+  {
+   "id": 4,
+   "class": "person",
+   "score": 0.984,
+   "bbox_master_px": [
+    351.4,
+    244.0,
+    368.9,
+    296.7
+   ],
+   "center_master_px": [
+    360.1,
+    270.3
+   ],
+   "ground_contact_master_px": [
+    360.1,
+    296.7
+   ],
+   "bbox_reference_px": [
+    658.9,
+    457.4,
+    691.6,
+    556.3
+   ],
+   "center_reference_px": [
+    675.3,
+    506.9
+   ]
+  },
+  {
+   "id": 5,
+   "class": "person",
+   "score": 0.978,
+   "bbox_master_px": [
+    318.7,
+    244.7,
+    344.2,
+    290.1
+   ],
+   "center_master_px": [
+    331.4,
+    267.4
+   ],
+   "ground_contact_master_px": [
+    331.4,
+    290.1
+   ],
+   "bbox_reference_px": [
+    597.6,
+    458.7,
+    645.3,
+    543.9
+   ],
+   "center_reference_px": [
+    621.5,
+    501.3
+   ]
+  },
+  {
+   "id": 6,
+   "class": "car",
+   "score": 0.964,
+   "bbox_master_px": [
+    447.0,
+    243.3,
+    508.9,
+    272.1
+   ],
+   "center_master_px": [
+    477.9,
+    257.7
+   ],
+   "ground_contact_master_px": [
+    477.9,
+    272.1
+   ],
+   "bbox_reference_px": [
+    838.1,
+    456.2,
+    954.1,
+    510.1
+   ],
+   "center_reference_px": [
+    896.1,
+    483.2
+   ]
+  },
+  {
+   "id": 7,
+   "class": "person",
+   "score": 0.751,
+   "bbox_master_px": [
+    611.0,
+    250.2,
+    623.9,
+    276.6
+   ],
+   "center_master_px": [
+    617.4,
+    263.4
+   ],
+   "ground_contact_master_px": [
+    617.4,
+    276.6
+   ],
+   "bbox_reference_px": [
+    1145.5,
+    469.0,
+    1169.9,
+    518.6
+   ],
+   "center_reference_px": [
+    1157.7,
+    493.8
+   ]
+  }
+ ],
+ "vehicle_recall": 0.4,
+ "vehicle_precision": 1.0,
+ "person_recall": 0.3125,
+ "person_precision": 0.8333333333333334,
+ "vehicle_count_abs_err_vs_oracle": 3,
+ "person_count_abs_err_vs_oracle": 10,
+ "seconds": 10.44768479999766,
+ "prompt": "a group of people walking down a street, a city street with a bus and a car, a woman walking down a street next to a bus, a group of people walking across a street, a city street, a bus is driving down the street in the city"
+}

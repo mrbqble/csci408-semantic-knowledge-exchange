@@ -1,0 +1,77 @@
+{
+ "case": "case84",
+ "variant": "prompt_refine",
+ "ip_adapter_scale": 0.0,
+ "ip_adapter_source": "none",
+ "reference": "cam1",
+ "supporting": [
+  "cam2",
+  "cam3",
+  "cam4",
+  "cam5",
+  "cam6"
+ ],
+ "timestamp": 7208,
+ "prompt": "a car is parked on the street in front of a building, a red car parked on a street next to a building, a person walking across a street in a city, a white car parked in front of a building, a red car is parked on a city street, a white car parked on a city street",
+ "seconds": 16.718357099996865,
+ "peak_gpu_mb": 5394.6416015625,
+ "size": [
+  1024,
+  576
+ ],
+ "palette": "cs",
+ "ref_policy": "first",
+ "seed": 42,
+ "steps": 20,
+ "guidance": 7.5,
+ "donor_case": null,
+ "cn_scales": [
+  1.0,
+  1.0
+ ],
+ "edge_thr": 40,
+ "base": "existing prompt_only result",
+ "base_seconds": 11.979733099997247,
+ "refine_seconds": 4.738623999999618,
+ "refine": {
+  "n_small_blobs": 2,
+  "n_windows": 2,
+  "uncovered_blobs": 0,
+  "windows": [
+   {
+    "x0": 437,
+    "y0": 215,
+    "n_blobs": 1,
+    "blob_areas": [
+     150
+    ],
+    "index": 0,
+    "seconds": 2.4687692999996216
+   },
+   {
+    "x0": 274,
+    "y0": 226,
+    "n_blobs": 1,
+    "blob_areas": [
+     12
+    ],
+    "index": 1,
+    "seconds": 2.2698546999999962
+   }
+  ],
+  "failures": [],
+  "seconds": 4.738623999999618
+ },
+ "refine_settings": {
+  "window": 128,
+  "upscale": 4,
+  "strength": 0.5,
+  "feather_px": 12,
+  "max_windows": 8,
+  "min_area": 12,
+  "max_side": 48,
+  "prompt": "cars on a city street, realistic photo, sharp",
+  "negative_prompt": "blurry, deformed, cartoon",
+  "seed": "42 + window index"
+ }
+}

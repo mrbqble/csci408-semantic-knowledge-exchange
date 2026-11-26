@@ -1,0 +1,268 @@
+{
+ "case": "case51",
+ "reference": "cam1",
+ "variant": "prompt_only",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 2,
+  "bicycle": 0,
+  "car": 5,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 1,
+  "cars_4wheel": 6,
+  "two_wheelers": 0,
+  "vehicles": 6,
+  "pedestrians": 2
+ },
+ "gt": {
+  "cars_4wheel": 9,
+  "pedestrians": 8,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "car",
+   "score": 0.998,
+   "bbox_master_px": [
+    281.8,
+    267.8,
+    458.3,
+    335.0
+   ],
+   "center_master_px": [
+    370.0,
+    301.4
+   ],
+   "ground_contact_master_px": [
+    370.0,
+    335.0
+   ],
+   "bbox_reference_px": [
+    528.3,
+    502.0,
+    859.3,
+    628.2
+   ],
+   "center_reference_px": [
+    693.8,
+    565.1
+   ]
+  },
+  {
+   "id": 1,
+   "class": "car",
+   "score": 0.995,
+   "bbox_master_px": [
+    737.2,
+    271.7,
+    856.9,
+    334.1
+   ],
+   "center_master_px": [
+    797.0,
+    302.9
+   ],
+   "ground_contact_master_px": [
+    797.0,
+    334.1
+   ],
+   "bbox_reference_px": [
+    1382.3,
+    509.5,
+    1606.6,
+    626.5
+   ],
+   "center_reference_px": [
+    1494.4,
+    568.0
+   ]
+  },
+  {
+   "id": 2,
+   "class": "person",
+   "score": 0.989,
+   "bbox_master_px": [
+    683.1,
+    262.8,
+    699.7,
+    318.4
+   ],
+   "center_master_px": [
+    691.4,
+    290.6
+   ],
+   "ground_contact_master_px": [
+    691.4,
+    318.4
+   ],
+   "bbox_reference_px": [
+    1280.7,
+    492.8,
+    1312.0,
+    597.0
+   ],
+   "center_reference_px": [
+    1296.4,
+    544.9
+   ]
+  },
+  {
+   "id": 3,
+   "class": "car",
+   "score": 0.982,
+   "bbox_master_px": [
+    14.8,
+    263.2,
+    219.8,
+    346.5
+   ],
+   "center_master_px": [
+    117.3,
+    304.9
+   ],
+   "ground_contact_master_px": [
+    117.3,
+    346.5
+   ],
+   "bbox_reference_px": [
+    27.8,
+    493.5,
+    412.0,
+    649.8
+   ],
+   "center_reference_px": [
+    219.9,
+    571.6
+   ]
+  },
+  {
+   "id": 4,
+   "class": "person",
+   "score": 0.951,
+   "bbox_master_px": [
+    700.8,
+    266.3,
+    714.1,
+    314.7
+   ],
+   "center_master_px": [
+    707.4,
+    290.5
+   ],
+   "ground_contact_master_px": [
+    707.4,
+    314.7
+   ],
+   "bbox_reference_px": [
+    1313.9,
+    499.3,
+    1338.9,
+    590.0
+   ],
+   "center_reference_px": [
+    1326.4,
+    544.7
+   ]
+  },
+  {
+   "id": 5,
+   "class": "car",
+   "score": 0.902,
+   "bbox_master_px": [
+    0.0,
+    283.8,
+    20.3,
+    321.1
+   ],
+   "center_master_px": [
+    10.1,
+    302.5
+   ],
+   "ground_contact_master_px": [
+    10.1,
+    321.1
+   ],
+   "bbox_reference_px": [
+    0.0,
+    532.1,
+    38.0,
+    602.1
+   ],
+   "center_reference_px": [
+    19.0,
+    567.1
+   ]
+  },
+  {
+   "id": 6,
+   "class": "car",
+   "score": 0.833,
+   "bbox_master_px": [
+    6.4,
+    286.5,
+    60.5,
+    320.9
+   ],
+   "center_master_px": [
+    33.4,
+    303.7
+   ],
+   "ground_contact_master_px": [
+    33.4,
+    320.9
+   ],
+   "bbox_reference_px": [
+    11.9,
+    537.1,
+    113.4,
+    601.6
+   ],
+   "center_reference_px": [
+    62.7,
+    569.4
+   ]
+  },
+  {
+   "id": 7,
+   "class": "truck",
+   "score": 0.791,
+   "bbox_master_px": [
+    864.9,
+    265.9,
+    916.1,
+    299.2
+   ],
+   "center_master_px": [
+    890.5,
+    282.5
+   ],
+   "ground_contact_master_px": [
+    890.5,
+    299.2
+   ],
+   "bbox_reference_px": [
+    1621.6,
+    498.6,
+    1717.8,
+    561.0
+   ],
+   "center_reference_px": [
+    1669.7,
+    529.8
+   ]
+  }
+ ],
+ "vehicle_recall": 0.6666666666666666,
+ "vehicle_precision": 0.6666666666666666,
+ "person_recall": 0.13333333333333333,
+ "person_precision": 1.0,
+ "vehicle_count_abs_err_vs_oracle": 0,
+ "person_count_abs_err_vs_oracle": 13,
+ "seconds": 10.444193700001051,
+ "prompt": "a police car is parked in a street, a group of people walking down a street, a red car is parked in a parking, a car is parked in a parking lot, a street scene with cars and a crosswalk"
+}

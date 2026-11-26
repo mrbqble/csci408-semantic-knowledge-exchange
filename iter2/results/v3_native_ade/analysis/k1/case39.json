@@ -1,0 +1,152 @@
+{
+ "case": "case39",
+ "reference": "cam1",
+ "variant": "k1",
+ "master_size": [
+  896,
+  512
+ ],
+ "counts": {
+  "person": 4,
+  "bicycle": 0,
+  "car": 0,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 0,
+  "cars_4wheel": 0,
+  "two_wheelers": 0,
+  "vehicles": 0,
+  "pedestrians": 4
+ },
+ "gt": {
+  "cars_4wheel": 6,
+  "pedestrians": 9,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "person",
+   "score": 0.873,
+   "bbox_master_px": [
+    108.8,
+    249.9,
+    119.2,
+    280.0
+   ],
+   "center_master_px": [
+    114.0,
+    264.9
+   ],
+   "ground_contact_master_px": [
+    114.0,
+    280.0
+   ],
+   "bbox_reference_px": [
+    233.1,
+    527.1,
+    255.4,
+    590.6
+   ],
+   "center_reference_px": [
+    244.2,
+    558.8
+   ]
+  },
+  {
+   "id": 1,
+   "class": "person",
+   "score": 0.777,
+   "bbox_master_px": [
+    86.2,
+    245.8,
+    101.8,
+    285.0
+   ],
+   "center_master_px": [
+    94.0,
+    265.4
+   ],
+   "ground_contact_master_px": [
+    94.0,
+    285.0
+   ],
+   "bbox_reference_px": [
+    184.6,
+    518.6,
+    218.1,
+    601.1
+   ],
+   "center_reference_px": [
+    201.4,
+    559.8
+   ]
+  },
+  {
+   "id": 2,
+   "class": "person",
+   "score": 0.748,
+   "bbox_master_px": [
+    22.6,
+    261.6,
+    29.3,
+    286.8
+   ],
+   "center_master_px": [
+    25.9,
+    274.2
+   ],
+   "ground_contact_master_px": [
+    25.9,
+    286.8
+   ],
+   "bbox_reference_px": [
+    48.3,
+    551.7,
+    62.8,
+    605.0
+   ],
+   "center_reference_px": [
+    55.6,
+    578.4
+   ]
+  },
+  {
+   "id": 3,
+   "class": "person",
+   "score": 0.601,
+   "bbox_master_px": [
+    535.8,
+    262.3,
+    548.3,
+    291.1
+   ],
+   "center_master_px": [
+    542.1,
+    276.7
+   ],
+   "ground_contact_master_px": [
+    542.1,
+    291.1
+   ],
+   "bbox_reference_px": [
+    1148.2,
+    553.3,
+    1175.0,
+    614.0
+   ],
+   "center_reference_px": [
+    1161.6,
+    583.7
+   ]
+  }
+ ],
+ "vehicle_recall": 0.0,
+ "vehicle_precision": null,
+ "person_recall": 0.16666666666666666,
+ "person_precision": 0.75,
+ "vehicle_count_abs_err_vs_oracle": 5,
+ "person_count_abs_err_vs_oracle": 14,
+ "seconds": 8.33595939999941,
+ "prompt": "a street scene with a cart of food"
+}

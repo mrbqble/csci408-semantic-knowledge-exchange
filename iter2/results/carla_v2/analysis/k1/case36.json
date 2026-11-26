@@ -1,0 +1,210 @@
+{
+ "case": "case36",
+ "reference": "cam1",
+ "variant": "k1",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 2,
+  "bicycle": 0,
+  "car": 3,
+  "motorcycle": 0,
+  "bus": 1,
+  "truck": 0,
+  "cars_4wheel": 4,
+  "two_wheelers": 0,
+  "vehicles": 4,
+  "pedestrians": 2
+ },
+ "gt": {
+  "cars_4wheel": 7,
+  "pedestrians": 6,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "person",
+   "score": 0.999,
+   "bbox_master_px": [
+    345.3,
+    282.6,
+    417.3,
+    497.7
+   ],
+   "center_master_px": [
+    381.3,
+    390.1
+   ],
+   "ground_contact_master_px": [
+    381.3,
+    497.7
+   ],
+   "bbox_reference_px": [
+    647.4,
+    529.8,
+    782.5,
+    933.3
+   ],
+   "center_reference_px": [
+    714.9,
+    731.5
+   ]
+  },
+  {
+   "id": 1,
+   "class": "car",
+   "score": 0.995,
+   "bbox_master_px": [
+    0.5,
+    271.1,
+    41.8,
+    307.2
+   ],
+   "center_master_px": [
+    21.1,
+    289.1
+   ],
+   "ground_contact_master_px": [
+    21.1,
+    307.2
+   ],
+   "bbox_reference_px": [
+    0.9,
+    508.2,
+    78.4,
+    576.0
+   ],
+   "center_reference_px": [
+    39.7,
+    542.1
+   ]
+  },
+  {
+   "id": 2,
+   "class": "car",
+   "score": 0.985,
+   "bbox_master_px": [
+    47.4,
+    265.0,
+    94.3,
+    295.1
+   ],
+   "center_master_px": [
+    70.8,
+    280.1
+   ],
+   "ground_contact_master_px": [
+    70.8,
+    295.1
+   ],
+   "bbox_reference_px": [
+    88.8,
+    496.9,
+    176.8,
+    553.4
+   ],
+   "center_reference_px": [
+    132.8,
+    525.2
+   ]
+  },
+  {
+   "id": 3,
+   "class": "bus",
+   "score": 0.981,
+   "bbox_master_px": [
+    91.2,
+    197.9,
+    379.5,
+    320.1
+   ],
+   "center_master_px": [
+    235.4,
+    259.0
+   ],
+   "ground_contact_master_px": [
+    235.4,
+    320.1
+   ],
+   "bbox_reference_px": [
+    171.1,
+    371.0,
+    711.6,
+    600.2
+   ],
+   "center_reference_px": [
+    441.3,
+    485.6
+   ]
+  },
+  {
+   "id": 4,
+   "class": "car",
+   "score": 0.981,
+   "bbox_master_px": [
+    359.6,
+    258.9,
+    549.6,
+    326.5
+   ],
+   "center_master_px": [
+    454.6,
+    292.7
+   ],
+   "ground_contact_master_px": [
+    454.6,
+    326.5
+   ],
+   "bbox_reference_px": [
+    674.2,
+    485.5,
+    1030.5,
+    612.1
+   ],
+   "center_reference_px": [
+    852.4,
+    548.8
+   ]
+  },
+  {
+   "id": 5,
+   "class": "person",
+   "score": 0.762,
+   "bbox_master_px": [
+    442.4,
+    237.8,
+    462.2,
+    260.2
+   ],
+   "center_master_px": [
+    452.3,
+    249.0
+   ],
+   "ground_contact_master_px": [
+    452.3,
+    260.2
+   ],
+   "bbox_reference_px": [
+    829.5,
+    445.9,
+    866.6,
+    487.8
+   ],
+   "center_reference_px": [
+    848.1,
+    466.8
+   ]
+  }
+ ],
+ "vehicle_recall": 0.6666666666666666,
+ "vehicle_precision": 1.0,
+ "person_recall": 0.25,
+ "person_precision": 0.5,
+ "vehicle_count_abs_err_vs_oracle": 2,
+ "person_count_abs_err_vs_oracle": 2,
+ "seconds": 11.350045799999862,
+ "prompt": "a man walking down a sidewalk next to a bench"
+}

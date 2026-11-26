@@ -1,0 +1,90 @@
+{
+ "case": "case76",
+ "variant": "prompt_refine",
+ "ip_adapter_scale": 0.0,
+ "ip_adapter_source": "none",
+ "reference": "cam1",
+ "supporting": [
+  "cam2",
+  "cam3",
+  "cam4",
+  "cam5",
+  "cam6"
+ ],
+ "timestamp": 8788,
+ "prompt": "a red car driving down a city street, a person walking across a street with a sign, a man walking down a street next to a parking meter, a car is parked in the middle of a street, the city traffic simulator, a blue car parked in a parking lot",
+ "seconds": 16.93191069999739,
+ "peak_gpu_mb": 5394.6416015625,
+ "size": [
+  1024,
+  576
+ ],
+ "palette": "cs",
+ "ref_policy": "first",
+ "seed": 42,
+ "steps": 20,
+ "guidance": 7.5,
+ "donor_case": null,
+ "cn_scales": [
+  1.0,
+  1.0
+ ],
+ "edge_thr": 40,
+ "base": "existing prompt_only result",
+ "base_seconds": 10.431288899999345,
+ "refine_seconds": 6.500621799998044,
+ "refine": {
+  "n_small_blobs": 6,
+  "n_windows": 3,
+  "uncovered_blobs": 0,
+  "windows": [
+   {
+    "x0": 0,
+    "y0": 245,
+    "n_blobs": 3,
+    "blob_areas": [
+     25,
+     18,
+     227
+    ],
+    "index": 0,
+    "seconds": 2.1665472999993654
+   },
+   {
+    "x0": 520,
+    "y0": 218,
+    "n_blobs": 2,
+    "blob_areas": [
+     1492,
+     22
+    ],
+    "index": 1,
+    "seconds": 2.1682001999997738
+   },
+   {
+    "x0": 99,
+    "y0": 181,
+    "n_blobs": 1,
+    "blob_areas": [
+     44
+    ],
+    "index": 2,
+    "seconds": 2.1658742999989045
+   }
+  ],
+  "failures": [],
+  "seconds": 6.500621799998044
+ },
+ "refine_settings": {
+  "window": 128,
+  "upscale": 4,
+  "strength": 0.5,
+  "feather_px": 12,
+  "max_windows": 8,
+  "min_area": 12,
+  "max_side": 48,
+  "prompt": "cars on a city street, realistic photo, sharp",
+  "negative_prompt": "blurry, deformed, cartoon",
+  "seed": "42 + window index"
+ }
+}

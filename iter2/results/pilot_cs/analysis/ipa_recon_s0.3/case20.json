@@ -1,0 +1,123 @@
+{
+ "case": "case20",
+ "reference": "cam1",
+ "variant": "ipa_recon_s0.3",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 0,
+  "bicycle": 0,
+  "car": 2,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 1,
+  "cars_4wheel": 3,
+  "two_wheelers": 0,
+  "vehicles": 3,
+  "pedestrians": 0
+ },
+ "gt": {
+  "cars_4wheel": 4,
+  "pedestrians": 5,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "car",
+   "score": 0.999,
+   "bbox_master_px": [
+    790.9,
+    232.8,
+    857.0,
+    268.0
+   ],
+   "center_master_px": [
+    823.9,
+    250.4
+   ],
+   "ground_contact_master_px": [
+    823.9,
+    268.0
+   ],
+   "bbox_reference_px": [
+    1482.8,
+    436.6,
+    1606.8,
+    502.5
+   ],
+   "center_reference_px": [
+    1544.8,
+    469.5
+   ]
+  },
+  {
+   "id": 1,
+   "class": "truck",
+   "score": 0.694,
+   "bbox_master_px": [
+    288.6,
+    204.1,
+    529.5,
+    350.9
+   ],
+   "center_master_px": [
+    409.0,
+    277.5
+   ],
+   "ground_contact_master_px": [
+    409.0,
+    350.9
+   ],
+   "bbox_reference_px": [
+    541.0,
+    382.8,
+    992.8,
+    657.9
+   ],
+   "center_reference_px": [
+    766.9,
+    520.3
+   ]
+  },
+  {
+   "id": 2,
+   "class": "car",
+   "score": 0.666,
+   "bbox_master_px": [
+    290.4,
+    204.5,
+    531.8,
+    351.9
+   ],
+   "center_master_px": [
+    411.1,
+    278.2
+   ],
+   "ground_contact_master_px": [
+    411.1,
+    351.9
+   ],
+   "bbox_reference_px": [
+    544.5,
+    383.5,
+    997.1,
+    659.8
+   ],
+   "center_reference_px": [
+    770.8,
+    521.6
+   ]
+  }
+ ],
+ "vehicle_recall": 0.5,
+ "vehicle_precision": 0.6666666666666666,
+ "person_recall": 0.0,
+ "person_precision": null,
+ "vehicle_count_abs_err_vs_oracle": 1,
+ "person_count_abs_err_vs_oracle": 7,
+ "seconds": 10.53106889999981,
+ "prompt": "a white van driving down a street next to a red sign, a street with a white crosswalk, a woman walking down a sidewalk next to a tree, a van parked on the side of a road, a white van parked on the side of a road, a red car is driving down a street"
+}

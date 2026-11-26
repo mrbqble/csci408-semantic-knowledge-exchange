@@ -1,0 +1,8538 @@
+{
+ "config": {
+  "images": "data\\cityscapes_val",
+  "n": 500,
+  "seg_size": [
+   1024,
+   512
+  ],
+  "canny": [
+   100,
+   200
+  ],
+  "seg_model": "facebook/mask2former-swin-large-cityscapes-semantic"
+ },
+ "seed_table2": {
+  "seg_kb": 3.96,
+  "edge_kb": 18.41,
+  "caption_b": 57,
+  "total_kb": 22.42,
+  "original_mb": 2.28
+ },
+ "summary_mean_bytes": {
+  "seg": {
+   "webp_q80": 14105.9,
+   "webp_q50": 9875.888,
+   "webp_lossless": 4235.224,
+   "png": 5805.898
+  },
+  "edge": {
+   "webp_q80": 99323.48,
+   "webp_q50": 84277.244,
+   "webp_lossless": 22440.028,
+   "png": 27321.166
+  }
+ },
+ "rows": [
+  {
+   "file": "frankfurt_000000_000294_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 12468,
+    "webp_q50": 8914,
+    "webp_lossless": 3536,
+    "png": 4986
+   },
+   "edge": {
+    "webp_q80": 102982,
+    "webp_q50": 87782,
+    "webp_lossless": 23184,
+    "png": 28330
+   }
+  },
+  {
+   "file": "frankfurt_000000_000576_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 12574,
+    "webp_q50": 8706,
+    "webp_lossless": 3732,
+    "png": 4903
+   },
+   "edge": {
+    "webp_q80": 92692,
+    "webp_q50": 79016,
+    "webp_lossless": 22312,
+    "png": 27262
+   }
+  },
+  {
+   "file": "frankfurt_000000_001016_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 12904,
+    "webp_q50": 9032,
+    "webp_lossless": 3662,
+    "png": 5172
+   },
+   "edge": {
+    "webp_q80": 108794,
+    "webp_q50": 93012,
+    "webp_lossless": 25310,
+    "png": 30901
+   }
+  },
+  {
+   "file": "frankfurt_000000_001236_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14030,
+    "webp_q50": 9862,
+    "webp_lossless": 3914,
+    "png": 5928
+   },
+   "edge": {
+    "webp_q80": 76186,
+    "webp_q50": 64772,
+    "webp_lossless": 18134,
+    "png": 22944
+   }
+  },
+  {
+   "file": "frankfurt_000000_001751_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 12200,
+    "webp_q50": 8696,
+    "webp_lossless": 3396,
+    "png": 4543
+   },
+   "edge": {
+    "webp_q80": 60488,
+    "webp_q50": 51432,
+    "webp_lossless": 14450,
+    "png": 18966
+   }
+  },
+  {
+   "file": "frankfurt_000000_002196_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 12712,
+    "webp_q50": 8850,
+    "webp_lossless": 3650,
+    "png": 4752
+   },
+   "edge": {
+    "webp_q80": 99810,
+    "webp_q50": 85412,
+    "webp_lossless": 23216,
+    "png": 28393
+   }
+  },
+  {
+   "file": "frankfurt_000000_002963_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 16030,
+    "webp_q50": 11034,
+    "webp_lossless": 4436,
+    "png": 6401
+   },
+   "edge": {
+    "webp_q80": 133578,
+    "webp_q50": 113384,
+    "webp_lossless": 30556,
+    "png": 36956
+   }
+  },
+  {
+   "file": "frankfurt_000000_003025_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 17086,
+    "webp_q50": 11826,
+    "webp_lossless": 5192,
+    "png": 6776
+   },
+   "edge": {
+    "webp_q80": 125722,
+    "webp_q50": 107106,
+    "webp_lossless": 29064,
+    "png": 35081
+   }
+  },
+  {
+   "file": "frankfurt_000000_003357_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 16102,
+    "webp_q50": 11302,
+    "webp_lossless": 4918,
+    "png": 6395
+   },
+   "edge": {
+    "webp_q80": 140388,
+    "webp_q50": 118458,
+    "webp_lossless": 31920,
+    "png": 38280
+   }
+  },
+  {
+   "file": "frankfurt_000000_003920_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14776,
+    "webp_q50": 10086,
+    "webp_lossless": 4364,
+    "png": 6083
+   },
+   "edge": {
+    "webp_q80": 153132,
+    "webp_q50": 129412,
+    "webp_lossless": 33874,
+    "png": 40263
+   }
+  },
+  {
+   "file": "frankfurt_000000_004617_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 16414,
+    "webp_q50": 11480,
+    "webp_lossless": 4736,
+    "png": 6249
+   },
+   "edge": {
+    "webp_q80": 146570,
+    "webp_q50": 122624,
+    "webp_lossless": 33008,
+    "png": 39945
+   }
+  },
+  {
+   "file": "frankfurt_000000_005543_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 21640,
+    "webp_q50": 15088,
+    "webp_lossless": 6650,
+    "png": 8634
+   },
+   "edge": {
+    "webp_q80": 132936,
+    "webp_q50": 113190,
+    "webp_lossless": 30326,
+    "png": 37104
+   }
+  },
+  {
+   "file": "frankfurt_000000_005898_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 16378,
+    "webp_q50": 11234,
+    "webp_lossless": 4402,
+    "png": 6459
+   },
+   "edge": {
+    "webp_q80": 127640,
+    "webp_q50": 108354,
+    "webp_lossless": 28916,
+    "png": 35136
+   }
+  },
+  {
+   "file": "frankfurt_000000_006589_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13960,
+    "webp_q50": 9830,
+    "webp_lossless": 3986,
+    "png": 5285
+   },
+   "edge": {
+    "webp_q80": 86240,
+    "webp_q50": 73518,
+    "webp_lossless": 20288,
+    "png": 25231
+   }
+  },
+  {
+   "file": "frankfurt_000000_007365_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 15390,
+    "webp_q50": 10740,
+    "webp_lossless": 4148,
+    "png": 5742
+   },
+   "edge": {
+    "webp_q80": 163610,
+    "webp_q50": 136910,
+    "webp_lossless": 35840,
+    "png": 43789
+   }
+  },
+  {
+   "file": "frankfurt_000000_008206_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 20382,
+    "webp_q50": 14036,
+    "webp_lossless": 6116,
+    "png": 7933
+   },
+   "edge": {
+    "webp_q80": 212548,
+    "webp_q50": 179328,
+    "webp_lossless": 46406,
+    "png": 53315
+   }
+  },
+  {
+   "file": "frankfurt_000000_008451_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 18012,
+    "webp_q50": 12478,
+    "webp_lossless": 5706,
+    "png": 7498
+   },
+   "edge": {
+    "webp_q80": 128662,
+    "webp_q50": 110194,
+    "webp_lossless": 29492,
+    "png": 34657
+   }
+  },
+  {
+   "file": "frankfurt_000000_009291_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 15102,
+    "webp_q50": 10510,
+    "webp_lossless": 4440,
+    "png": 5927
+   },
+   "edge": {
+    "webp_q80": 102580,
+    "webp_q50": 87506,
+    "webp_lossless": 23824,
+    "png": 28772
+   }
+  },
+  {
+   "file": "frankfurt_000000_009561_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 17610,
+    "webp_q50": 12178,
+    "webp_lossless": 5354,
+    "png": 7022
+   },
+   "edge": {
+    "webp_q80": 112390,
+    "webp_q50": 96308,
+    "webp_lossless": 25604,
+    "png": 30625
+   }
+  },
+  {
+   "file": "frankfurt_000000_009688_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14758,
+    "webp_q50": 9870,
+    "webp_lossless": 4344,
+    "png": 5964
+   },
+   "edge": {
+    "webp_q80": 53828,
+    "webp_q50": 46060,
+    "webp_lossless": 11774,
+    "png": 14821
+   }
+  },
+  {
+   "file": "frankfurt_000000_009969_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 15322,
+    "webp_q50": 10516,
+    "webp_lossless": 4722,
+    "png": 6383
+   },
+   "edge": {
+    "webp_q80": 144572,
+    "webp_q50": 122526,
+    "webp_lossless": 32562,
+    "png": 39490
+   }
+  },
+  {
+   "file": "frankfurt_000000_010351_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 12530,
+    "webp_q50": 8922,
+    "webp_lossless": 3436,
+    "png": 4933
+   },
+   "edge": {
+    "webp_q80": 155744,
+    "webp_q50": 131470,
+    "webp_lossless": 33852,
+    "png": 39334
+   }
+  },
+  {
+   "file": "frankfurt_000000_010763_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 19034,
+    "webp_q50": 13002,
+    "webp_lossless": 5170,
+    "png": 7638
+   },
+   "edge": {
+    "webp_q80": 84808,
+    "webp_q50": 72008,
+    "webp_lossless": 18748,
+    "png": 22455
+   }
+  },
+  {
+   "file": "frankfurt_000000_011007_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 15872,
+    "webp_q50": 11174,
+    "webp_lossless": 4600,
+    "png": 6149
+   },
+   "edge": {
+    "webp_q80": 68276,
+    "webp_q50": 58886,
+    "webp_lossless": 15954,
+    "png": 19678
+   }
+  },
+  {
+   "file": "frankfurt_000000_011074_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 15154,
+    "webp_q50": 10318,
+    "webp_lossless": 4664,
+    "png": 6269
+   },
+   "edge": {
+    "webp_q80": 81586,
+    "webp_q50": 69416,
+    "webp_lossless": 18204,
+    "png": 22838
+   }
+  },
+  {
+   "file": "frankfurt_000000_011461_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 20334,
+    "webp_q50": 14518,
+    "webp_lossless": 5442,
+    "png": 7452
+   },
+   "edge": {
+    "webp_q80": 178508,
+    "webp_q50": 150980,
+    "webp_lossless": 39380,
+    "png": 46514
+   }
+  },
+  {
+   "file": "frankfurt_000000_011810_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 19218,
+    "webp_q50": 13142,
+    "webp_lossless": 6154,
+    "png": 8212
+   },
+   "edge": {
+    "webp_q80": 199980,
+    "webp_q50": 169624,
+    "webp_lossless": 43632,
+    "png": 50958
+   }
+  },
+  {
+   "file": "frankfurt_000000_012009_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13964,
+    "webp_q50": 9636,
+    "webp_lossless": 4360,
+    "png": 5783
+   },
+   "edge": {
+    "webp_q80": 171534,
+    "webp_q50": 144610,
+    "webp_lossless": 36902,
+    "png": 42332
+   }
+  },
+  {
+   "file": "frankfurt_000000_012121_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 16066,
+    "webp_q50": 11070,
+    "webp_lossless": 4564,
+    "png": 6209
+   },
+   "edge": {
+    "webp_q80": 131224,
+    "webp_q50": 110902,
+    "webp_lossless": 29148,
+    "png": 34293
+   }
+  },
+  {
+   "file": "frankfurt_000000_012868_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 19916,
+    "webp_q50": 13818,
+    "webp_lossless": 6156,
+    "png": 8006
+   },
+   "edge": {
+    "webp_q80": 187468,
+    "webp_q50": 159954,
+    "webp_lossless": 41328,
+    "png": 48900
+   }
+  },
+  {
+   "file": "frankfurt_000000_013067_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 21018,
+    "webp_q50": 14324,
+    "webp_lossless": 6356,
+    "png": 7926
+   },
+   "edge": {
+    "webp_q80": 173814,
+    "webp_q50": 148422,
+    "webp_lossless": 38820,
+    "png": 45826
+   }
+  },
+  {
+   "file": "frankfurt_000000_013240_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14090,
+    "webp_q50": 9932,
+    "webp_lossless": 4138,
+    "png": 5324
+   },
+   "edge": {
+    "webp_q80": 127642,
+    "webp_q50": 109406,
+    "webp_lossless": 28754,
+    "png": 34385
+   }
+  },
+  {
+   "file": "frankfurt_000000_013382_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 11884,
+    "webp_q50": 8530,
+    "webp_lossless": 3370,
+    "png": 5041
+   },
+   "edge": {
+    "webp_q80": 113792,
+    "webp_q50": 96968,
+    "webp_lossless": 25774,
+    "png": 30602
+   }
+  },
+  {
+   "file": "frankfurt_000000_013942_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 18570,
+    "webp_q50": 12424,
+    "webp_lossless": 5938,
+    "png": 7658
+   },
+   "edge": {
+    "webp_q80": 184974,
+    "webp_q50": 157848,
+    "webp_lossless": 41108,
+    "png": 47828
+   }
+  },
+  {
+   "file": "frankfurt_000000_014480_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 17350,
+    "webp_q50": 11984,
+    "webp_lossless": 5432,
+    "png": 6840
+   },
+   "edge": {
+    "webp_q80": 187220,
+    "webp_q50": 159298,
+    "webp_lossless": 41930,
+    "png": 49689
+   }
+  },
+  {
+   "file": "frankfurt_000000_015389_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 16186,
+    "webp_q50": 11080,
+    "webp_lossless": 5042,
+    "png": 6893
+   },
+   "edge": {
+    "webp_q80": 172622,
+    "webp_q50": 144866,
+    "webp_lossless": 37524,
+    "png": 43606
+   }
+  },
+  {
+   "file": "frankfurt_000000_015676_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 16516,
+    "webp_q50": 11576,
+    "webp_lossless": 4890,
+    "png": 6581
+   },
+   "edge": {
+    "webp_q80": 162624,
+    "webp_q50": 137022,
+    "webp_lossless": 35870,
+    "png": 41458
+   }
+  },
+  {
+   "file": "frankfurt_000000_016005_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 18796,
+    "webp_q50": 12666,
+    "webp_lossless": 5674,
+    "png": 7493
+   },
+   "edge": {
+    "webp_q80": 105696,
+    "webp_q50": 89854,
+    "webp_lossless": 25054,
+    "png": 30656
+   }
+  },
+  {
+   "file": "frankfurt_000000_016286_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 18832,
+    "webp_q50": 13024,
+    "webp_lossless": 5682,
+    "png": 7603
+   },
+   "edge": {
+    "webp_q80": 78796,
+    "webp_q50": 67314,
+    "webp_lossless": 18666,
+    "png": 23854
+   }
+  },
+  {
+   "file": "frankfurt_000000_017228_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 15824,
+    "webp_q50": 10886,
+    "webp_lossless": 4670,
+    "png": 6457
+   },
+   "edge": {
+    "webp_q80": 102672,
+    "webp_q50": 87938,
+    "webp_lossless": 23890,
+    "png": 28882
+   }
+  },
+  {
+   "file": "frankfurt_000000_017476_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 16000,
+    "webp_q50": 11066,
+    "webp_lossless": 4570,
+    "png": 6168
+   },
+   "edge": {
+    "webp_q80": 125962,
+    "webp_q50": 106628,
+    "webp_lossless": 28492,
+    "png": 34385
+   }
+  },
+  {
+   "file": "frankfurt_000000_018797_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13162,
+    "webp_q50": 9194,
+    "webp_lossless": 3812,
+    "png": 5181
+   },
+   "edge": {
+    "webp_q80": 236132,
+    "webp_q50": 196324,
+    "webp_lossless": 48490,
+    "png": 55092
+   }
+  },
+  {
+   "file": "frankfurt_000000_019607_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 15086,
+    "webp_q50": 10616,
+    "webp_lossless": 4552,
+    "png": 5941
+   },
+   "edge": {
+    "webp_q80": 113956,
+    "webp_q50": 98108,
+    "webp_lossless": 26528,
+    "png": 32018
+   }
+  },
+  {
+   "file": "frankfurt_000000_020215_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 15590,
+    "webp_q50": 10832,
+    "webp_lossless": 4688,
+    "png": 6453
+   },
+   "edge": {
+    "webp_q80": 164398,
+    "webp_q50": 138098,
+    "webp_lossless": 35902,
+    "png": 42793
+   }
+  },
+  {
+   "file": "frankfurt_000000_020321_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 16670,
+    "webp_q50": 11714,
+    "webp_lossless": 5072,
+    "png": 6956
+   },
+   "edge": {
+    "webp_q80": 130008,
+    "webp_q50": 110226,
+    "webp_lossless": 28642,
+    "png": 34320
+   }
+  },
+  {
+   "file": "frankfurt_000000_020880_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13334,
+    "webp_q50": 9476,
+    "webp_lossless": 4062,
+    "png": 5481
+   },
+   "edge": {
+    "webp_q80": 68386,
+    "webp_q50": 58204,
+    "webp_lossless": 15516,
+    "png": 19595
+   }
+  },
+  {
+   "file": "frankfurt_000000_021667_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 10218,
+    "webp_q50": 7166,
+    "webp_lossless": 2962,
+    "png": 4355
+   },
+   "edge": {
+    "webp_q80": 64958,
+    "webp_q50": 55704,
+    "webp_lossless": 15340,
+    "png": 19941
+   }
+  },
+  {
+   "file": "frankfurt_000000_021879_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14030,
+    "webp_q50": 9868,
+    "webp_lossless": 4176,
+    "png": 5499
+   },
+   "edge": {
+    "webp_q80": 38516,
+    "webp_q50": 33480,
+    "webp_lossless": 8668,
+    "png": 11162
+   }
+  },
+  {
+   "file": "frankfurt_000000_022254_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 15842,
+    "webp_q50": 11194,
+    "webp_lossless": 4644,
+    "png": 6257
+   },
+   "edge": {
+    "webp_q80": 71702,
+    "webp_q50": 61282,
+    "webp_lossless": 16592,
+    "png": 20692
+   }
+  },
+  {
+   "file": "frankfurt_000000_022797_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 15428,
+    "webp_q50": 10586,
+    "webp_lossless": 4788,
+    "png": 6393
+   },
+   "edge": {
+    "webp_q80": 171506,
+    "webp_q50": 145092,
+    "webp_lossless": 37382,
+    "png": 43704
+   }
+  },
+  {
+   "file": "frankfurt_000001_000538_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 18678,
+    "webp_q50": 12994,
+    "webp_lossless": 5524,
+    "png": 7286
+   },
+   "edge": {
+    "webp_q80": 135528,
+    "webp_q50": 115996,
+    "webp_lossless": 30232,
+    "png": 35976
+   }
+  },
+  {
+   "file": "frankfurt_000001_001464_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 12786,
+    "webp_q50": 9118,
+    "webp_lossless": 3664,
+    "png": 5144
+   },
+   "edge": {
+    "webp_q80": 43840,
+    "webp_q50": 38320,
+    "webp_lossless": 9918,
+    "png": 12801
+   }
+  },
+  {
+   "file": "frankfurt_000001_002512_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 18934,
+    "webp_q50": 13242,
+    "webp_lossless": 5400,
+    "png": 6961
+   },
+   "edge": {
+    "webp_q80": 53448,
+    "webp_q50": 45754,
+    "webp_lossless": 12350,
+    "png": 15800
+   }
+  },
+  {
+   "file": "frankfurt_000001_002646_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 16226,
+    "webp_q50": 11640,
+    "webp_lossless": 4628,
+    "png": 6223
+   },
+   "edge": {
+    "webp_q80": 52552,
+    "webp_q50": 44648,
+    "webp_lossless": 12482,
+    "png": 16396
+   }
+  },
+  {
+   "file": "frankfurt_000001_002759_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 15698,
+    "webp_q50": 10990,
+    "webp_lossless": 4834,
+    "png": 6596
+   },
+   "edge": {
+    "webp_q80": 75908,
+    "webp_q50": 64140,
+    "webp_lossless": 16174,
+    "png": 20825
+   }
+  },
+  {
+   "file": "frankfurt_000001_003056_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 16536,
+    "webp_q50": 11608,
+    "webp_lossless": 5206,
+    "png": 6511
+   },
+   "edge": {
+    "webp_q80": 64542,
+    "webp_q50": 55086,
+    "webp_lossless": 14968,
+    "png": 18975
+   }
+  },
+  {
+   "file": "frankfurt_000001_003588_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 15100,
+    "webp_q50": 10260,
+    "webp_lossless": 4778,
+    "png": 6173
+   },
+   "edge": {
+    "webp_q80": 62058,
+    "webp_q50": 53262,
+    "webp_lossless": 14592,
+    "png": 18956
+   }
+  },
+  {
+   "file": "frankfurt_000001_004327_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14042,
+    "webp_q50": 9702,
+    "webp_lossless": 4700,
+    "png": 6229
+   },
+   "edge": {
+    "webp_q80": 123652,
+    "webp_q50": 103656,
+    "webp_lossless": 27610,
+    "png": 33407
+   }
+  },
+  {
+   "file": "frankfurt_000001_004736_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14542,
+    "webp_q50": 9924,
+    "webp_lossless": 4524,
+    "png": 5799
+   },
+   "edge": {
+    "webp_q80": 139054,
+    "webp_q50": 117962,
+    "webp_lossless": 31302,
+    "png": 37763
+   }
+  },
+  {
+   "file": "frankfurt_000001_004859_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 16438,
+    "webp_q50": 11264,
+    "webp_lossless": 5410,
+    "png": 6938
+   },
+   "edge": {
+    "webp_q80": 107972,
+    "webp_q50": 91648,
+    "webp_lossless": 24468,
+    "png": 30191
+   }
+  },
+  {
+   "file": "frankfurt_000001_005184_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13882,
+    "webp_q50": 9946,
+    "webp_lossless": 4338,
+    "png": 5821
+   },
+   "edge": {
+    "webp_q80": 119126,
+    "webp_q50": 101622,
+    "webp_lossless": 27400,
+    "png": 33467
+   }
+  },
+  {
+   "file": "frankfurt_000001_005410_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 19694,
+    "webp_q50": 13486,
+    "webp_lossless": 5944,
+    "png": 7974
+   },
+   "edge": {
+    "webp_q80": 164528,
+    "webp_q50": 138516,
+    "webp_lossless": 36986,
+    "png": 43018
+   }
+  },
+  {
+   "file": "frankfurt_000001_005703_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 17738,
+    "webp_q50": 12148,
+    "webp_lossless": 5714,
+    "png": 7425
+   },
+   "edge": {
+    "webp_q80": 177068,
+    "webp_q50": 148746,
+    "webp_lossless": 39362,
+    "png": 46466
+   }
+  },
+  {
+   "file": "frankfurt_000001_005898_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 16714,
+    "webp_q50": 11580,
+    "webp_lossless": 4816,
+    "png": 6528
+   },
+   "edge": {
+    "webp_q80": 90270,
+    "webp_q50": 76530,
+    "webp_lossless": 20954,
+    "png": 26312
+   }
+  },
+  {
+   "file": "frankfurt_000001_007285_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 17644,
+    "webp_q50": 12184,
+    "webp_lossless": 5618,
+    "png": 7590
+   },
+   "edge": {
+    "webp_q80": 134230,
+    "webp_q50": 113076,
+    "webp_lossless": 30082,
+    "png": 36065
+   }
+  },
+  {
+   "file": "frankfurt_000001_007407_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 17206,
+    "webp_q50": 12112,
+    "webp_lossless": 4842,
+    "png": 6611
+   },
+   "edge": {
+    "webp_q80": 119960,
+    "webp_q50": 101628,
+    "webp_lossless": 26202,
+    "png": 31786
+   }
+  },
+  {
+   "file": "frankfurt_000001_007622_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14806,
+    "webp_q50": 10440,
+    "webp_lossless": 4370,
+    "png": 5746
+   },
+   "edge": {
+    "webp_q80": 132568,
+    "webp_q50": 113924,
+    "webp_lossless": 29150,
+    "png": 34906
+   }
+  },
+  {
+   "file": "frankfurt_000001_007857_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13392,
+    "webp_q50": 9228,
+    "webp_lossless": 4094,
+    "png": 5383
+   },
+   "edge": {
+    "webp_q80": 131512,
+    "webp_q50": 112740,
+    "webp_lossless": 28976,
+    "png": 34294
+   }
+  },
+  {
+   "file": "frankfurt_000001_007973_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 19182,
+    "webp_q50": 13260,
+    "webp_lossless": 6124,
+    "png": 8192
+   },
+   "edge": {
+    "webp_q80": 133976,
+    "webp_q50": 113396,
+    "webp_lossless": 29956,
+    "png": 35227
+   }
+  },
+  {
+   "file": "frankfurt_000001_008200_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13520,
+    "webp_q50": 9266,
+    "webp_lossless": 3952,
+    "png": 5639
+   },
+   "edge": {
+    "webp_q80": 50040,
+    "webp_q50": 43330,
+    "webp_lossless": 11624,
+    "png": 15223
+   }
+  },
+  {
+   "file": "frankfurt_000001_008688_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14954,
+    "webp_q50": 10392,
+    "webp_lossless": 4302,
+    "png": 5803
+   },
+   "edge": {
+    "webp_q80": 85654,
+    "webp_q50": 73478,
+    "webp_lossless": 20112,
+    "png": 23796
+   }
+  },
+  {
+   "file": "frankfurt_000001_009058_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 9998,
+    "webp_q50": 6916,
+    "webp_lossless": 3078,
+    "png": 4162
+   },
+   "edge": {
+    "webp_q80": 101232,
+    "webp_q50": 86810,
+    "webp_lossless": 23528,
+    "png": 28316
+   }
+  },
+  {
+   "file": "frankfurt_000001_009504_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 11126,
+    "webp_q50": 7640,
+    "webp_lossless": 3634,
+    "png": 5112
+   },
+   "edge": {
+    "webp_q80": 110950,
+    "webp_q50": 94916,
+    "webp_lossless": 25596,
+    "png": 30794
+   }
+  },
+  {
+   "file": "frankfurt_000001_009854_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 12126,
+    "webp_q50": 8722,
+    "webp_lossless": 3386,
+    "png": 4897
+   },
+   "edge": {
+    "webp_q80": 97114,
+    "webp_q50": 83248,
+    "webp_lossless": 22156,
+    "png": 27315
+   }
+  },
+  {
+   "file": "frankfurt_000001_010156_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 16336,
+    "webp_q50": 11116,
+    "webp_lossless": 5174,
+    "png": 6797
+   },
+   "edge": {
+    "webp_q80": 197716,
+    "webp_q50": 166556,
+    "webp_lossless": 41852,
+    "png": 48957
+   }
+  },
+  {
+   "file": "frankfurt_000001_010444_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 19824,
+    "webp_q50": 14070,
+    "webp_lossless": 5894,
+    "png": 8088
+   },
+   "edge": {
+    "webp_q80": 204380,
+    "webp_q50": 172342,
+    "webp_lossless": 43438,
+    "png": 51291
+   }
+  },
+  {
+   "file": "frankfurt_000001_010600_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 19580,
+    "webp_q50": 13654,
+    "webp_lossless": 5968,
+    "png": 7883
+   },
+   "edge": {
+    "webp_q80": 171672,
+    "webp_q50": 145310,
+    "webp_lossless": 38316,
+    "png": 43390
+   }
+  },
+  {
+   "file": "frankfurt_000001_010830_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 18122,
+    "webp_q50": 12506,
+    "webp_lossless": 5398,
+    "png": 7154
+   },
+   "edge": {
+    "webp_q80": 177500,
+    "webp_q50": 150664,
+    "webp_lossless": 38906,
+    "png": 45090
+   }
+  },
+  {
+   "file": "frankfurt_000001_011162_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 18244,
+    "webp_q50": 12566,
+    "webp_lossless": 5594,
+    "png": 7565
+   },
+   "edge": {
+    "webp_q80": 144096,
+    "webp_q50": 122318,
+    "webp_lossless": 32038,
+    "png": 37823
+   }
+  },
+  {
+   "file": "frankfurt_000001_011715_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 16490,
+    "webp_q50": 11168,
+    "webp_lossless": 5326,
+    "png": 7112
+   },
+   "edge": {
+    "webp_q80": 156492,
+    "webp_q50": 133528,
+    "webp_lossless": 35122,
+    "png": 41609
+   }
+  },
+  {
+   "file": "frankfurt_000001_011835_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 16654,
+    "webp_q50": 11238,
+    "webp_lossless": 5800,
+    "png": 7509
+   },
+   "edge": {
+    "webp_q80": 177250,
+    "webp_q50": 150896,
+    "webp_lossless": 40558,
+    "png": 47926
+   }
+  },
+  {
+   "file": "frankfurt_000001_012038_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 17034,
+    "webp_q50": 11732,
+    "webp_lossless": 5366,
+    "png": 7300
+   },
+   "edge": {
+    "webp_q80": 94304,
+    "webp_q50": 80280,
+    "webp_lossless": 21716,
+    "png": 27195
+   }
+  },
+  {
+   "file": "frankfurt_000001_012519_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 15688,
+    "webp_q50": 10824,
+    "webp_lossless": 4646,
+    "png": 6521
+   },
+   "edge": {
+    "webp_q80": 130022,
+    "webp_q50": 110644,
+    "webp_lossless": 28942,
+    "png": 33671
+   }
+  },
+  {
+   "file": "frankfurt_000001_012699_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 12258,
+    "webp_q50": 8406,
+    "webp_lossless": 3682,
+    "png": 5275
+   },
+   "edge": {
+    "webp_q80": 108544,
+    "webp_q50": 92464,
+    "webp_lossless": 25072,
+    "png": 30332
+   }
+  },
+  {
+   "file": "frankfurt_000001_012738_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 15822,
+    "webp_q50": 10998,
+    "webp_lossless": 5158,
+    "png": 7027
+   },
+   "edge": {
+    "webp_q80": 96812,
+    "webp_q50": 82308,
+    "webp_lossless": 21982,
+    "png": 26856
+   }
+  },
+  {
+   "file": "frankfurt_000001_012870_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 17734,
+    "webp_q50": 11958,
+    "webp_lossless": 5890,
+    "png": 7998
+   },
+   "edge": {
+    "webp_q80": 151680,
+    "webp_q50": 128068,
+    "webp_lossless": 34268,
+    "png": 39502
+   }
+  },
+  {
+   "file": "frankfurt_000001_013016_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 17724,
+    "webp_q50": 12178,
+    "webp_lossless": 6200,
+    "png": 7908
+   },
+   "edge": {
+    "webp_q80": 155226,
+    "webp_q50": 131218,
+    "webp_lossless": 36358,
+    "png": 43364
+   }
+  },
+  {
+   "file": "frankfurt_000001_013496_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 12520,
+    "webp_q50": 8924,
+    "webp_lossless": 3666,
+    "png": 5143
+   },
+   "edge": {
+    "webp_q80": 35014,
+    "webp_q50": 30096,
+    "webp_lossless": 8082,
+    "png": 10716
+   }
+  },
+  {
+   "file": "frankfurt_000001_013710_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14614,
+    "webp_q50": 10016,
+    "webp_lossless": 4480,
+    "png": 6285
+   },
+   "edge": {
+    "webp_q80": 96872,
+    "webp_q50": 82648,
+    "webp_lossless": 21682,
+    "png": 26292
+   }
+  },
+  {
+   "file": "frankfurt_000001_014221_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 15330,
+    "webp_q50": 10434,
+    "webp_lossless": 4520,
+    "png": 6229
+   },
+   "edge": {
+    "webp_q80": 47444,
+    "webp_q50": 41024,
+    "webp_lossless": 10896,
+    "png": 14549
+   }
+  },
+  {
+   "file": "frankfurt_000001_014406_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 16560,
+    "webp_q50": 11754,
+    "webp_lossless": 4854,
+    "png": 6824
+   },
+   "edge": {
+    "webp_q80": 53916,
+    "webp_q50": 47238,
+    "webp_lossless": 11968,
+    "png": 15360
+   }
+  },
+  {
+   "file": "frankfurt_000001_014565_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 10004,
+    "webp_q50": 7076,
+    "webp_lossless": 2806,
+    "png": 3981
+   },
+   "edge": {
+    "webp_q80": 94298,
+    "webp_q50": 80210,
+    "webp_lossless": 21654,
+    "png": 26720
+   }
+  },
+  {
+   "file": "frankfurt_000001_014741_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 16788,
+    "webp_q50": 11736,
+    "webp_lossless": 4870,
+    "png": 6875
+   },
+   "edge": {
+    "webp_q80": 122370,
+    "webp_q50": 104530,
+    "webp_lossless": 27780,
+    "png": 33263
+   }
+  },
+  {
+   "file": "frankfurt_000001_015091_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14532,
+    "webp_q50": 10106,
+    "webp_lossless": 3982,
+    "png": 5559
+   },
+   "edge": {
+    "webp_q80": 84858,
+    "webp_q50": 72580,
+    "webp_lossless": 19314,
+    "png": 24248
+   }
+  },
+  {
+   "file": "frankfurt_000001_015328_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 9932,
+    "webp_q50": 7124,
+    "webp_lossless": 2688,
+    "png": 3992
+   },
+   "edge": {
+    "webp_q80": 45664,
+    "webp_q50": 39378,
+    "webp_lossless": 10928,
+    "png": 14044
+   }
+  },
+  {
+   "file": "frankfurt_000001_015768_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14112,
+    "webp_q50": 9806,
+    "webp_lossless": 4016,
+    "png": 5373
+   },
+   "edge": {
+    "webp_q80": 134360,
+    "webp_q50": 114220,
+    "webp_lossless": 29890,
+    "png": 36316
+   }
+  },
+  {
+   "file": "frankfurt_000001_016029_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 17590,
+    "webp_q50": 11922,
+    "webp_lossless": 5558,
+    "png": 7471
+   },
+   "edge": {
+    "webp_q80": 179964,
+    "webp_q50": 151192,
+    "webp_lossless": 38682,
+    "png": 42840
+   }
+  },
+  {
+   "file": "frankfurt_000001_016273_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14412,
+    "webp_q50": 10070,
+    "webp_lossless": 4426,
+    "png": 6091
+   },
+   "edge": {
+    "webp_q80": 74822,
+    "webp_q50": 63652,
+    "webp_lossless": 17520,
+    "png": 22548
+   }
+  },
+  {
+   "file": "frankfurt_000001_016462_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 21374,
+    "webp_q50": 14948,
+    "webp_lossless": 6688,
+    "png": 8592
+   },
+   "edge": {
+    "webp_q80": 74656,
+    "webp_q50": 63398,
+    "webp_lossless": 17536,
+    "png": 21985
+   }
+  },
+  {
+   "file": "frankfurt_000001_017101_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 19426,
+    "webp_q50": 13276,
+    "webp_lossless": 5968,
+    "png": 7741
+   },
+   "edge": {
+    "webp_q80": 149428,
+    "webp_q50": 126872,
+    "webp_lossless": 34048,
+    "png": 40842
+   }
+  },
+  {
+   "file": "frankfurt_000001_017459_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 19838,
+    "webp_q50": 13612,
+    "webp_lossless": 5968,
+    "png": 8155
+   },
+   "edge": {
+    "webp_q80": 177012,
+    "webp_q50": 149246,
+    "webp_lossless": 39184,
+    "png": 45667
+   }
+  },
+  {
+   "file": "frankfurt_000001_017842_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 18590,
+    "webp_q50": 12942,
+    "webp_lossless": 5734,
+    "png": 7393
+   },
+   "edge": {
+    "webp_q80": 134372,
+    "webp_q50": 112754,
+    "webp_lossless": 30114,
+    "png": 36302
+   }
+  },
+  {
+   "file": "frankfurt_000001_018113_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 15344,
+    "webp_q50": 10686,
+    "webp_lossless": 4658,
+    "png": 6140
+   },
+   "edge": {
+    "webp_q80": 120062,
+    "webp_q50": 102152,
+    "webp_lossless": 26916,
+    "png": 32677
+   }
+  },
+  {
+   "file": "frankfurt_000001_019698_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13984,
+    "webp_q50": 9630,
+    "webp_lossless": 4250,
+    "png": 5929
+   },
+   "edge": {
+    "webp_q80": 94662,
+    "webp_q50": 80962,
+    "webp_lossless": 21752,
+    "png": 25674
+   }
+  },
+  {
+   "file": "frankfurt_000001_019854_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 16312,
+    "webp_q50": 11298,
+    "webp_lossless": 4906,
+    "png": 6501
+   },
+   "edge": {
+    "webp_q80": 107056,
+    "webp_q50": 91064,
+    "webp_lossless": 25058,
+    "png": 29586
+   }
+  },
+  {
+   "file": "frankfurt_000001_019969_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13330,
+    "webp_q50": 9140,
+    "webp_lossless": 4010,
+    "png": 5370
+   },
+   "edge": {
+    "webp_q80": 114638,
+    "webp_q50": 97482,
+    "webp_lossless": 26596,
+    "png": 31260
+   }
+  },
+  {
+   "file": "frankfurt_000001_020046_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14754,
+    "webp_q50": 10120,
+    "webp_lossless": 4514,
+    "png": 6091
+   },
+   "edge": {
+    "webp_q80": 96834,
+    "webp_q50": 82146,
+    "webp_lossless": 22576,
+    "png": 27124
+   }
+  },
+  {
+   "file": "frankfurt_000001_020287_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 15726,
+    "webp_q50": 11046,
+    "webp_lossless": 4744,
+    "png": 6508
+   },
+   "edge": {
+    "webp_q80": 77910,
+    "webp_q50": 66384,
+    "webp_lossless": 18378,
+    "png": 23480
+   }
+  },
+  {
+   "file": "frankfurt_000001_020693_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 16272,
+    "webp_q50": 11348,
+    "webp_lossless": 4890,
+    "png": 6685
+   },
+   "edge": {
+    "webp_q80": 90698,
+    "webp_q50": 77206,
+    "webp_lossless": 20910,
+    "png": 25626
+   }
+  },
+  {
+   "file": "frankfurt_000001_021406_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 15774,
+    "webp_q50": 11064,
+    "webp_lossless": 4588,
+    "png": 6452
+   },
+   "edge": {
+    "webp_q80": 100924,
+    "webp_q50": 86572,
+    "webp_lossless": 22994,
+    "png": 27751
+   }
+  },
+  {
+   "file": "frankfurt_000001_021825_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 17982,
+    "webp_q50": 12198,
+    "webp_lossless": 5592,
+    "png": 7483
+   },
+   "edge": {
+    "webp_q80": 154928,
+    "webp_q50": 131058,
+    "webp_lossless": 34172,
+    "png": 40280
+   }
+  },
+  {
+   "file": "frankfurt_000001_023235_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 15754,
+    "webp_q50": 10830,
+    "webp_lossless": 4536,
+    "png": 6164
+   },
+   "edge": {
+    "webp_q80": 134278,
+    "webp_q50": 113352,
+    "webp_lossless": 29556,
+    "png": 35792
+   }
+  },
+  {
+   "file": "frankfurt_000001_023369_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 15266,
+    "webp_q50": 10398,
+    "webp_lossless": 4634,
+    "png": 6017
+   },
+   "edge": {
+    "webp_q80": 259274,
+    "webp_q50": 217812,
+    "webp_lossless": 53364,
+    "png": 61700
+   }
+  },
+  {
+   "file": "frankfurt_000001_023769_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 17884,
+    "webp_q50": 12444,
+    "webp_lossless": 5796,
+    "png": 7268
+   },
+   "edge": {
+    "webp_q80": 65866,
+    "webp_q50": 56312,
+    "webp_lossless": 15350,
+    "png": 19548
+   }
+  },
+  {
+   "file": "frankfurt_000001_024927_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 16648,
+    "webp_q50": 11268,
+    "webp_lossless": 5108,
+    "png": 6849
+   },
+   "edge": {
+    "webp_q80": 131132,
+    "webp_q50": 110014,
+    "webp_lossless": 29280,
+    "png": 34608
+   }
+  },
+  {
+   "file": "frankfurt_000001_025512_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 17870,
+    "webp_q50": 12000,
+    "webp_lossless": 5740,
+    "png": 7614
+   },
+   "edge": {
+    "webp_q80": 170636,
+    "webp_q50": 143338,
+    "webp_lossless": 37804,
+    "png": 44142
+   }
+  },
+  {
+   "file": "frankfurt_000001_025713_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 16626,
+    "webp_q50": 11536,
+    "webp_lossless": 4846,
+    "png": 6633
+   },
+   "edge": {
+    "webp_q80": 165382,
+    "webp_q50": 139340,
+    "webp_lossless": 36088,
+    "png": 41605
+   }
+  },
+  {
+   "file": "frankfurt_000001_025921_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 16692,
+    "webp_q50": 11562,
+    "webp_lossless": 5062,
+    "png": 6753
+   },
+   "edge": {
+    "webp_q80": 138770,
+    "webp_q50": 117052,
+    "webp_lossless": 30452,
+    "png": 36293
+   }
+  },
+  {
+   "file": "frankfurt_000001_027325_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 16208,
+    "webp_q50": 11412,
+    "webp_lossless": 4666,
+    "png": 6122
+   },
+   "edge": {
+    "webp_q80": 52502,
+    "webp_q50": 45456,
+    "webp_lossless": 12386,
+    "png": 16324
+   }
+  },
+  {
+   "file": "frankfurt_000001_028232_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 17740,
+    "webp_q50": 12102,
+    "webp_lossless": 5528,
+    "png": 7454
+   },
+   "edge": {
+    "webp_q80": 90376,
+    "webp_q50": 77024,
+    "webp_lossless": 20556,
+    "png": 25708
+   }
+  },
+  {
+   "file": "frankfurt_000001_028335_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 18702,
+    "webp_q50": 12970,
+    "webp_lossless": 5746,
+    "png": 7690
+   },
+   "edge": {
+    "webp_q80": 186150,
+    "webp_q50": 157408,
+    "webp_lossless": 40112,
+    "png": 46614
+   }
+  },
+  {
+   "file": "frankfurt_000001_028590_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 17334,
+    "webp_q50": 12100,
+    "webp_lossless": 5186,
+    "png": 6754
+   },
+   "edge": {
+    "webp_q80": 177988,
+    "webp_q50": 150276,
+    "webp_lossless": 38132,
+    "png": 44149
+   }
+  },
+  {
+   "file": "frankfurt_000001_028854_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 18862,
+    "webp_q50": 13144,
+    "webp_lossless": 5620,
+    "png": 7338
+   },
+   "edge": {
+    "webp_q80": 152796,
+    "webp_q50": 130038,
+    "webp_lossless": 34362,
+    "png": 40065
+   }
+  },
+  {
+   "file": "frankfurt_000001_029086_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 18534,
+    "webp_q50": 12640,
+    "webp_lossless": 5676,
+    "png": 7269
+   },
+   "edge": {
+    "webp_q80": 176068,
+    "webp_q50": 148022,
+    "webp_lossless": 38954,
+    "png": 45194
+   }
+  },
+  {
+   "file": "frankfurt_000001_029236_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 17266,
+    "webp_q50": 12508,
+    "webp_lossless": 4752,
+    "png": 6166
+   },
+   "edge": {
+    "webp_q80": 164104,
+    "webp_q50": 139744,
+    "webp_lossless": 37356,
+    "png": 43416
+   }
+  },
+  {
+   "file": "frankfurt_000001_029600_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 10578,
+    "webp_q50": 7380,
+    "webp_lossless": 3392,
+    "png": 4768
+   },
+   "edge": {
+    "webp_q80": 91448,
+    "webp_q50": 78548,
+    "webp_lossless": 19782,
+    "png": 23872
+   }
+  },
+  {
+   "file": "frankfurt_000001_030067_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 11942,
+    "webp_q50": 8448,
+    "webp_lossless": 3708,
+    "png": 5165
+   },
+   "edge": {
+    "webp_q80": 83474,
+    "webp_q50": 71220,
+    "webp_lossless": 19460,
+    "png": 24286
+   }
+  },
+  {
+   "file": "frankfurt_000001_030310_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 15340,
+    "webp_q50": 10872,
+    "webp_lossless": 4482,
+    "png": 5780
+   },
+   "edge": {
+    "webp_q80": 118946,
+    "webp_q50": 101094,
+    "webp_lossless": 27140,
+    "png": 32145
+   }
+  },
+  {
+   "file": "frankfurt_000001_030669_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 17080,
+    "webp_q50": 11748,
+    "webp_lossless": 5234,
+    "png": 7007
+   },
+   "edge": {
+    "webp_q80": 141286,
+    "webp_q50": 118826,
+    "webp_lossless": 31688,
+    "png": 37514
+   }
+  },
+  {
+   "file": "frankfurt_000001_031266_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 12214,
+    "webp_q50": 8616,
+    "webp_lossless": 3260,
+    "png": 4702
+   },
+   "edge": {
+    "webp_q80": 125856,
+    "webp_q50": 106712,
+    "webp_lossless": 28342,
+    "png": 33055
+   }
+  },
+  {
+   "file": "frankfurt_000001_031416_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 11130,
+    "webp_q50": 7958,
+    "webp_lossless": 3228,
+    "png": 4539
+   },
+   "edge": {
+    "webp_q80": 95776,
+    "webp_q50": 81376,
+    "webp_lossless": 21996,
+    "png": 26871
+   }
+  },
+  {
+   "file": "frankfurt_000001_032018_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 15354,
+    "webp_q50": 10734,
+    "webp_lossless": 4748,
+    "png": 6428
+   },
+   "edge": {
+    "webp_q80": 156258,
+    "webp_q50": 132584,
+    "webp_lossless": 35242,
+    "png": 41933
+   }
+  },
+  {
+   "file": "frankfurt_000001_032556_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 11632,
+    "webp_q50": 8396,
+    "webp_lossless": 3156,
+    "png": 4430
+   },
+   "edge": {
+    "webp_q80": 129480,
+    "webp_q50": 109698,
+    "webp_lossless": 28820,
+    "png": 33727
+   }
+  },
+  {
+   "file": "frankfurt_000001_032711_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 10326,
+    "webp_q50": 7206,
+    "webp_lossless": 2806,
+    "png": 4164
+   },
+   "edge": {
+    "webp_q80": 179828,
+    "webp_q50": 151744,
+    "webp_lossless": 39454,
+    "png": 46773
+   }
+  },
+  {
+   "file": "frankfurt_000001_032942_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 12290,
+    "webp_q50": 8690,
+    "webp_lossless": 3426,
+    "png": 4696
+   },
+   "edge": {
+    "webp_q80": 166164,
+    "webp_q50": 140568,
+    "webp_lossless": 37024,
+    "png": 42203
+   }
+  },
+  {
+   "file": "frankfurt_000001_033655_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 11166,
+    "webp_q50": 7964,
+    "webp_lossless": 3192,
+    "png": 4548
+   },
+   "edge": {
+    "webp_q80": 150448,
+    "webp_q50": 126578,
+    "webp_lossless": 33280,
+    "png": 39481
+   }
+  },
+  {
+   "file": "frankfurt_000001_034047_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 16044,
+    "webp_q50": 10950,
+    "webp_lossless": 5128,
+    "png": 7304
+   },
+   "edge": {
+    "webp_q80": 146502,
+    "webp_q50": 125880,
+    "webp_lossless": 32310,
+    "png": 38571
+   }
+  },
+  {
+   "file": "frankfurt_000001_034816_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 18986,
+    "webp_q50": 13500,
+    "webp_lossless": 5342,
+    "png": 7323
+   },
+   "edge": {
+    "webp_q80": 66134,
+    "webp_q50": 56800,
+    "webp_lossless": 14954,
+    "png": 19250
+   }
+  },
+  {
+   "file": "frankfurt_000001_035144_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 15080,
+    "webp_q50": 10380,
+    "webp_lossless": 4708,
+    "png": 6345
+   },
+   "edge": {
+    "webp_q80": 84920,
+    "webp_q50": 72186,
+    "webp_lossless": 20390,
+    "png": 25273
+   }
+  },
+  {
+   "file": "frankfurt_000001_035864_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13464,
+    "webp_q50": 9284,
+    "webp_lossless": 4294,
+    "png": 5874
+   },
+   "edge": {
+    "webp_q80": 102234,
+    "webp_q50": 86958,
+    "webp_lossless": 23366,
+    "png": 28446
+   }
+  },
+  {
+   "file": "frankfurt_000001_037705_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 18342,
+    "webp_q50": 12930,
+    "webp_lossless": 6032,
+    "png": 7779
+   },
+   "edge": {
+    "webp_q80": 204376,
+    "webp_q50": 173370,
+    "webp_lossless": 44422,
+    "png": 51585
+   }
+  },
+  {
+   "file": "frankfurt_000001_038245_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 17576,
+    "webp_q50": 12132,
+    "webp_lossless": 5442,
+    "png": 7079
+   },
+   "edge": {
+    "webp_q80": 177666,
+    "webp_q50": 150874,
+    "webp_lossless": 40252,
+    "png": 47425
+   }
+  },
+  {
+   "file": "frankfurt_000001_038418_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 15062,
+    "webp_q50": 10226,
+    "webp_lossless": 4670,
+    "png": 5898
+   },
+   "edge": {
+    "webp_q80": 167008,
+    "webp_q50": 141524,
+    "webp_lossless": 36666,
+    "png": 43915
+   }
+  },
+  {
+   "file": "frankfurt_000001_038645_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 16364,
+    "webp_q50": 11202,
+    "webp_lossless": 5030,
+    "png": 7114
+   },
+   "edge": {
+    "webp_q80": 157074,
+    "webp_q50": 134868,
+    "webp_lossless": 35326,
+    "png": 41242
+   }
+  },
+  {
+   "file": "frankfurt_000001_038844_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 16062,
+    "webp_q50": 11174,
+    "webp_lossless": 4986,
+    "png": 6695
+   },
+   "edge": {
+    "webp_q80": 126736,
+    "webp_q50": 106824,
+    "webp_lossless": 29500,
+    "png": 35075
+   }
+  },
+  {
+   "file": "frankfurt_000001_039895_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 15524,
+    "webp_q50": 10920,
+    "webp_lossless": 4344,
+    "png": 5900
+   },
+   "edge": {
+    "webp_q80": 126046,
+    "webp_q50": 108214,
+    "webp_lossless": 28336,
+    "png": 34225
+   }
+  },
+  {
+   "file": "frankfurt_000001_040575_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 17560,
+    "webp_q50": 12408,
+    "webp_lossless": 5524,
+    "png": 7217
+   },
+   "edge": {
+    "webp_q80": 128578,
+    "webp_q50": 109626,
+    "webp_lossless": 28604,
+    "png": 34273
+   }
+  },
+  {
+   "file": "frankfurt_000001_040732_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 17720,
+    "webp_q50": 12174,
+    "webp_lossless": 5206,
+    "png": 6737
+   },
+   "edge": {
+    "webp_q80": 150866,
+    "webp_q50": 127454,
+    "webp_lossless": 33302,
+    "png": 39297
+   }
+  },
+  {
+   "file": "frankfurt_000001_041074_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 17236,
+    "webp_q50": 11850,
+    "webp_lossless": 5318,
+    "png": 6965
+   },
+   "edge": {
+    "webp_q80": 166672,
+    "webp_q50": 141110,
+    "webp_lossless": 37536,
+    "png": 44202
+   }
+  },
+  {
+   "file": "frankfurt_000001_041354_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13564,
+    "webp_q50": 9480,
+    "webp_lossless": 3990,
+    "png": 5641
+   },
+   "edge": {
+    "webp_q80": 156262,
+    "webp_q50": 131184,
+    "webp_lossless": 34992,
+    "png": 41691
+   }
+  },
+  {
+   "file": "frankfurt_000001_041517_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14256,
+    "webp_q50": 10132,
+    "webp_lossless": 3954,
+    "png": 5552
+   },
+   "edge": {
+    "webp_q80": 121716,
+    "webp_q50": 102666,
+    "webp_lossless": 27812,
+    "png": 33480
+   }
+  },
+  {
+   "file": "frankfurt_000001_041664_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14880,
+    "webp_q50": 10238,
+    "webp_lossless": 4044,
+    "png": 5987
+   },
+   "edge": {
+    "webp_q80": 225290,
+    "webp_q50": 188830,
+    "webp_lossless": 47942,
+    "png": 55773
+   }
+  },
+  {
+   "file": "frankfurt_000001_042098_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 15386,
+    "webp_q50": 10484,
+    "webp_lossless": 4498,
+    "png": 6149
+   },
+   "edge": {
+    "webp_q80": 211174,
+    "webp_q50": 176186,
+    "webp_lossless": 44506,
+    "png": 51359
+   }
+  },
+  {
+   "file": "frankfurt_000001_042384_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 17038,
+    "webp_q50": 11572,
+    "webp_lossless": 5038,
+    "png": 6804
+   },
+   "edge": {
+    "webp_q80": 172776,
+    "webp_q50": 146198,
+    "webp_lossless": 38880,
+    "png": 46267
+   }
+  },
+  {
+   "file": "frankfurt_000001_042733_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 18058,
+    "webp_q50": 12244,
+    "webp_lossless": 5848,
+    "png": 7694
+   },
+   "edge": {
+    "webp_q80": 163250,
+    "webp_q50": 137556,
+    "webp_lossless": 36996,
+    "png": 44283
+   }
+  },
+  {
+   "file": "frankfurt_000001_043395_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14076,
+    "webp_q50": 9888,
+    "webp_lossless": 4144,
+    "png": 5553
+   },
+   "edge": {
+    "webp_q80": 97524,
+    "webp_q50": 83574,
+    "webp_lossless": 22784,
+    "png": 28190
+   }
+  },
+  {
+   "file": "frankfurt_000001_043564_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13958,
+    "webp_q50": 9798,
+    "webp_lossless": 3960,
+    "png": 5349
+   },
+   "edge": {
+    "webp_q80": 157856,
+    "webp_q50": 133162,
+    "webp_lossless": 34644,
+    "png": 40391
+   }
+  },
+  {
+   "file": "frankfurt_000001_044227_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 15406,
+    "webp_q50": 10724,
+    "webp_lossless": 4452,
+    "png": 6099
+   },
+   "edge": {
+    "webp_q80": 63920,
+    "webp_q50": 54196,
+    "webp_lossless": 14806,
+    "png": 18623
+   }
+  },
+  {
+   "file": "frankfurt_000001_044413_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14176,
+    "webp_q50": 9982,
+    "webp_lossless": 3848,
+    "png": 5111
+   },
+   "edge": {
+    "webp_q80": 215174,
+    "webp_q50": 181072,
+    "webp_lossless": 46236,
+    "png": 53742
+   }
+  },
+  {
+   "file": "frankfurt_000001_044525_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 16062,
+    "webp_q50": 10918,
+    "webp_lossless": 5016,
+    "png": 6519
+   },
+   "edge": {
+    "webp_q80": 78974,
+    "webp_q50": 67514,
+    "webp_lossless": 18122,
+    "png": 22269
+   }
+  },
+  {
+   "file": "frankfurt_000001_044658_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14332,
+    "webp_q50": 9998,
+    "webp_lossless": 3998,
+    "png": 5369
+   },
+   "edge": {
+    "webp_q80": 81746,
+    "webp_q50": 69460,
+    "webp_lossless": 18638,
+    "png": 23178
+   }
+  },
+  {
+   "file": "frankfurt_000001_044787_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 15826,
+    "webp_q50": 10904,
+    "webp_lossless": 5042,
+    "png": 6458
+   },
+   "edge": {
+    "webp_q80": 227394,
+    "webp_q50": 190636,
+    "webp_lossless": 47150,
+    "png": 54969
+   }
+  },
+  {
+   "file": "frankfurt_000001_046126_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 12768,
+    "webp_q50": 8908,
+    "webp_lossless": 3884,
+    "png": 5232
+   },
+   "edge": {
+    "webp_q80": 76996,
+    "webp_q50": 66024,
+    "webp_lossless": 17386,
+    "png": 21528
+   }
+  },
+  {
+   "file": "frankfurt_000001_046272_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 20980,
+    "webp_q50": 14204,
+    "webp_lossless": 6228,
+    "png": 7964
+   },
+   "edge": {
+    "webp_q80": 258354,
+    "webp_q50": 217018,
+    "webp_lossless": 54292,
+    "png": 63051
+   }
+  },
+  {
+   "file": "frankfurt_000001_046504_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 16860,
+    "webp_q50": 11464,
+    "webp_lossless": 5068,
+    "png": 6522
+   },
+   "edge": {
+    "webp_q80": 136952,
+    "webp_q50": 114852,
+    "webp_lossless": 30328,
+    "png": 36702
+   }
+  },
+  {
+   "file": "frankfurt_000001_046779_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 16002,
+    "webp_q50": 11402,
+    "webp_lossless": 4456,
+    "png": 5931
+   },
+   "edge": {
+    "webp_q80": 189652,
+    "webp_q50": 158768,
+    "webp_lossless": 40978,
+    "png": 48030
+   }
+  },
+  {
+   "file": "frankfurt_000001_047178_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 16880,
+    "webp_q50": 11798,
+    "webp_lossless": 4864,
+    "png": 6696
+   },
+   "edge": {
+    "webp_q80": 214584,
+    "webp_q50": 179416,
+    "webp_lossless": 46576,
+    "png": 54834
+   }
+  },
+  {
+   "file": "frankfurt_000001_047552_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14626,
+    "webp_q50": 10148,
+    "webp_lossless": 4178,
+    "png": 5637
+   },
+   "edge": {
+    "webp_q80": 191404,
+    "webp_q50": 160284,
+    "webp_lossless": 40708,
+    "png": 48199
+   }
+  },
+  {
+   "file": "frankfurt_000001_048196_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13556,
+    "webp_q50": 9502,
+    "webp_lossless": 3782,
+    "png": 5239
+   },
+   "edge": {
+    "webp_q80": 111328,
+    "webp_q50": 95122,
+    "webp_lossless": 24888,
+    "png": 30608
+   }
+  },
+  {
+   "file": "frankfurt_000001_048355_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 16454,
+    "webp_q50": 11800,
+    "webp_lossless": 4458,
+    "png": 6074
+   },
+   "edge": {
+    "webp_q80": 125206,
+    "webp_q50": 105472,
+    "webp_lossless": 28050,
+    "png": 34745
+   }
+  },
+  {
+   "file": "frankfurt_000001_048654_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13858,
+    "webp_q50": 9702,
+    "webp_lossless": 4056,
+    "png": 5450
+   },
+   "edge": {
+    "webp_q80": 78668,
+    "webp_q50": 66964,
+    "webp_lossless": 17854,
+    "png": 22010
+   }
+  },
+  {
+   "file": "frankfurt_000001_049078_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 12376,
+    "webp_q50": 8554,
+    "webp_lossless": 3728,
+    "png": 4916
+   },
+   "edge": {
+    "webp_q80": 54620,
+    "webp_q50": 46616,
+    "webp_lossless": 12982,
+    "png": 16449
+   }
+  },
+  {
+   "file": "frankfurt_000001_049209_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13764,
+    "webp_q50": 9672,
+    "webp_lossless": 4294,
+    "png": 5542
+   },
+   "edge": {
+    "webp_q80": 55124,
+    "webp_q50": 47548,
+    "webp_lossless": 12930,
+    "png": 16367
+   }
+  },
+  {
+   "file": "frankfurt_000001_049298_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13708,
+    "webp_q50": 9690,
+    "webp_lossless": 3876,
+    "png": 5538
+   },
+   "edge": {
+    "webp_q80": 39536,
+    "webp_q50": 34406,
+    "webp_lossless": 9072,
+    "png": 12001
+   }
+  },
+  {
+   "file": "frankfurt_000001_049698_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 19552,
+    "webp_q50": 13592,
+    "webp_lossless": 6362,
+    "png": 8594
+   },
+   "edge": {
+    "webp_q80": 76822,
+    "webp_q50": 65252,
+    "webp_lossless": 18694,
+    "png": 23710
+   }
+  },
+  {
+   "file": "frankfurt_000001_049770_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 20520,
+    "webp_q50": 14088,
+    "webp_lossless": 6754,
+    "png": 8703
+   },
+   "edge": {
+    "webp_q80": 84548,
+    "webp_q50": 71738,
+    "webp_lossless": 20704,
+    "png": 26051
+   }
+  },
+  {
+   "file": "frankfurt_000001_050149_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 18854,
+    "webp_q50": 12990,
+    "webp_lossless": 5770,
+    "png": 7491
+   },
+   "edge": {
+    "webp_q80": 68174,
+    "webp_q50": 58104,
+    "webp_lossless": 15760,
+    "png": 19749
+   }
+  },
+  {
+   "file": "frankfurt_000001_050686_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 21418,
+    "webp_q50": 14836,
+    "webp_lossless": 5894,
+    "png": 8734
+   },
+   "edge": {
+    "webp_q80": 51886,
+    "webp_q50": 45090,
+    "webp_lossless": 11988,
+    "png": 15763
+   }
+  },
+  {
+   "file": "frankfurt_000001_051516_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 8544,
+    "webp_q50": 6284,
+    "webp_lossless": 2224,
+    "png": 3551
+   },
+   "edge": {
+    "webp_q80": 27272,
+    "webp_q50": 23856,
+    "webp_lossless": 6220,
+    "png": 7974
+   }
+  },
+  {
+   "file": "frankfurt_000001_051737_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 11618,
+    "webp_q50": 8128,
+    "webp_lossless": 3534,
+    "png": 5043
+   },
+   "edge": {
+    "webp_q80": 53310,
+    "webp_q50": 46160,
+    "webp_lossless": 12208,
+    "png": 14691
+   }
+  },
+  {
+   "file": "frankfurt_000001_051807_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14780,
+    "webp_q50": 10342,
+    "webp_lossless": 4432,
+    "png": 5923
+   },
+   "edge": {
+    "webp_q80": 107756,
+    "webp_q50": 91934,
+    "webp_lossless": 23930,
+    "png": 28181
+   }
+  },
+  {
+   "file": "frankfurt_000001_052120_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14280,
+    "webp_q50": 9678,
+    "webp_lossless": 4252,
+    "png": 5465
+   },
+   "edge": {
+    "webp_q80": 118568,
+    "webp_q50": 101098,
+    "webp_lossless": 26948,
+    "png": 31631
+   }
+  },
+  {
+   "file": "frankfurt_000001_052594_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14422,
+    "webp_q50": 9820,
+    "webp_lossless": 4544,
+    "png": 5953
+   },
+   "edge": {
+    "webp_q80": 100310,
+    "webp_q50": 85986,
+    "webp_lossless": 23268,
+    "png": 28335
+   }
+  },
+  {
+   "file": "frankfurt_000001_053102_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13306,
+    "webp_q50": 9126,
+    "webp_lossless": 4184,
+    "png": 5248
+   },
+   "edge": {
+    "webp_q80": 91726,
+    "webp_q50": 78870,
+    "webp_lossless": 20740,
+    "png": 25481
+   }
+  },
+  {
+   "file": "frankfurt_000001_054077_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 9862,
+    "webp_q50": 7214,
+    "webp_lossless": 2574,
+    "png": 4127
+   },
+   "edge": {
+    "webp_q80": 15800,
+    "webp_q50": 14024,
+    "webp_lossless": 3030,
+    "png": 4315
+   }
+  },
+  {
+   "file": "frankfurt_000001_054219_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 18916,
+    "webp_q50": 13126,
+    "webp_lossless": 5830,
+    "png": 7575
+   },
+   "edge": {
+    "webp_q80": 132380,
+    "webp_q50": 111790,
+    "webp_lossless": 29706,
+    "png": 36476
+   }
+  },
+  {
+   "file": "frankfurt_000001_054415_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 15702,
+    "webp_q50": 10882,
+    "webp_lossless": 4742,
+    "png": 6295
+   },
+   "edge": {
+    "webp_q80": 169494,
+    "webp_q50": 143162,
+    "webp_lossless": 36916,
+    "png": 43215
+   }
+  },
+  {
+   "file": "frankfurt_000001_054640_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 19586,
+    "webp_q50": 13498,
+    "webp_lossless": 5822,
+    "png": 7715
+   },
+   "edge": {
+    "webp_q80": 170390,
+    "webp_q50": 143898,
+    "webp_lossless": 37402,
+    "png": 43677
+   }
+  },
+  {
+   "file": "frankfurt_000001_054884_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 18682,
+    "webp_q50": 12840,
+    "webp_lossless": 5870,
+    "png": 7476
+   },
+   "edge": {
+    "webp_q80": 130720,
+    "webp_q50": 110162,
+    "webp_lossless": 28910,
+    "png": 35312
+   }
+  },
+  {
+   "file": "frankfurt_000001_055062_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 12910,
+    "webp_q50": 9070,
+    "webp_lossless": 4022,
+    "png": 5462
+   },
+   "edge": {
+    "webp_q80": 129372,
+    "webp_q50": 108866,
+    "webp_lossless": 28660,
+    "png": 34995
+   }
+  },
+  {
+   "file": "frankfurt_000001_055172_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13666,
+    "webp_q50": 9380,
+    "webp_lossless": 4356,
+    "png": 6416
+   },
+   "edge": {
+    "webp_q80": 94028,
+    "webp_q50": 79850,
+    "webp_lossless": 22490,
+    "png": 27754
+   }
+  },
+  {
+   "file": "frankfurt_000001_055306_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14124,
+    "webp_q50": 9804,
+    "webp_lossless": 4446,
+    "png": 6072
+   },
+   "edge": {
+    "webp_q80": 51470,
+    "webp_q50": 44638,
+    "webp_lossless": 12096,
+    "png": 15580
+   }
+  },
+  {
+   "file": "frankfurt_000001_055387_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 12414,
+    "webp_q50": 8684,
+    "webp_lossless": 4028,
+    "png": 5576
+   },
+   "edge": {
+    "webp_q80": 39548,
+    "webp_q50": 33804,
+    "webp_lossless": 9638,
+    "png": 12651
+   }
+  },
+  {
+   "file": "frankfurt_000001_055538_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14442,
+    "webp_q50": 10068,
+    "webp_lossless": 4540,
+    "png": 6565
+   },
+   "edge": {
+    "webp_q80": 35210,
+    "webp_q50": 30232,
+    "webp_lossless": 8358,
+    "png": 11276
+   }
+  },
+  {
+   "file": "frankfurt_000001_055603_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 17088,
+    "webp_q50": 12058,
+    "webp_lossless": 5606,
+    "png": 7519
+   },
+   "edge": {
+    "webp_q80": 50552,
+    "webp_q50": 43710,
+    "webp_lossless": 11972,
+    "png": 15820
+   }
+  },
+  {
+   "file": "frankfurt_000001_055709_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 17224,
+    "webp_q50": 11962,
+    "webp_lossless": 5760,
+    "png": 7722
+   },
+   "edge": {
+    "webp_q80": 36458,
+    "webp_q50": 31320,
+    "webp_lossless": 8592,
+    "png": 11578
+   }
+  },
+  {
+   "file": "frankfurt_000001_056580_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 12808,
+    "webp_q50": 9258,
+    "webp_lossless": 4022,
+    "png": 5668
+   },
+   "edge": {
+    "webp_q80": 29134,
+    "webp_q50": 25494,
+    "webp_lossless": 6506,
+    "png": 8804
+   }
+  },
+  {
+   "file": "frankfurt_000001_057181_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14848,
+    "webp_q50": 10296,
+    "webp_lossless": 4850,
+    "png": 6706
+   },
+   "edge": {
+    "webp_q80": 41864,
+    "webp_q50": 35938,
+    "webp_lossless": 9824,
+    "png": 13113
+   }
+  },
+  {
+   "file": "frankfurt_000001_057478_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13960,
+    "webp_q50": 9606,
+    "webp_lossless": 4626,
+    "png": 6086
+   },
+   "edge": {
+    "webp_q80": 38234,
+    "webp_q50": 32930,
+    "webp_lossless": 8532,
+    "png": 11167
+   }
+  },
+  {
+   "file": "frankfurt_000001_057954_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 11252,
+    "webp_q50": 8148,
+    "webp_lossless": 3584,
+    "png": 5214
+   },
+   "edge": {
+    "webp_q80": 42586,
+    "webp_q50": 36342,
+    "webp_lossless": 9976,
+    "png": 12834
+   }
+  },
+  {
+   "file": "frankfurt_000001_058057_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 11966,
+    "webp_q50": 8268,
+    "webp_lossless": 3598,
+    "png": 4828
+   },
+   "edge": {
+    "webp_q80": 116176,
+    "webp_q50": 98914,
+    "webp_lossless": 26506,
+    "png": 32906
+   }
+  },
+  {
+   "file": "frankfurt_000001_058176_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 15076,
+    "webp_q50": 10176,
+    "webp_lossless": 4960,
+    "png": 6235
+   },
+   "edge": {
+    "webp_q80": 110458,
+    "webp_q50": 93824,
+    "webp_lossless": 25462,
+    "png": 30929
+   }
+  },
+  {
+   "file": "frankfurt_000001_058504_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 12740,
+    "webp_q50": 8862,
+    "webp_lossless": 3790,
+    "png": 5001
+   },
+   "edge": {
+    "webp_q80": 119518,
+    "webp_q50": 101378,
+    "webp_lossless": 27092,
+    "png": 32568
+   }
+  },
+  {
+   "file": "frankfurt_000001_058914_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14024,
+    "webp_q50": 9680,
+    "webp_lossless": 4732,
+    "png": 6421
+   },
+   "edge": {
+    "webp_q80": 97408,
+    "webp_q50": 83338,
+    "webp_lossless": 22388,
+    "png": 26733
+   }
+  },
+  {
+   "file": "frankfurt_000001_059119_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 15164,
+    "webp_q50": 10318,
+    "webp_lossless": 5036,
+    "png": 6863
+   },
+   "edge": {
+    "webp_q80": 110606,
+    "webp_q50": 94420,
+    "webp_lossless": 24944,
+    "png": 29602
+   }
+  },
+  {
+   "file": "frankfurt_000001_059642_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14510,
+    "webp_q50": 10074,
+    "webp_lossless": 4104,
+    "png": 5875
+   },
+   "edge": {
+    "webp_q80": 93232,
+    "webp_q50": 79854,
+    "webp_lossless": 20144,
+    "png": 24306
+   }
+  },
+  {
+   "file": "frankfurt_000001_059789_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 15032,
+    "webp_q50": 10448,
+    "webp_lossless": 4376,
+    "png": 5965
+   },
+   "edge": {
+    "webp_q80": 91804,
+    "webp_q50": 78820,
+    "webp_lossless": 20792,
+    "png": 25181
+   }
+  },
+  {
+   "file": "frankfurt_000001_060135_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 16248,
+    "webp_q50": 11140,
+    "webp_lossless": 5058,
+    "png": 6504
+   },
+   "edge": {
+    "webp_q80": 56964,
+    "webp_q50": 48626,
+    "webp_lossless": 13322,
+    "png": 17140
+   }
+  },
+  {
+   "file": "frankfurt_000001_060422_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 12222,
+    "webp_q50": 8404,
+    "webp_lossless": 3698,
+    "png": 5113
+   },
+   "edge": {
+    "webp_q80": 51898,
+    "webp_q50": 44662,
+    "webp_lossless": 11862,
+    "png": 15566
+   }
+  },
+  {
+   "file": "frankfurt_000001_060545_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 12270,
+    "webp_q50": 8632,
+    "webp_lossless": 3690,
+    "png": 4681
+   },
+   "edge": {
+    "webp_q80": 51432,
+    "webp_q50": 44364,
+    "webp_lossless": 11654,
+    "png": 15036
+   }
+  },
+  {
+   "file": "frankfurt_000001_060906_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 16662,
+    "webp_q50": 11784,
+    "webp_lossless": 5278,
+    "png": 6865
+   },
+   "edge": {
+    "webp_q80": 69092,
+    "webp_q50": 58944,
+    "webp_lossless": 16772,
+    "png": 21431
+   }
+  },
+  {
+   "file": "frankfurt_000001_061682_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13232,
+    "webp_q50": 9306,
+    "webp_lossless": 4060,
+    "png": 6086
+   },
+   "edge": {
+    "webp_q80": 50346,
+    "webp_q50": 43244,
+    "webp_lossless": 11750,
+    "png": 15248
+   }
+  },
+  {
+   "file": "frankfurt_000001_061763_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 15128,
+    "webp_q50": 10652,
+    "webp_lossless": 4494,
+    "png": 6345
+   },
+   "edge": {
+    "webp_q80": 50524,
+    "webp_q50": 43466,
+    "webp_lossless": 12018,
+    "png": 15454
+   }
+  },
+  {
+   "file": "frankfurt_000001_062016_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13892,
+    "webp_q50": 9724,
+    "webp_lossless": 4266,
+    "png": 5646
+   },
+   "edge": {
+    "webp_q80": 36182,
+    "webp_q50": 31108,
+    "webp_lossless": 8170,
+    "png": 10748
+   }
+  },
+  {
+   "file": "frankfurt_000001_062250_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 15036,
+    "webp_q50": 10672,
+    "webp_lossless": 4218,
+    "png": 5530
+   },
+   "edge": {
+    "webp_q80": 52142,
+    "webp_q50": 44756,
+    "webp_lossless": 12468,
+    "png": 16235
+   }
+  },
+  {
+   "file": "frankfurt_000001_062396_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13990,
+    "webp_q50": 9842,
+    "webp_lossless": 4038,
+    "png": 5448
+   },
+   "edge": {
+    "webp_q80": 72756,
+    "webp_q50": 62554,
+    "webp_lossless": 16976,
+    "png": 21431
+   }
+  },
+  {
+   "file": "frankfurt_000001_062509_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 9714,
+    "webp_q50": 6962,
+    "webp_lossless": 2626,
+    "png": 3815
+   },
+   "edge": {
+    "webp_q80": 75970,
+    "webp_q50": 65102,
+    "webp_lossless": 17740,
+    "png": 22444
+   }
+  },
+  {
+   "file": "frankfurt_000001_062653_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 16170,
+    "webp_q50": 11528,
+    "webp_lossless": 4438,
+    "png": 5911
+   },
+   "edge": {
+    "webp_q80": 70658,
+    "webp_q50": 60532,
+    "webp_lossless": 16882,
+    "png": 21535
+   }
+  },
+  {
+   "file": "frankfurt_000001_062793_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 16606,
+    "webp_q50": 11500,
+    "webp_lossless": 4858,
+    "png": 6570
+   },
+   "edge": {
+    "webp_q80": 60470,
+    "webp_q50": 51582,
+    "webp_lossless": 13748,
+    "png": 17706
+   }
+  },
+  {
+   "file": "frankfurt_000001_063045_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 19632,
+    "webp_q50": 13810,
+    "webp_lossless": 5852,
+    "png": 7737
+   },
+   "edge": {
+    "webp_q80": 69316,
+    "webp_q50": 59166,
+    "webp_lossless": 16018,
+    "png": 20087
+   }
+  },
+  {
+   "file": "frankfurt_000001_064130_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 20392,
+    "webp_q50": 14204,
+    "webp_lossless": 6148,
+    "png": 8130
+   },
+   "edge": {
+    "webp_q80": 144388,
+    "webp_q50": 122632,
+    "webp_lossless": 31812,
+    "png": 38326
+   }
+  },
+  {
+   "file": "frankfurt_000001_064305_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14318,
+    "webp_q50": 9914,
+    "webp_lossless": 4378,
+    "png": 5461
+   },
+   "edge": {
+    "webp_q80": 70590,
+    "webp_q50": 60136,
+    "webp_lossless": 16206,
+    "png": 20736
+   }
+  },
+  {
+   "file": "frankfurt_000001_064651_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 15084,
+    "webp_q50": 10308,
+    "webp_lossless": 4326,
+    "png": 5880
+   },
+   "edge": {
+    "webp_q80": 148932,
+    "webp_q50": 124902,
+    "webp_lossless": 33616,
+    "png": 40227
+   }
+  },
+  {
+   "file": "frankfurt_000001_064798_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13412,
+    "webp_q50": 9494,
+    "webp_lossless": 3894,
+    "png": 5206
+   },
+   "edge": {
+    "webp_q80": 89274,
+    "webp_q50": 76184,
+    "webp_lossless": 20784,
+    "png": 25255
+   }
+  },
+  {
+   "file": "frankfurt_000001_064925_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 12334,
+    "webp_q50": 8606,
+    "webp_lossless": 3670,
+    "png": 5083
+   },
+   "edge": {
+    "webp_q80": 98728,
+    "webp_q50": 84382,
+    "webp_lossless": 22522,
+    "png": 27324
+   }
+  },
+  {
+   "file": "frankfurt_000001_065160_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 15730,
+    "webp_q50": 10880,
+    "webp_lossless": 4778,
+    "png": 6428
+   },
+   "edge": {
+    "webp_q80": 152126,
+    "webp_q50": 127992,
+    "webp_lossless": 33776,
+    "png": 39804
+   }
+  },
+  {
+   "file": "frankfurt_000001_065617_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13374,
+    "webp_q50": 9416,
+    "webp_lossless": 3760,
+    "png": 4932
+   },
+   "edge": {
+    "webp_q80": 143134,
+    "webp_q50": 121090,
+    "webp_lossless": 31200,
+    "png": 38113
+   }
+  },
+  {
+   "file": "frankfurt_000001_065850_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 17840,
+    "webp_q50": 12238,
+    "webp_lossless": 5304,
+    "png": 7011
+   },
+   "edge": {
+    "webp_q80": 228238,
+    "webp_q50": 191374,
+    "webp_lossless": 48530,
+    "png": 56226
+   }
+  },
+  {
+   "file": "frankfurt_000001_066092_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 22882,
+    "webp_q50": 15764,
+    "webp_lossless": 6810,
+    "png": 8415
+   },
+   "edge": {
+    "webp_q80": 157754,
+    "webp_q50": 134232,
+    "webp_lossless": 35658,
+    "png": 42465
+   }
+  },
+  {
+   "file": "frankfurt_000001_066438_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14428,
+    "webp_q50": 10158,
+    "webp_lossless": 4286,
+    "png": 5803
+   },
+   "edge": {
+    "webp_q80": 38890,
+    "webp_q50": 34150,
+    "webp_lossless": 8946,
+    "png": 11751
+   }
+  },
+  {
+   "file": "frankfurt_000001_066574_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 26022,
+    "webp_q50": 18198,
+    "webp_lossless": 7382,
+    "png": 9687
+   },
+   "edge": {
+    "webp_q80": 46266,
+    "webp_q50": 40080,
+    "webp_lossless": 10958,
+    "png": 14346
+   }
+  },
+  {
+   "file": "frankfurt_000001_066832_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 18428,
+    "webp_q50": 13146,
+    "webp_lossless": 5482,
+    "png": 6938
+   },
+   "edge": {
+    "webp_q80": 143618,
+    "webp_q50": 122060,
+    "webp_lossless": 32256,
+    "png": 38188
+   }
+  },
+  {
+   "file": "frankfurt_000001_067092_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 16124,
+    "webp_q50": 11086,
+    "webp_lossless": 4724,
+    "png": 6213
+   },
+   "edge": {
+    "webp_q80": 215078,
+    "webp_q50": 180934,
+    "webp_lossless": 47314,
+    "png": 55013
+   }
+  },
+  {
+   "file": "frankfurt_000001_067178_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14964,
+    "webp_q50": 10170,
+    "webp_lossless": 4404,
+    "png": 5949
+   },
+   "edge": {
+    "webp_q80": 176698,
+    "webp_q50": 148778,
+    "webp_lossless": 39358,
+    "png": 45762
+   }
+  },
+  {
+   "file": "frankfurt_000001_067295_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 16484,
+    "webp_q50": 11392,
+    "webp_lossless": 5340,
+    "png": 7190
+   },
+   "edge": {
+    "webp_q80": 188118,
+    "webp_q50": 159506,
+    "webp_lossless": 42156,
+    "png": 47883
+   }
+  },
+  {
+   "file": "frankfurt_000001_067474_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 12482,
+    "webp_q50": 8786,
+    "webp_lossless": 3738,
+    "png": 5141
+   },
+   "edge": {
+    "webp_q80": 124768,
+    "webp_q50": 105832,
+    "webp_lossless": 27668,
+    "png": 33236
+   }
+  },
+  {
+   "file": "frankfurt_000001_067735_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 16798,
+    "webp_q50": 11520,
+    "webp_lossless": 5550,
+    "png": 6727
+   },
+   "edge": {
+    "webp_q80": 129840,
+    "webp_q50": 109754,
+    "webp_lossless": 28956,
+    "png": 35247
+   }
+  },
+  {
+   "file": "frankfurt_000001_068063_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 16566,
+    "webp_q50": 11528,
+    "webp_lossless": 4848,
+    "png": 6221
+   },
+   "edge": {
+    "webp_q80": 129454,
+    "webp_q50": 109936,
+    "webp_lossless": 29446,
+    "png": 35510
+   }
+  },
+  {
+   "file": "frankfurt_000001_068208_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 18840,
+    "webp_q50": 13050,
+    "webp_lossless": 5676,
+    "png": 7360
+   },
+   "edge": {
+    "webp_q80": 113860,
+    "webp_q50": 96958,
+    "webp_lossless": 26330,
+    "png": 31209
+   }
+  },
+  {
+   "file": "frankfurt_000001_068682_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 17014,
+    "webp_q50": 11394,
+    "webp_lossless": 5470,
+    "png": 7258
+   },
+   "edge": {
+    "webp_q80": 86028,
+    "webp_q50": 72722,
+    "webp_lossless": 19896,
+    "png": 24698
+   }
+  },
+  {
+   "file": "frankfurt_000001_068772_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13854,
+    "webp_q50": 9402,
+    "webp_lossless": 4044,
+    "png": 5256
+   },
+   "edge": {
+    "webp_q80": 75102,
+    "webp_q50": 64000,
+    "webp_lossless": 17516,
+    "png": 21856
+   }
+  },
+  {
+   "file": "frankfurt_000001_069633_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13166,
+    "webp_q50": 9270,
+    "webp_lossless": 4046,
+    "png": 5457
+   },
+   "edge": {
+    "webp_q80": 98978,
+    "webp_q50": 84090,
+    "webp_lossless": 22980,
+    "png": 27297
+   }
+  },
+  {
+   "file": "frankfurt_000001_070099_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 15566,
+    "webp_q50": 10820,
+    "webp_lossless": 4608,
+    "png": 6237
+   },
+   "edge": {
+    "webp_q80": 118114,
+    "webp_q50": 100206,
+    "webp_lossless": 27328,
+    "png": 33404
+   }
+  },
+  {
+   "file": "frankfurt_000001_071288_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14944,
+    "webp_q50": 10538,
+    "webp_lossless": 4110,
+    "png": 5379
+   },
+   "edge": {
+    "webp_q80": 133432,
+    "webp_q50": 112634,
+    "webp_lossless": 30094,
+    "png": 36523
+   }
+  },
+  {
+   "file": "frankfurt_000001_071781_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 16764,
+    "webp_q50": 11956,
+    "webp_lossless": 4636,
+    "png": 6138
+   },
+   "edge": {
+    "webp_q80": 47002,
+    "webp_q50": 40496,
+    "webp_lossless": 10764,
+    "png": 14173
+   }
+  },
+  {
+   "file": "frankfurt_000001_072155_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 15826,
+    "webp_q50": 11152,
+    "webp_lossless": 4576,
+    "png": 6213
+   },
+   "edge": {
+    "webp_q80": 63790,
+    "webp_q50": 54160,
+    "webp_lossless": 14832,
+    "png": 18641
+   }
+  },
+  {
+   "file": "frankfurt_000001_072295_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 17462,
+    "webp_q50": 12340,
+    "webp_lossless": 4908,
+    "png": 6233
+   },
+   "edge": {
+    "webp_q80": 49968,
+    "webp_q50": 42980,
+    "webp_lossless": 11636,
+    "png": 14723
+   }
+  },
+  {
+   "file": "frankfurt_000001_073088_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 18162,
+    "webp_q50": 12890,
+    "webp_lossless": 5446,
+    "png": 7580
+   },
+   "edge": {
+    "webp_q80": 92038,
+    "webp_q50": 78710,
+    "webp_lossless": 21680,
+    "png": 26467
+   }
+  },
+  {
+   "file": "frankfurt_000001_073243_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 16114,
+    "webp_q50": 11344,
+    "webp_lossless": 4214,
+    "png": 5507
+   },
+   "edge": {
+    "webp_q80": 205366,
+    "webp_q50": 171670,
+    "webp_lossless": 43734,
+    "png": 51508
+   }
+  },
+  {
+   "file": "frankfurt_000001_073464_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 15262,
+    "webp_q50": 10742,
+    "webp_lossless": 4426,
+    "png": 5948
+   },
+   "edge": {
+    "webp_q80": 196184,
+    "webp_q50": 164834,
+    "webp_lossless": 42698,
+    "png": 49511
+   }
+  },
+  {
+   "file": "frankfurt_000001_073911_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14872,
+    "webp_q50": 10418,
+    "webp_lossless": 4278,
+    "png": 5459
+   },
+   "edge": {
+    "webp_q80": 128974,
+    "webp_q50": 109078,
+    "webp_lossless": 28466,
+    "png": 34747
+   }
+  },
+  {
+   "file": "frankfurt_000001_075296_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14418,
+    "webp_q50": 10234,
+    "webp_lossless": 4108,
+    "png": 5561
+   },
+   "edge": {
+    "webp_q80": 98366,
+    "webp_q50": 83128,
+    "webp_lossless": 22546,
+    "png": 27432
+   }
+  },
+  {
+   "file": "frankfurt_000001_075984_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 17884,
+    "webp_q50": 12534,
+    "webp_lossless": 5226,
+    "png": 6690
+   },
+   "edge": {
+    "webp_q80": 116898,
+    "webp_q50": 98810,
+    "webp_lossless": 26500,
+    "png": 32018
+   }
+  },
+  {
+   "file": "frankfurt_000001_076502_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 15934,
+    "webp_q50": 11060,
+    "webp_lossless": 5078,
+    "png": 6981
+   },
+   "edge": {
+    "webp_q80": 148296,
+    "webp_q50": 124618,
+    "webp_lossless": 33186,
+    "png": 39372
+   }
+  },
+  {
+   "file": "frankfurt_000001_077092_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14714,
+    "webp_q50": 10156,
+    "webp_lossless": 4244,
+    "png": 5731
+   },
+   "edge": {
+    "webp_q80": 195160,
+    "webp_q50": 163802,
+    "webp_lossless": 42660,
+    "png": 50432
+   }
+  },
+  {
+   "file": "frankfurt_000001_077233_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14120,
+    "webp_q50": 9918,
+    "webp_lossless": 4216,
+    "png": 5530
+   },
+   "edge": {
+    "webp_q80": 147700,
+    "webp_q50": 124010,
+    "webp_lossless": 32482,
+    "png": 39623
+   }
+  },
+  {
+   "file": "frankfurt_000001_077434_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14598,
+    "webp_q50": 10136,
+    "webp_lossless": 4732,
+    "png": 6572
+   },
+   "edge": {
+    "webp_q80": 151780,
+    "webp_q50": 128942,
+    "webp_lossless": 33788,
+    "png": 40712
+   }
+  },
+  {
+   "file": "frankfurt_000001_078803_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 17272,
+    "webp_q50": 11632,
+    "webp_lossless": 5700,
+    "png": 7318
+   },
+   "edge": {
+    "webp_q80": 108564,
+    "webp_q50": 92162,
+    "webp_lossless": 24558,
+    "png": 30261
+   }
+  },
+  {
+   "file": "frankfurt_000001_079206_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 18098,
+    "webp_q50": 12530,
+    "webp_lossless": 5566,
+    "png": 7378
+   },
+   "edge": {
+    "webp_q80": 127834,
+    "webp_q50": 108098,
+    "webp_lossless": 28480,
+    "png": 34439
+   }
+  },
+  {
+   "file": "frankfurt_000001_080091_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14354,
+    "webp_q50": 10024,
+    "webp_lossless": 4134,
+    "png": 5788
+   },
+   "edge": {
+    "webp_q80": 147924,
+    "webp_q50": 126626,
+    "webp_lossless": 32924,
+    "png": 39111
+   }
+  },
+  {
+   "file": "frankfurt_000001_080391_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 17182,
+    "webp_q50": 11770,
+    "webp_lossless": 5496,
+    "png": 6736
+   },
+   "edge": {
+    "webp_q80": 142766,
+    "webp_q50": 119894,
+    "webp_lossless": 31112,
+    "png": 37396
+   }
+  },
+  {
+   "file": "frankfurt_000001_080830_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14446,
+    "webp_q50": 9952,
+    "webp_lossless": 4364,
+    "png": 5646
+   },
+   "edge": {
+    "webp_q80": 172206,
+    "webp_q50": 144024,
+    "webp_lossless": 37324,
+    "png": 43532
+   }
+  },
+  {
+   "file": "frankfurt_000001_082087_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 16946,
+    "webp_q50": 11742,
+    "webp_lossless": 5228,
+    "png": 6704
+   },
+   "edge": {
+    "webp_q80": 55734,
+    "webp_q50": 47638,
+    "webp_lossless": 13150,
+    "png": 17443
+   }
+  },
+  {
+   "file": "frankfurt_000001_082466_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14228,
+    "webp_q50": 9782,
+    "webp_lossless": 4280,
+    "png": 6022
+   },
+   "edge": {
+    "webp_q80": 100418,
+    "webp_q50": 85496,
+    "webp_lossless": 23062,
+    "png": 28268
+   }
+  },
+  {
+   "file": "frankfurt_000001_083029_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 18288,
+    "webp_q50": 12848,
+    "webp_lossless": 5636,
+    "png": 7078
+   },
+   "edge": {
+    "webp_q80": 45046,
+    "webp_q50": 38602,
+    "webp_lossless": 11222,
+    "png": 14629
+   }
+  },
+  {
+   "file": "frankfurt_000001_083199_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 16984,
+    "webp_q50": 11862,
+    "webp_lossless": 5436,
+    "png": 6938
+   },
+   "edge": {
+    "webp_q80": 51542,
+    "webp_q50": 44324,
+    "webp_lossless": 12688,
+    "png": 16346
+   }
+  },
+  {
+   "file": "frankfurt_000001_083852_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 17348,
+    "webp_q50": 12160,
+    "webp_lossless": 5426,
+    "png": 6693
+   },
+   "edge": {
+    "webp_q80": 104602,
+    "webp_q50": 89432,
+    "webp_lossless": 23978,
+    "png": 29083
+   }
+  },
+  {
+   "file": "lindau_000000_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13064,
+    "webp_q50": 9446,
+    "webp_lossless": 3772,
+    "png": 5184
+   },
+   "edge": {
+    "webp_q80": 74320,
+    "webp_q50": 63080,
+    "webp_lossless": 17604,
+    "png": 22059
+   }
+  },
+  {
+   "file": "lindau_000001_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 8728,
+    "webp_q50": 6488,
+    "webp_lossless": 2508,
+    "png": 3977
+   },
+   "edge": {
+    "webp_q80": 74070,
+    "webp_q50": 62526,
+    "webp_lossless": 17694,
+    "png": 21990
+   }
+  },
+  {
+   "file": "lindau_000002_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 11058,
+    "webp_q50": 8084,
+    "webp_lossless": 3156,
+    "png": 4368
+   },
+   "edge": {
+    "webp_q80": 66890,
+    "webp_q50": 56734,
+    "webp_lossless": 15904,
+    "png": 19917
+   }
+  },
+  {
+   "file": "lindau_000003_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 10140,
+    "webp_q50": 7272,
+    "webp_lossless": 3024,
+    "png": 4361
+   },
+   "edge": {
+    "webp_q80": 64004,
+    "webp_q50": 54808,
+    "webp_lossless": 15306,
+    "png": 19470
+   }
+  },
+  {
+   "file": "lindau_000004_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13818,
+    "webp_q50": 9622,
+    "webp_lossless": 3890,
+    "png": 5357
+   },
+   "edge": {
+    "webp_q80": 76504,
+    "webp_q50": 64670,
+    "webp_lossless": 17794,
+    "png": 22499
+   }
+  },
+  {
+   "file": "lindau_000005_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13642,
+    "webp_q50": 9608,
+    "webp_lossless": 4196,
+    "png": 5534
+   },
+   "edge": {
+    "webp_q80": 55720,
+    "webp_q50": 47528,
+    "webp_lossless": 13500,
+    "png": 17618
+   }
+  },
+  {
+   "file": "lindau_000006_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13886,
+    "webp_q50": 9658,
+    "webp_lossless": 4316,
+    "png": 5713
+   },
+   "edge": {
+    "webp_q80": 49908,
+    "webp_q50": 42396,
+    "webp_lossless": 12130,
+    "png": 15781
+   }
+  },
+  {
+   "file": "lindau_000007_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 15794,
+    "webp_q50": 11436,
+    "webp_lossless": 4518,
+    "png": 6296
+   },
+   "edge": {
+    "webp_q80": 61174,
+    "webp_q50": 52116,
+    "webp_lossless": 14332,
+    "png": 18541
+   }
+  },
+  {
+   "file": "lindau_000008_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 10580,
+    "webp_q50": 7518,
+    "webp_lossless": 3084,
+    "png": 4357
+   },
+   "edge": {
+    "webp_q80": 46746,
+    "webp_q50": 40172,
+    "webp_lossless": 11004,
+    "png": 14277
+   }
+  },
+  {
+   "file": "lindau_000009_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 18216,
+    "webp_q50": 12632,
+    "webp_lossless": 5694,
+    "png": 7781
+   },
+   "edge": {
+    "webp_q80": 54120,
+    "webp_q50": 45956,
+    "webp_lossless": 12150,
+    "png": 15586
+   }
+  },
+  {
+   "file": "lindau_000010_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13278,
+    "webp_q50": 9344,
+    "webp_lossless": 3988,
+    "png": 5427
+   },
+   "edge": {
+    "webp_q80": 37486,
+    "webp_q50": 32144,
+    "webp_lossless": 8502,
+    "png": 11388
+   }
+  },
+  {
+   "file": "lindau_000011_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14808,
+    "webp_q50": 10432,
+    "webp_lossless": 4532,
+    "png": 6253
+   },
+   "edge": {
+    "webp_q80": 25498,
+    "webp_q50": 22024,
+    "webp_lossless": 5686,
+    "png": 7691
+   }
+  },
+  {
+   "file": "lindau_000012_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 11666,
+    "webp_q50": 7980,
+    "webp_lossless": 3706,
+    "png": 5347
+   },
+   "edge": {
+    "webp_q80": 69768,
+    "webp_q50": 58690,
+    "webp_lossless": 14560,
+    "png": 18441
+   }
+  },
+  {
+   "file": "lindau_000013_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13070,
+    "webp_q50": 9114,
+    "webp_lossless": 3650,
+    "png": 5294
+   },
+   "edge": {
+    "webp_q80": 82218,
+    "webp_q50": 69910,
+    "webp_lossless": 19792,
+    "png": 24443
+   }
+  },
+  {
+   "file": "lindau_000014_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13522,
+    "webp_q50": 9866,
+    "webp_lossless": 3600,
+    "png": 4963
+   },
+   "edge": {
+    "webp_q80": 132058,
+    "webp_q50": 110888,
+    "webp_lossless": 29766,
+    "png": 35935
+   }
+  },
+  {
+   "file": "lindau_000015_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 10564,
+    "webp_q50": 7514,
+    "webp_lossless": 3016,
+    "png": 4286
+   },
+   "edge": {
+    "webp_q80": 115950,
+    "webp_q50": 97366,
+    "webp_lossless": 24958,
+    "png": 30094
+   }
+  },
+  {
+   "file": "lindau_000016_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 12064,
+    "webp_q50": 8386,
+    "webp_lossless": 3468,
+    "png": 4814
+   },
+   "edge": {
+    "webp_q80": 168422,
+    "webp_q50": 139382,
+    "webp_lossless": 35470,
+    "png": 41232
+   }
+  },
+  {
+   "file": "lindau_000017_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 11434,
+    "webp_q50": 7940,
+    "webp_lossless": 3310,
+    "png": 4837
+   },
+   "edge": {
+    "webp_q80": 54860,
+    "webp_q50": 47072,
+    "webp_lossless": 12828,
+    "png": 16322
+   }
+  },
+  {
+   "file": "lindau_000018_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 10536,
+    "webp_q50": 7514,
+    "webp_lossless": 3102,
+    "png": 4532
+   },
+   "edge": {
+    "webp_q80": 41100,
+    "webp_q50": 35756,
+    "webp_lossless": 9540,
+    "png": 13110
+   }
+  },
+  {
+   "file": "lindau_000019_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 9200,
+    "webp_q50": 6664,
+    "webp_lossless": 2136,
+    "png": 3416
+   },
+   "edge": {
+    "webp_q80": 22656,
+    "webp_q50": 19804,
+    "webp_lossless": 5062,
+    "png": 7414
+   }
+  },
+  {
+   "file": "lindau_000020_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 8842,
+    "webp_q50": 6202,
+    "webp_lossless": 2330,
+    "png": 3580
+   },
+   "edge": {
+    "webp_q80": 25228,
+    "webp_q50": 21752,
+    "webp_lossless": 5842,
+    "png": 8442
+   }
+  },
+  {
+   "file": "lindau_000021_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 8674,
+    "webp_q50": 6228,
+    "webp_lossless": 2346,
+    "png": 3565
+   },
+   "edge": {
+    "webp_q80": 37028,
+    "webp_q50": 31924,
+    "webp_lossless": 8956,
+    "png": 11698
+   }
+  },
+  {
+   "file": "lindau_000022_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 10728,
+    "webp_q50": 7446,
+    "webp_lossless": 3322,
+    "png": 4890
+   },
+   "edge": {
+    "webp_q80": 34618,
+    "webp_q50": 29960,
+    "webp_lossless": 8044,
+    "png": 11125
+   }
+  },
+  {
+   "file": "lindau_000023_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 16552,
+    "webp_q50": 11360,
+    "webp_lossless": 5272,
+    "png": 6906
+   },
+   "edge": {
+    "webp_q80": 36392,
+    "webp_q50": 31298,
+    "webp_lossless": 8424,
+    "png": 11344
+   }
+  },
+  {
+   "file": "lindau_000024_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14568,
+    "webp_q50": 10348,
+    "webp_lossless": 5048,
+    "png": 7042
+   },
+   "edge": {
+    "webp_q80": 43676,
+    "webp_q50": 37368,
+    "webp_lossless": 9876,
+    "png": 13324
+   }
+  },
+  {
+   "file": "lindau_000025_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 9510,
+    "webp_q50": 6528,
+    "webp_lossless": 3032,
+    "png": 4629
+   },
+   "edge": {
+    "webp_q80": 82140,
+    "webp_q50": 69120,
+    "webp_lossless": 18000,
+    "png": 22309
+   }
+  },
+  {
+   "file": "lindau_000026_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 11770,
+    "webp_q50": 8336,
+    "webp_lossless": 3280,
+    "png": 4749
+   },
+   "edge": {
+    "webp_q80": 43448,
+    "webp_q50": 37176,
+    "webp_lossless": 10308,
+    "png": 13350
+   }
+  },
+  {
+   "file": "lindau_000027_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 10134,
+    "webp_q50": 7390,
+    "webp_lossless": 2654,
+    "png": 3819
+   },
+   "edge": {
+    "webp_q80": 40830,
+    "webp_q50": 34792,
+    "webp_lossless": 9524,
+    "png": 12657
+   }
+  },
+  {
+   "file": "lindau_000028_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 7750,
+    "webp_q50": 5560,
+    "webp_lossless": 2096,
+    "png": 2945
+   },
+   "edge": {
+    "webp_q80": 115538,
+    "webp_q50": 96958,
+    "webp_lossless": 23356,
+    "png": 27231
+   }
+  },
+  {
+   "file": "lindau_000029_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14216,
+    "webp_q50": 10068,
+    "webp_lossless": 4358,
+    "png": 5804
+   },
+   "edge": {
+    "webp_q80": 84740,
+    "webp_q50": 71870,
+    "webp_lossless": 18256,
+    "png": 23047
+   }
+  },
+  {
+   "file": "lindau_000030_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 17390,
+    "webp_q50": 11014,
+    "webp_lossless": 5792,
+    "png": 7357
+   },
+   "edge": {
+    "webp_q80": 70818,
+    "webp_q50": 60170,
+    "webp_lossless": 16296,
+    "png": 20841
+   }
+  },
+  {
+   "file": "lindau_000031_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 10958,
+    "webp_q50": 7584,
+    "webp_lossless": 3526,
+    "png": 4635
+   },
+   "edge": {
+    "webp_q80": 61336,
+    "webp_q50": 52606,
+    "webp_lossless": 14278,
+    "png": 18076
+   }
+  },
+  {
+   "file": "lindau_000032_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 6656,
+    "webp_q50": 4704,
+    "webp_lossless": 1798,
+    "png": 2656
+   },
+   "edge": {
+    "webp_q80": 63370,
+    "webp_q50": 54652,
+    "webp_lossless": 14272,
+    "png": 17640
+   }
+  },
+  {
+   "file": "lindau_000033_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13552,
+    "webp_q50": 9610,
+    "webp_lossless": 3864,
+    "png": 5222
+   },
+   "edge": {
+    "webp_q80": 62810,
+    "webp_q50": 53548,
+    "webp_lossless": 14348,
+    "png": 17949
+   }
+  },
+  {
+   "file": "lindau_000034_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 8634,
+    "webp_q50": 6228,
+    "webp_lossless": 2468,
+    "png": 3599
+   },
+   "edge": {
+    "webp_q80": 137150,
+    "webp_q50": 114548,
+    "webp_lossless": 28758,
+    "png": 33534
+   }
+  },
+  {
+   "file": "lindau_000035_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 10070,
+    "webp_q50": 7228,
+    "webp_lossless": 2758,
+    "png": 3659
+   },
+   "edge": {
+    "webp_q80": 67546,
+    "webp_q50": 57680,
+    "webp_lossless": 15486,
+    "png": 19970
+   }
+  },
+  {
+   "file": "lindau_000036_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 7914,
+    "webp_q50": 5436,
+    "webp_lossless": 2538,
+    "png": 3927
+   },
+   "edge": {
+    "webp_q80": 72906,
+    "webp_q50": 61078,
+    "webp_lossless": 15300,
+    "png": 18393
+   }
+  },
+  {
+   "file": "lindau_000037_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 10116,
+    "webp_q50": 7436,
+    "webp_lossless": 2858,
+    "png": 4108
+   },
+   "edge": {
+    "webp_q80": 48038,
+    "webp_q50": 41350,
+    "webp_lossless": 10562,
+    "png": 13848
+   }
+  },
+  {
+   "file": "lindau_000038_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 9658,
+    "webp_q50": 7004,
+    "webp_lossless": 2756,
+    "png": 3925
+   },
+   "edge": {
+    "webp_q80": 140166,
+    "webp_q50": 117400,
+    "webp_lossless": 31068,
+    "png": 37536
+   }
+  },
+  {
+   "file": "lindau_000039_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 6356,
+    "webp_q50": 4646,
+    "webp_lossless": 1722,
+    "png": 2633
+   },
+   "edge": {
+    "webp_q80": 90770,
+    "webp_q50": 77006,
+    "webp_lossless": 20628,
+    "png": 25611
+   }
+  },
+  {
+   "file": "lindau_000040_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 6624,
+    "webp_q50": 4420,
+    "webp_lossless": 1990,
+    "png": 3299
+   },
+   "edge": {
+    "webp_q80": 16120,
+    "webp_q50": 14130,
+    "webp_lossless": 3392,
+    "png": 4937
+   }
+  },
+  {
+   "file": "lindau_000041_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 10728,
+    "webp_q50": 7798,
+    "webp_lossless": 3030,
+    "png": 4324
+   },
+   "edge": {
+    "webp_q80": 52370,
+    "webp_q50": 44720,
+    "webp_lossless": 12184,
+    "png": 15958
+   }
+  },
+  {
+   "file": "lindau_000042_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 9424,
+    "webp_q50": 6872,
+    "webp_lossless": 2988,
+    "png": 4231
+   },
+   "edge": {
+    "webp_q80": 92268,
+    "webp_q50": 77326,
+    "webp_lossless": 20756,
+    "png": 24967
+   }
+  },
+  {
+   "file": "lindau_000043_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13344,
+    "webp_q50": 9050,
+    "webp_lossless": 3976,
+    "png": 5189
+   },
+   "edge": {
+    "webp_q80": 135712,
+    "webp_q50": 114306,
+    "webp_lossless": 29144,
+    "png": 34789
+   }
+  },
+  {
+   "file": "lindau_000044_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 7062,
+    "webp_q50": 4968,
+    "webp_lossless": 1956,
+    "png": 3148
+   },
+   "edge": {
+    "webp_q80": 37494,
+    "webp_q50": 32354,
+    "webp_lossless": 8582,
+    "png": 11490
+   }
+  },
+  {
+   "file": "lindau_000045_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 7470,
+    "webp_q50": 5296,
+    "webp_lossless": 2350,
+    "png": 3691
+   },
+   "edge": {
+    "webp_q80": 31428,
+    "webp_q50": 26838,
+    "webp_lossless": 6322,
+    "png": 8134
+   }
+  },
+  {
+   "file": "lindau_000046_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 7324,
+    "webp_q50": 5314,
+    "webp_lossless": 2374,
+    "png": 3855
+   },
+   "edge": {
+    "webp_q80": 27582,
+    "webp_q50": 23964,
+    "webp_lossless": 6210,
+    "png": 8749
+   }
+  },
+  {
+   "file": "lindau_000047_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 9608,
+    "webp_q50": 6704,
+    "webp_lossless": 3188,
+    "png": 4391
+   },
+   "edge": {
+    "webp_q80": 44856,
+    "webp_q50": 38210,
+    "webp_lossless": 9908,
+    "png": 13043
+   }
+  },
+  {
+   "file": "lindau_000048_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 8570,
+    "webp_q50": 6092,
+    "webp_lossless": 2610,
+    "png": 4033
+   },
+   "edge": {
+    "webp_q80": 61812,
+    "webp_q50": 53324,
+    "webp_lossless": 13634,
+    "png": 17332
+   }
+  },
+  {
+   "file": "lindau_000049_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 4406,
+    "webp_q50": 3296,
+    "webp_lossless": 1192,
+    "png": 2157
+   },
+   "edge": {
+    "webp_q80": 34558,
+    "webp_q50": 29788,
+    "webp_lossless": 7502,
+    "png": 10137
+   }
+  },
+  {
+   "file": "lindau_000050_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 8596,
+    "webp_q50": 5912,
+    "webp_lossless": 2436,
+    "png": 3985
+   },
+   "edge": {
+    "webp_q80": 53432,
+    "webp_q50": 45556,
+    "webp_lossless": 12182,
+    "png": 15401
+   }
+  },
+  {
+   "file": "lindau_000051_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 10466,
+    "webp_q50": 7440,
+    "webp_lossless": 3052,
+    "png": 4539
+   },
+   "edge": {
+    "webp_q80": 69282,
+    "webp_q50": 59088,
+    "webp_lossless": 15786,
+    "png": 20035
+   }
+  },
+  {
+   "file": "lindau_000052_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 6590,
+    "webp_q50": 4870,
+    "webp_lossless": 1810,
+    "png": 2794
+   },
+   "edge": {
+    "webp_q80": 36736,
+    "webp_q50": 31874,
+    "webp_lossless": 8058,
+    "png": 10619
+   }
+  },
+  {
+   "file": "lindau_000053_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 7876,
+    "webp_q50": 5910,
+    "webp_lossless": 1826,
+    "png": 3145
+   },
+   "edge": {
+    "webp_q80": 156836,
+    "webp_q50": 130898,
+    "webp_lossless": 34266,
+    "png": 39973
+   }
+  },
+  {
+   "file": "lindau_000054_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 12364,
+    "webp_q50": 8564,
+    "webp_lossless": 3598,
+    "png": 5012
+   },
+   "edge": {
+    "webp_q80": 101680,
+    "webp_q50": 86528,
+    "webp_lossless": 22738,
+    "png": 27808
+   }
+  },
+  {
+   "file": "lindau_000055_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 10638,
+    "webp_q50": 7702,
+    "webp_lossless": 2850,
+    "png": 4554
+   },
+   "edge": {
+    "webp_q80": 201400,
+    "webp_q50": 168564,
+    "webp_lossless": 44636,
+    "png": 51979
+   }
+  },
+  {
+   "file": "lindau_000056_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14664,
+    "webp_q50": 10590,
+    "webp_lossless": 3860,
+    "png": 5512
+   },
+   "edge": {
+    "webp_q80": 199350,
+    "webp_q50": 166606,
+    "webp_lossless": 42780,
+    "png": 49086
+   }
+  },
+  {
+   "file": "lindau_000057_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14704,
+    "webp_q50": 10386,
+    "webp_lossless": 4440,
+    "png": 6419
+   },
+   "edge": {
+    "webp_q80": 46732,
+    "webp_q50": 40214,
+    "webp_lossless": 11188,
+    "png": 14671
+   }
+  },
+  {
+   "file": "lindau_000058_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 7974,
+    "webp_q50": 6054,
+    "webp_lossless": 1888,
+    "png": 2885
+   },
+   "edge": {
+    "webp_q80": 113676,
+    "webp_q50": 94916,
+    "webp_lossless": 24342,
+    "png": 28495
+   }
+  },
+  {
+   "file": "munster_000000_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 17256,
+    "webp_q50": 12114,
+    "webp_lossless": 5148,
+    "png": 7156
+   },
+   "edge": {
+    "webp_q80": 64666,
+    "webp_q50": 55204,
+    "webp_lossless": 15162,
+    "png": 19510
+   }
+  },
+  {
+   "file": "munster_000001_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 8954,
+    "webp_q50": 6538,
+    "webp_lossless": 2432,
+    "png": 3772
+   },
+   "edge": {
+    "webp_q80": 45438,
+    "webp_q50": 39068,
+    "webp_lossless": 10814,
+    "png": 14228
+   }
+  },
+  {
+   "file": "munster_000002_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14136,
+    "webp_q50": 10236,
+    "webp_lossless": 4008,
+    "png": 5465
+   },
+   "edge": {
+    "webp_q80": 98328,
+    "webp_q50": 82770,
+    "webp_lossless": 22084,
+    "png": 26738
+   }
+  },
+  {
+   "file": "munster_000003_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 11362,
+    "webp_q50": 7998,
+    "webp_lossless": 3706,
+    "png": 5062
+   },
+   "edge": {
+    "webp_q80": 89584,
+    "webp_q50": 75796,
+    "webp_lossless": 21460,
+    "png": 26503
+   }
+  },
+  {
+   "file": "munster_000004_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 12206,
+    "webp_q50": 8632,
+    "webp_lossless": 3482,
+    "png": 4856
+   },
+   "edge": {
+    "webp_q80": 52142,
+    "webp_q50": 44194,
+    "webp_lossless": 12756,
+    "png": 16532
+   }
+  },
+  {
+   "file": "munster_000005_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 15096,
+    "webp_q50": 10700,
+    "webp_lossless": 4334,
+    "png": 6084
+   },
+   "edge": {
+    "webp_q80": 100262,
+    "webp_q50": 85232,
+    "webp_lossless": 22616,
+    "png": 28289
+   }
+  },
+  {
+   "file": "munster_000006_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13654,
+    "webp_q50": 9320,
+    "webp_lossless": 4426,
+    "png": 6115
+   },
+   "edge": {
+    "webp_q80": 76164,
+    "webp_q50": 64514,
+    "webp_lossless": 17962,
+    "png": 22823
+   }
+  },
+  {
+   "file": "munster_000007_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14304,
+    "webp_q50": 10028,
+    "webp_lossless": 4598,
+    "png": 6323
+   },
+   "edge": {
+    "webp_q80": 74222,
+    "webp_q50": 63104,
+    "webp_lossless": 16718,
+    "png": 21103
+   }
+  },
+  {
+   "file": "munster_000008_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 11882,
+    "webp_q50": 8468,
+    "webp_lossless": 3408,
+    "png": 4713
+   },
+   "edge": {
+    "webp_q80": 71368,
+    "webp_q50": 60536,
+    "webp_lossless": 16950,
+    "png": 21614
+   }
+  },
+  {
+   "file": "munster_000009_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14872,
+    "webp_q50": 10570,
+    "webp_lossless": 4512,
+    "png": 6359
+   },
+   "edge": {
+    "webp_q80": 77628,
+    "webp_q50": 66074,
+    "webp_lossless": 18526,
+    "png": 23414
+   }
+  },
+  {
+   "file": "munster_000010_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 15528,
+    "webp_q50": 10934,
+    "webp_lossless": 4772,
+    "png": 6689
+   },
+   "edge": {
+    "webp_q80": 76730,
+    "webp_q50": 65482,
+    "webp_lossless": 17822,
+    "png": 22084
+   }
+  },
+  {
+   "file": "munster_000011_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 12316,
+    "webp_q50": 8838,
+    "webp_lossless": 3820,
+    "png": 5261
+   },
+   "edge": {
+    "webp_q80": 68136,
+    "webp_q50": 57666,
+    "webp_lossless": 15958,
+    "png": 20159
+   }
+  },
+  {
+   "file": "munster_000012_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13052,
+    "webp_q50": 9356,
+    "webp_lossless": 3898,
+    "png": 5675
+   },
+   "edge": {
+    "webp_q80": 90622,
+    "webp_q50": 76702,
+    "webp_lossless": 21062,
+    "png": 26281
+   }
+  },
+  {
+   "file": "munster_000013_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 15196,
+    "webp_q50": 10706,
+    "webp_lossless": 4648,
+    "png": 6326
+   },
+   "edge": {
+    "webp_q80": 84232,
+    "webp_q50": 71606,
+    "webp_lossless": 20012,
+    "png": 25237
+   }
+  },
+  {
+   "file": "munster_000014_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 10254,
+    "webp_q50": 7450,
+    "webp_lossless": 3200,
+    "png": 4630
+   },
+   "edge": {
+    "webp_q80": 68278,
+    "webp_q50": 58106,
+    "webp_lossless": 16590,
+    "png": 21186
+   }
+  },
+  {
+   "file": "munster_000015_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 12800,
+    "webp_q50": 9024,
+    "webp_lossless": 3814,
+    "png": 5066
+   },
+   "edge": {
+    "webp_q80": 100368,
+    "webp_q50": 85024,
+    "webp_lossless": 22522,
+    "png": 28122
+   }
+  },
+  {
+   "file": "munster_000016_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 11354,
+    "webp_q50": 8194,
+    "webp_lossless": 3420,
+    "png": 4658
+   },
+   "edge": {
+    "webp_q80": 96362,
+    "webp_q50": 81860,
+    "webp_lossless": 22076,
+    "png": 27382
+   }
+  },
+  {
+   "file": "munster_000017_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 11154,
+    "webp_q50": 7966,
+    "webp_lossless": 3242,
+    "png": 4755
+   },
+   "edge": {
+    "webp_q80": 138956,
+    "webp_q50": 116346,
+    "webp_lossless": 30616,
+    "png": 37296
+   }
+  },
+  {
+   "file": "munster_000018_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13550,
+    "webp_q50": 9520,
+    "webp_lossless": 4256,
+    "png": 6111
+   },
+   "edge": {
+    "webp_q80": 78970,
+    "webp_q50": 67258,
+    "webp_lossless": 18438,
+    "png": 23589
+   }
+  },
+  {
+   "file": "munster_000019_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 11696,
+    "webp_q50": 8408,
+    "webp_lossless": 3336,
+    "png": 4691
+   },
+   "edge": {
+    "webp_q80": 74800,
+    "webp_q50": 63652,
+    "webp_lossless": 16714,
+    "png": 21012
+   }
+  },
+  {
+   "file": "munster_000020_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13950,
+    "webp_q50": 9942,
+    "webp_lossless": 4198,
+    "png": 5782
+   },
+   "edge": {
+    "webp_q80": 70016,
+    "webp_q50": 59622,
+    "webp_lossless": 15976,
+    "png": 20314
+   }
+  },
+  {
+   "file": "munster_000021_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 12624,
+    "webp_q50": 8888,
+    "webp_lossless": 3558,
+    "png": 5016
+   },
+   "edge": {
+    "webp_q80": 84050,
+    "webp_q50": 70794,
+    "webp_lossless": 19310,
+    "png": 23769
+   }
+  },
+  {
+   "file": "munster_000022_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14550,
+    "webp_q50": 10266,
+    "webp_lossless": 4134,
+    "png": 5526
+   },
+   "edge": {
+    "webp_q80": 49628,
+    "webp_q50": 42298,
+    "webp_lossless": 10980,
+    "png": 13979
+   }
+  },
+  {
+   "file": "munster_000023_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13222,
+    "webp_q50": 9176,
+    "webp_lossless": 4058,
+    "png": 5828
+   },
+   "edge": {
+    "webp_q80": 45762,
+    "webp_q50": 39118,
+    "webp_lossless": 10790,
+    "png": 14130
+   }
+  },
+  {
+   "file": "munster_000024_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14420,
+    "webp_q50": 10224,
+    "webp_lossless": 4118,
+    "png": 5823
+   },
+   "edge": {
+    "webp_q80": 61400,
+    "webp_q50": 52700,
+    "webp_lossless": 14664,
+    "png": 18857
+   }
+  },
+  {
+   "file": "munster_000025_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 10630,
+    "webp_q50": 7508,
+    "webp_lossless": 3216,
+    "png": 4501
+   },
+   "edge": {
+    "webp_q80": 81782,
+    "webp_q50": 69106,
+    "webp_lossless": 19568,
+    "png": 24734
+   }
+  },
+  {
+   "file": "munster_000026_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 19936,
+    "webp_q50": 14088,
+    "webp_lossless": 6074,
+    "png": 7704
+   },
+   "edge": {
+    "webp_q80": 106064,
+    "webp_q50": 90318,
+    "webp_lossless": 25064,
+    "png": 30934
+   }
+  },
+  {
+   "file": "munster_000027_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 15990,
+    "webp_q50": 11156,
+    "webp_lossless": 4916,
+    "png": 6526
+   },
+   "edge": {
+    "webp_q80": 96742,
+    "webp_q50": 82472,
+    "webp_lossless": 22310,
+    "png": 27748
+   }
+  },
+  {
+   "file": "munster_000028_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 12838,
+    "webp_q50": 9282,
+    "webp_lossless": 3786,
+    "png": 5282
+   },
+   "edge": {
+    "webp_q80": 107360,
+    "webp_q50": 91094,
+    "webp_lossless": 24224,
+    "png": 29985
+   }
+  },
+  {
+   "file": "munster_000029_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 12414,
+    "webp_q50": 8666,
+    "webp_lossless": 3992,
+    "png": 5666
+   },
+   "edge": {
+    "webp_q80": 67042,
+    "webp_q50": 57114,
+    "webp_lossless": 15974,
+    "png": 20311
+   }
+  },
+  {
+   "file": "munster_000030_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13242,
+    "webp_q50": 9328,
+    "webp_lossless": 3976,
+    "png": 5635
+   },
+   "edge": {
+    "webp_q80": 71114,
+    "webp_q50": 60672,
+    "webp_lossless": 16404,
+    "png": 20352
+   }
+  },
+  {
+   "file": "munster_000031_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13362,
+    "webp_q50": 9422,
+    "webp_lossless": 4182,
+    "png": 5932
+   },
+   "edge": {
+    "webp_q80": 83274,
+    "webp_q50": 71040,
+    "webp_lossless": 19612,
+    "png": 24503
+   }
+  },
+  {
+   "file": "munster_000032_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 12586,
+    "webp_q50": 8906,
+    "webp_lossless": 3890,
+    "png": 5480
+   },
+   "edge": {
+    "webp_q80": 108958,
+    "webp_q50": 91770,
+    "webp_lossless": 25400,
+    "png": 31134
+   }
+  },
+  {
+   "file": "munster_000033_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 11100,
+    "webp_q50": 7784,
+    "webp_lossless": 3430,
+    "png": 4829
+   },
+   "edge": {
+    "webp_q80": 85220,
+    "webp_q50": 72382,
+    "webp_lossless": 19772,
+    "png": 25245
+   }
+  },
+  {
+   "file": "munster_000034_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 12888,
+    "webp_q50": 9040,
+    "webp_lossless": 3770,
+    "png": 5118
+   },
+   "edge": {
+    "webp_q80": 62784,
+    "webp_q50": 53296,
+    "webp_lossless": 14762,
+    "png": 18612
+   }
+  },
+  {
+   "file": "munster_000035_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 11600,
+    "webp_q50": 8046,
+    "webp_lossless": 3424,
+    "png": 4971
+   },
+   "edge": {
+    "webp_q80": 49714,
+    "webp_q50": 42754,
+    "webp_lossless": 11786,
+    "png": 15506
+   }
+  },
+  {
+   "file": "munster_000036_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13130,
+    "webp_q50": 9338,
+    "webp_lossless": 3898,
+    "png": 5509
+   },
+   "edge": {
+    "webp_q80": 52532,
+    "webp_q50": 45242,
+    "webp_lossless": 12442,
+    "png": 16136
+   }
+  },
+  {
+   "file": "munster_000037_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 10382,
+    "webp_q50": 7504,
+    "webp_lossless": 3162,
+    "png": 4556
+   },
+   "edge": {
+    "webp_q80": 78818,
+    "webp_q50": 66924,
+    "webp_lossless": 18538,
+    "png": 23427
+   }
+  },
+  {
+   "file": "munster_000038_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 16614,
+    "webp_q50": 11888,
+    "webp_lossless": 5050,
+    "png": 7019
+   },
+   "edge": {
+    "webp_q80": 101728,
+    "webp_q50": 87012,
+    "webp_lossless": 23346,
+    "png": 28619
+   }
+  },
+  {
+   "file": "munster_000039_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 11516,
+    "webp_q50": 8504,
+    "webp_lossless": 2940,
+    "png": 4347
+   },
+   "edge": {
+    "webp_q80": 73756,
+    "webp_q50": 62860,
+    "webp_lossless": 17724,
+    "png": 22103
+   }
+  },
+  {
+   "file": "munster_000040_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14482,
+    "webp_q50": 10142,
+    "webp_lossless": 4586,
+    "png": 6477
+   },
+   "edge": {
+    "webp_q80": 116338,
+    "webp_q50": 98794,
+    "webp_lossless": 27176,
+    "png": 32394
+   }
+  },
+  {
+   "file": "munster_000041_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 11500,
+    "webp_q50": 8022,
+    "webp_lossless": 3606,
+    "png": 5131
+   },
+   "edge": {
+    "webp_q80": 129314,
+    "webp_q50": 109250,
+    "webp_lossless": 29042,
+    "png": 34913
+   }
+  },
+  {
+   "file": "munster_000042_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 11266,
+    "webp_q50": 7814,
+    "webp_lossless": 3602,
+    "png": 4948
+   },
+   "edge": {
+    "webp_q80": 130780,
+    "webp_q50": 110966,
+    "webp_lossless": 29622,
+    "png": 35433
+   }
+  },
+  {
+   "file": "munster_000043_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 10554,
+    "webp_q50": 7496,
+    "webp_lossless": 3236,
+    "png": 4664
+   },
+   "edge": {
+    "webp_q80": 119444,
+    "webp_q50": 102168,
+    "webp_lossless": 26298,
+    "png": 31763
+   }
+  },
+  {
+   "file": "munster_000044_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 12900,
+    "webp_q50": 9170,
+    "webp_lossless": 3858,
+    "png": 5566
+   },
+   "edge": {
+    "webp_q80": 76280,
+    "webp_q50": 65558,
+    "webp_lossless": 17936,
+    "png": 22483
+   }
+  },
+  {
+   "file": "munster_000045_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 11876,
+    "webp_q50": 8490,
+    "webp_lossless": 3696,
+    "png": 5148
+   },
+   "edge": {
+    "webp_q80": 70366,
+    "webp_q50": 59868,
+    "webp_lossless": 16532,
+    "png": 20557
+   }
+  },
+  {
+   "file": "munster_000046_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 15018,
+    "webp_q50": 10518,
+    "webp_lossless": 4852,
+    "png": 6721
+   },
+   "edge": {
+    "webp_q80": 90132,
+    "webp_q50": 76744,
+    "webp_lossless": 21860,
+    "png": 26854
+   }
+  },
+  {
+   "file": "munster_000047_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 12878,
+    "webp_q50": 8928,
+    "webp_lossless": 4028,
+    "png": 5776
+   },
+   "edge": {
+    "webp_q80": 76448,
+    "webp_q50": 65212,
+    "webp_lossless": 18104,
+    "png": 22428
+   }
+  },
+  {
+   "file": "munster_000048_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 16518,
+    "webp_q50": 11230,
+    "webp_lossless": 4662,
+    "png": 7240
+   },
+   "edge": {
+    "webp_q80": 86046,
+    "webp_q50": 73322,
+    "webp_lossless": 19994,
+    "png": 25032
+   }
+  },
+  {
+   "file": "munster_000049_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13232,
+    "webp_q50": 9316,
+    "webp_lossless": 4170,
+    "png": 5740
+   },
+   "edge": {
+    "webp_q80": 74330,
+    "webp_q50": 63310,
+    "webp_lossless": 17470,
+    "png": 22076
+   }
+  },
+  {
+   "file": "munster_000050_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 12144,
+    "webp_q50": 8606,
+    "webp_lossless": 3786,
+    "png": 5475
+   },
+   "edge": {
+    "webp_q80": 64114,
+    "webp_q50": 54288,
+    "webp_lossless": 14960,
+    "png": 19723
+   }
+  },
+  {
+   "file": "munster_000051_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 16176,
+    "webp_q50": 11418,
+    "webp_lossless": 5058,
+    "png": 6791
+   },
+   "edge": {
+    "webp_q80": 94676,
+    "webp_q50": 80644,
+    "webp_lossless": 21264,
+    "png": 26435
+   }
+  },
+  {
+   "file": "munster_000052_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 17452,
+    "webp_q50": 12172,
+    "webp_lossless": 5616,
+    "png": 7517
+   },
+   "edge": {
+    "webp_q80": 88284,
+    "webp_q50": 75488,
+    "webp_lossless": 20306,
+    "png": 25516
+   }
+  },
+  {
+   "file": "munster_000053_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 15176,
+    "webp_q50": 10718,
+    "webp_lossless": 4398,
+    "png": 5953
+   },
+   "edge": {
+    "webp_q80": 75492,
+    "webp_q50": 64722,
+    "webp_lossless": 17480,
+    "png": 22364
+   }
+  },
+  {
+   "file": "munster_000054_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 12450,
+    "webp_q50": 8642,
+    "webp_lossless": 3590,
+    "png": 5568
+   },
+   "edge": {
+    "webp_q80": 60060,
+    "webp_q50": 51092,
+    "webp_lossless": 14552,
+    "png": 18748
+   }
+  },
+  {
+   "file": "munster_000055_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 17970,
+    "webp_q50": 12308,
+    "webp_lossless": 5456,
+    "png": 7586
+   },
+   "edge": {
+    "webp_q80": 80176,
+    "webp_q50": 67846,
+    "webp_lossless": 19258,
+    "png": 24290
+   }
+  },
+  {
+   "file": "munster_000056_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13086,
+    "webp_q50": 9132,
+    "webp_lossless": 4122,
+    "png": 5857
+   },
+   "edge": {
+    "webp_q80": 71460,
+    "webp_q50": 61074,
+    "webp_lossless": 16778,
+    "png": 21306
+   }
+  },
+  {
+   "file": "munster_000057_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 12326,
+    "webp_q50": 8548,
+    "webp_lossless": 4064,
+    "png": 6051
+   },
+   "edge": {
+    "webp_q80": 56886,
+    "webp_q50": 49196,
+    "webp_lossless": 13436,
+    "png": 17061
+   }
+  },
+  {
+   "file": "munster_000058_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 10914,
+    "webp_q50": 7770,
+    "webp_lossless": 3160,
+    "png": 5000
+   },
+   "edge": {
+    "webp_q80": 64852,
+    "webp_q50": 55554,
+    "webp_lossless": 15120,
+    "png": 19210
+   }
+  },
+  {
+   "file": "munster_000059_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13188,
+    "webp_q50": 9234,
+    "webp_lossless": 4200,
+    "png": 5649
+   },
+   "edge": {
+    "webp_q80": 80518,
+    "webp_q50": 68408,
+    "webp_lossless": 18470,
+    "png": 22887
+   }
+  },
+  {
+   "file": "munster_000060_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 11372,
+    "webp_q50": 7914,
+    "webp_lossless": 3630,
+    "png": 5076
+   },
+   "edge": {
+    "webp_q80": 47836,
+    "webp_q50": 40550,
+    "webp_lossless": 11682,
+    "png": 15382
+   }
+  },
+  {
+   "file": "munster_000061_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 10966,
+    "webp_q50": 7848,
+    "webp_lossless": 3866,
+    "png": 5817
+   },
+   "edge": {
+    "webp_q80": 55994,
+    "webp_q50": 48152,
+    "webp_lossless": 13440,
+    "png": 17128
+   }
+  },
+  {
+   "file": "munster_000062_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 15252,
+    "webp_q50": 10788,
+    "webp_lossless": 4700,
+    "png": 6754
+   },
+   "edge": {
+    "webp_q80": 74352,
+    "webp_q50": 63012,
+    "webp_lossless": 17502,
+    "png": 22013
+   }
+  },
+  {
+   "file": "munster_000063_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13540,
+    "webp_q50": 9220,
+    "webp_lossless": 4280,
+    "png": 6162
+   },
+   "edge": {
+    "webp_q80": 85040,
+    "webp_q50": 72100,
+    "webp_lossless": 19862,
+    "png": 24732
+   }
+  },
+  {
+   "file": "munster_000064_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 15140,
+    "webp_q50": 10824,
+    "webp_lossless": 4332,
+    "png": 5770
+   },
+   "edge": {
+    "webp_q80": 72076,
+    "webp_q50": 61338,
+    "webp_lossless": 16640,
+    "png": 21092
+   }
+  },
+  {
+   "file": "munster_000065_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 16036,
+    "webp_q50": 11502,
+    "webp_lossless": 4500,
+    "png": 6085
+   },
+   "edge": {
+    "webp_q80": 38680,
+    "webp_q50": 33418,
+    "webp_lossless": 9194,
+    "png": 12225
+   }
+  },
+  {
+   "file": "munster_000066_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 12258,
+    "webp_q50": 8736,
+    "webp_lossless": 3926,
+    "png": 5517
+   },
+   "edge": {
+    "webp_q80": 135658,
+    "webp_q50": 114546,
+    "webp_lossless": 31264,
+    "png": 37467
+   }
+  },
+  {
+   "file": "munster_000067_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 9540,
+    "webp_q50": 6892,
+    "webp_lossless": 2618,
+    "png": 3943
+   },
+   "edge": {
+    "webp_q80": 112974,
+    "webp_q50": 95996,
+    "webp_lossless": 25474,
+    "png": 31798
+   }
+  },
+  {
+   "file": "munster_000068_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13880,
+    "webp_q50": 10038,
+    "webp_lossless": 4062,
+    "png": 5639
+   },
+   "edge": {
+    "webp_q80": 86838,
+    "webp_q50": 73888,
+    "webp_lossless": 19942,
+    "png": 24823
+   }
+  },
+  {
+   "file": "munster_000069_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 12672,
+    "webp_q50": 8936,
+    "webp_lossless": 4080,
+    "png": 5659
+   },
+   "edge": {
+    "webp_q80": 78238,
+    "webp_q50": 66402,
+    "webp_lossless": 18432,
+    "png": 23240
+   }
+  },
+  {
+   "file": "munster_000070_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 15798,
+    "webp_q50": 10942,
+    "webp_lossless": 4572,
+    "png": 7029
+   },
+   "edge": {
+    "webp_q80": 99966,
+    "webp_q50": 84508,
+    "webp_lossless": 22306,
+    "png": 27700
+   }
+  },
+  {
+   "file": "munster_000071_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 12796,
+    "webp_q50": 8994,
+    "webp_lossless": 3918,
+    "png": 5233
+   },
+   "edge": {
+    "webp_q80": 67114,
+    "webp_q50": 57342,
+    "webp_lossless": 15828,
+    "png": 20077
+   }
+  },
+  {
+   "file": "munster_000072_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 12476,
+    "webp_q50": 8946,
+    "webp_lossless": 3312,
+    "png": 4804
+   },
+   "edge": {
+    "webp_q80": 81414,
+    "webp_q50": 69040,
+    "webp_lossless": 18510,
+    "png": 23206
+   }
+  },
+  {
+   "file": "munster_000073_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 9168,
+    "webp_q50": 6474,
+    "webp_lossless": 2778,
+    "png": 4060
+   },
+   "edge": {
+    "webp_q80": 49280,
+    "webp_q50": 42650,
+    "webp_lossless": 11220,
+    "png": 14865
+   }
+  },
+  {
+   "file": "munster_000074_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 10502,
+    "webp_q50": 7562,
+    "webp_lossless": 2962,
+    "png": 3978
+   },
+   "edge": {
+    "webp_q80": 67576,
+    "webp_q50": 57962,
+    "webp_lossless": 15596,
+    "png": 19381
+   }
+  },
+  {
+   "file": "munster_000075_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 8514,
+    "webp_q50": 6166,
+    "webp_lossless": 2192,
+    "png": 3328
+   },
+   "edge": {
+    "webp_q80": 63458,
+    "webp_q50": 54192,
+    "webp_lossless": 14612,
+    "png": 18454
+   }
+  },
+  {
+   "file": "munster_000076_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 11782,
+    "webp_q50": 8116,
+    "webp_lossless": 3542,
+    "png": 5483
+   },
+   "edge": {
+    "webp_q80": 35186,
+    "webp_q50": 30602,
+    "webp_lossless": 8370,
+    "png": 11458
+   }
+  },
+  {
+   "file": "munster_000077_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 9018,
+    "webp_q50": 6504,
+    "webp_lossless": 2622,
+    "png": 4164
+   },
+   "edge": {
+    "webp_q80": 43530,
+    "webp_q50": 37342,
+    "webp_lossless": 9476,
+    "png": 12261
+   }
+  },
+  {
+   "file": "munster_000078_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 17490,
+    "webp_q50": 12424,
+    "webp_lossless": 5310,
+    "png": 7338
+   },
+   "edge": {
+    "webp_q80": 81248,
+    "webp_q50": 69594,
+    "webp_lossless": 19614,
+    "png": 24580
+   }
+  },
+  {
+   "file": "munster_000079_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 10994,
+    "webp_q50": 7800,
+    "webp_lossless": 3324,
+    "png": 4888
+   },
+   "edge": {
+    "webp_q80": 53036,
+    "webp_q50": 45684,
+    "webp_lossless": 12950,
+    "png": 16372
+   }
+  },
+  {
+   "file": "munster_000080_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14882,
+    "webp_q50": 10456,
+    "webp_lossless": 4722,
+    "png": 6588
+   },
+   "edge": {
+    "webp_q80": 81444,
+    "webp_q50": 69152,
+    "webp_lossless": 19128,
+    "png": 24161
+   }
+  },
+  {
+   "file": "munster_000081_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 9426,
+    "webp_q50": 6784,
+    "webp_lossless": 2824,
+    "png": 4237
+   },
+   "edge": {
+    "webp_q80": 66576,
+    "webp_q50": 56530,
+    "webp_lossless": 15754,
+    "png": 19993
+   }
+  },
+  {
+   "file": "munster_000082_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 10334,
+    "webp_q50": 7382,
+    "webp_lossless": 2726,
+    "png": 4274
+   },
+   "edge": {
+    "webp_q80": 69888,
+    "webp_q50": 59734,
+    "webp_lossless": 16746,
+    "png": 21470
+   }
+  },
+  {
+   "file": "munster_000083_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 16476,
+    "webp_q50": 11592,
+    "webp_lossless": 5014,
+    "png": 7254
+   },
+   "edge": {
+    "webp_q80": 76784,
+    "webp_q50": 64934,
+    "webp_lossless": 17668,
+    "png": 22076
+   }
+  },
+  {
+   "file": "munster_000084_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 16298,
+    "webp_q50": 11118,
+    "webp_lossless": 5198,
+    "png": 6937
+   },
+   "edge": {
+    "webp_q80": 69124,
+    "webp_q50": 58336,
+    "webp_lossless": 16308,
+    "png": 20365
+   }
+  },
+  {
+   "file": "munster_000085_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 16602,
+    "webp_q50": 11604,
+    "webp_lossless": 5118,
+    "png": 7011
+   },
+   "edge": {
+    "webp_q80": 101622,
+    "webp_q50": 86236,
+    "webp_lossless": 23600,
+    "png": 29550
+   }
+  },
+  {
+   "file": "munster_000086_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 11658,
+    "webp_q50": 8234,
+    "webp_lossless": 3580,
+    "png": 5229
+   },
+   "edge": {
+    "webp_q80": 96272,
+    "webp_q50": 81900,
+    "webp_lossless": 22212,
+    "png": 26838
+   }
+  },
+  {
+   "file": "munster_000087_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 9068,
+    "webp_q50": 6432,
+    "webp_lossless": 2522,
+    "png": 3819
+   },
+   "edge": {
+    "webp_q80": 83632,
+    "webp_q50": 71418,
+    "webp_lossless": 19344,
+    "png": 24498
+   }
+  },
+  {
+   "file": "munster_000088_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 10658,
+    "webp_q50": 7800,
+    "webp_lossless": 2926,
+    "png": 4147
+   },
+   "edge": {
+    "webp_q80": 87244,
+    "webp_q50": 74100,
+    "webp_lossless": 20538,
+    "png": 25388
+   }
+  },
+  {
+   "file": "munster_000089_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 11866,
+    "webp_q50": 8436,
+    "webp_lossless": 3622,
+    "png": 5281
+   },
+   "edge": {
+    "webp_q80": 65808,
+    "webp_q50": 55988,
+    "webp_lossless": 15246,
+    "png": 19841
+   }
+  },
+  {
+   "file": "munster_000090_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14360,
+    "webp_q50": 10248,
+    "webp_lossless": 4096,
+    "png": 5645
+   },
+   "edge": {
+    "webp_q80": 100388,
+    "webp_q50": 84306,
+    "webp_lossless": 22630,
+    "png": 27635
+   }
+  },
+  {
+   "file": "munster_000091_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 11550,
+    "webp_q50": 8116,
+    "webp_lossless": 3720,
+    "png": 4997
+   },
+   "edge": {
+    "webp_q80": 84160,
+    "webp_q50": 71694,
+    "webp_lossless": 18978,
+    "png": 23759
+   }
+  },
+  {
+   "file": "munster_000092_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 11058,
+    "webp_q50": 8030,
+    "webp_lossless": 2940,
+    "png": 4307
+   },
+   "edge": {
+    "webp_q80": 93002,
+    "webp_q50": 78482,
+    "webp_lossless": 21554,
+    "png": 27072
+   }
+  },
+  {
+   "file": "munster_000093_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 12518,
+    "webp_q50": 8988,
+    "webp_lossless": 3340,
+    "png": 4775
+   },
+   "edge": {
+    "webp_q80": 87040,
+    "webp_q50": 73352,
+    "webp_lossless": 19878,
+    "png": 24816
+   }
+  },
+  {
+   "file": "munster_000094_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 15112,
+    "webp_q50": 10890,
+    "webp_lossless": 4184,
+    "png": 5577
+   },
+   "edge": {
+    "webp_q80": 115658,
+    "webp_q50": 97146,
+    "webp_lossless": 26290,
+    "png": 32050
+   }
+  },
+  {
+   "file": "munster_000095_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13786,
+    "webp_q50": 9632,
+    "webp_lossless": 4398,
+    "png": 6174
+   },
+   "edge": {
+    "webp_q80": 50008,
+    "webp_q50": 42790,
+    "webp_lossless": 11740,
+    "png": 15661
+   }
+  },
+  {
+   "file": "munster_000096_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 11990,
+    "webp_q50": 8520,
+    "webp_lossless": 3680,
+    "png": 5072
+   },
+   "edge": {
+    "webp_q80": 69260,
+    "webp_q50": 58796,
+    "webp_lossless": 16192,
+    "png": 20504
+   }
+  },
+  {
+   "file": "munster_000097_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 17698,
+    "webp_q50": 12536,
+    "webp_lossless": 5220,
+    "png": 6890
+   },
+   "edge": {
+    "webp_q80": 90078,
+    "webp_q50": 76180,
+    "webp_lossless": 20720,
+    "png": 25873
+   }
+  },
+  {
+   "file": "munster_000098_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 10970,
+    "webp_q50": 7838,
+    "webp_lossless": 3240,
+    "png": 4590
+   },
+   "edge": {
+    "webp_q80": 86098,
+    "webp_q50": 72920,
+    "webp_lossless": 20480,
+    "png": 25985
+   }
+  },
+  {
+   "file": "munster_000099_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 10176,
+    "webp_q50": 7142,
+    "webp_lossless": 2952,
+    "png": 4299
+   },
+   "edge": {
+    "webp_q80": 88964,
+    "webp_q50": 75394,
+    "webp_lossless": 20168,
+    "png": 25510
+   }
+  },
+  {
+   "file": "munster_000100_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 7428,
+    "webp_q50": 5476,
+    "webp_lossless": 1880,
+    "png": 2948
+   },
+   "edge": {
+    "webp_q80": 50600,
+    "webp_q50": 43180,
+    "webp_lossless": 12126,
+    "png": 15457
+   }
+  },
+  {
+   "file": "munster_000101_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13162,
+    "webp_q50": 9368,
+    "webp_lossless": 3924,
+    "png": 5599
+   },
+   "edge": {
+    "webp_q80": 87104,
+    "webp_q50": 73716,
+    "webp_lossless": 20382,
+    "png": 25206
+   }
+  },
+  {
+   "file": "munster_000102_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 16270,
+    "webp_q50": 11348,
+    "webp_lossless": 5224,
+    "png": 7067
+   },
+   "edge": {
+    "webp_q80": 82910,
+    "webp_q50": 70522,
+    "webp_lossless": 19542,
+    "png": 24732
+   }
+  },
+  {
+   "file": "munster_000103_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 15006,
+    "webp_q50": 10612,
+    "webp_lossless": 4440,
+    "png": 6005
+   },
+   "edge": {
+    "webp_q80": 108890,
+    "webp_q50": 92494,
+    "webp_lossless": 25436,
+    "png": 31131
+   }
+  },
+  {
+   "file": "munster_000104_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13862,
+    "webp_q50": 9742,
+    "webp_lossless": 4252,
+    "png": 5768
+   },
+   "edge": {
+    "webp_q80": 94738,
+    "webp_q50": 80214,
+    "webp_lossless": 22080,
+    "png": 27610
+   }
+  },
+  {
+   "file": "munster_000105_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14546,
+    "webp_q50": 10384,
+    "webp_lossless": 4462,
+    "png": 6036
+   },
+   "edge": {
+    "webp_q80": 78284,
+    "webp_q50": 66786,
+    "webp_lossless": 18140,
+    "png": 23186
+   }
+  },
+  {
+   "file": "munster_000106_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 10896,
+    "webp_q50": 7660,
+    "webp_lossless": 3396,
+    "png": 4807
+   },
+   "edge": {
+    "webp_q80": 49242,
+    "webp_q50": 42178,
+    "webp_lossless": 11794,
+    "png": 15469
+   }
+  },
+  {
+   "file": "munster_000107_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 11350,
+    "webp_q50": 7986,
+    "webp_lossless": 3588,
+    "png": 5100
+   },
+   "edge": {
+    "webp_q80": 73388,
+    "webp_q50": 62184,
+    "webp_lossless": 17024,
+    "png": 21858
+   }
+  },
+  {
+   "file": "munster_000108_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 10272,
+    "webp_q50": 7258,
+    "webp_lossless": 3130,
+    "png": 4411
+   },
+   "edge": {
+    "webp_q80": 73680,
+    "webp_q50": 62576,
+    "webp_lossless": 17014,
+    "png": 21667
+   }
+  },
+  {
+   "file": "munster_000109_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 11950,
+    "webp_q50": 8528,
+    "webp_lossless": 3438,
+    "png": 5056
+   },
+   "edge": {
+    "webp_q80": 47816,
+    "webp_q50": 41108,
+    "webp_lossless": 11042,
+    "png": 14174
+   }
+  },
+  {
+   "file": "munster_000110_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14634,
+    "webp_q50": 10370,
+    "webp_lossless": 4418,
+    "png": 6053
+   },
+   "edge": {
+    "webp_q80": 87348,
+    "webp_q50": 74098,
+    "webp_lossless": 20300,
+    "png": 25329
+   }
+  },
+  {
+   "file": "munster_000111_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13104,
+    "webp_q50": 9312,
+    "webp_lossless": 3986,
+    "png": 5587
+   },
+   "edge": {
+    "webp_q80": 66336,
+    "webp_q50": 56802,
+    "webp_lossless": 15244,
+    "png": 19394
+   }
+  },
+  {
+   "file": "munster_000112_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14788,
+    "webp_q50": 10506,
+    "webp_lossless": 4688,
+    "png": 6392
+   },
+   "edge": {
+    "webp_q80": 78620,
+    "webp_q50": 67058,
+    "webp_lossless": 18300,
+    "png": 23196
+   }
+  },
+  {
+   "file": "munster_000113_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14220,
+    "webp_q50": 10000,
+    "webp_lossless": 4374,
+    "png": 5854
+   },
+   "edge": {
+    "webp_q80": 74334,
+    "webp_q50": 63030,
+    "webp_lossless": 17408,
+    "png": 21970
+   }
+  },
+  {
+   "file": "munster_000114_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 11288,
+    "webp_q50": 8132,
+    "webp_lossless": 3538,
+    "png": 4977
+   },
+   "edge": {
+    "webp_q80": 53270,
+    "webp_q50": 45936,
+    "webp_lossless": 12092,
+    "png": 15516
+   }
+  },
+  {
+   "file": "munster_000115_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 10248,
+    "webp_q50": 7326,
+    "webp_lossless": 3154,
+    "png": 4339
+   },
+   "edge": {
+    "webp_q80": 47900,
+    "webp_q50": 41564,
+    "webp_lossless": 10978,
+    "png": 14361
+   }
+  },
+  {
+   "file": "munster_000116_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 9110,
+    "webp_q50": 6358,
+    "webp_lossless": 2656,
+    "png": 4021
+   },
+   "edge": {
+    "webp_q80": 80292,
+    "webp_q50": 67758,
+    "webp_lossless": 18628,
+    "png": 23254
+   }
+  },
+  {
+   "file": "munster_000117_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 11796,
+    "webp_q50": 8622,
+    "webp_lossless": 3376,
+    "png": 4730
+   },
+   "edge": {
+    "webp_q80": 57680,
+    "webp_q50": 49230,
+    "webp_lossless": 13694,
+    "png": 17714
+   }
+  },
+  {
+   "file": "munster_000118_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 9918,
+    "webp_q50": 7254,
+    "webp_lossless": 2684,
+    "png": 4024
+   },
+   "edge": {
+    "webp_q80": 60018,
+    "webp_q50": 51340,
+    "webp_lossless": 14628,
+    "png": 18532
+   }
+  },
+  {
+   "file": "munster_000119_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14534,
+    "webp_q50": 10484,
+    "webp_lossless": 4352,
+    "png": 6283
+   },
+   "edge": {
+    "webp_q80": 55118,
+    "webp_q50": 46734,
+    "webp_lossless": 12776,
+    "png": 16109
+   }
+  },
+  {
+   "file": "munster_000120_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 10108,
+    "webp_q50": 7314,
+    "webp_lossless": 2986,
+    "png": 4659
+   },
+   "edge": {
+    "webp_q80": 43832,
+    "webp_q50": 37412,
+    "webp_lossless": 10270,
+    "png": 13682
+   }
+  },
+  {
+   "file": "munster_000121_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 9236,
+    "webp_q50": 6798,
+    "webp_lossless": 2832,
+    "png": 4042
+   },
+   "edge": {
+    "webp_q80": 30618,
+    "webp_q50": 26240,
+    "webp_lossless": 7108,
+    "png": 9529
+   }
+  },
+  {
+   "file": "munster_000122_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 10234,
+    "webp_q50": 7316,
+    "webp_lossless": 3128,
+    "png": 4481
+   },
+   "edge": {
+    "webp_q80": 24414,
+    "webp_q50": 21152,
+    "webp_lossless": 5608,
+    "png": 7906
+   }
+  },
+  {
+   "file": "munster_000123_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13180,
+    "webp_q50": 9408,
+    "webp_lossless": 3676,
+    "png": 5019
+   },
+   "edge": {
+    "webp_q80": 34202,
+    "webp_q50": 29546,
+    "webp_lossless": 7884,
+    "png": 10777
+   }
+  },
+  {
+   "file": "munster_000124_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 11242,
+    "webp_q50": 8130,
+    "webp_lossless": 3324,
+    "png": 4856
+   },
+   "edge": {
+    "webp_q80": 72614,
+    "webp_q50": 61022,
+    "webp_lossless": 16016,
+    "png": 19807
+   }
+  },
+  {
+   "file": "munster_000125_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13722,
+    "webp_q50": 9716,
+    "webp_lossless": 4086,
+    "png": 5729
+   },
+   "edge": {
+    "webp_q80": 43276,
+    "webp_q50": 37016,
+    "webp_lossless": 9872,
+    "png": 12791
+   }
+  },
+  {
+   "file": "munster_000126_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 12606,
+    "webp_q50": 8882,
+    "webp_lossless": 3870,
+    "png": 5547
+   },
+   "edge": {
+    "webp_q80": 30124,
+    "webp_q50": 26240,
+    "webp_lossless": 6638,
+    "png": 8941
+   }
+  },
+  {
+   "file": "munster_000127_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 18594,
+    "webp_q50": 13408,
+    "webp_lossless": 5086,
+    "png": 6614
+   },
+   "edge": {
+    "webp_q80": 68916,
+    "webp_q50": 58752,
+    "webp_lossless": 16452,
+    "png": 21140
+   }
+  },
+  {
+   "file": "munster_000128_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 11260,
+    "webp_q50": 8012,
+    "webp_lossless": 3570,
+    "png": 4819
+   },
+   "edge": {
+    "webp_q80": 47768,
+    "webp_q50": 41102,
+    "webp_lossless": 10450,
+    "png": 13660
+   }
+  },
+  {
+   "file": "munster_000129_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13934,
+    "webp_q50": 9870,
+    "webp_lossless": 4304,
+    "png": 6045
+   },
+   "edge": {
+    "webp_q80": 58318,
+    "webp_q50": 49870,
+    "webp_lossless": 13366,
+    "png": 17330
+   }
+  },
+  {
+   "file": "munster_000130_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 10460,
+    "webp_q50": 7520,
+    "webp_lossless": 3140,
+    "png": 4378
+   },
+   "edge": {
+    "webp_q80": 44004,
+    "webp_q50": 37572,
+    "webp_lossless": 9560,
+    "png": 12041
+   }
+  },
+  {
+   "file": "munster_000131_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13838,
+    "webp_q50": 9876,
+    "webp_lossless": 4106,
+    "png": 5880
+   },
+   "edge": {
+    "webp_q80": 36702,
+    "webp_q50": 31702,
+    "webp_lossless": 8804,
+    "png": 11910
+   }
+  },
+  {
+   "file": "munster_000132_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 15468,
+    "webp_q50": 10934,
+    "webp_lossless": 4662,
+    "png": 6423
+   },
+   "edge": {
+    "webp_q80": 73394,
+    "webp_q50": 61970,
+    "webp_lossless": 17606,
+    "png": 22422
+   }
+  },
+  {
+   "file": "munster_000133_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 8554,
+    "webp_q50": 6412,
+    "webp_lossless": 2376,
+    "png": 3423
+   },
+   "edge": {
+    "webp_q80": 68012,
+    "webp_q50": 56978,
+    "webp_lossless": 14976,
+    "png": 18395
+   }
+  },
+  {
+   "file": "munster_000134_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 12954,
+    "webp_q50": 8950,
+    "webp_lossless": 3748,
+    "png": 5240
+   },
+   "edge": {
+    "webp_q80": 161468,
+    "webp_q50": 135490,
+    "webp_lossless": 34630,
+    "png": 40382
+   }
+  },
+  {
+   "file": "munster_000135_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 12554,
+    "webp_q50": 8674,
+    "webp_lossless": 3920,
+    "png": 5344
+   },
+   "edge": {
+    "webp_q80": 93654,
+    "webp_q50": 80100,
+    "webp_lossless": 22276,
+    "png": 27441
+   }
+  },
+  {
+   "file": "munster_000136_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 12540,
+    "webp_q50": 8686,
+    "webp_lossless": 3668,
+    "png": 5556
+   },
+   "edge": {
+    "webp_q80": 171202,
+    "webp_q50": 143190,
+    "webp_lossless": 36438,
+    "png": 42712
+   }
+  },
+  {
+   "file": "munster_000137_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 12932,
+    "webp_q50": 9068,
+    "webp_lossless": 4000,
+    "png": 5633
+   },
+   "edge": {
+    "webp_q80": 157136,
+    "webp_q50": 131144,
+    "webp_lossless": 34104,
+    "png": 40715
+   }
+  },
+  {
+   "file": "munster_000138_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 12144,
+    "webp_q50": 8586,
+    "webp_lossless": 3700,
+    "png": 5269
+   },
+   "edge": {
+    "webp_q80": 106922,
+    "webp_q50": 90588,
+    "webp_lossless": 23704,
+    "png": 28647
+   }
+  },
+  {
+   "file": "munster_000139_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 10856,
+    "webp_q50": 7730,
+    "webp_lossless": 3322,
+    "png": 4745
+   },
+   "edge": {
+    "webp_q80": 128056,
+    "webp_q50": 109294,
+    "webp_lossless": 29412,
+    "png": 33816
+   }
+  },
+  {
+   "file": "munster_000140_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 11874,
+    "webp_q50": 8070,
+    "webp_lossless": 3822,
+    "png": 5354
+   },
+   "edge": {
+    "webp_q80": 138866,
+    "webp_q50": 117840,
+    "webp_lossless": 31448,
+    "png": 36325
+   }
+  },
+  {
+   "file": "munster_000141_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 10284,
+    "webp_q50": 7006,
+    "webp_lossless": 3778,
+    "png": 5525
+   },
+   "edge": {
+    "webp_q80": 75352,
+    "webp_q50": 64578,
+    "webp_lossless": 17908,
+    "png": 22216
+   }
+  },
+  {
+   "file": "munster_000142_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 11150,
+    "webp_q50": 7680,
+    "webp_lossless": 3520,
+    "png": 5132
+   },
+   "edge": {
+    "webp_q80": 109150,
+    "webp_q50": 93042,
+    "webp_lossless": 24578,
+    "png": 28687
+   }
+  },
+  {
+   "file": "munster_000143_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13682,
+    "webp_q50": 9424,
+    "webp_lossless": 4450,
+    "png": 6124
+   },
+   "edge": {
+    "webp_q80": 95934,
+    "webp_q50": 81504,
+    "webp_lossless": 21842,
+    "png": 26352
+   }
+  },
+  {
+   "file": "munster_000144_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 21098,
+    "webp_q50": 13436,
+    "webp_lossless": 7752,
+    "png": 9596
+   },
+   "edge": {
+    "webp_q80": 101846,
+    "webp_q50": 86714,
+    "webp_lossless": 22910,
+    "png": 26514
+   }
+  },
+  {
+   "file": "munster_000145_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 7826,
+    "webp_q50": 5660,
+    "webp_lossless": 2668,
+    "png": 4322
+   },
+   "edge": {
+    "webp_q80": 116404,
+    "webp_q50": 98898,
+    "webp_lossless": 26288,
+    "png": 29731
+   }
+  },
+  {
+   "file": "munster_000146_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 7990,
+    "webp_q50": 5828,
+    "webp_lossless": 2278,
+    "png": 3210
+   },
+   "edge": {
+    "webp_q80": 74782,
+    "webp_q50": 64554,
+    "webp_lossless": 16798,
+    "png": 19525
+   }
+  },
+  {
+   "file": "munster_000147_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 11680,
+    "webp_q50": 8310,
+    "webp_lossless": 3642,
+    "png": 5240
+   },
+   "edge": {
+    "webp_q80": 63426,
+    "webp_q50": 54514,
+    "webp_lossless": 14504,
+    "png": 18396
+   }
+  },
+  {
+   "file": "munster_000148_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 10956,
+    "webp_q50": 7736,
+    "webp_lossless": 3312,
+    "png": 4852
+   },
+   "edge": {
+    "webp_q80": 65002,
+    "webp_q50": 55686,
+    "webp_lossless": 14744,
+    "png": 18663
+   }
+  },
+  {
+   "file": "munster_000149_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 9670,
+    "webp_q50": 6734,
+    "webp_lossless": 2982,
+    "png": 4543
+   },
+   "edge": {
+    "webp_q80": 66316,
+    "webp_q50": 56332,
+    "webp_lossless": 15120,
+    "png": 18742
+   }
+  },
+  {
+   "file": "munster_000150_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 10396,
+    "webp_q50": 7304,
+    "webp_lossless": 3250,
+    "png": 4695
+   },
+   "edge": {
+    "webp_q80": 116228,
+    "webp_q50": 98438,
+    "webp_lossless": 26430,
+    "png": 32341
+   }
+  },
+  {
+   "file": "munster_000151_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 11584,
+    "webp_q50": 8406,
+    "webp_lossless": 3362,
+    "png": 4839
+   },
+   "edge": {
+    "webp_q80": 69484,
+    "webp_q50": 59372,
+    "webp_lossless": 15606,
+    "png": 19721
+   }
+  },
+  {
+   "file": "munster_000152_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 11348,
+    "webp_q50": 8168,
+    "webp_lossless": 3488,
+    "png": 4937
+   },
+   "edge": {
+    "webp_q80": 66962,
+    "webp_q50": 57102,
+    "webp_lossless": 15228,
+    "png": 19165
+   }
+  },
+  {
+   "file": "munster_000153_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14628,
+    "webp_q50": 10464,
+    "webp_lossless": 4452,
+    "png": 6277
+   },
+   "edge": {
+    "webp_q80": 101420,
+    "webp_q50": 86246,
+    "webp_lossless": 22900,
+    "png": 27814
+   }
+  },
+  {
+   "file": "munster_000154_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13908,
+    "webp_q50": 9958,
+    "webp_lossless": 4454,
+    "png": 6160
+   },
+   "edge": {
+    "webp_q80": 152332,
+    "webp_q50": 127906,
+    "webp_lossless": 33880,
+    "png": 39889
+   }
+  },
+  {
+   "file": "munster_000155_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 12378,
+    "webp_q50": 8774,
+    "webp_lossless": 3594,
+    "png": 4970
+   },
+   "edge": {
+    "webp_q80": 102106,
+    "webp_q50": 87998,
+    "webp_lossless": 22624,
+    "png": 27088
+   }
+  },
+  {
+   "file": "munster_000156_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14336,
+    "webp_q50": 10022,
+    "webp_lossless": 4264,
+    "png": 5724
+   },
+   "edge": {
+    "webp_q80": 109388,
+    "webp_q50": 92906,
+    "webp_lossless": 25108,
+    "png": 30617
+   }
+  },
+  {
+   "file": "munster_000157_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 11586,
+    "webp_q50": 8290,
+    "webp_lossless": 3328,
+    "png": 4903
+   },
+   "edge": {
+    "webp_q80": 60146,
+    "webp_q50": 51546,
+    "webp_lossless": 13794,
+    "png": 17812
+   }
+  },
+  {
+   "file": "munster_000158_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 11332,
+    "webp_q50": 8166,
+    "webp_lossless": 3056,
+    "png": 4491
+   },
+   "edge": {
+    "webp_q80": 67272,
+    "webp_q50": 57478,
+    "webp_lossless": 15856,
+    "png": 19575
+   }
+  },
+  {
+   "file": "munster_000159_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 22828,
+    "webp_q50": 16090,
+    "webp_lossless": 6438,
+    "png": 8229
+   },
+   "edge": {
+    "webp_q80": 31006,
+    "webp_q50": 26820,
+    "webp_lossless": 6940,
+    "png": 9215
+   }
+  },
+  {
+   "file": "munster_000160_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13728,
+    "webp_q50": 9698,
+    "webp_lossless": 4128,
+    "png": 5811
+   },
+   "edge": {
+    "webp_q80": 131436,
+    "webp_q50": 111768,
+    "webp_lossless": 29654,
+    "png": 34722
+   }
+  },
+  {
+   "file": "munster_000161_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 8938,
+    "webp_q50": 6236,
+    "webp_lossless": 2610,
+    "png": 4216
+   },
+   "edge": {
+    "webp_q80": 31674,
+    "webp_q50": 27170,
+    "webp_lossless": 7524,
+    "png": 9892
+   }
+  },
+  {
+   "file": "munster_000162_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 10970,
+    "webp_q50": 7820,
+    "webp_lossless": 3284,
+    "png": 4588
+   },
+   "edge": {
+    "webp_q80": 84118,
+    "webp_q50": 71748,
+    "webp_lossless": 18592,
+    "png": 22818
+   }
+  },
+  {
+   "file": "munster_000163_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 12318,
+    "webp_q50": 8728,
+    "webp_lossless": 3462,
+    "png": 5091
+   },
+   "edge": {
+    "webp_q80": 120032,
+    "webp_q50": 101142,
+    "webp_lossless": 27444,
+    "png": 33476
+   }
+  },
+  {
+   "file": "munster_000164_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 13588,
+    "webp_q50": 9870,
+    "webp_lossless": 3680,
+    "png": 5102
+   },
+   "edge": {
+    "webp_q80": 133046,
+    "webp_q50": 111906,
+    "webp_lossless": 29928,
+    "png": 35311
+   }
+  },
+  {
+   "file": "munster_000165_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 12230,
+    "webp_q50": 9156,
+    "webp_lossless": 2782,
+    "png": 4248
+   },
+   "edge": {
+    "webp_q80": 104226,
+    "webp_q50": 88136,
+    "webp_lossless": 24370,
+    "png": 30114
+   }
+  },
+  {
+   "file": "munster_000166_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 16328,
+    "webp_q50": 11528,
+    "webp_lossless": 4890,
+    "png": 6812
+   },
+   "edge": {
+    "webp_q80": 118814,
+    "webp_q50": 100370,
+    "webp_lossless": 28666,
+    "png": 34623
+   }
+  },
+  {
+   "file": "munster_000167_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 20678,
+    "webp_q50": 14410,
+    "webp_lossless": 6854,
+    "png": 9121
+   },
+   "edge": {
+    "webp_q80": 150410,
+    "webp_q50": 126458,
+    "webp_lossless": 34982,
+    "png": 41584
+   }
+  },
+  {
+   "file": "munster_000168_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14102,
+    "webp_q50": 10120,
+    "webp_lossless": 4042,
+    "png": 5641
+   },
+   "edge": {
+    "webp_q80": 85648,
+    "webp_q50": 72688,
+    "webp_lossless": 20290,
+    "png": 25254
+   }
+  },
+  {
+   "file": "munster_000169_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 14048,
+    "webp_q50": 10030,
+    "webp_lossless": 4224,
+    "png": 5770
+   },
+   "edge": {
+    "webp_q80": 99854,
+    "webp_q50": 84918,
+    "webp_lossless": 22504,
+    "png": 27612
+   }
+  },
+  {
+   "file": "munster_000170_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 9496,
+    "webp_q50": 6750,
+    "webp_lossless": 2586,
+    "png": 4083
+   },
+   "edge": {
+    "webp_q80": 92422,
+    "webp_q50": 78500,
+    "webp_lossless": 21852,
+    "png": 26710
+   }
+  },
+  {
+   "file": "munster_000171_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 10890,
+    "webp_q50": 7814,
+    "webp_lossless": 3254,
+    "png": 4630
+   },
+   "edge": {
+    "webp_q80": 72830,
+    "webp_q50": 61942,
+    "webp_lossless": 17032,
+    "png": 21409
+   }
+  },
+  {
+   "file": "munster_000172_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 11722,
+    "webp_q50": 8580,
+    "webp_lossless": 3266,
+    "png": 4767
+   },
+   "edge": {
+    "webp_q80": 112788,
+    "webp_q50": 95714,
+    "webp_lossless": 25876,
+    "png": 31986
+   }
+  },
+  {
+   "file": "munster_000173_000019_leftImg8bit.png",
+   "w": 2048,
+   "h": 1024,
+   "seg": {
+    "webp_q80": 11974,
+    "webp_q50": 8472,
+    "webp_lossless": 3768,
+    "png": 5125
+   },
+   "edge": {
+    "webp_q80": 76138,
+    "webp_q50": 64450,
+    "webp_lossless": 17392,
+    "png": 21664
+   }
+  }
+ ]
+}

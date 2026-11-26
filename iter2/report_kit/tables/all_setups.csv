@@ -1,0 +1,44 @@
+setup,dataset,description,n,numbers_pct,positions_pct,joint_pct,joint_ci95_low,joint_ci95_high
+v3_default,v3,"all cameras' captions, 1024x576, Cityscapes palette (current receiver)",112,36.6,88.4,36.6,28.3,45.8
+v3_k1,v3,"reference camera only, 1024x576, Cityscapes palette",112,33.9,86.6,33.0,25.0,42.2
+v3_both_fixes,v3,"all cameras' captions, 896x512 working size, ADE20K palette",112,46.4,90.2,43.8,34.9,53.0
+v3_k1_both_fixes,v3,"reference camera only, 896x512 working size, ADE20K palette",112,49.1,89.3,46.4,37.5,55.6
+v3_cn07_15,v3,current receiver with ControlNet canny 0.7 / seg 1.5,112,50.9,93.8,49.1,40.0,58.2
+v3_resolution_only,v3,"896x512 working size, Cityscapes palette",112,39.3,89.3,37.5,29.1,46.7
+v3_palette_only,v3,"1024x576, ADE20K palette",112,38.4,89.3,37.5,29.1,46.7
+rw_default,rw,"all cameras' captions, 1024x576, Cityscapes palette (current receiver)",61,27.9,91.8,27.9,18.2,40.2
+rw_k1,rw,"reference camera only, 1024x576, Cityscapes palette",61,26.2,91.8,26.2,16.8,38.4
+rw_both_fixes,rw,"all cameras' captions, 896x512 working size, ADE20K palette",61,47.5,95.1,45.9,34.0,58.3
+rw_k1_both_fixes,rw,"reference camera only, 896x512 working size, ADE20K palette",61,54.1,95.1,54.1,41.7,66.0
+rw_cn07_15,rw,current receiver with ControlNet canny 0.7 / seg 1.5,61,34.4,96.7,34.4,23.7,47.0
+rw_resolution_only,rw,"896x512 working size, Cityscapes palette",61,44.3,96.7,44.3,32.5,56.7
+rw_palette_only,rw,"1024x576, ADE20K palette",61,29.5,96.7,29.5,19.6,41.9
+cs_authors,cs,"Cityscapes (the seed paper's kind of data), authors' receiver settings: 2048x1024, Cityscapes palette, single camera (iteration 1)",100,44.0,77.0,41.0,31.9,50.8
+cs_ade,cs,"Cityscapes, authors' settings with the ADE20K palette (iteration 1)",100,42.0,82.0,41.0,31.9,50.8
+cs2_paper_seg1024,cs2,"Cityscapes, seed paper's single-camera MMSD rebuilt with the segmenter at full input size (1024x2048), 2048x1024, Cityscapes palette",100,43.0,84.0,41.0,31.9,50.8
+v3_paper_k1,v3,"seed paper's single-camera MMSD at its own settings: reference camera only, generated at the photo's resolution (1920x1088), Cityscapes palette, map at half resolution, edges at full resolution",112,57.1,88.4,56.2,47.0,65.1
+v3_paper_multi,v3,"same settings, all cameras' captions (our multi-camera receiver)",112,50.9,96.4,50.0,40.9,59.1
+rw_paper_k1,rw,"seed paper's single-camera MMSD at its own settings: reference camera only, generated at the photo's resolution (1920x1088), Cityscapes palette, map at half resolution, edges at full resolution",61,77.0,95.1,75.4,63.3,84.5
+rw_paper_multi,rw,"same settings, all cameras' captions (our multi-camera receiver)",61,73.8,95.1,73.8,61.6,83.2
+rw_fuse,rw,"Damir's fusion: img2img from the main reconstruction (paper settings, strength 0.5), main seg+edge on the ControlNets, supporting reconstructions on the IP-Adapter (scale 1.0), global caption",61,80.3,96.7,80.3,68.7,88.4
+rw_fuse_noip,rw,control: the same img2img pass without the IP-Adapter,61,63.9,93.4,63.9,51.4,74.8
+v3_fuse,v3,Damir's fusion (as rw_fuse),112,69.6,93.8,69.6,60.6,77.4
+v3_fuse_noip,v3,control: the same img2img pass without the IP-Adapter,112,63.4,92.9,61.6,52.4,70.1
+v3_identity,v3,calibration: the original photo judged against itself (the judge's ceiling),112,100.0,100.0,100.0,96.7,100.0
+rw_identity,rw,calibration: the original photo judged against itself (the judge's ceiling),61,100.0,100.0,100.0,94.1,100.0
+v3_both_fixes_cn,v3,both fixes + ControlNet canny 0.7 / seg 1.5,112,43.8,94.6,43.8,34.9,53.0
+v3_k1_both_fixes_cn,v3,"reference camera only, both fixes + canny 0.7 / seg 1.5",112,55.4,92.9,52.7,43.5,61.7
+rw_both_fixes_cn,rw,both fixes + ControlNet canny 0.7 / seg 1.5,61,50.8,95.1,50.8,38.6,62.9
+rw_k1_both_fixes_cn,rw,"reference camera only, both fixes + canny 0.7 / seg 1.5",61,57.4,96.7,57.4,44.9,69.0
+v3_fuseF,v3,"fusion with full-resolution supporting reconstructions (strength 0.5, IP scale 1.0)",112,59.8,95.5,59.8,50.6,68.4
+v3_fuseF_st0.3,v3,"tuning: strength 0.3, IP scale 1.0 (full-resolution supports)",56,55.4,91.1,55.4,42.4,67.6
+v3_fuseF_st0.4,v3,"tuning: strength 0.4, IP scale 1.0 (full-resolution supports)",112,61.6,95.5,61.6,52.4,70.1
+v3_fuseF_st0.6,v3,"tuning: strength 0.6, IP scale 1.0 (full-resolution supports)",56,62.5,92.9,62.5,49.4,74.0
+v3_fuseF_ip0.5,v3,"tuning: strength 0.5, IP scale 0.5 (full-resolution supports)",56,57.1,91.1,55.4,42.4,67.6
+v3_fuseF_ip0.75,v3,"tuning: strength 0.5, IP scale 0.75 (full-resolution supports)",56,62.5,91.1,60.7,47.6,72.4
+rw_fuseF,rw,"fusion with full-resolution supporting reconstructions (strength 0.5, IP scale 1.0)",61,85.2,96.7,85.2,74.3,92.0
+rw_fuseF_st0.3,rw,"tuning: strength 0.3, IP scale 1.0 (full-resolution supports)",30,86.7,100.0,86.7,70.3,94.7
+rw_fuseF_st0.4,rw,"tuning: strength 0.4, IP scale 1.0 (full-resolution supports)",61,78.7,96.7,78.7,66.9,87.1
+rw_fuseF_st0.6,rw,"tuning: strength 0.6, IP scale 1.0 (full-resolution supports)",30,90.0,96.7,90.0,74.4,96.5
+rw_fuseF_ip0.5,rw,"tuning: strength 0.5, IP scale 0.5 (full-resolution supports)",29,96.6,96.6,93.1,78.0,98.1
+rw_fuseF_ip0.75,rw,"tuning: strength 0.5, IP scale 0.75 (full-resolution supports)",30,93.3,96.7,93.3,78.7,98.2

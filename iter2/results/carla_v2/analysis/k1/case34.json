@@ -1,0 +1,152 @@
+{
+ "case": "case34",
+ "reference": "cam1",
+ "variant": "k1",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 0,
+  "bicycle": 0,
+  "car": 2,
+  "motorcycle": 0,
+  "bus": 1,
+  "truck": 1,
+  "cars_4wheel": 4,
+  "two_wheelers": 0,
+  "vehicles": 4,
+  "pedestrians": 0
+ },
+ "gt": {
+  "cars_4wheel": 5,
+  "pedestrians": 4,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "bus",
+   "score": 0.999,
+   "bbox_master_px": [
+    656.8,
+    263.8,
+    688.6,
+    301.4
+   ],
+   "center_master_px": [
+    672.7,
+    282.6
+   ],
+   "ground_contact_master_px": [
+    672.7,
+    301.4
+   ],
+   "bbox_reference_px": [
+    1231.5,
+    494.6,
+    1291.0,
+    565.0
+   ],
+   "center_reference_px": [
+    1261.3,
+    529.8
+   ]
+  },
+  {
+   "id": 1,
+   "class": "car",
+   "score": 0.996,
+   "bbox_master_px": [
+    815.9,
+    275.7,
+    894.9,
+    325.0
+   ],
+   "center_master_px": [
+    855.4,
+    300.3
+   ],
+   "ground_contact_master_px": [
+    855.4,
+    325.0
+   ],
+   "bbox_reference_px": [
+    1529.8,
+    517.0,
+    1677.9,
+    609.3
+   ],
+   "center_reference_px": [
+    1603.9,
+    563.2
+   ]
+  },
+  {
+   "id": 2,
+   "class": "truck",
+   "score": 0.837,
+   "bbox_master_px": [
+    702.1,
+    270.9,
+    737.0,
+    292.2
+   ],
+   "center_master_px": [
+    719.5,
+    281.6
+   ],
+   "ground_contact_master_px": [
+    719.5,
+    292.2
+   ],
+   "bbox_reference_px": [
+    1316.4,
+    508.0,
+    1381.9,
+    547.8
+   ],
+   "center_reference_px": [
+    1349.1,
+    527.9
+   ]
+  },
+  {
+   "id": 3,
+   "class": "car",
+   "score": 0.78,
+   "bbox_master_px": [
+    688.1,
+    271.9,
+    700.1,
+    285.2
+   ],
+   "center_master_px": [
+    694.1,
+    278.5
+   ],
+   "ground_contact_master_px": [
+    694.1,
+    285.2
+   ],
+   "bbox_reference_px": [
+    1290.2,
+    509.7,
+    1312.8,
+    534.8
+   ],
+   "center_reference_px": [
+    1301.5,
+    522.3
+   ]
+  }
+ ],
+ "vehicle_recall": 0.8,
+ "vehicle_precision": 1.0,
+ "person_recall": 0.0,
+ "person_precision": null,
+ "vehicle_count_abs_err_vs_oracle": 1,
+ "person_count_abs_err_vs_oracle": 6,
+ "seconds": 10.472553400000834,
+ "prompt": "a street with palm trees and buildings"
+}

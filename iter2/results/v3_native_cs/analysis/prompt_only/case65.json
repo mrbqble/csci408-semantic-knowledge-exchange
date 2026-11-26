@@ -1,0 +1,181 @@
+{
+ "case": "case65",
+ "reference": "cam1",
+ "variant": "prompt_only",
+ "master_size": [
+  896,
+  512
+ ],
+ "counts": {
+  "person": 2,
+  "bicycle": 0,
+  "car": 1,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 2,
+  "cars_4wheel": 3,
+  "two_wheelers": 0,
+  "vehicles": 3,
+  "pedestrians": 2
+ },
+ "gt": {
+  "cars_4wheel": 4,
+  "pedestrians": 3,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "person",
+   "score": 0.971,
+   "bbox_master_px": [
+    454.4,
+    256.2,
+    478.5,
+    311.4
+   ],
+   "center_master_px": [
+    466.5,
+    283.8
+   ],
+   "ground_contact_master_px": [
+    466.5,
+    311.4
+   ],
+   "bbox_reference_px": [
+    973.7,
+    540.3,
+    1025.4,
+    656.8
+   ],
+   "center_reference_px": [
+    999.5,
+    598.6
+   ]
+  },
+  {
+   "id": 1,
+   "class": "truck",
+   "score": 0.937,
+   "bbox_master_px": [
+    527.4,
+    217.9,
+    896.0,
+    498.3
+   ],
+   "center_master_px": [
+    711.7,
+    358.1
+   ],
+   "ground_contact_master_px": [
+    711.7,
+    498.3
+   ],
+   "bbox_reference_px": [
+    1130.1,
+    459.5,
+    1920.0,
+    1051.1
+   ],
+   "center_reference_px": [
+    1525.0,
+    755.3
+   ]
+  },
+  {
+   "id": 2,
+   "class": "car",
+   "score": 0.767,
+   "bbox_master_px": [
+    502.8,
+    248.4,
+    541.7,
+    288.7
+   ],
+   "center_master_px": [
+    522.2,
+    268.6
+   ],
+   "ground_contact_master_px": [
+    522.2,
+    288.7
+   ],
+   "bbox_reference_px": [
+    1077.5,
+    524.0,
+    1160.7,
+    609.0
+   ],
+   "center_reference_px": [
+    1119.1,
+    566.5
+   ]
+  },
+  {
+   "id": 3,
+   "class": "truck",
+   "score": 0.716,
+   "bbox_master_px": [
+    388.9,
+    249.3,
+    472.5,
+    295.2
+   ],
+   "center_master_px": [
+    430.7,
+    272.2
+   ],
+   "ground_contact_master_px": [
+    430.7,
+    295.2
+   ],
+   "bbox_reference_px": [
+    833.4,
+    525.8,
+    1012.5,
+    622.7
+   ],
+   "center_reference_px": [
+    923.0,
+    574.2
+   ]
+  },
+  {
+   "id": 4,
+   "class": "person",
+   "score": 0.63,
+   "bbox_master_px": [
+    252.9,
+    239.4,
+    269.7,
+    269.0
+   ],
+   "center_master_px": [
+    261.3,
+    254.2
+   ],
+   "ground_contact_master_px": [
+    261.3,
+    269.0
+   ],
+   "bbox_reference_px": [
+    541.8,
+    505.0,
+    578.0,
+    567.3
+   ],
+   "center_reference_px": [
+    559.9,
+    536.1
+   ]
+  }
+ ],
+ "vehicle_recall": 1.0,
+ "vehicle_precision": 0.6666666666666666,
+ "person_recall": 0.3333333333333333,
+ "person_precision": 0.5,
+ "vehicle_count_abs_err_vs_oracle": 1,
+ "person_count_abs_err_vs_oracle": 1,
+ "seconds": 8.164952700000867,
+ "prompt": "a van is parked on the side of the road, a red truck driving down a street next to a tall building, a woman walking across a crosswalk on a city street"
+}

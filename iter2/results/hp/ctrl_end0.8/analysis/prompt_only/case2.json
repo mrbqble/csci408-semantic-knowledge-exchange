@@ -1,0 +1,123 @@
+{
+ "case": "case2",
+ "reference": "cam1",
+ "variant": "prompt_only",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 0,
+  "bicycle": 1,
+  "car": 2,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 0,
+  "cars_4wheel": 2,
+  "two_wheelers": 1,
+  "vehicles": 2,
+  "pedestrians": 0
+ },
+ "gt": {
+  "cars_4wheel": 3,
+  "pedestrians": 13,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "car",
+   "score": 0.999,
+   "bbox_master_px": [
+    219.4,
+    225.1,
+    295.5,
+    254.6
+   ],
+   "center_master_px": [
+    257.4,
+    239.8
+   ],
+   "ground_contact_master_px": [
+    257.4,
+    254.6
+   ],
+   "bbox_reference_px": [
+    411.4,
+    422.1,
+    554.0,
+    477.3
+   ],
+   "center_reference_px": [
+    482.7,
+    449.7
+   ]
+  },
+  {
+   "id": 1,
+   "class": "car",
+   "score": 0.996,
+   "bbox_master_px": [
+    33.2,
+    224.1,
+    84.2,
+    262.9
+   ],
+   "center_master_px": [
+    58.7,
+    243.5
+   ],
+   "ground_contact_master_px": [
+    58.7,
+    262.9
+   ],
+   "bbox_reference_px": [
+    62.2,
+    420.2,
+    157.8,
+    493.0
+   ],
+   "center_reference_px": [
+    110.0,
+    456.6
+   ]
+  },
+  {
+   "id": 2,
+   "class": "bicycle",
+   "score": 0.802,
+   "bbox_master_px": [
+    699.6,
+    223.9,
+    728.0,
+    249.1
+   ],
+   "center_master_px": [
+    713.8,
+    236.5
+   ],
+   "ground_contact_master_px": [
+    713.8,
+    249.1
+   ],
+   "bbox_reference_px": [
+    1311.7,
+    419.8,
+    1364.9,
+    467.2
+   ],
+   "center_reference_px": [
+    1338.3,
+    443.5
+   ]
+  }
+ ],
+ "vehicle_recall": 0.4,
+ "vehicle_precision": 1.0,
+ "person_recall": 0.0,
+ "person_precision": null,
+ "vehicle_count_abs_err_vs_oracle": 3,
+ "person_count_abs_err_vs_oracle": 17,
+ "seconds": 10.306522900002165,
+ "prompt": "a street with a yellow line painted on the road, a street with a yellow line painted on it, a street scene with a car and a building"
+}

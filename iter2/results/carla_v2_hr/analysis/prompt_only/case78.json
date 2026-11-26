@@ -1,0 +1,181 @@
+{
+ "case": "case78",
+ "reference": "cam1",
+ "variant": "prompt_only",
+ "master_size": [
+  1280,
+  704
+ ],
+ "counts": {
+  "person": 1,
+  "bicycle": 0,
+  "car": 4,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 0,
+  "cars_4wheel": 4,
+  "two_wheelers": 0,
+  "vehicles": 4,
+  "pedestrians": 1
+ },
+ "gt": {
+  "cars_4wheel": 5,
+  "pedestrians": 5,
+  "two_wheelers": 3
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "car",
+   "score": 1.0,
+   "bbox_master_px": [
+    877.3,
+    320.0,
+    1200.0,
+    437.1
+   ],
+   "center_master_px": [
+    1038.7,
+    378.5
+   ],
+   "ground_contact_master_px": [
+    1038.7,
+    437.1
+   ],
+   "bbox_reference_px": [
+    1316.0,
+    490.9,
+    1800.0,
+    670.5
+   ],
+   "center_reference_px": [
+    1558.0,
+    580.7
+   ]
+  },
+  {
+   "id": 1,
+   "class": "car",
+   "score": 0.999,
+   "bbox_master_px": [
+    600.8,
+    315.5,
+    731.6,
+    366.7
+   ],
+   "center_master_px": [
+    666.2,
+    341.1
+   ],
+   "ground_contact_master_px": [
+    666.2,
+    366.7
+   ],
+   "bbox_reference_px": [
+    901.2,
+    483.9,
+    1097.4,
+    562.5
+   ],
+   "center_reference_px": [
+    999.3,
+    523.2
+   ]
+  },
+  {
+   "id": 2,
+   "class": "car",
+   "score": 0.997,
+   "bbox_master_px": [
+    543.2,
+    310.4,
+    596.5,
+    339.3
+   ],
+   "center_master_px": [
+    569.9,
+    324.9
+   ],
+   "ground_contact_master_px": [
+    569.9,
+    339.3
+   ],
+   "bbox_reference_px": [
+    814.8,
+    476.2,
+    894.8,
+    520.5
+   ],
+   "center_reference_px": [
+    854.8,
+    498.4
+   ]
+  },
+  {
+   "id": 3,
+   "class": "person",
+   "score": 0.727,
+   "bbox_master_px": [
+    162.0,
+    293.3,
+    180.0,
+    365.9
+   ],
+   "center_master_px": [
+    171.0,
+    329.6
+   ],
+   "ground_contact_master_px": [
+    171.0,
+    365.9
+   ],
+   "bbox_reference_px": [
+    243.0,
+    449.9,
+    270.0,
+    561.4
+   ],
+   "center_reference_px": [
+    256.5,
+    505.7
+   ]
+  },
+  {
+   "id": 4,
+   "class": "car",
+   "score": 0.608,
+   "bbox_master_px": [
+    408.1,
+    303.0,
+    432.2,
+    316.2
+   ],
+   "center_master_px": [
+    420.1,
+    309.6
+   ],
+   "ground_contact_master_px": [
+    420.1,
+    316.2
+   ],
+   "bbox_reference_px": [
+    612.1,
+    464.8,
+    648.3,
+    485.0
+   ],
+   "center_reference_px": [
+    630.2,
+    474.9
+   ]
+  }
+ ],
+ "vehicle_recall": 0.6,
+ "vehicle_precision": 0.75,
+ "person_recall": 0.1,
+ "person_precision": 1.0,
+ "vehicle_count_abs_err_vs_oracle": 1,
+ "person_count_abs_err_vs_oracle": 9,
+ "seconds": 18.269442199998593,
+ "prompt": "a street with a car and a sign, a city street with a bus and a bus, a street scene with a red car driving down it, a person walking down a street next to a car"
+}

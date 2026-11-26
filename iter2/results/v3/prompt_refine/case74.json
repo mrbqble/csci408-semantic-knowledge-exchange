@@ -1,0 +1,78 @@
+{
+ "case": "case74",
+ "variant": "prompt_refine",
+ "ip_adapter_scale": 0.0,
+ "ip_adapter_source": "none",
+ "reference": "cam1",
+ "supporting": [
+  "cam2",
+  "cam3",
+  "cam4"
+ ],
+ "timestamp": 5338,
+ "prompt": "a street with a car parked on the side of it, a yellow truck is driving down the street, a street with a bus and a bus stop, a person walking down a sidewalk next to a bus",
+ "seconds": 14.781076200004463,
+ "peak_gpu_mb": 5394.6416015625,
+ "size": [
+  1024,
+  576
+ ],
+ "palette": "cs",
+ "ref_policy": "first",
+ "seed": 42,
+ "steps": 20,
+ "guidance": 7.5,
+ "donor_case": null,
+ "cn_scales": [
+  1.0,
+  1.0
+ ],
+ "edge_thr": 40,
+ "base": "existing prompt_only result",
+ "base_seconds": 10.442236900002172,
+ "refine_seconds": 4.338839300002292,
+ "refine": {
+  "n_small_blobs": 5,
+  "n_windows": 2,
+  "uncovered_blobs": 0,
+  "windows": [
+   {
+    "x0": 341,
+    "y0": 203,
+    "n_blobs": 4,
+    "blob_areas": [
+     448,
+     22,
+     43,
+     23
+    ],
+    "index": 0,
+    "seconds": 2.168251800001599
+   },
+   {
+    "x0": 181,
+    "y0": 244,
+    "n_blobs": 1,
+    "blob_areas": [
+     22
+    ],
+    "index": 1,
+    "seconds": 2.1705875000006927
+   }
+  ],
+  "failures": [],
+  "seconds": 4.338839300002292
+ },
+ "refine_settings": {
+  "window": 128,
+  "upscale": 4,
+  "strength": 0.5,
+  "feather_px": 12,
+  "max_windows": 8,
+  "min_area": 12,
+  "max_side": 48,
+  "prompt": "cars on a city street, realistic photo, sharp",
+  "negative_prompt": "blurry, deformed, cartoon",
+  "seed": "42 + window index"
+ }
+}

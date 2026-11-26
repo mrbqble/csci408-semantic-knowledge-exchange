@@ -1,0 +1,268 @@
+{
+ "case": "case80",
+ "reference": "cam1",
+ "variant": "prompt_only",
+ "master_size": [
+  896,
+  512
+ ],
+ "counts": {
+  "person": 4,
+  "bicycle": 0,
+  "car": 3,
+  "motorcycle": 0,
+  "bus": 1,
+  "truck": 0,
+  "cars_4wheel": 4,
+  "two_wheelers": 0,
+  "vehicles": 4,
+  "pedestrians": 4
+ },
+ "gt": {
+  "cars_4wheel": 6,
+  "pedestrians": 4,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "person",
+   "score": 0.997,
+   "bbox_master_px": [
+    691.3,
+    245.7,
+    709.9,
+    300.9
+   ],
+   "center_master_px": [
+    700.6,
+    273.3
+   ],
+   "ground_contact_master_px": [
+    700.6,
+    300.9
+   ],
+   "bbox_reference_px": [
+    1481.4,
+    518.2,
+    1521.1,
+    634.8
+   ],
+   "center_reference_px": [
+    1501.3,
+    576.5
+   ]
+  },
+  {
+   "id": 1,
+   "class": "person",
+   "score": 0.996,
+   "bbox_master_px": [
+    800.0,
+    244.5,
+    822.6,
+    305.2
+   ],
+   "center_master_px": [
+    811.3,
+    274.9
+   ],
+   "ground_contact_master_px": [
+    811.3,
+    305.2
+   ],
+   "bbox_reference_px": [
+    1714.3,
+    515.7,
+    1762.7,
+    643.8
+   ],
+   "center_reference_px": [
+    1738.5,
+    579.8
+   ]
+  },
+  {
+   "id": 2,
+   "class": "car",
+   "score": 0.942,
+   "bbox_master_px": [
+    572.4,
+    249.7,
+    597.7,
+    261.3
+   ],
+   "center_master_px": [
+    585.1,
+    255.5
+   ],
+   "ground_contact_master_px": [
+    585.1,
+    261.3
+   ],
+   "bbox_reference_px": [
+    1226.6,
+    526.6,
+    1280.9,
+    551.3
+   ],
+   "center_reference_px": [
+    1253.8,
+    538.9
+   ]
+  },
+  {
+   "id": 3,
+   "class": "bus",
+   "score": 0.81,
+   "bbox_master_px": [
+    0.0,
+    187.6,
+    200.0,
+    292.7
+   ],
+   "center_master_px": [
+    100.0,
+    240.2
+   ],
+   "ground_contact_master_px": [
+    100.0,
+    292.7
+   ],
+   "bbox_reference_px": [
+    0.0,
+    395.8,
+    428.6,
+    617.4
+   ],
+   "center_reference_px": [
+    214.3,
+    506.6
+   ]
+  },
+  {
+   "id": 4,
+   "class": "car",
+   "score": 0.772,
+   "bbox_master_px": [
+    604.8,
+    249.3,
+    623.1,
+    262.6
+   ],
+   "center_master_px": [
+    613.9,
+    256.0
+   ],
+   "ground_contact_master_px": [
+    613.9,
+    262.6
+   ],
+   "bbox_reference_px": [
+    1295.9,
+    525.9,
+    1335.2,
+    553.9
+   ],
+   "center_reference_px": [
+    1315.5,
+    539.9
+   ]
+  },
+  {
+   "id": 5,
+   "class": "person",
+   "score": 0.55,
+   "bbox_master_px": [
+    71.5,
+    241.9,
+    85.5,
+    277.1
+   ],
+   "center_master_px": [
+    78.5,
+    259.5
+   ],
+   "ground_contact_master_px": [
+    78.5,
+    277.1
+   ],
+   "bbox_reference_px": [
+    153.2,
+    510.3,
+    183.1,
+    584.6
+   ],
+   "center_reference_px": [
+    168.2,
+    547.5
+   ]
+  },
+  {
+   "id": 6,
+   "class": "person",
+   "score": 0.525,
+   "bbox_master_px": [
+    582.1,
+    240.0,
+    589.6,
+    249.2
+   ],
+   "center_master_px": [
+    585.9,
+    244.6
+   ],
+   "ground_contact_master_px": [
+    585.9,
+    249.2
+   ],
+   "bbox_reference_px": [
+    1247.4,
+    506.3,
+    1263.5,
+    525.6
+   ],
+   "center_reference_px": [
+    1255.4,
+    515.9
+   ]
+  },
+  {
+   "id": 7,
+   "class": "car",
+   "score": 0.514,
+   "bbox_master_px": [
+    491.7,
+    237.2,
+    517.2,
+    253.4
+   ],
+   "center_master_px": [
+    504.4,
+    245.3
+   ],
+   "ground_contact_master_px": [
+    504.4,
+    253.4
+   ],
+   "bbox_reference_px": [
+    1053.7,
+    500.4,
+    1108.2,
+    534.5
+   ],
+   "center_reference_px": [
+    1080.9,
+    517.5
+   ]
+  }
+ ],
+ "vehicle_recall": 0.3333333333333333,
+ "vehicle_precision": 0.5,
+ "person_recall": 0.6,
+ "person_precision": 0.75,
+ "vehicle_count_abs_err_vs_oracle": 2,
+ "person_count_abs_err_vs_oracle": 1,
+ "seconds": 8.068595000000641,
+ "prompt": "a street scene with a bus and a bus stop, a city street with a bus and people walking, a red car parked on the side of a street, a green car is driving down the street, a street with a tree and a bus, a red car parked on the side of a road"
+}

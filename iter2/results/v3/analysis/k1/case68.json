@@ -1,0 +1,123 @@
+{
+ "case": "case68",
+ "reference": "cam1",
+ "variant": "k1",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 0,
+  "bicycle": 0,
+  "car": 2,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 1,
+  "cars_4wheel": 3,
+  "two_wheelers": 0,
+  "vehicles": 3,
+  "pedestrians": 0
+ },
+ "gt": {
+  "cars_4wheel": 10,
+  "pedestrians": 10,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "car",
+   "score": 0.799,
+   "bbox_master_px": [
+    3.5,
+    244.8,
+    492.8,
+    535.0
+   ],
+   "center_master_px": [
+    248.1,
+    389.9
+   ],
+   "ground_contact_master_px": [
+    248.1,
+    535.0
+   ],
+   "bbox_reference_px": [
+    6.5,
+    459.0,
+    923.9,
+    1003.2
+   ],
+   "center_reference_px": [
+    465.2,
+    731.1
+   ]
+  },
+  {
+   "id": 1,
+   "class": "car",
+   "score": 0.714,
+   "bbox_master_px": [
+    657.8,
+    265.7,
+    687.0,
+    287.5
+   ],
+   "center_master_px": [
+    672.4,
+    276.6
+   ],
+   "ground_contact_master_px": [
+    672.4,
+    287.5
+   ],
+   "bbox_reference_px": [
+    1233.4,
+    498.2,
+    1288.2,
+    539.0
+   ],
+   "center_reference_px": [
+    1260.8,
+    518.6
+   ]
+  },
+  {
+   "id": 2,
+   "class": "truck",
+   "score": 0.695,
+   "bbox_master_px": [
+    0.9,
+    249.5,
+    495.3,
+    556.1
+   ],
+   "center_master_px": [
+    248.1,
+    402.8
+   ],
+   "ground_contact_master_px": [
+    248.1,
+    556.1
+   ],
+   "bbox_reference_px": [
+    1.7,
+    467.9,
+    928.7,
+    1042.6
+   ],
+   "center_reference_px": [
+    465.2,
+    755.2
+   ]
+  }
+ ],
+ "vehicle_recall": 0.3,
+ "vehicle_precision": 1.0,
+ "person_recall": 0.0,
+ "person_precision": null,
+ "vehicle_count_abs_err_vs_oracle": 7,
+ "person_count_abs_err_vs_oracle": 17,
+ "seconds": 10.45520640000177,
+ "prompt": "a van is parked on the side of the road"
+}

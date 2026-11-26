@@ -1,0 +1,129 @@
+{
+ "case": "case46",
+ "variant": "prompt_refine",
+ "ip_adapter_scale": 0.0,
+ "ip_adapter_source": "none",
+ "reference": "cam1",
+ "supporting": [
+  "cam2",
+  "cam3",
+  "cam4"
+ ],
+ "timestamp": 2635,
+ "prompt": "a city street with people walking on it, a van is parked on the side of the road, a red car driving down a street next to a tall building, a group of people walking down a street",
+ "seconds": 26.28964040000028,
+ "peak_gpu_mb": 5394.6416015625,
+ "size": [
+  1024,
+  576
+ ],
+ "palette": "cs",
+ "ref_policy": "first",
+ "seed": 42,
+ "steps": 20,
+ "guidance": 7.5,
+ "donor_case": null,
+ "cn_scales": [
+  1.0,
+  1.0
+ ],
+ "edge_thr": 40,
+ "base": "existing prompt_only result",
+ "base_seconds": 10.920383500000753,
+ "refine_seconds": 15.369256899999527,
+ "refine": {
+  "n_small_blobs": 11,
+  "n_windows": 7,
+  "uncovered_blobs": 0,
+  "windows": [
+   {
+    "x0": 661,
+    "y0": 199,
+    "n_blobs": 2,
+    "blob_areas": [
+     1610,
+     176
+    ],
+    "index": 0,
+    "seconds": 2.2094897999995737
+   },
+   {
+    "x0": 744,
+    "y0": 195,
+    "n_blobs": 2,
+    "blob_areas": [
+     636,
+     89
+    ],
+    "index": 1,
+    "seconds": 2.2190504999998666
+   },
+   {
+    "x0": 388,
+    "y0": 209,
+    "n_blobs": 2,
+    "blob_areas": [
+     186,
+     204
+    ],
+    "index": 2,
+    "seconds": 2.2065092000011646
+   },
+   {
+    "x0": 860,
+    "y0": 194,
+    "n_blobs": 2,
+    "blob_areas": [
+     50,
+     43
+    ],
+    "index": 3,
+    "seconds": 2.1908588999995118
+   },
+   {
+    "x0": 256,
+    "y0": 62,
+    "n_blobs": 1,
+    "blob_areas": [
+     50
+    ],
+    "index": 4,
+    "seconds": 2.1894317000005685
+   },
+   {
+    "x0": 0,
+    "y0": 217,
+    "n_blobs": 1,
+    "blob_areas": [
+     24
+    ],
+    "index": 5,
+    "seconds": 2.1776318999982323
+   },
+   {
+    "x0": 230,
+    "y0": 209,
+    "n_blobs": 1,
+    "blob_areas": [
+     22
+    ],
+    "index": 6,
+    "seconds": 2.17628490000061
+   }
+  ],
+  "failures": [],
+  "seconds": 15.369256899999527
+ },
+ "refine_settings": {
+  "window": 128,
+  "upscale": 4,
+  "strength": 0.5,
+  "feather_px": 12,
+  "max_windows": 8,
+  "min_area": 12,
+  "max_side": 48,
+  "prompt": "cars on a city street, realistic photo, sharp",
+  "negative_prompt": "blurry, deformed, cartoon",
+  "seed": "42 + window index"
+ }
+}

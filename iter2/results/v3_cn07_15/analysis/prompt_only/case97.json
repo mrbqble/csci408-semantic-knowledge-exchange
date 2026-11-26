@@ -1,0 +1,210 @@
+{
+ "case": "case97",
+ "reference": "cam1",
+ "variant": "prompt_only",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 2,
+  "bicycle": 0,
+  "car": 3,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 1,
+  "cars_4wheel": 4,
+  "two_wheelers": 0,
+  "vehicles": 4,
+  "pedestrians": 2
+ },
+ "gt": {
+  "cars_4wheel": 4,
+  "pedestrians": 7,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "car",
+   "score": 1.0,
+   "bbox_master_px": [
+    79.6,
+    289.3,
+    243.5,
+    357.1
+   ],
+   "center_master_px": [
+    161.6,
+    323.2
+   ],
+   "ground_contact_master_px": [
+    161.6,
+    357.1
+   ],
+   "bbox_reference_px": [
+    149.3,
+    542.5,
+    456.6,
+    669.5
+   ],
+   "center_reference_px": [
+    303.0,
+    606.0
+   ]
+  },
+  {
+   "id": 1,
+   "class": "car",
+   "score": 0.997,
+   "bbox_master_px": [
+    1.3,
+    290.0,
+    123.4,
+    350.4
+   ],
+   "center_master_px": [
+    62.4,
+    320.2
+   ],
+   "ground_contact_master_px": [
+    62.4,
+    350.4
+   ],
+   "bbox_reference_px": [
+    2.5,
+    543.8,
+    231.4,
+    657.0
+   ],
+   "center_reference_px": [
+    116.9,
+    600.4
+   ]
+  },
+  {
+   "id": 2,
+   "class": "car",
+   "score": 0.953,
+   "bbox_master_px": [
+    640.7,
+    270.3,
+    764.0,
+    338.0
+   ],
+   "center_master_px": [
+    702.3,
+    304.1
+   ],
+   "ground_contact_master_px": [
+    702.3,
+    338.0
+   ],
+   "bbox_reference_px": [
+    1201.3,
+    506.9,
+    1432.4,
+    633.7
+   ],
+   "center_reference_px": [
+    1316.9,
+    570.3
+   ]
+  },
+  {
+   "id": 3,
+   "class": "truck",
+   "score": 0.9,
+   "bbox_master_px": [
+    369.9,
+    217.9,
+    663.5,
+    426.5
+   ],
+   "center_master_px": [
+    516.7,
+    322.2
+   ],
+   "ground_contact_master_px": [
+    516.7,
+    426.5
+   ],
+   "bbox_reference_px": [
+    693.5,
+    408.5,
+    1244.0,
+    799.6
+   ],
+   "center_reference_px": [
+    968.8,
+    604.1
+   ]
+  },
+  {
+   "id": 4,
+   "class": "person",
+   "score": 0.607,
+   "bbox_master_px": [
+    754.2,
+    276.1,
+    764.6,
+    309.4
+   ],
+   "center_master_px": [
+    759.4,
+    292.8
+   ],
+   "ground_contact_master_px": [
+    759.4,
+    309.4
+   ],
+   "bbox_reference_px": [
+    1414.0,
+    517.7,
+    1433.7,
+    580.2
+   ],
+   "center_reference_px": [
+    1423.8,
+    548.9
+   ]
+  },
+  {
+   "id": 5,
+   "class": "person",
+   "score": 0.579,
+   "bbox_master_px": [
+    1015.4,
+    291.3,
+    1023.9,
+    318.6
+   ],
+   "center_master_px": [
+    1019.6,
+    304.9
+   ],
+   "ground_contact_master_px": [
+    1019.6,
+    318.6
+   ],
+   "bbox_reference_px": [
+    1903.9,
+    546.2,
+    1919.8,
+    597.3
+   ],
+   "center_reference_px": [
+    1911.8,
+    571.7
+   ]
+  }
+ ],
+ "vehicle_recall": 1.0,
+ "vehicle_precision": 1.0,
+ "person_recall": 0.0,
+ "person_precision": 0.0,
+ "vehicle_count_abs_err_vs_oracle": 0,
+ "person_count_abs_err_vs_oracle": 7,
+ "seconds": 10.429200400001719,
+ "prompt": "a white van driving down a street next to a traffic light, a car is parked on the side of the road, a street with cars and buildings in the background"
+}

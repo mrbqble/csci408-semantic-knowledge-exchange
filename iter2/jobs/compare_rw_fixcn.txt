@@ -1,0 +1,15 @@
+run              cases oracle veh    <24 px  24-48 px 48-120 px   >120 px  recall   prec  s/img
+default             61        701      0.17      0.17      0.79      0.95   0.469   0.76   10.5
+both_fixes_cn       61        711      0.29      0.41      0.86      0.95   0.603   0.67    7.8
+paired change in per-case recall, all vehicles, both_fixes_cn minus default: +0.095 (95% CI +0.046 to +0.142; n=61; CI above zero)
+paired change in per-case recall, vehicles < 48 px, both_fixes_cn minus default: +0.182 (95% CI +0.108 to +0.259; n=54; CI above zero)
+run              cases oracle veh    <24 px  24-48 px 48-120 px   >120 px  recall   prec  s/img
+both_fixes          61        711      0.33      0.36      0.87      0.95   0.594   0.70    8.1
+both_fixes_cn       61        711      0.29      0.41      0.86      0.95   0.603   0.67    7.8
+paired change in per-case recall, all vehicles, both_fixes_cn minus both_fixes: -0.004 (95% CI -0.027 to +0.019; n=61; CI crosses zero)
+paired change in per-case recall, vehicles < 48 px, both_fixes_cn minus both_fixes: +0.020 (95% CI -0.019 to +0.062; n=54; CI crosses zero)
+run              cases oracle veh    <24 px  24-48 px 48-120 px   >120 px  recall   prec  s/img
+k1_both_fixes_cn    61        711      0.31      0.38      0.86      0.94   0.595   0.70    7.9
+same                61        711      0.31      0.38      0.86      0.94   0.595   0.70    7.9
+paired change in per-case recall, all vehicles, same minus k1_both_fixes_cn: +0.000 (95% CI +0.000 to +0.000; n=61; CI crosses zero)
+paired change in per-case recall, vehicles < 48 px, same minus k1_both_fixes_cn: +0.000 (95% CI +0.000 to +0.000; n=54; CI crosses zero)

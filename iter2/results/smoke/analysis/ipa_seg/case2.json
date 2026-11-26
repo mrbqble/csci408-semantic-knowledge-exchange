@@ -1,0 +1,65 @@
+{
+ "case": "case2",
+ "reference": "cam1",
+ "variant": "ipa_seg",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 1,
+  "bicycle": 0,
+  "car": 0,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 0,
+  "cars_4wheel": 0,
+  "two_wheelers": 0,
+  "vehicles": 0,
+  "pedestrians": 1
+ },
+ "gt": {
+  "cars_4wheel": 9,
+  "pedestrians": 8,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "person",
+   "score": 0.88,
+   "bbox_master_px": [
+    321.5,
+    310.6,
+    430.8,
+    570.4
+   ],
+   "center_master_px": [
+    376.2,
+    440.5
+   ],
+   "ground_contact_master_px": [
+    376.2,
+    570.4
+   ],
+   "bbox_reference_px": [
+    602.9,
+    582.4,
+    807.7,
+    1069.4
+   ],
+   "center_reference_px": [
+    705.3,
+    825.9
+   ]
+  }
+ ],
+ "vehicle_recall": 0.0,
+ "vehicle_precision": null,
+ "person_recall": 0.14285714285714285,
+ "person_precision": 1.0,
+ "vehicle_count_abs_err_vs_oracle": 9,
+ "person_count_abs_err_vs_oracle": 6,
+ "seconds": 11.075675899999624,
+ "prompt": "a woman in a red dress is walking towards a police car, a group of cars parked on the side of a road, a stop sign on a street with a police car, a police car is parked in a parking"
+}

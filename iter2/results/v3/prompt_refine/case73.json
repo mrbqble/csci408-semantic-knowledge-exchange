@@ -1,0 +1,95 @@
+{
+ "case": "case73",
+ "variant": "prompt_refine",
+ "ip_adapter_scale": 0.0,
+ "ip_adapter_source": "none",
+ "reference": "cam1",
+ "supporting": [
+  "cam2",
+  "cam3"
+ ],
+ "timestamp": 2958,
+ "prompt": "a man walking across a crosswalk in a city, a man in a red jacket is walking down the street, a car is parked on the street in a city",
+ "seconds": 19.144471100000374,
+ "peak_gpu_mb": 5394.6416015625,
+ "size": [
+  1024,
+  576
+ ],
+ "palette": "cs",
+ "ref_policy": "first",
+ "seed": 42,
+ "steps": 20,
+ "guidance": 7.5,
+ "donor_case": null,
+ "cn_scales": [
+  1.0,
+  1.0
+ ],
+ "edge_thr": 40,
+ "base": "existing prompt_only result",
+ "base_seconds": 10.446191700000782,
+ "refine_seconds": 8.698279399999592,
+ "refine": {
+  "n_small_blobs": 5,
+  "n_windows": 4,
+  "uncovered_blobs": 0,
+  "windows": [
+   {
+    "x0": 123,
+    "y0": 215,
+    "n_blobs": 2,
+    "blob_areas": [
+     234,
+     874
+    ],
+    "index": 0,
+    "seconds": 2.1719530999998824
+   },
+   {
+    "x0": 896,
+    "y0": 251,
+    "n_blobs": 1,
+    "blob_areas": [
+     428
+    ],
+    "index": 1,
+    "seconds": 2.174809699999969
+   },
+   {
+    "x0": 0,
+    "y0": 216,
+    "n_blobs": 1,
+    "blob_areas": [
+     79
+    ],
+    "index": 2,
+    "seconds": 2.1731111999997665
+   },
+   {
+    "x0": 558,
+    "y0": 211,
+    "n_blobs": 1,
+    "blob_areas": [
+     22
+    ],
+    "index": 3,
+    "seconds": 2.178405399999974
+   }
+  ],
+  "failures": [],
+  "seconds": 8.698279399999592
+ },
+ "refine_settings": {
+  "window": 128,
+  "upscale": 4,
+  "strength": 0.5,
+  "feather_px": 12,
+  "max_windows": 8,
+  "min_area": 12,
+  "max_side": 48,
+  "prompt": "cars on a city street, realistic photo, sharp",
+  "negative_prompt": "blurry, deformed, cartoon",
+  "seed": "42 + window index"
+ }
+}

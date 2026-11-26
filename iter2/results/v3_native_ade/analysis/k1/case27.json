@@ -1,0 +1,152 @@
+{
+ "case": "case27",
+ "reference": "cam1",
+ "variant": "k1",
+ "master_size": [
+  896,
+  512
+ ],
+ "counts": {
+  "person": 0,
+  "bicycle": 0,
+  "car": 4,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 0,
+  "cars_4wheel": 4,
+  "two_wheelers": 0,
+  "vehicles": 4,
+  "pedestrians": 0
+ },
+ "gt": {
+  "cars_4wheel": 5,
+  "pedestrians": 6,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "car",
+   "score": 0.999,
+   "bbox_master_px": [
+    220.2,
+    266.5,
+    479.1,
+    352.5
+   ],
+   "center_master_px": [
+    349.6,
+    309.5
+   ],
+   "ground_contact_master_px": [
+    349.6,
+    352.5
+   ],
+   "bbox_reference_px": [
+    471.8,
+    562.1,
+    1026.6,
+    743.5
+   ],
+   "center_reference_px": [
+    749.2,
+    652.8
+   ]
+  },
+  {
+   "id": 1,
+   "class": "car",
+   "score": 0.945,
+   "bbox_master_px": [
+    547.1,
+    213.0,
+    862.4,
+    352.0
+   ],
+   "center_master_px": [
+    704.8,
+    282.5
+   ],
+   "ground_contact_master_px": [
+    704.8,
+    352.0
+   ],
+   "bbox_reference_px": [
+    1172.5,
+    449.4,
+    1847.9,
+    742.6
+   ],
+   "center_reference_px": [
+    1510.2,
+    596.0
+   ]
+  },
+  {
+   "id": 2,
+   "class": "car",
+   "score": 0.885,
+   "bbox_master_px": [
+    347.3,
+    247.4,
+    433.9,
+    286.2
+   ],
+   "center_master_px": [
+    390.6,
+    266.8
+   ],
+   "ground_contact_master_px": [
+    390.6,
+    286.2
+   ],
+   "bbox_reference_px": [
+    744.2,
+    521.9,
+    929.9,
+    603.7
+   ],
+   "center_reference_px": [
+    837.0,
+    562.8
+   ]
+  },
+  {
+   "id": 3,
+   "class": "car",
+   "score": 0.64,
+   "bbox_master_px": [
+    824.7,
+    241.1,
+    852.0,
+    255.1
+   ],
+   "center_master_px": [
+    838.4,
+    248.1
+   ],
+   "ground_contact_master_px": [
+    838.4,
+    255.1
+   ],
+   "bbox_reference_px": [
+    1767.3,
+    508.5,
+    1825.8,
+    538.2
+   ],
+   "center_reference_px": [
+    1796.5,
+    523.4
+   ]
+  }
+ ],
+ "vehicle_recall": 1.0,
+ "vehicle_precision": 1.0,
+ "person_recall": 0.0,
+ "person_precision": null,
+ "vehicle_count_abs_err_vs_oracle": 0,
+ "person_count_abs_err_vs_oracle": 6,
+ "seconds": 8.28154319999885,
+ "prompt": "a black van"
+}

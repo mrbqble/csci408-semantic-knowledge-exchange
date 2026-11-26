@@ -1,0 +1,268 @@
+{
+ "case": "case46",
+ "reference": "cam1",
+ "variant": "prompt_only",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 3,
+  "bicycle": 0,
+  "car": 3,
+  "motorcycle": 0,
+  "bus": 1,
+  "truck": 1,
+  "cars_4wheel": 5,
+  "two_wheelers": 0,
+  "vehicles": 5,
+  "pedestrians": 3
+ },
+ "gt": {
+  "cars_4wheel": 9,
+  "pedestrians": 6,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "person",
+   "score": 1.0,
+   "bbox_master_px": [
+    431.4,
+    294.6,
+    519.7,
+    572.6
+   ],
+   "center_master_px": [
+    475.6,
+    433.6
+   ],
+   "ground_contact_master_px": [
+    475.6,
+    572.6
+   ],
+   "bbox_reference_px": [
+    809.0,
+    552.4,
+    974.4,
+    1073.5
+   ],
+   "center_reference_px": [
+    891.7,
+    813.0
+   ]
+  },
+  {
+   "id": 1,
+   "class": "car",
+   "score": 1.0,
+   "bbox_master_px": [
+    365.8,
+    292.4,
+    627.1,
+    394.0
+   ],
+   "center_master_px": [
+    496.5,
+    343.2
+   ],
+   "ground_contact_master_px": [
+    496.5,
+    394.0
+   ],
+   "bbox_reference_px": [
+    685.9,
+    548.2,
+    1175.8,
+    738.8
+   ],
+   "center_reference_px": [
+    930.9,
+    643.5
+   ]
+  },
+  {
+   "id": 2,
+   "class": "bus",
+   "score": 0.999,
+   "bbox_master_px": [
+    1.5,
+    148.7,
+    512.5,
+    362.2
+   ],
+   "center_master_px": [
+    257.0,
+    255.4
+   ],
+   "ground_contact_master_px": [
+    257.0,
+    362.2
+   ],
+   "bbox_reference_px": [
+    2.7,
+    278.8,
+    960.9,
+    679.1
+   ],
+   "center_reference_px": [
+    481.8,
+    479.0
+   ]
+  },
+  {
+   "id": 3,
+   "class": "person",
+   "score": 0.999,
+   "bbox_master_px": [
+    861.5,
+    302.1,
+    959.7,
+    570.0
+   ],
+   "center_master_px": [
+    910.6,
+    436.1
+   ],
+   "ground_contact_master_px": [
+    910.6,
+    570.0
+   ],
+   "bbox_reference_px": [
+    1615.3,
+    566.5,
+    1799.5,
+    1068.8
+   ],
+   "center_reference_px": [
+    1707.4,
+    817.6
+   ]
+  },
+  {
+   "id": 4,
+   "class": "car",
+   "score": 0.997,
+   "bbox_master_px": [
+    677.7,
+    287.1,
+    846.2,
+    361.6
+   ],
+   "center_master_px": [
+    761.9,
+    324.3
+   ],
+   "ground_contact_master_px": [
+    761.9,
+    361.6
+   ],
+   "bbox_reference_px": [
+    1270.6,
+    538.2,
+    1586.6,
+    677.9
+   ],
+   "center_reference_px": [
+    1428.6,
+    608.1
+   ]
+  },
+  {
+   "id": 5,
+   "class": "car",
+   "score": 0.868,
+   "bbox_master_px": [
+    937.0,
+    319.5,
+    985.5,
+    364.6
+   ],
+   "center_master_px": [
+    961.3,
+    342.1
+   ],
+   "ground_contact_master_px": [
+    961.3,
+    364.6
+   ],
+   "bbox_reference_px": [
+    1756.9,
+    599.1,
+    1847.8,
+    683.7
+   ],
+   "center_reference_px": [
+    1802.3,
+    641.4
+   ]
+  },
+  {
+   "id": 6,
+   "class": "person",
+   "score": 0.778,
+   "bbox_master_px": [
+    869.9,
+    273.1,
+    887.0,
+    314.1
+   ],
+   "center_master_px": [
+    878.4,
+    293.6
+   ],
+   "ground_contact_master_px": [
+    878.4,
+    314.1
+   ],
+   "bbox_reference_px": [
+    1631.1,
+    512.0,
+    1663.0,
+    588.9
+   ],
+   "center_reference_px": [
+    1647.0,
+    550.4
+   ]
+  },
+  {
+   "id": 7,
+   "class": "truck",
+   "score": 0.719,
+   "bbox_master_px": [
+    965.9,
+    257.8,
+    1024.0,
+    353.6
+   ],
+   "center_master_px": [
+    995.0,
+    305.7
+   ],
+   "ground_contact_master_px": [
+    995.0,
+    353.6
+   ],
+   "bbox_reference_px": [
+    1811.1,
+    483.4,
+    1920.0,
+    663.1
+   ],
+   "center_reference_px": [
+    1865.6,
+    573.2
+   ]
+  }
+ ],
+ "vehicle_recall": 0.7142857142857143,
+ "vehicle_precision": 1.0,
+ "person_recall": 0.3333333333333333,
+ "person_precision": 0.6666666666666666,
+ "vehicle_count_abs_err_vs_oracle": 2,
+ "person_count_abs_err_vs_oracle": 3,
+ "seconds": 10.460810800001127,
+ "prompt": "a woman walking across a street next to a bus, a scene of a city street, a bus is parked on the side of the road, a bus on the street"
+}

@@ -1,0 +1,109 @@
+{
+ "case": "case92",
+ "variant": "prompt_refine",
+ "ip_adapter_scale": 0.0,
+ "ip_adapter_source": "none",
+ "reference": "cam1",
+ "supporting": [
+  "cam2",
+  "cam3",
+  "cam4",
+  "cam5",
+  "cam6"
+ ],
+ "timestamp": 5564,
+ "prompt": "a street with a car driving down it, a car driving down a street next to a building, a street scene with a crosswalk and a stop sign, a street with a car and a person walking on the sidewalk",
+ "seconds": 22.399877300002117,
+ "peak_gpu_mb": 5394.6416015625,
+ "size": [
+  1024,
+  576
+ ],
+ "palette": "cs",
+ "ref_policy": "first",
+ "seed": 42,
+ "steps": 20,
+ "guidance": 7.5,
+ "donor_case": null,
+ "cn_scales": [
+  1.0,
+  1.0
+ ],
+ "edge_thr": 40,
+ "base": "existing prompt_only result",
+ "base_seconds": 10.510369800002081,
+ "refine_seconds": 11.889507500000036,
+ "refine": {
+  "n_small_blobs": 7,
+  "n_windows": 5,
+  "uncovered_blobs": 0,
+  "windows": [
+   {
+    "x0": 761,
+    "y0": 228,
+    "n_blobs": 2,
+    "blob_areas": [
+     87,
+     76
+    ],
+    "index": 0,
+    "seconds": 2.4973839999984193
+   },
+   {
+    "x0": 247,
+    "y0": 249,
+    "n_blobs": 2,
+    "blob_areas": [
+     14,
+     15
+    ],
+    "index": 1,
+    "seconds": 2.4856273000004876
+   },
+   {
+    "x0": 585,
+    "y0": 241,
+    "n_blobs": 1,
+    "blob_areas": [
+     1044
+    ],
+    "index": 2,
+    "seconds": 2.4874958000000333
+   },
+   {
+    "x0": 632,
+    "y0": 230,
+    "n_blobs": 1,
+    "blob_areas": [
+     625
+    ],
+    "index": 3,
+    "seconds": 2.2390501000008953
+   },
+   {
+    "x0": 529,
+    "y0": 233,
+    "n_blobs": 1,
+    "blob_areas": [
+     599
+    ],
+    "index": 4,
+    "seconds": 2.1799503000002005
+   }
+  ],
+  "failures": [],
+  "seconds": 11.889507500000036
+ },
+ "refine_settings": {
+  "window": 128,
+  "upscale": 4,
+  "strength": 0.5,
+  "feather_px": 12,
+  "max_windows": 8,
+  "min_area": 12,
+  "max_side": 48,
+  "prompt": "cars on a city street, realistic photo, sharp",
+  "negative_prompt": "blurry, deformed, cartoon",
+  "seed": "42 + window index"
+ }
+}

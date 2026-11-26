@@ -1,0 +1,268 @@
+{
+ "case": "case67",
+ "reference": "cam1",
+ "variant": "prompt_only",
+ "master_size": [
+  896,
+  512
+ ],
+ "counts": {
+  "person": 2,
+  "bicycle": 0,
+  "car": 6,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 0,
+  "cars_4wheel": 6,
+  "two_wheelers": 0,
+  "vehicles": 6,
+  "pedestrians": 2
+ },
+ "gt": {
+  "cars_4wheel": 6,
+  "pedestrians": 8,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "car",
+   "score": 0.999,
+   "bbox_master_px": [
+    667.4,
+    262.7,
+    812.0,
+    317.6
+   ],
+   "center_master_px": [
+    739.7,
+    290.2
+   ],
+   "ground_contact_master_px": [
+    739.7,
+    317.6
+   ],
+   "bbox_reference_px": [
+    1430.1,
+    554.2,
+    1740.0,
+    669.9
+   ],
+   "center_reference_px": [
+    1585.1,
+    612.1
+   ]
+  },
+  {
+   "id": 1,
+   "class": "car",
+   "score": 0.998,
+   "bbox_master_px": [
+    523.7,
+    258.3,
+    570.1,
+    289.5
+   ],
+   "center_master_px": [
+    546.9,
+    273.9
+   ],
+   "ground_contact_master_px": [
+    546.9,
+    289.5
+   ],
+   "bbox_reference_px": [
+    1122.1,
+    544.8,
+    1221.7,
+    610.7
+   ],
+   "center_reference_px": [
+    1171.9,
+    577.7
+   ]
+  },
+  {
+   "id": 2,
+   "class": "person",
+   "score": 0.998,
+   "bbox_master_px": [
+    308.7,
+    253.8,
+    340.5,
+    307.0
+   ],
+   "center_master_px": [
+    324.6,
+    280.4
+   ],
+   "ground_contact_master_px": [
+    324.6,
+    307.0
+   ],
+   "bbox_reference_px": [
+    661.5,
+    535.3,
+    729.7,
+    647.5
+   ],
+   "center_reference_px": [
+    695.6,
+    591.4
+   ]
+  },
+  {
+   "id": 3,
+   "class": "car",
+   "score": 0.998,
+   "bbox_master_px": [
+    612.6,
+    257.4,
+    665.4,
+    285.0
+   ],
+   "center_master_px": [
+    639.0,
+    271.2
+   ],
+   "ground_contact_master_px": [
+    639.0,
+    285.0
+   ],
+   "bbox_reference_px": [
+    1312.8,
+    543.0,
+    1425.8,
+    601.2
+   ],
+   "center_reference_px": [
+    1369.3,
+    572.1
+   ]
+  },
+  {
+   "id": 4,
+   "class": "person",
+   "score": 0.987,
+   "bbox_master_px": [
+    88.0,
+    257.5,
+    112.0,
+    322.3
+   ],
+   "center_master_px": [
+    100.0,
+    289.9
+   ],
+   "ground_contact_master_px": [
+    100.0,
+    322.3
+   ],
+   "bbox_reference_px": [
+    188.6,
+    543.1,
+    240.0,
+    679.8
+   ],
+   "center_reference_px": [
+    214.3,
+    611.5
+   ]
+  },
+  {
+   "id": 5,
+   "class": "car",
+   "score": 0.971,
+   "bbox_master_px": [
+    491.2,
+    251.6,
+    529.2,
+    267.6
+   ],
+   "center_master_px": [
+    510.2,
+    259.6
+   ],
+   "ground_contact_master_px": [
+    510.2,
+    267.6
+   ],
+   "bbox_reference_px": [
+    1052.7,
+    530.8,
+    1133.9,
+    564.5
+   ],
+   "center_reference_px": [
+    1093.3,
+    547.6
+   ]
+  },
+  {
+   "id": 6,
+   "class": "car",
+   "score": 0.911,
+   "bbox_master_px": [
+    353.5,
+    235.5,
+    401.0,
+    250.4
+   ],
+   "center_master_px": [
+    377.2,
+    242.9
+   ],
+   "ground_contact_master_px": [
+    377.2,
+    250.4
+   ],
+   "bbox_reference_px": [
+    757.4,
+    496.7,
+    859.3,
+    528.1
+   ],
+   "center_reference_px": [
+    808.4,
+    512.4
+   ]
+  },
+  {
+   "id": 7,
+   "class": "car",
+   "score": 0.879,
+   "bbox_master_px": [
+    571.1,
+    254.4,
+    591.8,
+    271.2
+   ],
+   "center_master_px": [
+    581.4,
+    262.8
+   ],
+   "ground_contact_master_px": [
+    581.4,
+    271.2
+   ],
+   "bbox_reference_px": [
+    1223.9,
+    536.7,
+    1268.0,
+    572.1
+   ],
+   "center_reference_px": [
+    1246.0,
+    554.4
+   ]
+  }
+ ],
+ "vehicle_recall": 0.5714285714285714,
+ "vehicle_precision": 0.6666666666666666,
+ "person_recall": 0.2222222222222222,
+ "person_precision": 1.0,
+ "vehicle_count_abs_err_vs_oracle": 1,
+ "person_count_abs_err_vs_oracle": 7,
+ "seconds": 7.716314099998272,
+ "prompt": "a city street, a white car parked on the side of a road, a car is driving down a street in a city, a police car is parked in a street, a police car driving down a city street"
+}

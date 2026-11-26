@@ -1,0 +1,181 @@
+{
+ "case": "case72",
+ "reference": "cam1",
+ "variant": "k1",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 3,
+  "bicycle": 0,
+  "car": 2,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 0,
+  "cars_4wheel": 2,
+  "two_wheelers": 0,
+  "vehicles": 2,
+  "pedestrians": 3
+ },
+ "gt": {
+  "cars_4wheel": 4,
+  "pedestrians": 4,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "car",
+   "score": 1.0,
+   "bbox_master_px": [
+    650.2,
+    292.4,
+    804.4,
+    347.9
+   ],
+   "center_master_px": [
+    727.3,
+    320.2
+   ],
+   "ground_contact_master_px": [
+    727.3,
+    347.9
+   ],
+   "bbox_reference_px": [
+    1219.1,
+    548.3,
+    1508.3,
+    652.4
+   ],
+   "center_reference_px": [
+    1363.7,
+    600.3
+   ]
+  },
+  {
+   "id": 1,
+   "class": "person",
+   "score": 1.0,
+   "bbox_master_px": [
+    563.6,
+    290.0,
+    704.5,
+    570.0
+   ],
+   "center_master_px": [
+    634.1,
+    430.0
+   ],
+   "ground_contact_master_px": [
+    634.1,
+    570.0
+   ],
+   "bbox_reference_px": [
+    1056.8,
+    543.7,
+    1320.9,
+    1068.8
+   ],
+   "center_reference_px": [
+    1188.9,
+    806.3
+   ]
+  },
+  {
+   "id": 2,
+   "class": "person",
+   "score": 1.0,
+   "bbox_master_px": [
+    891.1,
+    284.2,
+    980.8,
+    507.8
+   ],
+   "center_master_px": [
+    935.9,
+    396.0
+   ],
+   "ground_contact_master_px": [
+    935.9,
+    507.8
+   ],
+   "bbox_reference_px": [
+    1670.7,
+    532.9,
+    1839.0,
+    952.2
+   ],
+   "center_reference_px": [
+    1754.9,
+    742.5
+   ]
+  },
+  {
+   "id": 3,
+   "class": "car",
+   "score": 1.0,
+   "bbox_master_px": [
+    420.8,
+    281.7,
+    549.5,
+    329.7
+   ],
+   "center_master_px": [
+    485.2,
+    305.7
+   ],
+   "ground_contact_master_px": [
+    485.2,
+    329.7
+   ],
+   "bbox_reference_px": [
+    788.9,
+    528.2,
+    1030.4,
+    618.3
+   ],
+   "center_reference_px": [
+    909.7,
+    573.2
+   ]
+  },
+  {
+   "id": 4,
+   "class": "person",
+   "score": 0.971,
+   "bbox_master_px": [
+    206.1,
+    273.7,
+    222.7,
+    314.0
+   ],
+   "center_master_px": [
+    214.4,
+    293.9
+   ],
+   "ground_contact_master_px": [
+    214.4,
+    314.0
+   ],
+   "bbox_reference_px": [
+    386.4,
+    513.1,
+    417.5,
+    588.8
+   ],
+   "center_reference_px": [
+    401.9,
+    551.0
+   ]
+  }
+ ],
+ "vehicle_recall": 0.6666666666666666,
+ "vehicle_precision": 1.0,
+ "person_recall": 0.6,
+ "person_precision": 1.0,
+ "vehicle_count_abs_err_vs_oracle": 1,
+ "person_count_abs_err_vs_oracle": 2,
+ "seconds": 10.41338590000123,
+ "prompt": "a man walking down a street in a city"
+}

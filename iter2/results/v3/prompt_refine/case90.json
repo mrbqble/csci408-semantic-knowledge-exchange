@@ -1,0 +1,108 @@
+{
+ "case": "case90",
+ "variant": "prompt_refine",
+ "ip_adapter_scale": 0.0,
+ "ip_adapter_source": "none",
+ "reference": "cam1",
+ "supporting": [
+  "cam2",
+  "cam3",
+  "cam4"
+ ],
+ "timestamp": 18559,
+ "prompt": "a car is parked on the street in a city, a city street with a bus and a bus",
+ "seconds": 21.422454699999435,
+ "peak_gpu_mb": 5394.6416015625,
+ "size": [
+  1024,
+  576
+ ],
+ "palette": "cs",
+ "ref_policy": "first",
+ "seed": 42,
+ "steps": 20,
+ "guidance": 7.5,
+ "donor_case": null,
+ "cn_scales": [
+  1.0,
+  1.0
+ ],
+ "edge_thr": 40,
+ "base": "existing prompt_only result",
+ "base_seconds": 10.470909700001357,
+ "refine_seconds": 10.951544999998077,
+ "refine": {
+  "n_small_blobs": 8,
+  "n_windows": 5,
+  "uncovered_blobs": 0,
+  "windows": [
+   {
+    "x0": 896,
+    "y0": 146,
+    "n_blobs": 4,
+    "blob_areas": [
+     540,
+     36,
+     95,
+     33
+    ],
+    "index": 0,
+    "seconds": 2.1641130999996676
+   },
+   {
+    "x0": 0,
+    "y0": 143,
+    "n_blobs": 1,
+    "blob_areas": [
+     615
+    ],
+    "index": 1,
+    "seconds": 2.173958600000333
+   },
+   {
+    "x0": 512,
+    "y0": 150,
+    "n_blobs": 1,
+    "blob_areas": [
+     64
+    ],
+    "index": 2,
+    "seconds": 2.166925199999241
+   },
+   {
+    "x0": 267,
+    "y0": 146,
+    "n_blobs": 1,
+    "blob_areas": [
+     26
+    ],
+    "index": 3,
+    "seconds": 2.1742119999998977
+   },
+   {
+    "x0": 340,
+    "y0": 144,
+    "n_blobs": 1,
+    "blob_areas": [
+     15
+    ],
+    "index": 4,
+    "seconds": 2.272336099998938
+   }
+  ],
+  "failures": [],
+  "seconds": 10.951544999998077
+ },
+ "refine_settings": {
+  "window": 128,
+  "upscale": 4,
+  "strength": 0.5,
+  "feather_px": 12,
+  "max_windows": 8,
+  "min_area": 12,
+  "max_side": 48,
+  "prompt": "cars on a city street, realistic photo, sharp",
+  "negative_prompt": "blurry, deformed, cartoon",
+  "seed": "42 + window index"
+ }
+}

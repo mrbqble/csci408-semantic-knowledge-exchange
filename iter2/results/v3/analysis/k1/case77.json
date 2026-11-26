@@ -1,0 +1,181 @@
+{
+ "case": "case77",
+ "reference": "cam1",
+ "variant": "k1",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 0,
+  "bicycle": 0,
+  "car": 4,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 1,
+  "cars_4wheel": 5,
+  "two_wheelers": 0,
+  "vehicles": 5,
+  "pedestrians": 0
+ },
+ "gt": {
+  "cars_4wheel": 8,
+  "pedestrians": 3,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "car",
+   "score": 0.997,
+   "bbox_master_px": [
+    374.1,
+    236.8,
+    480.2,
+    295.6
+   ],
+   "center_master_px": [
+    427.1,
+    266.2
+   ],
+   "ground_contact_master_px": [
+    427.1,
+    295.6
+   ],
+   "bbox_reference_px": [
+    701.4,
+    444.1,
+    900.4,
+    554.3
+   ],
+   "center_reference_px": [
+    800.9,
+    499.2
+   ]
+  },
+  {
+   "id": 1,
+   "class": "car",
+   "score": 0.995,
+   "bbox_master_px": [
+    0.1,
+    230.1,
+    53.1,
+    261.6
+   ],
+   "center_master_px": [
+    26.6,
+    245.9
+   ],
+   "ground_contact_master_px": [
+    26.6,
+    261.6
+   ],
+   "bbox_reference_px": [
+    0.1,
+    431.5,
+    99.6,
+    490.5
+   ],
+   "center_reference_px": [
+    49.9,
+    461.0
+   ]
+  },
+  {
+   "id": 2,
+   "class": "car",
+   "score": 0.986,
+   "bbox_master_px": [
+    236.4,
+    230.8,
+    286.6,
+    263.2
+   ],
+   "center_master_px": [
+    261.5,
+    247.0
+   ],
+   "ground_contact_master_px": [
+    261.5,
+    263.2
+   ],
+   "bbox_reference_px": [
+    443.3,
+    432.8,
+    537.4,
+    493.4
+   ],
+   "center_reference_px": [
+    490.4,
+    463.1
+   ]
+  },
+  {
+   "id": 3,
+   "class": "car",
+   "score": 0.768,
+   "bbox_master_px": [
+    569.6,
+    224.5,
+    844.1,
+    357.5
+   ],
+   "center_master_px": [
+    706.9,
+    291.0
+   ],
+   "ground_contact_master_px": [
+    706.9,
+    357.5
+   ],
+   "bbox_reference_px": [
+    1068.1,
+    421.0,
+    1582.7,
+    670.2
+   ],
+   "center_reference_px": [
+    1325.4,
+    545.6
+   ]
+  },
+  {
+   "id": 4,
+   "class": "truck",
+   "score": 0.58,
+   "bbox_master_px": [
+    567.6,
+    224.5,
+    844.3,
+    357.7
+   ],
+   "center_master_px": [
+    705.9,
+    291.1
+   ],
+   "ground_contact_master_px": [
+    705.9,
+    357.7
+   ],
+   "bbox_reference_px": [
+    1064.3,
+    420.9,
+    1583.0,
+    670.6
+   ],
+   "center_reference_px": [
+    1323.6,
+    545.8
+   ]
+  }
+ ],
+ "vehicle_recall": 0.6666666666666666,
+ "vehicle_precision": 0.8,
+ "person_recall": 0.0,
+ "person_precision": null,
+ "vehicle_count_abs_err_vs_oracle": 1,
+ "person_count_abs_err_vs_oracle": 6,
+ "seconds": 10.438685299999634,
+ "prompt": "a small green van"
+}

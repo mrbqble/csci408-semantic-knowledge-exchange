@@ -1,0 +1,123 @@
+{
+ "case": "case23",
+ "reference": "cam1",
+ "variant": "prompt_only",
+ "master_size": [
+  2048,
+  1152
+ ],
+ "counts": {
+  "person": 0,
+  "bicycle": 0,
+  "car": 0,
+  "motorcycle": 0,
+  "bus": 2,
+  "truck": 1,
+  "cars_4wheel": 3,
+  "two_wheelers": 0,
+  "vehicles": 3,
+  "pedestrians": 0
+ },
+ "gt": {
+  "cars_4wheel": 8,
+  "pedestrians": 7,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "bus",
+   "score": 0.981,
+   "bbox_master_px": [
+    204.4,
+    490.2,
+    681.7,
+    757.6
+   ],
+   "center_master_px": [
+    443.1,
+    623.9
+   ],
+   "ground_contact_master_px": [
+    443.1,
+    757.6
+   ],
+   "bbox_reference_px": [
+    191.6,
+    459.6,
+    639.1,
+    710.2
+   ],
+   "center_reference_px": [
+    415.4,
+    584.9
+   ]
+  },
+  {
+   "id": 1,
+   "class": "bus",
+   "score": 0.64,
+   "bbox_master_px": [
+    1140.8,
+    455.4,
+    1358.4,
+    649.4
+   ],
+   "center_master_px": [
+    1249.6,
+    552.4
+   ],
+   "ground_contact_master_px": [
+    1249.6,
+    649.4
+   ],
+   "bbox_reference_px": [
+    1069.5,
+    426.9,
+    1273.5,
+    608.8
+   ],
+   "center_reference_px": [
+    1171.5,
+    517.9
+   ]
+  },
+  {
+   "id": 2,
+   "class": "truck",
+   "score": 0.6,
+   "bbox_master_px": [
+    1140.7,
+    456.2,
+    1356.1,
+    648.7
+   ],
+   "center_master_px": [
+    1248.4,
+    552.4
+   ],
+   "ground_contact_master_px": [
+    1248.4,
+    648.7
+   ],
+   "bbox_reference_px": [
+    1069.4,
+    427.7,
+    1271.4,
+    608.2
+   ],
+   "center_reference_px": [
+    1170.4,
+    517.9
+   ]
+  }
+ ],
+ "vehicle_recall": 0.25,
+ "vehicle_precision": 0.6666666666666666,
+ "person_recall": 0.0,
+ "person_precision": null,
+ "vehicle_count_abs_err_vs_oracle": 5,
+ "person_count_abs_err_vs_oracle": 17,
+ "seconds": 93.56687889999921,
+ "prompt": "a yellow and white van, a red bus is driving down the street, a red truck driving down a street next to tall buildings, a red truck driving down a street next to a blue car, a car driving down a street next to a building"
+}

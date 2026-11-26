@@ -1,0 +1,98 @@
+{
+ "case": "case16",
+ "variant": "prompt_refine",
+ "ip_adapter_scale": 0.0,
+ "ip_adapter_source": "none",
+ "reference": "cam1",
+ "supporting": [
+  "cam2",
+  "cam3",
+  "cam4",
+  "cam5",
+  "cam6"
+ ],
+ "timestamp": 13407,
+ "prompt": "a man and woman crossing a street in a city, a street scene with cars and buildings, a police car driving down a street in the city, the city street in saints 2, a man walking across a street in a city, a white van parked on the side of a road",
+ "seconds": 19.750854900003105,
+ "peak_gpu_mb": 5394.6416015625,
+ "size": [
+  1024,
+  576
+ ],
+ "palette": "cs",
+ "ref_policy": "first",
+ "seed": 42,
+ "steps": 20,
+ "guidance": 7.5,
+ "donor_case": null,
+ "cn_scales": [
+  1.0,
+  1.0
+ ],
+ "edge_thr": 40,
+ "base": "existing prompt_only result",
+ "base_seconds": 10.998022700001457,
+ "refine_seconds": 8.752832200001649,
+ "refine": {
+  "n_small_blobs": 5,
+  "n_windows": 4,
+  "uncovered_blobs": 0,
+  "windows": [
+   {
+    "x0": 1,
+    "y0": 448,
+    "n_blobs": 2,
+    "blob_areas": [
+     63,
+     67
+    ],
+    "index": 0,
+    "seconds": 2.18160060000082
+   },
+   {
+    "x0": 730,
+    "y0": 262,
+    "n_blobs": 1,
+    "blob_areas": [
+     417
+    ],
+    "index": 1,
+    "seconds": 2.1885270000002492
+   },
+   {
+    "x0": 667,
+    "y0": 286,
+    "n_blobs": 1,
+    "blob_areas": [
+     229
+    ],
+    "index": 2,
+    "seconds": 2.1898784000004525
+   },
+   {
+    "x0": 896,
+    "y0": 208,
+    "n_blobs": 1,
+    "blob_areas": [
+     45
+    ],
+    "index": 3,
+    "seconds": 2.192826200000127
+   }
+  ],
+  "failures": [],
+  "seconds": 8.752832200001649
+ },
+ "refine_settings": {
+  "window": 128,
+  "upscale": 4,
+  "strength": 0.5,
+  "feather_px": 12,
+  "max_windows": 8,
+  "min_area": 12,
+  "max_side": 48,
+  "prompt": "cars on a city street, realistic photo, sharp",
+  "negative_prompt": "blurry, deformed, cartoon",
+  "seed": "42 + window index"
+ }
+}

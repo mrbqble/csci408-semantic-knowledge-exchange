@@ -1,0 +1,268 @@
+{
+ "case": "case80",
+ "reference": "cam1",
+ "variant": "prompt_only",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 6,
+  "bicycle": 0,
+  "car": 0,
+  "motorcycle": 0,
+  "bus": 2,
+  "truck": 0,
+  "cars_4wheel": 2,
+  "two_wheelers": 0,
+  "vehicles": 2,
+  "pedestrians": 6
+ },
+ "gt": {
+  "cars_4wheel": 9,
+  "pedestrians": 8,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "person",
+   "score": 0.999,
+   "bbox_master_px": [
+    923.0,
+    322.3,
+    978.6,
+    421.9
+   ],
+   "center_master_px": [
+    950.8,
+    372.1
+   ],
+   "ground_contact_master_px": [
+    950.8,
+    421.9
+   ],
+   "bbox_reference_px": [
+    1730.6,
+    604.3,
+    1834.8,
+    791.1
+   ],
+   "center_reference_px": [
+    1782.7,
+    697.7
+   ]
+  },
+  {
+   "id": 1,
+   "class": "person",
+   "score": 0.999,
+   "bbox_master_px": [
+    713.8,
+    275.2,
+    744.6,
+    371.6
+   ],
+   "center_master_px": [
+    729.2,
+    323.4
+   ],
+   "ground_contact_master_px": [
+    729.2,
+    371.6
+   ],
+   "bbox_reference_px": [
+    1338.4,
+    515.9,
+    1396.2,
+    696.8
+   ],
+   "center_reference_px": [
+    1367.3,
+    606.3
+   ]
+  },
+  {
+   "id": 2,
+   "class": "bus",
+   "score": 0.951,
+   "bbox_master_px": [
+    372.3,
+    261.9,
+    448.7,
+    317.0
+   ],
+   "center_master_px": [
+    410.5,
+    289.5
+   ],
+   "ground_contact_master_px": [
+    410.5,
+    317.0
+   ],
+   "bbox_reference_px": [
+    698.1,
+    491.1,
+    841.2,
+    594.4
+   ],
+   "center_reference_px": [
+    769.7,
+    542.8
+   ]
+  },
+  {
+   "id": 3,
+   "class": "bus",
+   "score": 0.944,
+   "bbox_master_px": [
+    155.3,
+    247.3,
+    238.5,
+    287.3
+   ],
+   "center_master_px": [
+    196.9,
+    267.3
+   ],
+   "ground_contact_master_px": [
+    196.9,
+    287.3
+   ],
+   "bbox_reference_px": [
+    291.3,
+    463.6,
+    447.3,
+    538.7
+   ],
+   "center_reference_px": [
+    369.3,
+    501.1
+   ]
+  },
+  {
+   "id": 4,
+   "class": "person",
+   "score": 0.755,
+   "bbox_master_px": [
+    577.4,
+    272.0,
+    581.6,
+    283.9
+   ],
+   "center_master_px": [
+    579.5,
+    278.0
+   ],
+   "ground_contact_master_px": [
+    579.5,
+    283.9
+   ],
+   "bbox_reference_px": [
+    1082.6,
+    510.0,
+    1090.6,
+    532.4
+   ],
+   "center_reference_px": [
+    1086.6,
+    521.2
+   ]
+  },
+  {
+   "id": 5,
+   "class": "person",
+   "score": 0.754,
+   "bbox_master_px": [
+    569.7,
+    270.5,
+    574.1,
+    282.5
+   ],
+   "center_master_px": [
+    571.9,
+    276.5
+   ],
+   "ground_contact_master_px": [
+    571.9,
+    282.5
+   ],
+   "bbox_reference_px": [
+    1068.1,
+    507.2,
+    1076.5,
+    529.7
+   ],
+   "center_reference_px": [
+    1072.3,
+    518.4
+   ]
+  },
+  {
+   "id": 6,
+   "class": "person",
+   "score": 0.661,
+   "bbox_master_px": [
+    563.4,
+    268.6,
+    568.3,
+    281.5
+   ],
+   "center_master_px": [
+    565.9,
+    275.1
+   ],
+   "ground_contact_master_px": [
+    565.9,
+    281.5
+   ],
+   "bbox_reference_px": [
+    1056.4,
+    503.7,
+    1065.6,
+    527.8
+   ],
+   "center_reference_px": [
+    1061.0,
+    515.8
+   ]
+  },
+  {
+   "id": 7,
+   "class": "person",
+   "score": 0.651,
+   "bbox_master_px": [
+    528.3,
+    271.0,
+    533.6,
+    283.6
+   ],
+   "center_master_px": [
+    531.0,
+    277.3
+   ],
+   "ground_contact_master_px": [
+    531.0,
+    283.6
+   ],
+   "bbox_reference_px": [
+    990.6,
+    508.1,
+    1000.5,
+    531.8
+   ],
+   "center_reference_px": [
+    995.6,
+    520.0
+   ]
+  }
+ ],
+ "vehicle_recall": 0.2,
+ "vehicle_precision": 1.0,
+ "person_recall": 0.13333333333333333,
+ "person_precision": 0.3333333333333333,
+ "vehicle_count_abs_err_vs_oracle": 8,
+ "person_count_abs_err_vs_oracle": 9,
+ "seconds": 10.617575899999792,
+ "prompt": "a person sitting on the sidewalk in a city, a van is parked on the side of the road, a street scene with a bus and a bus stop, a woman walking down a street next to a tall building, a street scene with a bus and a sign, a tree with green leaves"
+}

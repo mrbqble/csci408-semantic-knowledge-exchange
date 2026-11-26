@@ -1,0 +1,896 @@
+START Sun 10/25/2026 16:29:06.45 
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/758 [00:00<?, ?it/s]Loading weights:  15%|█▍        | 110/758 [00:00<00:00, 1092.39it/s]Loading weights:  29%|██▉       | 220/758 [00:00<00:01, 497.21it/s] Loading weights: 100%|██████████| 758/758 [00:00<00:00, 1606.27it/s]
+[transformers] [1mMask2FormerForUniversalSegmentation LOAD REPORT[0m from: facebook/mask2former-swin-large-cityscapes-semantic
+Key                                                                                                                      | Status     | 
+-------------------------------------------------------------------------------------------------------------------------+------------+-
+model.pixel_level_module.encoder.swin.encoder.layers.{0, 1, 2, 3}.blocks.{0...17}.attention.self.relative_position_index | UNEXPECTED | 
+model.pixel_level_module.encoder.swin.layernorm.weight                                                                   | MISSING    | 
+model.pixel_level_module.encoder.swin.layernorm.bias                                                                     | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+Loading weights:   0%|          | 0/473 [00:00<?, ?it/s]Loading weights: 100%|██████████| 473/473 [00:00<00:00, 27864.63it/s]
+C:\Users\mrbqble\Desktop\csci408-probe\.venv\Lib\site-packages\transformers\generation\utils.py:1805: UserWarning: Using the model-agnostic default `max_length` (=21) to control the generation length. We recommend setting `max_new_tokens` to control the maximum length of the generation.
+  warnings.warn(
+[3/112] case3/cam1: 58.9 KB (seg 4592 B, edge 55660 B, caption 29 B) 275/135/234 ms | a car is parked on the street
+[3/112] case3/cam2: 66.8 KB (seg 5372 B, edge 63038 B, caption 39 B) 274/99/289 ms | a city street with a bus and a bus stop
+[3/112] case3/cam3: 66.7 KB (seg 4010 B, edge 64286 B, caption 42 B) 272/107/317 ms | a man walking across a crosswalk in a city
+[3/112] case3/cam4: 48.4 KB (seg 4454 B, edge 45074 B, caption 37 B) 275/84/282 ms | a street scene with a car and a truck
+[3/112] case3/cam5: 55.5 KB (seg 4968 B, edge 51822 B, caption 42 B) 272/95/245 ms | a city street with cars and traffic lights
+[4/112] case4/cam1: 47.0 KB (seg 6098 B, edge 41996 B, caption 57 B) 272/89/337 ms | a red truck driving down a street next to a tall building
+[4/112] case4/cam2: 48.2 KB (seg 6252 B, edge 43032 B, caption 43 B) 272/86/300 ms | a man walking down a street next to a truck
+[4/112] case4/cam3: 44.2 KB (seg 6864 B, edge 38424 B, caption 17 B) 274/85/176 ms | a bus on the road
+[4/112] case4/cam4: 50.6 KB (seg 5380 B, edge 46444 B, caption 33 B) 276/88/258 ms | a red car parked in a parking lot
+[4/112] case4/cam5: 62.0 KB (seg 5128 B, edge 58314 B, caption 45 B) 275/103/338 ms | a red car driving down a street next to a bus
+[4/112] case4/cam6: 56.4 KB (seg 5138 B, edge 52562 B, caption 44 B) 277/102/292 ms | a man walking across a street with a red car
+[5/112] case5/cam1: 60.8 KB (seg 4082 B, edge 58118 B, caption 17 B) 275/101/186 ms | a scene of a city
+[5/112] case5/cam2: 59.2 KB (seg 4566 B, edge 55984 B, caption 50 B) 274/101/308 ms | a red car driving down a street next to a building
+[5/112] case5/cam3: 34.3 KB (seg 4738 B, edge 30296 B, caption 47 B) 273/76/340 ms | a man walking down a street next to a white car
+[6/112] case6/cam1: 48.8 KB (seg 4568 B, edge 45396 B, caption 40 B) 271/95/275 ms | a white truck driving down a city street
+[6/112] case6/cam2: 55.4 KB (seg 5456 B, edge 51196 B, caption 49 B) 275/95/298 ms | a city street with cars and people walking around
+[6/112] case6/cam3: 38.9 KB (seg 5844 B, edge 33914 B, caption 56 B) 273/83/347 ms | a man is standing on the street looking at a street sign
+[6/112] case6/cam4: 55.9 KB (seg 4892 B, edge 52264 B, caption 60 B) 273/97/374 ms | a city street with a car and a man walking across the street
+[7/112] case7/cam1: 66.9 KB (seg 6626 B, edge 61850 B, caption 36 B) 272/109/307 ms | a street with a car and a sign on it
+[7/112] case7/cam2: 65.5 KB (seg 7726 B, edge 59352 B, caption 42 B) 271/106/300 ms | a man walking across a crosswalk in a city
+[7/112] case7/cam3: 69.0 KB (seg 4060 B, edge 66586 B, caption 39 B) 271/107/261 ms | a coca truck driving down a city street
+[7/112] case7/cam4: 71.4 KB (seg 4760 B, edge 68352 B, caption 42 B) 274/107/291 ms | a car is driving down the street in a city
+[7/112] case7/cam5: 91.0 KB (seg 4102 B, edge 89012 B, caption 42 B) 274/113/307 ms | a man is walking down the street in a city
+[8/112] case8/cam1: 67.2 KB (seg 4138 B, edge 64614 B, caption 39 B) 275/109/297 ms | a bus is parked on the side of the road
+[8/112] case8/cam2: 68.5 KB (seg 7798 B, edge 62284 B, caption 46 B) 274/105/335 ms | a fire truck is parked on the side of the road
+[8/112] case8/cam3: 61.0 KB (seg 5366 B, edge 57082 B, caption 42 B) 274/101/297 ms | a bus is driving down the street in a city
+[8/112] case8/cam4: 56.1 KB (seg 6678 B, edge 50748 B, caption 17 B) 271/95/181 ms | a bus on the road
+[8/112] case8/cam5: 47.9 KB (seg 6072 B, edge 42968 B, caption 41 B) 275/87/309 ms | a man walking down a street next to a bus
+[8/112] case8/cam6: 37.5 KB (seg 3608 B, edge 34718 B, caption 37 B) 273/83/292 ms | a man walking down a street in a city
+[9/112] case9/cam1: 60.0 KB (seg 4506 B, edge 56870 B, caption 39 B) 274/90/326 ms | a street scene with a bus and a red bus
+[9/112] case9/cam2: 57.2 KB (seg 5140 B, edge 53410 B, caption 39 B) 273/88/306 ms | a car is parked on the side of the road
+[9/112] case9/cam3: 53.2 KB (seg 5890 B, edge 48508 B, caption 43 B) 275/92/264 ms | a street scene with cars and people walking
+[10/112] case10/cam1: 39.1 KB (seg 4996 B, edge 35034 B, caption 17 B) 273/82/162 ms | a yellow taxi cab
+[10/112] case10/cam2: 51.4 KB (seg 5920 B, edge 46666 B, caption 39 B) 273/96/249 ms | a group of people walking down a street
+[10/112] case10/cam3: 51.1 KB (seg 6594 B, edge 45734 B, caption 12 B) 278/92/138 ms | a yellow car
+[10/112] case10/cam4: 50.3 KB (seg 6246 B, edge 45190 B, caption 41 B) 279/101/255 ms | a group of people walking across a street
+[11/112] case11/cam1: 27.7 KB (seg 3336 B, edge 24996 B, caption 21 B) 273/70/197 ms | a black and white van
+[11/112] case11/cam2: 39.9 KB (seg 4914 B, edge 35854 B, caption 52 B) 274/84/346 ms | a group of people crossing a street with a stop sign
+[11/112] case11/cam3: 39.8 KB (seg 4290 B, edge 36398 B, caption 32 B) 273/79/262 ms | a car is parked in a parking lot
+[11/112] case11/cam4: 49.6 KB (seg 3742 B, edge 47022 B, caption 34 B) 274/89/236 ms | a street scene with cars and buses
+[11/112] case11/cam5: 33.9 KB (seg 3328 B, edge 31384 B, caption 35 B) 274/71/262 ms | a group of cars parked in a parking
+[12/112] case12/cam1: 33.9 KB (seg 4408 B, edge 30292 B, caption 41 B) 275/79/282 ms | a person walking down a street with a van
+[12/112] case12/cam2: 45.3 KB (seg 4014 B, edge 42378 B, caption 38 B) 276/88/282 ms | a street with a yellow crosswalk on it
+[12/112] case12/cam3: 51.7 KB (seg 4410 B, edge 48504 B, caption 35 B) 276/89/276 ms | a street scene with a bus and a van
+[12/112] case12/cam4: 50.6 KB (seg 4846 B, edge 46958 B, caption 43 B) 276/94/324 ms | a man standing on a sidewalk next to a tree
+[12/112] case12/cam5: 34.6 KB (seg 3546 B, edge 31826 B, caption 49 B) 274/78/350 ms | a city street with a lot of cars and a fire hydra
+[12/112] case12/cam6: 60.5 KB (seg 6314 B, edge 55654 B, caption 22 B) 275/97/184 ms | a tree on the sidewalk
+[13/112] case13/cam1: 59.0 KB (seg 10076 B, edge 50274 B, caption 45 B) 276/97/288 ms | a group of people crossing a street in a city
+[13/112] case13/cam2: 59.2 KB (seg 8356 B, edge 52290 B, caption 22 B) 276/106/206 ms | a woman in a red dress
+[13/112] case13/cam3: 53.8 KB (seg 6070 B, edge 48960 B, caption 34 B) 283/99/247 ms | a man is looking at a street scene
+[14/112] case14/cam1: 60.3 KB (seg 5490 B, edge 56180 B, caption 44 B) 273/110/279 ms | a group of people walking across a crosswalk
+[14/112] case14/cam2: 44.3 KB (seg 4770 B, edge 40560 B, caption 46 B) 277/94/305 ms | two people walking down a street next to a bus
+[14/112] case14/cam3: 54.9 KB (seg 5290 B, edge 50920 B, caption 13 B) 276/101/140 ms | a city street
+[14/112] case14/cam4: 35.8 KB (seg 4030 B, edge 32562 B, caption 34 B) 276/76/289 ms | a city street with a car and a bus
+[15/112] case15/cam1: 64.5 KB (seg 4374 B, edge 61650 B, caption 39 B) 275/102/318 ms | a street scene with a bus and a red car
+[15/112] case15/cam2: 59.2 KB (seg 4426 B, edge 56108 B, caption 36 B) 273/96/265 ms | a red car driving down a city street
+[15/112] case15/cam3: 44.1 KB (seg 3934 B, edge 41162 B, caption 27 B) 280/90/214 ms | a man walking down a street
+[15/112] case15/cam4: 57.9 KB (seg 3514 B, edge 55740 B, caption 40 B) 275/101/313 ms | a street scene with a bus and a bus stop
+[15/112] case15/cam5: 45.8 KB (seg 3362 B, edge 43512 B, caption 51 B) 277/96/335 ms | a man walking down a street next to a tall building
+[16/112] case16/cam1: 60.3 KB (seg 4980 B, edge 56772 B, caption 33 B) 274/99/258 ms | a red van is parked on the street
+[16/112] case16/cam2: 65.3 KB (seg 4090 B, edge 62670 B, caption 88 B) 274/112/502 ms | the game ' s screens are very detailed, but they are not as realistic as the game itself
+[16/112] case16/cam3: 60.4 KB (seg 6558 B, edge 55220 B, caption 27 B) 272/99/194 ms | a woman crossing the street
+[16/112] case16/cam4: 63.9 KB (seg 4780 B, edge 60620 B, caption 46 B) 275/104/301 ms | a car driving down a street next to a building
+[16/112] case16/cam5: 60.0 KB (seg 5164 B, edge 56228 B, caption 45 B) 274/99/304 ms | the city street with a car and a yellow arrow
+[16/112] case16/cam6: 44.0 KB (seg 5794 B, edge 39188 B, caption 50 B) 275/84/317 ms | the city street with cars and people walking on it
+[17/112] case17/cam1: 53.8 KB (seg 5410 B, edge 49632 B, caption 32 B) 276/97/239 ms | a bus is driving down the street
+[17/112] case17/cam2: 81.3 KB (seg 5156 B, edge 78076 B, caption 11 B) 279/124/141 ms | a white bus
+[17/112] case17/cam3: 63.2 KB (seg 4086 B, edge 60578 B, caption 42 B) 281/110/312 ms | a bus is driving down the street in a city
+[18/112] case18/cam1: 49.3 KB (seg 3728 B, edge 46752 B, caption 46 B) 276/86/295 ms | a city street with a white van driving down it
+[18/112] case18/cam2: 45.7 KB (seg 4038 B, edge 42712 B, caption 33 B) 276/91/243 ms | a red car is parked on the street
+[18/112] case18/cam3: 40.5 KB (seg 3834 B, edge 37582 B, caption 46 B) 276/81/334 ms | a city street with a white van and a white van
+[18/112] case18/cam4: 60.5 KB (seg 5342 B, edge 56612 B, caption 42 B) 282/104/287 ms | a person walking across a street in a city
+[19/112] case19/cam1: 53.5 KB (seg 9532 B, edge 45226 B, caption 16 B) 277/94/162 ms | a red fire truck
+[19/112] case19/cam2: 60.9 KB (seg 5418 B, edge 56930 B, caption 41 B) 284/113/256 ms | a group of people walking across a street
+[19/112] case19/cam3: 66.9 KB (seg 5010 B, edge 63408 B, caption 41 B) 276/114/273 ms | a group of people walking across a street
+[19/112] case19/cam4: 48.4 KB (seg 6328 B, edge 43196 B, caption 10 B) 280/97/142 ms | a blue car
+[19/112] case19/cam5: 62.5 KB (seg 6942 B, edge 57044 B, caption 23 B) 279/108/211 ms | a man in a yellow shirt
+[20/112] case20/cam1: 53.7 KB (seg 4188 B, edge 50790 B, caption 52 B) 277/95/343 ms | a white van driving down a street next to a red sign
+[20/112] case20/cam2: 58.6 KB (seg 4546 B, edge 55442 B, caption 31 B) 279/108/247 ms | a street with a white crosswalk
+[20/112] case20/cam3: 55.4 KB (seg 4940 B, edge 51752 B, caption 46 B) 279/103/306 ms | a woman walking down a sidewalk next to a tree
+[20/112] case20/cam4: 38.4 KB (seg 2944 B, edge 36362 B, caption 34 B) 277/80/286 ms | a van parked on the side of a road
+[20/112] case20/cam5: 56.8 KB (seg 4406 B, edge 53686 B, caption 40 B) 277/105/312 ms | a white van parked on the side of a road
+[20/112] case20/cam6: 68.3 KB (seg 3408 B, edge 66544 B, caption 34 B) 276/109/275 ms | a red car is driving down a street
+[21/112] case21/cam1: 53.9 KB (seg 3778 B, edge 51412 B, caption 54 B) 276/95/348 ms | a white car driving down a street next to a yellow car
+[21/112] case21/cam2: 70.4 KB (seg 5156 B, edge 66834 B, caption 59 B) 282/113/326 ms | a street scene with cars and people walking on the sidewalk
+[21/112] case21/cam3: 70.0 KB (seg 5434 B, edge 66186 B, caption 11 B) 278/105/136 ms | a green car
+[22/112] case22/cam1: 45.9 KB (seg 4298 B, edge 42666 B, caption 35 B) 284/79/288 ms | a street scene with a car and a bus
+[22/112] case22/cam2: 45.4 KB (seg 5022 B, edge 41434 B, caption 41 B) 277/89/275 ms | a woman walking down the street in a city
+[22/112] case22/cam3: 41.1 KB (seg 4648 B, edge 37426 B, caption 39 B) 276/86/287 ms | a man walking across a street in a city
+[22/112] case22/cam4: 69.4 KB (seg 5818 B, edge 65172 B, caption 44 B) 278/107/322 ms | a woman walking across a crosswalk in a city
+[23/112] case23/cam1: 89.9 KB (seg 6058 B, edge 85942 B, caption 41 B) 277/117/304 ms | a truck is parked on the side of the road
+[23/112] case23/cam2: 59.8 KB (seg 6418 B, edge 54772 B, caption 39 B) 276/102/299 ms | a car is parked on the side of the road
+[23/112] case23/cam3: 52.1 KB (seg 4964 B, edge 48342 B, caption 20 B) 277/86/191 ms | a tree on the street
+[23/112] case23/cam4: 73.7 KB (seg 4972 B, edge 70470 B, caption 43 B) 273/116/304 ms | a man walking across a street next to a bus
+[23/112] case23/cam5: 50.3 KB (seg 4926 B, edge 46538 B, caption 42 B) 273/92/324 ms | a bus is driving down the street in a city
+[24/112] case24/cam1: 45.9 KB (seg 5242 B, edge 41770 B, caption 39 B) 277/89/290 ms | a woman walking down a street in a city
+[24/112] case24/cam2: 48.4 KB (seg 5486 B, edge 44042 B, caption 40 B) 274/95/271 ms | a person walking down a street in a city
+[24/112] case24/cam3: 46.4 KB (seg 5118 B, edge 42310 B, caption 39 B) 274/89/250 ms | a yellow car driving down a city street
+[24/112] case24/cam4: 50.4 KB (seg 4392 B, edge 47160 B, caption 37 B) 276/88/286 ms | a street scene with a car and a truck
+[24/112] case24/cam5: 47.4 KB (seg 4812 B, edge 43674 B, caption 43 B) 275/93/280 ms | a city street with a bus and people walking
+[24/112] case24/cam6: 47.9 KB (seg 5104 B, edge 43860 B, caption 54 B) 281/87/344 ms | a white van driving down a street next to a yellow car
+[25/112] case25/cam1: 82.6 KB (seg 6572 B, edge 77924 B, caption 50 B) 274/123/327 ms | a man in an orange vest is walking down the street
+[25/112] case25/cam2: 81.3 KB (seg 6308 B, edge 76942 B, caption 17 B) 276/109/191 ms | a scene of a city
+[25/112] case25/cam3: 66.6 KB (seg 7086 B, edge 61106 B, caption 17 B) 277/107/185 ms | a scene of a city
+[26/112] case26/cam1: 71.0 KB (seg 5870 B, edge 66794 B, caption 35 B) 277/110/281 ms | a street scene with a bus and a bus
+[26/112] case26/cam2: 51.9 KB (seg 5882 B, edge 47196 B, caption 37 B) 277/94/277 ms | a man walking down a street in a city
+[26/112] case26/cam3: 68.1 KB (seg 5862 B, edge 63874 B, caption 49 B) 274/106/337 ms | a woman sitting on a bench in front of a building
+[26/112] case26/cam4: 68.1 KB (seg 6454 B, edge 63286 B, caption 34 B) 276/110/286 ms | a city street with a bus and a bus
+[27/112] case27/cam1: 49.0 KB (seg 3996 B, edge 46192 B, caption 36 B) 273/92/254 ms | a police car is parked on the street
+[27/112] case27/cam2: 56.8 KB (seg 4318 B, edge 53806 B, caption 32 B) 276/102/275 ms | a car is parked on a city street
+[27/112] case27/cam3: 46.7 KB (seg 5210 B, edge 42560 B, caption 39 B) 275/90/253 ms | a coca truck driving down a city street
+[27/112] case27/cam4: 61.8 KB (seg 4734 B, edge 58546 B, caption 39 B) 271/96/267 ms | a police car driving down a city street
+[27/112] case27/cam5: 66.4 KB (seg 8386 B, edge 59526 B, caption 43 B) 279/105/285 ms | a city street with a car and people walking
+[28/112] case28/cam1: 58.7 KB (seg 6752 B, edge 53344 B, caption 42 B) 274/104/317 ms | a bus is driving down the street in a city
+[28/112] case28/cam2: 45.6 KB (seg 6324 B, edge 40316 B, caption 39 B) 279/94/260 ms | a group of people walking down a street
+[28/112] case28/cam3: 52.3 KB (seg 6322 B, edge 47184 B, caption 42 B) 277/98/245 ms | a group of people standing around a street
+[28/112] case28/cam4: 45.3 KB (seg 4598 B, edge 41702 B, caption 42 B) 275/96/300 ms | a man walking across a crosswalk in a city
+[28/112] case28/cam5: 51.7 KB (seg 6176 B, edge 46762 B, caption 35 B) 274/97/233 ms | a group of people crossing a street
+[28/112] case28/cam6: 52.0 KB (seg 6696 B, edge 46470 B, caption 39 B) 275/95/257 ms | a group of people walking down a street
+[29/112] case29/cam1: 35.7 KB (seg 5928 B, edge 30562 B, caption 39 B) 275/78/264 ms | a group of people walking down a street
+[29/112] case29/cam2: 46.9 KB (seg 3406 B, edge 44622 B, caption 32 B) 275/90/242 ms | a white car parked on the street
+[29/112] case29/cam3: 41.5 KB (seg 4710 B, edge 37718 B, caption 45 B) 276/81/330 ms | a red truck is parked on the side of the road
+[30/112] case30/cam1: 63.8 KB (seg 5708 B, edge 59572 B, caption 34 B) 276/100/253 ms | a tree in the middle of the street
+[30/112] case30/cam2: 43.6 KB (seg 6584 B, edge 38020 B, caption 44 B) 276/80/301 ms | a woman walking across a crosswalk in a city
+[30/112] case30/cam3: 49.9 KB (seg 4078 B, edge 47018 B, caption 34 B) 276/91/300 ms | a city street with a car and a bus
+[30/112] case30/cam4: 42.4 KB (seg 4374 B, edge 39046 B, caption 43 B) 274/86/306 ms | a city street with a car parked on the side
+[31/112] case31/cam1: 50.5 KB (seg 3702 B, edge 47946 B, caption 32 B) 276/81/245 ms | a bus is driving down the street
+[31/112] case31/cam2: 83.1 KB (seg 5600 B, edge 79456 B, caption 42 B) 273/120/273 ms | a city street with a large white crosswalk
+[31/112] case31/cam3: 85.7 KB (seg 12630 B, edge 75092 B, caption 39 B) 276/118/266 ms | a group of people walking down a street
+[31/112] case31/cam4: 59.4 KB (seg 5408 B, edge 55452 B, caption 16 B) 273/107/132 ms | a large building
+[31/112] case31/cam5: 87.3 KB (seg 4960 B, edge 84436 B, caption 44 B) 277/119/274 ms | a group of people walking across a crosswalk
+[32/112] case32/cam1: 68.6 KB (seg 6608 B, edge 63620 B, caption 11 B) 275/112/132 ms | a black car
+[32/112] case32/cam2: 38.1 KB (seg 5578 B, edge 33400 B, caption 32 B) 277/81/243 ms | a man walking across a crosswalk
+[32/112] case32/cam3: 39.9 KB (seg 5988 B, edge 34828 B, caption 39 B) 280/81/256 ms | a group of people walking down a street
+[32/112] case32/cam4: 60.0 KB (seg 5730 B, edge 55678 B, caption 35 B) 272/103/268 ms | a man is walking across a crosswalk
+[32/112] case32/cam5: 52.1 KB (seg 7660 B, edge 45672 B, caption 39 B) 276/98/259 ms | a group of people walking down a street
+[32/112] case32/cam6: 59.3 KB (seg 5236 B, edge 55472 B, caption 48 B) 273/96/317 ms | a man is walking down the street with a suitcase
+[33/112] case33/cam1: 54.8 KB (seg 2852 B, edge 53216 B, caption 48 B) 279/94/297 ms | a truck driving down a street next to a building
+[33/112] case33/cam2: 56.0 KB (seg 4132 B, edge 53166 B, caption 42 B) 275/93/264 ms | a city street with cars and people walking
+[33/112] case33/cam3: 60.7 KB (seg 3116 B, edge 59052 B, caption 39 B) 277/100/253 ms | the city street with cars and buildings
+[34/112] case34/cam1: 50.3 KB (seg 6576 B, edge 44872 B, caption 38 B) 275/83/231 ms | a street with palm trees and buildings
+[34/112] case34/cam2: 47.2 KB (seg 4334 B, edge 43924 B, caption 42 B) 275/96/307 ms | a man walking across a crosswalk in a city
+[34/112] case34/cam3: 45.9 KB (seg 2856 B, edge 44102 B, caption 46 B) 276/90/320 ms | a man walking down a street next to a building
+[34/112] case34/cam4: 54.7 KB (seg 5976 B, edge 50030 B, caption 53 B) 271/91/336 ms | a man walking across a street next to a tall building
+[35/112] case35/cam1: 65.9 KB (seg 7166 B, edge 60286 B, caption 36 B) 277/99/279 ms | a bus parked on the side of a street
+[35/112] case35/cam2: 70.3 KB (seg 7032 B, edge 64950 B, caption 39 B) 275/109/271 ms | a yellow bus is driving down the street
+[35/112] case35/cam3: 71.2 KB (seg 5592 B, edge 67276 B, caption 42 B) 276/107/304 ms | a city street with a bus and a man walking
+[35/112] case35/cam4: 66.3 KB (seg 5588 B, edge 62256 B, caption 34 B) 271/104/288 ms | a city street with a bus and a car
+[35/112] case35/cam5: 55.1 KB (seg 5594 B, edge 50808 B, caption 52 B) 275/93/304 ms | a person walking across a street with a red umbrella
+[36/112] case36/cam1: 67.2 KB (seg 4460 B, edge 64320 B, caption 45 B) 278/107/306 ms | a man walking down a sidewalk next to a bench
+[36/112] case36/cam2: 35.3 KB (seg 4444 B, edge 31644 B, caption 38 B) 277/76/275 ms | a red and white van parked on a street
+[36/112] case36/cam3: 49.3 KB (seg 4258 B, edge 46164 B, caption 51 B) 273/93/340 ms | a city street with a lot of cars parked on the side
+[36/112] case36/cam4: 53.8 KB (seg 4504 B, edge 50568 B, caption 17 B) 277/99/178 ms | a bus on the road
+[36/112] case36/cam5: 59.4 KB (seg 12834 B, edge 47974 B, caption 17 B) 277/92/191 ms | a scene of a city
+[36/112] case36/cam6: 39.2 KB (seg 4290 B, edge 35764 B, caption 51 B) 275/78/334 ms | a car driving down a street next to a tall building
+[37/112] case37/cam1: 62.8 KB (seg 4914 B, edge 59314 B, caption 39 B) 277/107/251 ms | a group of people walking down a street
+[37/112] case37/cam2: 76.0 KB (seg 7186 B, edge 70632 B, caption 41 B) 277/111/249 ms | a group of people walking across a street
+[37/112] case37/cam3: 62.0 KB (seg 6516 B, edge 56884 B, caption 39 B) 274/109/264 ms | a group of people walking down a street
+[38/112] case38/cam1: 60.6 KB (seg 6460 B, edge 55512 B, caption 39 B) 276/99/259 ms | a group of people standing around a car
+[38/112] case38/cam2: 60.7 KB (seg 3256 B, edge 58888 B, caption 36 B) 274/105/256 ms | a group of cars parked on the street
+[38/112] case38/cam3: 55.8 KB (seg 4468 B, edge 52638 B, caption 35 B) 274/101/238 ms | a group of people crossing a street
+[38/112] case38/cam4: 60.8 KB (seg 3980 B, edge 58270 B, caption 25 B) 280/101/202 ms | a woman crossing a street
+[39/112] case39/cam1: 51.2 KB (seg 5024 B, edge 47338 B, caption 26 B) 273/100/166 ms | the city traffic simulator
+[39/112] case39/cam2: 66.5 KB (seg 3512 B, edge 64530 B, caption 39 B) 283/115/264 ms | a city street with cars and fire trucks
+[39/112] case39/cam3: 67.7 KB (seg 6434 B, edge 62840 B, caption 32 B) 275/107/256 ms | a car is parked in a parking lot
+[39/112] case39/cam4: 46.8 KB (seg 6968 B, edge 40918 B, caption 47 B) 279/87/334 ms | a woman walking down a street next to a red van
+[39/112] case39/cam5: 72.1 KB (seg 5458 B, edge 68298 B, caption 33 B) 273/114/246 ms | a red car parked in a parking lot
+[40/112] case40/cam1: 56.4 KB (seg 4956 B, edge 52716 B, caption 35 B) 274/90/267 ms | a city street with a bus and people
+[40/112] case40/cam2: 70.7 KB (seg 6732 B, edge 65578 B, caption 41 B) 278/100/298 ms | a man walking down a street next to a bus
+[40/112] case40/cam3: 49.0 KB (seg 7128 B, edge 43016 B, caption 34 B) 271/90/257 ms | a street with palm trees and a bus
+[40/112] case40/cam4: 49.5 KB (seg 7356 B, edge 43260 B, caption 68 B) 274/94/534 ms | the game ' s screens are very realistic, but they ' re - - - - - - -
+[40/112] case40/cam5: 47.6 KB (seg 3848 B, edge 44814 B, caption 34 B) 273/80/280 ms | a street with a car and a pink car
+[40/112] case40/cam6: 43.1 KB (seg 4748 B, edge 39386 B, caption 46 B) 274/84/325 ms | a street with a bus and a person walking on it
+[41/112] case41/cam1: 48.8 KB (seg 4560 B, edge 45314 B, caption 53 B) 276/87/350 ms | a yellow bus driving down a street next to a building
+[41/112] case41/cam2: 49.3 KB (seg 4468 B, edge 45968 B, caption 51 B) 275/93/349 ms | a man walking down a street next to a traffic light
+[41/112] case41/cam3: 71.0 KB (seg 7580 B, edge 65054 B, caption 42 B) 274/101/306 ms | a man walking across a crosswalk in a city
+[42/112] case42/cam1: 48.2 KB (seg 4734 B, edge 44608 B, caption 37 B) 272/87/273 ms | a car driving down a street in a city
+[42/112] case42/cam2: 42.3 KB (seg 4796 B, edge 38474 B, caption 33 B) 274/80/257 ms | a red car is parked on the street
+[42/112] case42/cam3: 39.2 KB (seg 3466 B, edge 36620 B, caption 46 B) 273/84/316 ms | a man walking down a street next to a building
+[42/112] case42/cam4: 40.9 KB (seg 5340 B, edge 36570 B, caption 11 B) 273/81/143 ms | a white bus
+[43/112] case43/cam1: 101.3 KB (seg 4612 B, edge 99058 B, caption 35 B) 273/131/263 ms | a street with a car driving down it
+[43/112] case43/cam2: 69.5 KB (seg 4180 B, edge 67026 B, caption 13 B) 281/107/140 ms | a city street
+[43/112] case43/cam3: 68.0 KB (seg 3464 B, edge 66082 B, caption 62 B) 276/107/359 ms | a street scene with a car and a person walking on the sidewalk
+[43/112] case43/cam4: 69.8 KB (seg 3814 B, edge 67638 B, caption 40 B) 274/103/275 ms | a city street with cars and a yellow car
+[43/112] case43/cam5: 87.9 KB (seg 4592 B, edge 85340 B, caption 46 B) 274/119/308 ms | a street with a white painted line on the road
+[44/112] case44/cam1: 47.3 KB (seg 4258 B, edge 44118 B, caption 46 B) 280/86/341 ms | a coca truck is parked on the side of the road
+[44/112] case44/cam2: 51.3 KB (seg 6428 B, edge 46058 B, caption 44 B) 274/95/309 ms | a woman in a red dress walking down a street
+[44/112] case44/cam3: 67.7 KB (seg 4938 B, edge 64330 B, caption 33 B) 274/111/269 ms | a red bus is parked on the street
+[44/112] case44/cam4: 58.0 KB (seg 6110 B, edge 53206 B, caption 49 B) 277/101/323 ms | a city street with a red truck parked on the side
+[44/112] case44/cam5: 43.8 KB (seg 5058 B, edge 39802 B, caption 39 B) 275/87/257 ms | a group of people walking down a street
+[44/112] case44/cam6: 79.6 KB (seg 6098 B, edge 75420 B, caption 34 B) 273/121/242 ms | a truck driving down a city street
+[45/112] case45/cam1: 51.5 KB (seg 4070 B, edge 48650 B, caption 13 B) 274/89/136 ms | a city street
+[45/112] case45/cam2: 68.9 KB (seg 4710 B, edge 65844 B, caption 38 B) 278/100/262 ms | a red truck driving down a city street
+[45/112] case45/cam3: 46.4 KB (seg 3938 B, edge 43502 B, caption 36 B) 276/92/256 ms | a red bus driving down a city street
+[46/112] case46/cam1: 44.5 KB (seg 6050 B, edge 39430 B, caption 45 B) 275/89/301 ms | a woman walking across a street next to a bus
+[46/112] case46/cam2: 43.6 KB (seg 6450 B, edge 38122 B, caption 24 B) 275/91/202 ms | a scene of a city street
+[46/112] case46/cam3: 51.9 KB (seg 6624 B, edge 46466 B, caption 39 B) 281/94/305 ms | a bus is parked on the side of the road
+[46/112] case46/cam4: 59.8 KB (seg 7490 B, edge 53702 B, caption 19 B) 277/106/201 ms | a bus on the street
+[47/112] case47/cam1: 39.4 KB (seg 4024 B, edge 36292 B, caption 54 B) 274/78/340 ms | a red truck driving down a street next to a yellow car
+[47/112] case47/cam2: 37.0 KB (seg 4034 B, edge 33832 B, caption 39 B) 279/81/296 ms | a car is parked on the side of the road
+[47/112] case47/cam3: 41.5 KB (seg 6116 B, edge 36342 B, caption 39 B) 275/80/256 ms | a group of people walking down a street
+[47/112] case47/cam4: 42.5 KB (seg 5680 B, edge 37804 B, caption 47 B) 276/81/327 ms | a man walking down a street next to a red truck
+[47/112] case47/cam5: 32.3 KB (seg 3138 B, edge 29850 B, caption 54 B) 274/73/350 ms | a yellow car driving down a street next to a white car
+[48/112] case48/cam1: 32.7 KB (seg 4338 B, edge 29100 B, caption 32 B) 271/77/258 ms | a car is parked in a parking lot
+[48/112] case48/cam2: 44.2 KB (seg 3876 B, edge 41298 B, caption 44 B) 272/88/319 ms | a car parked in a parking next to a building
+[48/112] case48/cam3: 36.3 KB (seg 4202 B, edge 32950 B, caption 39 B) 276/81/295 ms | a car is parked on the side of the road
+[48/112] case48/cam4: 45.8 KB (seg 4154 B, edge 42678 B, caption 44 B) 277/80/300 ms | a woman walking across a crosswalk in a city
+[48/112] case48/cam5: 31.9 KB (seg 3974 B, edge 28616 B, caption 35 B) 275/72/265 ms | a white car parked in a parking lot
+[48/112] case48/cam6: 48.9 KB (seg 5154 B, edge 44860 B, caption 24 B) 283/96/214 ms | a scene of a city street
+[49/112] case49/cam1: 60.8 KB (seg 7946 B, edge 54304 B, caption 24 B) 276/94/211 ms | a scene of a city street
+[49/112] case49/cam2: 68.8 KB (seg 6706 B, edge 63720 B, caption 38 B) 273/113/261 ms | a red fire truck driving down a street
+[49/112] case49/cam3: 77.5 KB (seg 7192 B, edge 72118 B, caption 49 B) 272/118/325 ms | a woman walking down a street next to a palm tree
+[50/112] case50/cam1: 45.7 KB (seg 4984 B, edge 41800 B, caption 45 B) 272/86/297 ms | a person walking across a crosswalk in a city
+[50/112] case50/cam2: 60.4 KB (seg 4236 B, edge 57552 B, caption 38 B) 270/104/277 ms | a city street with cars and a building
+[50/112] case50/cam3: 58.0 KB (seg 6340 B, edge 53052 B, caption 13 B) 275/103/140 ms | a city street
+[50/112] case50/cam4: 44.8 KB (seg 5522 B, edge 40280 B, caption 36 B) 279/82/265 ms | a person crossing a street in a city
+[51/112] case51/cam1: 41.9 KB (seg 4082 B, edge 38834 B, caption 34 B) 275/85/264 ms | a police car is parked in a street
+[51/112] case51/cam2: 60.3 KB (seg 4632 B, edge 57036 B, caption 39 B) 273/107/261 ms | a group of people walking down a street
+[51/112] case51/cam3: 32.4 KB (seg 4158 B, edge 28996 B, caption 32 B) 276/77/271 ms | a red car is parked in a parking
+[51/112] case51/cam4: 54.3 KB (seg 3734 B, edge 51838 B, caption 32 B) 276/97/258 ms | a car is parked in a parking lot
+[51/112] case51/cam5: 54.1 KB (seg 4326 B, edge 51066 B, caption 40 B) 273/86/288 ms | a street scene with cars and a crosswalk
+[52/112] case52/cam1: 61.7 KB (seg 4934 B, edge 58196 B, caption 34 B) 276/104/235 ms | the city street is empty and empty
+[52/112] case52/cam2: 50.2 KB (seg 3184 B, edge 48246 B, caption 26 B) 276/103/216 ms | the police car in the city
+[52/112] case52/cam3: 53.4 KB (seg 4818 B, edge 49820 B, caption 51 B) 279/84/339 ms | a red car driving down a street next to a white bus
+[52/112] case52/cam4: 47.2 KB (seg 3944 B, edge 44366 B, caption 41 B) 277/93/299 ms | the game ' s screens are all in one place
+[52/112] case52/cam5: 65.5 KB (seg 3796 B, edge 63268 B, caption 11 B) 272/111/134 ms | a white van
+[52/112] case52/cam6: 55.1 KB (seg 5220 B, edge 51132 B, caption 42 B) 278/92/301 ms | a man walking across a crosswalk in a city
+[53/112] case53/cam1: 85.9 KB (seg 5474 B, edge 82426 B, caption 43 B) 280/116/270 ms | a man walking down a street with a suitcase
+[53/112] case53/cam2: 68.4 KB (seg 5428 B, edge 64616 B, caption 34 B) 277/106/270 ms | a tree in the middle of the street
+[53/112] case53/cam3: 63.1 KB (seg 5520 B, edge 59096 B, caption 45 B) 276/104/307 ms | a woman walking down a sidewalk next to a man
+[54/112] case54/cam1: 45.2 KB (seg 2758 B, edge 43486 B, caption 11 B) 273/84/134 ms | a white van
+[54/112] case54/cam2: 51.8 KB (seg 5402 B, edge 47578 B, caption 37 B) 281/93/271 ms | a man walking down a street in a city
+[54/112] case54/cam3: 44.9 KB (seg 5994 B, edge 39972 B, caption 45 B) 277/89/269 ms | a street scene with a man crossing the street
+[54/112] case54/cam4: 45.5 KB (seg 4176 B, edge 42344 B, caption 42 B) 274/92/260 ms | a city street with cars and people walking
+[55/112] case55/cam1: 72.1 KB (seg 6718 B, edge 67040 B, caption 42 B) 276/115/294 ms | a man walking across a crosswalk in a city
+[55/112] case55/cam2: 94.7 KB (seg 6202 B, edge 90702 B, caption 36 B) 281/120/283 ms | a street scene with a car and a tree
+[55/112] case55/cam3: 60.7 KB (seg 6322 B, edge 55844 B, caption 37 B) 273/104/267 ms | a man and woman walking down a street
+[55/112] case55/cam4: 77.2 KB (seg 12070 B, edge 66898 B, caption 40 B) 275/108/271 ms | a couple walking down a street in a city
+[55/112] case55/cam5: 64.1 KB (seg 6970 B, edge 58642 B, caption 13 B) 275/101/133 ms | a city street
+[56/112] case56/cam1: 66.5 KB (seg 3720 B, edge 64290 B, caption 35 B) 274/105/292 ms | a street scene with a bus and a car
+[56/112] case56/cam2: 57.5 KB (seg 3542 B, edge 55264 B, caption 35 B) 273/94/269 ms | a street scene with a car and a bus
+[56/112] case56/cam3: 53.6 KB (seg 4754 B, edge 50066 B, caption 16 B) 274/93/170 ms | a red coca truck
+[56/112] case56/cam4: 58.4 KB (seg 6504 B, edge 53274 B, caption 42 B) 277/98/256 ms | a city street with cars and people walking
+[56/112] case56/cam5: 54.4 KB (seg 5776 B, edge 49868 B, caption 37 B) 274/97/280 ms | a street scene with a car and a truck
+[56/112] case56/cam6: 53.4 KB (seg 3606 B, edge 51070 B, caption 46 B) 276/97/308 ms | a car driving down a street next to a building
+[57/112] case57/cam1: 69.0 KB (seg 5532 B, edge 65110 B, caption 45 B) 275/112/277 ms | a couple of people walking across a crosswalk
+[57/112] case57/cam2: 51.5 KB (seg 4130 B, edge 48578 B, caption 11 B) 276/99/140 ms | a black car
+[57/112] case57/cam3: 65.6 KB (seg 4622 B, edge 62458 B, caption 47 B) 279/103/330 ms | a street scene with a white van and a white van
+[58/112] case58/cam1: 54.2 KB (seg 4424 B, edge 51026 B, caption 42 B) 275/96/297 ms | a car is driving down the street in a city
+[58/112] case58/cam2: 52.4 KB (seg 3780 B, edge 49796 B, caption 34 B) 279/96/276 ms | a city street with a car and a bus
+[58/112] case58/cam3: 45.3 KB (seg 4578 B, edge 41756 B, caption 39 B) 279/83/263 ms | a police car driving down a city street
+[58/112] case58/cam4: 42.1 KB (seg 3448 B, edge 39602 B, caption 39 B) 279/78/307 ms | a car is parked on the side of the road
+[59/112] case59/cam1: 58.0 KB (seg 6258 B, edge 53068 B, caption 42 B) 272/103/282 ms | a woman walking down a street with a child
+[59/112] case59/cam2: 57.5 KB (seg 5188 B, edge 53660 B, caption 30 B) 276/88/261 ms | a tree on the side of the road
+[59/112] case59/cam3: 78.4 KB (seg 7870 B, edge 72412 B, caption 39 B) 272/122/312 ms | a car is parked on the side of the road
+[59/112] case59/cam4: 52.5 KB (seg 7518 B, edge 46236 B, caption 39 B) 273/94/248 ms | a group of people walking down a street
+[59/112] case59/cam5: 67.1 KB (seg 6124 B, edge 62594 B, caption 17 B) 278/97/191 ms | a scene of a city
+[60/112] case60/cam1: 42.6 KB (seg 4646 B, edge 38878 B, caption 48 B) 275/84/329 ms | a city street with a police car and a police car
+[60/112] case60/cam2: 45.3 KB (seg 3986 B, edge 42376 B, caption 49 B) 273/85/317 ms | a street scene with a yellow car and a yellow van
+[60/112] case60/cam3: 44.1 KB (seg 3740 B, edge 41376 B, caption 46 B) 274/81/327 ms | a bus driving down a street next to a building
+[60/112] case60/cam4: 60.9 KB (seg 5132 B, edge 57242 B, caption 13 B) 275/101/142 ms | a city street
+[60/112] case60/cam5: 36.1 KB (seg 4212 B, edge 32730 B, caption 49 B) 274/79/310 ms | a street scene with a man walking down the street
+[60/112] case60/cam6: 50.5 KB (seg 5018 B, edge 46622 B, caption 43 B) 281/87/300 ms | a city street with a lot of cars and people
+[61/112] case61/cam1: 82.3 KB (seg 5736 B, edge 78462 B, caption 29 B) 275/114/220 ms | a woman walking down a street
+[61/112] case61/cam2: 57.4 KB (seg 4880 B, edge 53844 B, caption 42 B) 274/104/307 ms | a blue car driving down a street in a city
+[61/112] case61/cam3: 68.2 KB (seg 4302 B, edge 65452 B, caption 39 B) 272/112/298 ms | a car is parked on the street in a city
+[62/112] case62/cam1: 79.7 KB (seg 5848 B, edge 75658 B, caption 62 B) 272/116/373 ms | a city street with a man walking down the middle of the street
+[62/112] case62/cam2: 74.0 KB (seg 7068 B, edge 68632 B, caption 49 B) 275/119/316 ms | a woman walking down a street next to a crosswalk
+[62/112] case62/cam3: 67.9 KB (seg 7170 B, edge 62334 B, caption 39 B) 275/109/262 ms | a group of people walking down a street
+[62/112] case62/cam4: 69.7 KB (seg 5230 B, edge 66162 B, caption 30 B) 276/115/234 ms | a street sign on a city street
+[63/112] case63/cam1: 64.1 KB (seg 4500 B, edge 61052 B, caption 40 B) 276/96/308 ms | a street scene with a bus and a bus stop
+[63/112] case63/cam2: 44.9 KB (seg 3542 B, edge 42442 B, caption 34 B) 272/86/272 ms | a city street with a bus and a bus
+[63/112] case63/cam3: 44.2 KB (seg 3974 B, edge 41302 B, caption 36 B) 273/90/285 ms | a street with a red car parked on it
+[63/112] case63/cam4: 58.8 KB (seg 4408 B, edge 55760 B, caption 37 B) 274/98/280 ms | a man walking down a street in a city
+[63/112] case63/cam5: 59.5 KB (seg 5404 B, edge 55468 B, caption 42 B) 276/95/298 ms | a white van parked on the side of a street
+[64/112] case64/cam1: 59.7 KB (seg 8546 B, edge 52550 B, caption 32 B) 274/111/276 ms | a fire truck is parked in a city
+[64/112] case64/cam2: 41.5 KB (seg 4962 B, edge 37502 B, caption 39 B) 273/93/252 ms | a group of people walking down a street
+[64/112] case64/cam3: 50.0 KB (seg 7990 B, edge 43184 B, caption 41 B) 273/98/263 ms | a group of people walking across a street
+[64/112] case64/cam4: 66.4 KB (seg 8330 B, edge 59594 B, caption 42 B) 277/101/294 ms | a city street with a lot of cars and buses
+[64/112] case64/cam5: 51.7 KB (seg 6876 B, edge 46060 B, caption 34 B) 276/95/286 ms | a city street with a bus and a bus
+[64/112] case64/cam6: 47.3 KB (seg 4556 B, edge 43828 B, caption 32 B) 277/93/297 ms | a bus and a car on a city street
+[65/112] case65/cam1: 43.3 KB (seg 4436 B, edge 39910 B, caption 31 B) 276/76/245 ms | a street with cars parked on it
+[65/112] case65/cam2: 45.6 KB (seg 7608 B, edge 39080 B, caption 39 B) 274/82/268 ms | a group of people walking down a street
+[65/112] case65/cam3: 56.7 KB (seg 5184 B, edge 52884 B, caption 39 B) 300/94/263 ms | a group of people standing around a car
+[66/112] case66/cam1: 41.7 KB (seg 4140 B, edge 38530 B, caption 37 B) 277/89/282 ms | a city street with a yellow crosswalk
+[66/112] case66/cam2: 44.9 KB (seg 4108 B, edge 41852 B, caption 39 B) 305/98/290 ms | a police car parked in front of a store
+[66/112] case66/cam3: 65.7 KB (seg 4806 B, edge 62376 B, caption 49 B) 278/100/352 ms | a man walking across a crosswalk on a city street
+[66/112] case66/cam4: 48.0 KB (seg 5962 B, edge 43126 B, caption 25 B) 276/88/192 ms | a white and red ambulance
+[67/112] case67/cam1: 65.2 KB (seg 7734 B, edge 58946 B, caption 39 B) 279/106/261 ms | a street scene with cars and palm trees
+[67/112] case67/cam2: 77.2 KB (seg 5570 B, edge 73482 B, caption 20 B) 284/112/199 ms | the city in saints 2
+[67/112] case67/cam3: 59.9 KB (seg 5554 B, edge 55730 B, caption 39 B) 280/98/249 ms | a street scene with cars and palm trees
+[67/112] case67/cam4: 56.5 KB (seg 6332 B, edge 51452 B, caption 39 B) 274/100/251 ms | a street scene with cars and palm trees
+[67/112] case67/cam5: 68.1 KB (seg 4720 B, edge 64938 B, caption 33 B) 277/102/251 ms | a street with cars and palm trees
+[68/112] case68/cam1: 48.1 KB (seg 6362 B, edge 42800 B, caption 49 B) 285/89/309 ms | a street scene with a man walking down the street
+[68/112] case68/cam2: 54.1 KB (seg 4594 B, edge 50724 B, caption 30 B) 280/88/264 ms | a tree on the side of the road
+[68/112] case68/cam3: 48.5 KB (seg 4328 B, edge 45248 B, caption 43 B) 301/97/337 ms | a woman walking down a street next to a bus
+[68/112] case68/cam4: 52.9 KB (seg 5878 B, edge 48288 B, caption 42 B) 336/94/315 ms | a city street with a bus and a man walking
+[68/112] case68/cam5: 73.1 KB (seg 6030 B, edge 68800 B, caption 39 B) 311/111/303 ms | a blue car parked on the side of a road
+[68/112] case68/cam6: 32.2 KB (seg 5352 B, edge 27610 B, caption 51 B) 283/69/300 ms | a city street with a person walking on the sidewalk
+[69/112] case69/cam1: 52.5 KB (seg 3850 B, edge 49948 B, caption 13 B) 300/96/132 ms | a white truck
+[69/112] case69/cam2: 60.6 KB (seg 5054 B, edge 56944 B, caption 37 B) 286/100/281 ms | a street scene with a car and a truck
+[69/112] case69/cam3: 58.8 KB (seg 3952 B, edge 56170 B, caption 46 B) 293/105/326 ms | a car driving down a street next to a building
+[70/112] case70/cam1: 51.5 KB (seg 3996 B, edge 48734 B, caption 41 B) 294/92/246 ms | a street scene with a pedestrian crossing
+[70/112] case70/cam2: 54.3 KB (seg 5562 B, edge 50044 B, caption 13 B) 277/87/155 ms | a city street
+[70/112] case70/cam3: 59.3 KB (seg 4296 B, edge 56384 B, caption 44 B) 304/101/295 ms | a street scene with a car and people walking
+[70/112] case70/cam4: 37.1 KB (seg 3818 B, edge 34090 B, caption 36 B) 285/81/262 ms | the blue car is parked on the street
+[71/112] case71/cam1: 66.4 KB (seg 5876 B, edge 62068 B, caption 47 B) 279/105/344 ms | a man walking across a street next to a red bus
+[71/112] case71/cam2: 84.7 KB (seg 6006 B, edge 80640 B, caption 45 B) 274/118/321 ms | a street with a fire truck and a fire hydrant
+[71/112] case71/cam3: 76.5 KB (seg 5794 B, edge 72542 B, caption 35 B) 278/113/289 ms | a street scene with a bus and a bus
+[71/112] case71/cam4: 84.3 KB (seg 5548 B, edge 80716 B, caption 41 B) 276/122/305 ms | a man walking down a street next to a car
+[71/112] case71/cam5: 72.5 KB (seg 5738 B, edge 68476 B, caption 46 B) 276/111/309 ms | a man walking down a street next to a building
+[72/112] case72/cam1: 40.7 KB (seg 4590 B, edge 37030 B, caption 37 B) 273/91/291 ms | a man walking down a street in a city
+[72/112] case72/cam2: 49.2 KB (seg 3394 B, edge 46914 B, caption 44 B) 272/87/296 ms | a city street with a red car driving down it
+[72/112] case72/cam3: 43.4 KB (seg 5396 B, edge 38946 B, caption 50 B) 276/85/313 ms | a red car driving down a street next to a building
+[72/112] case72/cam4: 42.2 KB (seg 4450 B, edge 38720 B, caption 44 B) 274/81/322 ms | a city street with a bus stop and a bus stop
+[72/112] case72/cam5: 43.1 KB (seg 4240 B, edge 39822 B, caption 55 B) 274/82/361 ms | a red car driving down a street next to a tall building
+[72/112] case72/cam6: 49.8 KB (seg 4208 B, edge 46758 B, caption 39 B) 271/100/284 ms | a red bus is driving down a city street
+[73/112] case73/cam1: 66.9 KB (seg 5924 B, edge 62518 B, caption 24 B) 279/107/217 ms | a scene of a city street
+[73/112] case73/cam2: 93.8 KB (seg 6994 B, edge 88956 B, caption 53 B) 273/119/336 ms | a street scene with a police car and a police officer
+[73/112] case73/cam3: 40.5 KB (seg 4842 B, edge 36560 B, caption 42 B) 270/76/295 ms | a man walking across a crosswalk in a city
+[74/112] case74/cam1: 44.4 KB (seg 4376 B, edge 41004 B, caption 43 B) 271/86/325 ms | a red car parked in a parking next to a bus
+[74/112] case74/cam2: 57.2 KB (seg 5800 B, edge 52714 B, caption 39 B) 276/101/269 ms | a group of people walking down a street
+[74/112] case74/cam3: 54.7 KB (seg 4432 B, edge 51542 B, caption 39 B) 272/88/307 ms | a bus and a car are parked in a parking
+[74/112] case74/cam4: 78.9 KB (seg 5712 B, edge 75042 B, caption 39 B) 271/120/305 ms | a bus is parked on the side of the road
+[75/112] case75/cam1: 45.0 KB (seg 5122 B, edge 40894 B, caption 42 B) 280/94/249 ms | a city street with cars and people walking
+[75/112] case75/cam2: 52.9 KB (seg 4710 B, edge 49444 B, caption 37 B) 277/102/228 ms | a city street with cars and buildings
+[75/112] case75/cam3: 48.6 KB (seg 3914 B, edge 45764 B, caption 38 B) 278/96/252 ms | a red fire truck driving down a street
+[75/112] case75/cam4: 55.7 KB (seg 3638 B, edge 53354 B, caption 36 B) 269/101/278 ms | a street with a fire truck and a car
+[75/112] case75/cam5: 58.1 KB (seg 6040 B, edge 53482 B, caption 16 B) 273/105/162 ms | a red fire truck
+[76/112] case76/cam1: 51.2 KB (seg 4942 B, edge 47420 B, caption 35 B) 275/91/265 ms | a white van parked in a parking lot
+[76/112] case76/cam2: 57.4 KB (seg 9808 B, edge 48924 B, caption 37 B) 284/105/286 ms | a man walking down a street in a city
+[76/112] case76/cam3: 45.0 KB (seg 5012 B, edge 41038 B, caption 17 B) 275/83/183 ms | a scene of a city
+[76/112] case76/cam4: 61.3 KB (seg 5032 B, edge 57720 B, caption 11 B) 275/104/139 ms | a white van
+[76/112] case76/cam5: 62.3 KB (seg 8430 B, edge 55374 B, caption 39 B) 276/107/253 ms | a group of people walking down a street
+[76/112] case76/cam6: 44.2 KB (seg 5020 B, edge 40218 B, caption 41 B) 278/88/276 ms | the cars in the parking are all different
+[77/112] case77/cam1: 61.8 KB (seg 8490 B, edge 54766 B, caption 39 B) 272/100/315 ms | a bus is parked on the side of the road
+[77/112] case77/cam2: 60.8 KB (seg 5510 B, edge 56716 B, caption 43 B) 271/105/301 ms | a man walking across a street next to a bus
+[77/112] case77/cam3: 60.7 KB (seg 4120 B, edge 58012 B, caption 56 B) 272/95/358 ms | a street scene with a car parked on the side of the road
+[78/112] case78/cam1: 45.5 KB (seg 3340 B, edge 43180 B, caption 30 B) 278/83/257 ms | a street with a car and a sign
+[78/112] case78/cam2: 44.3 KB (seg 5916 B, edge 39464 B, caption 34 B) 275/85/279 ms | a city street with a bus and a bus
+[78/112] case78/cam3: 47.0 KB (seg 4752 B, edge 43296 B, caption 45 B) 276/85/306 ms | a street scene with a red car driving down it
+[78/112] case78/cam4: 47.0 KB (seg 4414 B, edge 43698 B, caption 44 B) 274/87/318 ms | a person walking down a street next to a car
+[79/112] case79/cam1: 70.3 KB (seg 5162 B, edge 66764 B, caption 48 B) 274/115/342 ms | a man walking down a street next to a yellow car
+[79/112] case79/cam2: 61.1 KB (seg 4378 B, edge 58162 B, caption 39 B) 275/95/307 ms | a car is parked on the side of the road
+[79/112] case79/cam3: 55.6 KB (seg 6504 B, edge 50366 B, caption 17 B) 274/90/181 ms | a scene of a city
+[79/112] case79/cam4: 50.3 KB (seg 5968 B, edge 45500 B, caption 35 B) 277/97/254 ms | a black car is parked on the street
+[79/112] case79/cam5: 65.0 KB (seg 6350 B, edge 60218 B, caption 41 B) 273/104/294 ms | a city street scene with a bus and people
+[80/112] case80/cam1: 64.9 KB (seg 5364 B, edge 61044 B, caption 42 B) 275/105/274 ms | a person sitting on the sidewalk in a city
+[80/112] case80/cam2: 71.5 KB (seg 5362 B, edge 67766 B, caption 39 B) 275/114/302 ms | a van is parked on the side of the road
+[80/112] case80/cam3: 72.6 KB (seg 5406 B, edge 68932 B, caption 40 B) 279/100/304 ms | a street scene with a bus and a bus stop
+[80/112] case80/cam4: 75.9 KB (seg 4740 B, edge 72886 B, caption 53 B) 274/118/335 ms | a woman walking down a street next to a tall building
+[80/112] case80/cam5: 73.6 KB (seg 11082 B, edge 64248 B, caption 36 B) 275/111/281 ms | a street scene with a bus and a sign
+[80/112] case80/cam6: 75.7 KB (seg 5890 B, edge 71570 B, caption 24 B) 277/113/180 ms | a tree with green leaves
+[81/112] case81/cam1: 49.2 KB (seg 3306 B, edge 47086 B, caption 35 B) 281/92/250 ms | a white van is parked on the street
+[81/112] case81/cam2: 55.8 KB (seg 4524 B, edge 52598 B, caption 35 B) 277/95/276 ms | a street scene with a bus and a car
+[81/112] case81/cam3: 50.7 KB (seg 4026 B, edge 47892 B, caption 35 B) 282/88/251 ms | a car is driving down a city street
+[82/112] case82/cam1: 48.7 KB (seg 9774 B, edge 40064 B, caption 39 B) 275/90/297 ms | a bus is parked on the side of the road
+[82/112] case82/cam2: 43.3 KB (seg 5572 B, edge 38702 B, caption 41 B) 276/90/328 ms | a blue car parked on the side of a street
+[82/112] case82/cam3: 51.6 KB (seg 7078 B, edge 45678 B, caption 39 B) 273/93/313 ms | a bus is parked on the side of the road
+[82/112] case82/cam4: 48.9 KB (seg 4806 B, edge 45278 B, caption 10 B) 278/92/139 ms | a blue car
+[83/112] case83/cam1: 39.1 KB (seg 3510 B, edge 36468 B, caption 34 B) 277/79/273 ms | a group of cars parked on a street
+[83/112] case83/cam2: 51.3 KB (seg 5234 B, edge 47274 B, caption 47 B) 279/91/308 ms | a police vehicle parked on the side of the road
+[83/112] case83/cam3: 49.7 KB (seg 4512 B, edge 46334 B, caption 52 B) 273/88/343 ms | a group of people crossing a street with a stop sign
+[83/112] case83/cam4: 47.5 KB (seg 4684 B, edge 43924 B, caption 42 B) 279/88/301 ms | a street scene with a coca truck and a car
+[83/112] case83/cam5: 35.5 KB (seg 3638 B, edge 32700 B, caption 34 B) 277/74/250 ms | a group of cars parked on a street
+[84/112] case84/cam1: 60.9 KB (seg 5384 B, edge 56898 B, caption 39 B) 274/104/259 ms | a police car driving down a city street
+[84/112] case84/cam2: 66.2 KB (seg 7420 B, edge 60312 B, caption 43 B) 278/112/300 ms | a man walking across a street next to a car
+[84/112] case84/cam3: 73.9 KB (seg 4666 B, edge 70986 B, caption 11 B) 279/114/138 ms | a white car
+[84/112] case84/cam4: 51.5 KB (seg 5372 B, edge 47366 B, caption 39 B) 278/88/282 ms | a woman walking down a street in a city
+[84/112] case84/cam5: 56.5 KB (seg 5930 B, edge 51844 B, caption 44 B) 277/96/311 ms | a black truck parked on the side of a street
+[84/112] case84/cam6: 63.9 KB (seg 6266 B, edge 59172 B, caption 41 B) 279/102/294 ms | a street scene with a tractor and a truck
+[85/112] case85/cam1: 60.6 KB (seg 6596 B, edge 55458 B, caption 34 B) 275/99/249 ms | a street with palm trees and a car
+[85/112] case85/cam2: 70.0 KB (seg 5760 B, edge 65888 B, caption 17 B) 276/117/181 ms | a scene of a city
+[85/112] case85/cam3: 76.0 KB (seg 6014 B, edge 71754 B, caption 42 B) 280/114/283 ms | a street with a yellow car driving down it
+[86/112] case86/cam1: 55.4 KB (seg 4240 B, edge 52476 B, caption 42 B) 276/99/308 ms | a man walking across a crosswalk in a city
+[86/112] case86/cam2: 40.1 KB (seg 4918 B, edge 36062 B, caption 47 B) 278/84/329 ms | a man walking down a street next to a red truck
+[86/112] case86/cam3: 32.2 KB (seg 3216 B, edge 29718 B, caption 9 B) 275/79/135 ms | a red car
+[86/112] case86/cam4: 55.0 KB (seg 5300 B, edge 50938 B, caption 41 B) 282/97/293 ms | a man walking down a street next to a bus
+[87/112] case87/cam1: 33.8 KB (seg 3274 B, edge 31342 B, caption 35 B) 276/73/256 ms | a bus is driving down a city street
+[87/112] case87/cam2: 43.1 KB (seg 5446 B, edge 38634 B, caption 29 B) 273/88/232 ms | a bus is parked on the street
+[87/112] case87/cam3: 62.7 KB (seg 4910 B, edge 59294 B, caption 42 B) 274/91/290 ms | a bus is driving down the street in a city
+[87/112] case87/cam4: 42.7 KB (seg 3864 B, edge 39792 B, caption 32 B) 276/80/263 ms | a bus is parked in a parking lot
+[87/112] case87/cam5: 38.0 KB (seg 4446 B, edge 34420 B, caption 37 B) 275/91/281 ms | a man walking down a street in a city
+[88/112] case88/cam1: 50.9 KB (seg 3722 B, edge 48312 B, caption 57 B) 276/95/399 ms | the city street in the game, with cars parked on the road
+[88/112] case88/cam2: 61.9 KB (seg 5118 B, edge 58250 B, caption 13 B) 276/104/137 ms | a city street
+[88/112] case88/cam3: 37.0 KB (seg 3072 B, edge 34728 B, caption 52 B) 278/81/326 ms | a street with a car and a building in the background
+[88/112] case88/cam4: 40.3 KB (seg 3560 B, edge 37662 B, caption 46 B) 273/86/314 ms | a street with a car and a person walking on it
+[88/112] case88/cam5: 40.4 KB (seg 4666 B, edge 36636 B, caption 59 B) 272/78/342 ms | a yellow taxi driving down a street next to a tall building
+[88/112] case88/cam6: 53.5 KB (seg 4828 B, edge 49900 B, caption 36 B) 275/96/261 ms | a police car is parked on the street
+[89/112] case89/cam1: 76.0 KB (seg 7182 B, edge 70558 B, caption 40 B) 277/113/297 ms | a red car parked on the side of a street
+[89/112] case89/cam2: 63.3 KB (seg 7246 B, edge 57582 B, caption 42 B) 272/101/271 ms | a person walking across a street in a city
+[89/112] case89/cam3: 58.1 KB (seg 4472 B, edge 54978 B, caption 46 B) 275/110/317 ms | a coca truck is parked on the side of the road
+[90/112] case90/cam1: 54.7 KB (seg 4470 B, edge 51462 B, caption 39 B) 277/95/278 ms | a red van is driving down a city street
+[90/112] case90/cam2: 34.8 KB (seg 4742 B, edge 30820 B, caption 45 B) 274/76/339 ms | a small van is parked on the side of the road
+[90/112] case90/cam3: 46.1 KB (seg 4008 B, edge 43206 B, caption 34 B) 276/81/282 ms | a city street with a car and a bus
+[90/112] case90/cam4: 39.2 KB (seg 4102 B, edge 36018 B, caption 32 B) 274/77/259 ms | a red van is parked in a parking
+[91/112] case91/cam1: 57.7 KB (seg 7124 B, edge 51884 B, caption 39 B) 275/105/263 ms | a group of people walking down a street
+[91/112] case91/cam2: 65.4 KB (seg 5482 B, edge 61486 B, caption 39 B) 274/113/276 ms | a group of people walking around a city
+[91/112] case91/cam3: 53.6 KB (seg 5670 B, edge 49210 B, caption 39 B) 274/100/250 ms | a group of people walking down a street
+[91/112] case91/cam4: 52.6 KB (seg 3718 B, edge 50104 B, caption 43 B) 275/99/304 ms | a man walking across a street next to a bus
+[91/112] case91/cam5: 70.8 KB (seg 6300 B, edge 66160 B, caption 42 B) 277/105/300 ms | a city street with a lot of cars and buses
+[92/112] case92/cam1: 58.7 KB (seg 5480 B, edge 54616 B, caption 39 B) 274/105/261 ms | a group of people walking down a street
+[92/112] case92/cam2: 53.4 KB (seg 3532 B, edge 51154 B, caption 32 B) 272/93/257 ms | a car is parked in a parking lot
+[92/112] case92/cam3: 55.1 KB (seg 3560 B, edge 52834 B, caption 35 B) 278/102/262 ms | a group of cars parked in a parking
+[92/112] case92/cam4: 49.0 KB (seg 3648 B, edge 46524 B, caption 16 B) 274/100/163 ms | a bunch of trees
+[92/112] case92/cam5: 53.4 KB (seg 3646 B, edge 50994 B, caption 11 B) 280/97/138 ms | a white van
+[92/112] case92/cam6: 59.6 KB (seg 4922 B, edge 56056 B, caption 13 B) 279/105/144 ms | a black truck
+[93/112] case93/cam1: 46.9 KB (seg 8028 B, edge 39966 B, caption 43 B) 277/88/338 ms | a red car is parked on the side of the road
+[93/112] case93/cam2: 62.7 KB (seg 3824 B, edge 60306 B, caption 39 B) 279/107/229 ms | the city street with cars and buildings
+[93/112] case93/cam3: 46.2 KB (seg 4910 B, edge 42424 B, caption 12 B) 276/98/150 ms | a yellow car
+[94/112] case94/cam1: 37.6 KB (seg 4356 B, edge 34090 B, caption 47 B) 278/74/325 ms | a bus driving down a street next to a palm tree
+[94/112] case94/cam2: 54.5 KB (seg 4272 B, edge 51484 B, caption 32 B) 276/85/248 ms | a bus driving down a city street
+[94/112] case94/cam3: 63.7 KB (seg 5068 B, edge 60100 B, caption 41 B) 276/97/295 ms | a man walking down a street next to a bus
+[94/112] case94/cam4: 43.0 KB (seg 6396 B, edge 37614 B, caption 48 B) 274/90/339 ms | a yellow car is parked in the middle of a street
+[95/112] case95/cam1: 39.9 KB (seg 4512 B, edge 36356 B, caption 39 B) 278/74/322 ms | a car is parked on the street in a city
+[95/112] case95/cam2: 86.3 KB (seg 6846 B, edge 81440 B, caption 39 B) 278/119/303 ms | a car is parked on the street in a city
+[95/112] case95/cam3: 70.3 KB (seg 4558 B, edge 67372 B, caption 45 B) 276/100/298 ms | a person walking across a crosswalk in a city
+[95/112] case95/cam4: 42.9 KB (seg 6424 B, edge 37494 B, caption 44 B) 273/82/286 ms | a group of people walking across a crosswalk
+[95/112] case95/cam5: 65.8 KB (seg 5086 B, edge 62250 B, caption 13 B) 276/109/155 ms | a city street
+[96/112] case96/cam1: 45.3 KB (seg 5012 B, edge 41340 B, caption 62 B) 278/86/382 ms | a street scene with a car and a person walking on the sidewalk
+[96/112] case96/cam2: 47.0 KB (seg 6176 B, edge 41892 B, caption 41 B) 277/89/259 ms | a group of people walking across a street
+[96/112] case96/cam3: 43.0 KB (seg 4432 B, edge 39604 B, caption 37 B) 273/86/303 ms | a street with a car and a truck on it
+[96/112] case96/cam4: 58.1 KB (seg 3636 B, edge 55790 B, caption 39 B) 273/99/305 ms | a blue car parked on the side of a road
+[96/112] case96/cam5: 32.4 KB (seg 4116 B, edge 29054 B, caption 39 B) 276/70/298 ms | a car is parked on the side of the road
+[96/112] case96/cam6: 31.7 KB (seg 3934 B, edge 28514 B, caption 39 B) 282/68/306 ms | a car is parked on the side of the road
+[97/112] case97/cam1: 82.1 KB (seg 5422 B, edge 78610 B, caption 31 B) 274/116/243 ms | a red car driving down a street
+[97/112] case97/cam2: 76.2 KB (seg 4038 B, edge 73952 B, caption 39 B) 276/108/294 ms | a van is parked on the side of the road
+[97/112] case97/cam3: 61.7 KB (seg 4948 B, edge 58144 B, caption 51 B) 278/102/318 ms | a blue car driving down a street next to a building
+[98/112] case98/cam1: 43.8 KB (seg 4100 B, edge 40674 B, caption 42 B) 275/82/305 ms | a bus is driving down the street in a city
+[98/112] case98/cam2: 64.2 KB (seg 6028 B, edge 59688 B, caption 39 B) 273/104/304 ms | a bus is parked on the side of the road
+[98/112] case98/cam3: 71.2 KB (seg 5220 B, edge 67692 B, caption 42 B) 275/113/293 ms | a bus is driving down the street in a city
+[98/112] case98/cam4: 65.4 KB (seg 4020 B, edge 62914 B, caption 41 B) 277/113/296 ms | a man walking down a street next to a bus
+[99/112] case99/cam1: 55.0 KB (seg 4138 B, edge 52160 B, caption 35 B) 276/91/251 ms | a street with a tree and a building
+[99/112] case99/cam2: 51.4 KB (seg 4246 B, edge 48362 B, caption 44 B) 277/85/330 ms | a street with a car parked on the side of it
+[99/112] case99/cam3: 72.0 KB (seg 4058 B, edge 69648 B, caption 39 B) 275/106/289 ms | a car is parked on the street in a city
+[99/112] case99/cam4: 59.5 KB (seg 3942 B, edge 56970 B, caption 43 B) 276/92/298 ms | the car is parked on the street in the city
+[99/112] case99/cam5: 59.5 KB (seg 3806 B, edge 57052 B, caption 36 B) 275/95/277 ms | a street with a crosswalk and a tree
+[100/112] case100/cam1: 49.7 KB (seg 7984 B, edge 42866 B, caption 41 B) 274/91/263 ms | a group of people walking across a street
+[100/112] case100/cam2: 50.2 KB (seg 6854 B, edge 44542 B, caption 39 B) 278/94/260 ms | a group of people walking around a city
+[100/112] case100/cam3: 55.1 KB (seg 7400 B, edge 49012 B, caption 39 B) 278/102/254 ms | a group of people walking down a street
+[100/112] case100/cam4: 48.6 KB (seg 6374 B, edge 43386 B, caption 24 B) 274/92/223 ms | a scene of a city street
+[100/112] case100/cam5: 46.2 KB (seg 6710 B, edge 40614 B, caption 13 B) 274/96/134 ms | a city street
+[100/112] case100/cam6: 61.9 KB (seg 6516 B, edge 56884 B, caption 33 B) 276/107/239 ms | a city street with cars and buses
+[101/112] case101/cam1: 32.5 KB (seg 5212 B, edge 28004 B, caption 50 B) 275/78/332 ms | a woman in a green dress is standing in the street
+[101/112] case101/cam2: 44.2 KB (seg 4514 B, edge 40676 B, caption 39 B) 275/84/295 ms | a car is parked on the side of the road
+[101/112] case101/cam3: 46.3 KB (seg 3588 B, edge 43744 B, caption 34 B) 277/86/251 ms | a group of cars parked on a street
+[102/112] case102/cam1: 39.4 KB (seg 3614 B, edge 36646 B, caption 39 B) 276/81/301 ms | a bus is parked on the side of the road
+[102/112] case102/cam2: 53.8 KB (seg 4120 B, edge 50948 B, caption 36 B) 274/94/248 ms | a police car is parked on the street
+[102/112] case102/cam3: 60.6 KB (seg 5336 B, edge 56668 B, caption 9 B) 279/107/136 ms | a red van
+[102/112] case102/cam4: 53.6 KB (seg 5030 B, edge 49802 B, caption 36 B) 280/92/258 ms | a red truck is driving down a street
+[103/112] case103/cam1: 51.0 KB (seg 6774 B, edge 45410 B, caption 45 B) 276/93/305 ms | a street scene with a traffic light and a car
+[103/112] case103/cam2: 65.4 KB (seg 5662 B, edge 61224 B, caption 50 B) 276/114/339 ms | a blue car driving down a street next to a red car
+[103/112] case103/cam3: 61.8 KB (seg 5416 B, edge 57862 B, caption 32 B) 278/96/230 ms | a man walking across a crosswalk
+[103/112] case103/cam4: 72.6 KB (seg 3758 B, edge 70584 B, caption 11 B) 275/107/141 ms | a black car
+[103/112] case103/cam5: 64.3 KB (seg 3548 B, edge 62322 B, caption 12 B) 276/110/140 ms | a yellow car
+[104/112] case104/cam1: 39.3 KB (seg 3824 B, edge 36396 B, caption 33 B) 279/83/259 ms | a red car parked in a parking lot
+[104/112] case104/cam2: 65.9 KB (seg 5882 B, edge 61540 B, caption 42 B) 278/106/291 ms | a man in a yellow jacket crossing a street
+[104/112] case104/cam3: 86.9 KB (seg 5464 B, edge 83524 B, caption 40 B) 275/120/299 ms | a red car parked on the side of a street
+[104/112] case104/cam4: 63.6 KB (seg 5512 B, edge 59496 B, caption 70 B) 273/99/387 ms | the screenshote game, showing a street scene with cars and pedestrians
+[104/112] case104/cam5: 59.9 KB (seg 5286 B, edge 56002 B, caption 11 B) 274/106/127 ms | a black car
+[104/112] case104/cam6: 41.1 KB (seg 5638 B, edge 36470 B, caption 9 B) 276/87/136 ms | a red car
+[105/112] case105/cam1: 68.6 KB (seg 4132 B, edge 66070 B, caption 52 B) 275/114/311 ms | a street scene with a person walking on the sidewalk
+[105/112] case105/cam2: 44.6 KB (seg 4690 B, edge 40944 B, caption 34 B) 274/90/258 ms | a street with a car and a building
+[105/112] case105/cam3: 40.1 KB (seg 4112 B, edge 36864 B, caption 40 B) 278/81/298 ms | a red car parked on the side of the road
+[106/112] case106/cam1: 44.5 KB (seg 7262 B, edge 38298 B, caption 41 B) 277/84/291 ms | a street scene with a palm tree and a car
+[106/112] case106/cam2: 45.0 KB (seg 6626 B, edge 39438 B, caption 38 B) 275/89/303 ms | a red car parked on the side of a road
+[106/112] case106/cam3: 56.8 KB (seg 6898 B, edge 51258 B, caption 49 B) 275/96/342 ms | the game is a very good way to play with the kids
+[106/112] case106/cam4: 49.7 KB (seg 6596 B, edge 44250 B, caption 50 B) 283/96/327 ms | a man in a yellow jacket is standing on the street
+[107/112] case107/cam1: 84.0 KB (seg 5984 B, edge 79956 B, caption 51 B) 275/111/335 ms | a red truck driving down a street next to a red car
+[107/112] case107/cam2: 81.0 KB (seg 5482 B, edge 77414 B, caption 41 B) 274/118/301 ms | a man walking down a street next to a car
+[107/112] case107/cam3: 67.5 KB (seg 4586 B, edge 64476 B, caption 35 B) 275/115/306 ms | a street scene with a bus and a car
+[107/112] case107/cam4: 61.6 KB (seg 5502 B, edge 57526 B, caption 22 B) 273/102/195 ms | a tree on the sidewalk
+[107/112] case107/cam5: 67.5 KB (seg 5004 B, edge 64020 B, caption 52 B) 275/115/368 ms | a red car parked on a street next to a blue suitcase
+[108/112] case108/cam1: 41.5 KB (seg 4140 B, edge 38282 B, caption 40 B) 279/88/282 ms | a city street with a few cars and people
+[108/112] case108/cam2: 44.9 KB (seg 4540 B, edge 41432 B, caption 43 B) 290/95/328 ms | a city street with a car parked on the side
+[108/112] case108/cam3: 41.3 KB (seg 3748 B, edge 38462 B, caption 35 B) 278/85/320 ms | a street with a car and a bus on it
+[108/112] case108/cam4: 59.2 KB (seg 3944 B, edge 56594 B, caption 35 B) 273/98/289 ms | a street with a crosswalk and a bus
+[108/112] case108/cam5: 41.1 KB (seg 4892 B, edge 37124 B, caption 43 B) 280/98/411 ms | a car parked in a parking next to a red car
+[108/112] case108/cam6: 31.5 KB (seg 3670 B, edge 28554 B, caption 32 B) 393/78/282 ms | a car is parked in a parking lot
+[109/112] case109/cam1: 71.3 KB (seg 5232 B, edge 67736 B, caption 41 B) 282/125/270 ms | a group of people walking across a street
+[109/112] case109/cam2: 64.4 KB (seg 5064 B, edge 60874 B, caption 41 B) 279/114/287 ms | a group of people walking across a street
+[109/112] case109/cam3: 45.9 KB (seg 5134 B, edge 41838 B, caption 50 B) 281/94/332 ms | a person walking across a street with a fire truck
+[110/112] case110/cam1: 54.3 KB (seg 3382 B, edge 52164 B, caption 36 B) 283/106/263 ms | a police car is parked in the street
+[110/112] case110/cam2: 59.8 KB (seg 5618 B, edge 55534 B, caption 41 B) 279/105/304 ms | a fire truck parked on the side of a road
+[110/112] case110/cam3: 59.6 KB (seg 4118 B, edge 56874 B, caption 44 B) 280/98/340 ms | a street with a car parked on the side of it
+[110/112] case110/cam4: 65.0 KB (seg 4030 B, edge 62452 B, caption 34 B) 276/108/282 ms | a police car is parked in a street
+[111/112] case111/cam1: 57.2 KB (seg 4184 B, edge 54396 B, caption 43 B) 297/100/335 ms | a red car is parked on the side of a street
+[111/112] case111/cam2: 48.5 KB (seg 7114 B, edge 42516 B, caption 51 B) 281/92/340 ms | a man walking down a street next to a traffic light
+[111/112] case111/cam3: 57.8 KB (seg 4348 B, edge 54840 B, caption 24 B) 276/108/232 ms | a white line on the road
+[111/112] case111/cam4: 59.3 KB (seg 4480 B, edge 56244 B, caption 38 B) 280/110/287 ms | a street scene with cars and buildings
+[111/112] case111/cam5: 47.2 KB (seg 5808 B, edge 42522 B, caption 39 B) 277/96/286 ms | the blue car is driving down the street
+[112/112] case112/cam1: 40.8 KB (seg 4366 B, edge 37384 B, caption 39 B) 271/79/277 ms | a city street with people walking on it
+[112/112] case112/cam2: 46.5 KB (seg 6000 B, edge 41560 B, caption 51 B) 264/90/333 ms | a street scene with a man walking across the street
+[112/112] case112/cam3: 45.2 KB (seg 4770 B, edge 41508 B, caption 55 B) 261/84/357 ms | a red bus driving down a street next to a tall building
+[112/112] case112/cam4: 51.1 KB (seg 5184 B, edge 47072 B, caption 41 B) 262/90/308 ms | a car driving down a street next to a bus
+[112/112] case112/cam5: 42.3 KB (seg 4772 B, edge 38556 B, caption 24 B) 262/80/232 ms | a scene of a city street
+[112/112] case112/cam6: 72.4 KB (seg 4970 B, edge 69138 B, caption 44 B) 265/113/298 ms | a group of people walking across a crosswalk
+PAYLOADS_DONE 504 payloads
+C:\Users\mrbqble\Desktop\csci408-probe\.venv\Lib\site-packages\huggingface_hub\utils\_validators.py:206: UserWarning: The `local_dir_use_symlinks` argument is deprecated and ignored in `hf_hub_download`. Downloading to a local directory does not use symlinks anymore.
+  warnings.warn(
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+C:\Users\mrbqble\Desktop\csci408-probe\.venv\Lib\site-packages\diffusers\utils\deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.
+  deprecate("torch_dtype", "1.0.0", _TORCH_DTYPE_DEPRECATION_MESSAGE)
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]Loading pipeline components...:  17%|█▋        | 1/6 [00:00<00:00,  9.59it/s]
+Loading weights:   0%|          | 0/196 [00:00<?, ?it/s][A
+Loading weights:  39%|███▉      | 77/196 [00:00<00:00, 766.25it/s][ALoading weights: 100%|██████████| 196/196 [00:00<00:00, 1842.67it/s]
+Loading pipeline components...: 100%|██████████| 6/6 [00:00<00:00, 12.28it/s]Loading pipeline components...: 100%|██████████| 6/6 [00:00<00:00, 12.11it/s]
+You have disabled the safety checker for <class 'diffusers.pipelines.controlnet.pipeline_controlnet.StableDiffusionControlNetPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+Loading weights:   0%|          | 0/520 [00:00<?, ?it/s]Loading weights:   5%|▍         | 25/520 [00:00<00:02, 215.86it/s]Loading weights:  10%|▉         | 51/520 [00:00<00:01, 236.42it/s]Loading weights:  14%|█▍        | 75/520 [00:00<00:02, 210.98it/s]Loading weights:  19%|█▉        | 98/520 [00:00<00:02, 201.61it/s]Loading weights:  23%|██▎       | 119/520 [00:00<00:02, 196.87it/s]Loading weights:  27%|██▋       | 139/520 [00:00<00:01, 197.43it/s]Loading weights:  31%|███▏      | 163/520 [00:00<00:01, 199.14it/s]Loading weights:  35%|███▌      | 183/520 [00:00<00:01, 196.46it/s]Loading weights:  39%|███▉      | 203/520 [00:01<00:01, 192.75it/s]Loading weights:  43%|████▎     | 223/520 [00:01<00:01, 194.27it/s]Loading weights:  47%|████▋     | 243/520 [00:01<00:01, 193.48it/s]Loading weights:  51%|█████     | 266/520 [00:01<00:01, 202.05it/s]Loading weights:  56%|█████▋    | 293/520 [00:01<00:01, 196.34it/s]Loading weights:  62%|██████▎   | 325/520 [00:01<00:00, 206.32it/s]Loading weights:  67%|██████▋   | 346/520 [00:01<00:00, 198.90it/s]Loading weights:  71%|███████   | 369/520 [00:01<00:00, 204.49it/s]Loading weights:  75%|███████▌  | 390/520 [00:01<00:00, 199.59it/s]Loading weights:  79%|███████▉  | 411/520 [00:02<00:00, 200.80it/s]Loading weights:  84%|████████▍ | 436/520 [00:02<00:00, 198.71it/s]Loading weights:  88%|████████▊ | 460/520 [00:02<00:00, 209.47it/s]Loading weights:  93%|█████████▎| 482/520 [00:02<00:00, 202.08it/s]Loading weights:  97%|█████████▋| 503/520 [00:02<00:00, 193.20it/s]Loading weights: 100%|██████████| 520/520 [00:02<00:00, 204.37it/s]
+There are modules in UNet2DConditionModel that should be kept in float32: []. Casting directly with `to()` can lead to inconsistent results; set `torch_dtype` in `from_pretrained()` instead to keep these modules in float32.
+24 cases, variants ['k1'], size 1024x576, palette cs, ref policy first, SD runwayml/stable-diffusion-v1-5
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:00<00:13,  1.39it/s] 10%|█         | 2/20 [00:01<00:10,  1.73it/s] 15%|█▌        | 3/20 [00:01<00:09,  1.83it/s] 20%|██        | 4/20 [00:02<00:08,  1.92it/s] 25%|██▌       | 5/20 [00:02<00:07,  1.96it/s] 30%|███       | 6/20 [00:03<00:07,  2.00it/s] 35%|███▌      | 7/20 [00:03<00:06,  2.02it/s] 40%|████      | 8/20 [00:04<00:05,  2.03it/s] 45%|████▌     | 9/20 [00:04<00:05,  2.04it/s] 50%|█████     | 10/20 [00:05<00:04,  2.04it/s] 55%|█████▌    | 11/20 [00:05<00:04,  2.05it/s] 60%|██████    | 12/20 [00:06<00:03,  2.05it/s] 65%|██████▌   | 13/20 [00:06<00:03,  2.05it/s] 70%|███████   | 14/20 [00:07<00:02,  2.05it/s] 75%|███████▌  | 15/20 [00:07<00:02,  2.06it/s] 80%|████████  | 16/20 [00:08<00:01,  2.06it/s] 85%|████████▌ | 17/20 [00:08<00:01,  2.05it/s] 90%|█████████ | 18/20 [00:08<00:00,  2.06it/s] 95%|█████████▌| 19/20 [00:09<00:00,  2.06it/s]100%|██████████| 20/20 [00:09<00:00,  2.06it/s]100%|██████████| 20/20 [00:09<00:00,  2.01it/s]
+[1/24] case1 k1 cam1: 10.8 s, peak 5394 MB
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:00<00:09,  2.08it/s] 10%|█         | 2/20 [00:00<00:08,  2.06it/s] 15%|█▌        | 3/20 [00:01<00:08,  2.06it/s] 20%|██        | 4/20 [00:01<00:07,  2.05it/s] 25%|██▌       | 5/20 [00:02<00:07,  2.06it/s] 30%|███       | 6/20 [00:02<00:06,  2.06it/s] 35%|███▌      | 7/20 [00:03<00:06,  2.06it/s] 40%|████      | 8/20 [00:03<00:05,  2.06it/s] 45%|████▌     | 9/20 [00:04<00:05,  2.06it/s] 50%|█████     | 10/20 [00:04<00:04,  2.05it/s] 55%|█████▌    | 11/20 [00:05<00:04,  2.05it/s] 60%|██████    | 12/20 [00:05<00:03,  2.05it/s] 65%|██████▌   | 13/20 [00:06<00:03,  2.05it/s] 70%|███████   | 14/20 [00:06<00:02,  2.05it/s] 75%|███████▌  | 15/20 [00:07<00:02,  2.05it/s] 80%|████████  | 16/20 [00:07<00:01,  2.04it/s] 85%|████████▌ | 17/20 [00:08<00:01,  2.04it/s] 90%|█████████ | 18/20 [00:08<00:00,  2.05it/s] 95%|█████████▌| 19/20 [00:09<00:00,  2.05it/s]100%|██████████| 20/20 [00:09<00:00,  2.05it/s]100%|██████████| 20/20 [00:09<00:00,  2.05it/s]
+[2/24] case2 k1 cam1: 10.4 s, peak 5395 MB
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:00<00:09,  2.05it/s] 10%|█         | 2/20 [00:00<00:08,  2.06it/s] 15%|█▌        | 3/20 [00:01<00:08,  2.05it/s] 20%|██        | 4/20 [00:01<00:07,  2.05it/s] 25%|██▌       | 5/20 [00:02<00:07,  2.05it/s] 30%|███       | 6/20 [00:02<00:06,  2.04it/s] 35%|███▌      | 7/20 [00:03<00:06,  2.05it/s] 40%|████      | 8/20 [00:03<00:05,  2.05it/s] 45%|████▌     | 9/20 [00:04<00:05,  2.04it/s] 50%|█████     | 10/20 [00:04<00:04,  2.04it/s] 55%|█████▌    | 11/20 [00:05<00:04,  2.04it/s] 60%|██████    | 12/20 [00:05<00:03,  2.04it/s] 65%|██████▌   | 13/20 [00:06<00:03,  2.04it/s] 70%|███████   | 14/20 [00:06<00:02,  2.04it/s] 75%|███████▌  | 15/20 [00:07<00:02,  2.04it/s] 80%|████████  | 16/20 [00:07<00:01,  2.04it/s] 85%|████████▌ | 17/20 [00:08<00:01,  2.04it/s] 90%|█████████ | 18/20 [00:08<00:00,  2.04it/s] 95%|█████████▌| 19/20 [00:09<00:00,  2.04it/s]100%|██████████| 20/20 [00:09<00:00,  2.04it/s]100%|██████████| 20/20 [00:09<00:00,  2.04it/s]
+[3/24] case3 k1 cam1: 10.4 s, peak 5395 MB
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:00<00:09,  2.06it/s] 10%|█         | 2/20 [00:00<00:08,  2.05it/s] 15%|█▌        | 3/20 [00:01<00:08,  2.05it/s] 20%|██        | 4/20 [00:01<00:07,  2.05it/s] 25%|██▌       | 5/20 [00:02<00:07,  2.04it/s] 30%|███       | 6/20 [00:02<00:06,  2.05it/s] 35%|███▌      | 7/20 [00:03<00:06,  2.04it/s] 40%|████      | 8/20 [00:03<00:05,  2.04it/s] 45%|████▌     | 9/20 [00:04<00:05,  2.04it/s] 50%|█████     | 10/20 [00:04<00:04,  2.04it/s] 55%|█████▌    | 11/20 [00:05<00:04,  2.03it/s] 60%|██████    | 12/20 [00:05<00:03,  2.04it/s] 65%|██████▌   | 13/20 [00:06<00:03,  2.04it/s] 70%|███████   | 14/20 [00:06<00:02,  2.04it/s] 75%|███████▌  | 15/20 [00:07<00:02,  2.04it/s] 80%|████████  | 16/20 [00:07<00:01,  2.04it/s] 85%|████████▌ | 17/20 [00:08<00:01,  2.04it/s] 90%|█████████ | 18/20 [00:08<00:00,  2.03it/s] 95%|█████████▌| 19/20 [00:09<00:00,  2.03it/s]100%|██████████| 20/20 [00:09<00:00,  2.04it/s]100%|██████████| 20/20 [00:09<00:00,  2.04it/s]
+[4/24] case4 k1 cam1: 10.4 s, peak 5395 MB
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:00<00:09,  2.05it/s] 10%|█         | 2/20 [00:00<00:08,  2.05it/s] 15%|█▌        | 3/20 [00:01<00:08,  2.03it/s] 20%|██        | 4/20 [00:01<00:07,  2.04it/s] 25%|██▌       | 5/20 [00:02<00:07,  2.04it/s] 30%|███       | 6/20 [00:02<00:06,  2.04it/s] 35%|███▌      | 7/20 [00:03<00:06,  2.04it/s] 40%|████      | 8/20 [00:03<00:05,  2.04it/s] 45%|████▌     | 9/20 [00:04<00:05,  2.04it/s] 50%|█████     | 10/20 [00:04<00:04,  2.04it/s] 55%|█████▌    | 11/20 [00:05<00:04,  2.04it/s] 60%|██████    | 12/20 [00:05<00:03,  2.04it/s] 65%|██████▌   | 13/20 [00:06<00:03,  2.03it/s] 70%|███████   | 14/20 [00:06<00:02,  2.03it/s] 75%|███████▌  | 15/20 [00:07<00:02,  2.03it/s] 80%|████████  | 16/20 [00:07<00:01,  2.03it/s] 85%|████████▌ | 17/20 [00:08<00:01,  2.03it/s] 90%|█████████ | 18/20 [00:08<00:00,  2.03it/s] 95%|█████████▌| 19/20 [00:09<00:00,  2.03it/s]100%|██████████| 20/20 [00:09<00:00,  2.03it/s]100%|██████████| 20/20 [00:09<00:00,  2.03it/s]
+[5/24] case5 k1 cam1: 10.5 s, peak 5395 MB
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:00<00:09,  2.05it/s] 10%|█         | 2/20 [00:00<00:08,  2.04it/s] 15%|█▌        | 3/20 [00:01<00:08,  2.03it/s] 20%|██        | 4/20 [00:01<00:07,  2.04it/s] 25%|██▌       | 5/20 [00:02<00:07,  2.03it/s] 30%|███       | 6/20 [00:02<00:06,  2.03it/s] 35%|███▌      | 7/20 [00:03<00:06,  2.02it/s] 40%|████      | 8/20 [00:03<00:05,  2.03it/s] 45%|████▌     | 9/20 [00:04<00:05,  2.03it/s] 50%|█████     | 10/20 [00:04<00:04,  2.03it/s] 55%|█████▌    | 11/20 [00:05<00:04,  2.03it/s] 60%|██████    | 12/20 [00:05<00:03,  2.03it/s] 65%|██████▌   | 13/20 [00:06<00:03,  2.03it/s] 70%|███████   | 14/20 [00:06<00:02,  2.03it/s] 75%|███████▌  | 15/20 [00:07<00:02,  2.02it/s] 80%|████████  | 16/20 [00:07<00:01,  2.03it/s] 85%|████████▌ | 17/20 [00:08<00:01,  2.03it/s] 90%|█████████ | 18/20 [00:08<00:00,  2.03it/s] 95%|█████████▌| 19/20 [00:09<00:00,  2.03it/s]100%|██████████| 20/20 [00:09<00:00,  2.03it/s]100%|██████████| 20/20 [00:09<00:00,  2.03it/s]
+[6/24] case6 k1 cam1: 10.5 s, peak 5395 MB
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:00<00:09,  2.05it/s] 10%|█         | 2/20 [00:00<00:08,  2.04it/s] 15%|█▌        | 3/20 [00:01<00:08,  2.03it/s] 20%|██        | 4/20 [00:01<00:07,  2.03it/s] 25%|██▌       | 5/20 [00:02<00:07,  2.03it/s] 30%|███       | 6/20 [00:02<00:06,  2.02it/s] 35%|███▌      | 7/20 [00:03<00:06,  2.02it/s] 40%|████      | 8/20 [00:03<00:05,  2.02it/s] 45%|████▌     | 9/20 [00:04<00:05,  2.02it/s] 50%|█████     | 10/20 [00:04<00:04,  2.03it/s] 55%|█████▌    | 11/20 [00:05<00:04,  2.03it/s] 60%|██████    | 12/20 [00:05<00:03,  2.03it/s] 65%|██████▌   | 13/20 [00:06<00:03,  2.02it/s] 70%|███████   | 14/20 [00:06<00:02,  2.02it/s] 75%|███████▌  | 15/20 [00:07<00:02,  2.02it/s] 80%|████████  | 16/20 [00:07<00:01,  2.02it/s] 85%|████████▌ | 17/20 [00:08<00:01,  2.02it/s] 90%|█████████ | 18/20 [00:08<00:00,  2.02it/s] 95%|█████████▌| 19/20 [00:09<00:00,  2.02it/s]100%|██████████| 20/20 [00:09<00:00,  2.01it/s]100%|██████████| 20/20 [00:09<00:00,  2.02it/s]
+[7/24] case7 k1 cam1: 10.5 s, peak 5395 MB
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:00<00:09,  2.04it/s] 10%|█         | 2/20 [00:00<00:08,  2.03it/s] 15%|█▌        | 3/20 [00:01<00:08,  2.03it/s] 20%|██        | 4/20 [00:01<00:07,  2.02it/s] 25%|██▌       | 5/20 [00:02<00:07,  2.02it/s] 30%|███       | 6/20 [00:02<00:06,  2.02it/s] 35%|███▌      | 7/20 [00:03<00:06,  2.02it/s] 40%|████      | 8/20 [00:03<00:05,  2.03it/s] 45%|████▌     | 9/20 [00:04<00:05,  2.02it/s] 50%|█████     | 10/20 [00:04<00:04,  2.02it/s] 55%|█████▌    | 11/20 [00:05<00:04,  2.02it/s] 60%|██████    | 12/20 [00:05<00:03,  2.02it/s] 65%|██████▌   | 13/20 [00:06<00:03,  2.03it/s] 70%|███████   | 14/20 [00:06<00:02,  2.03it/s] 75%|███████▌  | 15/20 [00:07<00:02,  2.02it/s] 80%|████████  | 16/20 [00:07<00:01,  2.02it/s] 85%|████████▌ | 17/20 [00:08<00:01,  2.02it/s] 90%|█████████ | 18/20 [00:08<00:00,  2.02it/s] 95%|█████████▌| 19/20 [00:09<00:00,  2.02it/s]100%|██████████| 20/20 [00:09<00:00,  2.02it/s]100%|██████████| 20/20 [00:09<00:00,  2.02it/s]
+[8/24] case8 k1 cam1: 10.5 s, peak 5395 MB
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:00<00:09,  2.05it/s] 10%|█         | 2/20 [00:00<00:08,  2.03it/s] 15%|█▌        | 3/20 [00:01<00:08,  2.02it/s] 20%|██        | 4/20 [00:01<00:07,  2.02it/s] 25%|██▌       | 5/20 [00:02<00:07,  2.03it/s] 30%|███       | 6/20 [00:02<00:06,  2.03it/s] 35%|███▌      | 7/20 [00:03<00:06,  2.03it/s] 40%|████      | 8/20 [00:03<00:05,  2.03it/s] 45%|████▌     | 9/20 [00:04<00:05,  2.03it/s] 50%|█████     | 10/20 [00:04<00:04,  2.02it/s] 55%|█████▌    | 11/20 [00:05<00:04,  2.02it/s] 60%|██████    | 12/20 [00:05<00:03,  2.02it/s] 65%|██████▌   | 13/20 [00:06<00:03,  2.02it/s] 70%|███████   | 14/20 [00:06<00:02,  2.02it/s] 75%|███████▌  | 15/20 [00:07<00:02,  2.03it/s] 80%|████████  | 16/20 [00:07<00:01,  2.02it/s] 85%|████████▌ | 17/20 [00:08<00:01,  2.02it/s] 90%|█████████ | 18/20 [00:08<00:00,  2.02it/s] 95%|█████████▌| 19/20 [00:09<00:00,  2.02it/s]100%|██████████| 20/20 [00:09<00:00,  2.03it/s]100%|██████████| 20/20 [00:09<00:00,  2.02it/s]
+[9/24] case9 k1 cam1: 10.5 s, peak 5395 MB
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:00<00:09,  2.04it/s] 10%|█         | 2/20 [00:00<00:08,  2.03it/s] 15%|█▌        | 3/20 [00:01<00:08,  2.02it/s] 20%|██        | 4/20 [00:01<00:07,  2.02it/s] 25%|██▌       | 5/20 [00:02<00:07,  2.03it/s] 30%|███       | 6/20 [00:02<00:06,  2.02it/s] 35%|███▌      | 7/20 [00:03<00:06,  2.02it/s] 40%|████      | 8/20 [00:03<00:05,  2.02it/s] 45%|████▌     | 9/20 [00:04<00:05,  2.02it/s] 50%|█████     | 10/20 [00:04<00:04,  2.03it/s] 55%|█████▌    | 11/20 [00:05<00:04,  2.02it/s] 60%|██████    | 12/20 [00:05<00:03,  2.02it/s] 65%|██████▌   | 13/20 [00:06<00:03,  2.02it/s] 70%|███████   | 14/20 [00:06<00:02,  2.02it/s] 75%|███████▌  | 15/20 [00:07<00:02,  2.02it/s] 80%|████████  | 16/20 [00:07<00:01,  2.03it/s] 85%|████████▌ | 17/20 [00:08<00:01,  2.03it/s] 90%|█████████ | 18/20 [00:08<00:00,  2.03it/s] 95%|█████████▌| 19/20 [00:09<00:00,  2.02it/s]100%|██████████| 20/20 [00:09<00:00,  2.02it/s]100%|██████████| 20/20 [00:09<00:00,  2.02it/s]
+[10/24] case10 k1 cam1: 10.5 s, peak 5395 MB
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:00<00:09,  2.04it/s] 10%|█         | 2/20 [00:00<00:08,  2.03it/s] 15%|█▌        | 3/20 [00:01<00:08,  2.03it/s] 20%|██        | 4/20 [00:01<00:07,  2.03it/s] 25%|██▌       | 5/20 [00:02<00:07,  2.02it/s] 30%|███       | 6/20 [00:02<00:06,  2.02it/s] 35%|███▌      | 7/20 [00:03<00:06,  2.02it/s] 40%|████      | 8/20 [00:03<00:05,  2.02it/s] 45%|████▌     | 9/20 [00:04<00:05,  2.02it/s] 50%|█████     | 10/20 [00:04<00:04,  2.02it/s] 55%|█████▌    | 11/20 [00:05<00:04,  2.02it/s] 60%|██████    | 12/20 [00:05<00:03,  2.02it/s] 65%|██████▌   | 13/20 [00:06<00:03,  2.02it/s] 70%|███████   | 14/20 [00:06<00:02,  2.03it/s] 75%|███████▌  | 15/20 [00:07<00:02,  2.03it/s] 80%|████████  | 16/20 [00:07<00:01,  2.03it/s] 85%|████████▌ | 17/20 [00:08<00:01,  2.03it/s] 90%|█████████ | 18/20 [00:08<00:00,  2.03it/s] 95%|█████████▌| 19/20 [00:09<00:00,  2.02it/s]100%|██████████| 20/20 [00:09<00:00,  2.03it/s]100%|██████████| 20/20 [00:09<00:00,  2.03it/s]
+[11/24] case11 k1 cam1: 10.5 s, peak 5395 MB
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:00<00:09,  2.05it/s] 10%|█         | 2/20 [00:00<00:08,  2.03it/s] 15%|█▌        | 3/20 [00:01<00:08,  2.03it/s] 20%|██        | 4/20 [00:01<00:07,  2.03it/s] 25%|██▌       | 5/20 [00:02<00:07,  2.03it/s] 30%|███       | 6/20 [00:02<00:06,  2.03it/s] 35%|███▌      | 7/20 [00:03<00:06,  2.03it/s] 40%|████      | 8/20 [00:03<00:05,  2.02it/s] 45%|████▌     | 9/20 [00:04<00:05,  2.03it/s] 50%|█████     | 10/20 [00:04<00:04,  2.02it/s] 55%|█████▌    | 11/20 [00:05<00:04,  2.02it/s] 60%|██████    | 12/20 [00:05<00:03,  2.02it/s] 65%|██████▌   | 13/20 [00:06<00:03,  2.02it/s] 70%|███████   | 14/20 [00:06<00:02,  2.02it/s] 75%|███████▌  | 15/20 [00:07<00:02,  2.02it/s] 80%|████████  | 16/20 [00:07<00:01,  2.03it/s] 85%|████████▌ | 17/20 [00:08<00:01,  2.02it/s] 90%|█████████ | 18/20 [00:08<00:00,  2.03it/s] 95%|█████████▌| 19/20 [00:09<00:00,  2.02it/s]100%|██████████| 20/20 [00:09<00:00,  2.03it/s]100%|██████████| 20/20 [00:09<00:00,  2.03it/s]
+[12/24] case12 k1 cam1: 10.5 s, peak 5395 MB
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:00<00:09,  2.06it/s] 10%|█         | 2/20 [00:00<00:08,  2.04it/s] 15%|█▌        | 3/20 [00:01<00:08,  2.03it/s] 20%|██        | 4/20 [00:01<00:07,  2.02it/s] 25%|██▌       | 5/20 [00:02<00:07,  2.03it/s] 30%|███       | 6/20 [00:02<00:06,  2.02it/s] 35%|███▌      | 7/20 [00:03<00:06,  2.02it/s] 40%|████      | 8/20 [00:03<00:05,  2.02it/s] 45%|████▌     | 9/20 [00:04<00:05,  2.03it/s] 50%|█████     | 10/20 [00:04<00:04,  2.02it/s] 55%|█████▌    | 11/20 [00:05<00:04,  2.02it/s] 60%|██████    | 12/20 [00:05<00:03,  2.02it/s] 65%|██████▌   | 13/20 [00:06<00:03,  2.02it/s] 70%|███████   | 14/20 [00:06<00:02,  2.03it/s] 75%|███████▌  | 15/20 [00:07<00:02,  2.03it/s] 80%|████████  | 16/20 [00:07<00:01,  2.03it/s] 85%|████████▌ | 17/20 [00:08<00:01,  2.03it/s] 90%|█████████ | 18/20 [00:08<00:00,  2.02it/s] 95%|█████████▌| 19/20 [00:09<00:00,  2.03it/s]100%|██████████| 20/20 [00:09<00:00,  2.03it/s]100%|██████████| 20/20 [00:09<00:00,  2.03it/s]
+[13/24] case13 k1 cam1: 10.5 s, peak 5395 MB
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:00<00:09,  2.03it/s] 10%|█         | 2/20 [00:00<00:08,  2.03it/s] 15%|█▌        | 3/20 [00:01<00:08,  2.03it/s] 20%|██        | 4/20 [00:01<00:07,  2.03it/s] 25%|██▌       | 5/20 [00:02<00:07,  2.03it/s] 30%|███       | 6/20 [00:02<00:06,  2.03it/s] 35%|███▌      | 7/20 [00:03<00:06,  2.03it/s] 40%|████      | 8/20 [00:03<00:05,  2.03it/s] 45%|████▌     | 9/20 [00:04<00:05,  2.03it/s] 50%|█████     | 10/20 [00:04<00:04,  2.03it/s] 55%|█████▌    | 11/20 [00:05<00:04,  2.03it/s] 60%|██████    | 12/20 [00:05<00:03,  2.03it/s] 65%|██████▌   | 13/20 [00:06<00:03,  2.02it/s] 70%|███████   | 14/20 [00:06<00:02,  2.01it/s] 75%|███████▌  | 15/20 [00:07<00:02,  2.02it/s] 80%|████████  | 16/20 [00:07<00:01,  2.02it/s] 85%|████████▌ | 17/20 [00:08<00:01,  2.02it/s] 90%|█████████ | 18/20 [00:08<00:00,  2.02it/s] 95%|█████████▌| 19/20 [00:09<00:00,  2.02it/s]100%|██████████| 20/20 [00:09<00:00,  2.03it/s]100%|██████████| 20/20 [00:09<00:00,  2.02it/s]
+[14/24] case14 k1 cam1: 10.5 s, peak 5395 MB
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:00<00:09,  2.04it/s] 10%|█         | 2/20 [00:00<00:08,  2.04it/s] 15%|█▌        | 3/20 [00:01<00:08,  2.03it/s] 20%|██        | 4/20 [00:01<00:07,  2.03it/s] 25%|██▌       | 5/20 [00:02<00:07,  2.03it/s] 30%|███       | 6/20 [00:02<00:06,  2.03it/s] 35%|███▌      | 7/20 [00:03<00:06,  2.03it/s] 40%|████      | 8/20 [00:03<00:05,  2.02it/s] 45%|████▌     | 9/20 [00:04<00:05,  2.02it/s] 50%|█████     | 10/20 [00:04<00:04,  2.03it/s] 55%|█████▌    | 11/20 [00:05<00:04,  2.02it/s] 60%|██████    | 12/20 [00:05<00:03,  2.02it/s] 65%|██████▌   | 13/20 [00:06<00:03,  2.02it/s] 70%|███████   | 14/20 [00:06<00:02,  2.02it/s] 75%|███████▌  | 15/20 [00:07<00:02,  2.03it/s] 80%|████████  | 16/20 [00:07<00:01,  2.02it/s] 85%|████████▌ | 17/20 [00:08<00:01,  2.02it/s] 90%|█████████ | 18/20 [00:08<00:00,  2.03it/s] 95%|█████████▌| 19/20 [00:09<00:00,  2.03it/s]100%|██████████| 20/20 [00:09<00:00,  2.03it/s]100%|██████████| 20/20 [00:09<00:00,  2.03it/s]
+[15/24] case15 k1 cam1: 10.5 s, peak 5395 MB
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:00<00:09,  1.98it/s] 10%|█         | 2/20 [00:01<00:09,  1.98it/s] 15%|█▌        | 3/20 [00:01<00:08,  1.97it/s] 20%|██        | 4/20 [00:02<00:08,  1.98it/s] 25%|██▌       | 5/20 [00:02<00:07,  1.97it/s] 30%|███       | 6/20 [00:03<00:07,  1.98it/s] 35%|███▌      | 7/20 [00:03<00:06,  1.98it/s] 40%|████      | 8/20 [00:04<00:06,  1.98it/s] 45%|████▌     | 9/20 [00:04<00:05,  1.98it/s] 50%|█████     | 10/20 [00:05<00:05,  1.95it/s] 55%|█████▌    | 11/20 [00:05<00:04,  1.96it/s] 60%|██████    | 12/20 [00:06<00:04,  1.97it/s] 65%|██████▌   | 13/20 [00:06<00:03,  1.98it/s] 70%|███████   | 14/20 [00:07<00:03,  1.98it/s] 75%|███████▌  | 15/20 [00:07<00:02,  1.99it/s] 80%|████████  | 16/20 [00:08<00:02,  1.99it/s] 85%|████████▌ | 17/20 [00:08<00:01,  1.99it/s] 90%|█████████ | 18/20 [00:09<00:01,  1.99it/s] 95%|█████████▌| 19/20 [00:09<00:00,  1.98it/s]100%|██████████| 20/20 [00:10<00:00,  1.99it/s]100%|██████████| 20/20 [00:10<00:00,  1.98it/s]
+[16/24] case16 k1 cam1: 10.8 s, peak 5395 MB
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:00<00:09,  2.04it/s] 10%|█         | 2/20 [00:00<00:08,  2.01it/s] 15%|█▌        | 3/20 [00:01<00:08,  2.02it/s] 20%|██        | 4/20 [00:01<00:07,  2.00it/s] 25%|██▌       | 5/20 [00:02<00:07,  2.01it/s] 30%|███       | 6/20 [00:02<00:06,  2.01it/s] 35%|███▌      | 7/20 [00:03<00:06,  2.01it/s] 40%|████      | 8/20 [00:03<00:05,  2.01it/s] 45%|████▌     | 9/20 [00:04<00:05,  2.02it/s] 50%|█████     | 10/20 [00:04<00:04,  2.00it/s] 55%|█████▌    | 11/20 [00:05<00:04,  2.01it/s] 60%|██████    | 12/20 [00:05<00:04,  2.00it/s] 65%|██████▌   | 13/20 [00:06<00:03,  2.01it/s] 70%|███████   | 14/20 [00:06<00:02,  2.01it/s] 75%|███████▌  | 15/20 [00:07<00:02,  2.00it/s] 80%|████████  | 16/20 [00:07<00:02,  2.00it/s] 85%|████████▌ | 17/20 [00:08<00:01,  2.01it/s] 90%|█████████ | 18/20 [00:08<00:00,  2.00it/s] 95%|█████████▌| 19/20 [00:09<00:00,  2.01it/s]100%|██████████| 20/20 [00:09<00:00,  2.01it/s]100%|██████████| 20/20 [00:09<00:00,  2.01it/s]
+[17/24] case17 k1 cam1: 10.6 s, peak 5395 MB
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:00<00:09,  1.96it/s] 10%|█         | 2/20 [00:01<00:09,  1.94it/s] 15%|█▌        | 3/20 [00:01<00:08,  1.93it/s] 20%|██        | 4/20 [00:02<00:08,  1.91it/s] 25%|██▌       | 5/20 [00:02<00:07,  1.92it/s] 30%|███       | 6/20 [00:03<00:07,  1.91it/s] 35%|███▌      | 7/20 [00:03<00:06,  1.92it/s] 40%|████      | 8/20 [00:04<00:06,  1.94it/s] 45%|████▌     | 9/20 [00:04<00:05,  1.93it/s] 50%|█████     | 10/20 [00:05<00:05,  1.92it/s] 55%|█████▌    | 11/20 [00:05<00:04,  1.92it/s] 60%|██████    | 12/20 [00:06<00:04,  1.95it/s] 65%|██████▌   | 13/20 [00:06<00:03,  1.96it/s] 70%|███████   | 14/20 [00:07<00:03,  1.97it/s] 75%|███████▌  | 15/20 [00:07<00:02,  1.99it/s] 80%|████████  | 16/20 [00:08<00:02,  2.00it/s] 85%|████████▌ | 17/20 [00:08<00:01,  2.00it/s] 90%|█████████ | 18/20 [00:09<00:00,  2.01it/s] 95%|█████████▌| 19/20 [00:09<00:00,  1.99it/s]100%|██████████| 20/20 [00:10<00:00,  1.93it/s]100%|██████████| 20/20 [00:10<00:00,  1.95it/s]
+[18/24] case18 k1 cam1: 10.9 s, peak 5395 MB
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:00<00:09,  2.05it/s] 10%|█         | 2/20 [00:00<00:08,  2.04it/s] 15%|█▌        | 3/20 [00:01<00:08,  2.03it/s] 20%|██        | 4/20 [00:01<00:07,  2.03it/s] 25%|██▌       | 5/20 [00:02<00:07,  2.03it/s] 30%|███       | 6/20 [00:02<00:06,  2.04it/s] 35%|███▌      | 7/20 [00:03<00:06,  2.04it/s] 40%|████      | 8/20 [00:03<00:05,  2.04it/s] 45%|████▌     | 9/20 [00:04<00:05,  2.04it/s] 50%|█████     | 10/20 [00:04<00:04,  2.04it/s] 55%|█████▌    | 11/20 [00:05<00:04,  2.03it/s] 60%|██████    | 12/20 [00:05<00:03,  2.03it/s] 65%|██████▌   | 13/20 [00:06<00:03,  2.03it/s] 70%|███████   | 14/20 [00:06<00:02,  2.03it/s] 75%|███████▌  | 15/20 [00:07<00:02,  2.03it/s] 80%|████████  | 16/20 [00:07<00:01,  2.03it/s] 85%|████████▌ | 17/20 [00:08<00:01,  2.03it/s] 90%|█████████ | 18/20 [00:08<00:00,  2.03it/s] 95%|█████████▌| 19/20 [00:09<00:00,  2.04it/s]100%|██████████| 20/20 [00:09<00:00,  2.04it/s]100%|██████████| 20/20 [00:09<00:00,  2.03it/s]
+[19/24] case19 k1 cam1: 10.5 s, peak 5395 MB
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:00<00:09,  2.04it/s] 10%|█         | 2/20 [00:00<00:08,  2.04it/s] 15%|█▌        | 3/20 [00:01<00:08,  2.03it/s] 20%|██        | 4/20 [00:01<00:07,  2.04it/s] 25%|██▌       | 5/20 [00:02<00:07,  2.02it/s] 30%|███       | 6/20 [00:02<00:06,  2.02it/s] 35%|███▌      | 7/20 [00:03<00:06,  2.02it/s] 40%|████      | 8/20 [00:03<00:05,  2.03it/s] 45%|████▌     | 9/20 [00:04<00:05,  2.03it/s] 50%|█████     | 10/20 [00:04<00:04,  2.02it/s] 55%|█████▌    | 11/20 [00:05<00:04,  2.02it/s] 60%|██████    | 12/20 [00:05<00:03,  2.02it/s] 65%|██████▌   | 13/20 [00:06<00:03,  2.02it/s] 70%|███████   | 14/20 [00:06<00:02,  2.03it/s] 75%|███████▌  | 15/20 [00:07<00:02,  2.03it/s] 80%|████████  | 16/20 [00:07<00:01,  2.03it/s] 85%|████████▌ | 17/20 [00:08<00:01,  2.03it/s] 90%|█████████ | 18/20 [00:08<00:00,  2.03it/s] 95%|█████████▌| 19/20 [00:09<00:00,  2.03it/s]100%|██████████| 20/20 [00:09<00:00,  2.04it/s]100%|██████████| 20/20 [00:09<00:00,  2.03it/s]
+[20/24] case20 k1 cam1: 10.5 s, peak 5395 MB
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:00<00:09,  2.03it/s] 10%|█         | 2/20 [00:00<00:08,  2.03it/s] 15%|█▌        | 3/20 [00:01<00:08,  2.03it/s] 20%|██        | 4/20 [00:01<00:07,  2.03it/s] 25%|██▌       | 5/20 [00:02<00:07,  2.03it/s] 30%|███       | 6/20 [00:02<00:06,  2.03it/s] 35%|███▌      | 7/20 [00:03<00:06,  2.03it/s] 40%|████      | 8/20 [00:03<00:05,  2.03it/s] 45%|████▌     | 9/20 [00:04<00:05,  2.04it/s] 50%|█████     | 10/20 [00:04<00:04,  2.04it/s] 55%|█████▌    | 11/20 [00:05<00:04,  2.03it/s] 60%|██████    | 12/20 [00:05<00:03,  2.04it/s] 65%|██████▌   | 13/20 [00:06<00:03,  2.04it/s] 70%|███████   | 14/20 [00:06<00:02,  2.04it/s] 75%|███████▌  | 15/20 [00:07<00:02,  2.04it/s] 80%|████████  | 16/20 [00:07<00:01,  2.03it/s] 85%|████████▌ | 17/20 [00:08<00:01,  2.03it/s] 90%|█████████ | 18/20 [00:08<00:00,  2.03it/s] 95%|█████████▌| 19/20 [00:09<00:00,  2.03it/s]100%|██████████| 20/20 [00:09<00:00,  2.03it/s]100%|██████████| 20/20 [00:09<00:00,  2.03it/s]
+[21/24] case21 k1 cam1: 10.5 s, peak 5395 MB
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:00<00:09,  2.06it/s] 10%|█         | 2/20 [00:00<00:08,  2.05it/s] 15%|█▌        | 3/20 [00:01<00:08,  2.04it/s] 20%|██        | 4/20 [00:01<00:07,  2.04it/s] 25%|██▌       | 5/20 [00:02<00:07,  2.03it/s] 30%|███       | 6/20 [00:02<00:06,  2.04it/s] 35%|███▌      | 7/20 [00:03<00:06,  2.04it/s] 40%|████      | 8/20 [00:03<00:05,  2.04it/s] 45%|████▌     | 9/20 [00:04<00:05,  2.04it/s] 50%|█████     | 10/20 [00:04<00:04,  2.04it/s] 55%|█████▌    | 11/20 [00:05<00:04,  2.03it/s] 60%|██████    | 12/20 [00:05<00:03,  2.04it/s] 65%|██████▌   | 13/20 [00:06<00:03,  2.04it/s] 70%|███████   | 14/20 [00:06<00:02,  2.04it/s] 75%|███████▌  | 15/20 [00:07<00:02,  2.04it/s] 80%|████████  | 16/20 [00:07<00:01,  2.03it/s] 85%|████████▌ | 17/20 [00:08<00:01,  2.03it/s] 90%|█████████ | 18/20 [00:08<00:00,  2.03it/s] 95%|█████████▌| 19/20 [00:09<00:00,  2.03it/s]100%|██████████| 20/20 [00:09<00:00,  2.03it/s]100%|██████████| 20/20 [00:09<00:00,  2.04it/s]
+[22/24] case22 k1 cam1: 10.4 s, peak 5395 MB
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:00<00:09,  2.05it/s] 10%|█         | 2/20 [00:00<00:08,  2.01it/s] 15%|█▌        | 3/20 [00:01<00:08,  1.94it/s] 20%|██        | 4/20 [00:02<00:08,  1.95it/s] 25%|██▌       | 5/20 [00:02<00:07,  1.98it/s] 30%|███       | 6/20 [00:03<00:07,  2.00it/s] 35%|███▌      | 7/20 [00:03<00:06,  2.01it/s] 40%|████      | 8/20 [00:04<00:05,  2.01it/s] 45%|████▌     | 9/20 [00:04<00:05,  2.02it/s] 50%|█████     | 10/20 [00:04<00:04,  2.02it/s] 55%|█████▌    | 11/20 [00:05<00:04,  2.03it/s] 60%|██████    | 12/20 [00:05<00:03,  2.03it/s] 65%|██████▌   | 13/20 [00:06<00:03,  2.02it/s] 70%|███████   | 14/20 [00:06<00:02,  2.02it/s] 75%|███████▌  | 15/20 [00:07<00:02,  2.03it/s] 80%|████████  | 16/20 [00:07<00:01,  2.03it/s] 85%|████████▌ | 17/20 [00:08<00:01,  2.02it/s] 90%|█████████ | 18/20 [00:08<00:00,  2.03it/s] 95%|█████████▌| 19/20 [00:09<00:00,  2.03it/s]100%|██████████| 20/20 [00:09<00:00,  2.03it/s]100%|██████████| 20/20 [00:09<00:00,  2.02it/s]
+[23/24] case23 k1 cam1: 10.5 s, peak 5395 MB
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:00<00:09,  2.06it/s] 10%|█         | 2/20 [00:00<00:08,  2.05it/s] 15%|█▌        | 3/20 [00:01<00:08,  2.04it/s] 20%|██        | 4/20 [00:01<00:07,  2.04it/s] 25%|██▌       | 5/20 [00:02<00:07,  2.04it/s] 30%|███       | 6/20 [00:02<00:06,  2.04it/s] 35%|███▌      | 7/20 [00:03<00:06,  2.03it/s] 40%|████      | 8/20 [00:03<00:05,  2.04it/s] 45%|████▌     | 9/20 [00:04<00:05,  2.04it/s] 50%|█████     | 10/20 [00:04<00:04,  2.04it/s] 55%|█████▌    | 11/20 [00:05<00:04,  2.04it/s] 60%|██████    | 12/20 [00:05<00:03,  2.04it/s] 65%|██████▌   | 13/20 [00:06<00:03,  2.04it/s] 70%|███████   | 14/20 [00:06<00:02,  2.04it/s] 75%|███████▌  | 15/20 [00:07<00:02,  2.04it/s] 80%|████████  | 16/20 [00:07<00:01,  2.04it/s] 85%|████████▌ | 17/20 [00:08<00:01,  2.04it/s] 90%|█████████ | 18/20 [00:08<00:00,  2.03it/s] 95%|█████████▌| 19/20 [00:09<00:00,  2.04it/s]100%|██████████| 20/20 [00:09<00:00,  2.04it/s]100%|██████████| 20/20 [00:09<00:00,  2.04it/s]
+[24/24] case24 k1 cam1: 10.4 s, peak 5395 MB
+COORDINATOR_DONE
+C:\Users\mrbqble\Desktop\csci408-probe\.venv\Lib\site-packages\huggingface_hub\utils\_validators.py:206: UserWarning: The `local_dir_use_symlinks` argument is deprecated and ignored in `hf_hub_download`. Downloading to a local directory does not use symlinks anymore.
+  warnings.warn(
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+C:\Users\mrbqble\Desktop\csci408-probe\.venv\Lib\site-packages\diffusers\utils\deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.
+  deprecate("torch_dtype", "1.0.0", _TORCH_DTYPE_DEPRECATION_MESSAGE)
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]Loading pipeline components...:  67%|██████▋   | 4/6 [00:00<00:00, 28.13it/s]
+Loading weights:   0%|          | 0/196 [00:00<?, ?it/s][ALoading weights: 100%|██████████| 196/196 [00:00<00:00, 2112.91it/s]
+Loading pipeline components...: 100%|██████████| 6/6 [00:00<00:00, 12.96it/s]
+You have disabled the safety checker for <class 'diffusers.pipelines.controlnet.pipeline_controlnet.StableDiffusionControlNetPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+Loading weights:   0%|          | 0/520 [00:00<?, ?it/s]Loading weights:   7%|▋         | 37/520 [00:00<00:01, 305.27it/s]Loading weights:  14%|█▎        | 71/520 [00:00<00:01, 304.13it/s]Loading weights:  20%|█▉        | 102/520 [00:00<00:01, 271.65it/s]Loading weights:  26%|██▌       | 133/520 [00:00<00:01, 278.97it/s]Loading weights:  31%|███       | 162/520 [00:00<00:01, 251.75it/s]Loading weights:  36%|███▌      | 188/520 [00:00<00:01, 247.30it/s]Loading weights:  41%|████      | 214/520 [00:00<00:01, 241.49it/s]Loading weights:  47%|████▋     | 243/520 [00:00<00:01, 234.12it/s]Loading weights:  51%|█████▏    | 267/520 [00:01<00:01, 233.26it/s]Loading weights:  57%|█████▋    | 294/520 [00:01<00:00, 240.29it/s]Loading weights:  62%|██████▏   | 323/520 [00:01<00:00, 243.85it/s]Loading weights:  68%|██████▊   | 354/520 [00:01<00:00, 258.00it/s]Loading weights:  73%|███████▎  | 381/520 [00:01<00:00, 260.29it/s]Loading weights:  78%|███████▊  | 408/520 [00:01<00:00, 250.63it/s]Loading weights:  84%|████████▍ | 438/520 [00:01<00:00, 246.15it/s]Loading weights:  89%|████████▉ | 465/520 [00:01<00:00, 223.39it/s]Loading weights:  94%|█████████▍| 489/520 [00:01<00:00, 223.23it/s]Loading weights: 100%|██████████| 520/520 [00:02<00:00, 248.40it/s]
+There are modules in UNet2DConditionModel that should be kept in float32: []. Casting directly with `to()` can lead to inconsistent results; set `torch_dtype` in `from_pretrained()` instead to keep these modules in float32.
+24 cases, variants ['k1'], size 1024x576, palette ade, ref policy first, SD runwayml/stable-diffusion-v1-5
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:00<00:13,  1.38it/s] 10%|█         | 2/20 [00:01<00:10,  1.71it/s] 15%|█▌        | 3/20 [00:01<00:09,  1.83it/s] 20%|██        | 4/20 [00:02<00:08,  1.92it/s] 25%|██▌       | 5/20 [00:02<00:07,  1.97it/s] 30%|███       | 6/20 [00:03<00:07,  2.00it/s] 35%|███▌      | 7/20 [00:03<00:06,  2.02it/s] 40%|████      | 8/20 [00:04<00:06,  1.97it/s] 45%|████▌     | 9/20 [00:04<00:05,  1.99it/s] 50%|█████     | 10/20 [00:05<00:04,  2.01it/s] 55%|█████▌    | 11/20 [00:05<00:04,  2.02it/s] 60%|██████    | 12/20 [00:06<00:03,  2.03it/s] 65%|██████▌   | 13/20 [00:06<00:03,  2.04it/s] 70%|███████   | 14/20 [00:07<00:02,  2.05it/s] 75%|███████▌  | 15/20 [00:07<00:02,  2.05it/s] 80%|████████  | 16/20 [00:08<00:02,  1.99it/s] 85%|████████▌ | 17/20 [00:08<00:01,  2.01it/s] 90%|█████████ | 18/20 [00:09<00:00,  2.02it/s] 95%|█████████▌| 19/20 [00:09<00:00,  2.03it/s]100%|██████████| 20/20 [00:10<00:00,  2.04it/s]100%|██████████| 20/20 [00:10<00:00,  1.98it/s]
+[1/24] case1 k1 cam1: 10.9 s, peak 5394 MB
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:00<00:09,  2.06it/s] 10%|█         | 2/20 [00:00<00:08,  2.05it/s] 15%|█▌        | 3/20 [00:01<00:08,  2.05it/s] 20%|██        | 4/20 [00:01<00:07,  2.04it/s] 25%|██▌       | 5/20 [00:02<00:07,  2.05it/s] 30%|███       | 6/20 [00:02<00:06,  2.05it/s] 35%|███▌      | 7/20 [00:03<00:06,  2.05it/s] 40%|████      | 8/20 [00:03<00:05,  2.06it/s] 45%|████▌     | 9/20 [00:04<00:05,  2.05it/s] 50%|█████     | 10/20 [00:04<00:04,  2.05it/s] 55%|█████▌    | 11/20 [00:05<00:04,  2.05it/s] 60%|██████    | 12/20 [00:05<00:03,  2.05it/s] 65%|██████▌   | 13/20 [00:06<00:03,  2.05it/s] 70%|███████   | 14/20 [00:06<00:02,  2.05it/s] 75%|███████▌  | 15/20 [00:07<00:02,  2.05it/s] 80%|████████  | 16/20 [00:07<00:01,  2.05it/s] 85%|████████▌ | 17/20 [00:08<00:01,  2.05it/s] 90%|█████████ | 18/20 [00:08<00:00,  2.04it/s] 95%|█████████▌| 19/20 [00:09<00:00,  2.04it/s]100%|██████████| 20/20 [00:09<00:00,  2.05it/s]100%|██████████| 20/20 [00:09<00:00,  2.05it/s]
+[2/24] case2 k1 cam1: 10.4 s, peak 5395 MB
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:00<00:09,  2.06it/s] 10%|█         | 2/20 [00:00<00:08,  2.06it/s] 15%|█▌        | 3/20 [00:01<00:08,  2.05it/s] 20%|██        | 4/20 [00:01<00:07,  2.05it/s] 25%|██▌       | 5/20 [00:02<00:07,  2.06it/s] 30%|███       | 6/20 [00:02<00:06,  2.05it/s] 35%|███▌      | 7/20 [00:03<00:06,  2.05it/s] 40%|████      | 8/20 [00:03<00:05,  2.05it/s] 45%|████▌     | 9/20 [00:04<00:05,  2.05it/s] 50%|█████     | 10/20 [00:04<00:04,  2.05it/s] 55%|█████▌    | 11/20 [00:05<00:04,  2.05it/s] 60%|██████    | 12/20 [00:05<00:03,  2.05it/s] 65%|██████▌   | 13/20 [00:06<00:03,  2.05it/s] 70%|███████   | 14/20 [00:06<00:02,  2.05it/s] 75%|███████▌  | 15/20 [00:07<00:02,  2.05it/s] 80%|████████  | 16/20 [00:07<00:01,  2.05it/s] 85%|████████▌ | 17/20 [00:08<00:01,  2.05it/s] 90%|█████████ | 18/20 [00:08<00:00,  2.05it/s] 95%|█████████▌| 19/20 [00:09<00:00,  2.05it/s]100%|██████████| 20/20 [00:09<00:00,  2.05it/s]100%|██████████| 20/20 [00:09<00:00,  2.05it/s]
+[3/24] case3 k1 cam1: 10.4 s, peak 5395 MB
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:00<00:09,  2.06it/s] 10%|█         | 2/20 [00:00<00:08,  2.06it/s] 15%|█▌        | 3/20 [00:01<00:08,  2.05it/s] 20%|██        | 4/20 [00:01<00:07,  2.05it/s] 25%|██▌       | 5/20 [00:02<00:07,  2.05it/s] 30%|███       | 6/20 [00:02<00:06,  2.05it/s] 35%|███▌      | 7/20 [00:03<00:06,  2.05it/s] 40%|████      | 8/20 [00:03<00:05,  2.05it/s] 45%|████▌     | 9/20 [00:04<00:05,  2.05it/s] 50%|█████     | 10/20 [00:04<00:04,  2.05it/s] 55%|█████▌    | 11/20 [00:05<00:04,  2.05it/s] 60%|██████    | 12/20 [00:05<00:03,  2.05it/s] 65%|██████▌   | 13/20 [00:06<00:03,  2.05it/s] 70%|███████   | 14/20 [00:06<00:02,  2.05it/s] 75%|███████▌  | 15/20 [00:07<00:02,  2.05it/s] 80%|████████  | 16/20 [00:07<00:01,  2.05it/s] 85%|████████▌ | 17/20 [00:08<00:01,  2.05it/s] 90%|█████████ | 18/20 [00:08<00:00,  2.05it/s] 95%|█████████▌| 19/20 [00:09<00:00,  2.04it/s]100%|██████████| 20/20 [00:09<00:00,  2.05it/s]100%|██████████| 20/20 [00:09<00:00,  2.05it/s]
+[4/24] case4 k1 cam1: 10.4 s, peak 5395 MB
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:00<00:09,  2.06it/s] 10%|█         | 2/20 [00:00<00:08,  2.05it/s] 15%|█▌        | 3/20 [00:01<00:08,  2.05it/s] 20%|██        | 4/20 [00:01<00:07,  2.05it/s] 25%|██▌       | 5/20 [00:02<00:07,  2.04it/s] 30%|███       | 6/20 [00:02<00:06,  2.04it/s] 35%|███▌      | 7/20 [00:03<00:06,  2.05it/s] 40%|████      | 8/20 [00:03<00:05,  2.05it/s] 45%|████▌     | 9/20 [00:04<00:05,  2.05it/s] 50%|█████     | 10/20 [00:04<00:04,  2.04it/s] 55%|█████▌    | 11/20 [00:05<00:04,  2.04it/s] 60%|██████    | 12/20 [00:05<00:03,  2.04it/s] 65%|██████▌   | 13/20 [00:06<00:03,  2.05it/s] 70%|███████   | 14/20 [00:06<00:02,  2.04it/s] 75%|███████▌  | 15/20 [00:07<00:02,  2.05it/s] 80%|████████  | 16/20 [00:07<00:01,  2.04it/s] 85%|████████▌ | 17/20 [00:08<00:01,  2.05it/s] 90%|█████████ | 18/20 [00:08<00:00,  2.04it/s] 95%|█████████▌| 19/20 [00:09<00:00,  2.04it/s]100%|██████████| 20/20 [00:09<00:00,  2.05it/s]100%|██████████| 20/20 [00:09<00:00,  2.05it/s]
+[5/24] case5 k1 cam1: 10.4 s, peak 5395 MB
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:00<00:09,  2.06it/s] 10%|█         | 2/20 [00:00<00:08,  2.05it/s] 15%|█▌        | 3/20 [00:01<00:08,  2.05it/s] 20%|██        | 4/20 [00:01<00:07,  2.03it/s] 25%|██▌       | 5/20 [00:02<00:07,  2.04it/s] 30%|███       | 6/20 [00:02<00:06,  2.04it/s] 35%|███▌      | 7/20 [00:03<00:06,  2.04it/s] 40%|████      | 8/20 [00:03<00:05,  2.04it/s] 45%|████▌     | 9/20 [00:04<00:05,  2.04it/s] 50%|█████     | 10/20 [00:04<00:04,  2.04it/s] 55%|█████▌    | 11/20 [00:05<00:04,  2.04it/s] 60%|██████    | 12/20 [00:05<00:03,  2.04it/s] 65%|██████▌   | 13/20 [00:06<00:03,  2.05it/s] 70%|███████   | 14/20 [00:06<00:02,  2.05it/s] 75%|███████▌  | 15/20 [00:07<00:02,  2.04it/s] 80%|████████  | 16/20 [00:07<00:01,  2.04it/s] 85%|████████▌ | 17/20 [00:08<00:01,  2.04it/s] 90%|█████████ | 18/20 [00:08<00:00,  2.04it/s] 95%|█████████▌| 19/20 [00:09<00:00,  2.04it/s]100%|██████████| 20/20 [00:09<00:00,  2.04it/s]100%|██████████| 20/20 [00:09<00:00,  2.04it/s]
+[6/24] case6 k1 cam1: 10.4 s, peak 5395 MB
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:00<00:09,  2.06it/s] 10%|█         | 2/20 [00:00<00:08,  2.06it/s] 15%|█▌        | 3/20 [00:01<00:08,  2.05it/s] 20%|██        | 4/20 [00:01<00:07,  2.04it/s] 25%|██▌       | 5/20 [00:02<00:07,  2.03it/s] 30%|███       | 6/20 [00:02<00:06,  2.04it/s] 35%|███▌      | 7/20 [00:03<00:06,  2.04it/s] 40%|████      | 8/20 [00:03<00:05,  2.04it/s] 45%|████▌     | 9/20 [00:04<00:05,  2.04it/s] 50%|█████     | 10/20 [00:04<00:04,  2.04it/s] 55%|█████▌    | 11/20 [00:05<00:04,  2.04it/s] 60%|██████    | 12/20 [00:05<00:03,  2.04it/s] 65%|██████▌   | 13/20 [00:06<00:03,  2.04it/s] 70%|███████   | 14/20 [00:06<00:02,  2.04it/s] 75%|███████▌  | 15/20 [00:07<00:02,  2.04it/s] 80%|████████  | 16/20 [00:07<00:01,  2.04it/s] 85%|████████▌ | 17/20 [00:08<00:01,  2.04it/s] 90%|█████████ | 18/20 [00:08<00:00,  2.04it/s] 95%|█████████▌| 19/20 [00:09<00:00,  2.04it/s]100%|██████████| 20/20 [00:09<00:00,  2.04it/s]100%|██████████| 20/20 [00:09<00:00,  2.04it/s]
+[7/24] case7 k1 cam1: 10.4 s, peak 5395 MB
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:00<00:09,  2.06it/s] 10%|█         | 2/20 [00:00<00:08,  2.04it/s] 15%|█▌        | 3/20 [00:01<00:08,  2.04it/s] 20%|██        | 4/20 [00:01<00:07,  2.04it/s] 25%|██▌       | 5/20 [00:02<00:07,  2.04it/s] 30%|███       | 6/20 [00:02<00:06,  2.03it/s] 35%|███▌      | 7/20 [00:03<00:06,  2.04it/s] 40%|████      | 8/20 [00:03<00:05,  2.03it/s] 45%|████▌     | 9/20 [00:04<00:05,  1.97it/s] 50%|█████     | 10/20 [00:05<00:05,  1.91it/s] 55%|█████▌    | 11/20 [00:05<00:04,  1.92it/s] 60%|██████    | 12/20 [00:06<00:04,  1.91it/s] 65%|██████▌   | 13/20 [00:06<00:03,  1.95it/s] 70%|███████   | 14/20 [00:07<00:03,  1.96it/s] 75%|███████▌  | 15/20 [00:07<00:02,  1.98it/s] 80%|████████  | 16/20 [00:08<00:02,  1.98it/s] 85%|████████▌ | 17/20 [00:08<00:01,  2.00it/s] 90%|█████████ | 18/20 [00:09<00:00,  2.00it/s] 95%|█████████▌| 19/20 [00:09<00:00,  1.95it/s]100%|██████████| 20/20 [00:10<00:00,  1.90it/s]100%|██████████| 20/20 [00:10<00:00,  1.97it/s]
+[8/24] case8 k1 cam1: 10.8 s, peak 5395 MB
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:00<00:09,  2.06it/s] 10%|█         | 2/20 [00:00<00:08,  2.04it/s] 15%|█▌        | 3/20 [00:01<00:08,  2.04it/s] 20%|██        | 4/20 [00:01<00:07,  2.04it/s] 25%|██▌       | 5/20 [00:02<00:07,  2.04it/s] 30%|███       | 6/20 [00:02<00:06,  2.03it/s] 35%|███▌      | 7/20 [00:03<00:06,  2.03it/s] 40%|████      | 8/20 [00:03<00:05,  2.04it/s] 45%|████▌     | 9/20 [00:04<00:05,  2.04it/s] 50%|█████     | 10/20 [00:04<00:04,  2.04it/s] 55%|█████▌    | 11/20 [00:05<00:04,  2.04it/s] 60%|██████    | 12/20 [00:05<00:03,  2.04it/s] 65%|██████▌   | 13/20 [00:06<00:03,  2.04it/s] 70%|███████   | 14/20 [00:06<00:02,  2.04it/s] 75%|███████▌  | 15/20 [00:07<00:02,  2.04it/s] 80%|████████  | 16/20 [00:07<00:01,  2.04it/s] 85%|████████▌ | 17/20 [00:08<00:01,  2.03it/s] 90%|█████████ | 18/20 [00:08<00:00,  2.04it/s] 95%|█████████▌| 19/20 [00:09<00:00,  2.04it/s]100%|██████████| 20/20 [00:09<00:00,  2.04it/s]100%|██████████| 20/20 [00:09<00:00,  2.04it/s]
+[9/24] case9 k1 cam1: 10.4 s, peak 5395 MB
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:00<00:09,  2.04it/s] 10%|█         | 2/20 [00:00<00:08,  2.04it/s] 15%|█▌        | 3/20 [00:01<00:08,  2.04it/s] 20%|██        | 4/20 [00:01<00:07,  2.04it/s] 25%|██▌       | 5/20 [00:02<00:07,  2.03it/s] 30%|███       | 6/20 [00:02<00:06,  2.03it/s] 35%|███▌      | 7/20 [00:03<00:06,  2.04it/s] 40%|████      | 8/20 [00:03<00:05,  2.04it/s] 45%|████▌     | 9/20 [00:04<00:05,  2.04it/s] 50%|█████     | 10/20 [00:04<00:04,  2.04it/s] 55%|█████▌    | 11/20 [00:05<00:04,  2.04it/s] 60%|██████    | 12/20 [00:05<00:03,  2.04it/s] 65%|██████▌   | 13/20 [00:06<00:03,  2.04it/s] 70%|███████   | 14/20 [00:06<00:02,  2.04it/s] 75%|███████▌  | 15/20 [00:07<00:02,  2.04it/s] 80%|████████  | 16/20 [00:07<00:01,  2.04it/s] 85%|████████▌ | 17/20 [00:08<00:01,  2.04it/s] 90%|█████████ | 18/20 [00:08<00:00,  2.04it/s] 95%|█████████▌| 19/20 [00:09<00:00,  2.04it/s]100%|██████████| 20/20 [00:09<00:00,  2.04it/s]100%|██████████| 20/20 [00:09<00:00,  2.04it/s]
+[10/24] case10 k1 cam1: 10.4 s, peak 5395 MB
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:00<00:09,  2.05it/s] 10%|█         | 2/20 [00:00<00:08,  2.04it/s] 15%|█▌        | 3/20 [00:01<00:08,  2.04it/s] 20%|██        | 4/20 [00:01<00:07,  2.04it/s] 25%|██▌       | 5/20 [00:02<00:07,  2.04it/s] 30%|███       | 6/20 [00:02<00:06,  2.03it/s] 35%|███▌      | 7/20 [00:03<00:06,  2.04it/s] 40%|████      | 8/20 [00:03<00:05,  2.04it/s] 45%|████▌     | 9/20 [00:04<00:05,  2.04it/s] 50%|█████     | 10/20 [00:04<00:04,  2.04it/s] 55%|█████▌    | 11/20 [00:05<00:04,  2.04it/s] 60%|██████    | 12/20 [00:05<00:03,  2.03it/s] 65%|██████▌   | 13/20 [00:06<00:03,  2.03it/s] 70%|███████   | 14/20 [00:06<00:02,  2.04it/s] 75%|███████▌  | 15/20 [00:07<00:02,  2.04it/s] 80%|████████  | 16/20 [00:07<00:01,  2.04it/s] 85%|████████▌ | 17/20 [00:08<00:01,  2.04it/s] 90%|█████████ | 18/20 [00:08<00:00,  2.04it/s] 95%|█████████▌| 19/20 [00:09<00:00,  2.04it/s]100%|██████████| 20/20 [00:09<00:00,  2.04it/s]100%|██████████| 20/20 [00:09<00:00,  2.04it/s]
+[11/24] case11 k1 cam1: 10.4 s, peak 5395 MB
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:00<00:09,  2.06it/s] 10%|█         | 2/20 [00:00<00:08,  2.04it/s] 15%|█▌        | 3/20 [00:01<00:08,  2.03it/s] 20%|██        | 4/20 [00:01<00:07,  2.03it/s] 25%|██▌       | 5/20 [00:02<00:07,  2.03it/s] 30%|███       | 6/20 [00:02<00:06,  2.03it/s] 35%|███▌      | 7/20 [00:03<00:06,  2.03it/s] 40%|████      | 8/20 [00:03<00:05,  2.04it/s] 45%|████▌     | 9/20 [00:04<00:05,  2.03it/s] 50%|█████     | 10/20 [00:04<00:04,  2.03it/s] 55%|█████▌    | 11/20 [00:05<00:04,  2.04it/s] 60%|██████    | 12/20 [00:05<00:03,  2.04it/s] 65%|██████▌   | 13/20 [00:06<00:03,  2.04it/s] 70%|███████   | 14/20 [00:06<00:02,  2.04it/s] 75%|███████▌  | 15/20 [00:07<00:02,  2.04it/s] 80%|████████  | 16/20 [00:07<00:01,  2.03it/s] 85%|████████▌ | 17/20 [00:08<00:01,  2.03it/s] 90%|█████████ | 18/20 [00:08<00:00,  2.03it/s] 95%|█████████▌| 19/20 [00:09<00:00,  2.03it/s]100%|██████████| 20/20 [00:09<00:00,  2.03it/s]100%|██████████| 20/20 [00:09<00:00,  2.03it/s]
+[12/24] case12 k1 cam1: 10.5 s, peak 5395 MB
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:00<00:09,  2.07it/s] 10%|█         | 2/20 [00:00<00:08,  2.04it/s] 15%|█▌        | 3/20 [00:01<00:08,  2.04it/s] 20%|██        | 4/20 [00:01<00:07,  2.03it/s] 25%|██▌       | 5/20 [00:02<00:07,  2.04it/s] 30%|███       | 6/20 [00:02<00:06,  2.04it/s] 35%|███▌      | 7/20 [00:03<00:06,  2.04it/s] 40%|████      | 8/20 [00:03<00:05,  2.04it/s] 45%|████▌     | 9/20 [00:04<00:05,  2.04it/s] 50%|█████     | 10/20 [00:04<00:04,  2.03it/s] 55%|█████▌    | 11/20 [00:05<00:04,  2.03it/s] 60%|██████    | 12/20 [00:05<00:03,  2.03it/s] 65%|██████▌   | 13/20 [00:06<00:03,  2.03it/s] 70%|███████   | 14/20 [00:06<00:02,  2.03it/s] 75%|███████▌  | 15/20 [00:07<00:02,  2.03it/s] 80%|████████  | 16/20 [00:07<00:01,  2.03it/s] 85%|████████▌ | 17/20 [00:08<00:01,  2.03it/s] 90%|█████████ | 18/20 [00:08<00:00,  2.03it/s] 95%|█████████▌| 19/20 [00:09<00:00,  2.03it/s]100%|██████████| 20/20 [00:09<00:00,  2.03it/s]100%|██████████| 20/20 [00:09<00:00,  2.03it/s]
+[13/24] case13 k1 cam1: 10.5 s, peak 5395 MB
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:00<00:09,  2.04it/s] 10%|█         | 2/20 [00:00<00:08,  2.04it/s] 15%|█▌        | 3/20 [00:01<00:08,  2.03it/s] 20%|██        | 4/20 [00:01<00:07,  2.03it/s] 25%|██▌       | 5/20 [00:02<00:07,  2.03it/s] 30%|███       | 6/20 [00:02<00:06,  2.03it/s] 35%|███▌      | 7/20 [00:03<00:06,  2.03it/s] 40%|████      | 8/20 [00:03<00:05,  2.03it/s] 45%|████▌     | 9/20 [00:04<00:05,  2.03it/s] 50%|█████     | 10/20 [00:04<00:04,  2.03it/s] 55%|█████▌    | 11/20 [00:05<00:04,  2.03it/s] 60%|██████    | 12/20 [00:05<00:03,  2.03it/s] 65%|██████▌   | 13/20 [00:06<00:03,  2.03it/s] 70%|███████   | 14/20 [00:06<00:02,  2.03it/s] 75%|███████▌  | 15/20 [00:07<00:02,  2.03it/s] 80%|████████  | 16/20 [00:07<00:01,  2.03it/s] 85%|████████▌ | 17/20 [00:08<00:01,  2.03it/s] 90%|█████████ | 18/20 [00:08<00:00,  2.03it/s] 95%|█████████▌| 19/20 [00:09<00:00,  2.03it/s]100%|██████████| 20/20 [00:09<00:00,  2.03it/s]100%|██████████| 20/20 [00:09<00:00,  2.03it/s]
+[14/24] case14 k1 cam1: 10.5 s, peak 5395 MB
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:00<00:09,  2.05it/s] 10%|█         | 2/20 [00:00<00:08,  2.04it/s] 15%|█▌        | 3/20 [00:01<00:08,  2.04it/s] 20%|██        | 4/20 [00:01<00:07,  2.03it/s] 25%|██▌       | 5/20 [00:02<00:07,  2.03it/s] 30%|███       | 6/20 [00:02<00:06,  2.03it/s] 35%|███▌      | 7/20 [00:03<00:06,  2.03it/s] 40%|████      | 8/20 [00:03<00:05,  2.02it/s] 45%|████▌     | 9/20 [00:04<00:05,  2.02it/s] 50%|█████     | 10/20 [00:04<00:04,  2.02it/s] 55%|█████▌    | 11/20 [00:05<00:04,  2.03it/s] 60%|██████    | 12/20 [00:05<00:03,  2.03it/s] 65%|██████▌   | 13/20 [00:06<00:03,  2.03it/s] 70%|███████   | 14/20 [00:06<00:02,  2.04it/s] 75%|███████▌  | 15/20 [00:07<00:02,  2.04it/s] 80%|████████  | 16/20 [00:07<00:01,  2.03it/s] 85%|████████▌ | 17/20 [00:08<00:01,  2.03it/s] 90%|█████████ | 18/20 [00:08<00:00,  2.03it/s] 95%|█████████▌| 19/20 [00:09<00:00,  2.02it/s]100%|██████████| 20/20 [00:09<00:00,  2.02it/s]100%|██████████| 20/20 [00:09<00:00,  2.03it/s]
+[15/24] case15 k1 cam1: 10.5 s, peak 5395 MB
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:00<00:09,  2.05it/s] 10%|█         | 2/20 [00:00<00:08,  2.05it/s] 15%|█▌        | 3/20 [00:01<00:08,  2.04it/s] 20%|██        | 4/20 [00:01<00:07,  2.04it/s] 25%|██▌       | 5/20 [00:02<00:07,  2.04it/s] 30%|███       | 6/20 [00:02<00:06,  2.03it/s] 35%|███▌      | 7/20 [00:03<00:06,  2.04it/s] 40%|████      | 8/20 [00:03<00:05,  2.03it/s] 45%|████▌     | 9/20 [00:04<00:05,  2.03it/s] 50%|█████     | 10/20 [00:04<00:04,  2.03it/s] 55%|█████▌    | 11/20 [00:05<00:04,  2.03it/s] 60%|██████    | 12/20 [00:05<00:03,  2.03it/s] 65%|██████▌   | 13/20 [00:06<00:03,  2.03it/s] 70%|███████   | 14/20 [00:06<00:02,  2.03it/s] 75%|███████▌  | 15/20 [00:07<00:02,  2.03it/s] 80%|████████  | 16/20 [00:07<00:01,  2.03it/s] 85%|████████▌ | 17/20 [00:08<00:01,  2.03it/s] 90%|█████████ | 18/20 [00:08<00:00,  2.04it/s] 95%|█████████▌| 19/20 [00:09<00:00,  2.04it/s]100%|██████████| 20/20 [00:09<00:00,  2.04it/s]100%|██████████| 20/20 [00:09<00:00,  2.03it/s]
+[16/24] case16 k1 cam1: 10.5 s, peak 5395 MB
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:00<00:09,  2.06it/s] 10%|█         | 2/20 [00:00<00:08,  2.05it/s] 15%|█▌        | 3/20 [00:01<00:08,  2.04it/s] 20%|██        | 4/20 [00:01<00:07,  2.04it/s] 25%|██▌       | 5/20 [00:02<00:07,  2.04it/s] 30%|███       | 6/20 [00:02<00:06,  2.04it/s] 35%|███▌      | 7/20 [00:03<00:06,  2.03it/s] 40%|████      | 8/20 [00:03<00:05,  2.03it/s] 45%|████▌     | 9/20 [00:04<00:05,  2.03it/s] 50%|█████     | 10/20 [00:04<00:04,  2.02it/s] 55%|█████▌    | 11/20 [00:05<00:04,  2.03it/s] 60%|██████    | 12/20 [00:05<00:03,  2.03it/s] 65%|██████▌   | 13/20 [00:06<00:03,  2.02it/s] 70%|███████   | 14/20 [00:06<00:02,  2.03it/s] 75%|███████▌  | 15/20 [00:07<00:02,  2.03it/s] 80%|████████  | 16/20 [00:07<00:01,  2.03it/s] 85%|████████▌ | 17/20 [00:08<00:01,  2.03it/s] 90%|█████████ | 18/20 [00:08<00:00,  2.03it/s] 95%|█████████▌| 19/20 [00:09<00:00,  2.03it/s]100%|██████████| 20/20 [00:09<00:00,  2.03it/s]100%|██████████| 20/20 [00:09<00:00,  2.03it/s]
+[17/24] case17 k1 cam1: 10.5 s, peak 5395 MB
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:00<00:09,  2.05it/s] 10%|█         | 2/20 [00:00<00:08,  2.03it/s] 15%|█▌        | 3/20 [00:01<00:08,  2.04it/s] 20%|██        | 4/20 [00:01<00:07,  2.04it/s] 25%|██▌       | 5/20 [00:02<00:07,  2.03it/s] 30%|███       | 6/20 [00:02<00:06,  2.03it/s] 35%|███▌      | 7/20 [00:03<00:06,  2.03it/s] 40%|████      | 8/20 [00:03<00:05,  2.03it/s] 45%|████▌     | 9/20 [00:04<00:05,  2.03it/s] 50%|█████     | 10/20 [00:04<00:04,  2.03it/s] 55%|█████▌    | 11/20 [00:05<00:04,  2.03it/s] 60%|██████    | 12/20 [00:05<00:03,  2.03it/s] 65%|██████▌   | 13/20 [00:06<00:03,  2.03it/s] 70%|███████   | 14/20 [00:06<00:02,  2.03it/s] 75%|███████▌  | 15/20 [00:07<00:02,  2.03it/s] 80%|████████  | 16/20 [00:07<00:01,  2.03it/s] 85%|████████▌ | 17/20 [00:08<00:01,  2.03it/s] 90%|█████████ | 18/20 [00:08<00:00,  2.03it/s] 95%|█████████▌| 19/20 [00:09<00:00,  2.03it/s]100%|██████████| 20/20 [00:09<00:00,  2.03it/s]100%|██████████| 20/20 [00:09<00:00,  2.03it/s]
+[18/24] case18 k1 cam1: 10.5 s, peak 5395 MB
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:00<00:09,  2.04it/s] 10%|█         | 2/20 [00:00<00:08,  2.04it/s] 15%|█▌        | 3/20 [00:01<00:08,  2.03it/s] 20%|██        | 4/20 [00:01<00:07,  2.04it/s] 25%|██▌       | 5/20 [00:02<00:07,  2.04it/s] 30%|███       | 6/20 [00:02<00:06,  2.04it/s] 35%|███▌      | 7/20 [00:03<00:06,  2.04it/s] 40%|████      | 8/20 [00:03<00:05,  2.03it/s] 45%|████▌     | 9/20 [00:04<00:05,  2.04it/s] 50%|█████     | 10/20 [00:04<00:04,  2.03it/s] 55%|█████▌    | 11/20 [00:05<00:04,  2.03it/s] 60%|██████    | 12/20 [00:05<00:03,  2.03it/s] 65%|██████▌   | 13/20 [00:06<00:03,  2.03it/s] 70%|███████   | 14/20 [00:06<00:02,  2.03it/s] 75%|███████▌  | 15/20 [00:07<00:02,  2.03it/s] 80%|████████  | 16/20 [00:07<00:01,  2.03it/s] 85%|████████▌ | 17/20 [00:08<00:01,  2.03it/s] 90%|█████████ | 18/20 [00:08<00:00,  2.03it/s] 95%|█████████▌| 19/20 [00:09<00:00,  2.03it/s]100%|██████████| 20/20 [00:09<00:00,  2.04it/s]100%|██████████| 20/20 [00:09<00:00,  2.03it/s]
+[19/24] case19 k1 cam1: 10.5 s, peak 5395 MB
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:00<00:09,  2.06it/s] 10%|█         | 2/20 [00:00<00:08,  2.05it/s] 15%|█▌        | 3/20 [00:01<00:08,  2.04it/s] 20%|██        | 4/20 [00:01<00:07,  2.03it/s] 25%|██▌       | 5/20 [00:02<00:07,  2.03it/s] 30%|███       | 6/20 [00:02<00:06,  2.03it/s] 35%|███▌      | 7/20 [00:03<00:06,  2.03it/s] 40%|████      | 8/20 [00:03<00:05,  2.03it/s] 45%|████▌     | 9/20 [00:04<00:05,  2.03it/s] 50%|█████     | 10/20 [00:04<00:04,  2.03it/s] 55%|█████▌    | 11/20 [00:05<00:04,  2.03it/s] 60%|██████    | 12/20 [00:05<00:03,  2.03it/s] 65%|██████▌   | 13/20 [00:06<00:03,  2.03it/s] 70%|███████   | 14/20 [00:06<00:02,  2.03it/s] 75%|███████▌  | 15/20 [00:07<00:02,  2.03it/s] 80%|████████  | 16/20 [00:07<00:01,  2.03it/s] 85%|████████▌ | 17/20 [00:08<00:01,  2.03it/s] 90%|█████████ | 18/20 [00:08<00:00,  2.03it/s] 95%|█████████▌| 19/20 [00:09<00:00,  2.03it/s]100%|██████████| 20/20 [00:09<00:00,  2.03it/s]100%|██████████| 20/20 [00:09<00:00,  2.03it/s]
+[20/24] case20 k1 cam1: 10.5 s, peak 5395 MB
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:00<00:09,  2.04it/s] 10%|█         | 2/20 [00:00<00:08,  2.03it/s] 15%|█▌        | 3/20 [00:01<00:08,  2.03it/s] 20%|██        | 4/20 [00:01<00:07,  2.03it/s] 25%|██▌       | 5/20 [00:02<00:07,  2.03it/s] 30%|███       | 6/20 [00:02<00:06,  2.03it/s] 35%|███▌      | 7/20 [00:03<00:06,  2.03it/s] 40%|████      | 8/20 [00:03<00:05,  2.03it/s] 45%|████▌     | 9/20 [00:04<00:05,  2.03it/s] 50%|█████     | 10/20 [00:04<00:04,  2.03it/s] 55%|█████▌    | 11/20 [00:05<00:04,  2.03it/s] 60%|██████    | 12/20 [00:05<00:03,  2.03it/s] 65%|██████▌   | 13/20 [00:06<00:03,  2.03it/s] 70%|███████   | 14/20 [00:06<00:02,  2.03it/s] 75%|███████▌  | 15/20 [00:07<00:02,  2.03it/s] 80%|████████  | 16/20 [00:07<00:01,  2.03it/s] 85%|████████▌ | 17/20 [00:08<00:01,  2.03it/s] 90%|█████████ | 18/20 [00:08<00:00,  2.03it/s] 95%|█████████▌| 19/20 [00:09<00:00,  2.03it/s]100%|██████████| 20/20 [00:09<00:00,  2.03it/s]100%|██████████| 20/20 [00:09<00:00,  2.03it/s]
+[21/24] case21 k1 cam1: 10.5 s, peak 5395 MB
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:00<00:09,  2.05it/s] 10%|█         | 2/20 [00:00<00:08,  2.04it/s] 15%|█▌        | 3/20 [00:01<00:08,  2.03it/s] 20%|██        | 4/20 [00:01<00:07,  2.03it/s] 25%|██▌       | 5/20 [00:02<00:07,  2.03it/s] 30%|███       | 6/20 [00:02<00:06,  2.03it/s] 35%|███▌      | 7/20 [00:03<00:06,  2.03it/s] 40%|████      | 8/20 [00:03<00:05,  2.03it/s] 45%|████▌     | 9/20 [00:04<00:05,  2.03it/s] 50%|█████     | 10/20 [00:04<00:04,  2.04it/s] 55%|█████▌    | 11/20 [00:05<00:04,  2.03it/s] 60%|██████    | 12/20 [00:05<00:03,  2.03it/s] 65%|██████▌   | 13/20 [00:06<00:03,  2.03it/s] 70%|███████   | 14/20 [00:06<00:02,  2.03it/s] 75%|███████▌  | 15/20 [00:07<00:02,  2.03it/s] 80%|████████  | 16/20 [00:07<00:01,  2.03it/s] 85%|████████▌ | 17/20 [00:08<00:01,  2.03it/s] 90%|█████████ | 18/20 [00:08<00:00,  2.03it/s] 95%|█████████▌| 19/20 [00:09<00:00,  2.03it/s]100%|██████████| 20/20 [00:09<00:00,  2.03it/s]100%|██████████| 20/20 [00:09<00:00,  2.03it/s]
+[22/24] case22 k1 cam1: 10.5 s, peak 5395 MB
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:00<00:09,  2.03it/s] 10%|█         | 2/20 [00:00<00:08,  2.03it/s] 15%|█▌        | 3/20 [00:01<00:08,  2.03it/s] 20%|██        | 4/20 [00:01<00:07,  2.03it/s] 25%|██▌       | 5/20 [00:02<00:07,  2.03it/s] 30%|███       | 6/20 [00:02<00:06,  2.03it/s] 35%|███▌      | 7/20 [00:03<00:06,  2.03it/s] 40%|████      | 8/20 [00:03<00:05,  2.03it/s] 45%|████▌     | 9/20 [00:04<00:05,  2.03it/s] 50%|█████     | 10/20 [00:04<00:04,  2.01it/s] 55%|█████▌    | 11/20 [00:05<00:04,  2.02it/s] 60%|██████    | 12/20 [00:05<00:03,  2.02it/s] 65%|██████▌   | 13/20 [00:06<00:03,  2.02it/s] 70%|███████   | 14/20 [00:06<00:02,  2.02it/s] 75%|███████▌  | 15/20 [00:07<00:02,  2.02it/s] 80%|████████  | 16/20 [00:07<00:01,  2.03it/s] 85%|████████▌ | 17/20 [00:08<00:01,  2.03it/s] 90%|█████████ | 18/20 [00:08<00:00,  2.02it/s] 95%|█████████▌| 19/20 [00:09<00:00,  2.02it/s]100%|██████████| 20/20 [00:09<00:00,  2.03it/s]100%|██████████| 20/20 [00:09<00:00,  2.03it/s]
+[23/24] case23 k1 cam1: 10.5 s, peak 5395 MB
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:00<00:09,  2.06it/s] 10%|█         | 2/20 [00:00<00:08,  2.04it/s] 15%|█▌        | 3/20 [00:01<00:08,  2.03it/s] 20%|██        | 4/20 [00:01<00:07,  2.03it/s] 25%|██▌       | 5/20 [00:02<00:07,  2.03it/s] 30%|███       | 6/20 [00:02<00:06,  2.03it/s] 35%|███▌      | 7/20 [00:03<00:06,  2.03it/s] 40%|████      | 8/20 [00:03<00:05,  2.03it/s] 45%|████▌     | 9/20 [00:04<00:05,  2.03it/s] 50%|█████     | 10/20 [00:04<00:04,  2.03it/s] 55%|█████▌    | 11/20 [00:05<00:04,  2.02it/s] 60%|██████    | 12/20 [00:05<00:03,  2.02it/s] 65%|██████▌   | 13/20 [00:06<00:03,  2.03it/s] 70%|███████   | 14/20 [00:06<00:02,  2.03it/s] 75%|███████▌  | 15/20 [00:07<00:02,  2.03it/s] 80%|████████  | 16/20 [00:07<00:01,  2.03it/s] 85%|████████▌ | 17/20 [00:08<00:01,  2.03it/s] 90%|█████████ | 18/20 [00:08<00:00,  2.03it/s] 95%|█████████▌| 19/20 [00:09<00:00,  2.03it/s]100%|██████████| 20/20 [00:09<00:00,  2.03it/s]100%|██████████| 20/20 [00:09<00:00,  2.03it/s]
+[24/24] case24 k1 cam1: 10.5 s, peak 5395 MB
+COORDINATOR_DONE
+24 cases, variants ['k1'], detector torchvision fasterrcnn_resnet50_fpn_v2, COCO_V1
+[1/24] case1: oracle_full 10c/12p, oracle_gen 10c/12p, k1 6c/5p | GT 12c/10p
+[2/24] case2: oracle_full 9c/7p, oracle_gen 9c/7p, k1 7c/8p | GT 9c/8p
+[3/24] case3: oracle_full 13c/21p, oracle_gen 13c/17p, k1 12c/7p | GT 14c/10p
+[4/24] case4: oracle_full 7c/8p, oracle_gen 7c/6p, k1 4c/2p | GT 12c/7p
+[5/24] case5: oracle_full 15c/13p, oracle_gen 15c/12p, k1 1c/1p | GT 14c/10p
+[6/24] case6: oracle_full 7c/12p, oracle_gen 7c/13p, k1 9c/3p | GT 9c/6p
+[7/24] case7: oracle_full 8c/10p, oracle_gen 8c/11p, k1 4c/5p | GT 8c/7p
+[8/24] case8: oracle_full 7c/13p, oracle_gen 6c/13p, k1 3c/0p | GT 8c/6p
+[9/24] case9: oracle_full 6c/14p, oracle_gen 8c/15p, k1 2c/0p | GT 10c/12p
+[10/24] case10: oracle_full 5c/15p, oracle_gen 4c/13p, k1 5c/3p | GT 7c/12p
+[11/24] case11: oracle_full 6c/14p, oracle_gen 7c/13p, k1 8c/2p | GT 7c/10p
+[12/24] case12: oracle_full 14c/6p, oracle_gen 12c/7p, k1 8c/1p | GT 16c/5p
+[13/24] case13: oracle_full 12c/22p, oracle_gen 10c/23p, k1 4c/13p | GT 14c/20p
+[14/24] case14: oracle_full 7c/24p, oracle_gen 7c/22p, k1 6c/5p | GT 8c/13p
+[15/24] case15: oracle_full 3c/12p, oracle_gen 3c/10p, k1 2c/0p | GT 3c/8p
+[16/24] case16: oracle_full 7c/15p, oracle_gen 6c/13p, k1 3c/6p | GT 6c/8p
+[17/24] case17: oracle_full 13c/6p, oracle_gen 12c/6p, k1 9c/0p | GT 12c/5p
+[18/24] case18: oracle_full 5c/11p, oracle_gen 6c/7p, k1 8c/2p | GT 6c/7p
+[19/24] case19: oracle_full 9c/10p, oracle_gen 9c/9p, k1 3c/1p | GT 9c/8p
+[20/24] case20: oracle_full 4c/9p, oracle_gen 4c/7p, k1 3c/0p | GT 4c/5p
+[21/24] case21: oracle_full 20c/9p, oracle_gen 18c/8p, k1 17c/0p | GT 18c/6p
+[22/24] case22: oracle_full 22c/4p, oracle_gen 18c/4p, k1 5c/1p | GT 19c/7p
+[23/24] case23: oracle_full 11c/12p, oracle_gen 10c/12p, k1 8c/0p | GT 16c/8p
+[24/24] case24: oracle_full 7c/21p, oracle_gen 9c/20p, k1 2c/3p | GT 7c/15p
+{
+ "detector": "torchvision fasterrcnn_resnet50_fpn_v2, COCO_V1",
+ "score_min": 0.5,
+ "match_iou": 0.5,
+ "variants": {
+  "oracle_full": {
+   "n_cases": 24,
+   "mean_cars_4wheel": 9.458333333333334,
+   "gt_mean_cars_4wheel": 10.333333333333334,
+   "cars_4wheel_mae_vs_gt": 1.5416666666666667,
+   "cars_4wheel_bias_vs_gt": -0.875,
+   "cars_4wheel_exact_vs_gt": 0.25,
+   "cars_4wheel_within1_vs_gt": 0.5833333333333334,
+   "cars_4wheel_pearson_vs_gt": 0.9122366541457066,
+   "mean_pedestrians": 12.5,
+   "gt_mean_pedestrians": 8.875,
+   "pedestrians_mae_vs_gt": 3.9583333333333335,
+   "pedestrians_bias_vs_gt": 3.625,
+   "pedestrians_exact_vs_gt": 0.0,
+   "pedestrians_within1_vs_gt": 0.16666666666666666,
+   "pedestrians_pearson_vs_gt": 0.7944966896040234,
+   "mean_two_wheelers": 0.041666666666666664,
+   "gt_mean_two_wheelers": 0.08333333333333333,
+   "two_wheelers_mae_vs_gt": 0.125,
+   "two_wheelers_bias_vs_gt": -0.041666666666666664,
+   "two_wheelers_exact_vs_gt": 0.875,
+   "two_wheelers_within1_vs_gt": 1.0,
+   "two_wheelers_pearson_vs_gt": -0.06286946134619316,
+   "vehicle_recall": null,
+   "vehicle_precision": null,
+   "person_recall": null,
+   "person_precision": null,
+   "vehicle_count_abs_err_vs_oracle": null,
+   "person_count_abs_err_vs_oracle": null,
+   "seconds": null
+  },
+  "oracle_gen": {
+   "n_cases": 24,
+   "mean_cars_4wheel": 9.083333333333334,
+   "gt_mean_cars_4wheel": 10.333333333333334,
+   "cars_4wheel_mae_vs_gt": 1.5,
+   "cars_4wheel_bias_vs_gt": -1.25,
+   "cars_4wheel_exact_vs_gt": 0.4166666666666667,
+   "cars_4wheel_within1_vs_gt": 0.5833333333333334,
+   "cars_4wheel_pearson_vs_gt": 0.8924487057993394,
+   "mean_pedestrians": 11.666666666666666,
+   "gt_mean_pedestrians": 8.875,
+   "pedestrians_mae_vs_gt": 3.2083333333333335,
+   "pedestrians_bias_vs_gt": 2.7916666666666665,
+   "pedestrians_exact_vs_gt": 0.041666666666666664,
+   "pedestrians_within1_vs_gt": 0.25,
+   "pedestrians_pearson_vs_gt": 0.8350457793598769,
+   "mean_two_wheelers": 0.0,
+   "gt_mean_two_wheelers": 0.08333333333333333,
+   "two_wheelers_mae_vs_gt": 0.08333333333333333,
+   "two_wheelers_bias_vs_gt": -0.08333333333333333,
+   "two_wheelers_exact_vs_gt": 0.9166666666666666,
+   "two_wheelers_within1_vs_gt": 1.0,
+   "two_wheelers_pearson_vs_gt": null,
+   "vehicle_recall": null,
+   "vehicle_precision": null,
+   "person_recall": null,
+   "person_precision": null,
+   "vehicle_count_abs_err_vs_oracle": null,
+   "person_count_abs_err_vs_oracle": null,
+   "seconds": null
+  },
+  "k1": {
+   "n_cases": 24,
+   "mean_cars_4wheel": 5.791666666666667,
+   "gt_mean_cars_4wheel": 10.333333333333334,
+   "cars_4wheel_mae_vs_gt": 4.791666666666667,
+   "cars_4wheel_bias_vs_gt": -4.541666666666667,
+   "cars_4wheel_exact_vs_gt": 0.041666666666666664,
+   "cars_4wheel_within1_vs_gt": 0.20833333333333334,
+   "cars_4wheel_pearson_vs_gt": 0.46270229115425365,
+   "mean_pedestrians": 2.8333333333333335,
+   "gt_mean_pedestrians": 8.875,
+   "pedestrians_mae_vs_gt": 6.041666666666667,
+   "pedestrians_bias_vs_gt": -6.041666666666667,
+   "pedestrians_exact_vs_gt": 0.041666666666666664,
+   "pedestrians_within1_vs_gt": 0.041666666666666664,
+   "pedestrians_pearson_vs_gt": 0.6223442914861373,
+   "mean_two_wheelers": 0.08333333333333333,
+   "gt_mean_two_wheelers": 0.08333333333333333,
+   "two_wheelers_mae_vs_gt": 0.16666666666666666,
+   "two_wheelers_bias_vs_gt": 0.0,
+   "two_wheelers_exact_vs_gt": 0.8333333333333334,
+   "two_wheelers_within1_vs_gt": 1.0,
+   "two_wheelers_pearson_vs_gt": -0.09090909090909093,
+   "vehicle_recall": 0.46603454415954415,
+   "vehicle_precision": 0.7226200202303144,
+   "person_recall": 0.16152775956164703,
+   "person_precision": 0.7307692307692308,
+   "vehicle_count_abs_err_vs_oracle": 3.75,
+   "person_count_abs_err_vs_oracle": 8.916666666666666,
+   "seconds": 10.524965924999984
+  }
+ },
+ "paired_abs_error_vs_gt": {},
+ "payload_per_camera_kb_mean": 55.595776754712304,
+ "original_photo_kb_mean": 547.7957976810516
+}
+ANALYSIS_DONE
+24 cases, variants ['k1'], detector torchvision fasterrcnn_resnet50_fpn_v2, COCO_V1
+[1/24] case1: oracle_full 10c/12p, oracle_gen 10c/12p, k1 5c/4p | GT 12c/10p
+[2/24] case2: oracle_full 9c/7p, oracle_gen 9c/7p, k1 9c/5p | GT 9c/8p
+[3/24] case3: oracle_full 13c/21p, oracle_gen 13c/17p, k1 7c/6p | GT 14c/10p
+[4/24] case4: oracle_full 7c/8p, oracle_gen 7c/6p, k1 5c/5p | GT 12c/7p
+[5/24] case5: oracle_full 15c/13p, oracle_gen 15c/12p, k1 1c/4p | GT 14c/10p
+[6/24] case6: oracle_full 7c/12p, oracle_gen 7c/13p, k1 9c/2p | GT 9c/6p
+[7/24] case7: oracle_full 8c/10p, oracle_gen 8c/11p, k1 5c/4p | GT 8c/7p
+[8/24] case8: oracle_full 7c/13p, oracle_gen 6c/13p, k1 3c/0p | GT 8c/6p
+[9/24] case9: oracle_full 6c/14p, oracle_gen 8c/15p, k1 2c/1p | GT 10c/12p
+[10/24] case10: oracle_full 5c/15p, oracle_gen 4c/13p, k1 4c/1p | GT 7c/12p
+[11/24] case11: oracle_full 6c/14p, oracle_gen 7c/13p, k1 7c/1p | GT 7c/10p
+[12/24] case12: oracle_full 14c/6p, oracle_gen 12c/7p, k1 9c/2p | GT 16c/5p
+[13/24] case13: oracle_full 12c/22p, oracle_gen 10c/23p, k1 6c/12p | GT 14c/20p
+[14/24] case14: oracle_full 7c/24p, oracle_gen 7c/22p, k1 12c/5p | GT 8c/13p
+[15/24] case15: oracle_full 3c/12p, oracle_gen 3c/10p, k1 3c/0p | GT 3c/8p
+[16/24] case16: oracle_full 7c/15p, oracle_gen 6c/13p, k1 4c/6p | GT 6c/8p
+[17/24] case17: oracle_full 13c/6p, oracle_gen 12c/6p, k1 6c/0p | GT 12c/5p
+[18/24] case18: oracle_full 5c/11p, oracle_gen 6c/7p, k1 5c/4p | GT 6c/7p
+[19/24] case19: oracle_full 9c/10p, oracle_gen 9c/9p, k1 3c/1p | GT 9c/8p
+[20/24] case20: oracle_full 4c/9p, oracle_gen 4c/7p, k1 3c/1p | GT 4c/5p
+[21/24] case21: oracle_full 20c/9p, oracle_gen 18c/8p, k1 13c/4p | GT 18c/6p
+[22/24] case22: oracle_full 22c/4p, oracle_gen 18c/4p, k1 2c/1p | GT 19c/7p
+[23/24] case23: oracle_full 11c/12p, oracle_gen 10c/12p, k1 10c/1p | GT 16c/8p
+[24/24] case24: oracle_full 7c/21p, oracle_gen 9c/20p, k1 6c/7p | GT 7c/15p
+{
+ "detector": "torchvision fasterrcnn_resnet50_fpn_v2, COCO_V1",
+ "score_min": 0.5,
+ "match_iou": 0.5,
+ "variants": {
+  "oracle_full": {
+   "n_cases": 24,
+   "mean_cars_4wheel": 9.458333333333334,
+   "gt_mean_cars_4wheel": 10.333333333333334,
+   "cars_4wheel_mae_vs_gt": 1.5416666666666667,
+   "cars_4wheel_bias_vs_gt": -0.875,
+   "cars_4wheel_exact_vs_gt": 0.25,
+   "cars_4wheel_within1_vs_gt": 0.5833333333333334,
+   "cars_4wheel_pearson_vs_gt": 0.9122366541457066,
+   "mean_pedestrians": 12.5,
+   "gt_mean_pedestrians": 8.875,
+   "pedestrians_mae_vs_gt": 3.9583333333333335,
+   "pedestrians_bias_vs_gt": 3.625,
+   "pedestrians_exact_vs_gt": 0.0,
+   "pedestrians_within1_vs_gt": 0.16666666666666666,
+   "pedestrians_pearson_vs_gt": 0.7944966896040234,
+   "mean_two_wheelers": 0.041666666666666664,
+   "gt_mean_two_wheelers": 0.08333333333333333,
+   "two_wheelers_mae_vs_gt": 0.125,
+   "two_wheelers_bias_vs_gt": -0.041666666666666664,
+   "two_wheelers_exact_vs_gt": 0.875,
+   "two_wheelers_within1_vs_gt": 1.0,
+   "two_wheelers_pearson_vs_gt": -0.06286946134619316,
+   "vehicle_recall": null,
+   "vehicle_precision": null,
+   "person_recall": null,
+   "person_precision": null,
+   "vehicle_count_abs_err_vs_oracle": null,
+   "person_count_abs_err_vs_oracle": null,
+   "seconds": null
+  },
+  "oracle_gen": {
+   "n_cases": 24,
+   "mean_cars_4wheel": 9.083333333333334,
+   "gt_mean_cars_4wheel": 10.333333333333334,
+   "cars_4wheel_mae_vs_gt": 1.5,
+   "cars_4wheel_bias_vs_gt": -1.25,
+   "cars_4wheel_exact_vs_gt": 0.4166666666666667,
+   "cars_4wheel_within1_vs_gt": 0.5833333333333334,
+   "cars_4wheel_pearson_vs_gt": 0.8924487057993394,
+   "mean_pedestrians": 11.666666666666666,
+   "gt_mean_pedestrians": 8.875,
+   "pedestrians_mae_vs_gt": 3.2083333333333335,
+   "pedestrians_bias_vs_gt": 2.7916666666666665,
+   "pedestrians_exact_vs_gt": 0.041666666666666664,
+   "pedestrians_within1_vs_gt": 0.25,
+   "pedestrians_pearson_vs_gt": 0.8350457793598769,
+   "mean_two_wheelers": 0.0,
+   "gt_mean_two_wheelers": 0.08333333333333333,
+   "two_wheelers_mae_vs_gt": 0.08333333333333333,
+   "two_wheelers_bias_vs_gt": -0.08333333333333333,
+   "two_wheelers_exact_vs_gt": 0.9166666666666666,
+   "two_wheelers_within1_vs_gt": 1.0,
+   "two_wheelers_pearson_vs_gt": null,
+   "vehicle_recall": null,
+   "vehicle_precision": null,
+   "person_recall": null,
+   "person_precision": null,
+   "vehicle_count_abs_err_vs_oracle": null,
+   "person_count_abs_err_vs_oracle": null,
+   "seconds": null
+  },
+  "k1": {
+   "n_cases": 24,
+   "mean_cars_4wheel": 5.791666666666667,
+   "gt_mean_cars_4wheel": 10.333333333333334,
+   "cars_4wheel_mae_vs_gt": 4.875,
+   "cars_4wheel_bias_vs_gt": -4.541666666666667,
+   "cars_4wheel_exact_vs_gt": 0.16666666666666666,
+   "cars_4wheel_within1_vs_gt": 0.2916666666666667,
+   "cars_4wheel_pearson_vs_gt": 0.2847523658494158,
+   "mean_pedestrians": 3.2083333333333335,
+   "gt_mean_pedestrians": 8.875,
+   "pedestrians_mae_vs_gt": 5.666666666666667,
+   "pedestrians_bias_vs_gt": -5.666666666666667,
+   "pedestrians_exact_vs_gt": 0.0,
+   "pedestrians_within1_vs_gt": 0.0,
+   "pedestrians_pearson_vs_gt": 0.6573014920054976,
+   "mean_two_wheelers": 0.08333333333333333,
+   "gt_mean_two_wheelers": 0.08333333333333333,
+   "two_wheelers_mae_vs_gt": 0.16666666666666666,
+   "two_wheelers_bias_vs_gt": 0.0,
+   "two_wheelers_exact_vs_gt": 0.8333333333333334,
+   "two_wheelers_within1_vs_gt": 1.0,
+   "two_wheelers_pearson_vs_gt": -0.09090909090909093,
+   "vehicle_recall": 0.4460470085470085,
+   "vehicle_precision": 0.6703780016280017,
+   "person_recall": 0.20002069334710001,
+   "person_precision": 0.695124716553288,
+   "vehicle_count_abs_err_vs_oracle": 3.7916666666666665,
+   "person_count_abs_err_vs_oracle": 8.458333333333334,
+   "seconds": 10.479047295833311
+  }
+ },
+ "paired_abs_error_vs_gt": {},
+ "payload_per_camera_kb_mean": 55.595776754712304,
+ "original_photo_kb_mean": 547.7957976810516
+}
+ANALYSIS_DONE
+EXIT 0 Sun 10/25/2026 16:45:09.38 

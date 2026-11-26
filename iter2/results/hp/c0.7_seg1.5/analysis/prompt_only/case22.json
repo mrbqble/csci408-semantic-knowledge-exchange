@@ -1,0 +1,181 @@
+{
+ "case": "case22",
+ "reference": "cam1",
+ "variant": "prompt_only",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 0,
+  "bicycle": 0,
+  "car": 4,
+  "motorcycle": 0,
+  "bus": 1,
+  "truck": 0,
+  "cars_4wheel": 5,
+  "two_wheelers": 0,
+  "vehicles": 5,
+  "pedestrians": 0
+ },
+ "gt": {
+  "cars_4wheel": 12,
+  "pedestrians": 7,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "car",
+   "score": 0.999,
+   "bbox_master_px": [
+    377.7,
+    271.0,
+    523.3,
+    362.1
+   ],
+   "center_master_px": [
+    450.5,
+    316.5
+   ],
+   "ground_contact_master_px": [
+    450.5,
+    362.1
+   ],
+   "bbox_reference_px": [
+    708.1,
+    508.1,
+    981.1,
+    678.9
+   ],
+   "center_reference_px": [
+    844.6,
+    593.5
+   ]
+  },
+  {
+   "id": 1,
+   "class": "car",
+   "score": 0.998,
+   "bbox_master_px": [
+    224.0,
+    265.8,
+    297.5,
+    327.1
+   ],
+   "center_master_px": [
+    260.8,
+    296.4
+   ],
+   "ground_contact_master_px": [
+    260.8,
+    327.1
+   ],
+   "bbox_reference_px": [
+    420.1,
+    498.3,
+    557.8,
+    613.2
+   ],
+   "center_reference_px": [
+    488.9,
+    555.8
+   ]
+  },
+  {
+   "id": 2,
+   "class": "bus",
+   "score": 0.996,
+   "bbox_master_px": [
+    65.6,
+    196.9,
+    206.8,
+    328.1
+   ],
+   "center_master_px": [
+    136.2,
+    262.5
+   ],
+   "ground_contact_master_px": [
+    136.2,
+    328.1
+   ],
+   "bbox_reference_px": [
+    123.1,
+    369.1,
+    387.8,
+    615.2
+   ],
+   "center_reference_px": [
+    255.5,
+    492.2
+   ]
+  },
+  {
+   "id": 3,
+   "class": "car",
+   "score": 0.967,
+   "bbox_master_px": [
+    319.6,
+    253.7,
+    386.1,
+    309.8
+   ],
+   "center_master_px": [
+    352.9,
+    281.7
+   ],
+   "ground_contact_master_px": [
+    352.9,
+    309.8
+   ],
+   "bbox_reference_px": [
+    599.3,
+    475.7,
+    723.9,
+    580.9
+   ],
+   "center_reference_px": [
+    661.6,
+    528.3
+   ]
+  },
+  {
+   "id": 4,
+   "class": "car",
+   "score": 0.638,
+   "bbox_master_px": [
+    313.1,
+    247.9,
+    368.3,
+    297.3
+   ],
+   "center_master_px": [
+    340.7,
+    272.6
+   ],
+   "ground_contact_master_px": [
+    340.7,
+    297.3
+   ],
+   "bbox_reference_px": [
+    587.1,
+    464.7,
+    690.5,
+    557.5
+   ],
+   "center_reference_px": [
+    638.8,
+    511.1
+   ]
+  }
+ ],
+ "vehicle_recall": 0.45454545454545453,
+ "vehicle_precision": 1.0,
+ "person_recall": 0.0,
+ "person_precision": null,
+ "vehicle_count_abs_err_vs_oracle": 6,
+ "person_count_abs_err_vs_oracle": 8,
+ "seconds": 10.435652799998934,
+ "prompt": "a city street with a red bus and a red car, a city street with a bus and a bus stop, a car is parked in a parking lot, a city street with a bus and cars"
+}

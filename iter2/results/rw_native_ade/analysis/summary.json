@@ -1,0 +1,60 @@
+{
+ "detector": "torchvision fasterrcnn_resnet50_fpn_v2, COCO_V1",
+ "score_min": 0.5,
+ "match_iou": 0.5,
+ "variants": {
+  "oracle_full": {
+   "n_cases": 61,
+   "mean_cars_4wheel": 11.721311475409836,
+   "mean_pedestrians": 7.295081967213115,
+   "mean_two_wheelers": 0.4098360655737705,
+   "vehicle_recall": null,
+   "vehicle_precision": null,
+   "person_recall": null,
+   "person_precision": null,
+   "vehicle_count_abs_err_vs_oracle": null,
+   "person_count_abs_err_vs_oracle": null,
+   "seconds": null
+  },
+  "oracle_gen": {
+   "n_cases": 61,
+   "mean_cars_4wheel": 11.655737704918034,
+   "mean_pedestrians": 7.081967213114754,
+   "mean_two_wheelers": 0.08196721311475409,
+   "vehicle_recall": null,
+   "vehicle_precision": null,
+   "person_recall": null,
+   "person_precision": null,
+   "vehicle_count_abs_err_vs_oracle": null,
+   "person_count_abs_err_vs_oracle": null,
+   "seconds": null
+  },
+  "k1": {
+   "n_cases": 61,
+   "mean_cars_4wheel": 9.688524590163935,
+   "mean_pedestrians": 2.901639344262295,
+   "mean_two_wheelers": 0.03278688524590164,
+   "vehicle_recall": 0.6343933213330722,
+   "vehicle_precision": 0.7485738305410436,
+   "person_recall": 0.20140454783311926,
+   "person_precision": 0.5024954212454212,
+   "vehicle_count_abs_err_vs_oracle": 2.721311475409836,
+   "person_count_abs_err_vs_oracle": 4.344262295081967,
+   "seconds": 8.074703785245697
+  },
+  "prompt_only": {
+   "n_cases": 61,
+   "mean_cars_4wheel": 9.819672131147541,
+   "mean_pedestrians": 3.819672131147541,
+   "mean_two_wheelers": 0.03278688524590164,
+   "vehicle_recall": 0.6324195928523454,
+   "vehicle_precision": 0.7136984381090609,
+   "person_recall": 0.24497114988186416,
+   "person_precision": 0.4823786296008518,
+   "vehicle_count_abs_err_vs_oracle": 2.9508196721311477,
+   "person_count_abs_err_vs_oracle": 3.9508196721311477,
+   "seconds": 8.061130998360643
+  }
+ },
+ "paired_abs_error_vs_gt": {}
+}

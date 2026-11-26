@@ -1,0 +1,110 @@
+{
+ "case": "case111",
+ "variant": "prompt_refine",
+ "ip_adapter_scale": 0.0,
+ "ip_adapter_source": "none",
+ "reference": "cam1",
+ "supporting": [
+  "cam2",
+  "cam3",
+  "cam4",
+  "cam5"
+ ],
+ "timestamp": 7723,
+ "prompt": "a street scene with a tree and a car, a city street with a lot of cars and people, a city street with people walking on it, a police car is parked on the street, a street scene with cars and buildings",
+ "seconds": 21.376989900001718,
+ "peak_gpu_mb": 5394.6416015625,
+ "size": [
+  1024,
+  576
+ ],
+ "palette": "cs",
+ "ref_policy": "first",
+ "seed": 42,
+ "steps": 20,
+ "guidance": 7.5,
+ "donor_case": null,
+ "cn_scales": [
+  1.0,
+  1.0
+ ],
+ "edge_thr": 40,
+ "base": "existing prompt_only result",
+ "base_seconds": 10.51323290000073,
+ "refine_seconds": 10.863757000000987,
+ "refine": {
+  "n_small_blobs": 9,
+  "n_windows": 5,
+  "uncovered_blobs": 0,
+  "windows": [
+   {
+    "x0": 730,
+    "y0": 263,
+    "n_blobs": 4,
+    "blob_areas": [
+     866,
+     297,
+     197,
+     21
+    ],
+    "index": 0,
+    "seconds": 2.1661375999992742
+   },
+   {
+    "x0": 896,
+    "y0": 257,
+    "n_blobs": 2,
+    "blob_areas": [
+     17,
+     19
+    ],
+    "index": 1,
+    "seconds": 2.1828820000009728
+   },
+   {
+    "x0": 254,
+    "y0": 204,
+    "n_blobs": 1,
+    "blob_areas": [
+     844
+    ],
+    "index": 2,
+    "seconds": 2.172760900000867
+   },
+   {
+    "x0": 814,
+    "y0": 266,
+    "n_blobs": 1,
+    "blob_areas": [
+     757
+    ],
+    "index": 3,
+    "seconds": 2.1715973999998823
+   },
+   {
+    "x0": 344,
+    "y0": 199,
+    "n_blobs": 1,
+    "blob_areas": [
+     371
+    ],
+    "index": 4,
+    "seconds": 2.170379099999991
+   }
+  ],
+  "failures": [],
+  "seconds": 10.863757000000987
+ },
+ "refine_settings": {
+  "window": 128,
+  "upscale": 4,
+  "strength": 0.5,
+  "feather_px": 12,
+  "max_windows": 8,
+  "min_area": 12,
+  "max_side": 48,
+  "prompt": "cars on a city street, realistic photo, sharp",
+  "negative_prompt": "blurry, deformed, cartoon",
+  "seed": "42 + window index"
+ }
+}

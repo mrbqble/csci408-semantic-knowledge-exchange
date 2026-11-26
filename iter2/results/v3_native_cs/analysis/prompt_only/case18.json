@@ -1,0 +1,152 @@
+{
+ "case": "case18",
+ "reference": "cam1",
+ "variant": "prompt_only",
+ "master_size": [
+  896,
+  512
+ ],
+ "counts": {
+  "person": 1,
+  "bicycle": 0,
+  "car": 3,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 0,
+  "cars_4wheel": 3,
+  "two_wheelers": 0,
+  "vehicles": 3,
+  "pedestrians": 1
+ },
+ "gt": {
+  "cars_4wheel": 8,
+  "pedestrians": 5,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "car",
+   "score": 0.979,
+   "bbox_master_px": [
+    556.4,
+    243.8,
+    597.3,
+    279.9
+   ],
+   "center_master_px": [
+    576.9,
+    261.9
+   ],
+   "ground_contact_master_px": [
+    576.9,
+    279.9
+   ],
+   "bbox_reference_px": [
+    1192.4,
+    514.3,
+    1280.0,
+    590.5
+   ],
+   "center_reference_px": [
+    1236.2,
+    552.4
+   ]
+  },
+  {
+   "id": 1,
+   "class": "car",
+   "score": 0.929,
+   "bbox_master_px": [
+    869.5,
+    287.1,
+    895.9,
+    337.2
+   ],
+   "center_master_px": [
+    882.7,
+    312.2
+   ],
+   "ground_contact_master_px": [
+    882.7,
+    337.2
+   ],
+   "bbox_reference_px": [
+    1863.2,
+    605.6,
+    1919.7,
+    711.3
+   ],
+   "center_reference_px": [
+    1891.5,
+    658.5
+   ]
+  },
+  {
+   "id": 2,
+   "class": "car",
+   "score": 0.874,
+   "bbox_master_px": [
+    513.8,
+    248.2,
+    535.1,
+    269.6
+   ],
+   "center_master_px": [
+    524.4,
+    258.9
+   ],
+   "ground_contact_master_px": [
+    524.4,
+    269.6
+   ],
+   "bbox_reference_px": [
+    1100.9,
+    523.6,
+    1146.6,
+    568.7
+   ],
+   "center_reference_px": [
+    1123.8,
+    546.1
+   ]
+  },
+  {
+   "id": 3,
+   "class": "person",
+   "score": 0.733,
+   "bbox_master_px": [
+    0.1,
+    246.5,
+    15.9,
+    299.7
+   ],
+   "center_master_px": [
+    8.0,
+    273.1
+   ],
+   "ground_contact_master_px": [
+    8.0,
+    299.7
+   ],
+   "bbox_reference_px": [
+    0.2,
+    519.9,
+    34.2,
+    632.1
+   ],
+   "center_reference_px": [
+    17.2,
+    576.0
+   ]
+  }
+ ],
+ "vehicle_recall": 0.2,
+ "vehicle_precision": 0.3333333333333333,
+ "person_recall": 0.0,
+ "person_precision": 0.0,
+ "vehicle_count_abs_err_vs_oracle": 2,
+ "person_count_abs_err_vs_oracle": 6,
+ "seconds": 8.122245099999418,
+ "prompt": "a street with a car parked on it, a car is parked on the street in a city, a city street with a car parked on the side, a street scene with a car and a truck"
+}

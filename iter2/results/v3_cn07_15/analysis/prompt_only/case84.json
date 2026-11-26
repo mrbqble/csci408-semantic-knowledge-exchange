@@ -1,0 +1,123 @@
+{
+ "case": "case84",
+ "reference": "cam1",
+ "variant": "prompt_only",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 1,
+  "bicycle": 0,
+  "car": 2,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 0,
+  "cars_4wheel": 2,
+  "two_wheelers": 0,
+  "vehicles": 2,
+  "pedestrians": 1
+ },
+ "gt": {
+  "cars_4wheel": 5,
+  "pedestrians": 6,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "car",
+   "score": 1.0,
+   "bbox_master_px": [
+    690.5,
+    296.2,
+    848.6,
+    353.4
+   ],
+   "center_master_px": [
+    769.6,
+    324.8
+   ],
+   "ground_contact_master_px": [
+    769.6,
+    353.4
+   ],
+   "bbox_reference_px": [
+    1294.7,
+    555.3,
+    1591.1,
+    662.6
+   ],
+   "center_reference_px": [
+    1442.9,
+    609.0
+   ]
+  },
+  {
+   "id": 1,
+   "class": "car",
+   "score": 0.937,
+   "bbox_master_px": [
+    983.2,
+    190.4,
+    1024.0,
+    213.9
+   ],
+   "center_master_px": [
+    1003.6,
+    202.1
+   ],
+   "ground_contact_master_px": [
+    1003.6,
+    213.9
+   ],
+   "bbox_reference_px": [
+    1843.4,
+    357.0,
+    1920.0,
+    401.0
+   ],
+   "center_reference_px": [
+    1881.7,
+    379.0
+   ]
+  },
+  {
+   "id": 2,
+   "class": "person",
+   "score": 0.842,
+   "bbox_master_px": [
+    163.4,
+    279.3,
+    173.4,
+    312.3
+   ],
+   "center_master_px": [
+    168.4,
+    295.8
+   ],
+   "ground_contact_master_px": [
+    168.4,
+    312.3
+   ],
+   "bbox_reference_px": [
+    306.3,
+    523.7,
+    325.2,
+    585.5
+   ],
+   "center_reference_px": [
+    315.7,
+    554.6
+   ]
+  }
+ ],
+ "vehicle_recall": 0.5,
+ "vehicle_precision": 0.5,
+ "person_recall": 0.16666666666666666,
+ "person_precision": 1.0,
+ "vehicle_count_abs_err_vs_oracle": 0,
+ "person_count_abs_err_vs_oracle": 5,
+ "seconds": 10.473606100000325,
+ "prompt": "a car is parked on the street in front of a building, a red car parked on a street next to a building, a person walking across a street in a city, a white car parked in front of a building, a red car is parked on a city street, a white car parked on a city street"
+}

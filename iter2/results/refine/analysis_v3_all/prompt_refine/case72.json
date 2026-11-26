@@ -1,0 +1,210 @@
+{
+ "case": "case72",
+ "reference": "cam1",
+ "variant": "prompt_refine",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 1,
+  "bicycle": 0,
+  "car": 4,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 1,
+  "cars_4wheel": 5,
+  "two_wheelers": 0,
+  "vehicles": 5,
+  "pedestrians": 1
+ },
+ "gt": {
+  "cars_4wheel": 4,
+  "pedestrians": 8,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "car",
+   "score": 1.0,
+   "bbox_master_px": [
+    756.2,
+    318.2,
+    1024.0,
+    571.8
+   ],
+   "center_master_px": [
+    890.1,
+    445.0
+   ],
+   "ground_contact_master_px": [
+    890.1,
+    571.8
+   ],
+   "bbox_reference_px": [
+    1417.9,
+    596.6,
+    1920.0,
+    1072.1
+   ],
+   "center_reference_px": [
+    1669.0,
+    834.4
+   ]
+  },
+  {
+   "id": 1,
+   "class": "person",
+   "score": 0.999,
+   "bbox_master_px": [
+    211.3,
+    260.8,
+    230.3,
+    327.6
+   ],
+   "center_master_px": [
+    220.8,
+    294.2
+   ],
+   "ground_contact_master_px": [
+    220.8,
+    327.6
+   ],
+   "bbox_reference_px": [
+    396.1,
+    488.9,
+    431.8,
+    614.2
+   ],
+   "center_reference_px": [
+    414.0,
+    551.6
+   ]
+  },
+  {
+   "id": 2,
+   "class": "car",
+   "score": 0.999,
+   "bbox_master_px": [
+    348.4,
+    282.8,
+    507.4,
+    400.4
+   ],
+   "center_master_px": [
+    427.9,
+    341.6
+   ],
+   "ground_contact_master_px": [
+    427.9,
+    400.4
+   ],
+   "bbox_reference_px": [
+    653.2,
+    530.2,
+    951.5,
+    750.7
+   ],
+   "center_reference_px": [
+    802.3,
+    640.4
+   ]
+  },
+  {
+   "id": 3,
+   "class": "car",
+   "score": 0.897,
+   "bbox_master_px": [
+    830.5,
+    252.8,
+    927.8,
+    299.5
+   ],
+   "center_master_px": [
+    879.2,
+    276.2
+   ],
+   "ground_contact_master_px": [
+    879.2,
+    299.5
+   ],
+   "bbox_reference_px": [
+    1557.2,
+    474.0,
+    1739.6,
+    561.5
+   ],
+   "center_reference_px": [
+    1648.4,
+    517.8
+   ]
+  },
+  {
+   "id": 4,
+   "class": "car",
+   "score": 0.696,
+   "bbox_master_px": [
+    807.1,
+    258.1,
+    836.3,
+    269.1
+   ],
+   "center_master_px": [
+    821.7,
+    263.6
+   ],
+   "ground_contact_master_px": [
+    821.7,
+    269.1
+   ],
+   "bbox_reference_px": [
+    1513.3,
+    483.9,
+    1568.1,
+    504.6
+   ],
+   "center_reference_px": [
+    1540.7,
+    494.2
+   ]
+  },
+  {
+   "id": 5,
+   "class": "truck",
+   "score": 0.548,
+   "bbox_master_px": [
+    831.5,
+    252.5,
+    926.6,
+    300.2
+   ],
+   "center_master_px": [
+    879.1,
+    276.4
+   ],
+   "ground_contact_master_px": [
+    879.1,
+    300.2
+   ],
+   "bbox_reference_px": [
+    1559.1,
+    473.5,
+    1737.4,
+    562.9
+   ],
+   "center_reference_px": [
+    1648.3,
+    518.2
+   ]
+  }
+ ],
+ "vehicle_recall": 0.5714285714285714,
+ "vehicle_precision": 0.8,
+ "person_recall": 0.125,
+ "person_precision": 1.0,
+ "vehicle_count_abs_err_vs_oracle": 2,
+ "person_count_abs_err_vs_oracle": 7,
+ "seconds": 16.95291189999989,
+ "prompt": "a red car driving down a street next to a palm tree, a car is parked in a parking lot, a car driving down a street next to a building, a city street, a red car driving down a street next to a traffic light, a red car driving down a street next to a building"
+}

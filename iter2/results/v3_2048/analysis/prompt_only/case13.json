@@ -1,0 +1,94 @@
+{
+ "case": "case13",
+ "reference": "cam1",
+ "variant": "prompt_only",
+ "master_size": [
+  2048,
+  1152
+ ],
+ "counts": {
+  "person": 2,
+  "bicycle": 0,
+  "car": 0,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 0,
+  "cars_4wheel": 0,
+  "two_wheelers": 0,
+  "vehicles": 0,
+  "pedestrians": 2
+ },
+ "gt": {
+  "cars_4wheel": 6,
+  "pedestrians": 14,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "person",
+   "score": 0.997,
+   "bbox_master_px": [
+    529.2,
+    749.8,
+    925.4,
+    1142.2
+   ],
+   "center_master_px": [
+    727.3,
+    946.0
+   ],
+   "ground_contact_master_px": [
+    727.3,
+    1142.2
+   ],
+   "bbox_reference_px": [
+    496.1,
+    702.9,
+    867.6,
+    1070.8
+   ],
+   "center_reference_px": [
+    681.8,
+    886.9
+   ]
+  },
+  {
+   "id": 1,
+   "class": "person",
+   "score": 0.607,
+   "bbox_master_px": [
+    1979.3,
+    584.4,
+    2024.3,
+    712.5
+   ],
+   "center_master_px": [
+    2001.8,
+    648.4
+   ],
+   "ground_contact_master_px": [
+    2001.8,
+    712.5
+   ],
+   "bbox_reference_px": [
+    1855.6,
+    547.8,
+    1897.8,
+    668.0
+   ],
+   "center_reference_px": [
+    1876.7,
+    607.9
+   ]
+  }
+ ],
+ "vehicle_recall": 0.0,
+ "vehicle_precision": null,
+ "person_recall": 0.11764705882352941,
+ "person_precision": 1.0,
+ "vehicle_count_abs_err_vs_oracle": 6,
+ "person_count_abs_err_vs_oracle": 15,
+ "seconds": 93.87742350000008,
+ "prompt": "a woman in a red dress, a police car, a car is driving down the street in a city"
+}

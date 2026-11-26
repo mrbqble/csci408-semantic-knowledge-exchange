@@ -1,0 +1,268 @@
+{
+ "case": "case92",
+ "reference": "cam1",
+ "variant": "prompt_only",
+ "master_size": [
+  896,
+  512
+ ],
+ "counts": {
+  "person": 2,
+  "bicycle": 0,
+  "car": 6,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 0,
+  "cars_4wheel": 6,
+  "two_wheelers": 0,
+  "vehicles": 6,
+  "pedestrians": 2
+ },
+ "gt": {
+  "cars_4wheel": 5,
+  "pedestrians": 6,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "car",
+   "score": 0.998,
+   "bbox_master_px": [
+    549.9,
+    257.9,
+    585.0,
+    285.0
+   ],
+   "center_master_px": [
+    567.4,
+    271.4
+   ],
+   "ground_contact_master_px": [
+    567.4,
+    285.0
+   ],
+   "bbox_reference_px": [
+    1178.3,
+    544.0,
+    1253.5,
+    601.1
+   ],
+   "center_reference_px": [
+    1215.9,
+    572.5
+   ]
+  },
+  {
+   "id": 1,
+   "class": "car",
+   "score": 0.998,
+   "bbox_master_px": [
+    438.2,
+    265.1,
+    504.1,
+    315.7
+   ],
+   "center_master_px": [
+    471.1,
+    290.4
+   ],
+   "ground_contact_master_px": [
+    471.1,
+    315.7
+   ],
+   "bbox_reference_px": [
+    938.9,
+    559.3,
+    1080.3,
+    666.0
+   ],
+   "center_reference_px": [
+    1009.6,
+    612.7
+   ]
+  },
+  {
+   "id": 2,
+   "class": "person",
+   "score": 0.997,
+   "bbox_master_px": [
+    127.0,
+    248.2,
+    155.7,
+    314.9
+   ],
+   "center_master_px": [
+    141.3,
+    281.5
+   ],
+   "ground_contact_master_px": [
+    141.3,
+    314.9
+   ],
+   "bbox_reference_px": [
+    272.1,
+    523.5,
+    333.6,
+    664.2
+   ],
+   "center_reference_px": [
+    302.9,
+    593.8
+   ]
+  },
+  {
+   "id": 3,
+   "class": "car",
+   "score": 0.966,
+   "bbox_master_px": [
+    506.8,
+    256.1,
+    532.2,
+    273.7
+   ],
+   "center_master_px": [
+    519.5,
+    264.9
+   ],
+   "ground_contact_master_px": [
+    519.5,
+    273.7
+   ],
+   "bbox_reference_px": [
+    1086.0,
+    540.2,
+    1140.5,
+    577.4
+   ],
+   "center_reference_px": [
+    1113.3,
+    558.8
+   ]
+  },
+  {
+   "id": 4,
+   "class": "person",
+   "score": 0.93,
+   "bbox_master_px": [
+    15.7,
+    250.1,
+    38.5,
+    314.0
+   ],
+   "center_master_px": [
+    27.1,
+    282.1
+   ],
+   "ground_contact_master_px": [
+    27.1,
+    314.0
+   ],
+   "bbox_reference_px": [
+    33.6,
+    527.5,
+    82.4,
+    662.4
+   ],
+   "center_reference_px": [
+    58.0,
+    595.0
+   ]
+  },
+  {
+   "id": 5,
+   "class": "car",
+   "score": 0.886,
+   "bbox_master_px": [
+    590.6,
+    256.2,
+    619.9,
+    271.4
+   ],
+   "center_master_px": [
+    605.2,
+    263.8
+   ],
+   "ground_contact_master_px": [
+    605.2,
+    271.4
+   ],
+   "bbox_reference_px": [
+    1265.5,
+    540.5,
+    1328.4,
+    572.4
+   ],
+   "center_reference_px": [
+    1297.0,
+    556.5
+   ]
+  },
+  {
+   "id": 6,
+   "class": "car",
+   "score": 0.747,
+   "bbox_master_px": [
+    453.9,
+    259.1,
+    500.7,
+    274.7
+   ],
+   "center_master_px": [
+    477.3,
+    266.9
+   ],
+   "ground_contact_master_px": [
+    477.3,
+    274.7
+   ],
+   "bbox_reference_px": [
+    972.7,
+    546.6,
+    1072.9,
+    579.5
+   ],
+   "center_reference_px": [
+    1022.8,
+    563.0
+   ]
+  },
+  {
+   "id": 7,
+   "class": "car",
+   "score": 0.634,
+   "bbox_master_px": [
+    530.2,
+    255.1,
+    547.5,
+    270.6
+   ],
+   "center_master_px": [
+    538.8,
+    262.8
+   ],
+   "ground_contact_master_px": [
+    538.8,
+    270.6
+   ],
+   "bbox_reference_px": [
+    1136.0,
+    538.0,
+    1173.3,
+    570.9
+   ],
+   "center_reference_px": [
+    1154.7,
+    554.4
+   ]
+  }
+ ],
+ "vehicle_recall": 1.0,
+ "vehicle_precision": 0.6666666666666666,
+ "person_recall": 0.3333333333333333,
+ "person_precision": 1.0,
+ "vehicle_count_abs_err_vs_oracle": 2,
+ "person_count_abs_err_vs_oracle": 4,
+ "seconds": 8.133311699999467,
+ "prompt": "a street with a car driving down it, a car driving down a street next to a building, a street scene with a crosswalk and a stop sign, a street with a car and a person walking on the sidewalk"
+}

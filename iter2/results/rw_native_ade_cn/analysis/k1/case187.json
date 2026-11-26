@@ -1,0 +1,206 @@
+{
+ "case": "case187",
+ "reference": "cam1",
+ "variant": "k1",
+ "master_size": [
+  896,
+  512
+ ],
+ "counts": {
+  "person": 3,
+  "bicycle": 0,
+  "car": 0,
+  "motorcycle": 0,
+  "bus": 3,
+  "truck": 0,
+  "cars_4wheel": 3,
+  "two_wheelers": 0,
+  "vehicles": 3,
+  "pedestrians": 3
+ },
+ "gt": null,
+ "detections": [
+  {
+   "id": 0,
+   "class": "bus",
+   "score": 0.998,
+   "bbox_master_px": [
+    99.7,
+    0.9,
+    896.0,
+    506.2
+   ],
+   "center_master_px": [
+    497.9,
+    253.5
+   ],
+   "ground_contact_master_px": [
+    497.9,
+    506.2
+   ],
+   "bbox_reference_px": [
+    213.7,
+    1.9,
+    1920.0,
+    1067.8
+   ],
+   "center_reference_px": [
+    1066.9,
+    534.8
+   ]
+  },
+  {
+   "id": 1,
+   "class": "person",
+   "score": 0.923,
+   "bbox_master_px": [
+    59.8,
+    180.0,
+    132.1,
+    325.7
+   ],
+   "center_master_px": [
+    95.9,
+    252.9
+   ],
+   "ground_contact_master_px": [
+    95.9,
+    325.7
+   ],
+   "bbox_reference_px": [
+    128.1,
+    379.7,
+    283.0,
+    687.1
+   ],
+   "center_reference_px": [
+    205.6,
+    533.4
+   ]
+  },
+  {
+   "id": 2,
+   "class": "person",
+   "score": 0.765,
+   "bbox_master_px": [
+    571.6,
+    203.2,
+    594.1,
+    229.4
+   ],
+   "center_master_px": [
+    582.9,
+    216.3
+   ],
+   "ground_contact_master_px": [
+    582.9,
+    229.4
+   ],
+   "bbox_reference_px": [
+    1224.8,
+    428.6,
+    1273.1,
+    484.0
+   ],
+   "center_reference_px": [
+    1249.0,
+    456.3
+   ]
+  },
+  {
+   "id": 3,
+   "class": "person",
+   "score": 0.576,
+   "bbox_master_px": [
+    435.9,
+    200.7,
+    465.3,
+    241.0
+   ],
+   "center_master_px": [
+    450.6,
+    220.8
+   ],
+   "ground_contact_master_px": [
+    450.6,
+    241.0
+   ],
+   "bbox_reference_px": [
+    934.1,
+    423.2,
+    997.1,
+    508.3
+   ],
+   "center_reference_px": [
+    965.6,
+    465.8
+   ]
+  },
+  {
+   "id": 4,
+   "class": "bus",
+   "score": 0.561,
+   "bbox_master_px": [
+    2.6,
+    2.4,
+    485.8,
+    508.3
+   ],
+   "center_master_px": [
+    244.2,
+    255.4
+   ],
+   "ground_contact_master_px": [
+    244.2,
+    508.3
+   ],
+   "bbox_reference_px": [
+    5.6,
+    5.1,
+    1041.0,
+    1072.3
+   ],
+   "center_reference_px": [
+    523.3,
+    538.7
+   ]
+  },
+  {
+   "id": 5,
+   "class": "bus",
+   "score": 0.502,
+   "bbox_master_px": [
+    718.9,
+    47.5,
+    896.0,
+    472.1
+   ],
+   "center_master_px": [
+    807.4,
+    259.8
+   ],
+   "ground_contact_master_px": [
+    807.4,
+    472.1
+   ],
+   "bbox_reference_px": [
+    1540.4,
+    100.2,
+    1920.0,
+    995.8
+   ],
+   "center_reference_px": [
+    1730.2,
+    548.0
+   ]
+  }
+ ],
+ "vehicle_recall": 0.6666666666666666,
+ "vehicle_precision": 0.6666666666666666,
+ "person_recall": 0.25,
+ "person_precision": 0.3333333333333333,
+ "vehicle_count_abs_err_vs_oracle": 0,
+ "person_count_abs_err_vs_oracle": 1,
+ "seconds": 7.7116556000000855,
+ "prompt": "a bus with a green and white stripe on it"
+}

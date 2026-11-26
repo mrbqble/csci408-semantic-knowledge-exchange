@@ -1,0 +1,152 @@
+{
+ "case": "case85",
+ "reference": "cam1",
+ "variant": "prompt_only",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 0,
+  "bicycle": 0,
+  "car": 3,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 1,
+  "cars_4wheel": 4,
+  "two_wheelers": 0,
+  "vehicles": 4,
+  "pedestrians": 0
+ },
+ "gt": {
+  "cars_4wheel": 6,
+  "pedestrians": 12,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "car",
+   "score": 0.999,
+   "bbox_master_px": [
+    87.3,
+    284.4,
+    356.2,
+    429.1
+   ],
+   "center_master_px": [
+    221.7,
+    356.7
+   ],
+   "ground_contact_master_px": [
+    221.7,
+    429.1
+   ],
+   "bbox_reference_px": [
+    163.6,
+    533.3,
+    667.9,
+    804.5
+   ],
+   "center_reference_px": [
+    415.8,
+    668.9
+   ]
+  },
+  {
+   "id": 1,
+   "class": "car",
+   "score": 0.999,
+   "bbox_master_px": [
+    474.4,
+    299.2,
+    590.3,
+    373.5
+   ],
+   "center_master_px": [
+    532.4,
+    336.3
+   ],
+   "ground_contact_master_px": [
+    532.4,
+    373.5
+   ],
+   "bbox_reference_px": [
+    889.6,
+    561.0,
+    1106.8,
+    700.3
+   ],
+   "center_reference_px": [
+    998.2,
+    630.6
+   ]
+  },
+  {
+   "id": 2,
+   "class": "truck",
+   "score": 0.768,
+   "bbox_master_px": [
+    828.6,
+    269.0,
+    896.5,
+    318.0
+   ],
+   "center_master_px": [
+    862.6,
+    293.5
+   ],
+   "ground_contact_master_px": [
+    862.6,
+    318.0
+   ],
+   "bbox_reference_px": [
+    1553.7,
+    504.4,
+    1680.9,
+    596.2
+   ],
+   "center_reference_px": [
+    1617.3,
+    550.3
+   ]
+  },
+  {
+   "id": 3,
+   "class": "car",
+   "score": 0.76,
+   "bbox_master_px": [
+    786.3,
+    282.5,
+    830.5,
+    310.3
+   ],
+   "center_master_px": [
+    808.4,
+    296.4
+   ],
+   "ground_contact_master_px": [
+    808.4,
+    310.3
+   ],
+   "bbox_reference_px": [
+    1474.2,
+    529.6,
+    1557.1,
+    581.8
+   ],
+   "center_reference_px": [
+    1515.7,
+    555.7
+   ]
+  }
+ ],
+ "vehicle_recall": 0.5714285714285714,
+ "vehicle_precision": 1.0,
+ "person_recall": 0.0,
+ "person_precision": null,
+ "vehicle_count_abs_err_vs_oracle": 3,
+ "person_count_abs_err_vs_oracle": 13,
+ "seconds": 10.476455399999395,
+ "prompt": "a car driving down a street next to palm trees, gta - screens - gta - screens - gta - gta - gta - gt, a car driving down a street in the city"
+}

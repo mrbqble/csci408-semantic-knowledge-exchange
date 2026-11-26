@@ -1,0 +1,82 @@
+{
+ "case": "case181",
+ "reference": "cam1",
+ "variant": "oracle_gen",
+ "master_size": [
+  896,
+  512
+ ],
+ "counts": {
+  "person": 0,
+  "bicycle": 0,
+  "car": 1,
+  "motorcycle": 0,
+  "bus": 1,
+  "truck": 0,
+  "cars_4wheel": 2,
+  "two_wheelers": 0,
+  "vehicles": 2,
+  "pedestrians": 0
+ },
+ "gt": null,
+ "detections": [
+  {
+   "id": 0,
+   "class": "bus",
+   "score": 0.998,
+   "bbox_master_px": [
+    169.5,
+    0.0,
+    892.6,
+    512.0
+   ],
+   "center_master_px": [
+    531.0,
+    256.0
+   ],
+   "ground_contact_master_px": [
+    531.0,
+    512.0
+   ],
+   "bbox_reference_px": [
+    363.1,
+    0.0,
+    1912.8,
+    1080.0
+   ],
+   "center_reference_px": [
+    1137.9,
+    540.0
+   ]
+  },
+  {
+   "id": 1,
+   "class": "car",
+   "score": 0.959,
+   "bbox_master_px": [
+    505.3,
+    226.1,
+    597.1,
+    260.9
+   ],
+   "center_master_px": [
+    551.2,
+    243.5
+   ],
+   "ground_contact_master_px": [
+    551.2,
+    260.9
+   ],
+   "bbox_reference_px": [
+    1082.7,
+    476.9,
+    1279.5,
+    550.3
+   ],
+   "center_reference_px": [
+    1181.1,
+    513.6
+   ]
+  }
+ ]
+}

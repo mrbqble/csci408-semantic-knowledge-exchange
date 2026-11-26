@@ -1,0 +1,119 @@
+{
+ "case": "case12",
+ "variant": "prompt_refine",
+ "ip_adapter_scale": 0.0,
+ "ip_adapter_source": "none",
+ "reference": "cam1",
+ "supporting": [
+  "cam2",
+  "cam3",
+  "cam4",
+  "cam5",
+  "cam6"
+ ],
+ "timestamp": 6007,
+ "prompt": "a city street with a bus and people walking, a red truck driving down a street next to a tall building, a black and white van, a man standing on a sidewalk, a red truck, a city street",
+ "seconds": 24.17503370000668,
+ "peak_gpu_mb": 5394.6416015625,
+ "size": [
+  1024,
+  576
+ ],
+ "palette": "cs",
+ "ref_policy": "first",
+ "seed": 42,
+ "steps": 20,
+ "guidance": 7.5,
+ "donor_case": null,
+ "cn_scales": [
+  1.0,
+  1.0
+ ],
+ "edge_thr": 40,
+ "base": "existing prompt_only result",
+ "base_seconds": 11.05667490000269,
+ "refine_seconds": 13.118358800003989,
+ "refine": {
+  "n_small_blobs": 8,
+  "n_windows": 6,
+  "uncovered_blobs": 0,
+  "windows": [
+   {
+    "x0": 631,
+    "y0": 207,
+    "n_blobs": 3,
+    "blob_areas": [
+     262,
+     301,
+     26
+    ],
+    "index": 0,
+    "seconds": 2.1795891000001575
+   },
+   {
+    "x0": 138,
+    "y0": 195,
+    "n_blobs": 1,
+    "blob_areas": [
+     88
+    ],
+    "index": 1,
+    "seconds": 2.192626600000949
+   },
+   {
+    "x0": 287,
+    "y0": 229,
+    "n_blobs": 1,
+    "blob_areas": [
+     37
+    ],
+    "index": 2,
+    "seconds": 2.183840700001383
+   },
+   {
+    "x0": 737,
+    "y0": 244,
+    "n_blobs": 1,
+    "blob_areas": [
+     24
+    ],
+    "index": 3,
+    "seconds": 2.184870300001421
+   },
+   {
+    "x0": 520,
+    "y0": 203,
+    "n_blobs": 1,
+    "blob_areas": [
+     16
+    ],
+    "index": 4,
+    "seconds": 2.1900905999991664
+   },
+   {
+    "x0": 208,
+    "y0": 239,
+    "n_blobs": 1,
+    "blob_areas": [
+     12
+    ],
+    "index": 5,
+    "seconds": 2.1873415000009118
+   }
+  ],
+  "failures": [],
+  "seconds": 13.118358800003989
+ },
+ "refine_settings": {
+  "window": 128,
+  "upscale": 4,
+  "strength": 0.5,
+  "feather_px": 12,
+  "max_windows": 8,
+  "min_area": 12,
+  "max_side": 48,
+  "prompt": "cars on a city street, realistic photo, sharp",
+  "negative_prompt": "blurry, deformed, cartoon",
+  "seed": "42 + window index"
+ }
+}

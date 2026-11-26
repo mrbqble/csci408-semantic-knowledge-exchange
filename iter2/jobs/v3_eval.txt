@@ -1,0 +1,30 @@
+mean GT objects per case: {"vehicle": {"rec1": 8.1875, "union": 17.741071428571427, "hidden_from_rec1": 9.553571428571429}, "pedestrian": {"rec1": 9.294642857142858, "union": 24.125, "hidden_from_rec1": 14.830357142857142}}
+kind       method              ref       MAE   bias  recall   prec  pos err m
+pedestrian geofuse_F0          rec1     2.51  -0.62    0.32   0.34       0.96
+pedestrian geofuse_F0          union   15.50 -15.45    0.14   0.38       0.95
+pedestrian geofuse_F3          rec1     2.65   0.13    0.34   0.33       0.95
+pedestrian geofuse_F3          union   14.77 -14.70    0.16   0.40       0.92
+pedestrian geofuse_scene_all   rec1    26.23  26.23    0.52   0.14       0.88
+pedestrian geofuse_scene_all   union   12.46  11.40    0.41   0.28       0.93
+pedestrian geofuse_scene_min2  rec1     7.50  -7.50    0.09   0.47       0.71
+pedestrian geofuse_scene_min2  union   22.33 -22.33    0.06   0.83       0.67
+pedestrian k1                  rec1     5.53  -5.13    0.22   0.49       0.84
+pedestrian k1                  union   19.96 -19.96    0.09   0.51       0.86
+pedestrian oracle_gen          rec1     3.55   3.34    0.34   0.25       1.21
+pedestrian oracle_gen          union   11.72 -11.49    0.15   0.28       1.15
+pedestrian prompt_only         rec1     4.75  -4.07    0.25   0.44       0.83
+pedestrian prompt_only         union   18.90 -18.90    0.10   0.47       0.87
+vehicle    geofuse_F0          rec1     3.29  -2.52    0.32   0.46       1.77
+vehicle    geofuse_F0          union   12.14 -12.07    0.15   0.47       1.78
+vehicle    geofuse_F3          rec1     3.08  -1.28    0.38   0.45       1.73
+vehicle    geofuse_F3          union   10.99 -10.83    0.18   0.46       1.78
+vehicle    geofuse_scene_all   rec1    14.42  14.35    0.54   0.20       1.68
+vehicle    geofuse_scene_all   union    7.17   4.79    0.35   0.28       1.75
+vehicle    geofuse_scene_min2  rec1     5.02  -4.71    0.24   0.56       1.79
+vehicle    geofuse_scene_min2  union   14.27 -14.27    0.14   0.72       1.82
+vehicle    k1                  rec1     3.17  -2.40    0.36   0.51       1.73
+vehicle    k1                  union   12.03 -11.96    0.16   0.50       1.74
+vehicle    oracle_gen          rec1     1.48  -0.93    0.61   0.69       1.62
+vehicle    oracle_gen          union   10.50 -10.48    0.28   0.68       1.62
+vehicle    prompt_only         rec1     2.71  -1.84    0.38   0.49       1.70
+vehicle    prompt_only         union   11.48 -11.39    0.17   0.47       1.70

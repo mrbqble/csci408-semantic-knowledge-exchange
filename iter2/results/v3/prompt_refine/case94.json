@@ -1,0 +1,78 @@
+{
+ "case": "case94",
+ "variant": "prompt_refine",
+ "ip_adapter_scale": 0.0,
+ "ip_adapter_source": "none",
+ "reference": "cam1",
+ "supporting": [
+  "cam2",
+  "cam3",
+  "cam4"
+ ],
+ "timestamp": 9007,
+ "prompt": "a street scene with a traffic light and palm trees, a car driving down a street next to a red truck, a police car driving down a street next to a police car, a police officer in a city street",
+ "seconds": 14.843224599997484,
+ "peak_gpu_mb": 5394.6416015625,
+ "size": [
+  1024,
+  576
+ ],
+ "palette": "cs",
+ "ref_policy": "first",
+ "seed": 42,
+ "steps": 20,
+ "guidance": 7.5,
+ "donor_case": null,
+ "cn_scales": [
+  1.0,
+  1.0
+ ],
+ "edge_thr": 40,
+ "base": "existing prompt_only result",
+ "base_seconds": 10.496533899997303,
+ "refine_seconds": 4.346690700000181,
+ "refine": {
+  "n_small_blobs": 5,
+  "n_windows": 2,
+  "uncovered_blobs": 0,
+  "windows": [
+   {
+    "x0": 471,
+    "y0": 227,
+    "n_blobs": 3,
+    "blob_areas": [
+     175,
+     31,
+     14
+    ],
+    "index": 0,
+    "seconds": 2.1651409000005515
+   },
+   {
+    "x0": 664,
+    "y0": 201,
+    "n_blobs": 2,
+    "blob_areas": [
+     100,
+     34
+    ],
+    "index": 1,
+    "seconds": 2.1815497999996296
+   }
+  ],
+  "failures": [],
+  "seconds": 4.346690700000181
+ },
+ "refine_settings": {
+  "window": 128,
+  "upscale": 4,
+  "strength": 0.5,
+  "feather_px": 12,
+  "max_windows": 8,
+  "min_area": 12,
+  "max_side": 48,
+  "prompt": "cars on a city street, realistic photo, sharp",
+  "negative_prompt": "blurry, deformed, cartoon",
+  "seed": "42 + window index"
+ }
+}

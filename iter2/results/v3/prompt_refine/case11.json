@@ -1,0 +1,110 @@
+{
+ "case": "case11",
+ "variant": "prompt_refine",
+ "ip_adapter_scale": 0.0,
+ "ip_adapter_source": "none",
+ "reference": "cam1",
+ "supporting": [
+  "cam2",
+  "cam3",
+  "cam4",
+  "cam5"
+ ],
+ "timestamp": 4166,
+ "prompt": "a street scene with a bus and a bus stop, a police car is parked on the side of the road, a red car is parked in a parking, a city street with a bus and people walking, a woman walking down a street next to a bus",
+ "seconds": 21.93981580000218,
+ "peak_gpu_mb": 5394.6416015625,
+ "size": [
+  1024,
+  576
+ ],
+ "palette": "cs",
+ "ref_policy": "first",
+ "seed": 42,
+ "steps": 20,
+ "guidance": 7.5,
+ "donor_case": null,
+ "cn_scales": [
+  1.0,
+  1.0
+ ],
+ "edge_thr": 40,
+ "base": "existing prompt_only result",
+ "base_seconds": 10.999499900000956,
+ "refine_seconds": 10.940315900001224,
+ "refine": {
+  "n_small_blobs": 9,
+  "n_windows": 5,
+  "uncovered_blobs": 0,
+  "windows": [
+   {
+    "x0": 742,
+    "y0": 220,
+    "n_blobs": 5,
+    "blob_areas": [
+     975,
+     15,
+     145,
+     32,
+     16
+    ],
+    "index": 0,
+    "seconds": 2.187554699999964
+   },
+   {
+    "x0": 548,
+    "y0": 244,
+    "n_blobs": 1,
+    "blob_areas": [
+     410
+    ],
+    "index": 1,
+    "seconds": 2.195743600001151
+   },
+   {
+    "x0": 0,
+    "y0": 263,
+    "n_blobs": 1,
+    "blob_areas": [
+     319
+    ],
+    "index": 2,
+    "seconds": 2.1765322999999626
+   },
+   {
+    "x0": 402,
+    "y0": 247,
+    "n_blobs": 1,
+    "blob_areas": [
+     220
+    ],
+    "index": 3,
+    "seconds": 2.1884055999998964
+   },
+   {
+    "x0": 487,
+    "y0": 229,
+    "n_blobs": 1,
+    "blob_areas": [
+     106
+    ],
+    "index": 4,
+    "seconds": 2.1920797000002494
+   }
+  ],
+  "failures": [],
+  "seconds": 10.940315900001224
+ },
+ "refine_settings": {
+  "window": 128,
+  "upscale": 4,
+  "strength": 0.5,
+  "feather_px": 12,
+  "max_windows": 8,
+  "min_area": 12,
+  "max_side": 48,
+  "prompt": "cars on a city street, realistic photo, sharp",
+  "negative_prompt": "blurry, deformed, cartoon",
+  "seed": "42 + window index"
+ }
+}

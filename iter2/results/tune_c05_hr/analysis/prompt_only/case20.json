@@ -1,0 +1,268 @@
+{
+ "case": "case20",
+ "reference": "cam1",
+ "variant": "prompt_only",
+ "master_size": [
+  1280,
+  704
+ ],
+ "counts": {
+  "person": 0,
+  "bicycle": 0,
+  "car": 7,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 1,
+  "cars_4wheel": 8,
+  "two_wheelers": 0,
+  "vehicles": 8,
+  "pedestrians": 0
+ },
+ "gt": {
+  "cars_4wheel": 4,
+  "pedestrians": 5,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "car",
+   "score": 0.994,
+   "bbox_master_px": [
+    960.6,
+    294.2,
+    1022.9,
+    331.3
+   ],
+   "center_master_px": [
+    991.7,
+    312.7
+   ],
+   "ground_contact_master_px": [
+    991.7,
+    331.3
+   ],
+   "bbox_reference_px": [
+    1440.9,
+    451.3,
+    1534.3,
+    508.2
+   ],
+   "center_reference_px": [
+    1487.6,
+    479.7
+   ]
+  },
+  {
+   "id": 1,
+   "class": "car",
+   "score": 0.993,
+   "bbox_master_px": [
+    1107.5,
+    290.1,
+    1140.3,
+    308.7
+   ],
+   "center_master_px": [
+    1123.9,
+    299.4
+   ],
+   "ground_contact_master_px": [
+    1123.9,
+    308.7
+   ],
+   "bbox_reference_px": [
+    1661.3,
+    445.1,
+    1710.5,
+    473.5
+   ],
+   "center_reference_px": [
+    1685.9,
+    459.3
+   ]
+  },
+  {
+   "id": 2,
+   "class": "car",
+   "score": 0.985,
+   "bbox_master_px": [
+    1011.9,
+    284.0,
+    1073.0,
+    329.6
+   ],
+   "center_master_px": [
+    1042.4,
+    306.8
+   ],
+   "ground_contact_master_px": [
+    1042.4,
+    329.6
+   ],
+   "bbox_reference_px": [
+    1517.8,
+    435.6,
+    1609.4,
+    505.6
+   ],
+   "center_reference_px": [
+    1563.6,
+    470.6
+   ]
+  },
+  {
+   "id": 3,
+   "class": "truck",
+   "score": 0.843,
+   "bbox_master_px": [
+    358.7,
+    251.1,
+    657.6,
+    429.1
+   ],
+   "center_master_px": [
+    508.2,
+    340.1
+   ],
+   "ground_contact_master_px": [
+    508.2,
+    429.1
+   ],
+   "bbox_reference_px": [
+    538.0,
+    385.2,
+    986.5,
+    658.3
+   ],
+   "center_reference_px": [
+    762.2,
+    521.7
+   ]
+  },
+  {
+   "id": 4,
+   "class": "car",
+   "score": 0.739,
+   "bbox_master_px": [
+    1092.6,
+    289.0,
+    1113.8,
+    302.5
+   ],
+   "center_master_px": [
+    1103.2,
+    295.8
+   ],
+   "ground_contact_master_px": [
+    1103.2,
+    302.5
+   ],
+   "bbox_reference_px": [
+    1638.9,
+    443.4,
+    1670.7,
+    464.0
+   ],
+   "center_reference_px": [
+    1654.8,
+    453.7
+   ]
+  },
+  {
+   "id": 5,
+   "class": "car",
+   "score": 0.692,
+   "bbox_master_px": [
+    1136.1,
+    275.3,
+    1148.7,
+    288.1
+   ],
+   "center_master_px": [
+    1142.4,
+    281.7
+   ],
+   "ground_contact_master_px": [
+    1142.4,
+    288.1
+   ],
+   "bbox_reference_px": [
+    1704.1,
+    422.3,
+    1723.0,
+    441.9
+   ],
+   "center_reference_px": [
+    1713.6,
+    432.1
+   ]
+  },
+  {
+   "id": 6,
+   "class": "car",
+   "score": 0.654,
+   "bbox_master_px": [
+    362.0,
+    249.8,
+    662.6,
+    429.0
+   ],
+   "center_master_px": [
+    512.3,
+    339.4
+   ],
+   "ground_contact_master_px": [
+    512.3,
+    429.0
+   ],
+   "bbox_reference_px": [
+    543.0,
+    383.2,
+    993.9,
+    658.0
+   ],
+   "center_reference_px": [
+    768.5,
+    520.6
+   ]
+  },
+  {
+   "id": 7,
+   "class": "car",
+   "score": 0.641,
+   "bbox_master_px": [
+    1139.7,
+    291.8,
+    1160.3,
+    307.2
+   ],
+   "center_master_px": [
+    1150.0,
+    299.5
+   ],
+   "ground_contact_master_px": [
+    1150.0,
+    307.2
+   ],
+   "bbox_reference_px": [
+    1709.5,
+    447.7,
+    1740.5,
+    471.3
+   ],
+   "center_reference_px": [
+    1725.0,
+    459.5
+   ]
+  }
+ ],
+ "vehicle_recall": 0.2,
+ "vehicle_precision": 0.125,
+ "person_recall": 0.0,
+ "person_precision": null,
+ "vehicle_count_abs_err_vs_oracle": 3,
+ "person_count_abs_err_vs_oracle": 7,
+ "seconds": 19.39086060000045,
+ "prompt": "a white van driving down a street next to a red sign, a street with a white crosswalk, a woman walking down a sidewalk next to a tree, a van parked on the side of a road, a white van parked on the side of a road, a red car is driving down a street"
+}

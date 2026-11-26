@@ -1,0 +1,94 @@
+{
+ "case": "case107",
+ "reference": "cam1",
+ "variant": "prompt_only",
+ "master_size": [
+  896,
+  512
+ ],
+ "counts": {
+  "person": 2,
+  "bicycle": 0,
+  "car": 0,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 0,
+  "cars_4wheel": 0,
+  "two_wheelers": 0,
+  "vehicles": 0,
+  "pedestrians": 2
+ },
+ "gt": {
+  "cars_4wheel": 3,
+  "pedestrians": 6,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "person",
+   "score": 0.879,
+   "bbox_master_px": [
+    327.1,
+    170.5,
+    340.3,
+    210.2
+   ],
+   "center_master_px": [
+    333.7,
+    190.3
+   ],
+   "ground_contact_master_px": [
+    333.7,
+    210.2
+   ],
+   "bbox_reference_px": [
+    700.9,
+    359.6,
+    729.2,
+    443.4
+   ],
+   "center_reference_px": [
+    715.1,
+    401.5
+   ]
+  },
+  {
+   "id": 1,
+   "class": "person",
+   "score": 0.686,
+   "bbox_master_px": [
+    379.7,
+    185.6,
+    387.4,
+    203.9
+   ],
+   "center_master_px": [
+    383.5,
+    194.7
+   ],
+   "ground_contact_master_px": [
+    383.5,
+    203.9
+   ],
+   "bbox_reference_px": [
+    813.6,
+    391.5,
+    830.1,
+    430.1
+   ],
+   "center_reference_px": [
+    821.8,
+    410.8
+   ]
+  }
+ ],
+ "vehicle_recall": 0.0,
+ "vehicle_precision": null,
+ "person_recall": 0.3333333333333333,
+ "person_precision": 1.0,
+ "vehicle_count_abs_err_vs_oracle": 1,
+ "person_count_abs_err_vs_oracle": 4,
+ "seconds": 8.219931999999972,
+ "prompt": "a street with a fence and a building in the background, a street with a tree and a man walking, a red car is parked on the side of the road, a street with a black fence and a building, a tree in the middle of a city"
+}

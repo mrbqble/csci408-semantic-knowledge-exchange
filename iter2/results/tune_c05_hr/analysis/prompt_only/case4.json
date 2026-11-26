@@ -1,0 +1,268 @@
+{
+ "case": "case4",
+ "reference": "cam1",
+ "variant": "prompt_only",
+ "master_size": [
+  1280,
+  704
+ ],
+ "counts": {
+  "person": 1,
+  "bicycle": 0,
+  "car": 5,
+  "motorcycle": 0,
+  "bus": 1,
+  "truck": 1,
+  "cars_4wheel": 7,
+  "two_wheelers": 0,
+  "vehicles": 7,
+  "pedestrians": 1
+ },
+ "gt": {
+  "cars_4wheel": 12,
+  "pedestrians": 7,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "car",
+   "score": 0.999,
+   "bbox_master_px": [
+    426.9,
+    344.0,
+    541.0,
+    418.4
+   ],
+   "center_master_px": [
+    483.9,
+    381.2
+   ],
+   "ground_contact_master_px": [
+    483.9,
+    418.4
+   ],
+   "bbox_reference_px": [
+    640.3,
+    527.7,
+    811.4,
+    641.9
+   ],
+   "center_reference_px": [
+    725.9,
+    584.8
+   ]
+  },
+  {
+   "id": 1,
+   "class": "person",
+   "score": 0.999,
+   "bbox_master_px": [
+    73.3,
+    332.9,
+    130.9,
+    473.2
+   ],
+   "center_master_px": [
+    102.1,
+    403.0
+   ],
+   "ground_contact_master_px": [
+    102.1,
+    473.2
+   ],
+   "bbox_reference_px": [
+    109.9,
+    510.7,
+    196.4,
+    725.9
+   ],
+   "center_reference_px": [
+    153.2,
+    618.3
+   ]
+  },
+  {
+   "id": 2,
+   "class": "car",
+   "score": 0.995,
+   "bbox_master_px": [
+    1225.9,
+    340.5,
+    1279.9,
+    406.3
+   ],
+   "center_master_px": [
+    1252.9,
+    373.4
+   ],
+   "ground_contact_master_px": [
+    1252.9,
+    406.3
+   ],
+   "bbox_reference_px": [
+    1838.8,
+    522.3,
+    1919.8,
+    623.3
+   ],
+   "center_reference_px": [
+    1879.3,
+    572.8
+   ]
+  },
+  {
+   "id": 3,
+   "class": "bus",
+   "score": 0.986,
+   "bbox_master_px": [
+    549.7,
+    269.8,
+    704.8,
+    385.0
+   ],
+   "center_master_px": [
+    627.2,
+    327.4
+   ],
+   "ground_contact_master_px": [
+    627.2,
+    385.0
+   ],
+   "bbox_reference_px": [
+    824.5,
+    413.9,
+    1057.2,
+    590.7
+   ],
+   "center_reference_px": [
+    940.9,
+    502.3
+   ]
+  },
+  {
+   "id": 4,
+   "class": "truck",
+   "score": 0.984,
+   "bbox_master_px": [
+    598.8,
+    261.1,
+    1252.1,
+    649.4
+   ],
+   "center_master_px": [
+    925.4,
+    455.3
+   ],
+   "ground_contact_master_px": [
+    925.4,
+    649.4
+   ],
+   "bbox_reference_px": [
+    898.2,
+    400.6,
+    1878.1,
+    996.3
+   ],
+   "center_reference_px": [
+    1388.1,
+    698.4
+   ]
+  },
+  {
+   "id": 5,
+   "class": "car",
+   "score": 0.96,
+   "bbox_master_px": [
+    395.3,
+    341.9,
+    442.5,
+    390.8
+   ],
+   "center_master_px": [
+    418.9,
+    366.3
+   ],
+   "ground_contact_master_px": [
+    418.9,
+    390.8
+   ],
+   "bbox_reference_px": [
+    593.0,
+    524.5,
+    663.8,
+    599.5
+   ],
+   "center_reference_px": [
+    628.4,
+    562.0
+   ]
+  },
+  {
+   "id": 6,
+   "class": "car",
+   "score": 0.668,
+   "bbox_master_px": [
+    389.1,
+    338.4,
+    401.1,
+    353.6
+   ],
+   "center_master_px": [
+    395.1,
+    346.0
+   ],
+   "ground_contact_master_px": [
+    395.1,
+    353.6
+   ],
+   "bbox_reference_px": [
+    583.7,
+    519.2,
+    601.7,
+    542.4
+   ],
+   "center_reference_px": [
+    592.7,
+    530.8
+   ]
+  },
+  {
+   "id": 7,
+   "class": "car",
+   "score": 0.605,
+   "bbox_master_px": [
+    554.7,
+    331.1,
+    610.7,
+    385.0
+   ],
+   "center_master_px": [
+    582.7,
+    358.1
+   ],
+   "ground_contact_master_px": [
+    582.7,
+    385.0
+   ],
+   "bbox_reference_px": [
+    832.0,
+    507.9,
+    916.0,
+    590.7
+   ],
+   "center_reference_px": [
+    874.0,
+    549.3
+   ]
+  }
+ ],
+ "vehicle_recall": 0.625,
+ "vehicle_precision": 0.7142857142857143,
+ "person_recall": 0.14285714285714285,
+ "person_precision": 1.0,
+ "vehicle_count_abs_err_vs_oracle": 1,
+ "person_count_abs_err_vs_oracle": 6,
+ "seconds": 19.570794600000227,
+ "prompt": "a red truck driving down a street next to a tall building, a man walking down a street next to a truck, a bus on the road, a red car parked in a parking lot, a red car driving down a street next to a bus, a man walking across a street with a red car"
+}

@@ -1,0 +1,268 @@
+{
+ "case": "case94",
+ "reference": "cam1",
+ "variant": "prompt_only",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 2,
+  "bicycle": 0,
+  "car": 6,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 0,
+  "cars_4wheel": 6,
+  "two_wheelers": 0,
+  "vehicles": 6,
+  "pedestrians": 2
+ },
+ "gt": {
+  "cars_4wheel": 8,
+  "pedestrians": 9,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "car",
+   "score": 0.999,
+   "bbox_master_px": [
+    919.1,
+    302.4,
+    1022.2,
+    404.8
+   ],
+   "center_master_px": [
+    970.7,
+    353.6
+   ],
+   "ground_contact_master_px": [
+    970.7,
+    404.8
+   ],
+   "bbox_reference_px": [
+    1723.4,
+    567.0,
+    1916.6,
+    758.9
+   ],
+   "center_reference_px": [
+    1820.0,
+    663.0
+   ]
+  },
+  {
+   "id": 1,
+   "class": "car",
+   "score": 0.997,
+   "bbox_master_px": [
+    864.9,
+    276.3,
+    943.5,
+    329.0
+   ],
+   "center_master_px": [
+    904.2,
+    302.7
+   ],
+   "ground_contact_master_px": [
+    904.2,
+    329.0
+   ],
+   "bbox_reference_px": [
+    1621.7,
+    518.1,
+    1769.1,
+    616.9
+   ],
+   "center_reference_px": [
+    1695.4,
+    567.5
+   ]
+  },
+  {
+   "id": 2,
+   "class": "person",
+   "score": 0.93,
+   "bbox_master_px": [
+    185.7,
+    263.8,
+    217.8,
+    332.2
+   ],
+   "center_master_px": [
+    201.7,
+    298.0
+   ],
+   "ground_contact_master_px": [
+    201.7,
+    332.2
+   ],
+   "bbox_reference_px": [
+    348.1,
+    494.5,
+    408.4,
+    622.8
+   ],
+   "center_reference_px": [
+    378.3,
+    558.7
+   ]
+  },
+  {
+   "id": 3,
+   "class": "car",
+   "score": 0.885,
+   "bbox_master_px": [
+    838.7,
+    276.2,
+    873.1,
+    304.9
+   ],
+   "center_master_px": [
+    855.9,
+    290.5
+   ],
+   "ground_contact_master_px": [
+    855.9,
+    304.9
+   ],
+   "bbox_reference_px": [
+    1572.6,
+    517.8,
+    1637.1,
+    571.7
+   ],
+   "center_reference_px": [
+    1604.9,
+    544.8
+   ]
+  },
+  {
+   "id": 4,
+   "class": "person",
+   "score": 0.758,
+   "bbox_master_px": [
+    344.7,
+    264.6,
+    355.3,
+    318.7
+   ],
+   "center_master_px": [
+    350.0,
+    291.6
+   ],
+   "ground_contact_master_px": [
+    350.0,
+    318.7
+   ],
+   "bbox_reference_px": [
+    646.2,
+    496.1,
+    666.1,
+    597.6
+   ],
+   "center_reference_px": [
+    656.2,
+    546.8
+   ]
+  },
+  {
+   "id": 5,
+   "class": "car",
+   "score": 0.742,
+   "bbox_master_px": [
+    807.3,
+    281.3,
+    824.6,
+    292.1
+   ],
+   "center_master_px": [
+    815.9,
+    286.7
+   ],
+   "ground_contact_master_px": [
+    815.9,
+    292.1
+   ],
+   "bbox_reference_px": [
+    1513.6,
+    527.4,
+    1546.2,
+    547.6
+   ],
+   "center_reference_px": [
+    1529.9,
+    537.5
+   ]
+  },
+  {
+   "id": 6,
+   "class": "car",
+   "score": 0.715,
+   "bbox_master_px": [
+    932.0,
+    269.3,
+    979.6,
+    311.7
+   ],
+   "center_master_px": [
+    955.8,
+    290.5
+   ],
+   "ground_contact_master_px": [
+    955.8,
+    311.7
+   ],
+   "bbox_reference_px": [
+    1747.4,
+    505.0,
+    1836.7,
+    584.4
+   ],
+   "center_reference_px": [
+    1792.1,
+    544.7
+   ]
+  },
+  {
+   "id": 7,
+   "class": "car",
+   "score": 0.583,
+   "bbox_master_px": [
+    532.1,
+    291.9,
+    543.6,
+    300.4
+   ],
+   "center_master_px": [
+    537.9,
+    296.2
+   ],
+   "ground_contact_master_px": [
+    537.9,
+    300.4
+   ],
+   "bbox_reference_px": [
+    997.8,
+    547.4,
+    1019.3,
+    563.2
+   ],
+   "center_reference_px": [
+    1008.5,
+    555.3
+   ]
+  }
+ ],
+ "vehicle_recall": 0.5714285714285714,
+ "vehicle_precision": 0.6666666666666666,
+ "person_recall": 0.16666666666666666,
+ "person_precision": 1.0,
+ "vehicle_count_abs_err_vs_oracle": 1,
+ "person_count_abs_err_vs_oracle": 10,
+ "seconds": 10.496533899997303,
+ "prompt": "a street scene with a traffic light and palm trees, a car driving down a street next to a red truck, a police car driving down a street next to a police car, a police officer in a city street"
+}

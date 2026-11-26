@@ -1,0 +1,76 @@
+{
+ "case": "case2",
+ "variant": "prompt_refine",
+ "ip_adapter_scale": 0.0,
+ "ip_adapter_source": "none",
+ "reference": "cam1",
+ "supporting": [
+  "cam2",
+  "cam3",
+  "cam4"
+ ],
+ "timestamp": 4056,
+ "prompt": "a street with a yellow line painted on the road, a street with a yellow line painted on it, a street scene with a car and a building",
+ "seconds": 15.340356799997608,
+ "peak_gpu_mb": 5394.6416015625,
+ "size": [
+  1024,
+  576
+ ],
+ "palette": "cs",
+ "ref_policy": "first",
+ "seed": 42,
+ "steps": 20,
+ "guidance": 7.5,
+ "donor_case": null,
+ "cn_scales": [
+  1.0,
+  1.0
+ ],
+ "edge_thr": 40,
+ "base": "existing prompt_only result",
+ "base_seconds": 11.008554199997889,
+ "refine_seconds": 4.331802599999719,
+ "refine": {
+  "n_small_blobs": 3,
+  "n_windows": 2,
+  "uncovered_blobs": 0,
+  "windows": [
+   {
+    "x0": 424,
+    "y0": 173,
+    "n_blobs": 2,
+    "blob_areas": [
+     279,
+     154
+    ],
+    "index": 0,
+    "seconds": 2.1629954999989423
+   },
+   {
+    "x0": 729,
+    "y0": 187,
+    "n_blobs": 1,
+    "blob_areas": [
+     109
+    ],
+    "index": 1,
+    "seconds": 2.1688071000007767
+   }
+  ],
+  "failures": [],
+  "seconds": 4.331802599999719
+ },
+ "refine_settings": {
+  "window": 128,
+  "upscale": 4,
+  "strength": 0.5,
+  "feather_px": 12,
+  "max_windows": 8,
+  "min_area": 12,
+  "max_side": 48,
+  "prompt": "cars on a city street, realistic photo, sharp",
+  "negative_prompt": "blurry, deformed, cartoon",
+  "seed": "42 + window index"
+ }
+}

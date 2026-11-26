@@ -1,0 +1,6 @@
+iter2: full-resolution supporting reconstructions and tuning of Damir's fusion
+
+- full-res supports: real-world 85.2% vs 80.3% (896x512), CARLA 59.8% vs 69.6%; over both, 896x512 better (127 vs 119 of 173)
+- the split follows the dataset, not the number of views
+- tuning (rule fixed in advance, tuning/held-out halves): no reliable gain; strength 0.5 / IP scale 1.0 kept
+- TUNING_RESULTS.md, tune_select.py, VLM_FINDINGS.md update

@@ -1,0 +1,88 @@
+{
+ "case": "case40",
+ "variant": "prompt_refine",
+ "ip_adapter_scale": 0.0,
+ "ip_adapter_source": "none",
+ "reference": "cam1",
+ "supporting": [
+  "cam2",
+  "cam3",
+  "cam4",
+  "cam5",
+  "cam6"
+ ],
+ "timestamp": 8346,
+ "prompt": "the city street in saints 2, a city street with cars and people walking, a car parked in a parking next to a building, a street with cars and people walking on it, a white van, a street with cars and palm trees",
+ "seconds": 17.640930799998387,
+ "peak_gpu_mb": 5394.6416015625,
+ "size": [
+  1024,
+  576
+ ],
+ "palette": "cs",
+ "ref_policy": "first",
+ "seed": 42,
+ "steps": 20,
+ "guidance": 7.5,
+ "donor_case": null,
+ "cn_scales": [
+  1.0,
+  1.0
+ ],
+ "edge_thr": 40,
+ "base": "existing prompt_only result",
+ "base_seconds": 11.110262399997737,
+ "refine_seconds": 6.53066840000065,
+ "refine": {
+  "n_small_blobs": 4,
+  "n_windows": 3,
+  "uncovered_blobs": 0,
+  "windows": [
+   {
+    "x0": 333,
+    "y0": 185,
+    "n_blobs": 2,
+    "blob_areas": [
+     885,
+     550
+    ],
+    "index": 0,
+    "seconds": 2.1735619000010047
+   },
+   {
+    "x0": 534,
+    "y0": 178,
+    "n_blobs": 1,
+    "blob_areas": [
+     384
+    ],
+    "index": 1,
+    "seconds": 2.1804775999989943
+   },
+   {
+    "x0": 0,
+    "y0": 166,
+    "n_blobs": 1,
+    "blob_areas": [
+     14
+    ],
+    "index": 2,
+    "seconds": 2.176628900000651
+   }
+  ],
+  "failures": [],
+  "seconds": 6.53066840000065
+ },
+ "refine_settings": {
+  "window": 128,
+  "upscale": 4,
+  "strength": 0.5,
+  "feather_px": 12,
+  "max_windows": 8,
+  "min_area": 12,
+  "max_side": 48,
+  "prompt": "cars on a city street, realistic photo, sharp",
+  "negative_prompt": "blurry, deformed, cartoon",
+  "seed": "42 + window index"
+ }
+}

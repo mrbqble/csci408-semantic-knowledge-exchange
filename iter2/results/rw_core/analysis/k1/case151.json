@@ -1,0 +1,177 @@
+{
+ "case": "case151",
+ "reference": "cam1",
+ "variant": "k1",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 0,
+  "bicycle": 0,
+  "car": 5,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 0,
+  "cars_4wheel": 5,
+  "two_wheelers": 0,
+  "vehicles": 5,
+  "pedestrians": 0
+ },
+ "gt": null,
+ "detections": [
+  {
+   "id": 0,
+   "class": "car",
+   "score": 0.964,
+   "bbox_master_px": [
+    651.0,
+    267.1,
+    764.6,
+    320.2
+   ],
+   "center_master_px": [
+    707.8,
+    293.6
+   ],
+   "ground_contact_master_px": [
+    707.8,
+    320.2
+   ],
+   "bbox_reference_px": [
+    1220.6,
+    500.8,
+    1433.7,
+    600.3
+   ],
+   "center_reference_px": [
+    1327.1,
+    550.6
+   ]
+  },
+  {
+   "id": 1,
+   "class": "car",
+   "score": 0.941,
+   "bbox_master_px": [
+    535.2,
+    262.5,
+    647.1,
+    308.6
+   ],
+   "center_master_px": [
+    591.2,
+    285.5
+   ],
+   "ground_contact_master_px": [
+    591.2,
+    308.6
+   ],
+   "bbox_reference_px": [
+    1003.5,
+    492.2,
+    1213.4,
+    578.5
+   ],
+   "center_reference_px": [
+    1108.4,
+    535.4
+   ]
+  },
+  {
+   "id": 2,
+   "class": "car",
+   "score": 0.693,
+   "bbox_master_px": [
+    913.5,
+    281.3,
+    952.5,
+    298.3
+   ],
+   "center_master_px": [
+    933.0,
+    289.8
+   ],
+   "ground_contact_master_px": [
+    933.0,
+    298.3
+   ],
+   "bbox_reference_px": [
+    1712.8,
+    527.4,
+    1785.9,
+    559.2
+   ],
+   "center_reference_px": [
+    1749.3,
+    543.3
+   ]
+  },
+  {
+   "id": 3,
+   "class": "car",
+   "score": 0.658,
+   "bbox_master_px": [
+    942.8,
+    271.0,
+    984.7,
+    303.4
+   ],
+   "center_master_px": [
+    963.7,
+    287.2
+   ],
+   "ground_contact_master_px": [
+    963.7,
+    303.4
+   ],
+   "bbox_reference_px": [
+    1767.7,
+    508.2,
+    1846.4,
+    569.0
+   ],
+   "center_reference_px": [
+    1807.0,
+    538.6
+   ]
+  },
+  {
+   "id": 4,
+   "class": "car",
+   "score": 0.607,
+   "bbox_master_px": [
+    634.8,
+    268.7,
+    690.8,
+    308.3
+   ],
+   "center_master_px": [
+    662.8,
+    288.5
+   ],
+   "ground_contact_master_px": [
+    662.8,
+    308.3
+   ],
+   "bbox_reference_px": [
+    1190.3,
+    503.9,
+    1295.3,
+    578.1
+   ],
+   "center_reference_px": [
+    1242.8,
+    541.0
+   ]
+  }
+ ],
+ "vehicle_recall": 0.13333333333333333,
+ "vehicle_precision": 0.4,
+ "person_recall": 0.0,
+ "person_precision": null,
+ "vehicle_count_abs_err_vs_oracle": 10,
+ "person_count_abs_err_vs_oracle": 11,
+ "seconds": 10.435816799999884,
+ "prompt": "a street scene with a traffic light and a car"
+}

@@ -1,0 +1,177 @@
+{
+ "case": "case349",
+ "reference": "cam1",
+ "variant": "prompt_only",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 0,
+  "bicycle": 0,
+  "car": 3,
+  "motorcycle": 0,
+  "bus": 2,
+  "truck": 0,
+  "cars_4wheel": 5,
+  "two_wheelers": 0,
+  "vehicles": 5,
+  "pedestrians": 0
+ },
+ "gt": null,
+ "detections": [
+  {
+   "id": 0,
+   "class": "car",
+   "score": 0.999,
+   "bbox_master_px": [
+    458.2,
+    278.6,
+    728.5,
+    390.2
+   ],
+   "center_master_px": [
+    593.3,
+    334.4
+   ],
+   "ground_contact_master_px": [
+    593.3,
+    390.2
+   ],
+   "bbox_reference_px": [
+    859.1,
+    522.4,
+    1365.9,
+    731.7
+   ],
+   "center_reference_px": [
+    1112.5,
+    627.1
+   ]
+  },
+  {
+   "id": 1,
+   "class": "car",
+   "score": 0.987,
+   "bbox_master_px": [
+    849.1,
+    280.5,
+    967.6,
+    332.4
+   ],
+   "center_master_px": [
+    908.3,
+    306.5
+   ],
+   "ground_contact_master_px": [
+    908.3,
+    332.4
+   ],
+   "bbox_reference_px": [
+    1592.0,
+    526.0,
+    1814.2,
+    623.3
+   ],
+   "center_reference_px": [
+    1703.1,
+    574.6
+   ]
+  },
+  {
+   "id": 2,
+   "class": "bus",
+   "score": 0.952,
+   "bbox_master_px": [
+    851.4,
+    243.9,
+    968.9,
+    299.3
+   ],
+   "center_master_px": [
+    910.1,
+    271.6
+   ],
+   "ground_contact_master_px": [
+    910.1,
+    299.3
+   ],
+   "bbox_reference_px": [
+    1596.3,
+    457.3,
+    1816.7,
+    561.2
+   ],
+   "center_reference_px": [
+    1706.5,
+    509.3
+   ]
+  },
+  {
+   "id": 3,
+   "class": "car",
+   "score": 0.948,
+   "bbox_master_px": [
+    1.8,
+    259.4,
+    143.7,
+    396.3
+   ],
+   "center_master_px": [
+    72.7,
+    327.9
+   ],
+   "ground_contact_master_px": [
+    72.7,
+    396.3
+   ],
+   "bbox_reference_px": [
+    3.4,
+    486.5,
+    269.4,
+    743.1
+   ],
+   "center_reference_px": [
+    136.4,
+    614.8
+   ]
+  },
+  {
+   "id": 4,
+   "class": "bus",
+   "score": 0.727,
+   "bbox_master_px": [
+    961.0,
+    248.7,
+    1012.8,
+    289.3
+   ],
+   "center_master_px": [
+    986.9,
+    269.0
+   ],
+   "ground_contact_master_px": [
+    986.9,
+    289.3
+   ],
+   "bbox_reference_px": [
+    1801.9,
+    466.3,
+    1899.1,
+    542.5
+   ],
+   "center_reference_px": [
+    1850.5,
+    504.4
+   ]
+  }
+ ],
+ "vehicle_recall": 0.21052631578947367,
+ "vehicle_precision": 0.8,
+ "person_recall": 0.0,
+ "person_precision": null,
+ "vehicle_count_abs_err_vs_oracle": 14,
+ "person_count_abs_err_vs_oracle": 7,
+ "seconds": 10.43952100000024,
+ "prompt": "a white car stopped at a crosswalk, a street with cars and a bridge over it, a bus is stopped at a stop at a busy intersection"
+}

@@ -1,0 +1,35 @@
+{
+ "splits": {
+  "carla_v2": {
+   "photos_cropped": 504
+  },
+  "carla_v4": {
+   "photos_cropped": 1008
+  },
+  "real_world": {
+   "photos_cropped": 915
+  }
+ },
+ "held_out_real_cases": 61,
+ "test_set": "CARLA v3 (never cropped)",
+ "crops": {
+  "train": 8620,
+  "val": 1088
+ },
+ "crops_by_source": {
+  "train": {
+   "carla_v4": 3592,
+   "carla_v2": 1800,
+   "real_world": 3228
+  },
+  "val": {
+   "carla_v4": 440,
+   "carla_v2": 216,
+   "real_world": 432
+  }
+ },
+ "crops_with_small_vehicles": {
+  "train": 6758,
+  "val": 854
+ }
+}

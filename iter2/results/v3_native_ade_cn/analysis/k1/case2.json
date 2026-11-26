@@ -1,0 +1,181 @@
+{
+ "case": "case2",
+ "reference": "cam1",
+ "variant": "k1",
+ "master_size": [
+  896,
+  512
+ ],
+ "counts": {
+  "person": 1,
+  "bicycle": 0,
+  "car": 4,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 0,
+  "cars_4wheel": 4,
+  "two_wheelers": 0,
+  "vehicles": 4,
+  "pedestrians": 1
+ },
+ "gt": {
+  "cars_4wheel": 3,
+  "pedestrians": 13,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "car",
+   "score": 0.998,
+   "bbox_master_px": [
+    191.4,
+    199.0,
+    261.6,
+    225.3
+   ],
+   "center_master_px": [
+    226.5,
+    212.2
+   ],
+   "ground_contact_master_px": [
+    226.5,
+    225.3
+   ],
+   "bbox_reference_px": [
+    410.1,
+    419.9,
+    560.6,
+    475.3
+   ],
+   "center_reference_px": [
+    485.3,
+    447.6
+   ]
+  },
+  {
+   "id": 1,
+   "class": "car",
+   "score": 0.941,
+   "bbox_master_px": [
+    6.3,
+    200.6,
+    71.5,
+    233.4
+   ],
+   "center_master_px": [
+    38.9,
+    217.0
+   ],
+   "ground_contact_master_px": [
+    38.9,
+    233.4
+   ],
+   "bbox_reference_px": [
+    13.5,
+    423.1,
+    153.2,
+    492.4
+   ],
+   "center_reference_px": [
+    83.4,
+    457.7
+   ]
+  },
+  {
+   "id": 2,
+   "class": "car",
+   "score": 0.86,
+   "bbox_master_px": [
+    46.2,
+    215.1,
+    72.3,
+    234.0
+   ],
+   "center_master_px": [
+    59.3,
+    224.5
+   ],
+   "ground_contact_master_px": [
+    59.3,
+    234.0
+   ],
+   "bbox_reference_px": [
+    98.9,
+    453.7,
+    155.0,
+    493.6
+   ],
+   "center_reference_px": [
+    127.0,
+    473.6
+   ]
+  },
+  {
+   "id": 3,
+   "class": "car",
+   "score": 0.852,
+   "bbox_master_px": [
+    411.5,
+    204.0,
+    467.4,
+    217.1
+   ],
+   "center_master_px": [
+    439.4,
+    210.6
+   ],
+   "ground_contact_master_px": [
+    439.4,
+    217.1
+   ],
+   "bbox_reference_px": [
+    881.7,
+    430.4,
+    1001.6,
+    457.9
+   ],
+   "center_reference_px": [
+    941.7,
+    444.2
+   ]
+  },
+  {
+   "id": 4,
+   "class": "person",
+   "score": 0.686,
+   "bbox_master_px": [
+    261.4,
+    204.5,
+    266.9,
+    219.8
+   ],
+   "center_master_px": [
+    264.1,
+    212.2
+   ],
+   "ground_contact_master_px": [
+    264.1,
+    219.8
+   ],
+   "bbox_reference_px": [
+    560.0,
+    431.5,
+    571.9,
+    463.6
+   ],
+   "center_reference_px": [
+    566.0,
+    447.5
+   ]
+  }
+ ],
+ "vehicle_recall": 0.75,
+ "vehicle_precision": 0.75,
+ "person_recall": 0.0,
+ "person_precision": 0.0,
+ "vehicle_count_abs_err_vs_oracle": 0,
+ "person_count_abs_err_vs_oracle": 15,
+ "seconds": 8.03046220000033,
+ "prompt": "a street with a yellow line painted on the road"
+}

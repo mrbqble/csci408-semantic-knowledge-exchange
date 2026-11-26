@@ -1,0 +1,10 @@
+iter2: November experiments, demo and meeting status (11 Nov)
+
+- STATUS_2026-11-11.md: summary for the meeting with Damir (pipeline, metric, results, questions)
+- demo/: 18 before/after cases (10 CARLA v3, 8 real-world) chosen by a fixed worst-to-best rule, with Rec1's payload files
+- new experiments (NEXT_STEPS_RESULTS.md): loss breakdown, splitting merged blobs from the payload, prompt_refine
+  (crop-and-redraw of small cars), 2048x1152 generation, segmenter input size, sender-side vehicle list, hyperparameter
+  sweep with hold-out; ControlNet canny 0.7 / seg 1.5 confirmed on all cases (proposed default, not switched)
+- coordinator.py: --steps --guidance --control-end --negative-prompt, variant prompt_refine; analysis.py --analysis-dir
+  (defaults unchanged)
+- training data prep (training_prep.py; crops stay out of git), result summaries force-added

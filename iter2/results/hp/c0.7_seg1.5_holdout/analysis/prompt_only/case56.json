@@ -1,0 +1,268 @@
+{
+ "case": "case56",
+ "reference": "cam1",
+ "variant": "prompt_only",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 5,
+  "bicycle": 0,
+  "car": 1,
+  "motorcycle": 0,
+  "bus": 1,
+  "truck": 1,
+  "cars_4wheel": 3,
+  "two_wheelers": 0,
+  "vehicles": 3,
+  "pedestrians": 5
+ },
+ "gt": {
+  "cars_4wheel": 6,
+  "pedestrians": 4,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "person",
+   "score": 0.993,
+   "bbox_master_px": [
+    610.3,
+    225.7,
+    626.9,
+    291.0
+   ],
+   "center_master_px": [
+    618.6,
+    258.3
+   ],
+   "ground_contact_master_px": [
+    618.6,
+    291.0
+   ],
+   "bbox_reference_px": [
+    1144.3,
+    423.1,
+    1175.5,
+    545.5
+   ],
+   "center_reference_px": [
+    1159.9,
+    484.3
+   ]
+  },
+  {
+   "id": 1,
+   "class": "bus",
+   "score": 0.975,
+   "bbox_master_px": [
+    0.9,
+    97.1,
+    225.5,
+    356.8
+   ],
+   "center_master_px": [
+    113.2,
+    226.9
+   ],
+   "ground_contact_master_px": [
+    113.2,
+    356.8
+   ],
+   "bbox_reference_px": [
+    1.7,
+    182.0,
+    422.8,
+    668.9
+   ],
+   "center_reference_px": [
+    212.2,
+    425.5
+   ]
+  },
+  {
+   "id": 2,
+   "class": "person",
+   "score": 0.89,
+   "bbox_master_px": [
+    810.8,
+    236.3,
+    838.3,
+    299.4
+   ],
+   "center_master_px": [
+    824.6,
+    267.8
+   ],
+   "ground_contact_master_px": [
+    824.6,
+    299.4
+   ],
+   "bbox_reference_px": [
+    1520.3,
+    443.1,
+    1571.8,
+    561.3
+   ],
+   "center_reference_px": [
+    1546.1,
+    502.2
+   ]
+  },
+  {
+   "id": 3,
+   "class": "car",
+   "score": 0.804,
+   "bbox_master_px": [
+    272.8,
+    236.1,
+    343.7,
+    267.1
+   ],
+   "center_master_px": [
+    308.3,
+    251.6
+   ],
+   "ground_contact_master_px": [
+    308.3,
+    267.1
+   ],
+   "bbox_reference_px": [
+    511.5,
+    442.7,
+    644.5,
+    500.9
+   ],
+   "center_reference_px": [
+    578.0,
+    471.8
+   ]
+  },
+  {
+   "id": 4,
+   "class": "person",
+   "score": 0.798,
+   "bbox_master_px": [
+    431.7,
+    232.5,
+    445.8,
+    263.7
+   ],
+   "center_master_px": [
+    438.7,
+    248.1
+   ],
+   "ground_contact_master_px": [
+    438.7,
+    263.7
+   ],
+   "bbox_reference_px": [
+    809.4,
+    435.9,
+    835.8,
+    494.4
+   ],
+   "center_reference_px": [
+    822.6,
+    465.2
+   ]
+  },
+  {
+   "id": 5,
+   "class": "truck",
+   "score": 0.663,
+   "bbox_master_px": [
+    273.8,
+    214.0,
+    352.2,
+    267.5
+   ],
+   "center_master_px": [
+    313.0,
+    240.8
+   ],
+   "ground_contact_master_px": [
+    313.0,
+    267.5
+   ],
+   "bbox_reference_px": [
+    513.5,
+    401.3,
+    660.4,
+    501.5
+   ],
+   "center_reference_px": [
+    587.0,
+    451.4
+   ]
+  },
+  {
+   "id": 6,
+   "class": "person",
+   "score": 0.631,
+   "bbox_master_px": [
+    453.5,
+    227.7,
+    466.0,
+    270.3
+   ],
+   "center_master_px": [
+    459.7,
+    249.0
+   ],
+   "ground_contact_master_px": [
+    459.7,
+    270.3
+   ],
+   "bbox_reference_px": [
+    850.2,
+    427.0,
+    873.8,
+    506.8
+   ],
+   "center_reference_px": [
+    862.0,
+    466.9
+   ]
+  },
+  {
+   "id": 7,
+   "class": "person",
+   "score": 0.52,
+   "bbox_master_px": [
+    451.3,
+    233.6,
+    459.3,
+    264.3
+   ],
+   "center_master_px": [
+    455.3,
+    248.9
+   ],
+   "ground_contact_master_px": [
+    455.3,
+    264.3
+   ],
+   "bbox_reference_px": [
+    846.3,
+    437.9,
+    861.2,
+    495.5
+   ],
+   "center_reference_px": [
+    853.7,
+    466.7
+   ]
+  }
+ ],
+ "vehicle_recall": 0.6666666666666666,
+ "vehicle_precision": 0.6666666666666666,
+ "person_recall": 0.6,
+ "person_precision": 0.6,
+ "vehicle_count_abs_err_vs_oracle": 0,
+ "person_count_abs_err_vs_oracle": 0,
+ "seconds": 10.415408099997876,
+ "prompt": "a bus is driving down the street in a city, a bus is parked on the side of the road, a police car is parked on the side of the road, a car is parked in the middle of a street, a white bus on the road, a bus is driving down the street in the city"
+}

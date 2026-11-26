@@ -1,0 +1,155 @@
+# VLM-judge evaluation (Damir's requirement), 13-21 Nov 2026
+
+**Judge:** `gemma-4-31b-it` through the Gemini API. Prompts, score parsing and model are unchanged from Damir's `batch_evaluation.py` (`vlm_judge.py`).
+
+**What is judged:** every pair is the original photo of the reference camera (cam1) and its reconstruction. Each pair gets two separate yes/no requests: are the car numbers preserved, and are the car positions preserved. Joint means both are yes.
+
+**Coverage:** all 2,276 pairs over 26 setups. `VLM_JUDGE_REPORT.md` holds the full table with 95% intervals and every paired test. Raw answers are in `results/vlm/*.jsonl`.
+
+## Update 21 Nov: full-resolution supporting reconstructions and parameter tuning (Damir's answers of 19 Nov)
+
+**Supporting-reconstruction resolution.** Fusion at strength 0.5 and IP scale 1.0, all cases:
+
+| Joint success | Real-world (61) | CARLA (112) | Both (173) |
+|---|---|---|---|
+| Single-camera MMSD | 75.4% | 56.2% | 109 |
+| Fusion, supports at 896x512 | 80.3% | **69.6%** | **127** |
+| Fusion, supports at full resolution (paper settings) | **85.2%** | 59.8% | 119 |
+| Full resolution vs 896x512 (McNemar) | +4.9 pts (5 / 2, p = 0.45) | -9.8 pts (11 / 22, p = 0.080) | |
+
+- **Full-resolution supports help on real photos and hurt on CARLA.** Over both datasets, the 896x512 supports are better, and they cost about 9 times less GPU time per supporting view (about 8 s against 74 s).
+- **The number of views does not explain it.** On CARLA, split by camera count, the full-resolution penalty is -6, -1, -1 and -3 joint successes for 2, 3, 4 and 5 supporting views. The largest penalty comes with 2 supporting views, the same count as real-world, where full resolution helps. The difference is between the datasets, synthetic against real; we cannot separate the reasons with these two datasets.
+
+**Parameter tuning** (`TUNING_RESULTS.md`, `tune_select.py`). The rule was fixed in advance: pick the setting on a tuning half (CARLA 1-56 plus the first 30 real-world cases), then report it on the held-out half.
+
+| Setting (full-resolution supports) | strength 0.5, IP 1.0 | strength 0.3 | strength 0.4 | strength 0.6 | IP 0.5 | IP 0.75 |
+|---|---|---|---|---|---|---|
+| Joint successes, tuning half (85 cases) | 61 | 56 | **62** | 61 | 58 | 61 |
+
+- **The winner by the rule is strength 0.4, by a single case.** On the held-out half it does not hold up: +3.6 pts on CARLA (8 / 6, p = 0.79) and -16.1 pts on real-world (1 / 6, p = 0.13) against strength 0.5.
+- **Strength 0.4-0.6 and IP scale 0.75-1.0 perform alike;** only strength 0.3 and IP scale 0.5 are clearly lower. Damir's values, strength 0.5 and IP scale 1.0, sit in a flat optimum, so we keep them.
+
+**Recommended configuration for the final report:** Damir's fusion at strength 0.5 and IP scale 1.0, with supporting reconstructions at 896x512 (127 of 173 joint successes, against 109 for the single-camera MMSD). Full-resolution supports are reported as an ablation, because they are the best option on real photos.
+
+## Update 19 Nov: Damir's multi-camera fusion beats his single-camera MMSD
+
+**Pipeline** (Damir's diagram of 17 Nov; `coordinator.py` variants `fuse` / `fuse_noip`, example figures in `fusion_demo/`):
+- every device is reconstructed from its own payload;
+- the main reconstruction (cam1, at the paper settings of section 0) gets noise added (img2img, strength 0.5);
+- the main camera's segmentation and edge maps go on the ControlNets;
+- the other devices' reconstructions go on the IP-Adapter (mean CLIP embedding, scale 1.0);
+- the global caption is the prompt.
+
+The supporting reconstructions were made at 896x512 to save time. The IP-Adapter sees them at 224x224 anyway. The control is the same img2img pass without the IP-Adapter.
+
+| Joint (numbers / positions) | CARLA v3 (112) | Real-world (61) |
+|---|---|---|
+| Damir's single-camera MMSD (the main reconstruction) | 56.2% (57.1 / 88.4) | 75.4% (77.0 / 95.1) |
+| Our earlier multi-camera receiver (all cameras' captions only) | 50.0% (50.9 / 96.4) | 73.8% (73.8 / 95.1) |
+| Control: img2img second pass without the IP-Adapter | 61.6% (63.4 / 92.9) | 63.9% (63.9 / 93.4) |
+| **Damir's fusion** | **69.6%** (69.6 / 93.8) | **80.3%** (80.3 / 96.7) |
+
+| Paired test on the joint score (McNemar) | CARLA v3 | Real-world |
+|---|---|---|
+| Fusion vs single-camera MMSD | **+13.4 pts** (31 better / 16 worse, p = 0.040) | +4.9 pts (7 / 4, p = 0.55) |
+| Fusion vs control (what the supporting views add) | +8.0 pts (21 / 12, p = 0.16) | **+16.4 pts** (13 / 3, p = 0.021) |
+| Control vs single-camera MMSD (the second pass alone) | +5.4 pts (19 / 13, p = 0.38) | -11.5 pts (4 / 11, p = 0.12) |
+| Fusion vs our earlier captions-only receiver | **+19.6 pts** (35 / 13, p = 0.002) | +6.6 pts (12 / 8, p = 0.50) |
+
+- **The first multi-camera receiver that beats the single-camera baseline under the judge.** The gain is significant on CARLA and points the same way on real-world, where joint success reaches 80.3%.
+- **The supporting views always help.** The fusion beats the same pass without them on both datasets, significantly on real-world. On CARLA, part of the gain already comes from the second pass itself. On real-world the second pass alone hurts, and the supporting views more than make up for it.
+- **Trade-off.** The fusion fixes 31 of the 49 CARLA cases where the single camera fails, and breaks 16 of the 63 where it passes. On real-world it fixes 7 of 15 and breaks 4 of 46.
+- **Untuned so far:** strength 0.5 and IP-Adapter scale 1.0 (both as in Damir's code), and the 896x512 supporting reconstructions.
+
+## 0. Headline (14 Nov): Damir's method at its own settings, on our data
+
+Settings of the seed paper: generation at the photo's own resolution (1920x1088 for our 1920x1080 photos), Cityscapes palette, segmentation map sent at
+half resolution, edge map at full resolution. Single camera = Damir's MMSD; multi-camera = the same with all cameras' captions.
+
+| Setup | CARLA v3 (112): numbers / positions / joint | Real-world (61): numbers / positions / joint |
+|---|---|---|
+| **Damir's single-camera MMSD, paper settings** | 57.1% / 88.4% / **56.2%** | 77.0% / 95.1% / **75.4%** |
+| Our multi-camera captions, same settings | 50.9% / 96.4% / 50.0% | 73.8% / 95.1% / 73.8% |
+| Our best 896x512 setting (both fixes + canny 0.7 / seg 1.5), multi / single camera | 43.8% / 52.7% joint | 50.8% / 57.4% joint |
+| Current 1024x576 receiver, multi / single camera | 36.6% / 33.0% joint | 27.9% / 26.2% joint |
+
+| Paired test on the joint score (McNemar) | CARLA v3 | Real-world |
+|---|---|---|
+| Our multi-camera captions vs Damir's method, both at paper settings | -6.2 pts (p = 0.30) | -1.6 pts (p = 1.0) |
+| Our best 896x512 multi-camera setting vs Damir's method at paper settings | -12.5 pts (p = 0.065) | **-24.6 pts (p = 0.004)** |
+| Our best 896x512 single-camera setting vs Damir's method at paper settings | -3.6 pts (p = 0.68) | **-18.0 pts (p = 0.043)** |
+
+- **Generating at the photo's own resolution, as the paper does, is the best setting we have.** It reaches 56% joint on CARLA and 75% on real-world, which is better than the 896x512 working-resolution setting (Damir's point 1). The 1024x576 size we used before is the worst of the three.
+- **A likely common cause (not isolated):** at 1024x576 the full-resolution edge map is shrunk to about half, which crowds its lines into dense hatching. The 896x512 setting computes the edges at its own size, and the paper setting does not shrink them at all. Both avoid that, and the paper setting also keeps more pixels per car.
+- **The other cameras' captions do not help at any setting.** At paper settings they score 6 points lower on CARLA and 2 lower on real-world; neither difference is significant.
+- **Detector-based recall pointed the other way on resolution** (2048x1152 scored lower on 24 cases). Damir has asked us to drop detector-based evaluation, and the judge is the agreed metric.
+- **Still unexplained:** our iteration-1 reproduction on Cityscapes scored 41% at 2048x1024 (section 2), against 75% on our real-world photos at the same kind of settings. Rebuilding the Cityscapes payloads with the segmenter at full size did not change that (40.8%, section 2). The Cityscapes street scenes, full of parked cars, may be harder to count exactly. The questions to Damir (section 6) still decide this.
+
+## 1. The judge is consistent
+
+The original photo judged against itself scores 100% on both questions: 112 of 112 CARLA pairs and 61 of 61 real-world pairs. A "not preserved" verdict therefore reflects a real difference in the reconstruction, not noise from the judge.
+
+## 2. Our implementation of the seed receiver does not reach the paper's figure, even on the paper's kind of data
+
+| Cityscapes, 100 images (iteration 1, single camera, 2048x1024) | Numbers | Positions | Joint |
+|---|---|---|---|
+| Authors' settings (Cityscapes palette) | 44.0% | 77.0% | 41.0% [32-51] |
+| Same with the ADE20K palette | 42.0% | 82.0% | 41.0% [32-51] |
+| Same images, payloads rebuilt with the segmenter at full size (1024x2048), 2048x1024, Cityscapes palette (14 Nov; 98 of 100 judged) | 42.9% | 83.7% | 40.8% |
+| Seed paper, Table 6 (MMSD single camera) | 86.9-88.9% | 94.4-97.6% | 86.1-86.9% |
+
+- With the same judge, our reproduction of the seed method scores 41%, not about 86%.
+- **Not an iteration-1 artifact.** Iteration 1 made these payloads with the segmenter's 384x384 default, which costs about 19 mIoU points. Rebuilding them at full size gives the same result: 40.8% vs 41.8% joint on the same 98 images (13 better, 14 worse, McNemar p = 1.0).
+- **Likely causes:** the receiver weights (Damir: the paper's ControlNet "is trained with a different palette", while we use the public `lllyasviel` ControlNets trained on ADE20K images), the judge version, or the evaluation images.
+- **Why pairs fail:** in the judge's explanations, reconstructions both drop distant cars and invent new ones.
+
+## 3. Our datasets (joint success; numbers preserved in brackets)
+
+| Setup | CARLA v3 (112) | Real-world (61) |
+|---|---|---|
+| Current receiver: 1024x576, Cityscapes palette, all cameras' captions | 36.6% (36.6) | 27.9% (27.9) |
+| Same, reference camera only | 33.0% (33.9) | 26.2% (26.2) |
+| Working resolution only (896x512, edges at that size) | 37.5% (39.3) | 44.3% (44.3) |
+| ADE20K palette only | 37.5% (38.4) | 29.5% (29.5) |
+| Both of Damir's fixes | 43.8% (46.4) | 45.9% (47.5) |
+| Both fixes, reference camera only | 46.4% (49.1) | 54.1% (54.1) |
+| ControlNet canny 0.7 / seg 1.5 only | 49.1% (50.9) | 34.4% (34.4) |
+| Both fixes + canny 0.7 / seg 1.5 | 43.8% (43.8) | 50.8% (50.8) |
+| **Both fixes + canny 0.7 / seg 1.5, reference camera only** | **52.7% (55.4)** | **57.4% (57.4)** |
+
+Positions are preserved in 87-97% of the pairs in every setup, close to the paper. The failures are almost all about car numbers.
+
+## 4. What changes the score (paired tests on the joint score, McNemar)
+
+| Change | CARLA v3 | Real-world |
+|---|---|---|
+| Both fixes vs current receiver | +7.1 pts (p = 0.27) | **+18.0 pts (p = 0.019)** |
+| Working resolution alone | +0.9 pts (p = 1.0) | **+16.4 pts (p = 0.031)** |
+| ADE20K palette alone | +0.9 pts (p = 1.0) | +1.6 pts (p = 1.0) |
+| Canny 0.7 / seg 1.5 alone | **+12.5 pts (p = 0.016)** | +6.6 pts (p = 0.34) |
+| Canny 0.7 / seg 1.5 on top of both fixes | +0.0 pts | +4.9 pts (p = 0.63) |
+| All cameras' captions vs reference camera only, current receiver | +3.6 pts (p = 0.59) | +1.6 pts (p = 1.0) |
+| Same, with both fixes | -2.7 pts (p = 0.74) | -8.2 pts (p = 0.18) |
+| Same, with both fixes + canny 0.7 / seg 1.5 | -8.9 pts (p = 0.16) | -6.6 pts (p = 0.50) |
+
+- **Damir's resolution point is what matters on real photos** (+16 to +18 points). On CARLA, the ControlNet strengths matter instead (+12.5).
+- **The palette point changes nothing** on any dataset, including Cityscapes.
+- **Multi-camera captions never help in this metric.** With the fixes, the reference camera alone tends to score higher, though no difference is significant. The current receiver uses the other cameras only through their captions; under the judge, that brings no benefit.
+
+## 5. Payload
+
+Per camera photo (`PAYLOAD_SIZES.md`):
+- The working-resolution payload is 20.8 KB on CARLA and 16.3 KB on real-world, against 56.2 KB and 50.7 KB for the current one.
+- That is 3.9-4.3% of the photo saved as JPEG at quality 90.
+- The edge map is most of it: 91% of the current payload.
+
+## 6. Open questions for Damir
+
+**Damir's answer (18 Nov):** the paper's judge was an older Gemma model that is no longer available. That explains why our 41% on the paper's own Cityscapes images differs from the paper's 86%. Absolute numbers can only be compared under the same judge.
+
+
+1. Which ControlNet weights did the paper use: the public ones, or ones the authors trained (and on which palette)? Can we use them?
+2. Which judge model and version produced Table 6, and on which images?
+3. Could he share about 50 of the paper's own original/reconstruction pairs? If our judge gives them about 86%, the judge matches and the receiver is the gap. If not, the judge differs.
+
+Until these are answered, the 80-85% target cannot be compared like for like. On our data, Damir's method at its own settings reaches 56% (CARLA) and 75% (real-world) joint; our multi-camera captions at the same settings reach 50% and 74%, and in no setting do they beat the reference camera alone.

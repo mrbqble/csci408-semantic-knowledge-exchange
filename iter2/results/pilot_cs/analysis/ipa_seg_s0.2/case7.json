@@ -1,0 +1,268 @@
+{
+ "case": "case7",
+ "reference": "cam1",
+ "variant": "ipa_seg_s0.2",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 2,
+  "bicycle": 0,
+  "car": 4,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 2,
+  "cars_4wheel": 6,
+  "two_wheelers": 0,
+  "vehicles": 6,
+  "pedestrians": 2
+ },
+ "gt": {
+  "cars_4wheel": 8,
+  "pedestrians": 7,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "car",
+   "score": 0.999,
+   "bbox_master_px": [
+    257.8,
+    258.9,
+    445.0,
+    338.6
+   ],
+   "center_master_px": [
+    351.4,
+    298.8
+   ],
+   "ground_contact_master_px": [
+    351.4,
+    338.6
+   ],
+   "bbox_reference_px": [
+    483.4,
+    485.4,
+    834.4,
+    634.9
+   ],
+   "center_reference_px": [
+    658.9,
+    560.2
+   ]
+  },
+  {
+   "id": 1,
+   "class": "car",
+   "score": 0.997,
+   "bbox_master_px": [
+    706.5,
+    246.8,
+    778.8,
+    296.4
+   ],
+   "center_master_px": [
+    742.6,
+    271.6
+   ],
+   "ground_contact_master_px": [
+    742.6,
+    296.4
+   ],
+   "bbox_reference_px": [
+    1324.6,
+    462.8,
+    1460.2,
+    555.8
+   ],
+   "center_reference_px": [
+    1392.4,
+    509.3
+   ]
+  },
+  {
+   "id": 2,
+   "class": "person",
+   "score": 0.995,
+   "bbox_master_px": [
+    104.3,
+    242.7,
+    132.6,
+    297.5
+   ],
+   "center_master_px": [
+    118.4,
+    270.1
+   ],
+   "ground_contact_master_px": [
+    118.4,
+    297.5
+   ],
+   "bbox_reference_px": [
+    195.6,
+    455.0,
+    248.6,
+    557.8
+   ],
+   "center_reference_px": [
+    222.1,
+    506.4
+   ]
+  },
+  {
+   "id": 3,
+   "class": "person",
+   "score": 0.994,
+   "bbox_master_px": [
+    169.9,
+    238.8,
+    201.2,
+    295.7
+   ],
+   "center_master_px": [
+    185.6,
+    267.3
+   ],
+   "ground_contact_master_px": [
+    185.6,
+    295.7
+   ],
+   "bbox_reference_px": [
+    318.5,
+    447.8,
+    377.3,
+    554.4
+   ],
+   "center_reference_px": [
+    347.9,
+    501.1
+   ]
+  },
+  {
+   "id": 4,
+   "class": "car",
+   "score": 0.986,
+   "bbox_master_px": [
+    500.7,
+    249.9,
+    603.6,
+    300.3
+   ],
+   "center_master_px": [
+    552.2,
+    275.1
+   ],
+   "ground_contact_master_px": [
+    552.2,
+    300.3
+   ],
+   "bbox_reference_px": [
+    938.9,
+    468.5,
+    1131.7,
+    563.1
+   ],
+   "center_reference_px": [
+    1035.3,
+    515.8
+   ]
+  },
+  {
+   "id": 5,
+   "class": "truck",
+   "score": 0.626,
+   "bbox_master_px": [
+    976.2,
+    243.9,
+    1024.0,
+    307.4
+   ],
+   "center_master_px": [
+    1000.1,
+    275.6
+   ],
+   "ground_contact_master_px": [
+    1000.1,
+    307.4
+   ],
+   "bbox_reference_px": [
+    1830.3,
+    457.3,
+    1920.0,
+    576.3
+   ],
+   "center_reference_px": [
+    1875.2,
+    516.8
+   ]
+  },
+  {
+   "id": 6,
+   "class": "truck",
+   "score": 0.616,
+   "bbox_master_px": [
+    515.0,
+    226.3,
+    571.3,
+    254.9
+   ],
+   "center_master_px": [
+    543.1,
+    240.6
+   ],
+   "ground_contact_master_px": [
+    543.1,
+    254.9
+   ],
+   "bbox_reference_px": [
+    965.6,
+    424.4,
+    1071.2,
+    477.9
+   ],
+   "center_reference_px": [
+    1018.4,
+    451.1
+   ]
+  },
+  {
+   "id": 7,
+   "class": "car",
+   "score": 0.6,
+   "bbox_master_px": [
+    978.0,
+    247.2,
+    1024.0,
+    307.0
+   ],
+   "center_master_px": [
+    1001.0,
+    277.1
+   ],
+   "ground_contact_master_px": [
+    1001.0,
+    307.0
+   ],
+   "bbox_reference_px": [
+    1833.8,
+    463.5,
+    1920.0,
+    575.7
+   ],
+   "center_reference_px": [
+    1876.9,
+    519.6
+   ]
+  }
+ ],
+ "vehicle_recall": 0.625,
+ "vehicle_precision": 0.8333333333333334,
+ "person_recall": 0.18181818181818182,
+ "person_precision": 1.0,
+ "vehicle_count_abs_err_vs_oracle": 2,
+ "person_count_abs_err_vs_oracle": 9,
+ "seconds": 11.249911199999588,
+ "prompt": "a street with a car and a sign on it, a man walking across a crosswalk in a city, a coca truck driving down a city street, a car is driving down the street in a city, a man is walking down the street in a city"
+}

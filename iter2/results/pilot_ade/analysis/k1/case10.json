@@ -1,0 +1,181 @@
+{
+ "case": "case10",
+ "reference": "cam1",
+ "variant": "k1",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 1,
+  "bicycle": 0,
+  "car": 3,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 1,
+  "cars_4wheel": 4,
+  "two_wheelers": 0,
+  "vehicles": 4,
+  "pedestrians": 1
+ },
+ "gt": {
+  "cars_4wheel": 7,
+  "pedestrians": 12,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "car",
+   "score": 0.998,
+   "bbox_master_px": [
+    75.0,
+    277.7,
+    235.3,
+    381.1
+   ],
+   "center_master_px": [
+    155.2,
+    329.4
+   ],
+   "ground_contact_master_px": [
+    155.2,
+    381.1
+   ],
+   "bbox_reference_px": [
+    140.6,
+    520.7,
+    441.3,
+    714.5
+   ],
+   "center_reference_px": [
+    290.9,
+    617.6
+   ]
+  },
+  {
+   "id": 1,
+   "class": "person",
+   "score": 0.987,
+   "bbox_master_px": [
+    954.9,
+    251.3,
+    1011.0,
+    350.5
+   ],
+   "center_master_px": [
+    983.0,
+    300.9
+   ],
+   "ground_contact_master_px": [
+    983.0,
+    350.5
+   ],
+   "bbox_reference_px": [
+    1790.5,
+    471.1,
+    1895.7,
+    657.2
+   ],
+   "center_reference_px": [
+    1843.1,
+    564.2
+   ]
+  },
+  {
+   "id": 2,
+   "class": "car",
+   "score": 0.885,
+   "bbox_master_px": [
+    269.1,
+    273.2,
+    356.0,
+    345.7
+   ],
+   "center_master_px": [
+    312.6,
+    309.5
+   ],
+   "ground_contact_master_px": [
+    312.6,
+    345.7
+   ],
+   "bbox_reference_px": [
+    504.6,
+    512.3,
+    667.5,
+    648.3
+   ],
+   "center_reference_px": [
+    586.1,
+    580.3
+   ]
+  },
+  {
+   "id": 3,
+   "class": "truck",
+   "score": 0.779,
+   "bbox_master_px": [
+    176.5,
+    242.3,
+    273.0,
+    315.3
+   ],
+   "center_master_px": [
+    224.8,
+    278.8
+   ],
+   "ground_contact_master_px": [
+    224.8,
+    315.3
+   ],
+   "bbox_reference_px": [
+    331.0,
+    454.4,
+    511.8,
+    591.2
+   ],
+   "center_reference_px": [
+    421.4,
+    522.8
+   ]
+  },
+  {
+   "id": 4,
+   "class": "car",
+   "score": 0.696,
+   "bbox_master_px": [
+    175.5,
+    243.5,
+    273.9,
+    314.6
+   ],
+   "center_master_px": [
+    224.7,
+    279.1
+   ],
+   "ground_contact_master_px": [
+    224.7,
+    314.6
+   ],
+   "bbox_reference_px": [
+    329.1,
+    456.6,
+    513.6,
+    589.9
+   ],
+   "center_reference_px": [
+    421.4,
+    523.2
+   ]
+  }
+ ],
+ "vehicle_recall": 0.75,
+ "vehicle_precision": 0.75,
+ "person_recall": 0.07692307692307693,
+ "person_precision": 1.0,
+ "vehicle_count_abs_err_vs_oracle": 0,
+ "person_count_abs_err_vs_oracle": 12,
+ "seconds": 10.43591060000017,
+ "prompt": "a yellow taxi cab"
+}

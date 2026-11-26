@@ -1,0 +1,300 @@
+{
+ "gates_m": {
+  "vehicle": 3.0,
+  "pedestrian": 2.0
+ },
+ "mean_gt_per_case": {
+  "vehicle": {
+   "rec1": 7.0,
+   "union": 13.0,
+   "hidden_from_rec1": 6.0
+  },
+  "pedestrian": {
+   "rec1": 5.0,
+   "union": 17.0,
+   "hidden_from_rec1": 12.0
+  }
+ },
+ "results": {
+  "pedestrian|geofuse_F0|vs_rec1": {
+   "n_cases": 1,
+   "count_mae": 1.0,
+   "count_bias": 1.0,
+   "recall": 0.6,
+   "precision": 0.5,
+   "median_pos_err_m": 1.185959527134041,
+   "mean_gt": 5.0,
+   "mean_pred": 6.0
+  },
+  "pedestrian|geofuse_F0|vs_union": {
+   "n_cases": 1,
+   "count_mae": 11.0,
+   "count_bias": -11.0,
+   "recall": 0.17647058823529413,
+   "precision": 0.5,
+   "median_pos_err_m": 1.185959527134041,
+   "mean_gt": 17.0,
+   "mean_pred": 6.0
+  },
+  "pedestrian|geofuse_F3|vs_rec1": {
+   "n_cases": 1,
+   "count_mae": 2.0,
+   "count_bias": 2.0,
+   "recall": 0.6,
+   "precision": 0.42857142857142855,
+   "median_pos_err_m": 1.185959527134041,
+   "mean_gt": 5.0,
+   "mean_pred": 7.0
+  },
+  "pedestrian|geofuse_F3|vs_union": {
+   "n_cases": 1,
+   "count_mae": 10.0,
+   "count_bias": -10.0,
+   "recall": 0.17647058823529413,
+   "precision": 0.42857142857142855,
+   "median_pos_err_m": 1.185959527134041,
+   "mean_gt": 17.0,
+   "mean_pred": 7.0
+  },
+  "pedestrian|geofuse_scene_all|vs_rec1": {
+   "n_cases": 1,
+   "count_mae": 23.0,
+   "count_bias": 23.0,
+   "recall": 0.6,
+   "precision": 0.10714285714285714,
+   "median_pos_err_m": 1.185959527134041,
+   "mean_gt": 5.0,
+   "mean_pred": 28.0
+  },
+  "pedestrian|geofuse_scene_all|vs_union": {
+   "n_cases": 1,
+   "count_mae": 11.0,
+   "count_bias": 11.0,
+   "recall": 0.35294117647058826,
+   "precision": 0.21428571428571427,
+   "median_pos_err_m": 1.2091169236214996,
+   "mean_gt": 17.0,
+   "mean_pred": 28.0
+  },
+  "pedestrian|geofuse_scene_min2|vs_rec1": {
+   "n_cases": 1,
+   "count_mae": 4.0,
+   "count_bias": -4.0,
+   "recall": 0.0,
+   "precision": 0.0,
+   "median_pos_err_m": null,
+   "mean_gt": 5.0,
+   "mean_pred": 1.0
+  },
+  "pedestrian|geofuse_scene_min2|vs_union": {
+   "n_cases": 1,
+   "count_mae": 16.0,
+   "count_bias": -16.0,
+   "recall": 0.058823529411764705,
+   "precision": 1.0,
+   "median_pos_err_m": 0.13601470508735766,
+   "mean_gt": 17.0,
+   "mean_pred": 1.0
+  },
+  "pedestrian|k1|vs_rec1": {
+   "n_cases": 1,
+   "count_mae": 4.0,
+   "count_bias": -4.0,
+   "recall": 0.2,
+   "precision": 1.0,
+   "median_pos_err_m": 0.29940864707318626,
+   "mean_gt": 5.0,
+   "mean_pred": 1.0
+  },
+  "pedestrian|k1|vs_union": {
+   "n_cases": 1,
+   "count_mae": 16.0,
+   "count_bias": -16.0,
+   "recall": 0.058823529411764705,
+   "precision": 1.0,
+   "median_pos_err_m": 0.29940864707318626,
+   "mean_gt": 17.0,
+   "mean_pred": 1.0
+  },
+  "pedestrian|oracle_gen|vs_rec1": {
+   "n_cases": 1,
+   "count_mae": 9.0,
+   "count_bias": 9.0,
+   "recall": 0.8,
+   "precision": 0.2857142857142857,
+   "median_pos_err_m": 1.3901694425070124,
+   "mean_gt": 5.0,
+   "mean_pred": 14.0
+  },
+  "pedestrian|oracle_gen|vs_union": {
+   "n_cases": 1,
+   "count_mae": 3.0,
+   "count_bias": -3.0,
+   "recall": 0.29411764705882354,
+   "precision": 0.35714285714285715,
+   "median_pos_err_m": 1.2730833354341256,
+   "mean_gt": 17.0,
+   "mean_pred": 14.0
+  },
+  "pedestrian|prompt_only|vs_rec1": {
+   "n_cases": 1,
+   "count_mae": 4.0,
+   "count_bias": -4.0,
+   "recall": 0.2,
+   "precision": 1.0,
+   "median_pos_err_m": 0.3893843875900159,
+   "mean_gt": 5.0,
+   "mean_pred": 1.0
+  },
+  "pedestrian|prompt_only|vs_union": {
+   "n_cases": 1,
+   "count_mae": 16.0,
+   "count_bias": -16.0,
+   "recall": 0.058823529411764705,
+   "precision": 1.0,
+   "median_pos_err_m": 0.3893843875900159,
+   "mean_gt": 17.0,
+   "mean_pred": 1.0
+  },
+  "vehicle|geofuse_F0|vs_rec1": {
+   "n_cases": 1,
+   "count_mae": 3.0,
+   "count_bias": -3.0,
+   "recall": 0.2857142857142857,
+   "precision": 0.5,
+   "median_pos_err_m": 0.93161518971094,
+   "mean_gt": 7.0,
+   "mean_pred": 4.0
+  },
+  "vehicle|geofuse_F0|vs_union": {
+   "n_cases": 1,
+   "count_mae": 9.0,
+   "count_bias": -9.0,
+   "recall": 0.15384615384615385,
+   "precision": 0.5,
+   "median_pos_err_m": 0.93161518971094,
+   "mean_gt": 13.0,
+   "mean_pred": 4.0
+  },
+  "vehicle|geofuse_F3|vs_rec1": {
+   "n_cases": 1,
+   "count_mae": 3.0,
+   "count_bias": -3.0,
+   "recall": 0.2857142857142857,
+   "precision": 0.5,
+   "median_pos_err_m": 0.93161518971094,
+   "mean_gt": 7.0,
+   "mean_pred": 4.0
+  },
+  "vehicle|geofuse_F3|vs_union": {
+   "n_cases": 1,
+   "count_mae": 9.0,
+   "count_bias": -9.0,
+   "recall": 0.15384615384615385,
+   "precision": 0.5,
+   "median_pos_err_m": 0.93161518971094,
+   "mean_gt": 13.0,
+   "mean_pred": 4.0
+  },
+  "vehicle|geofuse_scene_all|vs_rec1": {
+   "n_cases": 1,
+   "count_mae": 11.0,
+   "count_bias": 11.0,
+   "recall": 0.5714285714285714,
+   "precision": 0.2222222222222222,
+   "median_pos_err_m": 1.3358328614570032,
+   "mean_gt": 7.0,
+   "mean_pred": 18.0
+  },
+  "vehicle|geofuse_scene_all|vs_union": {
+   "n_cases": 1,
+   "count_mae": 5.0,
+   "count_bias": 5.0,
+   "recall": 0.46153846153846156,
+   "precision": 0.3333333333333333,
+   "median_pos_err_m": 1.554256417027565,
+   "mean_gt": 13.0,
+   "mean_pred": 18.0
+  },
+  "vehicle|geofuse_scene_min2|vs_rec1": {
+   "n_cases": 1,
+   "count_mae": 7.0,
+   "count_bias": -7.0,
+   "recall": 0.0,
+   "precision": null,
+   "median_pos_err_m": null,
+   "mean_gt": 7.0,
+   "mean_pred": 0.0
+  },
+  "vehicle|geofuse_scene_min2|vs_union": {
+   "n_cases": 1,
+   "count_mae": 13.0,
+   "count_bias": -13.0,
+   "recall": 0.0,
+   "precision": null,
+   "median_pos_err_m": null,
+   "mean_gt": 13.0,
+   "mean_pred": 0.0
+  },
+  "vehicle|k1|vs_rec1": {
+   "n_cases": 1,
+   "count_mae": 1.0,
+   "count_bias": -1.0,
+   "recall": 0.42857142857142855,
+   "precision": 0.5,
+   "median_pos_err_m": 1.2863243391198416,
+   "mean_gt": 7.0,
+   "mean_pred": 6.0
+  },
+  "vehicle|k1|vs_union": {
+   "n_cases": 1,
+   "count_mae": 7.0,
+   "count_bias": -7.0,
+   "recall": 0.23076923076923078,
+   "precision": 0.5,
+   "median_pos_err_m": 1.2863243391198416,
+   "mean_gt": 13.0,
+   "mean_pred": 6.0
+  },
+  "vehicle|oracle_gen|vs_rec1": {
+   "n_cases": 1,
+   "count_mae": 1.0,
+   "count_bias": 1.0,
+   "recall": 0.7142857142857143,
+   "precision": 0.625,
+   "median_pos_err_m": 1.8871767001760609,
+   "mean_gt": 7.0,
+   "mean_pred": 8.0
+  },
+  "vehicle|oracle_gen|vs_union": {
+   "n_cases": 1,
+   "count_mae": 5.0,
+   "count_bias": -5.0,
+   "recall": 0.38461538461538464,
+   "precision": 0.625,
+   "median_pos_err_m": 1.8871767001760609,
+   "mean_gt": 13.0,
+   "mean_pred": 8.0
+  },
+  "vehicle|prompt_only|vs_rec1": {
+   "n_cases": 1,
+   "count_mae": 1.0,
+   "count_bias": 1.0,
+   "recall": 0.42857142857142855,
+   "precision": 0.375,
+   "median_pos_err_m": 1.2886831422556617,
+   "mean_gt": 7.0,
+   "mean_pred": 8.0
+  },
+  "vehicle|prompt_only|vs_union": {
+   "n_cases": 1,
+   "count_mae": 5.0,
+   "count_bias": -5.0,
+   "recall": 0.23076923076923078,
+   "precision": 0.375,
+   "median_pos_err_m": 1.2886831422556617,
+   "mean_gt": 13.0,
+   "mean_pred": 8.0
+  }
+ }
+}

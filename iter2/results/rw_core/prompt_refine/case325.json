@@ -1,0 +1,74 @@
+{
+ "case": "case325",
+ "variant": "prompt_refine",
+ "ip_adapter_scale": 0.0,
+ "ip_adapter_source": "none",
+ "reference": "cam1",
+ "supporting": [
+  "cam2",
+  "cam3"
+ ],
+ "timestamp": null,
+ "prompt": "a black truck is stopped at a crosswalk, a street with cars parked on it and a traffic light, a bus is stopped at a stop on a busy street",
+ "seconds": 14.785662500000399,
+ "peak_gpu_mb": 5394.6416015625,
+ "size": [
+  1024,
+  576
+ ],
+ "palette": "cs",
+ "ref_policy": "first",
+ "seed": 42,
+ "steps": 20,
+ "guidance": 7.5,
+ "donor_case": null,
+ "cn_scales": [
+  1.0,
+  1.0
+ ],
+ "edge_thr": 40,
+ "base": "existing prompt_only result",
+ "base_seconds": 10.459372400000575,
+ "refine_seconds": 4.326290099999824,
+ "refine": {
+  "n_small_blobs": 2,
+  "n_windows": 2,
+  "uncovered_blobs": 0,
+  "windows": [
+   {
+    "x0": 0,
+    "y0": 287,
+    "n_blobs": 1,
+    "blob_areas": [
+     484
+    ],
+    "index": 0,
+    "seconds": 2.1620261000007304
+   },
+   {
+    "x0": 176,
+    "y0": 214,
+    "n_blobs": 1,
+    "blob_areas": [
+     105
+    ],
+    "index": 1,
+    "seconds": 2.1642639999990934
+   }
+  ],
+  "failures": [],
+  "seconds": 4.326290099999824
+ },
+ "refine_settings": {
+  "window": 128,
+  "upscale": 4,
+  "strength": 0.5,
+  "feather_px": 12,
+  "max_windows": 8,
+  "min_area": 12,
+  "max_side": 48,
+  "prompt": "cars on a city street, realistic photo, sharp",
+  "negative_prompt": "blurry, deformed, cartoon",
+  "seed": "42 + window index"
+ }
+}

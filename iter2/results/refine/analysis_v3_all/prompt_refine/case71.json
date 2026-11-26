@@ -1,0 +1,123 @@
+{
+ "case": "case71",
+ "reference": "cam1",
+ "variant": "prompt_refine",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 1,
+  "bicycle": 0,
+  "car": 2,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 0,
+  "cars_4wheel": 2,
+  "two_wheelers": 0,
+  "vehicles": 2,
+  "pedestrians": 1
+ },
+ "gt": {
+  "cars_4wheel": 7,
+  "pedestrians": 10,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "person",
+   "score": 0.985,
+   "bbox_master_px": [
+    83.7,
+    245.1,
+    123.8,
+    313.2
+   ],
+   "center_master_px": [
+    103.8,
+    279.1
+   ],
+   "ground_contact_master_px": [
+    103.8,
+    313.2
+   ],
+   "bbox_reference_px": [
+    157.0,
+    459.5,
+    232.2,
+    587.2
+   ],
+   "center_reference_px": [
+    194.6,
+    523.3
+   ]
+  },
+  {
+   "id": 1,
+   "class": "car",
+   "score": 0.975,
+   "bbox_master_px": [
+    524.5,
+    219.9,
+    607.0,
+    264.2
+   ],
+   "center_master_px": [
+    565.7,
+    242.0
+   ],
+   "ground_contact_master_px": [
+    565.7,
+    264.2
+   ],
+   "bbox_reference_px": [
+    983.5,
+    412.3,
+    1138.0,
+    495.3
+   ],
+   "center_reference_px": [
+    1060.8,
+    453.8
+   ]
+  },
+  {
+   "id": 2,
+   "class": "car",
+   "score": 0.974,
+   "bbox_master_px": [
+    779.9,
+    248.8,
+    861.9,
+    284.4
+   ],
+   "center_master_px": [
+    820.9,
+    266.6
+   ],
+   "ground_contact_master_px": [
+    820.9,
+    284.4
+   ],
+   "bbox_reference_px": [
+    1462.3,
+    466.4,
+    1616.0,
+    533.2
+   ],
+   "center_reference_px": [
+    1539.1,
+    499.8
+   ]
+  }
+ ],
+ "vehicle_recall": 0.4,
+ "vehicle_precision": 1.0,
+ "person_recall": 0.07142857142857142,
+ "person_precision": 1.0,
+ "vehicle_count_abs_err_vs_oracle": 3,
+ "person_count_abs_err_vs_oracle": 13,
+ "seconds": 14.772658699999738,
+ "prompt": "a tree on the sidewalk, a street with a line of trees, a street with a line of cars and a fire hydra, a street scene with a horse and a car, a street with a police car parked on the side of the road"
+}

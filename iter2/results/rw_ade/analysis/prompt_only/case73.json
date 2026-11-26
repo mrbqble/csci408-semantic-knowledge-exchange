@@ -1,0 +1,206 @@
+{
+ "case": "case73",
+ "reference": "cam1",
+ "variant": "prompt_only",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 3,
+  "bicycle": 0,
+  "car": 1,
+  "motorcycle": 0,
+  "bus": 2,
+  "truck": 0,
+  "cars_4wheel": 3,
+  "two_wheelers": 0,
+  "vehicles": 3,
+  "pedestrians": 3
+ },
+ "gt": null,
+ "detections": [
+  {
+   "id": 0,
+   "class": "bus",
+   "score": 1.0,
+   "bbox_master_px": [
+    29.4,
+    58.5,
+    618.6,
+    371.7
+   ],
+   "center_master_px": [
+    324.0,
+    215.1
+   ],
+   "ground_contact_master_px": [
+    324.0,
+    371.7
+   ],
+   "bbox_reference_px": [
+    55.1,
+    109.8,
+    1159.9,
+    696.9
+   ],
+   "center_reference_px": [
+    607.5,
+    403.3
+   ]
+  },
+  {
+   "id": 1,
+   "class": "person",
+   "score": 1.0,
+   "bbox_master_px": [
+    169.5,
+    197.7,
+    310.5,
+    574.3
+   ],
+   "center_master_px": [
+    240.0,
+    386.0
+   ],
+   "ground_contact_master_px": [
+    240.0,
+    574.3
+   ],
+   "bbox_reference_px": [
+    317.9,
+    370.7,
+    582.2,
+    1076.8
+   ],
+   "center_reference_px": [
+    450.0,
+    723.8
+   ]
+  },
+  {
+   "id": 2,
+   "class": "car",
+   "score": 0.986,
+   "bbox_master_px": [
+    611.0,
+    200.9,
+    814.5,
+    301.7
+   ],
+   "center_master_px": [
+    712.7,
+    251.3
+   ],
+   "ground_contact_master_px": [
+    712.7,
+    301.7
+   ],
+   "bbox_reference_px": [
+    1145.6,
+    376.6,
+    1527.2,
+    565.6
+   ],
+   "center_reference_px": [
+    1336.4,
+    471.1
+   ]
+  },
+  {
+   "id": 3,
+   "class": "person",
+   "score": 0.958,
+   "bbox_master_px": [
+    790.7,
+    202.8,
+    808.4,
+    243.7
+   ],
+   "center_master_px": [
+    799.6,
+    223.3
+   ],
+   "ground_contact_master_px": [
+    799.6,
+    243.7
+   ],
+   "bbox_reference_px": [
+    1482.5,
+    380.3,
+    1515.8,
+    457.0
+   ],
+   "center_reference_px": [
+    1499.2,
+    418.6
+   ]
+  },
+  {
+   "id": 4,
+   "class": "person",
+   "score": 0.94,
+   "bbox_master_px": [
+    748.0,
+    195.1,
+    763.5,
+    229.4
+   ],
+   "center_master_px": [
+    755.7,
+    212.3
+   ],
+   "ground_contact_master_px": [
+    755.7,
+    229.4
+   ],
+   "bbox_reference_px": [
+    1402.5,
+    365.9,
+    1431.5,
+    430.2
+   ],
+   "center_reference_px": [
+    1417.0,
+    398.0
+   ]
+  },
+  {
+   "id": 5,
+   "class": "bus",
+   "score": 0.624,
+   "bbox_master_px": [
+    609.4,
+    178.6,
+    723.5,
+    210.8
+   ],
+   "center_master_px": [
+    666.5,
+    194.7
+   ],
+   "ground_contact_master_px": [
+    666.5,
+    210.8
+   ],
+   "bbox_reference_px": [
+    1142.6,
+    335.0,
+    1356.6,
+    395.3
+   ],
+   "center_reference_px": [
+    1249.6,
+    365.1
+   ]
+  }
+ ],
+ "vehicle_recall": 0.75,
+ "vehicle_precision": 1.0,
+ "person_recall": 0.14285714285714285,
+ "person_precision": 0.3333333333333333,
+ "vehicle_count_abs_err_vs_oracle": 1,
+ "person_count_abs_err_vs_oracle": 4,
+ "seconds": 11.019068600002356,
+ "prompt": "a woman is standing in front of a bus, a cloudy sky, a man walking down the street in front of a bus"
+}

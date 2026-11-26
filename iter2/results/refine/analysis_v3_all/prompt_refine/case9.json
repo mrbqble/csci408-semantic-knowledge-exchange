@@ -1,0 +1,123 @@
+{
+ "case": "case9",
+ "reference": "cam1",
+ "variant": "prompt_refine",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 0,
+  "bicycle": 0,
+  "car": 3,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 0,
+  "cars_4wheel": 3,
+  "two_wheelers": 0,
+  "vehicles": 3,
+  "pedestrians": 0
+ },
+ "gt": {
+  "cars_4wheel": 10,
+  "pedestrians": 12,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "car",
+   "score": 0.999,
+   "bbox_master_px": [
+    567.0,
+    281.8,
+    624.4,
+    327.9
+   ],
+   "center_master_px": [
+    595.7,
+    304.9
+   ],
+   "ground_contact_master_px": [
+    595.7,
+    327.9
+   ],
+   "bbox_reference_px": [
+    1063.2,
+    528.5,
+    1170.8,
+    614.9
+   ],
+   "center_reference_px": [
+    1117.0,
+    571.7
+   ]
+  },
+  {
+   "id": 1,
+   "class": "car",
+   "score": 0.906,
+   "bbox_master_px": [
+    593.4,
+    270.1,
+    647.0,
+    296.2
+   ],
+   "center_master_px": [
+    620.2,
+    283.1
+   ],
+   "ground_contact_master_px": [
+    620.2,
+    296.2
+   ],
+   "bbox_reference_px": [
+    1112.6,
+    506.4,
+    1213.1,
+    555.3
+   ],
+   "center_reference_px": [
+    1162.8,
+    530.9
+   ]
+  },
+  {
+   "id": 2,
+   "class": "car",
+   "score": 0.537,
+   "bbox_master_px": [
+    632.8,
+    270.8,
+    651.3,
+    279.3
+   ],
+   "center_master_px": [
+    642.0,
+    275.1
+   ],
+   "ground_contact_master_px": [
+    642.0,
+    279.3
+   ],
+   "bbox_reference_px": [
+    1186.5,
+    507.8,
+    1221.2,
+    523.7
+   ],
+   "center_reference_px": [
+    1203.8,
+    515.8
+   ]
+  }
+ ],
+ "vehicle_recall": 0.2857142857142857,
+ "vehicle_precision": 0.6666666666666666,
+ "person_recall": 0.0,
+ "person_precision": null,
+ "vehicle_count_abs_err_vs_oracle": 4,
+ "person_count_abs_err_vs_oracle": 14,
+ "seconds": 17.59973440000431,
+ "prompt": "a street scene with a car and a bus, a blue car driving down a street next to a building, a street with a car parked on the side"
+}

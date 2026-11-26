@@ -1,0 +1,152 @@
+{
+ "case": "case22",
+ "reference": "cam1",
+ "variant": "ipa_seg_s0.2",
+ "master_size": [
+  1024,
+  576
+ ],
+ "counts": {
+  "person": 2,
+  "bicycle": 0,
+  "car": 1,
+  "motorcycle": 0,
+  "bus": 1,
+  "truck": 0,
+  "cars_4wheel": 2,
+  "two_wheelers": 0,
+  "vehicles": 2,
+  "pedestrians": 2
+ },
+ "gt": {
+  "cars_4wheel": 19,
+  "pedestrians": 7,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "person",
+   "score": 0.861,
+   "bbox_master_px": [
+    876.2,
+    280.6,
+    905.7,
+    353.7
+   ],
+   "center_master_px": [
+    890.9,
+    317.1
+   ],
+   "ground_contact_master_px": [
+    890.9,
+    353.7
+   ],
+   "bbox_reference_px": [
+    1642.9,
+    526.1,
+    1698.1,
+    663.2
+   ],
+   "center_reference_px": [
+    1670.5,
+    594.7
+   ]
+  },
+  {
+   "id": 1,
+   "class": "bus",
+   "score": 0.76,
+   "bbox_master_px": [
+    303.5,
+    264.7,
+    462.0,
+    345.3
+   ],
+   "center_master_px": [
+    382.8,
+    305.0
+   ],
+   "ground_contact_master_px": [
+    382.8,
+    345.3
+   ],
+   "bbox_reference_px": [
+    569.1,
+    496.3,
+    866.3,
+    647.5
+   ],
+   "center_reference_px": [
+    717.7,
+    571.9
+   ]
+  },
+  {
+   "id": 2,
+   "class": "person",
+   "score": 0.59,
+   "bbox_master_px": [
+    441.1,
+    305.9,
+    456.9,
+    335.3
+   ],
+   "center_master_px": [
+    449.0,
+    320.6
+   ],
+   "ground_contact_master_px": [
+    449.0,
+    335.3
+   ],
+   "bbox_reference_px": [
+    827.1,
+    573.5,
+    856.6,
+    628.7
+   ],
+   "center_reference_px": [
+    841.9,
+    601.1
+   ]
+  },
+  {
+   "id": 3,
+   "class": "car",
+   "score": 0.539,
+   "bbox_master_px": [
+    302.9,
+    265.6,
+    462.4,
+    346.3
+   ],
+   "center_master_px": [
+    382.6,
+    305.9
+   ],
+   "ground_contact_master_px": [
+    382.6,
+    346.3
+   ],
+   "bbox_reference_px": [
+    567.9,
+    498.0,
+    866.9,
+    649.3
+   ],
+   "center_reference_px": [
+    717.4,
+    573.6
+   ]
+  }
+ ],
+ "vehicle_recall": 0.1111111111111111,
+ "vehicle_precision": 1.0,
+ "person_recall": 0.25,
+ "person_precision": 0.5,
+ "vehicle_count_abs_err_vs_oracle": 16,
+ "person_count_abs_err_vs_oracle": 2,
+ "seconds": 10.547743800000717,
+ "prompt": "a street scene with a car and a bus, a woman walking down the street in a city, a man walking across a street in a city, a woman walking across a crosswalk in a city"
+}

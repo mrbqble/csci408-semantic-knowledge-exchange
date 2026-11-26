@@ -1,0 +1,22 @@
+# prompt_refine on every case (random-sample test)
+
+All 112 CARLA v3 cases and all 61 evaluated real-world cases; no case selection. Definitions as in `REFINE_REPORT.md`: recall/precision against the detector on the original photo, Hungarian matching at IoU >= 0.5, pooled; bins by oracle-box side in the 1024x576 view; paired change = `prompt_refine` minus `prompt_only` per-case recall with a 95% bootstrap CI over cases.
+
+| dataset | variant | recall <24 px | 24-48 px | 48-120 px | >120 px | recall all | precision | cars MAE vs GT | s/img |
+|---|---|---|---|---|---|---|---|---|---|
+| CARLA v3 (all 112 cases) | prompt_only | 0.09 | 0.44 | 0.75 | 0.94 | 0.54 | 0.62 | 2.71 | 10.8 |
+| CARLA v3 (all 112 cases) | prompt_refine | 0.15 | 0.48 | 0.75 | 0.93 | 0.56 | 0.60 | 2.43 | 17.3 |
+| Real-world (all 61 evaluated cases) | prompt_only | 0.17 | 0.17 | 0.79 | 0.95 | 0.47 | 0.76 | - | 10.5 |
+| Real-world (all 61 evaluated cases) | prompt_refine | 0.21 | 0.18 | 0.79 | 0.95 | 0.48 | 0.76 | - | 12.8 |
+
+## Paired change in per-case recall
+
+| subset | all vehicles | vehicles < 48 px |
+|---|---|---|
+| CARLA v3 (all 112 cases) | +0.023 (95% CI +0.005 to +0.043; n=112; CI above zero) | +0.056 (95% CI +0.020 to +0.092; n=106; CI above zero) |
+| Real-world (all 61 evaluated cases) | +0.012 (95% CI -0.000 to +0.026; n=61; CI crosses zero) | +0.023 (95% CI -0.007 to +0.057; n=55; CI crosses zero) |
+| both datasets | +0.019 (95% CI +0.007 to +0.032; n=173; CI above zero) | +0.044 (95% CI +0.019 to +0.074; n=161; CI above zero) |
+
+## Decision (rule fixed in advance)
+
+Pooled all-vehicle gain +0.019 (95% CI +0.007 to +0.032). Rule: keep only if the gain is >= +0.05 with the CI above zero. **Result: drop from the default pipeline.**

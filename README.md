@@ -7,6 +7,8 @@ Adviser: Prof. Dimitrios Zorbas · Type: R&D · Complexity: Highest
 
 The registered title is kept; the direction changed at the 14 September adviser meeting.
 
+> **Latest work (Nov 2026):** iteration 2, the multi-camera receiver and its VLM-judge evaluation, is in [`iter2/`](iter2/). Start with [`iter2/report_kit/README.md`](iter2/report_kit/README.md) for the numbers, figures and tables, and [`iter2/VLM_FINDINGS.md`](iter2/VLM_FINDINGS.md) for the full log. Step-by-step examples are in [`iter2/fusion_demo/`](iter2/fusion_demo/).
+
 ---
 
 ## Current direction
@@ -194,9 +196,36 @@ scripts/iteration1.sh     # unit tests, COCO download, measurement; Cityscapes a
 
 Results: `results/iteration1_*.json`.
 
+## Branches and versions
+
+Each version of the work is kept on its own branch; `main` holds both iterations together.
+
+| Branch | Contents |
+|---|---|
+| `main` | Iteration 1 and iteration 2 (iteration 2 merged through PR #34) |
+| `iteration-1` | Iteration 1 as merged on 12 Oct 2026 (PRs #27–#33), kept unchanged |
+| `iteration-1/*`, `settings/operating-point` | The individual iteration 1 pull requests |
+| `iter2-multicam` | Iteration 2: multi-camera receiver, dataset tooling, VLM-judge evaluation, report kit (PR #34) |
+
+## Iteration 2 (12 Oct – 26 Nov): the multi-camera receiver
+
+Every camera sends the unchanged MMSD payload (segmentation map, edge map, caption). The receiver reconstructs each camera from its own payload, then refines the main camera's reconstruction in a second Stable Diffusion 1.5 img2img pass (strength 0.5): ControlNets on the main camera's maps, an IP-Adapter on the other cameras' reconstructions, and a caption merged from all cameras. The fusion design was proposed by D. Assylbek. A VLM judge (gemma-4-31b-it) decides whether car numbers and car positions are preserved.
+
+| Joint success (numbers and positions) | CARLA v3, 112 cases | Real-world (Astana), 61 cases |
+|---|---|---|
+| Single-camera MMSD | 56.2% | 75.4% |
+| Multi-camera fusion | 69.6% (McNemar p = 0.040) | 80.3% (p = 0.55) |
+
+Datasets and image outputs are on the team Google Drive; [`iter2/handoff/`](iter2/handoff/) indexes them.
+
 ## Repository layout
 
 ```
+iter2/                  Iteration 2: multi-camera receiver, VLM judge, findings, report kit
+iter1/                  Iteration 1 scripts and result summaries added in November
+tools/carla_multicam_kit/  CARLA multi-camera generators; real-world frame extraction and sync
+netsim/                 Network-emulation prototype (gRPC, Docker, tc/netem), October
+setup_project.py, share_project.py, clear_tasks.py  GitHub Projects board scripts (September)
 mmsd_sender.py          Iteration 1: MMSD sender (segmentation, edges, caption) + measurement
 encoding_ablation.py    Iteration 1: WebP and PNG encodings of the same maps
 canny_sweep.py          Iteration 1: edge-map size under several Canny settings

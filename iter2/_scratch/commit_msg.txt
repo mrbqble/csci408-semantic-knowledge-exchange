@@ -1,0 +1,9 @@
+iter2: multi-camera master view pipeline, evaluation and findings
+
+- iter2/: sender stage (payloads), coordinator (Rec1 ControlNets + fused prompt, optional IP-Adapter),
+  detector analysis, ground-plane fusion across cameras, scene-level evaluation, report builder
+- carla/: dataset generators v2 and v3 (v3 saves visible object ids and world positions);
+  previously only in an unversioned folder on one machine
+- iter1/: the three iteration-1 modules iter2 imports (mmsd_sender, receiver_smoke_test, palette_test), unmodified
+- iter2/FINDINGS.md and REPORT.md, plus the small result files behind every table;
+  images, payloads and per-case JSON stay out of git

@@ -1,0 +1,62 @@
+{
+ "detector": "torchvision fasterrcnn_resnet50_fpn_v2, COCO_V1",
+ "score_min": 0.5,
+ "match_iou": 0.5,
+ "variants": {
+  "oracle_full": {
+   "n_cases": 61,
+   "mean_cars_4wheel": 11.721311475409836,
+   "mean_pedestrians": 7.295081967213115,
+   "mean_two_wheelers": 0.4098360655737705,
+   "vehicle_recall": null,
+   "vehicle_precision": null,
+   "person_recall": null,
+   "person_precision": null,
+   "vehicle_count_abs_err_vs_oracle": null,
+   "person_count_abs_err_vs_oracle": null,
+   "seconds": null
+  },
+  "oracle_gen": {
+   "n_cases": 61,
+   "mean_cars_4wheel": 11.491803278688524,
+   "mean_pedestrians": 7.426229508196721,
+   "mean_two_wheelers": 0.19672131147540983,
+   "vehicle_recall": null,
+   "vehicle_precision": null,
+   "person_recall": null,
+   "person_precision": null,
+   "vehicle_count_abs_err_vs_oracle": null,
+   "person_count_abs_err_vs_oracle": null,
+   "seconds": null
+  },
+  "k1": {
+   "n_cases": 61,
+   "mean_cars_4wheel": 6.80327868852459,
+   "mean_pedestrians": 1.5573770491803278,
+   "mean_two_wheelers": 0.03278688524590164,
+   "vehicle_recall": 0.5134435324859041,
+   "vehicle_precision": 0.8162211549980241,
+   "person_recall": 0.08253796012416702,
+   "person_precision": 0.4137301587301587,
+   "vehicle_count_abs_err_vs_oracle": 4.967213114754099,
+   "person_count_abs_err_vs_oracle": 6.032786885245901,
+   "seconds": 10.4614110967212
+  },
+  "prompt_only": {
+   "n_cases": 61,
+   "mean_cars_4wheel": 7.081967213114754,
+   "mean_pedestrians": 1.6885245901639345,
+   "mean_two_wheelers": 0.06557377049180328,
+   "vehicle_recall": 0.5343919220959022,
+   "vehicle_precision": 0.8097266576774773,
+   "person_recall": 0.09661511859787722,
+   "person_precision": 0.49868827160493834,
+   "vehicle_count_abs_err_vs_oracle": 4.80327868852459,
+   "person_count_abs_err_vs_oracle": 5.901639344262295,
+   "seconds": 10.464336393442654
+  }
+ },
+ "paired_abs_error_vs_gt": {},
+ "payload_per_camera_kb_mean": 50.68425012807377,
+ "original_photo_kb_mean": 2348.0583162568305
+}

@@ -1,0 +1,26 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/758 [00:00<?, ?it/s]Loading weights:   9%|▊         | 65/758 [00:00<00:01, 627.57it/s]Loading weights:  17%|█▋        | 128/758 [00:00<00:01, 334.57it/s]Loading weights:  22%|██▏       | 169/758 [00:00<00:03, 180.94it/s]Loading weights: 100%|██████████| 758/758 [00:00<00:00, 868.76it/s]
+[transformers] [1mMask2FormerForUniversalSegmentation LOAD REPORT[0m from: facebook/mask2former-swin-large-cityscapes-semantic
+Key                                                                                                                      | Status     | 
+-------------------------------------------------------------------------------------------------------------------------+------------+-
+model.pixel_level_module.encoder.swin.encoder.layers.{0, 1, 2, 3}.blocks.{0...17}.attention.self.relative_position_index | UNEXPECTED | 
+model.pixel_level_module.encoder.swin.layernorm.bias                                                                     | MISSING    | 
+model.pixel_level_module.encoder.swin.layernorm.weight                                                                   | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+112 cases, 917 ground-truth vehicles
+method                             rec@.5   @.3  prec   <24 px 24-48 px48-120 px  >120 px   own  merged  noblob   MAE  bias  in±1
+512x1024 plain blobs                 0.33  0.41  0.41     0.11     0.24     0.45     0.80  0.90    0.19    0.01  3.27 -1.66  0.29
+512x1024 + dist split                0.36  0.45  0.39     0.13     0.27     0.52     0.81  0.89    0.26    0.01  3.20 -0.57  0.35    260 ms/photo, peak 1412 MB
+                                   share of vehicles: own 0.23, merged 0.61, no blob 0.16
+768x1376 plain blobs                 0.35  0.44  0.37     0.12     0.26     0.50     0.82  0.88    0.22    0.00  4.34 -0.27  0.35
+768x1376 + dist split                0.38  0.48  0.33     0.14     0.30     0.54     0.85  0.88    0.27    0.00  4.77  1.34  0.34    483 ms/photo, peak 2000 MB
+                                   share of vehicles: own 0.25, merged 0.60, no blob 0.15
+1024x1824 plain blobs                0.36  0.44  0.48     0.14     0.27     0.50     0.82  0.88    0.22    0.02  3.56 -2.01  0.29
+1024x1824 + dist split               0.40  0.48  0.44     0.15     0.32     0.55     0.82  0.88    0.28    0.01  3.52 -0.75  0.32    837 ms/photo, peak 2889 MB
+                                   share of vehicles: own 0.26, merged 0.59, no blob 0.15
+1088x1920 plain blobs                0.37  0.43  0.46     0.13     0.29     0.51     0.80  0.91    0.23    0.01  3.48 -1.70  0.31
+1088x1920 + dist split               0.39  0.48  0.41     0.13     0.31     0.56     0.82  0.89    0.29    0.01  3.62 -0.31  0.30    910 ms/photo, peak 3133 MB
+                                   share of vehicles: own 0.25, merged 0.58, no blob 0.16

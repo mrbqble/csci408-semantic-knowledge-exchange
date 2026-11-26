@@ -1,0 +1,268 @@
+{
+ "case": "case112",
+ "reference": "cam1",
+ "variant": "prompt_only",
+ "master_size": [
+  896,
+  512
+ ],
+ "counts": {
+  "person": 3,
+  "bicycle": 0,
+  "car": 5,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 0,
+  "cars_4wheel": 5,
+  "two_wheelers": 0,
+  "vehicles": 5,
+  "pedestrians": 3
+ },
+ "gt": {
+  "cars_4wheel": 17,
+  "pedestrians": 14,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "car",
+   "score": 0.999,
+   "bbox_master_px": [
+    96.4,
+    211.2,
+    271.9,
+    271.3
+   ],
+   "center_master_px": [
+    184.2,
+    241.2
+   ],
+   "ground_contact_master_px": [
+    184.2,
+    271.3
+   ],
+   "bbox_reference_px": [
+    206.5,
+    445.4,
+    582.7,
+    572.2
+   ],
+   "center_reference_px": [
+    394.6,
+    508.8
+   ]
+  },
+  {
+   "id": 1,
+   "class": "car",
+   "score": 0.997,
+   "bbox_master_px": [
+    276.7,
+    202.2,
+    325.2,
+    234.8
+   ],
+   "center_master_px": [
+    300.9,
+    218.5
+   ],
+   "ground_contact_master_px": [
+    300.9,
+    234.8
+   ],
+   "bbox_reference_px": [
+    592.9,
+    426.6,
+    696.8,
+    495.2
+   ],
+   "center_reference_px": [
+    644.8,
+    460.9
+   ]
+  },
+  {
+   "id": 2,
+   "class": "car",
+   "score": 0.958,
+   "bbox_master_px": [
+    428.1,
+    199.5,
+    577.2,
+    318.2
+   ],
+   "center_master_px": [
+    502.6,
+    258.9
+   ],
+   "ground_contact_master_px": [
+    502.6,
+    318.2
+   ],
+   "bbox_reference_px": [
+    917.3,
+    420.9,
+    1236.9,
+    671.3
+   ],
+   "center_reference_px": [
+    1077.1,
+    546.1
+   ]
+  },
+  {
+   "id": 3,
+   "class": "car",
+   "score": 0.939,
+   "bbox_master_px": [
+    579.2,
+    186.6,
+    617.7,
+    223.1
+   ],
+   "center_master_px": [
+    598.4,
+    204.8
+   ],
+   "ground_contact_master_px": [
+    598.4,
+    223.1
+   ],
+   "bbox_reference_px": [
+    1241.1,
+    393.6,
+    1323.6,
+    470.6
+   ],
+   "center_reference_px": [
+    1282.4,
+    432.1
+   ]
+  },
+  {
+   "id": 4,
+   "class": "person",
+   "score": 0.926,
+   "bbox_master_px": [
+    802.9,
+    194.3,
+    828.0,
+    260.8
+   ],
+   "center_master_px": [
+    815.5,
+    227.5
+   ],
+   "ground_contact_master_px": [
+    815.5,
+    260.8
+   ],
+   "bbox_reference_px": [
+    1720.5,
+    409.8,
+    1774.2,
+    550.1
+   ],
+   "center_reference_px": [
+    1747.4,
+    479.9
+   ]
+  },
+  {
+   "id": 5,
+   "class": "person",
+   "score": 0.877,
+   "bbox_master_px": [
+    852.9,
+    196.5,
+    868.6,
+    246.8
+   ],
+   "center_master_px": [
+    860.7,
+    221.6
+   ],
+   "ground_contact_master_px": [
+    860.7,
+    246.8
+   ],
+   "bbox_reference_px": [
+    1827.7,
+    414.4,
+    1861.2,
+    520.6
+   ],
+   "center_reference_px": [
+    1844.4,
+    467.5
+   ]
+  },
+  {
+   "id": 6,
+   "class": "car",
+   "score": 0.571,
+   "bbox_master_px": [
+    128.7,
+    197.4,
+    162.0,
+    217.8
+   ],
+   "center_master_px": [
+    145.4,
+    207.6
+   ],
+   "ground_contact_master_px": [
+    145.4,
+    217.8
+   ],
+   "bbox_reference_px": [
+    275.9,
+    416.4,
+    347.2,
+    459.3
+   ],
+   "center_reference_px": [
+    311.6,
+    437.8
+   ]
+  },
+  {
+   "id": 7,
+   "class": "person",
+   "score": 0.545,
+   "bbox_master_px": [
+    644.3,
+    187.0,
+    649.4,
+    200.6
+   ],
+   "center_master_px": [
+    646.8,
+    193.8
+   ],
+   "ground_contact_master_px": [
+    646.8,
+    200.6
+   ],
+   "bbox_reference_px": [
+    1380.6,
+    394.5,
+    1391.5,
+    423.2
+   ],
+   "center_reference_px": [
+    1386.0,
+    408.9
+   ]
+  }
+ ],
+ "vehicle_recall": 0.38461538461538464,
+ "vehicle_precision": 1.0,
+ "person_recall": 0.08695652173913043,
+ "person_precision": 0.6666666666666666,
+ "vehicle_count_abs_err_vs_oracle": 8,
+ "person_count_abs_err_vs_oracle": 20,
+ "seconds": 8.175750999998854,
+ "prompt": "a red and white van, a city street, the cars in the game are all different, a man and woman walking down a street, a small car driving down a street next to a small car, a city street with cars and buildings"
+}

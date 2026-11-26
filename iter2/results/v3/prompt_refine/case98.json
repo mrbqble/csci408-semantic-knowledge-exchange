@@ -1,0 +1,89 @@
+{
+ "case": "case98",
+ "variant": "prompt_refine",
+ "ip_adapter_scale": 0.0,
+ "ip_adapter_source": "none",
+ "reference": "cam1",
+ "supporting": [
+  "cam2",
+  "cam3",
+  "cam4"
+ ],
+ "timestamp": 16731,
+ "prompt": "a young boy standing on the side of a street, a blue car is parked on the side of the road, a police car is parked on the side of the road, a scene of a city",
+ "seconds": 17.761900800001968,
+ "peak_gpu_mb": 5394.6416015625,
+ "size": [
+  1024,
+  576
+ ],
+ "palette": "cs",
+ "ref_policy": "first",
+ "seed": 42,
+ "steps": 20,
+ "guidance": 7.5,
+ "donor_case": null,
+ "cn_scales": [
+  1.0,
+  1.0
+ ],
+ "edge_thr": 40,
+ "base": "existing prompt_only result",
+ "base_seconds": 10.597255600001517,
+ "refine_seconds": 7.16464520000045,
+ "refine": {
+  "n_small_blobs": 7,
+  "n_windows": 3,
+  "uncovered_blobs": 0,
+  "windows": [
+   {
+    "x0": 629,
+    "y0": 215,
+    "n_blobs": 3,
+    "blob_areas": [
+     377,
+     463,
+     18
+    ],
+    "index": 0,
+    "seconds": 2.169649399998889
+   },
+   {
+    "x0": 740,
+    "y0": 210,
+    "n_blobs": 3,
+    "blob_areas": [
+     258,
+     370,
+     18
+    ],
+    "index": 1,
+    "seconds": 2.5151194000009127
+   },
+   {
+    "x0": 486,
+    "y0": 216,
+    "n_blobs": 1,
+    "blob_areas": [
+     17
+    ],
+    "index": 2,
+    "seconds": 2.4798764000006486
+   }
+  ],
+  "failures": [],
+  "seconds": 7.16464520000045
+ },
+ "refine_settings": {
+  "window": 128,
+  "upscale": 4,
+  "strength": 0.5,
+  "feather_px": 12,
+  "max_windows": 8,
+  "min_area": 12,
+  "max_side": 48,
+  "prompt": "cars on a city street, realistic photo, sharp",
+  "negative_prompt": "blurry, deformed, cartoon",
+  "seed": "42 + window index"
+ }
+}

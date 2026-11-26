@@ -1,0 +1,181 @@
+{
+ "case": "case84",
+ "reference": "cam1",
+ "variant": "prompt_only",
+ "master_size": [
+  896,
+  512
+ ],
+ "counts": {
+  "person": 3,
+  "bicycle": 0,
+  "car": 2,
+  "motorcycle": 0,
+  "bus": 0,
+  "truck": 0,
+  "cars_4wheel": 2,
+  "two_wheelers": 0,
+  "vehicles": 2,
+  "pedestrians": 3
+ },
+ "gt": {
+  "cars_4wheel": 5,
+  "pedestrians": 6,
+  "two_wheelers": 0
+ },
+ "detections": [
+  {
+   "id": 0,
+   "class": "car",
+   "score": 1.0,
+   "bbox_master_px": [
+    605.6,
+    263.9,
+    741.9,
+    313.3
+   ],
+   "center_master_px": [
+    673.7,
+    288.6
+   ],
+   "ground_contact_master_px": [
+    673.7,
+    313.3
+   ],
+   "bbox_reference_px": [
+    1297.7,
+    556.7,
+    1589.8,
+    660.9
+   ],
+   "center_reference_px": [
+    1443.7,
+    608.8
+   ]
+  },
+  {
+   "id": 1,
+   "class": "person",
+   "score": 0.972,
+   "bbox_master_px": [
+    141.2,
+    250.8,
+    151.8,
+    278.1
+   ],
+   "center_master_px": [
+    146.5,
+    264.4
+   ],
+   "ground_contact_master_px": [
+    146.5,
+    278.1
+   ],
+   "bbox_reference_px": [
+    302.6,
+    529.0,
+    325.2,
+    586.5
+   ],
+   "center_reference_px": [
+    313.9,
+    557.8
+   ]
+  },
+  {
+   "id": 2,
+   "class": "person",
+   "score": 0.877,
+   "bbox_master_px": [
+    67.4,
+    249.2,
+    77.9,
+    272.9
+   ],
+   "center_master_px": [
+    72.7,
+    261.1
+   ],
+   "ground_contact_master_px": [
+    72.7,
+    272.9
+   ],
+   "bbox_reference_px": [
+    144.5,
+    525.7,
+    166.9,
+    575.7
+   ],
+   "center_reference_px": [
+    155.7,
+    550.7
+   ]
+  },
+  {
+   "id": 3,
+   "class": "person",
+   "score": 0.824,
+   "bbox_master_px": [
+    846.8,
+    250.5,
+    864.6,
+    281.9
+   ],
+   "center_master_px": [
+    855.7,
+    266.2
+   ],
+   "ground_contact_master_px": [
+    855.7,
+    281.9
+   ],
+   "bbox_reference_px": [
+    1814.5,
+    528.4,
+    1852.7,
+    594.6
+   ],
+   "center_reference_px": [
+    1833.6,
+    561.5
+   ]
+  },
+  {
+   "id": 4,
+   "class": "car",
+   "score": 0.553,
+   "bbox_master_px": [
+    217.0,
+    255.7,
+    259.5,
+    272.4
+   ],
+   "center_master_px": [
+    238.3,
+    264.1
+   ],
+   "ground_contact_master_px": [
+    238.3,
+    272.4
+   ],
+   "bbox_reference_px": [
+    465.0,
+    539.4,
+    556.2,
+    574.5
+   ],
+   "center_reference_px": [
+    510.6,
+    557.0
+   ]
+  }
+ ],
+ "vehicle_recall": 1.0,
+ "vehicle_precision": 1.0,
+ "person_recall": 0.3333333333333333,
+ "person_precision": 0.6666666666666666,
+ "vehicle_count_abs_err_vs_oracle": 0,
+ "person_count_abs_err_vs_oracle": 3,
+ "seconds": 8.179830000000948,
+ "prompt": "a car is parked on the street in front of a building, a red car parked on a street next to a building, a person walking across a street in a city, a white car parked in front of a building, a red car is parked on a city street, a white car parked on a city street"
+}

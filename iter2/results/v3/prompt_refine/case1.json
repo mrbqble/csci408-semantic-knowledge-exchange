@@ -1,0 +1,107 @@
+{
+ "case": "case1",
+ "variant": "prompt_refine",
+ "ip_adapter_scale": 0.0,
+ "ip_adapter_source": "none",
+ "reference": "cam1",
+ "supporting": [
+  "cam2",
+  "cam3"
+ ],
+ "timestamp": 1850,
+ "prompt": "a street scene with a red sign and a person walking down the street, a car is driving down a city street, a white sign on a pole",
+ "seconds": 22.640477999999348,
+ "peak_gpu_mb": 5394.6416015625,
+ "size": [
+  1024,
+  576
+ ],
+ "palette": "cs",
+ "ref_policy": "first",
+ "seed": 42,
+ "steps": 20,
+ "guidance": 7.5,
+ "donor_case": null,
+ "cn_scales": [
+  1.0,
+  1.0
+ ],
+ "edge_thr": 40,
+ "base": "existing prompt_only result",
+ "base_seconds": 10.9930303000001,
+ "refine_seconds": 11.647447699999248,
+ "refine": {
+  "n_small_blobs": 8,
+  "n_windows": 5,
+  "uncovered_blobs": 0,
+  "windows": [
+   {
+    "x0": 624,
+    "y0": 263,
+    "n_blobs": 3,
+    "blob_areas": [
+     20,
+     117,
+     32
+    ],
+    "index": 0,
+    "seconds": 3.0227744999992865
+   },
+   {
+    "x0": 896,
+    "y0": 323,
+    "n_blobs": 2,
+    "blob_areas": [
+     132,
+     87
+    ],
+    "index": 1,
+    "seconds": 2.149762799999735
+   },
+   {
+    "x0": 507,
+    "y0": 238,
+    "n_blobs": 1,
+    "blob_areas": [
+     322
+    ],
+    "index": 2,
+    "seconds": 2.1528748999990057
+   },
+   {
+    "x0": 208,
+    "y0": 223,
+    "n_blobs": 1,
+    "blob_areas": [
+     72
+    ],
+    "index": 3,
+    "seconds": 2.15438450000147
+   },
+   {
+    "x0": 107,
+    "y0": 227,
+    "n_blobs": 1,
+    "blob_areas": [
+     48
+    ],
+    "index": 4,
+    "seconds": 2.1676509999997506
+   }
+  ],
+  "failures": [],
+  "seconds": 11.647447699999248
+ },
+ "refine_settings": {
+  "window": 128,
+  "upscale": 4,
+  "strength": 0.5,
+  "feather_px": 12,
+  "max_windows": 8,
+  "min_area": 12,
+  "max_side": 48,
+  "prompt": "cars on a city street, realistic photo, sharp",
+  "negative_prompt": "blurry, deformed, cartoon",
+  "seed": "42 + window index"
+ }
+}

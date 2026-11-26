@@ -1,0 +1,77 @@
+{
+ "case": "case60",
+ "variant": "prompt_refine",
+ "ip_adapter_scale": 0.0,
+ "ip_adapter_source": "none",
+ "reference": "cam1",
+ "supporting": [
+  "cam2",
+  "cam3",
+  "cam4",
+  "cam5",
+  "cam6"
+ ],
+ "timestamp": 12551,
+ "prompt": "a man and woman walking across a street, a car driving down a street next to a building, a city street with cars and people walking, a city street with a lot of people walking around, a city street with a lot of cars parked on the side, a city street with a lot of buildings",
+ "seconds": 14.902166400001079,
+ "peak_gpu_mb": 5394.6416015625,
+ "size": [
+  1024,
+  576
+ ],
+ "palette": "cs",
+ "ref_policy": "first",
+ "seed": 42,
+ "steps": 20,
+ "guidance": 7.5,
+ "donor_case": null,
+ "cn_scales": [
+  1.0,
+  1.0
+ ],
+ "edge_thr": 40,
+ "base": "existing prompt_only result",
+ "base_seconds": 10.510782900000777,
+ "refine_seconds": 4.391383500000302,
+ "refine": {
+  "n_small_blobs": 2,
+  "n_windows": 2,
+  "uncovered_blobs": 0,
+  "windows": [
+   {
+    "x0": 0,
+    "y0": 56,
+    "n_blobs": 1,
+    "blob_areas": [
+     215
+    ],
+    "index": 0,
+    "seconds": 2.1989964000003965
+   },
+   {
+    "x0": 96,
+    "y0": 177,
+    "n_blobs": 1,
+    "blob_areas": [
+     16
+    ],
+    "index": 1,
+    "seconds": 2.1923870999999053
+   }
+  ],
+  "failures": [],
+  "seconds": 4.391383500000302
+ },
+ "refine_settings": {
+  "window": 128,
+  "upscale": 4,
+  "strength": 0.5,
+  "feather_px": 12,
+  "max_windows": 8,
+  "min_area": 12,
+  "max_side": 48,
+  "prompt": "cars on a city street, realistic photo, sharp",
+  "negative_prompt": "blurry, deformed, cartoon",
+  "seed": "42 + window index"
+ }
+}
