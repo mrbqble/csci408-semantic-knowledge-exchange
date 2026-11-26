@@ -203,7 +203,7 @@ Each version of the work is kept on its own branch; `main` holds both iterations
 | Branch | Contents |
 |---|---|
 | `main` | Iteration 1 and iteration 2 (iteration 2 merged through PR #34) |
-| `iteration-1` | Iteration 1 as merged on 12 Oct 2026 (PRs #27–#33), kept unchanged |
+| `iteration-1-final` | Iteration 1 as merged on 12 Oct 2026 (PRs #27–#33), kept unchanged |
 | `iteration-1/*`, `settings/operating-point` | The individual iteration 1 pull requests |
 | `iter2-multicam` | Iteration 2: multi-camera receiver, dataset tooling, VLM-judge evaluation, report kit (PR #34) |
 
