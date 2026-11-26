@@ -71,4 +71,4 @@ Each case folder holds `camJ_seg.webp`, `camJ_edge.webp`, `camJ_caption.txt` and
 
 - **Real-world images** show faces and licence plates: internal use only.
 - **Cityscapes:** only derived outputs (payloads, reconstructions) are here, not the original images.
-- **Real-world `core` case numbers** used in the evaluation are mapped to the dataset files in `Datasets/Real-world/V1/core_to_cases_1to3phones.csv`.
+- **Real-world `core` case numbers** used in the evaluation are mapped to the dataset files in `Materials/Datasets/Real-world/V1/core_to_cases_1to3phones.csv`.

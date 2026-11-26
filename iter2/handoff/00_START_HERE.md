@@ -38,7 +38,7 @@ Sources: `Final Report Guidance.pdf` and `Final Presentation Guidance.pdf` in th
 | **1b Objectives and goals** | Can payloads from other cameras make the main camera's reconstruction more faithful (car numbers and positions), measured with the VLM judge, at low communication cost? Quantified outcome below. | Section 4 below |
 | **2 Literature** | Semantic communication; semantic image coding (seed paper, SPIC, SQ-GAN, ...); task-oriented transmission; multi-view and collaborative perception; distributed edge inference; energy; diffusion conditioning (Stable Diffusion, ControlNet, IP-Adapter) | `08_literature/literature_map.md` (28 papers plus models and datasets to cite) |
 | **3a System features** | Per-camera payload extraction; per-camera reconstruction; multi-camera fusion; evaluation with a VLM judge | `01_report_kit/2_pipeline.md` 2.1-2.2 |
-| **3b Requirements and functionalities** | Recap the requirements from our Requirements and Design document (shortcut in `Senior Project Work/`) and say how each is met. The payload size and processing-time measurements support the non-functional ones. | `Requirement and design document` (Drive); `03_statistics/timing_stats.csv`; `tables/payload_sizes_kb.csv` |
+| **3b Requirements and functionalities** | Recap the requirements from our Requirements and Design document (`Senior Project Work/For Submission/`; shortcut in `Shared/`) and say how each is met. The payload size and processing-time measurements support the non-functional ones. | `Requirement and design document` (Drive); `03_statistics/timing_stats.csv`; `tables/payload_sizes_kb.csv` |
 | **3c Design: process diagrams** | One vertical diagram per case showing every stage of the multi-camera MMSD process with its images: cameras and photos, payloads, per-camera reconstructions, ControlNet / img2img noise / IP-Adapter, final reconstruction. 6 distinct cases (3 real-world, 3 CARLA); PNG, JPG and a combined PDF | `01_report_kit/figures/process_diagrams/` |
 | **3c / 4b Pipeline step by step (both datasets)** | One figure per pipeline step for a real-world and a simulated case (Prof. Zorbas asked for both on every step): input photos, payloads, per-camera reconstructions, fusion inputs, output and verdicts | `01_report_kit/figures/pipeline_steps/` |
 | **3c Design** | Architecture: devices send payloads to an edge receiver; receiver = reconstruct every device, img2img from the main reconstruction, ControlNet (main maps), IP-Adapter (other reconstructions), global caption. Damir's diagram of 17 Nov is the reference. | `2_pipeline.md` 2.2; `fig07`/`fig08`; `06_code_snapshot/iter2/coordinator.py` |
@@ -163,9 +163,9 @@ The demonstration must show the system in use. With Bibol not taking part, the o
 
 **Where the full material lives:**
 - **GitHub** (github.com/mrbqble/csci408-semantic-knowledge-exchange, branch `iter2-multicam`): all code, scripts (including the CARLA and real-world dataset tools), reports, text results and logs.
-- **Google Drive** (`uni/04/01/CSCI 408/Senior Project Work/`):
-  - `Datasets/`: CARLA v1-v4; real-world V1/V2 with the raw videos; mapping `V1/core_to_cases_1to3phones.csv`, which links the evaluated "core" case numbers to the files.
-  - `Pipeline Outputs/`: payloads, the main reconstruction and fusion results, the fusion demo, report zips. Ablation and history outputs are kept on the laptop because of the Drive storage quota; their numbers are in GitHub.
+- **Google Drive** (`uni/04/01/CSCI 408/Senior Project Work/`, reorganised on 26 Nov into `For Submission/`, `Materials/` and `Shared/`):
+  - `Materials/Datasets/`: CARLA v1-v4; real-world V1/V2 with the raw videos; mapping `V1/core_to_cases_1to3phones.csv`, which links the evaluated "core" case numbers to the files.
+  - `Materials/Pipeline Outputs/`: payloads, the main reconstruction and fusion results, the fusion demo, report zips. Ablation and history outputs are kept on the laptop because of the Drive storage quota; their numbers are in GitHub.
 
 ## 6. How the project developed
 

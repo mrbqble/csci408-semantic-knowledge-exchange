@@ -20,7 +20,7 @@ All evaluation uses the main camera, cam1, of each case. A case is one moment se
 - **Ground truth:** used for the detector-era metrics in October. The VLM judge does not use it; it compares images.
 
 **Where:**
-- Team Drive: `uni/04/01/CSCI 408/Senior Project Work/Datasets/Simulated/carla_dataset_v3_ids/`, grouped as `3_cameras` ... `6_cameras`, with a README describing the fields.
+- Team Drive: `uni/04/01/CSCI 408/Senior Project Work/Materials/Datasets/Simulated/carla_dataset_v3_ids/`, grouped as `3_cameras` ... `6_cameras`, with a README describing the fields.
 - OMEN: `C:\carla_multicam_kit\output\carla_dataset_v3_ids`.
 
 ## 1.3 Real-world Astana: three phones
