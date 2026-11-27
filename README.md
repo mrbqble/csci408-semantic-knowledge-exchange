@@ -324,3 +324,7 @@ Notes that still apply:
 
 The PNG-versus-WebP question raised here is settled by the Iteration 1 ablation
 above (lossless WebP).
+
+## Real-world photos
+
+The real-world (Astana) photos and every image made from them were removed from this public repository on 27 Nov 2026: they show faces and licence plates, which will be blurred before any publication. The code, the judge answers and the CARLA examples stay here; the real-world images are on the team Google Drive (NU accounts only), `Materials/Pipeline Outputs/repo_real_world_images/`.
