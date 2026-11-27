@@ -122,3 +122,7 @@ Measured on 25 Cityscapes val images at 2048×1024, CPU-only, 4 threads:
 - How should the coordinator aggregate heterogeneous components — late fusion
   of per-component classifiers, or a single multi-modal encoder?
 - Which network simulator, which radio, which energy model?
+
+## Real-world photos
+
+The real-world (Astana) photos and every image made from them were removed from this public repository on 27 Nov 2026: they show faces and licence plates, which will be blurred before any publication. The code, the judge answers and the CARLA examples stay here; the real-world images are on the team Google Drive (NU accounts only), `Materials/Pipeline Outputs/repo_real_world_images/`.
